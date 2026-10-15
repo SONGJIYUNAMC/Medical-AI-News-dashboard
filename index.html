@@ -111,13 +111,13 @@ function filtered() {
   return rows;
 }
 
-const regionOf = it => (it.global ? "해외" : "국내");
-const REGION_LABEL = { "국내": "국내 뉴스 (네이버)", "해외": "해외 뉴스 (Google News)" };
+const regionOf = it => (it.gov ? "정부" : it.global ? "해외" : "국내");
+const REGION_LABEL = { "국내": "국내 뉴스 (네이버)", "해외": "해외 뉴스 (Google News)", "정부": "정부 발표 (부처 보도자료)" };
 
 function renderTabs() {
   const rbox = $("regions");
   rbox.replaceChildren();
-  ["국내", "해외"].forEach(r => {
+  ["국내", "해외", "정부"].forEach(r => {
     const n = state.items.filter(it => regionOf(it) === r).length;
     const b = el("button", { className: "tab" + (r === state.region ? " active" : ""), type: "button",
                              textContent: `${REGION_LABEL[r]} ${n.toLocaleString()}` });
@@ -151,9 +151,10 @@ function render() {
     const a = el("a", { href: safeUrl(it.originallink || it.link), target: "_blank", rel: "noopener noreferrer", textContent: it.title });
     const foot = el("div", { className: "foot" }, [
       el("span", { className: "chip", textContent: it.category }),
-      el("span", { className: "chip score", textContent: "관련도 " + (it.score ?? 0) }),
-      el("span", { textContent: "검색어: " + (it.queries ? it.queries.join(", ") : it.query) }),
-      el("span", { textContent: it.global ? (it.sources || []).join(", ") + " (Google News)" : host(it.originallink || it.link) }),
+      ...(it.gov ? [el("span", { className: "chip score", textContent: it.kind })]
+        : [el("span", { className: "chip score", textContent: "관련도 " + (it.score ?? 0) }),
+           el("span", { textContent: "검색어: " + (it.queries ? it.queries.join(", ") : it.query) })]),
+      el("span", { textContent: it.gov ? it.agency : it.global ? (it.sources || []).join(", ") + " (Google News)" : host(it.originallink || it.link) }),
       ...(it.source_type === "major" ? [el("span", { className: "chip", textContent: "주요 일간지" })]
         : it.source_type === "medical" ? [el("span", { className: "chip", textContent: "의료 전문지" })]
         : it.source_type === "global_pref" ? [el("span", { className: "chip", textContent: "주요 매체" })] : []),
@@ -166,7 +167,7 @@ function render() {
 }
 
 const getJson = u => fetch(u, { cache: "no-store" }).then(r => { if (!r.ok) throw new Error(r.status); return r.json(); });
-Promise.allSettled([getJson("data/news.json"), getJson("data/global_news.json")]).then(([kr, gl]) => {
+Promise.allSettled([getJson("data/news.json"), getJson("data/global_news.json"), getJson("data/gov_news.json")]).then(([kr, gl, gv]) => {
   if (kr.status !== "fulfilled") throw new Error(kr.reason.message);
   const d = kr.value;
   state.items = d.items || [];
@@ -183,6 +184,18 @@ Promise.allSettled([getJson("data/news.json"), getJson("data/global_news.json")]
     if (g.errors && g.errors.length)
       $("notice").append(el("div", { className: "notice",
         textContent: `해외 검색어 ${g.errors.length}건 수집 실패: ` + g.errors.map(e => e.query).join(", ") }));
+  }
+  if (gv.status === "fulfilled") {
+    const v = gv.value;
+    (v.items || []).forEach(it => {
+      state.items.push({ ...it, gov: true, category: it.agency, originallink: it.link, score: 0,
+        queries: [it.kind], source_type: "" });
+    });
+    (v.category_order || []).forEach(c => { if (!state.order.includes(c)) state.order.push(c); });
+    extra += ` · 정부 발표(최근 ${Math.round((v.window_hours || 168) / 24)}일) ${(v.count || 0).toLocaleString()}건`;
+    if (v.errors && v.errors.length)
+      $("notice").append(el("div", { className: "notice",
+        textContent: `정부 발표 출처 ${v.errors.length}곳 수집 실패(주소 확인 필요): ` + v.errors.map(e => e.query.split(" (")[0]).join(", ") }));
   }
   $("meta").textContent = `수집 시각 ${fmtDate(d.generated_at)} · 국내 최근 ${d.window_hours}시간 ${d.count.toLocaleString()}건${extra}`;
   if (d.errors && d.errors.length) {
