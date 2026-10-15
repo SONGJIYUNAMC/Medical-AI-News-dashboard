@@ -28,6 +28,8 @@ jobs:
       - name: Collect 정부 발표 (부처 보도자료)
         continue-on-error: true
         run: python gov_news.py --config gov_sources.json --out data/gov_news.json
+      - name: 주간 누적 저장 (data/weeks)
+        run: python archive.py
       - name: Commit result
         run: |
           git config user.name "github-actions"
@@ -35,5 +37,6 @@ jobs:
           git add data/news.json
           [ -f data/global_news.json ] && git add data/global_news.json || true
           [ -f data/gov_news.json ] && git add data/gov_news.json || true
+          git add data/weeks
           git diff --staged --quiet || git commit -m "chore: update news data"
           git push
