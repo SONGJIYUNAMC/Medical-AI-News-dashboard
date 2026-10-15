@@ -1,0 +1,148 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>의료 AI 뉴스 모니터링</title>
+<style>
+  :root {
+    --navy: #1f3a5f; --teal: #2a7f9e; --bg: #f5f7fa; --card: #ffffff;
+    --text: #1d2733; --muted: #64707d; --line: #dde3ea; --chip: #e8f1f6;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root { --bg: #141a22; --card: #1c2531; --text: #e6ebf1; --muted: #93a0ae; --line: #2c3745; --chip: #22364a; }
+  }
+  * { box-sizing: border-box; }
+  body { margin: 0; background: var(--bg); color: var(--text);
+         font-family: "Malgun Gothic", "맑은 고딕", -apple-system, "Segoe UI", sans-serif; line-height: 1.55; }
+  header { background: var(--navy); color: #fff; padding: 20px 16px; }
+  .wrap { max-width: 960px; margin: 0 auto; }
+  header h1 { margin: 0; font-size: 22px; }
+  header p { margin: 4px 0 0; font-size: 13px; opacity: .85; }
+  .controls { position: sticky; top: 0; z-index: 5; background: var(--bg); padding: 12px 16px; border-bottom: 1px solid var(--line); }
+  .tabs { display: flex; flex-wrap: wrap; gap: 6px; margin-bottom: 10px; }
+  .tab { border: 1px solid var(--line); background: var(--card); color: var(--text); padding: 6px 12px;
+         border-radius: 16px; font-size: 13px; cursor: pointer; font-family: inherit; }
+  .tab.active { background: var(--teal); border-color: var(--teal); color: #fff; }
+  .row { display: flex; flex-wrap: wrap; gap: 10px; align-items: center; }
+  input[type=search] { flex: 1 1 220px; padding: 8px 10px; border: 1px solid var(--line); border-radius: 8px;
+                       background: var(--card); color: var(--text); font-family: inherit; font-size: 14px; }
+  label.toggle { font-size: 13px; color: var(--muted); display: flex; gap: 6px; align-items: center; cursor: pointer; }
+  .meta { font-size: 13px; color: var(--muted); padding: 10px 16px 0; }
+  .notice { margin: 10px 16px 0; padding: 10px 12px; border-radius: 8px; font-size: 13px;
+            background: #fff4e5; color: #7a4a00; border: 1px solid #f3d19e; }
+  main { padding: 12px 16px 40px; }
+  article { background: var(--card); border: 1px solid var(--line); border-radius: 10px; padding: 14px 16px; margin-bottom: 10px; }
+  article h2 { margin: 0 0 6px; font-size: 16px; }
+  article h2 a { color: var(--navy); text-decoration: none; }
+  @media (prefers-color-scheme: dark) { article h2 a { color: #9cc7e0; } }
+  article h2 a:hover { text-decoration: underline; }
+  article p { margin: 0 0 8px; font-size: 14px; color: var(--text); }
+  .foot { display: flex; flex-wrap: wrap; gap: 8px; align-items: center; font-size: 12px; color: var(--muted); }
+  .chip { background: var(--chip); color: var(--teal); padding: 1px 8px; border-radius: 10px; }
+  .empty { text-align: center; color: var(--muted); padding: 40px 0; }
+</style>
+</head>
+<body>
+<header><div class="wrap">
+  <h1>의료 AI 뉴스 모니터링</h1>
+  <p>AI혁신지원팀 · 네이버 뉴스 검색 자동 수집</p>
+</div></header>
+
+<div class="controls"><div class="wrap">
+  <div class="tabs" id="tabs"></div>
+  <div class="row">
+    <input type="search" id="q" placeholder="제목·요약 검색">
+    <label class="toggle"><input type="checkbox" id="rel"> 의료·병원·헬스 관련어 포함 기사만</label>
+  </div>
+</div></div>
+
+<div class="wrap">
+  <div class="meta" id="meta">불러오는 중…</div>
+  <div id="notice"></div>
+  <main id="list"></main>
+</div>
+
+<script>
+const REL = /의료|병원|헬스|환자|진료|임상|의사|간호|보건|의약|바이오|건강/;
+const state = { items: [], cat: "전체", q: "", rel: false };
+const $ = id => document.getElementById(id);
+
+function fmtDate(iso) {
+  const d = new Date(iso);
+  if (isNaN(d)) return "";
+  return d.toLocaleString("ko-KR", { timeZone: "Asia/Seoul", month: "numeric", day: "numeric",
+    hour: "2-digit", minute: "2-digit", hour12: false }) + " KST";
+}
+function safeUrl(u) { return /^https?:\/\//i.test(u) ? u : "#"; }
+function host(u) { try { return new URL(u).hostname.replace(/^www\./, ""); } catch { return ""; } }
+
+function el(tag, props, children) {
+  const e = document.createElement(tag);
+  Object.assign(e, props || {});
+  (children || []).forEach(c => e.append(c));
+  return e;
+}
+
+function filtered() {
+  const q = state.q.trim().toLowerCase();
+  return state.items.filter(it => {
+    if (state.cat !== "전체" && it.category !== state.cat) return false;
+    const text = (it.title + " " + it.summary);
+    if (state.rel && !REL.test(text)) return false;
+    if (q && !text.toLowerCase().includes(q)) return false;
+    return true;
+  });
+}
+
+function renderTabs() {
+  const counts = {};
+  state.items.forEach(it => counts[it.category] = (counts[it.category] || 0) + 1);
+  const cats = ["전체", ...Object.keys(counts)];
+  const box = $("tabs");
+  box.replaceChildren();
+  cats.forEach(c => {
+    const n = c === "전체" ? state.items.length : counts[c];
+    const b = el("button", { className: "tab" + (c === state.cat ? " active" : ""), type: "button",
+                             textContent: `${c} ${n.toLocaleString()}` });
+    b.onclick = () => { state.cat = c; render(); };
+    box.append(b);
+  });
+}
+
+function render() {
+  renderTabs();
+  const rows = filtered();
+  const list = $("list");
+  list.replaceChildren();
+  if (!rows.length) { list.append(el("div", { className: "empty", textContent: "조건에 맞는 기사가 없습니다." })); return; }
+  rows.forEach(it => {
+    const a = el("a", { href: safeUrl(it.originallink || it.link), target: "_blank", rel: "noopener noreferrer", textContent: it.title });
+    const foot = el("div", { className: "foot" }, [
+      el("span", { className: "chip", textContent: it.category }),
+      el("span", { textContent: "검색어: " + it.query }),
+      el("span", { textContent: host(it.originallink || it.link) }),
+      el("span", { textContent: fmtDate(it.pubDate) }),
+    ]);
+    list.append(el("article", {}, [el("h2", {}, [a]), el("p", { textContent: it.summary }), foot]));
+  });
+}
+
+fetch("data/news.json", { cache: "no-store" })
+  .then(r => { if (!r.ok) throw new Error(r.status); return r.json(); })
+  .then(d => {
+    state.items = d.items || [];
+    $("meta").textContent = `수집 시각 ${fmtDate(d.generated_at)} · 최근 ${d.window_hours}시간 · 총 ${d.count.toLocaleString()}건`;
+    if (d.errors && d.errors.length) {
+      $("notice").append(el("div", { className: "notice",
+        textContent: `일부 검색어(${d.errors.length}개) 수집에 실패했습니다: ` + d.errors.map(e => e.query).join(", ") }));
+    }
+    render();
+  })
+  .catch(e => { $("meta").textContent = "데이터를 불러오지 못했습니다 (" + e.message + "). data/news.json이 있는지 확인해 주세요."; });
+
+$("q").addEventListener("input", e => { state.q = e.target.value; render(); });
+$("rel").addEventListener("change", e => { state.rel = e.target.checked; render(); });
+</script>
+</body>
+</html>
