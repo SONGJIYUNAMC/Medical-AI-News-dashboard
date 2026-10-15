@@ -2,7 +2,7 @@
 """정부 부처 발표(보도자료) 중 의료 AI 관련 건 수집 → data/gov_news.json
 사용: python gov_news.py --config gov_sources.json --out data/gov_news.json
 """
-import argparse, json, re, sys, time
+import argparse, json, os, re, sys, time
 import xml.etree.ElementTree as ET
 from datetime import datetime, timedelta, timezone
 from email.utils import parsedate_to_datetime
@@ -71,6 +71,38 @@ def kind_of(text, kinds):
     return "기타 발표"
 
 
+def fetch_msit_api(api, key, cutoff, session):
+    """공공데이터포털 과기정통부 보도자료 API (pressReleaseList). 제목·상세URL·게시일만 제공."""
+    out, rows = [], int(api.get("rows", 10))
+    for page in range(1, int(api.get("max_pages", 8)) + 1):
+        r = session.get(api["url"], params={"serviceKey": key, "numOfRows": rows, "pageNo": page, "returnType": "xml"},
+                        headers=UA, timeout=30)
+        r.raise_for_status()
+        root = ET.fromstring(r.content)
+        code = (root.findtext(".//resultCode") or "").strip()
+        if code != "00":
+            raise RuntimeError(f"API 오류 {code}: {(root.findtext('.//resultMsg') or '')[:60]}")
+        got = list(root.iter("item"))
+        if not got:
+            break
+        oldest_ok = False
+        for it in got:
+            d = parse_date(it.findtext("pressDt"))
+            if not d:
+                continue
+            if d >= cutoff - timedelta(days=1):  # 날짜만 있어 하루 여유
+                oldest_ok = True
+            if d < cutoff - timedelta(days=1):
+                continue
+            out.append({"title": strip(it.findtext("subject")), "link": (it.findtext("viewUrl") or "").strip(),
+                        "summary": ("담당부서: " + strip(it.findtext("deptName"))) if it.findtext("deptName") else "",
+                        "pubDate": d})
+        if not oldest_ok:  # 이 페이지가 전부 기간 밖이면 중단
+            break
+        time.sleep(0.3)
+    return out
+
+
 def main():
     ap = argparse.ArgumentParser()
     ap.add_argument("--config", default="gov_sources.json")
@@ -78,41 +110,69 @@ def main():
     args = ap.parse_args()
     cfg = json.loads(Path(args.config).read_text(encoding="utf-8"))
     ai, health = rx(cfg["require_ai"]), rx(cfg["require_health"])
+    policy = rx(cfg.get("policy_pass", []))
     cutoff = datetime.now(KST) - timedelta(hours=cfg.get("hours", 168))
+    api_key = os.getenv("DATA_GO_KR_KEY", "").strip()
 
     def gnews_url(q):
         return f"https://news.google.com/rss/search?q={quote(q + ' when:7d')}&hl=ko&gl=KR&ceid=KR:ko"
 
-    jobs = [(f["agency"] + (" " + f["board"] if f.get("board") else ""), f["url"], f.get("health_context", False), "rss", f.get("fallback_site"), f["agency"]) for f in cfg["feeds"]]
-    for g in cfg["gnews_queries"]:
-        jobs.append((g["agency"], gnews_url(g["q"]), False, "gnews", None, g["agency"]))
+    def clean_err(e):  # 인증키가 오류 문구(URL)에 섞여 저장소에 기록되지 않도록 제거
+        msg = str(e)
+        if api_key:
+            msg = msg.replace(api_key, "***").replace(quote(api_key, safe=""), "***")
+        return re.sub(r"serviceKey=[^&\s]+", "serviceKey=***", msg)
 
-    items, seen, errors, dropped = [], set(), [], 0
+    items, seen, errors = [], set(), []
+    dropped = 0
+
+    def add(a, agency, hc, mode):
+        nonlocal dropped
+        if a["pubDate"] < cutoff - (timedelta(days=1) if mode == "api" else timedelta(0)):
+            return
+        text = a["title"] + " " + a["summary"]
+        if mode == "gnews":  # 제목 끝 '- 매체명' 제거
+            a["title"] = re.sub(r"\s-\s[^-]+$", "", a["title"])
+        if not any(p.search(text) for p in ai) or not (hc or any(p.search(text) for p in health) or any(p.search(text) for p in policy)):
+            dropped += 1
+            return
+        key = re.sub(r"\W+", "", a["title"])
+        if key in seen:
+            return
+        seen.add(key)
+        items.append({"title": a["title"], "link": a["link"], "summary": a["summary"],
+                      "pubDate": a["pubDate"].isoformat(), "agency": agency,
+                      "kind": kind_of(text, cfg["kinds"]), "via": mode})
+
     with requests.Session() as s:
+        # 1) 공식 API (공공데이터포털) — 먼저 처리해 같은 기사의 우선 출처가 되도록 함
+        for api in cfg.get("apis", []):
+            label = api["agency"] + (" " + api["board"] if api.get("board") else "")
+            if not api_key:
+                errors.append({"query": f"{label} (공공데이터포털 API)", "error": "DATA_GO_KR_KEY 비밀값이 없습니다"})
+                print(f"[WARN] {label}: DATA_GO_KR_KEY 없음", file=sys.stderr)
+                continue
+            try:
+                for a in fetch_msit_api(api, api_key, cutoff, s):
+                    add(a, api["agency"], api.get("health_context", False), "api")
+            except Exception as e:
+                errors.append({"query": f"{label} (공공데이터포털 API)", "error": clean_err(e)[:120]})
+                print(f"[WARN] {label}: {clean_err(e)}", file=sys.stderr)
+
+        # 2) RSS + 3) Google News 검색
+        jobs = [(f["agency"] + (" " + f["board"] if f.get("board") else ""), f["url"], f.get("health_context", False), "rss", f.get("fallback_site"), f["agency"]) for f in cfg["feeds"]]
+        for g in cfg["gnews_queries"]:
+            jobs.append((g["agency"], gnews_url(g["q"]), False, "gnews", None, g["agency"]))
         queue = list(jobs)
         while queue:
             label, url, hc, mode, fb, agency = queue.pop(0)
             try:
                 for a in parse_items(get_xml(url, s)):
-                    if a["pubDate"] < cutoff:
-                        continue
-                    text = a["title"] + " " + a["summary"]
-                    if mode == "gnews":  # 제목 끝 '- 매체명' 제거, 정부 사이트가 아닌 언론 기사는 제외 불가하므로 그대로 표시
-                        a["title"] = re.sub(r"\s-\s[^-]+$", "", a["title"])
-                    if not any(p.search(text) for p in ai) or not (hc or any(p.search(text) for p in health)):
-                        dropped += 1
-                        continue
-                    key = re.sub(r"\W+", "", a["title"])
-                    if key in seen:
-                        continue
-                    seen.add(key)
-                    items.append({"title": a["title"], "link": a["link"], "summary": a["summary"],
-                                  "pubDate": a["pubDate"].isoformat(), "agency": agency,
-                                  "kind": kind_of(text, cfg["kinds"]), "via": mode})
+                    add(a, agency, hc, mode)
             except Exception as e:
                 note = " → 사이트 검색으로 대체" if fb else ""
-                errors.append({"query": f"{label} ({url})", "error": str(e)[:120] + note})
-                print(f"[WARN] {label} {url}: {e}{note}", file=sys.stderr)
+                errors.append({"query": f"{label} ({url})", "error": clean_err(e)[:120] + note})
+                print(f"[WARN] {label} {url}: {clean_err(e)}{note}", file=sys.stderr)
                 if fb:  # 부처 RSS 실패 시 해당 부처 사이트를 Google News 에서 검색
                     for q in (f"site:{fb} 인공지능", f"site:{fb} AI 의료"):
                         queue.append((agency, gnews_url(q), hc, "gnews", None, agency))
