@@ -3,7 +3,7 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title> 의료 AI 뉴스 모니터링</title>
+<title>의료 AI 뉴스 모니터링</title>
 <style>
   :root {
     --navy: #1f3a5f; --teal: #2a7f9e; --bg: #f5f7fa; --card: #ffffff;
@@ -27,6 +27,9 @@
   .row { display: flex; flex-wrap: wrap; gap: 10px; align-items: center; }
   input[type=search] { flex: 1 1 220px; padding: 8px 10px; border: 1px solid var(--line); border-radius: 8px;
                        background: var(--card); color: var(--text); font-family: inherit; font-size: 14px; }
+  select { padding: 8px 10px; border: 1px solid var(--line); border-radius: 8px; background: var(--card);
+           color: var(--text); font-family: inherit; font-size: 14px; }
+  .chip.score { background: transparent; border: 1px solid var(--line); color: var(--muted); }
   label.toggle { font-size: 13px; color: var(--muted); display: flex; gap: 6px; align-items: center; cursor: pointer; }
   .meta { font-size: 13px; color: var(--muted); padding: 10px 16px 0; }
   .notice { margin: 10px 16px 0; padding: 10px 12px; border-radius: 8px; font-size: 13px;
@@ -53,6 +56,10 @@
   <div class="tabs" id="tabs"></div>
   <div class="row">
     <input type="search" id="q" placeholder="제목·요약 검색">
+    <select id="sort" aria-label="정렬">
+      <option value="score">관련도순</option>
+      <option value="date">최신순</option>
+    </select>
     <label class="toggle"><input type="checkbox" id="rel"> 의료·병원·헬스 관련어 포함 기사만</label>
   </div>
 </div></div>
@@ -65,7 +72,7 @@
 
 <script>
 const REL = /의료|병원|헬스|환자|진료|임상|의사|간호|보건|의약|바이오|건강/;
-const state = { items: [], cat: "전체", q: "", rel: false };
+const state = { items: [], order: [], cat: "전체", q: "", rel: false, sort: "score" };
 const $ = id => document.getElementById(id);
 
 function fmtDate(iso) {
@@ -86,19 +93,24 @@ function el(tag, props, children) {
 
 function filtered() {
   const q = state.q.trim().toLowerCase();
-  return state.items.filter(it => {
+  const rows = state.items.filter(it => {
     if (state.cat !== "전체" && it.category !== state.cat) return false;
     const text = (it.title + " " + it.summary);
     if (state.rel && !REL.test(text)) return false;
     if (q && !text.toLowerCase().includes(q)) return false;
     return true;
   });
+  const byDate = (a, b) => (a.pubDate < b.pubDate ? 1 : a.pubDate > b.pubDate ? -1 : 0);
+  rows.sort(state.sort === "date" ? byDate : (a, b) => ((b.score || 0) - (a.score || 0)) || byDate(a, b));
+  return rows;
 }
 
 function renderTabs() {
   const counts = {};
   state.items.forEach(it => counts[it.category] = (counts[it.category] || 0) + 1);
-  const cats = ["전체", ...Object.keys(counts)];
+  const known = state.order.filter(c => counts[c]);
+  const extra = Object.keys(counts).filter(c => !state.order.includes(c));
+  const cats = ["전체", ...known, ...extra];
   const box = $("tabs");
   box.replaceChildren();
   cats.forEach(c => {
@@ -120,7 +132,8 @@ function render() {
     const a = el("a", { href: safeUrl(it.originallink || it.link), target: "_blank", rel: "noopener noreferrer", textContent: it.title });
     const foot = el("div", { className: "foot" }, [
       el("span", { className: "chip", textContent: it.category }),
-      el("span", { textContent: "검색어: " + it.query }),
+      el("span", { className: "chip score", textContent: "관련도 " + (it.score ?? 0) }),
+      el("span", { textContent: "검색어: " + (it.queries ? it.queries.join(", ") : it.query) }),
       el("span", { textContent: host(it.originallink || it.link) }),
       el("span", { textContent: fmtDate(it.pubDate) }),
     ]);
@@ -132,6 +145,7 @@ fetch("data/news.json", { cache: "no-store" })
   .then(r => { if (!r.ok) throw new Error(r.status); return r.json(); })
   .then(d => {
     state.items = d.items || [];
+    state.order = d.category_order || [];
     $("meta").textContent = `수집 시각 ${fmtDate(d.generated_at)} · 최근 ${d.window_hours}시간 · 총 ${d.count.toLocaleString()}건`;
     if (d.errors && d.errors.length) {
       $("notice").append(el("div", { className: "notice",
@@ -143,6 +157,7 @@ fetch("data/news.json", { cache: "no-store" })
 
 $("q").addEventListener("input", e => { state.q = e.target.value; render(); });
 $("rel").addEventListener("change", e => { state.rel = e.target.checked; render(); });
+$("sort").addEventListener("change", e => { state.sort = e.target.value; render(); });
 </script>
 </body>
 </html>
