@@ -12,7 +12,13 @@
   - 용어 점수: 핵심 용어 제목 4점/요약 2점, 보조 용어 제목 2점/요약 1점 (용어당 1회)
   - 구문 가점(must_include): 제목 3점, 요약 1점
   - 중복 가점: 서로 다른 검색어에 추가로 걸릴 때마다 +1 (최대 +3)
+  - 제목에 AI 용어(AI·인공지능·딥러닝 등)가 있으면 +3
+  - 유사 기사 가점: 비슷한 제목의 기사가 여러 매체에서 보도되면 +1씩 (최대 +3)
 정렬은 score 내림차순, 같으면 최신순.
+
+유사 기사 정리: 제목이 비슷한 기사는 하나로 묶고, 주요 일간지·의료 전문지 기사를 대표로 남김
+  (해당 매체가 없으면 점수가 높고 먼저 나온 기사). 묶인 나머지는 similar_count 로만 표시.
+제외 주제: exclude_topics (제약사 신약개발 등)는 제목에 있거나 요약에 2개 이상 있으면 제외.
 """
 import argparse
 import html
@@ -24,6 +30,7 @@ import time
 from datetime import datetime, timedelta, timezone
 from email.utils import parsedate_to_datetime
 from pathlib import Path
+from urllib.parse import urlparse
 
 import requests
 
@@ -97,9 +104,111 @@ def compile_cfg(cfg: dict) -> dict:
         "order": order,
         "fallback": cfg.get("fallback_category") or order[-1],
         "must": rx(cfg.get("must_include", [])),
-        "gate": rx(cfg.get("require_any", [])),
+        # 게이트: 그룹마다 하나 이상 일치해야 통과 (예: AI 용어 그룹 AND 의료 용어 그룹)
+        # (패턴, 제목에서만 찾을지) — title_required 에 적힌 그룹은 제목에 있어야 통과
+        "gate": [(rx(g), name in cfg.get("title_required", []), cfg.get("summary_min_hits", 2))
+                 for name, g in cfg.get("require_all", {}).items()]
+                + ([(rx(cfg["require_any"]), False)] if cfg.get("require_any") else []),
+        "exclude_any": rx(cfg.get("exclude_any", [])),
+        "ai_title": rx(next(iter(cfg.get("require_all", {}).values()), [])),  # 첫 그룹 = AI 용어
         "exclude": [w.lower() for w in cfg.get("exclude_words", [])],
+        "off_topic": rx(cfg.get("exclude_topics", [])),
+        "sources": {k: [d.lower() for d in v] for k, v in cfg.get("preferred_sources", {}).items()},
+        "sim": float(cfg.get("dedupe_similarity", 0.4)),
+        "assist": tuple(cfg.get("dedupe_assist", [0.25, 0.3])),
     }
+
+
+def host_of(url: str) -> str:
+    h = (urlparse(url).hostname or "").lower()
+    return h[4:] if h.startswith("www.") else h
+
+
+def source_type(url: str, cc: dict) -> str:
+    """주요 일간지(major) / 의료 전문지(medical) / 기타(other)."""
+    h = host_of(url)
+    for kind, domains in cc["sources"].items():
+        if any(h == d or h.endswith("." + d) for d in domains):
+            return kind
+    return "other"
+
+
+def passes_gate(art: dict, cc: dict) -> bool:
+    """AI 용어 그룹과 의료 용어 그룹을 모두 만족해야 통과 (의료 용어는 제목에 있어야 함)."""
+    t, s = art["title"], art["summary"]
+    for pats, title_only, min_hits in cc["gate"]:
+        if any(p.search(t) for p in pats):
+            continue
+        if title_only:  # 제목에 없으면 요약에서 서로 다른 용어가 min_hits개 이상 있어야 통과
+            if sum(1 for p in pats if p.search(s)) >= min_hits:
+                continue
+            return False
+        if not any(p.search(s) for p in pats):
+            return False
+    return True
+
+
+def is_off_topic(art: dict, cc: dict) -> bool:
+    """제목에 제외 주제가 있거나, 요약에 서로 다른 제외 패턴이 2개 이상이면 True."""
+    pats = cc["off_topic"]
+    if not pats:
+        return False
+    if any(p.search(art["title"]) for p in pats):
+        return True
+    return sum(1 for p in pats if p.search(art["summary"])) >= 2
+
+
+def _title_grams(title: str) -> set:
+    t = re.sub(r"\[[^\]]*\]|\([^)]*\)|【[^】]*】", "", title)
+    t = re.sub(r"[^0-9a-zA-Z가-힣]", "", t).lower()
+    return {t[i:i + 2] for i in range(len(t) - 1)} if len(t) >= 2 else {t}
+
+
+def dedupe_similar(results: list, cc: dict) -> list:
+    """제목이 비슷한 기사를 묶어 대표 1건만 남긴다 (바이그램 자카드 유사도)."""
+    n = len(results)
+    grams = [_title_grams(a["title"]) for a in results]
+    sgrams = [_title_grams(a["summary"][:100]) for a in results]
+    t_min, s_min = cc["assist"]  # 제목이 조금 달라도 요약이 거의 같으면 같은 기사로 본다
+    parent = list(range(n))
+
+    def find(x):
+        while parent[x] != x:
+            parent[x] = parent[parent[x]]
+            x = parent[x]
+        return x
+
+    for i in range(n):
+        gi = grams[i]
+        for j in range(i + 1, n):
+            gj = grams[j]
+            if not gi or not gj:
+                continue
+            inter = len(gi & gj)
+            sim = inter / (len(gi) + len(gj) - inter)
+            if sim >= cc["sim"]:
+                parent[find(i)] = find(j)
+            elif sim >= t_min:
+                si, sj = sgrams[i], sgrams[j]
+                if si and sj and len(si & sj) / len(si | sj) >= s_min:
+                    parent[find(i)] = find(j)
+
+    groups = {}
+    for i in range(n):
+        groups.setdefault(find(i), []).append(results[i])
+
+    kept = []
+    for members in groups.values():
+        for m in members:
+            m["source_type"] = source_type(m["originallink"], cc)
+        # 대표 선정: 주요 일간지·의료 전문지 우선 → 관련도 높은 순 → 먼저 나온 순
+        members.sort(key=lambda m: (m["source_type"] == "other", -m["score"], m["pubDate"]))
+        rep, others = members[0], members[1:]
+        rep["similar_count"] = len(others)
+        rep["similar_sources"] = sorted({host_of(o["originallink"]) for o in others})[:5]
+        rep["score"] += min(len(others), 3)
+        kept.append(rep)
+    return kept
 
 
 def _score(patterns, title, summary, w_title, w_sum):
@@ -130,8 +239,9 @@ def classify_and_score(art: dict, cc: dict) -> None:
 
     phrase = _score(cc["must"], t, s, 3, 1)
     multi = min(len(art["queries"]) - 1, 3)
+    ai_in_title = 3 if any(p.search(t) for p in cc["ai_title"]) else 0  # 제목에 AI 용어가 있어야 핵심 기사
     art["category"] = category
-    art["score"] = ts.get(category, 0) + phrase + multi
+    art["score"] = ts.get(category, 0) + phrase + multi + ai_in_title
 
 
 # ---------------------------------------------------------------------- main
@@ -152,7 +262,7 @@ def main():
     cutoff = datetime.now(KST) - timedelta(hours=args.hours)
 
     by_link, by_title, results = {}, {}, []
-    errors, dropped = [], 0
+    errors, dropped, dropped_topic = [], 0, 0
     with requests.Session() as s:
         for q in cc["query_cat"]:  # 검색어는 중복 없이 1회씩
             try:
@@ -160,10 +270,16 @@ def main():
                     full = art["title"] + " " + art["summary"]
                     if any(w in full.lower() for w in cc["exclude"]):
                         continue
-                    # 네이버는 단어를 따로 매칭하므로, 의료 AI 관련 구문이 있어야 통과
-                    if cc["gate"] and not any(
-                            r.search(art["title"]) or r.search(art["summary"]) for r in cc["gate"]):
+                    # 네이버는 단어를 따로 매칭하므로, AI 용어와 의료 용어가 모두 있어야 통과
+                    if cc["gate"] and not passes_gate(art, cc):
                         dropped += 1
+                        continue
+                    # 건강관리·보험사·마이크로바이옴 등 업무와 무관한 헬스케어 기사
+                    if any(r.search(full) for r in cc["exclude_any"]):
+                        dropped_topic += 1
+                        continue
+                    if is_off_topic(art, cc):  # 제약사 신약개발 등 업무와 무관한 주제
+                        dropped_topic += 1
                         continue
                     nt = norm_title(art["title"])
                     prev = by_link.get(art["originallink"]) or by_title.get(nt)
@@ -182,6 +298,9 @@ def main():
     for art in results:
         classify_and_score(art, cc)
         art["query"] = art["queries"][0]
+    before = len(results)
+    results = dedupe_similar(results, cc)  # 비슷한 제목 기사는 대표 1건만
+    merged = before - len(results)
     # 관련도 내림차순, 같으면 최신순 (pubDate 는 모두 +09:00 ISO 문자열이라 문자열 비교 가능)
     results.sort(key=lambda a: (a["score"], a["pubDate"]), reverse=True)
 
@@ -190,6 +309,8 @@ def main():
         "window_hours": args.hours,
         "count": len(results),
         "filtered_out": dropped,
+        "filtered_off_topic": dropped_topic,
+        "merged_similar": merged,
         "category_order": cc["order"],
         "errors": errors,
         "items": results,
@@ -198,7 +319,8 @@ def main():
     Path(args.out).write_text(json.dumps(out, ensure_ascii=False, indent=2),
                               encoding="utf-8")
     per_cat = {c: sum(1 for a in results if a["category"] == c) for c in cc["order"]}
-    print(f"{len(results)}건 저장 → {args.out} (필터 제외 {dropped}건, 오류 {len(errors)}건)")
+    print(f"{len(results)}건 저장 → {args.out} (필터 제외 {dropped}건, 제외 주제 {dropped_topic}건, "
+          f"유사 기사 정리 {merged}건, 오류 {len(errors)}건)")
     print(per_cat)
 
 
