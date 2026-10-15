@@ -8,6 +8,12 @@ from collections import Counter
 from datetime import datetime, timedelta, timezone
 from pathlib import Path
 
+try:
+    import tracked
+    TRACKED = tracked.load("keywords.json")
+except Exception:  # keywords.json 이 없으면 키워드 집계 생략
+    TRACKED = []
+
 KST = timezone(timedelta(hours=9))
 DATA = Path("data")
 WEEKS = DATA / "weeks"
@@ -62,7 +68,7 @@ def main():
             incoming.append({**it, "region": "정부", "category": it.get("agency"), "originallink": it.get("link"),
                              "score": 0, "queries": [it.get("kind")], "source_type": ""})
         order += gv.get("category_order", [])
-        runinfo["정부"] = {"generated_at": gv.get("generated_at"), "errors": [e["query"].split(" (")[0] for e in gv.get("errors", [])]}
+        runinfo["정부"] = {"generated_at": gv.get("generated_at"), "errors": [e["query"].split(" (")[0] + " - " + e.get("error", "") for e in gv.get("errors", [])]}
 
     WEEKS.mkdir(parents=True, exist_ok=True)
     path = WEEKS / f"{wk}.json"
@@ -94,6 +100,10 @@ def main():
             for k in ks:
                 index[k] = it
             added += 1
+
+    if TRACKED:  # 설정 키워드(keywords.json terms) 일치 목록을 기사마다 저장 → 키워드 집계용
+        for it in cur["items"]:
+            it["kw"] = tracked.hits(it["title"], it.get("summary", ""), TRACKED)
 
     cur["week"], cur["start"], cur["end"] = wk, start.isoformat(), end.isoformat()
     cur["updated_at"] = now.isoformat()
