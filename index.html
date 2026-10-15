@@ -61,6 +61,7 @@
       <option value="date">최신순</option>
     </select>
     <label class="toggle"><input type="checkbox" id="rel"> 의료·병원·헬스 관련어 포함 기사만</label>
+    <label class="toggle"><input type="checkbox" id="aiT"> 제목에 AI 포함 기사만</label>
   </div>
 </div></div>
 
@@ -71,8 +72,9 @@
 </div>
 
 <script>
-const REL = /의료|병원|헬스|환자|진료|임상|의사|간호|보건|의약|바이오|건강/;
-const state = { items: [], order: [], cat: "전체", q: "", rel: false, sort: "score" };
+const REL = /의료|병원|헬스|환자|진료|임상|의사|간호|보건|의약|바이오|건강|health|hospital|clinic|medical|patient/i;
+const AI_T = /(^|[^A-Za-z])AI(?![A-Za-z])|인공지능|딥러닝|머신러닝|생성형|LLM|언어\s?모델|챗\s?GPT|파운데이션\s?모델|디지털의료기기/i;
+const state = { items: [], order: [], cat: "전체", q: "", rel: false, aiT: false, sort: "score" };
 const $ = id => document.getElementById(id);
 
 function fmtDate(iso) {
@@ -97,6 +99,7 @@ function filtered() {
     if (state.cat !== "전체" && it.category !== state.cat) return false;
     const text = (it.title + " " + it.summary);
     if (state.rel && !REL.test(text)) return false;
+    if (state.aiT && !AI_T.test(it.title)) return false;
     if (q && !text.toLowerCase().includes(q)) return false;
     return true;
   });
@@ -134,29 +137,48 @@ function render() {
       el("span", { className: "chip", textContent: it.category }),
       el("span", { className: "chip score", textContent: "관련도 " + (it.score ?? 0) }),
       el("span", { textContent: "검색어: " + (it.queries ? it.queries.join(", ") : it.query) }),
-      el("span", { textContent: host(it.originallink || it.link) }),
+      el("span", { textContent: it.global ? (it.sources || []).join(", ") + " (Google News)" : host(it.originallink || it.link) }),
+      ...(it.source_type === "major" ? [el("span", { className: "chip", textContent: "주요 일간지" })]
+        : it.source_type === "medical" ? [el("span", { className: "chip", textContent: "의료 전문지" })]
+        : it.source_type === "global_pref" ? [el("span", { className: "chip", textContent: "주요 매체" })] : []),
+      ...(it.similar_count ? [el("span", { className: "chip score", title: (it.similar_sources || []).join(", "),
+        textContent: "유사 기사 " + it.similar_count + "건" })] : []),
       el("span", { textContent: fmtDate(it.pubDate) }),
     ]);
-    list.append(el("article", {}, [el("h2", {}, [a]), el("p", { textContent: it.summary }), foot]));
+    list.append(el("article", {}, [el("h2", {}, [a]), (it.summary ? el("p", { textContent: it.summary }) : ""), foot]));
   });
 }
 
-fetch("data/news.json", { cache: "no-store" })
-  .then(r => { if (!r.ok) throw new Error(r.status); return r.json(); })
-  .then(d => {
-    state.items = d.items || [];
-    state.order = d.category_order || [];
-    $("meta").textContent = `수집 시각 ${fmtDate(d.generated_at)} · 최근 ${d.window_hours}시간 · 총 ${d.count.toLocaleString()}건`;
-    if (d.errors && d.errors.length) {
+const getJson = u => fetch(u, { cache: "no-store" }).then(r => { if (!r.ok) throw new Error(r.status); return r.json(); });
+Promise.allSettled([getJson("data/news.json"), getJson("data/global_news.json")]).then(([kr, gl]) => {
+  if (kr.status !== "fulfilled") throw new Error(kr.reason.message);
+  const d = kr.value;
+  state.items = d.items || [];
+  state.order = (d.category_order || []).slice();
+  let extra = "";
+  if (gl.status === "fulfilled") {
+    const g = gl.value;
+    (g.items || []).forEach(it => {
+      state.items.push({ ...it, summary: "", global: true, originallink: it.link,
+        queries: it.queries, source_type: it.preferred ? "global_pref" : "" });
+    });
+    (g.category_order || []).forEach(c => { if (!state.order.includes(c)) state.order.push(c); });
+    extra = ` · 해외(Google News) ${(g.count || 0).toLocaleString()}건`;
+    if (g.errors && g.errors.length)
       $("notice").append(el("div", { className: "notice",
-        textContent: `일부 검색어(${d.errors.length}개) 수집에 실패했습니다: ` + d.errors.map(e => e.query).join(", ") }));
-    }
-    render();
-  })
-  .catch(e => { $("meta").textContent = "데이터를 불러오지 못했습니다 (" + e.message + "). data/news.json이 있는지 확인해 주세요."; });
+        textContent: `해외 검색어 ${g.errors.length}건 수집 실패: ` + g.errors.map(e => e.query).join(", ") }));
+  }
+  $("meta").textContent = `수집 시각 ${fmtDate(d.generated_at)} · 국내 최근 ${d.window_hours}시간 ${d.count.toLocaleString()}건${extra}`;
+  if (d.errors && d.errors.length) {
+    $("notice").append(el("div", { className: "notice",
+      textContent: `일부 검색어(${d.errors.length}개) 수집에 실패했습니다: ` + d.errors.map(e => e.query).join(", ") }));
+  }
+  render();
+}).catch(e => { $("meta").textContent = "데이터를 불러오지 못했습니다 (" + e.message + "). data/news.json이 있는지 확인해 주세요."; });
 
 $("q").addEventListener("input", e => { state.q = e.target.value; render(); });
 $("rel").addEventListener("change", e => { state.rel = e.target.checked; render(); });
+$("aiT").addEventListener("change", e => { state.aiT = e.target.checked; render(); });
 $("sort").addEventListener("change", e => { state.sort = e.target.value; render(); });
 </script>
 </body>
