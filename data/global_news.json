@@ -1,8 +1,8 @@
 {
-  "generated_at": "2026-10-15T15:49:42.701108+09:00",
+  "generated_at": "2026-10-15T16:16:21.508635+09:00",
   "window_hours": 48,
-  "count": 59,
-  "filtered_out": 520,
+  "count": 61,
+  "filtered_out": 518,
   "category_order": [
     "해외 정책·규제 (미국)",
     "해외 정책·규제 (유럽·영국)",
@@ -140,6 +140,22 @@
       "score": 4
     },
     {
+      "title": "NHS Communications AI Operating Framework v2",
+      "link": "https://news.google.com/rss/articles/CBMiigFBVV95cUxQdzd4N3VFb3pSTk96Y1h6ajlFOTB4OTVzaXVMWmsxTktqWmN5dnVQblJod0EzenFqS2ItTE9uOExweEpveE5mTFU2YkhtS0N4elBXdGVUNjlGNXhQOHFiaXMxc3ZmckVIaWhScGpTbTRtOFpYMlRYQ0JiNkhHTW0xOHRzMXYwRTZpcVE?oc=5",
+      "source": "The NHS Alliance",
+      "source_url": "https://thenhsalliance.org",
+      "pubDate": "2026-10-15T09:00:00+09:00",
+      "category": "해외 의료기관 AI 도입·운영",
+      "queries": [
+        "health system AI governance"
+      ],
+      "sources": [
+        "The NHS Alliance"
+      ],
+      "preferred": true,
+      "score": 3
+    },
+    {
       "title": "Artificial intelligence-enabled clinical phenotyping of human brown fat",
       "link": "https://news.google.com/rss/articles/CBMiX0FVX3lxTE9GZTlIVXVnazYxNTFrWEppcUVrV3ZIVUVNY2RQQURkSGtDR29wcnJ1SUxqSnNlc0ZTVFpnN0RORDBqNFRHWFZBTXZiMWp0TnBPMC1uZnZIWkJwTHI2UGJn?oc=5",
       "source": "Nature",
@@ -203,6 +219,24 @@
         "TechTarget"
       ],
       "preferred": true,
+      "score": 3
+    },
+    {
+      "title": "The barriers to realizing AI’s promise in health care",
+      "link": "https://news.google.com/rss/articles/CBMif0FVX3lxTE41T2RHYkxEdHBjY25IRWptZG83b1haVFNlTWxjNWJfV0NERjhpaEhTVFA4RmJlUmJ3cDU4YUVMX21WM05Tb3FYeVJGeWdROTVrSkNVcUt3Y2F6eWx0X0lMN1NjSDF2Wm5WM2ZFeG1najNkV3ZndnJwUjluLXhOLTg?oc=5",
+      "source": "mezha.net",
+      "source_url": "https://mezha.net",
+      "pubDate": "2026-10-14T21:34:09+09:00",
+      "category": "해외 의료기관 AI 도입·운영",
+      "queries": [
+        "Mayo Clinic AI",
+        "health system AI governance"
+      ],
+      "sources": [
+        "mezha.net",
+        "Axios"
+      ],
+      "preferred": false,
       "score": 3
     },
     {
@@ -374,6 +408,38 @@
       "score": 2
     },
     {
+      "title": "MHRA sets out 2030 strategy for AI, data and faster regulatory pathways",
+      "link": "https://news.google.com/rss/articles/CBMiogFBVV95cUxNSG1TNFRVNktSRUNweWFwbGd6MGN3VnZ2NVFhMndtdG9VbGZUbGxfZEQ1cHhaQ0dmSDBEdWZUTGVvUHhvdk9IcUZtVFJTejRULThjTUQtdUlkUWJ0dVcycXUxalBEa1ZEUHAtaC1ELWE5NUkxOTFxU0ZGbXVhMXJsYmQ0RmszSi1ZN1liQzh4cEdaV0JsYzdMMVBSNENUZlBwTWc?oc=5",
+      "source": "London Daily News",
+      "source_url": "https://www.londondaily.news",
+      "pubDate": "2026-10-15T15:52:16+09:00",
+      "category": "해외 정책·규제 (유럽·영국)",
+      "queries": [
+        "MHRA AI medical device"
+      ],
+      "sources": [
+        "London Daily News"
+      ],
+      "preferred": false,
+      "score": 1
+    },
+    {
+      "title": "A 3-step buyer’s guide for evaluating radiology AI solutions",
+      "link": "https://news.google.com/rss/articles/CBMitAFBVV95cUxNMHNjNldPUW44VlJ2bGVjMHIxWm1GdlMyMmdFcXcyZjVNZDNOYTNJckRuUEUtVTRLcngyNjEzbXAyT1lFcDNvUE0zeHBlaWxIeUhwMWRUdGFUbDZYZVRVS1ktQ3YtZVVGQjV2RUVrVnJQSXhOUUdOaDQ5WGYxRHd4emNpUUlaX2pKMUMzdHJ5VVZMUTFOZlJGdEpHN3dIQ0QtTHIxVWZFanF4NzZ4T1o1dWp1Vmg?oc=5",
+      "source": "Radiology Business",
+      "source_url": "https://radiologybusiness.com",
+      "pubDate": "2026-10-15T15:28:01+09:00",
+      "category": "해외 의료기관 AI 도입·운영",
+      "queries": [
+        "Mayo Clinic AI"
+      ],
+      "sources": [
+        "Radiology Business"
+      ],
+      "preferred": false,
+      "score": 1
+    },
+    {
       "title": "ThinkSono Secures FDA Clearance for Ultrasound AI Software for Blood Clots",
       "link": "https://news.google.com/rss/articles/CBMiswFBVV95cUxPdGtUb01kelczNDZrWkdnbFRkbG1vTTcxN1R2U0FMSWpENmxDbGwwRk9wRm55a1dDWExYNTlOUGpGU3E3QTRhQzhjakRoOXlCV1A4NDZMMVVrNzdBamRTbUoyMDdvNW10Nzc5UThRd0ZXc01NLVpXQmlIVjZrT0xvR182dFZUaDM2ZVlnMm1meVBMaXplejhSOTY4c0xCNHQ5dWlTM3diUGdRWDVWeEk1TlpnQQ?oc=5",
       "source": "Medical Product Outsourcing",
@@ -529,22 +595,6 @@
       ],
       "sources": [
         "Medical Xpress"
-      ],
-      "preferred": false,
-      "score": 1
-    },
-    {
-      "title": "The barriers to realizing AI’s promise in health care",
-      "link": "https://news.google.com/rss/articles/CBMif0FVX3lxTE41T2RHYkxEdHBjY25IRWptZG83b1haVFNlTWxjNWJfV0NERjhpaEhTVFA4RmJlUmJ3cDU4YUVMX21WM05Tb3FYeVJGeWdROTVrSkNVcUt3Y2F6eWx0X0lMN1NjSDF2Wm5WM2ZFeG1najNkV3ZndnJwUjluLXhOLTg?oc=5",
-      "source": "mezha.net",
-      "source_url": "https://mezha.net",
-      "pubDate": "2026-10-14T21:34:09+09:00",
-      "category": "해외 의료기관 AI 도입·운영",
-      "queries": [
-        "Mayo Clinic AI"
-      ],
-      "sources": [
-        "mezha.net"
       ],
       "preferred": false,
       "score": 1
@@ -961,22 +1011,6 @@
       ],
       "sources": [
         "HTN Health Tech News"
-      ],
-      "preferred": false,
-      "score": 1
-    },
-    {
-      "title": "NHA Partners with IISc and IIT Kanpur on Health AI",
-      "link": "https://news.google.com/rss/articles/CBMixgFBVV95cUxOOEdpMi1hNU9oT1FXYS10MW1ianozZVdUUUc0X1JpZGxlaGY0Yi1fbnhSNURXNjlHRzZqM1A3Ymx0X2FlQ0RERW9fVXJHOFl0UHg3YnYxU0ZUY0U4VDlqZVpBTlBmUWVPcWo0SE1lckFkNXhNZ3ZGNHpvVVkyVmwxdldoMWdjdlU0WEhVYTBsT0Jmam12eU1lclV5SkFkQ0w3OGNucExDa2FrRTBiRzJtbEo1VXNZb1MyNUZBX3hPVXhlbDNYNlE?oc=5",
-      "source": "Voice of Healthcare",
-      "source_url": "https://vohnetwork.com",
-      "pubDate": "2026-10-13T16:06:00+09:00",
-      "category": "해외 의료기관 AI 도입·운영",
-      "queries": [
-        "health system AI governance"
-      ],
-      "sources": [
-        "Voice of Healthcare"
       ],
       "preferred": false,
       "score": 1
