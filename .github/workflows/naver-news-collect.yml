@@ -32,6 +32,8 @@ jobs:
         run: python gov_news.py --config gov_sources.json --out data/gov_news.json
       - name: 주간 누적 저장 (data/weeks)
         run: python archive.py
+      - name: 월간 집계 (data/months)
+        run: python monthly.py
       - name: Commit result
         run: |
           git config user.name "github-actions"
@@ -40,5 +42,6 @@ jobs:
           [ -f data/global_news.json ] && git add data/global_news.json || true
           [ -f data/gov_news.json ] && git add data/gov_news.json || true
           git add data/weeks
+          git add data/months || true
           git diff --staged --quiet || git commit -m "chore: update news data"
           git push
