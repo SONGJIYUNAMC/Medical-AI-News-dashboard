@@ -91,6 +91,8 @@ def main():
 
     cfg = json.loads(Path(args.config).read_text(encoding="utf-8"))
     exclude = [w.lower() for w in cfg.get("exclude_words", [])]
+    require = [re.compile(p, re.I) for p in cfg.get("require_any", [])]
+    dropped = 0
     cutoff = datetime.now(KST) - timedelta(hours=args.hours)
 
     seen_links, seen_titles, results = set(), set(), []
@@ -102,6 +104,11 @@ def main():
                     for art in fetch(q, cutoff, s, headers):
                         text = (art["title"] + " " + art["summary"]).lower()
                         if any(w in text for w in exclude):
+                            continue
+                        # 네이버는 단어를 따로 매칭하므로, 제목·요약에 지정 구문이 있어야 통과
+                        if require and not any(
+                                r.search(art["title"] + " " + art["summary"]) for r in require):
+                            dropped += 1
                             continue
                         nt = norm_title(art["title"])
                         if art["originallink"] in seen_links or nt in seen_titles:
@@ -119,13 +126,14 @@ def main():
         "generated_at": datetime.now(KST).isoformat(),
         "window_hours": args.hours,
         "count": len(results),
+        "filtered_out": dropped,
         "errors": errors,
         "items": results,
     }
     Path(args.out).parent.mkdir(parents=True, exist_ok=True)
     Path(args.out).write_text(json.dumps(out, ensure_ascii=False, indent=2),
                               encoding="utf-8")
-    print(f"{len(results)}건 저장 → {args.out} (오류 {len(errors)}건)")
+    print(f"{len(results)}건 저장 → {args.out} (필터 제외 {dropped}건, 오류 {len(errors)}건)")
 
 
 if __name__ == "__main__":
