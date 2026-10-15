@@ -181,32 +181,18 @@ function renderTabs() {
   });
 }
 
-const STOP = new Set(("AI,인공지능,의료,병원,헬스케어,기반,활용,개발,도입,추진,지원,강화,구축,협력,협약,체결,확대,통해,위한,대한,관련,이후,올해,내년,지난,오늘,최근,시대,분야,기술,서비스,사업,기업,국내,해외,세계,글로벌,신규,새로운,첫,최초,개최,발표,공개,출시,선정,진행,운영,제공,나선다,나서,열려,연다,밝혀,전망,가능,필요,중심,방안,계획,정부,대표,한국,바이오,맞손,넘어,논의,참여,지역,시스템,통합,혁신,전문,산업,플랫폼,환자,시작,함께,나란히,손잡고,손잡아,도약,변화,미래,현장,교수,연구,연구팀,결과,효과,솔루션,프로그램,센터,병원장,이사장,AI·,the,for,and,with,from,that,this,new,how,why,into,its,are,has,will,can,using,use,health,medical,care,healthcare,hospital,hospitals,system,systems,clinical,patient,patients,says,said,could,over,more,than,after,about").split(","));
-const JOSA = /(으로|에서|에게|까지|부터|이라|라는|에는|으로는|에도|와의|과의|이다|한다|하는|하며|했다|된다|한|은|는|이|가|을|를|의|에|와|과|로|도|만)$/;
-function tokens(title) {
-  const out = new Set();
-  (title.match(/[가-힣]{2,}|[A-Za-z][A-Za-z0-9\-]{2,}/g) || []).forEach(t => {
-    let w = t;
-    if (/[가-힣]/.test(w)) { const s = w.replace(JOSA, ""); if (s.length >= 2) w = s; }
-    else w = w.toLowerCase();
-    if (!STOP.has(w) && !STOP.has(w.toUpperCase()) && w.length >= 2) out.add(w);
-  });
-  return out;
-}
-function hot(items, minN = 3) {
+function kwCount(items) {
   const m = new Map();
-  items.forEach(it => tokens(it.title).forEach(w => {
-    const e = m.get(w) || { word: w, n: 0, weight: 0, items: [] };
-    e.n++; e.weight += 1 + (it.similar_count || 0); e.items.push(it); m.set(w, e);
-  }));
-  return [...m.values()].filter(e => e.n >= minN).sort((a, b) => b.weight - a.weight || b.n - a.n);
+  items.forEach(it => (it.kw || []).forEach(w => m.set(w, (m.get(w) || 0) + 1)));
+  return m;
 }
+
 function renderHot() {
   const box = $("hot");
   const cur = state.items.filter(it => regionOf(it) === state.region);
   box.replaceChildren();
   if (cur.length < 5) return;
-  const prevMap = state.prevItems ? new Map(hot(state.prevItems.filter(it => regionOf(it) === state.region), 1).map(e => [e.word, e])) : null;
+  const prevMap = state.prevItems ? kwCount(state.prevItems.filter(it => regionOf(it) === state.region)) : null;
   // 1) 많이 다뤄진 이슈: 유사 기사(여러 매체 보도)가 많은 순
   const issues = cur.filter(it => (it.similar_count || 0) > 0)
     .sort((a, b) => (b.similar_count - a.similar_count) || ((b.score || 0) - (a.score || 0))).slice(0, 3);
@@ -215,17 +201,17 @@ function renderHot() {
       el("a", { href: safeUrl(it.originallink || it.link), target: "_blank", rel: "noopener noreferrer", textContent: it.title }),
       el("span", { className: "sub", textContent: ` · 유사 기사 ${it.similar_count}건` })])))
       : el("div", { className: "sub", textContent: "여러 매체가 함께 보도한 이슈가 아직 없습니다." })]);
-  // 2) 키워드 Top 10 (제목 기준, 이전 기간 대비 증감)
-  const kws = hot(cur, 3).slice(0, 10);
-  const c2 = el("div", {}, [el("h3", { textContent: "많이 언급된 키워드 Top 10" }),
-    kws.length ? el("div", { className: "kw" }, kws.map(e => {
-      const p = prevMap ? prevMap.get(e.word) : null;
-      const tag = !prevMap ? "" : !p ? " 신규" : e.n > p.n ? ` ▲${e.n - p.n}` : e.n < p.n ? ` ▼${p.n - e.n}` : "";
-      const b = el("button", { type: "button", title: "클릭하면 이 키워드로 검색", textContent: `${e.word} ${e.n}` });
+  // 2) 설정 키워드 Top 10 (keywords.json 에 정한 키워드만, 이전 기간 대비 증감)
+  const kws = [...kwCount(cur)].sort((a, b) => b[1] - a[1]).slice(0, 10);
+  const c2 = el("div", {}, [el("h3", { textContent: "설정 키워드 언급 Top 10" }),
+    kws.length ? el("div", { className: "kw" }, kws.map(([word, n]) => {
+      const p = prevMap ? (prevMap.get(word) || 0) : null;
+      const tag = p === null ? "" : p === 0 ? " 신규" : n > p ? ` ▲${n - p}` : n < p ? ` ▼${p - n}` : "";
+      const b = el("button", { type: "button", title: "클릭하면 이 키워드로 검색", textContent: `${word} ${n}` });
       if (tag) b.append(el("span", { className: tag.includes("▼") ? "down" : "up", textContent: tag }));
-      b.onclick = () => { $("q").value = e.word; state.q = e.word; render(); };
+      b.onclick = () => { $("q").value = word; state.q = word; render(); };
       return b;
-    })) : el("div", { className: "sub", textContent: "기사가 더 쌓이면 표시됩니다." })]);
+    })) : el("div", { className: "sub", textContent: "설정 키워드가 포함된 기사가 아직 없습니다(누적 데이터 생성 후 표시)." })]);
   // 3) 주요 기사: 국내=주요 일간지·의료 전문지 보도, 해외=주요 해외 매체, 정부=법령·가이드라인
   let c3Title, pool, c3Note;
   if (state.region === "정부") {
