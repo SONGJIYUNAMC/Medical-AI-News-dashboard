@@ -45,6 +45,13 @@
   article p { margin: 0 0 8px; font-size: 14px; color: var(--text); }
   .foot { display: flex; flex-wrap: wrap; gap: 8px; align-items: center; font-size: 12px; color: var(--muted); }
   .chip { background: var(--chip); color: var(--teal); padding: 1px 8px; border-radius: 10px; }
+  details.trend { margin: 10px 16px 0; font-size: 13px; }
+  details.trend summary { cursor: pointer; color: var(--muted); }
+  .trend table { border-collapse: collapse; margin-top: 8px; width: 100%; background: var(--card); }
+  .trend th, .trend td { border: 1px solid var(--line); padding: 4px 8px; text-align: right; white-space: nowrap; }
+  .trend th:first-child, .trend td:first-child { text-align: left; white-space: normal; }
+  .trend th { background: var(--chip); }
+  .trend { overflow-x: auto; }
   .empty { text-align: center; color: var(--muted); padding: 40px 0; }
 </style>
 </head>
@@ -58,6 +65,8 @@
   <div class="tabs region" id="regions"></div>
   <div class="tabs" id="tabs"></div>
   <div class="row">
+    <select id="period" aria-label="기간"></select>
+    <select id="day" aria-label="수집일"><option value="전체">전체 수집일</option></select>
     <input type="search" id="q" placeholder="제목·요약 검색">
     <select id="sort" aria-label="정렬">
       <option value="score">관련도순</option>
@@ -65,19 +74,21 @@
     </select>
     <label class="toggle"><input type="checkbox" id="rel"> 의료·병원·헬스 관련어 포함 기사만</label>
     <label class="toggle"><input type="checkbox" id="aiT"> 제목에 AI 포함 기사만</label>
+    <button class="tab" id="csv" type="button">CSV 내려받기</button>
   </div>
 </div></div>
 
 <div class="wrap">
   <div class="meta" id="meta">불러오는 중…</div>
   <div id="notice"></div>
+  <details class="trend" id="trendBox"><summary>기간 요약 (카테고리별 건수)</summary><div id="trend"></div></details>
   <main id="list"></main>
 </div>
 
 <script>
 const REL = /의료|병원|헬스|환자|진료|임상|의사|간호|보건|의약|바이오|건강|health|hospital|clinic|medical|patient/i;
 const AI_T = /(^|[^A-Za-z])AI(?![A-Za-z])|인공지능|딥러닝|머신러닝|생성형|LLM|언어\s?모델|챗\s?GPT|파운데이션\s?모델|디지털의료기기/i;
-const state = { items: [], order: [], region: "국내", cat: "전체", q: "", rel: false, aiT: false, sort: "score" };
+const state = { items: [], order: [], period: "", day: "전체", weeksLoaded: [], manifest: null, region: "국내", cat: "전체", q: "", rel: false, aiT: false, sort: "score" };
 const $ = id => document.getElementById(id);
 
 function fmtDate(iso) {
@@ -100,6 +111,7 @@ function filtered() {
   const q = state.q.trim().toLowerCase();
   const rows = state.items.filter(it => {
     if (regionOf(it) !== state.region) return false;
+    if (state.day !== "전체" && it.first_seen !== state.day) return false;
     if (state.cat !== "전체" && it.category !== state.cat) return false;
     const text = (it.title + " " + it.summary);
     if (state.rel && !REL.test(text)) return false;
@@ -162,13 +174,15 @@ function render() {
       ...(it.similar_count ? [el("span", { className: "chip score", title: (it.similar_sources || []).join(", "),
         textContent: "유사 기사 " + it.similar_count + "건" })] : []),
       el("span", { textContent: fmtDate(it.pubDate) }),
+      ...(it.first_seen ? [el("span", { className: "chip score", textContent: "수집 " + it.first_seen.slice(5) })] : []),
     ]);
     list.append(el("article", {}, [el("h2", {}, [a]), (it.summary ? el("p", { textContent: it.summary }) : ""), foot]));
   });
 }
 
 const getJson = u => fetch(u, { cache: "no-store" }).then(r => { if (!r.ok) throw new Error(r.status); return r.json(); });
-Promise.allSettled([getJson("data/news.json"), getJson("data/global_news.json"), getJson("data/gov_news.json")]).then(([kr, gl, gv]) => {
+function legacyLoad() {
+  return Promise.allSettled([getJson("data/news.json"), getJson("data/global_news.json"), getJson("data/gov_news.json")]).then(([kr, gl, gv]) => {
   if (kr.status !== "fulfilled") throw new Error(kr.reason.message);
   const d = kr.value;
   state.items = d.items || [];
@@ -205,7 +219,98 @@ Promise.allSettled([getJson("data/news.json"), getJson("data/global_news.json"),
   }
   render();
 }).catch(e => { $("meta").textContent = "데이터를 불러오지 못했습니다 (" + e.message + "). data/news.json이 있는지 확인해 주세요."; });
+}
 
+const weekLabel = w => `${w.week} (${(w.start || "").slice(5).replace("-", "/")}~${(w.end || "").slice(5).replace("-", "/")}, ${w.count.toLocaleString()}건)`;
+
+function buildPeriods() {
+  const ws = state.manifest;               // 최신 주가 앞
+  const sel = $("period");
+  sel.replaceChildren();
+  const opts = [[`n:1`, "이번 주(최신 주)"], [`n:2`, "최근 2주"], [`n:4`, "최근 4주(월간)"], [`n:8`, "최근 8주"]];
+  opts.forEach(([v, t]) => sel.append(el("option", { value: v, textContent: t })));
+  ws.forEach(w => sel.append(el("option", { value: "w:" + w.week, textContent: weekLabel(w) })));
+  sel.value = state.period || "n:1";
+  state.period = sel.value;
+}
+
+function weeksFor(period) {
+  const ws = state.manifest.map(w => w.week);
+  if (period.startsWith("w:")) return [period.slice(2)];
+  return ws.slice(0, parseInt(period.slice(2), 10));
+}
+
+function buildTrend(files) {
+  const single = files.length === 1;
+  const cols = single ? [...new Set(state.items.map(i => i.first_seen))].sort() : files.map(f => f.week).sort();
+  const colOf = it => single ? it.first_seen : it._week;
+  const rows = {};
+  state.items.forEach(it => {
+    const k = regionOf(it) + " · " + it.category;
+    (rows[k] = rows[k] || {})[colOf(it)] = ((rows[k] || {})[colOf(it)] || 0) + 1;
+  });
+  const t = el("table", {}, []);
+  t.append(el("tr", {}, [el("th", { textContent: "구분 · 카테고리" }), ...cols.map(c => el("th", { textContent: single ? c.slice(5) : c })), el("th", { textContent: "합계" })]));
+  Object.keys(rows).sort().forEach(k => {
+    const tot = cols.reduce((a, c) => a + (rows[k][c] || 0), 0);
+    t.append(el("tr", {}, [el("td", { textContent: k }), ...cols.map(c => el("td", { textContent: rows[k][c] || "" })), el("td", { textContent: tot })]));
+  });
+  $("trend").replaceChildren(t);
+  $("trendBox").style.display = state.items.length ? "" : "none";
+}
+
+async function loadPeriod() {
+  const wk = weeksFor(state.period);
+  const res = await Promise.allSettled(wk.map(w => getJson(`data/weeks/${w}.json`)));
+  const files = res.filter(r => r.status === "fulfilled").map(r => r.value);
+  state.items = []; state.order = [];
+  files.forEach(f => {
+    (f.items || []).forEach(it => state.items.push({ ...it, _week: f.week, gov: it.region === "정부", global: it.region === "해외" }));
+    (f.category_order || []).forEach(c => { if (!state.order.includes(c)) state.order.push(c); });
+  });
+  const days = [...new Set(state.items.map(i => i.first_seen).filter(Boolean))].sort().reverse();
+  const dsel = $("day");
+  dsel.replaceChildren(el("option", { value: "전체", textContent: "전체 수집일" }),
+    ...days.map(d => el("option", { value: d, textContent: d })));
+  state.day = "전체"; state.cat = "전체";
+  const f0 = files.slice().sort((a, b) => (b.updated_at || "").localeCompare(a.updated_at || ""))[0];
+  $("meta").textContent = `기간 ${wk.length === 1 ? wk[0] : wk[wk.length - 1] + " ~ " + wk[0]} · 누적 ${state.items.length.toLocaleString()}건` +
+    (f0 ? ` · 마지막 갱신 ${fmtDate(f0.updated_at)}` : "");
+  buildTrend(files);
+  render();
+}
+
+function showRunNotices(lr) {
+  $("notice").replaceChildren();
+  Object.entries(lr || {}).forEach(([r, v]) => {
+    if (v.errors && v.errors.length)
+      $("notice").append(el("div", { className: "notice",
+        textContent: `[${r}] 마지막 수집에서 ${v.errors.length}건 실패: ` + v.errors.join(", ") }));
+  });
+}
+
+function toCsv() {
+  const q = v => '"' + String(v ?? "").replace(/"/g, '""') + '"';
+  const head = ["수집일", "발행일", "구분", "카테고리", "제목", "출처", "링크", "관련도", "요약"];
+  const lines = filtered().map(it => [it.first_seen, (it.pubDate || "").slice(0, 10), regionOf(it), it.category, it.title,
+    it.gov ? it.agency : it.global ? (it.sources || []).join("/") : host(it.originallink || it.link),
+    it.originallink || it.link, it.score ?? "", it.summary].map(q).join(","));
+  const blob = new Blob(["\ufeff" + [head.map(q).join(","), ...lines].join("\r\n")], { type: "text/csv;charset=utf-8" });
+  const a = el("a", { href: URL.createObjectURL(blob), download: `news_${state.period.replace(":", "-")}_${state.region}.csv` });
+  document.body.append(a); a.click(); a.remove();
+}
+
+getJson("data/weeks/index.json").then(m => {
+  state.manifest = (m.weeks || []).slice().reverse();
+  if (!state.manifest.length) throw new Error("empty");
+  showRunNotices(m.last_run);
+  buildPeriods();
+  return loadPeriod();
+}).catch(() => legacyLoad());
+
+$("period").addEventListener("change", e => { state.period = e.target.value; loadPeriod(); });
+$("day").addEventListener("change", e => { state.day = e.target.value; render(); });
+$("csv").addEventListener("click", toCsv);
 $("q").addEventListener("input", e => { state.q = e.target.value; render(); });
 $("rel").addEventListener("change", e => { state.rel = e.target.checked; render(); });
 $("aiT").addEventListener("change", e => { state.aiT = e.target.checked; render(); });
