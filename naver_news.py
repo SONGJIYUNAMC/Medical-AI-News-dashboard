@@ -161,7 +161,8 @@ def main():
                     if any(w in full.lower() for w in cc["exclude"]):
                         continue
                     # 네이버는 단어를 따로 매칭하므로, 의료 AI 관련 구문이 있어야 통과
-                    if cc["gate"] and not any(r.search(full) for r in cc["gate"]):
+                    if cc["gate"] and not any(
+                            r.search(art["title"]) or r.search(art["summary"]) for r in cc["gate"]):
                         dropped += 1
                         continue
                     nt = norm_title(art["title"])
