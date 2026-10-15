@@ -108,7 +108,11 @@ def compile_cfg(cfg: dict) -> dict:
         # (패턴, 제목에서만 찾을지) — title_required 에 적힌 그룹은 제목에 있어야 통과
         "gate": [(rx(g), name in cfg.get("title_required", []), cfg.get("summary_min_hits", 2))
                  for name, g in cfg.get("require_all", {}).items()]
-                + ([(rx(cfg["require_any"]), False)] if cfg.get("require_any") else []),
+                + ([(rx(cfg["require_any"]), False, 1)] if cfg.get("require_any") else []),
+        # 종합계획·지자체장 기사: 제목에 의료 용어가 없으면 제외 (의료는 일부로만 언급되는 경우)
+        "broad": rx(cfg.get("broad_plan", [])),
+        "med_title": [p for name, g in cfg.get("require_all", {}).items()
+                      if name in cfg.get("title_required", []) for p in rx(g)],
         "exclude_any": rx(cfg.get("exclude_any", [])),
         "ai_title": rx(next(iter(cfg.get("require_all", {}).values()), [])),  # 첫 그룹 = AI 용어
         "exclude": [w.lower() for w in cfg.get("exclude_words", [])],
@@ -145,6 +149,8 @@ def passes_gate(art: dict, cc: dict) -> bool:
             return False
         if not any(p.search(s) for p in pats):
             return False
+    if any(p.search(t) for p in cc["broad"]) and not any(p.search(t) for p in cc["med_title"]):
+        return False
     return True
 
 
