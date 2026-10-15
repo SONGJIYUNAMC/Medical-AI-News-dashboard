@@ -14,28 +14,11 @@ KST = timezone(timedelta(hours=9))
 DATA = Path("data")
 OUT = DATA / "months"
 
-STOP = set("""AI 인공지능 의료 병원 헬스케어 기반 활용 개발 도입 추진 지원 강화 구축 협력 협약 체결 확대 통해 위한 대한 관련 이후 올해 내년
-지난 오늘 최근 시대 분야 기술 서비스 사업 기업 국내 해외 세계 글로벌 신규 새로운 첫 최초 개최 발표 공개 출시 선정 진행 운영 제공 나선다 나서
-열려 연다 밝혀 전망 가능 필요 중심 방안 계획 정부 대표 한국 바이오 맞손 넘어 논의 참여 지역 시스템 통합 혁신 전문 산업 플랫폼 환자 시작
-함께 나란히 손잡고 손잡아 도약 변화 미래 현장 교수 연구 연구팀 결과 효과 솔루션 프로그램 센터 병원장 이사장
-the for and with from that this new how why into its are has will can using use health medical care healthcare hospital hospitals system
-systems clinical patient patients says said could over more than after about""".split())
-JOSA = re.compile(r"(으로|에서|에게|까지|부터|이라|라는|에는|으로는|에도|와의|과의|이다|한다|하는|하며|했다|된다|한|은|는|이|가|을|를|의|에|와|과|로|도|만)$")
-
-
-def tokens(title):
-    out = set()
-    for t in re.findall(r"[가-힣]{2,}|[A-Za-z][A-Za-z0-9\-]{2,}", title or ""):
-        w = t
-        if re.search(r"[가-힣]", w):
-            s = JOSA.sub("", w)
-            if len(s) >= 2:
-                w = s
-        else:
-            w = w.lower()
-        if w not in STOP and w.upper() not in STOP and len(w) >= 2:
-            out.add(w)
-    return out
+try:
+    import tracked
+    TRACKED = tracked.load("keywords.json")
+except Exception:
+    TRACKED = []
 
 
 def load_items():
@@ -58,9 +41,13 @@ def prev_month(ym):
 
 
 def kw_counts(items):
+    """keywords.json 에 설정한 키워드(terms)가 몇 건의 기사에 나왔는지 집계."""
     c = Counter()
     for it in items:
-        for w in tokens(it["title"]):
+        kw = it.get("kw")
+        if kw is None and TRACKED:
+            kw = tracked.hits(it["title"], it.get("summary", ""), TRACKED)
+        for w in kw or []:
             c[w] += 1
     return c
 
@@ -96,7 +83,7 @@ def build(ym, all_items):
     kc, kp = kw_counts(cur), kw_counts(prv)
     kws = []
     for w, n in kc.most_common(60):
-        if n < 3:
+        if n < 2:
             break
         p = kp.get(w, 0)
         status = "신규" if prv and p == 0 else ("급증" if prv and p and n >= 2 * p and n - p >= 3 else "")
@@ -150,7 +137,7 @@ def to_md(s):
     L += ["", "## 카테고리별 건수 (전월 대비)", "| 카테고리 | 건수 | 전월 | 증감 |", "|---|---|---|---|"]
     for c in s["categories"]:
         L.append(f"| {c['name']} | {c['count']} | {c['prev']} | {c['delta']:+d} |")
-    L += ["", "## 키워드 Top 20 (제목 기준)", "| 키워드 | 건수 | 전월 | 비고 |", "|---|---|---|---|"]
+    L += ["", "## 설정 키워드 Top 20 (제목·요약 일치 기사 수)", "| 키워드 | 건수 | 전월 | 비고 |", "|---|---|---|---|"]
     for k in s["keywords"]:
         L.append(f"| {k['word']} | {k['count']} | {k['prev']} | {k['status']} |")
 
