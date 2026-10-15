@@ -23,6 +23,7 @@
   .tabs { display: flex; flex-wrap: wrap; gap: 6px; margin-bottom: 10px; }
   .tab { border: 1px solid var(--line); background: var(--card); color: var(--text); padding: 6px 12px;
          border-radius: 16px; font-size: 13px; cursor: pointer; font-family: inherit; }
+  .region .tab { font-weight: 700; border-radius: 8px; padding: 7px 16px; }
   .tab.active { background: var(--teal); border-color: var(--teal); color: #fff; }
   .row { display: flex; flex-wrap: wrap; gap: 10px; align-items: center; }
   input[type=search] { flex: 1 1 220px; padding: 8px 10px; border: 1px solid var(--line); border-radius: 8px;
@@ -53,6 +54,7 @@
 </div></header>
 
 <div class="controls"><div class="wrap">
+  <div class="tabs region" id="regions"></div>
   <div class="tabs" id="tabs"></div>
   <div class="row">
     <input type="search" id="q" placeholder="제목·요약 검색">
@@ -74,7 +76,7 @@
 <script>
 const REL = /의료|병원|헬스|환자|진료|임상|의사|간호|보건|의약|바이오|건강|health|hospital|clinic|medical|patient/i;
 const AI_T = /(^|[^A-Za-z])AI(?![A-Za-z])|인공지능|딥러닝|머신러닝|생성형|LLM|언어\s?모델|챗\s?GPT|파운데이션\s?모델|디지털의료기기/i;
-const state = { items: [], order: [], cat: "전체", q: "", rel: false, aiT: false, sort: "score" };
+const state = { items: [], order: [], region: "국내", cat: "전체", q: "", rel: false, aiT: false, sort: "score" };
 const $ = id => document.getElementById(id);
 
 function fmtDate(iso) {
@@ -96,6 +98,7 @@ function el(tag, props, children) {
 function filtered() {
   const q = state.q.trim().toLowerCase();
   const rows = state.items.filter(it => {
+    if (regionOf(it) !== state.region) return false;
     if (state.cat !== "전체" && it.category !== state.cat) return false;
     const text = (it.title + " " + it.summary);
     if (state.rel && !REL.test(text)) return false;
@@ -108,16 +111,29 @@ function filtered() {
   return rows;
 }
 
+const regionOf = it => (it.global ? "해외" : "국내");
+const REGION_LABEL = { "국내": "국내 뉴스 (네이버)", "해외": "해외 뉴스 (Google News)" };
+
 function renderTabs() {
+  const rbox = $("regions");
+  rbox.replaceChildren();
+  ["국내", "해외"].forEach(r => {
+    const n = state.items.filter(it => regionOf(it) === r).length;
+    const b = el("button", { className: "tab" + (r === state.region ? " active" : ""), type: "button",
+                             textContent: `${REGION_LABEL[r]} ${n.toLocaleString()}` });
+    b.onclick = () => { state.region = r; state.cat = "전체"; render(); };
+    rbox.append(b);
+  });
+  const inRegion = state.items.filter(it => regionOf(it) === state.region);
   const counts = {};
-  state.items.forEach(it => counts[it.category] = (counts[it.category] || 0) + 1);
+  inRegion.forEach(it => counts[it.category] = (counts[it.category] || 0) + 1);
   const known = state.order.filter(c => counts[c]);
   const extra = Object.keys(counts).filter(c => !state.order.includes(c));
   const cats = ["전체", ...known, ...extra];
   const box = $("tabs");
   box.replaceChildren();
   cats.forEach(c => {
-    const n = c === "전체" ? state.items.length : counts[c];
+    const n = c === "전체" ? inRegion.length : counts[c];
     const b = el("button", { className: "tab" + (c === state.cat ? " active" : ""), type: "button",
                              textContent: `${c} ${n.toLocaleString()}` });
     b.onclick = () => { state.cat = c; render(); };
