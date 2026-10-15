@@ -27,6 +27,8 @@ jobs:
         run: python global_news.py --config global_keywords.json --hours 48 --out data/global_news.json
       - name: Collect 정부 발표 (부처 보도자료)
         continue-on-error: true
+        env:
+          DATA_GO_KR_KEY: ${{ secrets.DATA_GO_KR_KEY }}
         run: python gov_news.py --config gov_sources.json --out data/gov_news.json
       - name: 주간 누적 저장 (data/weeks)
         run: python archive.py
