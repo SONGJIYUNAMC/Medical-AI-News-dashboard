@@ -226,13 +226,25 @@ function renderHot() {
       b.onclick = () => { $("q").value = e.word; state.q = e.word; render(); };
       return b;
     })) : el("div", { className: "sub", textContent: "기사가 더 쌓이면 표시됩니다." })]);
-  // 3) 기사량 많은 카테고리
-  const cnt = {};
-  cur.forEach(it => cnt[it.category] = (cnt[it.category] || 0) + 1);
-  const cats = Object.entries(cnt).sort((a, b) => b[1] - a[1]).slice(0, 3);
-  const c3 = el("div", {}, [el("h3", { textContent: "기사량 많은 카테고리 Top 3" }),
-    el("ol", {}, cats.map(([c, n]) => el("li", {}, [document.createTextNode(c),
-      el("span", { className: "sub", textContent: ` · ${n}건 (${Math.round(100 * n / cur.length)}%)` })])))]);
+  // 3) 주요 기사: 국내=주요 일간지·의료 전문지 보도, 해외=주요 해외 매체, 정부=법령·가이드라인
+  let c3Title, pool, c3Note;
+  if (state.region === "정부") {
+    c3Title = "법령·가이드라인 발표 최신 3건";
+    pool = cur.filter(it => it.kind === "법령·입법" || it.kind === "가이드라인·기준")
+      .sort((a, b) => (b.pubDate || "").localeCompare(a.pubDate || ""));
+    c3Note = it => ` · ${it.agency}`;
+  } else {
+    c3Title = state.region === "해외" ? "주요 매체 기사 Top 3" : "주요 일간지·의료 전문지 기사 Top 3";
+    pool = cur.filter(it => it.source_type === "major" || it.source_type === "medical" || it.source_type === "global_pref")
+      .sort((a, b) => ((b.score || 0) + 2 * (b.similar_count || 0)) - ((a.score || 0) + 2 * (a.similar_count || 0)));
+    c3Note = it => ` · ${it.global ? (it.sources || []).join(", ") : host(it.originallink || it.link)}`;
+  }
+  const top3 = pool.slice(0, 3);
+  const c3 = el("div", {}, [el("h3", { textContent: c3Title }),
+    top3.length ? el("ol", {}, top3.map(it => el("li", {}, [
+      el("a", { href: safeUrl(it.originallink || it.link), target: "_blank", rel: "noopener noreferrer", textContent: it.title }),
+      el("span", { className: "sub", textContent: c3Note(it) })])))
+      : el("div", { className: "sub", textContent: "해당하는 기사가 아직 없습니다." })]);
   const det = el("details", {}, [el("summary", { textContent: "이번 기간 핫 토픽" }), el("div", { className: "cols" }, [c1, c2, c3])]);
   det.open = state.hotOpen;
   det.addEventListener("toggle", () => { state.hotOpen = det.open; });
