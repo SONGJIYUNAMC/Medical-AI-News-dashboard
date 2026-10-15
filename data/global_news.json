@@ -1,8 +1,8 @@
 {
-  "generated_at": "2026-10-15T15:10:02.321830+09:00",
+  "generated_at": "2026-10-15T15:42:13.304683+09:00",
   "window_hours": 48,
   "count": 59,
-  "filtered_out": 525,
+  "filtered_out": 521,
   "category_order": [
     "해외 정책·규제 (미국)",
     "해외 정책·규제 (유럽·영국)",
@@ -11,25 +11,6 @@
   ],
   "errors": [],
   "items": [
-    {
-      "title": "Realizing the value of the divergence event in clinical human-AI interaction",
-      "link": "https://news.google.com/rss/articles/CBMiX0FVX3lxTE0tQzZQMWxqR3VLcC1aZ042U1Bmc0x6UGZfUDM3X25UUWI0Q0lQMzRsQmFRVFJxbDFPd2c1Q1dLRGdxVHVGcnVfbXdJbDhwck5mbjNMampOMmRmOU1JUktN?oc=5",
-      "source": "Nature",
-      "source_url": "https://www.nature.com",
-      "pubDate": "2026-10-13T19:23:22+09:00",
-      "category": "해외 의료기관 AI 도입·운영",
-      "queries": [
-        "health system ambient AI scribe",
-        "NEJM AI",
-        "Nature Medicine artificial intelligence",
-        "randomized trial AI clinical decision support"
-      ],
-      "sources": [
-        "Nature"
-      ],
-      "preferred": true,
-      "score": 6
-    },
     {
       "title": "Nature Medicine series on real-world clinical AI deployment",
       "link": "https://news.google.com/rss/articles/CBMiWEFVX3lxTFBOZGI2MlZiTFhJSnN0NmEwUEZhbzhXTGZKc000TVNUNlVINzhyZVZDa2xUZjBJSWNqekpEMkJDYVVrZnlzbHJVbmh4dEJ1ZXRDdV9BZ3pKekc?oc=5",
@@ -67,6 +48,41 @@
       ],
       "preferred": false,
       "score": 5
+    },
+    {
+      "title": "Realizing the value of the divergence event in clinical human-AI interaction",
+      "link": "https://news.google.com/rss/articles/CBMiX0FVX3lxTE0tQzZQMWxqR3VLcC1aZ042U1Bmc0x6UGZfUDM3X25UUWI0Q0lQMzRsQmFRVFJxbDFPd2c1Q1dLRGdxVHVGcnVfbXdJbDhwck5mbjNMampOMmRmOU1JUktN?oc=5",
+      "source": "Nature",
+      "source_url": "https://www.nature.com",
+      "pubDate": "2026-10-13T19:23:22+09:00",
+      "category": "해외 연구·학술",
+      "queries": [
+        "NEJM AI",
+        "Nature Medicine artificial intelligence",
+        "randomized trial AI clinical decision support"
+      ],
+      "sources": [
+        "Nature"
+      ],
+      "preferred": true,
+      "score": 5
+    },
+    {
+      "title": "AI transforms how mental health clinicians support local people",
+      "link": "https://news.google.com/rss/articles/CBMimgFBVV95cUxOR3NLR0M2dnFPRFh4YmRFTGdxVU5OQ1piVmZ0Njh1ZHdyaFQxNGRzS1NfcnpUZVlYdW16bTI0R2pFZTNtRHRHSV9QcTRkY2N0SU5fbG1OczVqVUFCLXhGbW9jWm9Jay1ubXdPQkN6Z3h2TkJNdS1ET1NvdENVQUZyMnVUaW55d3p0MVFGRVEtN0R4TkduSk5TUTJn?oc=5",
+      "source": "Rotherham, Doncaster and South Humber NHS Trust",
+      "source_url": "https://www.rdash.nhs.uk",
+      "pubDate": "2026-10-15T14:19:18+09:00",
+      "category": "해외 정책·규제 (유럽·영국)",
+      "queries": [
+        "NHS AI rollout",
+        "health system ambient AI scribe"
+      ],
+      "sources": [
+        "Rotherham, Doncaster and South Humber NHS Trust"
+      ],
+      "preferred": true,
+      "score": 4
     },
     {
       "title": "MedTech Regulator publishes 2030 Strategy to modernise patient-centred regulation for AI, digital MedTech and personalised medicines",
@@ -356,6 +372,22 @@
       ],
       "preferred": false,
       "score": 2
+    },
+    {
+      "title": "ThinkSono Secures FDA Clearance for Ultrasound AI Software for Blood Clots",
+      "link": "https://news.google.com/rss/articles/CBMiswFBVV95cUxPdGtUb01kelczNDZrWkdnbFRkbG1vTTcxN1R2U0FMSWpENmxDbGwwRk9wRm55a1dDWExYNTlOUGpGU3E3QTRhQzhjakRoOXlCV1A4NDZMMVVrNzdBamRTbUoyMDdvNW10Nzc5UThRd0ZXc01NLVpXQmlIVjZrT0xvR182dFZUaDM2ZVlnMm1meVBMaXplejhSOTY4c0xCNHQ5dWlTM3diUGdRWDVWeEk1TlpnQQ?oc=5",
+      "source": "Medical Product Outsourcing",
+      "source_url": "https://www.mpo-mag.com",
+      "pubDate": "2026-10-15T15:22:44+09:00",
+      "category": "해외 정책·규제 (미국)",
+      "queries": [
+        "FDA artificial intelligence guidance medical"
+      ],
+      "sources": [
+        "Medical Product Outsourcing"
+      ],
+      "preferred": false,
+      "score": 1
     },
     {
       "title": "Health AI has overwhelmed our govts: don’t panic … yet",
@@ -945,38 +977,6 @@
       ],
       "sources": [
         "Voice of Healthcare"
-      ],
-      "preferred": false,
-      "score": 1
-    },
-    {
-      "title": "AI Hospital Command Center Market to Reach USD 5.95 Billion",
-      "link": "https://news.google.com/rss/articles/CBMimwFBVV95cUxPbEQxOEduMWVyUFNydzZrQ19Fb3hUMkN3VXB2Zm12VkZkdkU1bzJtdGJQQUFoNl9zRTRyU1J3WlRWMXZZblRJR01TVlRLNlhqZVVWRnUzdWZvQlhGOHlUaU5MLTNRSG81YXRsSE0wUkFXZXcxdHl1VHpTZkhLWFBSOWFkTE1DdlNKNG5ROURSbzhRUlh0WTlGbEQxOA?oc=5",
-      "source": "openPR.com",
-      "source_url": "https://www.openpr.com",
-      "pubDate": "2026-10-13T15:30:07+09:00",
-      "category": "해외 의료기관 AI 도입·운영",
-      "queries": [
-        "hospital generative AI deployment"
-      ],
-      "sources": [
-        "openPR.com"
-      ],
-      "preferred": false,
-      "score": 1
-    },
-    {
-      "title": "AI Healthcare Command Platform Market to Reach USD 6.20 Billion",
-      "link": "https://news.google.com/rss/articles/CBMioAFBVV95cUxQQ2pCSmFoVGJrT0llVTBIck9tUG5kc2k2QUdsX1gwOUhkamlzWDJfdzlDLTBjX0JYWWZPa1c2RU5XWGE4aWwteXFyQW5sVV9tczZRVUZ3eXJjbXZ3cEtTOWxPRzFMS3B2T2xfZi0taDJQWm56Y3liVFNER3p0TTZyNHQ0MEFhaHdXZnZ0ZE5fQ2Q1Y292SHdQQU9CUmJQVjF6?oc=5",
-      "source": "openPR.com",
-      "source_url": "https://www.openpr.com",
-      "pubDate": "2026-10-13T15:19:29+09:00",
-      "category": "해외 의료기관 AI 도입·운영",
-      "queries": [
-        "hospital generative AI deployment"
-      ],
-      "sources": [
-        "openPR.com"
       ],
       "preferred": false,
       "score": 1

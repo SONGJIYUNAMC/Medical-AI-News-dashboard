@@ -1,39 +1,25 @@
 {
-  "generated_at": "2026-10-15T15:10:11.286682+09:00",
+  "generated_at": "2026-10-15T15:42:50.485857+09:00",
   "window_hours": 168,
-  "count": 12,
-  "filtered_out": 179,
+  "count": 16,
+  "filtered_out": 263,
   "category_order": [
     "국가인공지능전략위원회",
-    "정부 보도자료 (검색)"
+    "보건복지부",
+    "정부 보도자료 (검색)",
+    "과학기술정보통신부"
   ],
-  "errors": [
-    {
-      "query": "보건복지부 (https://www.korea.kr/rss/dept_mohw.xml)",
-      "error": "404 Client Error: Not Found for url: https://www.korea.kr/rss/dept_mohw.xml"
-    },
-    {
-      "query": "식품의약품안전처 (https://www.korea.kr/rss/dept_mfds.xml)",
-      "error": "404 Client Error: Not Found for url: https://www.korea.kr/rss/dept_mfds.xml"
-    },
-    {
-      "query": "과학기술정보통신부 (https://www.korea.kr/rss/dept_msit.xml)",
-      "error": "404 Client Error: Not Found for url: https://www.korea.kr/rss/dept_msit.xml"
-    },
-    {
-      "query": "개인정보보호위원회 (https://www.korea.kr/rss/dept_pipc.xml)",
-      "error": "404 Client Error: Not Found for url: https://www.korea.kr/rss/dept_pipc.xml"
-    },
-    {
-      "query": "산업통상부 (https://www.korea.kr/rss/dept_motie.xml)",
-      "error": "404 Client Error: Not Found for url: https://www.korea.kr/rss/dept_motie.xml"
-    },
-    {
-      "query": "전체 부처 보도자료 (https://www.korea.kr/rss/pressrelease.xml)",
-      "error": "404 Client Error: Not Found for url: https://www.korea.kr/rss/pressrelease.xml"
-    }
-  ],
+  "errors": [],
   "items": [
+    {
+      "title": "국가AI전략위-복지부, 바이오 데이터 기증…\"국민 참여 확산되길\"",
+      "link": "https://news.google.com/rss/articles/CBMiaEFVX3lxTE5GekdCZTJ2M19SNDB5amIxMnlGaGxQaVRzWjhFRk1qRnlZR2ljWG54QXZFNUd5YWJQWkhrMFU2UHVUWVMyTDN1VlltM3E2anFKVGh5eUZsaDdHUlh4eGZDRnBqZEs5cGNh?oc=5",
+      "summary": "국가AI전략위-복지부, 바이오 데이터 기증…\"국민 참여 확산되길\" 뉴스1",
+      "pubDate": "2026-10-15T15:06:02+09:00",
+      "agency": "국가인공지능전략위원회",
+      "kind": "지원사업·정책",
+      "via": "gnews"
+    },
     {
       "title": "국가AI전략위-복지부, 바이오 데이터 기증 참여…의료·바이오 AI 활용 기반 확대",
       "link": "https://news.google.com/rss/articles/CBMiaEFVX3lxTFB1NFIyS3BLQzZWc0plZGM0Sng4M3lKSzZuaE5aakJqaUw1MDRoWWM1XzNNM3MwSFhYRm4xWWJBaE5ZSS00aV8zQ3lUV2FsZ0cxV3BnTWkyRjBHWXF3NXgySEVqYkNUeGli?oc=5",
@@ -51,6 +37,15 @@
       "agency": "국가인공지능전략위원회",
       "kind": "기타 발표",
       "via": "gnews"
+    },
+    {
+      "title": "건강검진 수검자 아니라도 국민 누구나 ‘국가통합바이오빅데이터’ 참여 가능해진다",
+      "link": "https://www.mohw.go.kr/board.es?mid=a10503000000&bid=0027&list_no=1492233&act=view",
+      "summary": "건강검진 수검자 아니라도 국민 누구나 ‘국가통합바이오빅데이터’ 참여 가능해진다 - 국가·종합건강검진 수검자에서 국민 누구나 참여 가능하도록 기준 완화 -- 정은경 복지부 장관, 하정우 국가 AI 전략위원회 부위원장 등 보건의료·인공지능 분야 정책 관계자 40명과 생체 자료 기증 동참 - 보건복지부(장관 정은경)·과학기술정보통신부(부총리 배경훈)·산업통상부(장관 김정관)·질병관리청(청장 임승관)은 그간 국가건강검진 대상자만 참여할 수 있었던 국가통합바이오빅데이터구축사업의 참여 대상을 확대했다고 밝혔다. 이에 따라 건강 검진 대상자가 ",
+      "pubDate": "2026-10-15T10:05:00+09:00",
+      "agency": "보건복지부",
+      "kind": "가이드라인·기준",
+      "via": "rss"
     },
     {
       "title": "국가AI전략위·복지부, 바이오 데이터 기증 참여 독려…의료 AI 기반 확대",
@@ -98,10 +93,19 @@
       "via": "gnews"
     },
     {
-      "title": "'AI가 불러올 바이오헬스 혁신의 확산', 국제사회 리더들이 한 곳에 모인다",
-      "link": "https://news.google.com/rss/articles/CBMidEFVX3lxTFBnUW9zUDEyZVhHcFN4WDdYYTVBYnVpMGhOcTRQQ250Znh5ZFdMUmU4WXRWdWxwY0szUkhlZXVYTFM0R2dkdzBhT004Z2dvQXh2bU1Lei14LXNycDdvcTNmSmExTENKTV9oM0pDOW4xNFBValVS?oc=5",
-      "summary": "'AI가 불러올 바이오헬스 혁신의 확산', 국제사회 리더들이 한 곳에 모인다 정책브리핑",
-      "pubDate": "2026-10-14T15:36:33+09:00",
+      "title": "‘AI가 불러올 바이오헬스 혁신의 확산’, 국제사회 리더들이 한 곳에 모인다",
+      "link": "https://www.mohw.go.kr/board.es?mid=a10503000000&bid=0027&list_no=1492228&act=view",
+      "summary": "‘AI가 불러올 바이오헬스 혁신의 확산’, 국제사회 리더들이 한 곳에 모인다 - 보건복지부·세계보건기구, 「2026 세계 바이오 서밋」 개최 (10.21.~22.) - 보건복지부(장관 정은경)는 10월 21일(수)부터 22일(목)까지 1박 2일 간 서울 코엑스마곡 컨벤션센터에서 「2026 세계 바이오 서밋(2026 World Bio Summit)」을 개최할 예정이라고 밝혔다. 이번 행사는 대한민국 정부와 세계보건기구(World Health Organization, WHO)가 공동으로 주최하고 한국보건산업진흥원(원장 고상백)이 주관하",
+      "pubDate": "2026-10-14T15:36:00+09:00",
+      "agency": "보건복지부",
+      "kind": "기타 발표",
+      "via": "rss"
+    },
+    {
+      "title": "피지컬 AI 시대 '국방혁신'…신뢰할 수 있는 방패 조건",
+      "link": "https://news.google.com/rss/articles/CBMiaEFVX3lxTE1nUUI3VE44QWtrNHRjX3QyTUxsS2cwMkhMYVcyTW90R0dYSHdNTDRhMVhwY2M0UXY1MzRocnZIU19qTnVKbmZ4MjI4Q2JjMW5lcDdFN0lhRUkxdlo5ajBjejRqT3BfQ0lZ?oc=5",
+      "summary": "피지컬 AI 시대 '국방혁신'…신뢰할 수 있는 방패 조건 정책브리핑",
+      "pubDate": "2026-10-14T10:41:54+09:00",
       "agency": "정부 보도자료 (검색)",
       "kind": "지원사업·정책",
       "via": "gnews"
@@ -134,13 +138,22 @@
       "via": "gnews"
     },
     {
+      "title": "국가 AI 데이터의 체계적 관리·활용을 위한 ｢AI기본법｣, ｢데이터산업법｣ 개정안 국무회의 통과",
+      "link": "https://www.msit.go.kr/bbs/view.do?sCode=user&mId=307&mPid=208&bbsSeqNo=94&nttSeqNo=3187861",
+      "summary": "담당부서: 인공지능데이터정책과",
+      "pubDate": "2026-10-13T00:00:00+09:00",
+      "agency": "과학기술정보통신부",
+      "kind": "법령·입법",
+      "via": "api"
+    },
+    {
       "title": "급변하는 글로벌 환경 대응 위해 AI·디지털 기반 신약 임상개발 혁신한다",
-      "link": "https://news.google.com/rss/articles/CBMidkFVX3lxTE5Gb3hYMlNsQkxRZm5nam1zaVpFU192c29JMmE3RmFBOFp4YXpueFRkVXZJUzdTV0IweDdjS1JrckM3TGtVY19sMkVNY3dTb0lJRzk3dVdxc3RnVGVWSEg2dUpoOFlXTFFBSFRTY1VzMUJpTGpiQmc?oc=5",
-      "summary": "급변하는 글로벌 환경 대응 위해 AI·디지털 기반 신약 임상개발 혁신한다 정책브리핑",
-      "pubDate": "2026-10-12T14:44:05+09:00",
-      "agency": "정부 보도자료 (검색)",
+      "link": "https://www.mohw.go.kr/board.es?mid=a10503000000&bid=0027&list_no=1492193&act=view",
+      "summary": "급변하는 글로벌 환경 대응 위해 AI·디지털 기반 신약 임상개발 혁신한다 - 아시아 최대 규모 ‘제12회 코넥트 임상시험 국제 콘퍼런스’ 개최 - - 후보물질 발굴부터 시장 진출까지, 급변하는 글로벌 환경 대응 방안 모색 - 보건복지부(장관 정은경)와 국가임상시험지원재단(KoNECT, 이사장 김혜진)은 10월 13일(화)부터 10월 15일(목)까지 3일간‘더그랜드롯데 서울’에서「2026 코넥트 임상시험 국제 콘퍼런스(12th KoNECT International Conference)」를 개최한다고 밝혔다. 올해로 12회를 맞는 이번",
+      "pubDate": "2026-10-12T10:13:00+09:00",
+      "agency": "보건복지부",
       "kind": "지원사업·정책",
-      "via": "gnews"
+      "via": "rss"
     }
   ]
 }
