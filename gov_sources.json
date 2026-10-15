@@ -1,27 +1,164 @@
 {
-  "_설명": "feeds: 정책브리핑(korea.kr) 부처별 보도자료 RSS (주소는 실제 접속 확인 전이라, 로그에서 실패한 항목은 수정/삭제하세요). gnews_queries: Google News에서 정부 사이트만 검색.",
+  "_설명": "feeds: 부처 공식 RSS(사용자 제공 주소). fallback_site가 있으면 RSS 실패 시 해당 사이트를 Google News에서 검색해 대체. gnews_queries: Google News 검색.",
   "hours": 168,
   "feeds": [
-    {"agency": "보건복지부",       "url": "https://www.korea.kr/rss/dept_mohw.xml",  "health_context": true},
-    {"agency": "식품의약품안전처", "url": "https://www.korea.kr/rss/dept_mfds.xml",  "health_context": true},
-    {"agency": "과학기술정보통신부", "url": "https://www.korea.kr/rss/dept_msit.xml", "health_context": false},
-    {"agency": "개인정보보호위원회", "url": "https://www.korea.kr/rss/dept_pipc.xml", "health_context": false},
-    {"agency": "산업통상부",       "url": "https://www.korea.kr/rss/dept_motie.xml", "health_context": false},
-    {"agency": "전체 부처 보도자료", "url": "https://www.korea.kr/rss/pressrelease.xml", "health_context": false}
+    {
+      "agency": "과학기술정보통신부",
+      "board": "보도자료",
+      "url": "https://www.msit.go.kr/user/rss/rss.do?bbsSeqNo=94",
+      "health_context": false,
+      "fallback_site": "msit.go.kr"
+    },
+    {
+      "agency": "과학기술정보통신부",
+      "board": "보도설명",
+      "url": "https://www.msit.go.kr/user/rss/rss.do?bbsSeqNo=86",
+      "health_context": false
+    },
+    {
+      "agency": "과학기술정보통신부",
+      "board": "주간동향",
+      "url": "https://www.msit.go.kr/user/rss/rss.do?bbsSeqNo=81",
+      "health_context": false
+    },
+    {
+      "agency": "보건복지부",
+      "board": "보도자료",
+      "url": "https://www.mohw.go.kr/rss/board.es?mid=a10503000000&bid=0027&info",
+      "health_context": true,
+      "fallback_site": "mohw.go.kr"
+    },
+    {
+      "agency": "보건복지부",
+      "board": "공지사항",
+      "url": "https://www.mohw.go.kr/rss/board.es?mid=a10501010000&bid=0003&cg_code=C01&info",
+      "health_context": true
+    },
+    {
+      "agency": "보건복지부",
+      "board": "훈령·예규·고시·지침",
+      "url": "https://www.mohw.go.kr/rss/board.es?mid=a10409020000&update=&cg_code=&bid=0026",
+      "health_context": true
+    },
+    {
+      "agency": "식품의약품안전처",
+      "board": "보도자료",
+      "url": "https://www.mfds.go.kr/www/rss/brd.do?brdId=ntc0021",
+      "health_context": true,
+      "fallback_site": "mfds.go.kr"
+    },
+    {
+      "agency": "국가데이터처",
+      "board": "보도자료",
+      "url": "https://mods.go.kr/board.es?mid=a10301010000&bid=a103010100&act=rss",
+      "health_context": false
+    },
+    {
+      "agency": "국가데이터처",
+      "board": "공지사항",
+      "url": "https://mods.go.kr/board.es?mid=a10306020000&bid=a103060100&act=rss",
+      "health_context": false
+    }
   ],
   "gnews_queries": [
-    {"agency": "국가인공지능전략위원회", "q": "국가인공지능전략위원회 의료"},
-    {"agency": "정부 보도자료 (검색)", "q": "site:korea.kr 의료 AI"},
-    {"agency": "정부 보도자료 (검색)", "q": "site:korea.kr 인공지능 의료기기"},
-    {"agency": "정부 보도자료 (검색)", "q": "site:korea.kr 디지털의료제품"},
-    {"agency": "정부 보도자료 (검색)", "q": "site:korea.kr 인공지능 기본법 시행령"},
-    {"agency": "정부 보도자료 (검색)", "q": "site:korea.kr 의료데이터 가명정보"}
+    {
+      "agency": "개인정보보호위원회",
+      "q": "site:pipc.go.kr 인공지능"
+    },
+    {
+      "agency": "개인정보보호위원회",
+      "q": "site:pipc.go.kr 의료 데이터"
+    },
+    {
+      "agency": "산업통상부",
+      "q": "site:motie.go.kr 인공지능 의료"
+    },
+    {
+      "agency": "국가인공지능전략위원회",
+      "q": "국가인공지능전략위원회 의료"
+    },
+    {
+      "agency": "정부 보도자료 (검색)",
+      "q": "site:korea.kr 의료 AI"
+    },
+    {
+      "agency": "정부 보도자료 (검색)",
+      "q": "site:korea.kr 인공지능 의료기기"
+    },
+    {
+      "agency": "정부 보도자료 (검색)",
+      "q": "site:korea.kr 디지털의료제품"
+    },
+    {
+      "agency": "정부 보도자료 (검색)",
+      "q": "site:korea.kr 인공지능 기본법 시행령"
+    },
+    {
+      "agency": "정부 보도자료 (검색)",
+      "q": "site:korea.kr 의료데이터 가명정보"
+    }
   ],
-  "require_ai": ["(?<![A-Za-z])AI(?![A-Za-z])", "인공지능", "딥러닝", "머신러닝", "생성형", "LLM", "언어\\s?모델", "디지털의료", "스마트\\s?병원"],
-  "require_health": ["병원", "의료", "환자", "진료", "진단", "임상", "의사", "간호", "보건", "건강", "의약", "헬스", "바이오", "식약처", "복지부"],
+  "require_ai": [
+    "(?<![A-Za-z])AI(?![A-Za-z])",
+    "인공지능",
+    "딥러닝",
+    "머신러닝",
+    "생성형",
+    "LLM",
+    "언어\\s?모델",
+    "디지털의료",
+    "스마트\\s?병원"
+  ],
+  "require_health": [
+    "병원",
+    "의료",
+    "환자",
+    "진료",
+    "진단",
+    "임상",
+    "의사",
+    "간호",
+    "보건",
+    "건강",
+    "의약",
+    "헬스",
+    "바이오",
+    "식약처",
+    "복지부"
+  ],
   "kinds": {
-    "법령·입법": ["법률", "시행령", "시행규칙", "개정", "입법예고", "법안", "제정", "고시", "훈령"],
-    "가이드라인·기준": ["가이드라인", "지침", "기준", "허가", "인증", "평가", "심사", "표준"],
-    "지원사업·정책": ["지원", "사업", "공모", "전략", "로드맵", "추진", "계획", "정책", "협약", "육성"]
+    "법령·입법": [
+      "법률",
+      "시행령",
+      "시행규칙",
+      "개정",
+      "입법예고",
+      "법안",
+      "제정",
+      "고시",
+      "훈령"
+    ],
+    "가이드라인·기준": [
+      "가이드라인",
+      "지침",
+      "기준",
+      "허가",
+      "인증",
+      "평가",
+      "심사",
+      "표준"
+    ],
+    "지원사업·정책": [
+      "지원",
+      "사업",
+      "공모",
+      "전략",
+      "로드맵",
+      "추진",
+      "계획",
+      "정책",
+      "협약",
+      "육성"
+    ]
   }
 }
