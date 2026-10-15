@@ -1,0 +1,121 @@
+#!/usr/bin/env python3
+"""정부 부처 발표(보도자료) 중 의료 AI 관련 건 수집 → data/gov_news.json
+사용: python gov_news.py --config gov_sources.json --out data/gov_news.json
+"""
+import argparse, json, re, sys, time
+import xml.etree.ElementTree as ET
+from datetime import datetime, timedelta, timezone
+from email.utils import parsedate_to_datetime
+from html import unescape
+from pathlib import Path
+from urllib.parse import quote
+
+import requests
+
+KST = timezone(timedelta(hours=9))
+UA = {"User-Agent": "Mozilla/5.0 (compatible; medical-ai-dashboard/1.0)"}
+
+
+def rx(ps):
+    return [re.compile(p, re.I) for p in ps]
+
+
+def strip(t):
+    return re.sub(r"\s+", " ", unescape(re.sub(r"<[^>]+>", " ", t or ""))).strip()
+
+
+def parse_date(s):
+    s = (s or "").strip()
+    try:
+        d = parsedate_to_datetime(s)
+    except Exception:
+        try:
+            d = datetime.fromisoformat(s.replace("Z", "+00:00"))
+        except Exception:
+            return None
+    if d.tzinfo is None:
+        d = d.replace(tzinfo=KST)
+    return d.astimezone(KST)
+
+
+def get_xml(url, session):
+    for attempt in range(3):
+        r = session.get(url, headers=UA, timeout=30)
+        if r.status_code >= 500 or r.status_code == 429:
+            time.sleep(2 * (attempt + 1))
+            continue
+        r.raise_for_status()
+        return ET.fromstring(r.content)
+    raise RuntimeError(f"HTTP {r.status_code}")
+
+
+def parse_items(root):
+    for it in root.iter("item"):
+        pub = parse_date(it.findtext("pubDate") or it.findtext("{http://purl.org/dc/elements/1.1/}date"))
+        if not pub:
+            continue
+        yield {"title": strip(it.findtext("title")), "link": (it.findtext("link") or "").strip(),
+               "summary": strip(it.findtext("description"))[:300], "pubDate": pub}
+
+
+def kind_of(text, kinds):
+    for name, words in kinds.items():
+        if any(w in text for w in words):
+            return name
+    return "기타 발표"
+
+
+def main():
+    ap = argparse.ArgumentParser()
+    ap.add_argument("--config", default="gov_sources.json")
+    ap.add_argument("--out", default="data/gov_news.json")
+    args = ap.parse_args()
+    cfg = json.loads(Path(args.config).read_text(encoding="utf-8"))
+    ai, health = rx(cfg["require_ai"]), rx(cfg["require_health"])
+    cutoff = datetime.now(KST) - timedelta(hours=cfg.get("hours", 168))
+
+    jobs = [(f["agency"], f["url"], f.get("health_context", False), "rss") for f in cfg["feeds"]]
+    for g in cfg["gnews_queries"]:
+        u = f"https://news.google.com/rss/search?q={quote(g['q'] + ' when:7d')}&hl=ko&gl=KR&ceid=KR:ko"
+        jobs.append((g["agency"], u, False, "gnews"))
+
+    items, seen, errors, dropped = [], set(), [], 0
+    with requests.Session() as s:
+        for agency, url, hc, mode in jobs:
+            try:
+                for a in parse_items(get_xml(url, s)):
+                    if a["pubDate"] < cutoff:
+                        continue
+                    text = a["title"] + " " + a["summary"]
+                    if mode == "gnews":  # 제목 끝 '- 매체명' 제거, 정부 사이트가 아닌 언론 기사는 제외 불가하므로 그대로 표시
+                        a["title"] = re.sub(r"\s-\s[^-]+$", "", a["title"])
+                    if not any(p.search(text) for p in ai) or not (hc or any(p.search(text) for p in health)):
+                        dropped += 1
+                        continue
+                    key = re.sub(r"\W+", "", a["title"])
+                    if key in seen:
+                        continue
+                    seen.add(key)
+                    items.append({"title": a["title"], "link": a["link"], "summary": a["summary"],
+                                  "pubDate": a["pubDate"].isoformat(), "agency": agency,
+                                  "kind": kind_of(text, cfg["kinds"]), "via": mode})
+            except Exception as e:
+                errors.append({"query": f"{agency} ({url})", "error": str(e)})
+                print(f"[WARN] {agency}: {e}", file=sys.stderr)
+            time.sleep(0.5)
+
+    items.sort(key=lambda a: a["pubDate"], reverse=True)
+    agencies = []
+    for a in items:
+        if a["agency"] not in agencies:
+            agencies.append(a["agency"])
+    out = {"generated_at": datetime.now(KST).isoformat(), "window_hours": cfg.get("hours", 168),
+           "count": len(items), "filtered_out": dropped, "category_order": agencies,
+           "errors": errors, "items": items}
+    Path(args.out).parent.mkdir(parents=True, exist_ok=True)
+    Path(args.out).write_text(json.dumps(out, ensure_ascii=False, indent=2), encoding="utf-8")
+    print(f"{len(items)}건 저장 → {args.out} (필터 제외 {dropped}건, 실패한 출처 {len(errors)}곳)")
+
+
+if __name__ == "__main__":
+    main()
