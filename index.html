@@ -56,6 +56,16 @@
   .hot .kw { display: flex; flex-wrap: wrap; gap: 6px; }
   .hot .kw button { border: 1px solid var(--line); background: var(--chip); color: var(--text); border-radius: 12px; padding: 2px 9px; font: inherit; cursor: pointer; }
   .hot .up { color: #c0392b; } .hot .down { color: #2d6cdf; } .hot .sub { color: var(--muted); }
+  .foldbtn { display: block; margin-bottom: 8px; }
+  .controls.collapsed #ctlbody { display: none; }
+  .controls.collapsed .foldbtn { margin-bottom: 0; }
+  @media (max-width: 700px) {
+    .controls:not(.collapsed) { position: static; }   /* 펼쳐진 상태에서는 화면을 가리지 않고 같이 스크롤 */
+    .controls { padding: 8px 12px; }
+    .tab { padding: 5px 10px; font-size: 12px; }
+    main { padding: 10px 12px 40px; }
+  }
+  .hot summary { cursor: pointer; font-weight: 700; color: var(--navy); }
   details.trend { margin: 10px 16px 0; font-size: 13px; }
   details.trend summary { cursor: pointer; color: var(--muted); }
   .trend table { border-collapse: collapse; margin-top: 8px; width: 100%; background: var(--card); }
@@ -72,7 +82,9 @@
   <p>AI혁신지원팀 · 뉴스 검색 자동 수집</p>
 </div></header>
 
-<div class="controls"><div class="wrap">
+<div class="controls" id="controls"><div class="wrap">
+  <button class="tab foldbtn" id="fold" type="button" aria-expanded="true">▴ 접기</button>
+  <div id="ctlbody">
   <div class="tabs region" id="regions"></div>
   <div class="tabs" id="tabs"></div>
   <div class="row">
@@ -87,6 +99,7 @@
     <label class="toggle"><input type="checkbox" id="aiT"> 제목에 AI 포함 기사만</label>
     <button class="tab" id="csv" type="button">CSV 내려받기</button>
   </div>
+  </div>
 </div></div>
 
 <div class="wrap">
@@ -100,7 +113,7 @@
 <script>
 const REL = /의료|병원|헬스|환자|진료|임상|의사|간호|보건|의약|바이오|건강|health|hospital|clinic|medical|patient/i;
 const AI_T = /(^|[^A-Za-z])AI(?![A-Za-z])|인공지능|딥러닝|머신러닝|생성형|LLM|언어\s?모델|챗\s?GPT|파운데이션\s?모델|디지털의료기기/i;
-const state = { items: [], order: [], period: "", day: "전체", weeksLoaded: [], manifest: null, region: "국내", cat: "전체", q: "", rel: false, aiT: false, sort: "score" };
+const state = { items: [], order: [], hotOpen: window.innerWidth >= 700, period: "", day: "전체", weeksLoaded: [], manifest: null, region: "국내", cat: "전체", q: "", rel: false, aiT: false, sort: "score" };
 const $ = id => document.getElementById(id);
 
 function fmtDate(iso) {
@@ -218,10 +231,14 @@ function renderHot() {
   const c3 = el("div", {}, [el("h3", { textContent: "기사량 많은 카테고리 Top 3" }),
     el("ol", {}, cats.map(([c, n]) => el("li", {}, [document.createTextNode(c),
       el("span", { className: "sub", textContent: ` · ${n}건 (${Math.round(100 * n / cur.length)}%)` })])))]);
-  box.append(el("div", { className: "cols" }, [c1, c2, c3]));
+  const det = el("details", {}, [el("summary", { textContent: "이번 기간 핫 토픽" }), el("div", { className: "cols" }, [c1, c2, c3])]);
+  det.open = state.hotOpen;
+  det.addEventListener("toggle", () => { state.hotOpen = det.open; });
+  box.append(det);
 }
 
 function render() {
+  if ($("fold")) updateFoldLabel();
   renderHot();
   renderTabs();
   const rows = filtered();
@@ -278,7 +295,7 @@ function legacyLoad() {
     extra += ` · 정부 발표(최근 ${Math.round((v.window_hours || 168) / 24)}일) ${(v.count || 0).toLocaleString()}건`;
     if (v.errors && v.errors.length)
       $("notice").append(el("div", { className: "notice",
-        textContent: `정부 발표 출처 ${v.errors.length}곳 수집 실패(주소 확인 필요): ` + v.errors.map(e => e.query.split(" (")[0]).join(", ") }));
+        textContent: `정부 발표 출처 ${v.errors.length}곳 수집 실패(주소 확인 필요): ` + v.errors.map(e => e.query.split(" (")[0] + " - " + (e.error || "")).join(" / ") }));
   }
   $("meta").textContent = `수집 시각 ${fmtDate(d.generated_at)} · 국내 최근 ${d.window_hours}시간 ${d.count.toLocaleString()}건${extra}`;
   if (d.errors && d.errors.length) {
@@ -386,6 +403,24 @@ getJson("data/weeks/index.json").then(m => {
   buildPeriods();
   return loadPeriod();
 }).catch(() => legacyLoad());
+
+function setFold(collapsed, save) {
+  const c = $("controls");
+  c.classList.toggle("collapsed", collapsed);
+  $("fold").setAttribute("aria-expanded", String(!collapsed));
+  updateFoldLabel();
+  if (save) { try { localStorage.setItem("ctlCollapsed", collapsed ? "1" : "0"); } catch (e) {} }
+}
+function updateFoldLabel() {
+  const collapsed = $("controls").classList.contains("collapsed");
+  $("fold").textContent = collapsed
+    ? `▾ 탭·필터 펼치기 (${REGION_LABEL[state.region].split(" ")[0]} · ${state.cat})`
+    : "▴ 접기";
+}
+$("fold").addEventListener("click", () => setFold(!$("controls").classList.contains("collapsed"), true));
+let _stored = null;
+try { _stored = localStorage.getItem("ctlCollapsed"); } catch (e) {}
+setFold(_stored === null ? window.innerWidth < 700 : _stored === "1", false);
 
 $("period").addEventListener("change", e => { state.period = e.target.value; loadPeriod(); });
 $("day").addEventListener("change", e => { state.day = e.target.value; render(); });
