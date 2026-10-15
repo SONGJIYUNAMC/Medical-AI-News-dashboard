@@ -1,10 +1,10 @@
 {
-  "generated_at": "2026-10-15T16:23:41.599595+09:00",
+  "generated_at": "2026-10-15T17:15:40.858359+09:00",
   "window_hours": 26,
-  "count": 404,
-  "filtered_out": 1639,
-  "filtered_off_topic": 202,
-  "merged_similar": 155,
+  "count": 388,
+  "filtered_out": 1630,
+  "filtered_off_topic": 186,
+  "merged_similar": 144,
   "category_order": [
     "국내 정책·규제",
     "국내 의료기관",
@@ -33,14 +33,12 @@
         "병원 AI"
       ],
       "category": "국내 의료기관",
-      "score": 21,
+      "score": 20,
       "query": "디지털의료제품",
       "source_type": "major",
-      "similar_count": 4,
+      "similar_count": 2,
       "similar_sources": [
         "bosa.co.kr",
-        "edaily.co.kr",
-        "newsis.com",
         "thefirstmedia.net"
       ]
     },
@@ -261,6 +259,26 @@
         "news.tvchosun.com",
         "segyebiz.com"
       ]
+    },
+    {
+      "title": "서울대·분당서울대·보라매병원 '인공지능'",
+      "summary": "병원에서 수행하는 인공지능 서비스 '지속 가능성' 긍정적이지만 않다 한편, 의료AI 지속적인 활용을 위해서는 운영 비용과 인력, 수가 유무에 따른 도입 제약까지 고려해야 한다는 의견이 나왔다. 이호영 실장은 “지금...",
+      "link": "https://www.dailymedi.com/news/news_view.php?wr_id=941464",
+      "originallink": "https://www.dailymedi.com/news/news_view.php?wr_id=941464",
+      "pubDate": "2026-10-15T17:00:00+09:00",
+      "queries": [
+        "의료 AI 수가",
+        "서울대병원 AI",
+        "의료 AI 기업",
+        "의료 AI",
+        "병원 AI"
+      ],
+      "category": "국내 의료기관",
+      "score": 11,
+      "query": "의료 AI 수가",
+      "source_type": "medical",
+      "similar_count": 0,
+      "similar_sources": []
     },
     {
       "title": "국민 100만명 건강정보 모아 ‘의료 AI’ 키운다…11월 첫 데이터 개방",
@@ -580,8 +598,7 @@
         "병원 생성형 AI",
         "의료 AI 기업",
         "구글 의료 AI",
-        "의료 AI",
-        "병원 AI"
+        "의료 AI"
       ],
       "category": "해외 의료기관·정책·규제",
       "score": 10,
@@ -589,26 +606,6 @@
       "source_type": "other",
       "similar_count": 0,
       "similar_sources": []
-    },
-    {
-      "title": "루닛, 미국면역항암학회서 AI 기반 분석 연구 2편 발표",
-      "summary": "의료 인공지능(AI) 기업 루닛(대표 서범석)은 내달 4일부터 8일까지 미국 애리조나주 피닉스에서 열리는 '2026 미국면역항암학회(Society for Immunotherapy of Cancer 2026, 이하 SITC 2026)'에서 AI 바이오마커 플랫폼 '루닛...",
-      "link": "http://www.bokuennews.com/news/article.html?no=285500",
-      "originallink": "http://www.bokuennews.com/news/article.html?no=285500",
-      "pubDate": "2026-10-14T16:30:00+09:00",
-      "queries": [
-        "루닛",
-        "의료 AI 기업",
-        "의료 AI"
-      ],
-      "category": "국내 의료 AI 기업",
-      "score": 10,
-      "query": "루닛",
-      "source_type": "other",
-      "similar_count": 1,
-      "similar_sources": [
-        "inews24.com"
-      ]
     },
     {
       "title": "환자 상태 악화 예측 AI, 타임 '세계 최고 헬스테크 기업' 최고 등급",
@@ -626,88 +623,6 @@
       "category": "국내 의료 AI 기업",
       "score": 10,
       "query": "에이아이트릭스",
-      "source_type": "other",
-      "similar_count": 0,
-      "similar_sources": []
-    },
-    {
-      "title": "유클리드소프트, 중소기업 랜섬웨어 대응 솔루션 '곳간' 연내 정식 출시",
-      "summary": "AI 보안 전문기업 유클리드소프트(대표 박주한)가 중소기업의 데이터 보호와 업무 연속성 확보를 위한... 엑셀 파일로 고객 정보를 관리하는 일반 기업은 물론 환자 개인정보와 진료 자료를 PC에 보관하는 중소형 의료기...",
-      "link": "https://n.news.naver.com/mnews/article/030/0003475048?sid=105",
-      "originallink": "https://www.etnews.com/20261014000351",
-      "pubDate": "2026-10-14T15:42:00+09:00",
-      "queries": [
-        "의료 AI 기업",
-        "의료 AI 보안",
-        "의료 데이터 개인정보",
-        "의료 AI"
-      ],
-      "category": "AI 거버넌스·보안",
-      "score": 10,
-      "query": "의료 AI 기업",
-      "source_type": "other",
-      "similar_count": 1,
-      "similar_sources": [
-        "it-b.co.kr"
-      ]
-    },
-    {
-      "title": "“바이오산업 AI 전환부터 수출까지”… 산업부-식약처, 상시협력체 구...",
-      "summary": "산업통상부는 바이오산업 육성을 담당하며, 식약처는 의약품·의료기기 규제를 책임지는 조직이다. 산업부와 식약처는 14일 강원 춘천바이오산업진흥원에서 ‘바이오산업의 인공지능(AI) 전환과 글로벌 경쟁력 강화를...",
-      "link": "http://www.segyebiz.com/newsView/20261014515778?OutUrl=naver",
-      "originallink": "http://www.segyebiz.com/newsView/20261014515778?OutUrl=naver",
-      "pubDate": "2026-10-14T14:50:00+09:00",
-      "queries": [
-        "식약처 AI 의료기기",
-        "의료 AI 기업",
-        "의료 AI 책임"
-      ],
-      "category": "국내 정책·규제",
-      "score": 10,
-      "query": "식약처 AI 의료기기",
-      "source_type": "other",
-      "similar_count": 1,
-      "similar_sources": [
-        "hemophilia.co.kr"
-      ]
-    },
-    {
-      "title": "에이아이트릭스, 美 타임 선정 '세계 최고 헬스테크 기업' 최고 등급",
-      "summary": "의료 인공지능(AI) 기업 에이아이트릭스가 미국 시사주간지 타임(TIME)이 선정한 세계 최고 헬스테크 기업에 이름을 올리며 AI·데이터 분석 분야에서 최고 등급을 받았다. 특히 재무 성과 평가에서 높은 점수를 기록해...",
-      "link": "https://www.mdtoday.co.kr/news/articleView.html?idxno=618742",
-      "originallink": "https://www.mdtoday.co.kr/news/articleView.html?idxno=618742",
-      "pubDate": "2026-10-14T14:50:00+09:00",
-      "queries": [
-        "에이아이트릭스",
-        "의료 AI 기업",
-        "의료 AI 환자안전",
-        "병원 AI"
-      ],
-      "category": "국내 의료 AI 기업",
-      "score": 10,
-      "query": "에이아이트릭스",
-      "source_type": "medical",
-      "similar_count": 0,
-      "similar_sources": []
-    },
-    {
-      "title": "\"AI 모델 경쟁에 비용↓·사용량↑..클라우드·보안 수혜 확산\"",
-      "summary": "토큰 단가와 과제 해결에 쓰이는 토큰 수가 함께 감소하면서 전체 작업 비용은 기존 오퍼스5 대비 40... 병원용 의료 소프트웨어의 치명적 보안 취약점을 발견했다. NH아문디자산운용은 이를 AI 모델 경쟁이 성능...",
-      "link": "http://www.4th.kr/news/articleView.html?idxno=2119724",
-      "originallink": "http://www.4th.kr/news/articleView.html?idxno=2119724",
-      "pubDate": "2026-10-14T14:48:00+09:00",
-      "queries": [
-        "의료 AI 수가",
-        "의료 AI 기업",
-        "의료 AI 보안",
-        "의료 AI 환각",
-        "구글 의료 AI",
-        "마이크로소프트 의료 AI",
-        "병원 AI"
-      ],
-      "category": "AI 거버넌스·보안",
-      "score": 10,
-      "query": "의료 AI 수가",
       "source_type": "other",
       "similar_count": 0,
       "similar_sources": []
@@ -800,28 +715,6 @@
       ]
     },
     {
-      "title": "시놀로지 \"AI 모델보다 데이터가 중요\"…관리·보호 전략 제시",
-      "summary": "서울아산병원 의료영상인공지능연구실은 AI 연구 데이터와 여러 NAS, 분산된 인증체계를 하나로 통합했다. LDAP와 CMS를 활용해 계정 권한과 NAS를 중앙관리하고 ‘스냅샷 리플리케이션’을 적용해 GPU 서버 간 데이터...",
-      "link": "https://n.news.naver.com/mnews/article/018/0006388186?sid=105",
-      "originallink": "https://www.edaily.co.kr/News/Read?newsId=02236966645613248&mediaCodeNo=257&utm_source=naver&utm_medium=referral&utm_campaign=news_syndication&utm_content=original_article",
-      "pubDate": "2026-10-15T06:50:00+09:00",
-      "queries": [
-        "서울아산병원 AI",
-        "의료 AI 기업",
-        "의료 AI 보안",
-        "의료 AI",
-        "병원 AI"
-      ],
-      "category": "국내 의료기관",
-      "score": 9,
-      "query": "서울아산병원 AI",
-      "source_type": "major",
-      "similar_count": 1,
-      "similar_sources": [
-        "digitaltoday.co.kr"
-      ]
-    },
-    {
       "title": "[10월 14일 병원계 이모저모⑤]경상국립대, 분당서울대, 여의도성모병원...",
       "summary": "◆분당서울대병원, AI 의료기기 GMP·ISO 13485 인증 기념 규제과학세미나 개최 분당서울대병원이 지난 13일 헬스케어혁신파크 5층 소강당에서 ‘디지털의료제품법 GMP 및 ISO 13485 인증 기념 의료기기 규제과학세미나’를...",
       "link": "https://medicalworldnews.co.kr/news/view.php?idx=1510977857",
@@ -834,6 +727,7 @@
         "의료 AI 환자안전",
         "의료 AI 책임",
         "의료 AI 세미나",
+        "의료 AI",
         "병원 AI"
       ],
       "category": "국내 의료기관",
@@ -844,11 +738,11 @@
       "similar_sources": []
     },
     {
-      "title": "루닛, 난소암·방광암으로 AI 바이오마커 확장",
-      "summary": "루닛 SITC 2026 참가. 루닛 제공 | 서울=한스경제 김동주 기자 | 루닛이 글로벌 진단·임상시험 기업들과의 공동연구를 앞세워 면역항암 분야에서 인공지능(AI) 바이오마커 기술의 활용 범위를 넓힌다. 루닛은 오는 11월 4...",
-      "link": "http://www.hansbiz.co.kr/news/articleView.html?idxno=872532",
-      "originallink": "http://www.hansbiz.co.kr/news/articleView.html?idxno=872532",
-      "pubDate": "2026-10-14T15:32:00+09:00",
+      "title": "루닛, 미국면역항암학회서 AI 기반 분석 연구 2편 발표",
+      "summary": "의료 인공지능(AI) 기업 루닛(대표 서범석)은 내달 4일부터 8일까지 미국 애리조나주 피닉스에서 열리는 '2026 미국면역항암학회(Society for Immunotherapy of Cancer 2026, 이하 SITC 2026)'에서 AI 바이오마커 플랫폼 '루닛...",
+      "link": "http://www.bokuennews.com/news/article.html?no=285500",
+      "originallink": "http://www.bokuennews.com/news/article.html?no=285500",
+      "pubDate": "2026-10-14T16:30:00+09:00",
       "queries": [
         "루닛",
         "의료 AI 기업",
@@ -862,21 +756,24 @@
       "similar_sources": []
     },
     {
-      "title": "\"전 국민에 AI 에이전트 하나씩\"…카카오, '모두의 AI' 청사진 공개",
-      "summary": "현재 카카오는 LG전자, LG AI 연구원, LG CNS, LG유플러스 등 LG그룹 4개사와 웍스피어, 퓨리오사AI, 루닛, 서울대학교병원, 신한은행 등과 컨소시엄을 꾸렸다. 유용하 모두의 AI 프로덕트 총괄은 14일 경기도 용인시에서 열린...",
-      "link": "https://n.news.naver.com/mnews/article/092/0002440905?sid=105",
-      "originallink": "https://zdnet.co.kr/view/?no=20261014143204",
-      "pubDate": "2026-10-14T14:59:00+09:00",
+      "title": "유클리드소프트, 중소기업 랜섬웨어 대응 솔루션 '곳간' 연내 정식 출시",
+      "summary": "AI 보안 전문기업 유클리드소프트(대표 박주한)가 중소기업의 데이터 보호와 업무 연속성 확보를 위한... 엑셀 파일로 고객 정보를 관리하는 일반 기업은 물론 환자 개인정보와 진료 자료를 PC에 보관하는 중소형 의료기...",
+      "link": "https://n.news.naver.com/mnews/article/030/0003475048?sid=105",
+      "originallink": "https://www.etnews.com/20261014000351",
+      "pubDate": "2026-10-14T15:42:00+09:00",
       "queries": [
-        "루닛",
-        "병원 AI"
+        "의료 AI 기업",
+        "의료 AI 보안",
+        "의료 데이터 개인정보"
       ],
-      "category": "국내 의료 AI 기업",
+      "category": "AI 거버넌스·보안",
       "score": 9,
-      "query": "루닛",
+      "query": "의료 AI 기업",
       "source_type": "other",
-      "similar_count": 0,
-      "similar_sources": []
+      "similar_count": 1,
+      "similar_sources": [
+        "it-b.co.kr"
+      ]
     },
     {
       "title": "대한진단검사의학회 국제학술대회 ‘LMCE 2026’, 21일 서울서 개막",
@@ -1060,14 +957,34 @@
       "score": 8,
       "query": "세브란스 AI",
       "source_type": "major",
-      "similar_count": 8,
+      "similar_count": 9,
       "similar_sources": [
         "biotimes.co.kr",
+        "hankookilbo.com",
         "irobotnews.com",
         "mk.co.kr",
-        "newstopkorea.com",
-        "platum.kr"
+        "newstopkorea.com"
       ]
+    },
+    {
+      "title": "시놀로지 \"AI 모델보다 데이터가 중요\"…관리·보호 전략 제시",
+      "summary": "서울아산병원 의료영상인공지능연구실은 AI 연구 데이터와 여러 NAS, 분산된 인증체계를 하나로 통합했다. LDAP와 CMS를 활용해 계정 권한과 NAS를 중앙관리하고 ‘스냅샷 리플리케이션’을 적용해 GPU 서버 간 데이터...",
+      "link": "https://n.news.naver.com/mnews/article/018/0006388186?sid=105",
+      "originallink": "https://www.edaily.co.kr/News/Read?newsId=02236966645613248&mediaCodeNo=257&utm_source=naver&utm_medium=referral&utm_campaign=news_syndication&utm_content=original_article",
+      "pubDate": "2026-10-15T06:50:00+09:00",
+      "queries": [
+        "서울아산병원 AI",
+        "의료 AI 기업",
+        "의료 AI 보안",
+        "의료 AI",
+        "병원 AI"
+      ],
+      "category": "국내 의료기관",
+      "score": 8,
+      "query": "서울아산병원 AI",
+      "source_type": "major",
+      "similar_count": 0,
+      "similar_sources": []
     },
     {
       "title": "메디통, 세계병원대회서 AI 운영 비전 공개",
@@ -1089,6 +1006,23 @@
       "similar_sources": []
     },
     {
+      "title": "식약처·산업부, 바이오산업 AI 전환부터 수출까지 전주기 협력",
+      "summary": "이번 협약은 바이오산업이 AI 확산과 글로벌 공급망 재편 등으로 패러다임 전환을 맞는 상황에서 우리 기업... 보건의료품목 등의 공급망 안정화를 위해 협력한다. 국장급 협의체에서 바이오 제조 AI 전환(M.AX), 바이오...",
+      "link": "https://www.hemophilia.co.kr/news/articleView.html?idxno=45039",
+      "originallink": "https://www.hemophilia.co.kr/news/articleView.html?idxno=45039",
+      "pubDate": "2026-10-14T16:30:00+09:00",
+      "queries": [
+        "의료 AI 기업",
+        "의료 AI"
+      ],
+      "category": "국내 정책·규제",
+      "score": 8,
+      "query": "의료 AI 기업",
+      "source_type": "other",
+      "similar_count": 0,
+      "similar_sources": []
+    },
+    {
       "title": "국제성모병원, 카자흐스탄 아스타나와 AI의료 협력 확대",
       "summary": "국내 AI 의료기업 웨이센과 맨인블록, 현지 협력사 알마에코도 참여해 한국형 의료솔루션의 현지 도입 가능성을 살폈다. 병원 방문단은 협약 이후 아스타나 제2시립종합병원과 시립어린이병원을 찾아 의료진과 협력...",
       "link": "https://n.news.naver.com/mnews/article/003/0014253615?sid=102",
@@ -1103,10 +1037,12 @@
       "score": 8,
       "query": "의료 AI 기업",
       "source_type": "major",
-      "similar_count": 3,
+      "similar_count": 5,
       "similar_sources": [
         "bokuennews.com",
-        "dailymedi.com",
+        "edaily.co.kr",
+        "lawissue.co.kr",
+        "medipana.com",
         "thefirstmedia.net"
       ]
     },
@@ -1134,6 +1070,37 @@
       ]
     },
     {
+      "title": "[병원계 소식] 10월 14일",
+      "summary": "식약처로부터 지정받은 '질량분석' 항목을 바탕으로 구조가 복잡한 항체약물접합체(ADC) 체내 동태 분석... 병원은 지난해 11월 AI 의료기기 소프트웨어의 제조·컨설팅·테스팅 분야에서 ISO 13485 국제인증을 획득했고...",
+      "link": "http://www.doctorstimes.com/news/articleView.html?idxno=240467",
+      "originallink": "http://www.doctorstimes.com/news/articleView.html?idxno=240467",
+      "pubDate": "2026-10-14T16:10:00+09:00",
+      "queries": [
+        "식약처 AI 의료기기",
+        "의료 AI 지원사업",
+        "서울대병원 AI",
+        "삼성서울병원 AI",
+        "세브란스 AI",
+        "서울성모병원 AI",
+        "병원 생성형 AI",
+        "의료 AI 기업",
+        "의료 AI 환자안전",
+        "의료 AI 책임",
+        "의료 AI 세미나",
+        "의료 AI",
+        "병원 AI"
+      ],
+      "category": "국내 정책·규제",
+      "score": 8,
+      "query": "식약처 AI 의료기기",
+      "source_type": "medical",
+      "similar_count": 4,
+      "similar_sources": [
+        "doctorstimes.com",
+        "ggilbo.com"
+      ]
+    },
+    {
       "title": "\"강원도 응급실 뺑뺑이 끝낼 것\" 한림대춘천성심병원 새 수장의 청사진",
       "summary": "강화 △인공지능(AI)·디지털 헬스케어 등 미래의료 분야 육성을 제시했다. 한림대춘천성심병원은... 강원도 내 권역응급의료센터는 강릉(강릉아산병원), 원주(원주세브란스병원), 춘천(한림대춘천성심병원) 등 3곳이...",
       "link": "https://n.news.naver.com/mnews/article/008/0005426277?sid=103",
@@ -1143,7 +1110,6 @@
         "세브란스 AI",
         "의료 AI 환자안전",
         "의료 AI 책임",
-        "의료 AI",
         "병원 AI"
       ],
       "category": "국내 의료기관",
@@ -1156,16 +1122,14 @@
       ]
     },
     {
-      "title": "글로벌 수출 기대 커진 의료기기주…종목별 온도 차",
-      "summary": "의료 AI 관련주인 루닛과 제이엘케이도 강세 흐름을 이어갔다. 의료영상 분석과 진단 보조 기술이 의료 현장에서 활용 범위를 넓힐 수 있다는 기대가 반영된 것으로 보인다. 다만 기술 도입 확대와 수익성 개선 사이에는...",
-      "link": "https://www.pinpointnews.co.kr/news/articleView.html?idxno=495273",
-      "originallink": "https://www.pinpointnews.co.kr/news/articleView.html?idxno=495273",
-      "pubDate": "2026-10-14T15:00:00+09:00",
+      "title": "루닛, 난소암·방광암으로 AI 바이오마커 확장",
+      "summary": "루닛 SITC 2026 참가. 루닛 제공 | 서울=한스경제 김동주 기자 | 루닛이 글로벌 진단·임상시험 기업들과의 공동연구를 앞세워 면역항암 분야에서 인공지능(AI) 바이오마커 기술의 활용 범위를 넓힌다. 루닛은 오는 11월 4...",
+      "link": "http://www.hansbiz.co.kr/news/articleView.html?idxno=872532",
+      "originallink": "http://www.hansbiz.co.kr/news/articleView.html?idxno=872532",
+      "pubDate": "2026-10-14T15:32:00+09:00",
       "queries": [
         "루닛",
-        "제이엘케이",
-        "의료 AI 기업",
-        "의료 AI"
+        "의료 AI 기업"
       ],
       "category": "국내 의료 AI 기업",
       "score": 8,
@@ -1173,6 +1137,27 @@
       "source_type": "other",
       "similar_count": 0,
       "similar_sources": []
+    },
+    {
+      "title": "화성특례시, 의료·돌봄·AI 등 적극행정 우수사례 8건 선정",
+      "summary": "시 부문 최우수상은 균형발전과의 고려대학교 동탄병원 연계 의료 기반 확충 사례가 차지했다. 공공기관 부문에서는 화성도시공사 봉담체육센터부의 AI 기반 안전관리시스템 구축 및 중소벤처기업부 연구개발(R&D) 선정...",
+      "link": "https://www.asiatoday.co.kr/kn/view.php?key=20261015010004977",
+      "originallink": "https://www.asiatoday.co.kr/kn/view.php?key=20261015010004977",
+      "pubDate": "2026-10-15T16:46:00+09:00",
+      "queries": [
+        "의료 AI 기업",
+        "의료 AI",
+        "병원 AI"
+      ],
+      "category": "국내 의료 AI 기업",
+      "score": 7,
+      "query": "의료 AI 기업",
+      "source_type": "other",
+      "similar_count": 2,
+      "similar_sources": [
+        "m-i.kr",
+        "weeklytoday.com"
+      ]
     },
     {
       "title": "보건산업진흥원, AI 의료기술 글로벌 현장 적용·확산 모색",
@@ -1358,9 +1343,9 @@
       "source_type": "other",
       "similar_count": 3,
       "similar_sources": [
-        "cnbnews.com",
         "enewstoday.co.kr",
-        "gukjenews.com"
+        "gukjenews.com",
+        "kgnews.co.kr"
       ]
     },
     {
@@ -1397,13 +1382,13 @@
       "score": 7,
       "query": "세브란스 AI",
       "source_type": "major",
-      "similar_count": 13,
+      "similar_count": 14,
       "similar_sources": [
+        "bosa.co.kr",
         "ddaily.co.kr",
         "digitaltoday.co.kr",
         "dt.co.kr",
-        "etoday.co.kr",
-        "hemophilia.co.kr"
+        "etoday.co.kr"
       ]
     },
     {
@@ -1497,6 +1482,24 @@
       "similar_sources": [
         "jeonmin.co.kr",
         "nocutnews.co.kr"
+      ]
+    },
+    {
+      "title": "대전정보문화산업진흥원-대전시한의사회, 의료 AI 협력 맞손",
+      "summary": "이번 협약은 대전시와 진흥원이 추진하는 'K-Health 국민의료 AI서비스 및 산업생태계 구축사업'의 일환으로, 한의 의료 분야의 데이터 활용 가능성을 넓히고 지역 의료 AI 산업의 협력 기반을 강화하기 위해 마련됐다. 양...",
+      "link": "http://www.chungnamilbo.co.kr/news/articleView.html?idxno=914781",
+      "originallink": "http://www.chungnamilbo.co.kr/news/articleView.html?idxno=914781",
+      "pubDate": "2026-10-15T08:18:00+09:00",
+      "queries": [
+        "의료 AI"
+      ],
+      "category": "기타 (의료 AI·병원 AI 키워드)",
+      "score": 7,
+      "query": "의료 AI",
+      "source_type": "other",
+      "similar_count": 1,
+      "similar_sources": [
+        "wikitree.co.kr"
       ]
     },
     {
@@ -1628,26 +1631,6 @@
       "similar_sources": []
     },
     {
-      "title": "뉴로핏, '바이오스펙트럼 아시아 엑셀런스 어워즈 2026' 2관왕 쾌거",
-      "summary": "뇌 질환 진단·치료 인공지능(AI) 전문기업 뉴로핏(공동대표이사 빈준길·김동현)은 '바이오스펙트럼... 이어 \"앞으로 ICL 서비스 확대를 위해 글로벌 제약바이오 기업 및 의료·연구기관은 물론 글로벌 CRO...",
-      "link": "https://www.bosa.co.kr/news/articleView.html?idxno=3013942",
-      "originallink": "https://www.bosa.co.kr/news/articleView.html?idxno=3013942",
-      "pubDate": "2026-10-14T17:18:00+09:00",
-      "queries": [
-        "의료 AI 기업",
-        "의료 AI"
-      ],
-      "category": "국내 의료 AI 기업",
-      "score": 7,
-      "query": "의료 AI 기업",
-      "source_type": "medical",
-      "similar_count": 2,
-      "similar_sources": [
-        "bokuennews.com",
-        "getnews.co.kr"
-      ]
-    },
-    {
       "title": "가천대 길병원, AI 기반 '환자경험 통합 플랫폼' 본격 가동",
       "summary": "직접 개발에 참여해 현장에 필요한 기능을 구현했다는 점에서 의미가 크다\"며 \"AI를 적극 활용해 업무의 효율성과 대응 속도를 높이고, 이를 환자들이 체감할 수 있는 의료 서비스 개선으로 이어가겠다\"고 강조했다.",
       "link": "https://www.bosa.co.kr/news/articleView.html?idxno=3013944",
@@ -1709,37 +1692,6 @@
       "similar_sources": []
     },
     {
-      "title": "[병원계 소식] 10월 14일",
-      "summary": "식약처로부터 지정받은 '질량분석' 항목을 바탕으로 구조가 복잡한 항체약물접합체(ADC) 체내 동태 분석... 병원은 지난해 11월 AI 의료기기 소프트웨어의 제조·컨설팅·테스팅 분야에서 ISO 13485 국제인증을 획득했고...",
-      "link": "http://www.doctorstimes.com/news/articleView.html?idxno=240467",
-      "originallink": "http://www.doctorstimes.com/news/articleView.html?idxno=240467",
-      "pubDate": "2026-10-14T16:10:00+09:00",
-      "queries": [
-        "식약처 AI 의료기기",
-        "의료 AI 지원사업",
-        "서울대병원 AI",
-        "삼성서울병원 AI",
-        "세브란스 AI",
-        "서울성모병원 AI",
-        "병원 생성형 AI",
-        "의료 AI 기업",
-        "의료 AI 환자안전",
-        "의료 AI 책임",
-        "의료 AI 세미나",
-        "의료 AI",
-        "병원 AI"
-      ],
-      "category": "국내 정책·규제",
-      "score": 7,
-      "query": "식약처 AI 의료기기",
-      "source_type": "medical",
-      "similar_count": 2,
-      "similar_sources": [
-        "doctorstimes.com",
-        "ggilbo.com"
-      ]
-    },
-    {
       "title": "﻿병원정보보안協, 내부자 유출 통제 전략 제시",
       "summary": "협회는 이번 가이드라인을 오는 15일부터 16일까지 연세의료원에서 열리는 '2026 병원정보보안협회 추계세미나' 현장에서 인쇄본으로 배포할 계획이다. 올해 세미나는 ‘AI 디지털 헬스케어 시대의 정보보호’를 주제로...",
       "link": "https://www.dailymedi.com/news/news_view.php?wr_id=941454",
@@ -1778,43 +1730,25 @@
       "similar_sources": []
     },
     {
-      "title": "\"강원 필수의료 공백 메운다\" 춘천성심병원 '진료·연구 역량 집중'",
-      "summary": "핵심요약조재호 병원장 \"지역 완결형 의료체계 구축\" 4대 전략 발표 중증응급·뇌신경질환 등 선택과 집중…AI... 조 병원장은 \"강원도는 춘천성심병원과 강릉아산병원, 원주세브란스기독병원 등 사립대병원들이 오랫동안...",
-      "link": "https://n.news.naver.com/mnews/article/079/0004198750?sid=102",
-      "originallink": "https://www.nocutnews.co.kr/news/6591415?utm_source=naver&utm_medium=article&utm_campaign=20261014030649",
-      "pubDate": "2026-10-14T15:07:00+09:00",
-      "queries": [
-        "세브란스 AI",
-        "의료 AI 책임",
-        "의료 AI 논문",
-        "의료 AI",
-        "병원 AI"
-      ],
-      "category": "국내 의료기관",
-      "score": 7,
-      "query": "세브란스 AI",
-      "source_type": "other",
-      "similar_count": 0,
-      "similar_sources": []
-    },
-    {
-      "title": "한림대춘천성심병원 “강원 첫 연구중심병원 도약…AI로 골든타임 사수...",
-      "summary": "인공지능(AI)·비대면 기술을 중증 뇌질환 등 실제 현장에 접목하며 지역 필수의료 골든타임 사수에 나선다.... 올해 새로 선정된 대형 과제 2건도 뇌질환 AI 분야다. '연구중심병원 도약지원사업'으로 초고령사회 뇌신경계...",
-      "link": "https://n.news.naver.com/mnews/article/030/0003475026?sid=105",
-      "originallink": "https://www.etnews.com/20261014000330",
-      "pubDate": "2026-10-14T15:05:00+09:00",
+      "title": "GIST-옵토닉스-화순전남대병원, 맞춤형 침상 재활로봇 개발",
+      "summary": "광주과학기술원(GIST, 총장 임기철)은 AI학과 강지연 교수 연구팀이 옵토닉스, 화순전남대학교병원과... 바이오·의료기술개발사업, 과학기술정보통신부 InnoCORE 사업의 지원을 받아 수행됐다. 연구 결과는 9월 27일부터...",
+      "link": "https://www.irobotnews.com/news/articleView.html?idxno=49014",
+      "originallink": "https://www.irobotnews.com/news/articleView.html?idxno=49014",
+      "pubDate": "2026-10-15T17:02:00+09:00",
       "queries": [
         "의료 AI 지원사업",
-        "의료 AI 책임",
+        "의료 AI 환자안전",
         "의료 AI",
         "병원 AI"
       ],
       "category": "국내 정책·규제",
-      "score": 7,
+      "score": 6,
       "query": "의료 AI 지원사업",
       "source_type": "other",
-      "similar_count": 0,
-      "similar_sources": []
+      "similar_count": 1,
+      "similar_sources": [
+        "etnews.com"
+      ]
     },
     {
       "title": "보건산업진흥원, AI 이용 의료 격차 해소…\"현장 적용 모델 발굴\"",
@@ -1980,22 +1914,6 @@
       ]
     },
     {
-      "title": "대전정보문화산업진흥원-대전시한의사회, 의료 AI 협력 맞손",
-      "summary": "이번 협약은 대전시와 진흥원이 추진하는 'K-Health 국민의료 AI서비스 및 산업생태계 구축사업'의 일환으로, 한의 의료 분야의 데이터 활용 가능성을 넓히고 지역 의료 AI 산업의 협력 기반을 강화하기 위해 마련됐다. 양...",
-      "link": "http://www.chungnamilbo.co.kr/news/articleView.html?idxno=914781",
-      "originallink": "http://www.chungnamilbo.co.kr/news/articleView.html?idxno=914781",
-      "pubDate": "2026-10-15T08:18:00+09:00",
-      "queries": [
-        "의료 AI"
-      ],
-      "category": "기타 (의료 AI·병원 AI 키워드)",
-      "score": 6,
-      "query": "의료 AI",
-      "source_type": "other",
-      "similar_count": 0,
-      "similar_sources": []
-    },
-    {
       "title": "당근마켓에 의료기기 판매글 버젓이…식약처 관리 '사각지대'",
       "summary": "이에 박 의원은 식약처가 국내 온라인 쇼핑 플랫폼에 등록된 의료기기 판매업자 현황 관리를 소흘히 하고 있다며 \"AI 자동 필터링을 통한 온라인 플랫폼 내 의료기기 광고 및 판매 관리 강화, 의료기기 판매업 신고증...",
       "link": "https://www.mdtoday.co.kr/news/articleView.html?idxno=618759",
@@ -2108,26 +2026,6 @@
       "similar_sources": []
     },
     {
-      "title": "천안시, 2026 장애인체전 무장애 환경과 AI 중계로 혁신",
-      "summary": "특히 강화된 안전 대책으로 경찰과 소방, 의료인력이 참여하는 합동상황실을 운영하고 실시간 인파 모니터링 시스템을 가동한다. 종목별 경기장에는 민간 응급환자 이송 차량을 배치해 부상자 발생 시 신속하게 병원으로...",
-      "link": "https://www.viva100.com/article/20261014501346",
-      "originallink": "https://www.viva100.com/article/20261014501346",
-      "pubDate": "2026-10-14T20:34:00+09:00",
-      "queries": [
-        "의료 AI 환자안전",
-        "병원 AI"
-      ],
-      "category": "AI 거버넌스·보안",
-      "score": 6,
-      "query": "의료 AI 환자안전",
-      "source_type": "other",
-      "similar_count": 2,
-      "similar_sources": [
-        "dtnews24.com",
-        "shinailbo.co.kr"
-      ]
-    },
-    {
       "title": "[이슈] '안심 돌봄'까지 챙기는 NH농협생명, AI로 고령층 공략 눈길",
       "summary": "NH농협생명은 치매 보장상품과 비의료 건강관리 서비스를 함께 운영하면서 고령층 대상 사업 범위를 넓히고 있다. ■ 농협금융도 가세...고령층 '돌봄' 확대 지원 사업 농협금융 차원의 고령층 지원 사업도 진행 중이다....",
       "link": "https://www.startuptoday.co.kr/news/articleView.html?idxno=815888",
@@ -2145,6 +2043,25 @@
       "source_type": "other",
       "similar_count": 0,
       "similar_sources": []
+    },
+    {
+      "title": "뉴로핏, '바이오스펙트럼 아시아 엑셀런스 어워즈 2026' 2관왕 쾌거",
+      "summary": "뇌 질환 진단·치료 인공지능(AI) 전문기업 뉴로핏(공동대표이사 빈준길·김동현)은 '바이오스펙트럼... 이어 \"앞으로 ICL 서비스 확대를 위해 글로벌 제약바이오 기업 및 의료·연구기관은 물론 글로벌 CRO...",
+      "link": "https://www.bosa.co.kr/news/articleView.html?idxno=3013942",
+      "originallink": "https://www.bosa.co.kr/news/articleView.html?idxno=3013942",
+      "pubDate": "2026-10-14T17:18:00+09:00",
+      "queries": [
+        "의료 AI 기업",
+        "의료 AI"
+      ],
+      "category": "국내 의료 AI 기업",
+      "score": 6,
+      "query": "의료 AI 기업",
+      "source_type": "medical",
+      "similar_count": 1,
+      "similar_sources": [
+        "bokuennews.com"
+      ]
     },
     {
       "title": "\"AI가 불러올 바이오 혁신\"…글로벌 빅파마·정부 수장들 총집결",
@@ -2199,13 +2116,13 @@
       "score": 6,
       "query": "의료 AI 환자안전",
       "source_type": "medical",
-      "similar_count": 10,
+      "similar_count": 5,
       "similar_sources": [
-        "cnbizm.com",
         "daily.hankooki.com",
         "digitalchosun.dizzo.com",
-        "metroseoul.co.kr",
-        "mkhealth.co.kr"
+        "mkhealth.co.kr",
+        "news1.kr",
+        "thefirstmedia.net"
       ]
     },
     {
@@ -2265,37 +2182,55 @@
       "similar_sources": []
     },
     {
-      "title": "[기획]한림대, AI 교육 선도대학 도약…학부부터 대학원까지 인재양성 ...",
-      "summary": "글로컬대학 사업을 통해 교육 기반을 다졌다. 대학과 병원의 공동연구, 의료·바이오 및 사회안전 분야의 특화 연구도 중요한 역할을 했다. 특히 전교생 AI 기초교육과 전공 융합교육, 대학 자체 연구지원 플랫폼인...",
-      "link": "https://n.news.naver.com/mnews/article/030/0003475024?sid=105",
-      "originallink": "https://www.etnews.com/20261014000027",
-      "pubDate": "2026-10-14T15:02:00+09:00",
+      "title": "전남대병원, '초고령 농촌 건강장수 비결'... 16일 건강백세포럼 개최",
+      "summary": "행사에서는 유전체와 바이오인포매틱스, 첨단 의료 인공지능(AI), 전북 고창 백세인 심층 현장조사, 영양 및 식습관 분석, 국가 통계 지표 등 다채로운 연구 영역의 성과를 폭넓게 공유하고 국내 백세인 연구의 중장기...",
+      "link": "https://www.newsworker.co.kr/news/articleView.html?idxno=508840",
+      "originallink": "https://www.newsworker.co.kr/news/articleView.html?idxno=508840",
+      "pubDate": "2026-10-15T17:00:00+09:00",
       "queries": [
-        "의료 AI 지원사업",
-        "병원 생성형 AI",
-        "의료 AI 기업",
+        "의료 AI",
         "병원 AI"
       ],
-      "category": "국내 정책·규제",
-      "score": 6,
-      "query": "의료 AI 지원사업",
+      "category": "학술·연구·행사",
+      "score": 5,
+      "query": "의료 AI",
       "source_type": "other",
       "similar_count": 0,
       "similar_sources": []
     },
     {
-      "title": "엔티엘헬스케어, 온프레미스 자궁경부암 AI '써비케어 AI AT' 출시",
-      "summary": "의료 AI 도입이 확대되면서 의료기관에서는 AI 분석 성능뿐 아니라 환자 데이터의 저장·전송 방식, 내부 보안정책, IT 인프라 등도 주요 도입 요소로 고려하고 있다. 더욱이 공공병원이나 대형 의료기관처럼...",
-      "link": "https://www.rapportian.com/news/articleView.html?idxno=241258",
-      "originallink": "https://www.rapportian.com/news/articleView.html?idxno=241258",
-      "pubDate": "2026-10-14T14:40:00+09:00",
+      "title": "[10월 15일 병원‧의료소식] 고려대의료원·국립중앙의료원·강남세브란...",
+      "summary": "강남세브란스병원은 영양불량 환자를 위한 증상별 맞춤 식단을 선보였으며, 국제성모병원은 카자흐스탄에... 국제성모병원, 카자흐스탄에 스마트 원격의료센터 개소 망기스타우주립병원과 의료협력 확대…AI 기반...",
+      "link": "http://www.kmedinfo.co.kr/news/articleView.html?idxno=98249",
+      "originallink": "http://www.kmedinfo.co.kr/news/articleView.html?idxno=98249",
+      "pubDate": "2026-10-15T16:56:00+09:00",
       "queries": [
-        "의료 AI 보안",
+        "세브란스 AI",
+        "의료 AI 기업",
+        "의료 AI",
+        "병원 AI"
+      ],
+      "category": "국내 의료기관",
+      "score": 5,
+      "query": "세브란스 AI",
+      "source_type": "other",
+      "similar_count": 0,
+      "similar_sources": []
+    },
+    {
+      "title": "DGIST, 의료영상 AI 국제대회 ‘EndoVis 챌린지’ 1위…3년 연속 수상",
+      "summary": "뉴데일리 강승탁 기자 = DGIST 연구팀이 국제 의료영상 인공지능(AI) 대회에서 1위를 차지하며 내시경 영상 분석 기술력을 인정받았다. DGIST(총장 이건우)는 지능로봇연구부 이현기 책임연구원(로봇AX연구단장 겸임)...",
+      "link": "https://tk.newdaily.co.kr/site/data/html/2026/10/15/2026101500311.html",
+      "originallink": "https://tk.newdaily.co.kr/site/data/html/2026/10/15/2026101500311.html",
+      "pubDate": "2026-10-15T16:44:00+09:00",
+      "queries": [
+        "의료 AI 책임",
+        "의료 AI",
         "병원 AI"
       ],
       "category": "AI 거버넌스·보안",
-      "score": 6,
-      "query": "의료 AI 보안",
+      "score": 5,
+      "query": "의료 AI 책임",
       "source_type": "other",
       "similar_count": 0,
       "similar_sources": []
@@ -2462,26 +2397,6 @@
       "similar_sources": []
     },
     {
-      "title": "국제성모병원-카자흐스탄 망기스타우주, 스마트 원격의료 분야 협력 강...",
-      "summary": "이와 함께 티알, 프로메디우스, 아크, 올쏘케어, 레메디, 웨이센, 맨인블록 등 국내 AI 의료기술 기업들도 심포지엄에 참여해 AI 기반 의료 솔루션과 디지털헬스케어 기술을 선보였다. 심포지엄에서는 망기스타우주 내...",
-      "link": "https://n.news.naver.com/mnews/article/018/0006388496?sid=102",
-      "originallink": "https://www.edaily.co.kr/News/Read?newsId=03637526645613248&mediaCodeNo=257&utm_source=naver&utm_medium=referral&utm_campaign=news_syndication&utm_content=original_article",
-      "pubDate": "2026-10-15T11:45:00+09:00",
-      "queries": [
-        "의료 AI 기업",
-        "의료 AI",
-        "병원 AI"
-      ],
-      "category": "학술·연구·행사",
-      "score": 5,
-      "query": "의료 AI 기업",
-      "source_type": "major",
-      "similar_count": 1,
-      "similar_sources": [
-        "lawissue.co.kr"
-      ]
-    },
-    {
       "title": "울산대병원, 정부 '딥테크 챌린지 프로젝트(DCP)' 참여",
       "summary": "이번 과제는 메디컬 테크기업 '티알'이 주도해 호흡 데이터 분석 AI 모델 구축 및 종합 폐기능 검사기기 국산화를 추진하는 것으로, 고려대 안암병원, 강남세브란스병원, KAIST 등이 참여하며, 울산대병원은 환자 맞춤형...",
       "link": "https://www.bosa.co.kr/news/articleView.html?idxno=3013998",
@@ -2587,13 +2502,13 @@
       "score": 5,
       "query": "병원 AI",
       "source_type": "major",
-      "similar_count": 6,
+      "similar_count": 9,
       "similar_sources": [
+        "enewstoday.co.kr",
         "job-post.co.kr",
         "kmaeil.com",
         "kyeonggi.com",
-        "mygoyang.com",
-        "nocutnews.co.kr"
+        "mygoyang.com"
       ]
     },
     {
@@ -2707,6 +2622,25 @@
       "source_type": "other",
       "similar_count": 0,
       "similar_sources": []
+    },
+    {
+      "title": "천안시, 2026 장애인체전 무장애 환경과 AI 중계로 혁신",
+      "summary": "특히 강화된 안전 대책으로 경찰과 소방, 의료인력이 참여하는 합동상황실을 운영하고 실시간 인파 모니터링 시스템을 가동한다. 종목별 경기장에는 민간 응급환자 이송 차량을 배치해 부상자 발생 시 신속하게 병원으로...",
+      "link": "https://www.viva100.com/article/20261014501346",
+      "originallink": "https://www.viva100.com/article/20261014501346",
+      "pubDate": "2026-10-14T20:34:00+09:00",
+      "queries": [
+        "의료 AI 환자안전",
+        "병원 AI"
+      ],
+      "category": "AI 거버넌스·보안",
+      "score": 5,
+      "query": "의료 AI 환자안전",
+      "source_type": "other",
+      "similar_count": 1,
+      "similar_sources": [
+        "dtnews24.com"
+      ]
     },
     {
       "title": "DGIST, 내시경 카메라 위치 추정 AI 경진대회 1위",
@@ -2922,132 +2856,58 @@
       "similar_sources": []
     },
     {
-      "title": "심평원 등 6개 기관 'K-테스트베드' 신규 참여…중소기업 기술 실증 지원",
-      "summary": "K-테스트베드는 공공 시설·부지를 활용한 중소·벤처기업의 신기술·시제품 실증과 판로 확대를 지원하는... 클라우드 환경과 GPU(그래픽 처리 장치)·서버 자원을 활용해 클라우드·AI(인공지능) 관련 기술과 보건의료...",
-      "link": "https://www.shinailbo.co.kr/news/articleView.html?idxno=5071809",
-      "originallink": "https://www.shinailbo.co.kr/news/articleView.html?idxno=5071809",
-      "pubDate": "2026-10-14T15:34:00+09:00",
+      "title": "“한국 건강검진, 미국도 배워야”…미 하원의원 “시범사업 도입 검토...",
+      "summary": "스트릭랜드 의원은 “AI와 새로운 기술이 사람을 대체할 것이라는 우려도 있지만, 기술을 잘 활용하면 의료서비스를 더욱 효율적으로 제공할 수 있다”며 “다만 환자의 안전을 보장하고 개인정보를 보호하는 것이...",
+      "link": "https://n.news.naver.com/mnews/article/028/0002827630?sid=103",
+      "originallink": "https://www.hani.co.kr/arti/hanihealth/medical/1282569.html",
+      "pubDate": "2026-10-15T17:08:00+09:00",
       "queries": [
-        "의료 AI 기업",
-        "의료 AI"
-      ],
-      "category": "국내 정책·규제",
-      "score": 5,
-      "query": "의료 AI 기업",
-      "source_type": "other",
-      "similar_count": 0,
-      "similar_sources": []
-    },
-    {
-      "title": "‘생각 읽는 모자’부터 AI·양자·우주까지…CES 2027 미리 보니",
-      "summary": "AI 반도체·메모리 등 인프라와 헬스케어·제조·사이버 보안에 특화된 ‘버티컬 AI’도 주요 전시 분야로... AI 기반 건강 관리와 정밀 의료, 디지털 치료제, 원격 의료, 웨어러블 기기 등을 한곳에 모은다. 개인 맞춤형...",
-      "link": "https://n.news.naver.com/mnews/article/023/0004003800?sid=105",
-      "originallink": "https://www.chosun.com/economy/tech_it/2026/10/14/FGBMRIGR4RCQ5LMWN6TZ62IKSM/?utm_source=naver&utm_medium=referral&utm_campaign=naver-news",
-      "pubDate": "2026-10-14T15:22:00+09:00",
-      "queries": [
-        "의료 AI 보안",
-        "의료 AI"
-      ],
-      "category": "AI 거버넌스·보안",
-      "score": 5,
-      "query": "의료 AI 보안",
-      "source_type": "major",
-      "similar_count": 0,
-      "similar_sources": []
-    },
-    {
-      "title": "대구보건대 ‘물리치료학과 개설 50주년 심포지엄’ 개최",
-      "summary": "이어 강주현 대한의사협회 의료정책연구원, 임현균 한국표준과학연구원 책임연구원, 김복규 뉴욕주립대학교 물리치료학과 교수가 각각 일본 보건복지제도와 AI·물리치료, 미국 물리치료 제도와 면허 등을 주제로...",
-      "link": "https://n.news.naver.com/mnews/article/025/0003557858?sid=103",
-      "originallink": "https://www.joongang.co.kr/article/25469660",
-      "pubDate": "2026-10-14T15:11:00+09:00",
-      "queries": [
-        "의료 AI 책임",
-        "의료 AI"
-      ],
-      "category": "학술·연구·행사",
-      "score": 5,
-      "query": "의료 AI 책임",
-      "source_type": "major",
-      "similar_count": 0,
-      "similar_sources": []
-    },
-    {
-      "title": "GC메디아이, 새 수익원 찾는다…AI·의료 플랫폼 사업 확대",
-      "summary": "GC메디아이가 기존 전자의무기록(EMR) 사업을 넘어 인공지능(AI) 기반 의료 플랫폼 기업으로의 전환에 속도를 내고 있다. AI 진료 지원부터 환자관리, 의료용품 구매까지 병·의원 운영 전반을 아우르는 서비스...",
-      "link": "https://www.megaeconomy.co.kr/news/newsview.php?ncode=1065593144429504",
-      "originallink": "https://www.megaeconomy.co.kr/news/newsview.php?ncode=1065593144429504",
-      "pubDate": "2026-10-14T15:10:00+09:00",
-      "queries": [
-        "의료 AI 기업",
+        "의료 AI 환자안전",
         "의료 AI",
         "병원 AI"
       ],
-      "category": "국내 의료 AI 기업",
-      "score": 5,
-      "query": "의료 AI 기업",
-      "source_type": "other",
-      "similar_count": 0,
-      "similar_sources": []
-    },
-    {
-      "title": "세라젬 윤미나 전무, '전자·IT의 날' 국무총리 표창 수상",
-      "summary": "세라젬 윤미나 전무가 디지털 헬스케어 기술을 활용한 제품·서비스 고도화와 데이터 기반 서비스 체계... 헬스케어 제품 체험 공간을 운영하고 있다. 코엑스 B홀 ‘AI in Life’ 특별관에서 척추 관리 의료기기...",
-      "link": "https://www.g-enews.com/view.php?ud=202610141450306501d2373fc0f_1",
-      "originallink": "https://www.g-enews.com/view.php?ud=202610141450306501d2373fc0f_1",
-      "pubDate": "2026-10-14T14:56:00+09:00",
-      "queries": [
-        "디지털의료제품",
-        "의료 AI 기업",
-        "의료 AI"
-      ],
-      "category": "국내 정책·규제",
-      "score": 5,
-      "query": "디지털의료제품",
-      "source_type": "other",
-      "similar_count": 7,
-      "similar_sources": [
-        "finomy.com",
-        "koreareport.co.kr",
-        "m-i.kr",
-        "megaeconomy.co.kr",
-        "newspost.kr"
-      ]
-    },
-    {
-      "title": "GC녹십자·LG CNS, 인공지능 스마트 공장 구축",
-      "summary": "인공지능(AI)으로 생산 공정을 2030년까지 자동화하며 품질 관리를 강화하기로 했다. 충북 오창 공장은... 회사는 이를 피사 주사로 바꿔 환자가 병원에 가지 않고 스스로 투여할 수 있도록 한다는 목표를 세웠다....",
-      "link": "https://n.news.naver.com/mnews/article/366/0001197924?sid=101",
-      "originallink": "https://biz.chosun.com/science-chosun/bio/2026/10/14/NWSVPVAQMNFD7BB6IYMJKIRC44/?utm_source=naver&utm_medium=original&utm_campaign=biz",
-      "pubDate": "2026-10-14T14:54:00+09:00",
-      "queries": [
-        "병원 AI"
-      ],
-      "category": "국내 의료 AI 기업",
-      "score": 5,
-      "query": "병원 AI",
+      "category": "해외 의료기관·정책·규제",
+      "score": 4,
+      "query": "의료 AI 환자안전",
       "source_type": "major",
       "similar_count": 0,
       "similar_sources": []
     },
     {
-      "title": "아주대병원, 치료 전 CT 영상으로 폐암 면역항암치료 예후 예측 AI기술 ...",
-      "summary": "인공지능(AI) 기반 영상 바이오마커를 개발했다. 종양 주변 혈관의 변형 정도를 분석해 치료 후 질병... 보건의료기술 연구개발사업과 국립암센터 국가암관리 연구개발사업, 한국연구재단 연구사업의 지원을 받아...",
-      "link": "https://www.rapportian.com/news/articleView.html?idxno=241253",
-      "originallink": "https://www.rapportian.com/news/articleView.html?idxno=241253",
-      "pubDate": "2026-10-14T14:40:00+09:00",
+      "title": "\"아이 낳을 병원부터 살려야\"…산부인과醫, 국가인구전략에 쓴소리",
+      "summary": "분만수가 현실화, 분만취약지 산부인과 직접 지원책은 없다\"며 분만의료체계 복원을 위한 구체적인 대책을... 산부인과의사회는 \"정부는 AI 중점학교 2,000개교, AI 교원 연수 1만명이라는 숫자는 나열하면서 아이를...",
+      "link": "http://www.docdocdoc.co.kr/news/articleView.html?idxno=3043657",
+      "originallink": "http://www.docdocdoc.co.kr/news/articleView.html?idxno=3043657",
+      "pubDate": "2026-10-15T16:54:00+09:00",
       "queries": [
+        "의료 AI 수가",
         "의료 AI 지원사업",
+        "의료 AI",
         "병원 AI"
       ],
       "category": "국내 정책·규제",
-      "score": 5,
-      "query": "의료 AI 지원사업",
+      "score": 4,
+      "query": "의료 AI 수가",
+      "source_type": "medical",
+      "similar_count": 0,
+      "similar_sources": []
+    },
+    {
+      "title": "유튜브·당근마켓서 불법 의료기기 판매 확산 우려",
+      "summary": "박용갑 의원은 “식약처가 온라인 플랫폼을 통해 무허가 의료기기, 의료기기로 허가받지 않은 일반 공산품이 의료기기로 둔갑해 판매되지 않도록 △AI 자동 필터링을 통한 온라인 플랫폼 내 의료기기 광고 및 판매 관리...",
+      "link": "https://www.dentalnews.or.kr/news/article.html?no=48408",
+      "originallink": "https://www.dentalnews.or.kr/news/article.html?no=48408",
+      "pubDate": "2026-10-15T16:22:00+09:00",
+      "queries": [
+        "식약처 AI 의료기기",
+        "의료 AI"
+      ],
+      "category": "국내 정책·규제",
+      "score": 4,
+      "query": "식약처 AI 의료기기",
       "source_type": "other",
-      "similar_count": 1,
-      "similar_sources": [
-        "medical-tribune.co.kr"
-      ]
+      "similar_count": 0,
+      "similar_sources": []
     },
     {
       "title": "정부 “인구의 판을 바꾸겠다”…산부인과의사회 “117개 과제에 ‘분만...",
@@ -3170,9 +3030,8 @@
       "score": 4,
       "query": "의료 AI",
       "source_type": "major",
-      "similar_count": 6,
+      "similar_count": 4,
       "similar_sources": [
-        "cbci.co.kr",
         "mhns.co.kr",
         "newsmaker.or.kr",
         "ohmynews.com",
@@ -3796,69 +3655,15 @@
       "similar_sources": []
     },
     {
-      "title": "길병원, 환자 목소리에 더 빠르게 답한다⋯AI가 서술형 의견 분류",
-      "summary": "실무자들이 직접 개발에 참여해 현장에 필요한 기능을 구현했다는 점에서 의미가 크다\"며 \"AI를 적극 활용해 업무의 효율성과 대응 속도를 높이고, 이를 환자들이 체감할 수 있는 의료서비스 개선으로 이어가겠다\"고 말했다.",
-      "link": "https://n.news.naver.com/mnews/article/296/0000105946?sid=102",
-      "originallink": "https://kormedi.com/?p=2884631",
-      "pubDate": "2026-10-14T15:29:00+09:00",
+      "title": "심평원 등 6개 기관 'K-테스트베드' 신규 참여…중소기업 기술 실증 지원",
+      "summary": "K-테스트베드는 공공 시설·부지를 활용한 중소·벤처기업의 신기술·시제품 실증과 판로 확대를 지원하는... 클라우드 환경과 GPU(그래픽 처리 장치)·서버 자원을 활용해 클라우드·AI(인공지능) 관련 기술과 보건의료...",
+      "link": "https://www.shinailbo.co.kr/news/articleView.html?idxno=5071809",
+      "originallink": "https://www.shinailbo.co.kr/news/articleView.html?idxno=5071809",
+      "pubDate": "2026-10-14T15:34:00+09:00",
       "queries": [
-        "의료 AI",
-        "병원 AI"
+        "의료 AI 기업"
       ],
-      "category": "기타 (의료 AI·병원 AI 키워드)",
-      "score": 4,
-      "query": "의료 AI",
-      "source_type": "medical",
-      "similar_count": 0,
-      "similar_sources": []
-    },
-    {
-      "title": "정경주 회장 \"병원약사 인력 확대 공감대 넓혀갈 것\"",
-      "summary": "AI 활용, 노인 약물사용 최적화, 환자안전, 전문약사 제도 등 병원약사가 당면한 핵심 현안을 중심으로 구성했다\"고 밝혔다. 특히 주목할 강연으로 한국보건사회연구원이 2025년 11월부터 올해 8월 말까지 수행한 '의료기관...",
-      "link": "https://www.medipana.com/news/articleView.html?idxno=419304",
-      "originallink": "https://www.medipana.com/news/articleView.html?idxno=419304",
-      "pubDate": "2026-10-14T15:28:00+09:00",
-      "queries": [
-        "의료 AI 환자안전",
-        "의료 AI",
-        "병원 AI"
-      ],
-      "category": "AI 거버넌스·보안",
-      "score": 4,
-      "query": "의료 AI 환자안전",
-      "source_type": "medical",
-      "similar_count": 0,
-      "similar_sources": []
-    },
-    {
-      "title": "동아에스티, 선원 건강 모니터링 시스템 개발...부산대병원과 '맞손'",
-      "summary": "동아에스티는 지난 13일 부산대학교병원과 스마트병동 구축 및 AI·웨어러블 기반 해상의료 지원시스템... 기관별로는 동아에스티가 사업 추진과 협력체계 구축을 지원하고 부산대학교병원이 의료현장 제공과 시스템...",
-      "link": "https://www.e-science.co.kr/news/articleView.html?idxno=137340",
-      "originallink": "https://www.e-science.co.kr/news/articleView.html?idxno=137340",
-      "pubDate": "2026-10-14T15:00:00+09:00",
-      "queries": [
-        "의료 AI 지원사업",
-        "의료 AI 기업",
-        "병원 AI"
-      ],
-      "category": "국내 의료기관",
-      "score": 4,
-      "query": "의료 AI 지원사업",
-      "source_type": "other",
-      "similar_count": 0,
-      "similar_sources": []
-    },
-    {
-      "title": "\"킨텍스·GTX-A 품은 고양시\" 민경선 시장, 글로벌 AI 허브 유치 총력",
-      "summary": "의료·바이오와 교육 인프라도 고양시가 내세우는 요소다. 국립암센터와 명지병원 등 의료 기반... 이 같은 기능을 수행하려면 단순히 AI 기업이 많은 지역만으로는 충분하지 않다. 국제회의를 열 수 있는 시설, 해외에서...",
-      "link": "https://www.wikitree.co.kr/articles/1166169",
-      "originallink": "https://www.wikitree.co.kr/articles/1166169",
-      "pubDate": "2026-10-14T14:52:00+09:00",
-      "queries": [
-        "의료 AI 기업",
-        "병원 AI"
-      ],
-      "category": "국내 의료 AI 기업",
+      "category": "국내 정책·규제",
       "score": 4,
       "query": "의료 AI 기업",
       "source_type": "other",
@@ -3866,53 +3671,34 @@
       "similar_sources": []
     },
     {
-      "title": "[금융권 이모저모]신한자산운용, 반도체 소부장 ETF에 개인 순매수 2231억...",
-      "summary": "교보헬스케어서비스는 의료진 건강상담과 진료예약 대행, 주요 질병 진단 시 전담 간호사의 병원 동행... 미국에이전틱AI TOP2+' ETF를 소개했다. 해당 ETF는 마이크로소프트와 알파벳, 메타, 아마존 등 미국 주요...",
-      "link": "https://www.businessplus.kr/news/articleView.html?idxno=118176",
-      "originallink": "https://www.businessplus.kr/news/articleView.html?idxno=118176",
-      "pubDate": "2026-10-14T14:44:00+09:00",
+      "title": "‘생각 읽는 모자’부터 AI·양자·우주까지…CES 2027 미리 보니",
+      "summary": "AI 반도체·메모리 등 인프라와 헬스케어·제조·사이버 보안에 특화된 ‘버티컬 AI’도 주요 전시 분야로... AI 기반 건강 관리와 정밀 의료, 디지털 치료제, 원격 의료, 웨어러블 기기 등을 한곳에 모은다. 개인 맞춤형...",
+      "link": "https://n.news.naver.com/mnews/article/023/0004003800?sid=105",
+      "originallink": "https://www.chosun.com/economy/tech_it/2026/10/14/FGBMRIGR4RCQ5LMWN6TZ62IKSM/?utm_source=naver&utm_medium=referral&utm_campaign=naver-news",
+      "pubDate": "2026-10-14T15:22:00+09:00",
       "queries": [
-        "마이크로소프트 의료 AI",
-        "병원 AI"
+        "의료 AI 보안"
       ],
-      "category": "해외 의료기관·정책·규제",
+      "category": "AI 거버넌스·보안",
       "score": 4,
-      "query": "마이크로소프트 의료 AI",
-      "source_type": "other",
+      "query": "의료 AI 보안",
+      "source_type": "major",
       "similar_count": 0,
       "similar_sources": []
     },
     {
-      "title": "강원 바이오산업 키운다…소부장 국산화·인프라에 405억 투입",
-      "summary": "산업통상부와 식약처는 바이오산업 전주기 인공지능 전환(M.AX 바이오), 바이오 소부장 국산화, 수출지원 및... 의료기기 GMP 생산시설 등을 둘러보며 기업지원 인프라를 점검했다. 이어 강원지역 성장엔진 및 AI...",
-      "link": "https://www.energy-news.co.kr/news/articleView.html?idxno=228944",
-      "originallink": "https://www.energy-news.co.kr/news/articleView.html?idxno=228944",
-      "pubDate": "2026-10-14T14:38:00+09:00",
-      "queries": [
-        "식약처 AI 의료기기",
-        "의료 AI 기업",
-        "병원 AI"
-      ],
-      "category": "국내 정책·규제",
-      "score": 4,
-      "query": "식약처 AI 의료기기",
-      "source_type": "other",
-      "similar_count": 0,
-      "similar_sources": []
-    },
-    {
-      "title": "유튜브·당근마켓서 불법 의료기기 판매 확산 우려",
-      "summary": "박용갑 의원은 “식약처가 온라인 플랫폼을 통해 무허가 의료기기, 의료기기로 허가받지 않은 일반 공산품이 의료기기로 둔갑해 판매되지 않도록 △AI 자동 필터링을 통한 온라인 플랫폼 내 의료기기 광고 및 판매 관리...",
-      "link": "https://www.dentalnews.or.kr/news/article.html?no=48408",
-      "originallink": "https://www.dentalnews.or.kr/news/article.html?no=48408",
-      "pubDate": "2026-10-15T16:22:00+09:00",
+      "title": "장인의 ‘손맛’과 암묵지, AI·로봇에 전수…용접·요리·서예·수술까...",
+      "summary": "최근엔 센서 장갑으로 작업자의 손가락 움직임과 힘 조절, 작업 순서 등을 기록해 AI 학습 데이터로 활용하려는 시도가 확산하고 있다. 제조·요리·의료까지…장인의 손기술 데이터화 독일 BMW그룹은 독일 란츠후트...",
+      "link": "https://n.news.naver.com/mnews/article/023/0004004050?sid=105",
+      "originallink": "https://www.chosun.com/economy/tech_it/2026/10/15/DUORLBF7DNE5NKHCRDDLU73YV4/?utm_source=naver&utm_medium=referral&utm_campaign=naver-news",
+      "pubDate": "2026-10-15T17:01:00+09:00",
       "queries": [
         "의료 AI"
       ],
-      "category": "국내 정책·규제",
+      "category": "기타 (의료 AI·병원 AI 키워드)",
       "score": 3,
       "query": "의료 AI",
-      "source_type": "other",
+      "source_type": "major",
       "similar_count": 0,
       "similar_sources": []
     },
@@ -4121,9 +3907,9 @@
     },
     {
       "title": "국가통합바이오빅데이터 구축사업 데이터 기증 행사",
-      "summary": "정은경 보건복지부 장관, 하정우 AI전략위원회 부위원장, 고상백 한국보건산업진흥원장 등 참석자들이 15일 서울 서대문구 세브란스병원에서 열린 국가통합바이오빅데이터 구축사업 데이터 기증 행사에서...",
-      "link": "https://n.news.naver.com/mnews/article/003/0014255742?sid=100",
-      "originallink": "https://www.newsis.com/view/NISI20261015_0021490240",
+      "summary": "정은경 보건복지부 장관, 하정우 AI전략위원회 부위원장, 고상백 한국보건산업진흥원장이 15일 서울 서대문구 세브란스병원에서 열린 국가통합바이오빅데이터 구축사업 데이터 기증 행사에서 채혈을...",
+      "link": "https://n.news.naver.com/mnews/article/003/0014255743?sid=100",
+      "originallink": "https://www.newsis.com/view/NISI20261015_0021490236",
       "pubDate": "2026-10-15T13:05:00+09:00",
       "queries": [
         "세브란스 AI",
@@ -4153,6 +3939,25 @@
       "score": 3,
       "query": "의료 AI 기업",
       "source_type": "major",
+      "similar_count": 0,
+      "similar_sources": []
+    },
+    {
+      "title": "[현장] 한림대춘천성심병원, \"환자가 길을 잃지 않게\"…지역의료 잇는 ...",
+      "summary": "문화경제 CNB저널 | CNB저널 | 씨앤비저널 \"지역에서 책임질 수 있는 치료는 최대한 책임지고, 더 전문적인... 조 병원장에 이어 발표에 나선 이재준 의료원장은 AI를 활용한 뇌출혈 비대면 협진 플랫폼을 소개했다. 신경외과...",
+      "link": "https://www.cnbizm.com/news/articleView.html?idxno=318102",
+      "originallink": "https://www.cnbizm.com/news/articleView.html?idxno=318102",
+      "pubDate": "2026-10-15T11:42:00+09:00",
+      "queries": [
+        "의료 AI 책임",
+        "의료 AI 논문",
+        "의료 AI",
+        "병원 AI"
+      ],
+      "category": "AI 거버넌스·보안",
+      "score": 3,
+      "query": "의료 AI 책임",
+      "source_type": "other",
       "similar_count": 0,
       "similar_sources": []
     },
@@ -4217,22 +4022,6 @@
       "similar_sources": []
     },
     {
-      "title": "겨울 철새 남하에 AI 예찰 112곳으로 확대…작년의 '한 달 빠른 발생'은...",
-      "summary": "세계동물보건기구(WOAH) 집계로 올해 1~8월 해외 야생조류 고병원성 AI 검출 건수는 2957건으로, 지난해 같은 기간 1432건의 두 배를 넘었다. 매일안전신문(2026.10.6)과 한국영농신문(2026.10.6)은 이 같은 개체수 급증과 해외...",
-      "link": "https://www.dailyt.co.kr/newsView/dlt202610150012",
-      "originallink": "https://www.dailyt.co.kr/newsView/dlt202610150012",
-      "pubDate": "2026-10-15T11:12:00+09:00",
-      "queries": [
-        "병원 AI"
-      ],
-      "category": "기타 (의료 AI·병원 AI 키워드)",
-      "score": 3,
-      "query": "병원 AI",
-      "source_type": "other",
-      "similar_count": 0,
-      "similar_sources": []
-    },
-    {
       "title": "철새수 급증에 고병원성 AI 확산 우려…농식품부, 특별방역대책 회의",
       "summary": "해외에서 야생조류에 고병원성 조류인플루엔자 발생이 늘고 국내에 찾아온 철새수가 지난해보다 급증하면서 올 겨울 고병원성 AI 확산이 우려되고 있다. 정부는 특히 산란계 농장에서 고병원성 AI가 발생하지 않도록...",
       "link": "https://n.news.naver.com/mnews/article/082/0001402584?sid=101",
@@ -4263,6 +4052,26 @@
       "category": "국내 정책·규제",
       "score": 3,
       "query": "의료 AI 지원사업",
+      "source_type": "other",
+      "similar_count": 0,
+      "similar_sources": []
+    },
+    {
+      "title": "조재호 한림대춘천성심병원장, 취임 미디어데이서 발전 방향 제시",
+      "summary": "AI와 디지털 기술을 진단과 치료, 환자 관리뿐 아니라 지역 의료기관과의 협진, 환자 전원·회송, 의료... 활용해 의료의 정확성과 안전성, 효율성을 높일 계획이다. 또 병원이 보유한 임상 데이터와 연구 역량을 토대로...",
+      "link": "https://www.newsfreezone.co.kr/news/articleView.html?idxno=713989",
+      "originallink": "https://www.newsfreezone.co.kr/news/articleView.html?idxno=713989",
+      "pubDate": "2026-10-15T10:44:00+09:00",
+      "queries": [
+        "의료 AI 환자안전",
+        "의료 AI 책임",
+        "의료 AI 논문",
+        "의료 AI",
+        "병원 AI"
+      ],
+      "category": "AI 거버넌스·보안",
+      "score": 3,
+      "query": "의료 AI 환자안전",
       "source_type": "other",
       "similar_count": 0,
       "similar_sources": []
@@ -4326,27 +4135,6 @@
       ]
     },
     {
-      "title": "KMI한국의학연구소, 캐나다한인회총연합회와 업무협약 체결",
-      "summary": "대표단은 건강검진을 통한 질환 조기 발견과 고위험군 관리, 검진 이후 의료기관 연계 및 사후관리 체계 등에 관심을 보였다. 또한 AI 기반 영상 분석 등 디지털 헬스케어 기술을 활용한 암 조기검진과 예방의료...",
-      "link": "https://n.news.naver.com/mnews/article/016/0002709627?sid=101",
-      "originallink": "https://biz.heraldcorp.com/article/10903399?ref=naver",
-      "pubDate": "2026-10-15T10:23:00+09:00",
-      "queries": [
-        "의료 AI"
-      ],
-      "category": "기타 (의료 AI·병원 AI 키워드)",
-      "score": 3,
-      "query": "의료 AI",
-      "source_type": "major",
-      "similar_count": 4,
-      "similar_sources": [
-        "cstimes.com",
-        "etoday.co.kr",
-        "hansbiz.co.kr",
-        "whosaeng.com"
-      ]
-    },
-    {
       "title": "키메스 부산 2026, 오는 23일 벡스코 개막···융복합 의료기술 한자리...",
       "summary": "'인스파이어 특별관(INSPIRE Digital Health)'에서는 의료 AI, 스마트 병원 솔루션, 웨어러블, 빅데이터 분석 등... 전략' 세미나가 열리며, 임상병리사·방사선사·물리치료사·작업치료사·치과위생사 등 의료기사...",
       "link": "http://www.doctorstimes.com/news/articleView.html?idxno=240497",
@@ -4391,8 +4179,7 @@
         "의료 AI 지원사업",
         "의료 AI 기업",
         "의료 AI 환자안전",
-        "의료 AI",
-        "병원 AI"
+        "의료 AI"
       ],
       "category": "국내 정책·규제",
       "score": 3,
@@ -4421,6 +4208,27 @@
       "similar_sources": []
     },
     {
+      "title": "KMI한국의학연구소, 캐나다한인회총연합회와 ‘재외동포 건강증진’ 업...",
+      "summary": "대표단은 건강검진을 통한 질환 조기 발견과 고위험군 관리, 검진 이후 의료기관 연계 및 사후관리 체계 등에 관심을 보였다. 또한 AI 기반 영상 분석 등 디지털 헬스케어 기술을 활용한 암 조기검진과 예방의료 시스템의...",
+      "link": "https://www.etoday.co.kr/news/view/2636030",
+      "originallink": "https://www.etoday.co.kr/news/view/2636030",
+      "pubDate": "2026-10-15T09:34:00+09:00",
+      "queries": [
+        "의료 AI"
+      ],
+      "category": "기타 (의료 AI·병원 AI 키워드)",
+      "score": 3,
+      "query": "의료 AI",
+      "source_type": "other",
+      "similar_count": 4,
+      "similar_sources": [
+        "bokuennews.com",
+        "cstimes.com",
+        "hansbiz.co.kr",
+        "whosaeng.com"
+      ]
+    },
+    {
       "title": "【데일리 ESG 정책 브리핑】해외인증 최대 1.5억원 지원·강원 신산업 5...",
       "summary": "강원대학교병원 등이 참여한다. 산업부는 식품의약품안전처와 바이오 분야 AI 전환, 소부장 국산화, 수출·공급망 협력을 강화하기로 했다. KOTRA와 한국제약바이오협회도 해외 인허가 정보 제공과 글로벌 바이어 발굴...",
       "link": "https://www.impacton.net/news/articleView.html?idxno=30254",
@@ -4435,6 +4243,26 @@
       "source_type": "other",
       "similar_count": 0,
       "similar_sources": []
+    },
+    {
+      "title": "코이카, 베트남 의사면허시험 기틀 마련…호찌민의대 사업 완료",
+      "summary": "국내 기업과의 제약·바이오·인공지능(AI) 분야 공동 연구 과제도 50건 이상 발굴됐다. 특히 강화된 대학의 평가 역량은 베트남의 의료 제도 발전으로 이어졌다. 코이카는 한국의 의사 국가시험 운영 경험을 바탕으로...",
+      "link": "https://n.news.naver.com/mnews/article/001/0016377940?sid=104",
+      "originallink": "https://www.yna.co.kr/view/AKR20261015023100371?input=1195m",
+      "pubDate": "2026-10-15T09:00:00+09:00",
+      "queries": [
+        "의료 AI 기업",
+        "의료 AI 논문",
+        "의료 AI"
+      ],
+      "category": "국내 의료 AI 기업",
+      "score": 3,
+      "query": "의료 AI 기업",
+      "source_type": "major",
+      "similar_count": 1,
+      "similar_sources": [
+        "ekn.kr"
+      ]
     },
     {
       "title": "엔비디아, 英에 2.5억달러 '기부'…젠슨 황의 노림수는",
@@ -4568,6 +4396,23 @@
       "similar_sources": []
     },
     {
+      "title": "CT로 폐암 면역항암치료 경과 예측 바이오마커 개발",
+      "summary": "인공지능(AI) 기반 영상 바이오마커가 개발됐다. 아주대병원 방사선종양학과 허재성 교수팀과... 이번 연구는 한국보건산업진흥원 보건의료기술 연구개발사업, 국립암센터 국가암관리 연구개발사업...",
+      "link": "http://www.medical-tribune.co.kr/news/articleView.html?idxno=215481",
+      "originallink": "http://www.medical-tribune.co.kr/news/articleView.html?idxno=215481",
+      "pubDate": "2026-10-14T18:06:00+09:00",
+      "queries": [
+        "의료 AI",
+        "병원 AI"
+      ],
+      "category": "국내 정책·규제",
+      "score": 3,
+      "query": "의료 AI",
+      "source_type": "other",
+      "similar_count": 0,
+      "similar_sources": []
+    },
+    {
       "title": "신영증권, 올해 일반기업 IPO 공모 1건…후속 딜은 언제",
       "summary": "인공지능(AI) 데이터 솔루션 기업 에이아이웍스는 올해 대표주관사를 삼성증권에서 신영증권으로 변경하고... 치과용 의료기기 기업 코웰메디도 신영증권을 IPO 대표주관사로 선정했다. 데일리비어는 지난해 7월 IPO...",
       "link": "https://www.newstopkorea.com/news/articleView.html?idxno=48183",
@@ -4659,6 +4504,24 @@
       ]
     },
     {
+      "title": "박정율 교수, 한국인 두 번째로 세계의사회 회장 취임",
+      "summary": "인공지능(AI) 윤리 지침 마련, 기후위기 및 재난 대응, 의료 중립성 수호, 회원 참여 확대를 제시했다. 특히... 대응하면서도 의료윤리의 기본 원칙을 유지해야 한다는 것이다. 박 회장은 \"깊은 영광과 막중한 책임감을...",
+      "link": "http://www.kmedinfo.co.kr/news/articleView.html?idxno=98220",
+      "originallink": "http://www.kmedinfo.co.kr/news/articleView.html?idxno=98220",
+      "pubDate": "2026-10-14T16:28:00+09:00",
+      "queries": [
+        "의료 AI 책임",
+        "의료 AI",
+        "병원 AI"
+      ],
+      "category": "AI 거버넌스·보안",
+      "score": 3,
+      "query": "의료 AI 책임",
+      "source_type": "other",
+      "similar_count": 0,
+      "similar_sources": []
+    },
+    {
       "title": "60주년 CES 주인공은... \"실행하는 AI, 그리고 일하는 로봇\"",
       "summary": "AI 기반 건강관리와 정밀의료, 원격 의료, 웨어러블 기기 등 개인 맞춤형 헬스케어 기술을 소개하고 관련 발표와 체험 프로그램을 운영한다. 미래 기술 분야에서는 양자컴퓨팅과 우주 기술, 뇌·컴퓨터 인터페이스...",
       "link": "https://n.news.naver.com/mnews/article/119/0003142775?sid=101",
@@ -4747,106 +4610,35 @@
       "similar_sources": []
     },
     {
-      "title": "'선택과 집중' 내건 한림대춘천성심병원…지역 필수의료 역량 높인다",
-      "summary": "이를 기반으로 인공지능(AI)과 디지털헬스케어 연구를 확대하고, 진료 현장에서 확인된 문제를 해결하는 데... 협진, 환자 전원·회송 등에 활용해 의료의 정확성과 안전성, 효율성을 높인다는 구상이다.조 병원장은...",
-      "link": "https://www.asiatoday.co.kr/kn/view.php?key=20261014010004381",
-      "originallink": "https://www.asiatoday.co.kr/kn/view.php?key=20261014010004381",
-      "pubDate": "2026-10-14T15:38:00+09:00",
+      "title": "길병원, 환자 목소리에 더 빠르게 답한다⋯AI가 서술형 의견 분류",
+      "summary": "환자가 직접 쓴 서술형 의견을 인공지능(AI)이 분류해 개선할 부분을 빨리 파악하고, 환자 요구에 더 빠르게 대응하려는 취지라고 병원은 설명했다. 길병원은 그동안 입원·외래·응급실 환자를 대상으로 환자경험평가를...",
+      "link": "https://n.news.naver.com/mnews/article/296/0000105946?sid=102",
+      "originallink": "https://kormedi.com/?p=2884631",
+      "pubDate": "2026-10-14T15:29:00+09:00",
+      "queries": [
+        "병원 AI"
+      ],
+      "category": "기타 (의료 AI·병원 AI 키워드)",
+      "score": 3,
+      "query": "병원 AI",
+      "source_type": "medical",
+      "similar_count": 0,
+      "similar_sources": []
+    },
+    {
+      "title": "정경주 회장 \"병원약사 인력 확대 공감대 넓혀갈 것\"",
+      "summary": "AI 활용, 노인 약물사용 최적화, 환자안전, 전문약사 제도 등 병원약사가 당면한 핵심 현안을 중심으로 구성했다\"고 밝혔다. 특히 주목할 강연으로 한국보건사회연구원이 2025년 11월부터 올해 8월 말까지 수행한 '의료기관...",
+      "link": "https://www.medipana.com/news/articleView.html?idxno=419304",
+      "originallink": "https://www.medipana.com/news/articleView.html?idxno=419304",
+      "pubDate": "2026-10-14T15:28:00+09:00",
       "queries": [
         "의료 AI 환자안전",
-        "의료 AI 책임",
-        "의료 AI",
         "병원 AI"
       ],
       "category": "AI 거버넌스·보안",
       "score": 3,
       "query": "의료 AI 환자안전",
-      "source_type": "other",
-      "similar_count": 0,
-      "similar_sources": []
-    },
-    {
-      "title": "수원여대, '2026년 특성화 선도대학' 선정…AI 통합돌봄 전문인재 양성...",
-      "summary": "AI 기술과 보건·의료·재활 분야의 교육을 결합해 대학만의 차별화된 전문직업교육 모델을 구축한다는 점이 특징으로 꼽힌다. 이난경 수원여자대 총장은 \"특성화 선도대학 선정이 개교 60주년을 넘어 100주년까지...",
-      "link": "https://www.kyosu.net/news/articleView.html?idxno=211248",
-      "originallink": "https://www.kyosu.net/news/articleView.html?idxno=211248",
-      "pubDate": "2026-10-14T15:32:00+09:00",
-      "queries": [
-        "의료 AI"
-      ],
-      "category": "기타 (의료 AI·병원 AI 키워드)",
-      "score": 3,
-      "query": "의료 AI",
-      "source_type": "other",
-      "similar_count": 0,
-      "similar_sources": []
-    },
-    {
-      "title": "한기대, 졸업연구작품 95점 전시 ··· AI·로봇·의료기술 한자리에",
-      "summary": "주요 작품으로는 전기차 화재 확산 방지 로봇, 항균 기능을 갖춘 스마트 임플란트, 인공지능(AI) 기반 창업... 추천하는 AI 모델을 연구했다. 고용서비스정책학과 김지연 학생은 독일과 프랑스의 비정형 노동자 보호...",
-      "link": "https://www.ggilbo.com/news/articleView.html?idxno=1186886",
-      "originallink": "https://www.ggilbo.com/news/articleView.html?idxno=1186886",
-      "pubDate": "2026-10-14T15:18:00+09:00",
-      "queries": [
-        "의료 AI"
-      ],
-      "category": "기타 (의료 AI·병원 AI 키워드)",
-      "score": 3,
-      "query": "의료 AI",
-      "source_type": "other",
-      "similar_count": 0,
-      "similar_sources": []
-    },
-    {
-      "title": "[통하는 충남] 충남도-단국대병원, 내포어린이병원 협약…2028년 10월 ‘...",
-      "summary": "종합의료시설 1단계 사업인 ‘내포어린이병원’ 성공 건립과 안정적인 개원·운영을 위해 ‘충남 최고... 디지털보안정책과장, 디지털정부기획과장, 인공지능정부정책과장 등을 역임하며 AI민주정부의 핵심역할을...",
-      "link": "https://www.kukinews.com/article/view/kuk202610140152",
-      "originallink": "https://www.kukinews.com/article/view/kuk202610140152",
-      "pubDate": "2026-10-14T14:52:00+09:00",
-      "queries": [
-        "의료 AI 보안",
-        "의료 AI 책임",
-        "병원 AI"
-      ],
-      "category": "AI 거버넌스·보안",
-      "score": 3,
-      "query": "의료 AI 보안",
-      "source_type": "other",
-      "similar_count": 0,
-      "similar_sources": []
-    },
-    {
-      "title": "성남 고령친화기업 10곳, 일본서 428억원 수출 상담",
-      "summary": "참가 기업들은 인공지능(AI)과 정보통신기술(ICT), 디지털 헬스케어 등을 접목한 눈 건강 측정기와 안전... 돕는 의료기기를 소개했다. 현지 바이어가 기술력을 보고 제품 샘플을 323달러에 구매하고, 향후에도 소통하기로...",
-      "link": "https://news.ifm.kr/news/articleView.html?idxno=481648",
-      "originallink": "https://news.ifm.kr/news/articleView.html?idxno=481648",
-      "pubDate": "2026-10-14T14:48:00+09:00",
-      "queries": [
-        "디지털의료제품",
-        "의료 AI 기업"
-      ],
-      "category": "해외 의료기관·정책·규제",
-      "score": 3,
-      "query": "디지털의료제품",
-      "source_type": "other",
-      "similar_count": 0,
-      "similar_sources": []
-    },
-    {
-      "title": "조재호 한림대춘천성심병원장 \"강원도민이 믿고 찾는 지역 거점병원 만...",
-      "summary": "하는 의료를 제대로 책임지는 데 있다”며 “강원도민이 위급하거나 중증질환이 발생했을 때 가장 먼저... 이후 의료 AI와 유전체, 빅데이터 등 미래의료 분야 연구를 확대해왔다. 지난해에는 강원특별자치도 의료기관...",
-      "link": "https://n.news.naver.com/mnews/article/119/0003142724?sid=103",
-      "originallink": "https://www.dailian.co.kr/news/view/1701430/?sc=Naver",
-      "pubDate": "2026-10-14T14:36:00+09:00",
-      "queries": [
-        "의료 AI 책임",
-        "의료 AI 논문",
-        "병원 AI"
-      ],
-      "category": "AI 거버넌스·보안",
-      "score": 3,
-      "query": "의료 AI 책임",
-      "source_type": "other",
+      "source_type": "medical",
       "similar_count": 0,
       "similar_sources": []
     },
@@ -4974,25 +4766,6 @@
       "similar_sources": []
     },
     {
-      "title": "화성특례시, 하반기 적극행정 우수사례 경진대회서 수상작 8건 선정",
-      "summary": "화성특례시 부문 최우수상은 균형발전과의 \"수도권 남부 미래의료 허브 구축\" 고려대학교 동탄병원과 함께 의료자족도시로의 길을 열다 사례에 돌아갔다. 공공기관 부문에서는 화성도시공사 봉담체육센터부의 \"AI로...",
-      "link": "https://www.m-i.kr/news/articleView.html?idxno=2006340",
-      "originallink": "https://www.m-i.kr/news/articleView.html?idxno=2006340",
-      "pubDate": "2026-10-15T13:30:00+09:00",
-      "queries": [
-        "의료 AI",
-        "병원 AI"
-      ],
-      "category": "기타 (의료 AI·병원 AI 키워드)",
-      "score": 2,
-      "query": "의료 AI",
-      "source_type": "other",
-      "similar_count": 1,
-      "similar_sources": [
-        "weeklytoday.com"
-      ]
-    },
-    {
       "title": "한-카자흐스탄 ‘디지털 의료 실크로드’ 구축",
       "summary": "한편 이번 카자흐스탄 방문에는 AI 메드테크 기업 웨이센, 국내 AI 의료 솔루션 기업 맨인블록, 현지 협력사 알마에코도 동행, 한국형 디지털 의료솔루션의 현지 도입 가능성을 검토했다.",
       "link": "http://www.whosaeng.com/174480",
@@ -5038,22 +4811,6 @@
         "병원 AI"
       ],
       "category": "학술·연구·행사",
-      "score": 2,
-      "query": "병원 AI",
-      "source_type": "other",
-      "similar_count": 0,
-      "similar_sources": []
-    },
-    {
-      "title": "4년 만에 돌아온 '고양 고양이', 이번엔 카카오톡 이모티콘으로 만난다...",
-      "summary": "한편 민선9기 출범 직후 다시 시민 곁으로 돌아온 '고양 고양이'는 지난 7월 1일 복귀 후 AI 기술과 최신... 이어 EBS 펭수, 경기도청 봉공이 등 다양한 캐릭터와의 협업을 이어갔으며 국민건강보험공단 일산병원...",
-      "link": "https://n.news.naver.com/mnews/article/629/0000542280?sid=102",
-      "originallink": "https://news.tf.co.kr/read/national/2376569.htm",
-      "pubDate": "2026-10-15T11:02:00+09:00",
-      "queries": [
-        "병원 AI"
-      ],
-      "category": "국내 정책·규제",
       "score": 2,
       "query": "병원 AI",
       "source_type": "other",
@@ -5201,42 +4958,6 @@
       "similar_sources": []
     },
     {
-      "title": "코이카, 베트남 의사면허시험 기틀 마련…호찌민의대 사업 완료",
-      "summary": "국내 기업과의 제약·바이오·인공지능(AI) 분야 공동 연구 과제도 50건 이상 발굴됐다. 특히 강화된 대학의 평가 역량은 베트남의 의료 제도 발전으로 이어졌다. 코이카는 한국의 의사 국가시험 운영 경험을 바탕으로...",
-      "link": "https://n.news.naver.com/mnews/article/001/0016377940?sid=104",
-      "originallink": "https://www.yna.co.kr/view/AKR20261015023100371?input=1195m",
-      "pubDate": "2026-10-15T09:00:00+09:00",
-      "queries": [
-        "의료 AI 기업",
-        "의료 AI 논문",
-        "의료 AI"
-      ],
-      "category": "국내 의료 AI 기업",
-      "score": 2,
-      "query": "의료 AI 기업",
-      "source_type": "major",
-      "similar_count": 0,
-      "similar_sources": []
-    },
-    {
-      "title": "“침대에 누워 다리 재활운동 가능”…GIST-옵토닉스-화순전남대병원, ...",
-      "summary": "AI학과 교수팀이 옵토닉스, 화순전남대학교병원과 공동으로 침대에서 일어나거나 이동하기 어려운 환자가... 현재 필라테스봇 시제품 제작을 마쳤으며, 의료기기 인허가를 위한 성능·안전성 시험과 기술문서를 준비하고...",
-      "link": "https://n.news.naver.com/mnews/article/030/0003475216?sid=102",
-      "originallink": "https://www.etnews.com/20261015000024",
-      "pubDate": "2026-10-15T08:52:00+09:00",
-      "queries": [
-        "의료 AI 환자안전",
-        "의료 AI",
-        "병원 AI"
-      ],
-      "category": "AI 거버넌스·보안",
-      "score": 2,
-      "query": "의료 AI 환자안전",
-      "source_type": "other",
-      "similar_count": 0,
-      "similar_sources": []
-    },
-    {
       "title": "[The만나다] \"레하홈케어, 재활·복지산업 기술과 시장 연결하는 산업 플...",
       "summary": "의료·재활·요양·복지 현장에서 필요한 기술이 무엇인지 파악하고, 개발된 제품이 실제 수요기관에 도입될 수 있도록 기업과 수요기관을 연결하는 과정이 필요하다. 또한 AI·로봇·디지털 헬스케어·에이지테크 등 새로운...",
       "link": "https://www.rapportian.com/news/articleView.html?idxno=241257",
@@ -5250,22 +4971,6 @@
       "category": "국내 정책·규제",
       "score": 2,
       "query": "디지털의료제품",
-      "source_type": "other",
-      "similar_count": 0,
-      "similar_sources": []
-    },
-    {
-      "title": "'고양고양이' 카카오톡에 등장…고양특례시, 16일부터 무료 제공",
-      "summary": "민경선 고양특례시장의 취임 후 1호 결재로 복귀가 결정됐고, 지난 7월 1일부터 AI 기술과 소셜미디어 유행... EBS 펭수, 경기도청 봉공이 등 다양한 캐릭터와 협업하고 국민건강보험공단 일산병원 힐링콘서트에도 깜짝...",
-      "link": "http://www.enewstoday.co.kr/news/articleView.html?idxno=2480420",
-      "originallink": "http://www.enewstoday.co.kr/news/articleView.html?idxno=2480420",
-      "pubDate": "2026-10-15T08:30:00+09:00",
-      "queries": [
-        "병원 AI"
-      ],
-      "category": "국내 정책·규제",
-      "score": 2,
-      "query": "병원 AI",
       "source_type": "other",
       "similar_count": 0,
       "similar_sources": []
@@ -5480,6 +5185,25 @@
       ]
     },
     {
+      "title": "윤미나 세라젬 전무, 전자·IT 산업 발전 공로로 국무총리 표창",
+      "summary": "윤 전무는 인공지능(AI)과 사물인터넷(IoT), 데이터 분석 등 디지털 기술을 헬스케어 제품과 서비스에... 헬스케어 제품을 선보이고 있다. 서울 코엑스 B홀 'AI in Life' 특별관에 마련된 체험존에서는 척추 관리 의료기기...",
+      "link": "http://www.thefirstmedia.net/news/articleView.html?idxno=210831",
+      "originallink": "http://www.thefirstmedia.net/news/articleView.html?idxno=210831",
+      "pubDate": "2026-10-14T16:34:00+09:00",
+      "queries": [
+        "디지털의료제품",
+        "의료 AI 기업"
+      ],
+      "category": "국내 정책·규제",
+      "score": 2,
+      "query": "디지털의료제품",
+      "source_type": "other",
+      "similar_count": 1,
+      "similar_sources": [
+        "finomy.com"
+      ]
+    },
+    {
       "title": "씨젠의료재단, '2026 고객감동경영대상' 11년 연속 수상",
       "summary": "시스템 'AI Assisted Daily QC(SeeDP)', 차세대 검사정보시스템 'SeeLIS' 등 첨단 디지털 기술을 검사 전반에 적용하며 업무 효율성 및 진단 정확도 향상에 주력하고 있다. 또한 씨젠의료재단은 성공적인 해외 의료사업을 위해...",
       "link": "http://www.bokuennews.com/news/article.html?no=285501",
@@ -5566,53 +5290,88 @@
       "similar_sources": []
     },
     {
-      "title": "세계 표준의 날 기념식…“M.AX 성패는 K표준에 달려”",
-      "summary": "대통령 표창은 의료 AI·디지털헬스 분야 국제표준 개발을 이끈 한태화 연세대의료원 교수, 한의 진단기기... 위원으로 AI 표준화를 주도한 전종홍 한국전자통신연구원(ETRI) 책임연구원, 자율주행 국제표준 19건을...",
-      "link": "https://n.news.naver.com/mnews/article/030/0003475035?sid=100",
-      "originallink": "https://www.etnews.com/20261014000340",
-      "pubDate": "2026-10-14T15:20:00+09:00",
+      "title": "'선택과 집중' 내건 한림대춘천성심병원…지역 필수의료 역량 높인다",
+      "summary": "이를 기반으로 인공지능(AI)과 디지털헬스케어 연구를 확대하고, 진료 현장에서 확인된 문제를 해결하는 데... 협진, 환자 전원·회송 등에 활용해 의료의 정확성과 안전성, 효율성을 높인다는 구상이다.조 병원장은...",
+      "link": "https://www.asiatoday.co.kr/kn/view.php?key=20261014010004381",
+      "originallink": "https://www.asiatoday.co.kr/kn/view.php?key=20261014010004381",
+      "pubDate": "2026-10-14T15:38:00+09:00",
+      "queries": [
+        "의료 AI 환자안전",
+        "의료 AI 책임",
+        "병원 AI"
+      ],
+      "category": "AI 거버넌스·보안",
+      "score": 2,
+      "query": "의료 AI 환자안전",
+      "source_type": "other",
+      "similar_count": 0,
+      "similar_sources": []
+    },
+    {
+      "title": "장흥 통합의학박람회 개막, 첨단 건강관리 기술 한눈에",
+      "summary": "오는 18일까지 열리는 이번 박람회에는 대학병원과 대학, 의료기관, 관련 단체 등 73개 기관이 참여해... 주제관에서는 인공지능(AI) 건강체크미러와 미디어파사드를 통해 통합의학의 발전 과정과 미래상을 소개한다....",
+      "link": "https://www.thereport.co.kr/news/articleView.html?idxno=92321",
+      "originallink": "https://www.thereport.co.kr/news/articleView.html?idxno=92321",
+      "pubDate": "2026-10-15T17:14:00+09:00",
+      "queries": [
+        "의료 AI",
+        "병원 AI"
+      ],
+      "category": "기타 (의료 AI·병원 AI 키워드)",
+      "score": 1,
+      "query": "의료 AI",
+      "source_type": "other",
+      "similar_count": 0,
+      "similar_sources": []
+    },
+    {
+      "title": "벤처스퀘어 ‘Open IR’, 우아한형제들과 유망 스타트업 발굴…매월매주...",
+      "summary": "의료·주류·헬스케어·스포츠·콘텐츠…서로 다른 시장에서 찾은 AI 사업 기회 이번 IR에 참여한 기업은 뉴지엄랩, 매월매주, 앨렉스랩, 무브히, 무아베모션 등 5개사다. 공통적으로 기술을 활용해 기존 산업의 업무...",
+      "link": "https://www.venturesquare.net/1120208/",
+      "originallink": "https://www.venturesquare.net/1120208/",
+      "pubDate": "2026-10-15T17:10:00+09:00",
+      "queries": [
+        "의료 AI 기업",
+        "의료 AI"
+      ],
+      "category": "국내 의료 AI 기업",
+      "score": 1,
+      "query": "의료 AI 기업",
+      "source_type": "other",
+      "similar_count": 0,
+      "similar_sources": []
+    },
+    {
+      "title": "사순문 장흥군수, 의료와 숲 결합한 웰니스 관광 활성화 추진",
+      "summary": "의료·건강관리 체험과 숲 치유 프로그램을 연계해 장흥의 관광자원을 널리 알리고 지역을 찾는 방문객에게... 관람객은 양·한방 진료 체험과 재활의학 상담, 운동처방 등을 경험할 수 있으며 인공지능(AI)을 활용한 건강...",
+      "link": "https://www.sentv.co.kr/article/view/sentv202610150211",
+      "originallink": "https://www.sentv.co.kr/article/view/sentv202610150211",
+      "pubDate": "2026-10-15T16:48:00+09:00",
+      "queries": [
+        "의료 AI",
+        "병원 AI"
+      ],
+      "category": "기타 (의료 AI·병원 AI 키워드)",
+      "score": 1,
+      "query": "의료 AI",
+      "source_type": "other",
+      "similar_count": 0,
+      "similar_sources": []
+    },
+    {
+      "title": "경복대학교 임상병리학과, 1학년 랩가운 선포식…전문 의료인 첫걸음",
+      "summary": "보건의료 전문인에게 필요한 책임감과 직업의식을 다지도록 마련됐다. 교수진과 재학생은 한자리에 모여... 대학은 AI 융합 진단기술과 실무교육을 접목해 변화하는 의료현장에 필요한 인재를 육성할 계획이다. 아울러...",
+      "link": "http://www.enewstoday.co.kr/news/articleView.html?idxno=2480681",
+      "originallink": "http://www.enewstoday.co.kr/news/articleView.html?idxno=2480681",
+      "pubDate": "2026-10-15T16:40:00+09:00",
       "queries": [
         "의료 AI 책임",
         "의료 AI"
       ],
       "category": "AI 거버넌스·보안",
-      "score": 2,
+      "score": 1,
       "query": "의료 AI 책임",
       "source_type": "other",
-      "similar_count": 0,
-      "similar_sources": []
-    },
-    {
-      "title": "동아에스티, 병원·선박 의료 모니터링 기술 개발 나선다",
-      "summary": "동아에스티는 사업 추진을 지원한다. 해상의료 지원시스템은 선원의 건강 상태를 모니터링하고 이상 징후 발생 시 의료진과 연결하는 기술이다. 세 기관은 온디바이스 인공지능(AI)을 활용한 생체신호 분석과 이상 징후...",
-      "link": "https://www.datasom.co.kr/news/articleView.html?idxno=210332",
-      "originallink": "https://www.datasom.co.kr/news/articleView.html?idxno=210332",
-      "pubDate": "2026-10-14T15:10:00+09:00",
-      "queries": [
-        "의료 AI 지원사업",
-        "의료 AI",
-        "병원 AI"
-      ],
-      "category": "국내 정책·규제",
-      "score": 2,
-      "query": "의료 AI 지원사업",
-      "source_type": "other",
-      "similar_count": 0,
-      "similar_sources": []
-    },
-    {
-      "title": "세계뇌졸중학회 16년 만에 서울 개최…2500명 집결",
-      "summary": "AI 기반 뇌졸중 및 대혈관폐색 진단, 영상 분석을 통한 의사결정 지원, 병원 도착 전 환자 분류와 병원 내 치료 과정의 효율화 등 새로운 기술의 임상 적용 가능성을 살펴볼 예정이다. 대한뇌졸중학회가 마련한...",
-      "link": "https://www.medipana.com/news/articleView.html?idxno=419298",
-      "originallink": "https://www.medipana.com/news/articleView.html?idxno=419298",
-      "pubDate": "2026-10-14T14:42:00+09:00",
-      "queries": [
-        "병원 AI"
-      ],
-      "category": "학술·연구·행사",
-      "score": 2,
-      "query": "병원 AI",
-      "source_type": "medical",
       "similar_count": 0,
       "similar_sources": []
     },
@@ -6161,24 +5920,6 @@
       "similar_sources": []
     },
     {
-      "title": "'의령 수박은 주스, 망개떡은 아이스크림'…내년 이색 사업",
-      "summary": "20%를 지원하는 ‘직장인 든든한 점심밥 사업’과 AI를 활용해 교통 수요에 따라 배차와 운행경로를 조정하는... 의령’ 사업과 의료접근성이 낮은 지역을 찾아가는 치과·한의과 통합 진료사업 등이 포함됐다. 관광...",
-      "link": "https://n.news.naver.com/mnews/article/003/0014253739?sid=102",
-      "originallink": "https://www.newsis.com/view/NISX20261014_0003826109",
-      "pubDate": "2026-10-14T16:48:00+09:00",
-      "queries": [
-        "의료 AI 지원사업"
-      ],
-      "category": "국내 정책·규제",
-      "score": 1,
-      "query": "의료 AI 지원사업",
-      "source_type": "major",
-      "similar_count": 1,
-      "similar_sources": [
-        "knnews.co.kr"
-      ]
-    },
-    {
       "title": "대구시건축사회 \"2차 공공기관 이전, 도시 경쟁력 갖춘 대구가 최적지\"",
       "summary": "기계·금속·자동차부품 산업을 기반으로 AI·로봇·미래모빌리티·헬스케어·반도체 등 미래 신산업으로의 전환을 추진 중인 데다 대구혁신도시와 수성알파시티, 국가로봇테스트필드, 모터소부장 특화단지, 첨단의료복합단...",
       "link": "https://www.hidomin.com/news/articleView.html?idxno=724848",
@@ -6214,122 +5955,98 @@
       "similar_sources": []
     },
     {
-      "title": "수원여대, 대학 특성화 및 교육혁신 본격 추진",
-      "summary": "보건·의료·재활 분야 7개 특성화학과에 교육역량을 집중하고, AI 융합교육과 학과 간 협업, 지역사회 현장실습을 통해 통합돌봄 전문인재 양성 및 진로·취업 지원체계를 강화할 예정이다. 이번 선정은 수원여대가...",
-      "link": "https://news.unn.net/news/articleView.html?idxno=598650",
-      "originallink": "https://news.unn.net/news/articleView.html?idxno=598650",
-      "pubDate": "2026-10-14T15:40:00+09:00",
+      "title": "세계 표준의 날 기념식…“M.AX 성패는 K표준에 달려”",
+      "summary": "대통령 표창은 의료 AI·디지털헬스 분야 국제표준 개발을 이끈 한태화 연세대의료원 교수, 한의 진단기기... 위원으로 AI 표준화를 주도한 전종홍 한국전자통신연구원(ETRI) 책임연구원, 자율주행 국제표준 19건을...",
+      "link": "https://n.news.naver.com/mnews/article/030/0003475035?sid=100",
+      "originallink": "https://www.etnews.com/20261014000340",
+      "pubDate": "2026-10-14T15:20:00+09:00",
       "queries": [
-        "의료 AI 지원사업",
-        "의료 AI"
+        "의료 AI 책임"
       ],
-      "category": "국내 정책·규제",
+      "category": "AI 거버넌스·보안",
       "score": 1,
-      "query": "의료 AI 지원사업",
+      "query": "의료 AI 책임",
       "source_type": "other",
       "similar_count": 0,
       "similar_sources": []
     },
     {
-      "title": "산업부, 민간과 초음파 핵심 장비 국산화에 100억 투입",
-      "summary": "스마트 바이오·의료기기 분야는 의료기기 제조 등 지역 바이오 역량에 AI·의료데이터를 접목한 신약·의료기기·항체 의약품 개발·제조, 디지털 헬스케어, 로컬 푸드테크 등을 포함하는 스마트 바이오 산업을 말한다....",
-      "link": "https://www.viva100.com/article/20261014501003",
-      "originallink": "https://www.viva100.com/article/20261014501003",
-      "pubDate": "2026-10-14T15:28:00+09:00",
+      "title": "[통하는 충남] 충남도-충남농협, 국가유공자 ‘프리패스’ 전용 창구 개...",
+      "summary": "한편, 도는 보건의료 중심의 재활에서 지역사회 중심의 자립생활로 장애인 복지의 흐름이 변화함에 따라... 충남도립대, AI 활용 창업 아이디어 공모전 개최 충남도립대학 앵커사업단은 학생들의 창업 역량을 강화하고...",
+      "link": "https://www.kukinews.com/article/view/kuk202610150218",
+      "originallink": "https://www.kukinews.com/article/view/kuk202610150218",
+      "pubDate": "2026-10-15T17:10:00+09:00",
       "queries": [
-        "의료 AI",
-        "병원 AI"
+        "의료 AI"
       ],
       "category": "기타 (의료 AI·병원 AI 키워드)",
-      "score": 1,
+      "score": 0,
       "query": "의료 AI",
       "source_type": "other",
       "similar_count": 0,
       "similar_sources": []
     },
     {
-      "title": "정경주 병원약사회장 \"변화하는 의료환경 속 리더십 강화 기대\"",
-      "summary": "이날 한국병원약사회 정경주 회장<사진>은 \"보건의료 환경이 급변하는 가운데 병원약사는 환자 안전 확보와... 이와 함께 초고령사회 진입에 따른 노인 환자의 약물 사용 최적화 및 의료현장에 빠르게 확산되고 있는 AI...",
-      "link": "https://www.bosa.co.kr/news/articleView.html?idxno=3013924",
-      "originallink": "https://www.bosa.co.kr/news/articleView.html?idxno=3013924",
-      "pubDate": "2026-10-14T14:58:00+09:00",
+      "title": "박수현 충남지사 “부여 백제유산 복원·의료·교통 인프라 확충”",
+      "summary": "공공한옥 ‘백제관’ 건립과 궁남지 일원 한옥단지 조성, 인공지능(AI) 관광해설과 가상투어를 결합한 금강권 역사문화관광 플랫폼 구축도 추진한다. 의료분야에서는 남부권 의료여건 개선 연구용역을 통해 공주의료원...",
+      "link": "https://n.news.naver.com/mnews/article/002/0002461164?sid=102",
+      "originallink": "https://www.pressian.com/pages/articles/2026101517053261886?utm_source=naver&utm_medium=search",
+      "pubDate": "2026-10-15T17:09:00+09:00",
       "queries": [
-        "의료 AI 환자안전",
-        "병원 AI"
-      ],
-      "category": "AI 거버넌스·보안",
-      "score": 1,
-      "query": "의료 AI 환자안전",
-      "source_type": "medical",
-      "similar_count": 0,
-      "similar_sources": []
-    },
-    {
-      "title": "전문성에서 종합적 의료서비스로...안산 에이스병원, 지역 대표 의료기...",
-      "summary": "의료서비스의 범위를 넓히고 있다. 약 700평 규모로 운영되는 건강검진센터에는 SIEMENS 3.0T MRI와 128채널 CT, AI... 기업과 공공기관을 대상으로 한 맞춤형 건강검진도 확대하고 있다. 현대자동차, 기아, SPC삼립 등을 비롯한...",
-      "link": "https://www.hinews.co.kr/view.php?ud=2026101414483377629284fa285d_48",
-      "originallink": "https://www.hinews.co.kr/view.php?ud=2026101414483377629284fa285d_48",
-      "pubDate": "2026-10-14T14:54:00+09:00",
-      "queries": [
-        "의료 AI 기업",
-        "병원 AI"
-      ],
-      "category": "국내 의료 AI 기업",
-      "score": 1,
-      "query": "의료 AI 기업",
-      "source_type": "other",
-      "similar_count": 0,
-      "similar_sources": []
-    },
-    {
-      "title": "박정율 고려대 교수, 세계의사회장 취임…한국인 두 번째",
-      "summary": "1985년 문태준 전 의협 회장 이어 일차의료 강화·AI 윤리 지침 마련 등 6대 과제 제시 박정율 대한의사협회 국제협력위원장(고려대 안암병원 신경외과 교수)이 세계의사회(WMA) 회장으로 공식 취임했다. 대한의사협회...",
-      "link": "https://n.news.naver.com/mnews/article/366/0001197918?sid=105",
-      "originallink": "https://biz.chosun.com/science-chosun/medicine-health/2026/10/14/FW7MIJLLRRBGNGRBCICBWVQUNM/?utm_source=naver&utm_medium=original&utm_campaign=biz",
-      "pubDate": "2026-10-14T14:45:00+09:00",
-      "queries": [
-        "병원 AI"
+        "의료 AI"
       ],
       "category": "기타 (의료 AI·병원 AI 키워드)",
-      "score": 1,
-      "query": "병원 AI",
-      "source_type": "major",
-      "similar_count": 1,
-      "similar_sources": [
-        "kmedinfo.co.kr"
-      ]
-    },
-    {
-      "title": "안산시 '이음의 시정' 기치로 민선 9기 5대 비전 제시",
-      "summary": "반월 국가산업단지에는 2028년까지 280억 원을 투입해 AX 실증산단을 구축하고, AX종합지원센터와 제조 AI 오픈랩을 통해 중소 제조기업의 AI 기술 도입을 지원한다. 한양대 ERICA 캠퍼스에 500병상 종합병원과 첨단의료...",
-      "link": "https://www.kihoilbo.co.kr/news/articleView.html?idxno=3037582",
-      "originallink": "https://www.kihoilbo.co.kr/news/articleView.html?idxno=3037582",
-      "pubDate": "2026-10-14T14:30:00+09:00",
-      "queries": [
-        "의료 AI 기업",
-        "병원 AI"
-      ],
-      "category": "국내 의료 AI 기업",
-      "score": 1,
-      "query": "의료 AI 기업",
+      "score": 0,
+      "query": "의료 AI",
       "source_type": "other",
       "similar_count": 0,
       "similar_sources": []
     },
     {
-      "title": "\"미래 병원약사 역할 재정립\"…병원약사회, 인력기준 개선 본격 추진",
-      "summary": "강연에서는 다제약물 복용 환자에 대한 전문적인 관리 접근법을 살펴보고, 고령 환자의 안전하고 효과적인 약물치료를 위한 약사의 역할을 모색한다. 아울러 의료현장에서 빠르게 확산하고 있는 AI 기술을 약제업무에...",
-      "link": "https://www.kpanews.co.kr/news/articleView.html?idxno=546333",
-      "originallink": "https://www.kpanews.co.kr/news/articleView.html?idxno=546333",
-      "pubDate": "2026-10-14T14:26:00+09:00",
+      "title": "[한미약품그룹 인사 전망] 신동국 경영 개입 논란… 송영숙 갈등 속 임...",
+      "summary": "사진=자료사진·AI 합성 송영숙 회장이 이끄는 한미약품그룹이 황상연 한미약품 대표 취임 이후 첫 연말... 올해 의료기기와 소비재 등 헬스케어 사업 확대와 계열사 경영관리를 담당하고 있다. 취임 이후 대표 교체...",
+      "link": "https://www.newsclaim.co.kr/news/articleView.html?idxno=3078587",
+      "originallink": "https://www.newsclaim.co.kr/news/articleView.html?idxno=3078587",
+      "pubDate": "2026-10-15T16:40:00+09:00",
       "queries": [
-        "의료 AI 환자안전",
-        "병원 AI"
+        "의료 AI"
       ],
-      "category": "AI 거버넌스·보안",
-      "score": 1,
-      "query": "의료 AI 환자안전",
+      "category": "기타 (의료 AI·병원 AI 키워드)",
+      "score": 0,
+      "query": "의료 AI",
       "source_type": "other",
+      "similar_count": 0,
+      "similar_sources": []
+    },
+    {
+      "title": "한국 오면 몇 시간에 종합검진…캐나다 한인들이 모국서 검사받는 이유",
+      "summary": "대표단은 질환 조기 발견과 고위험군 관리, 검진 이후 의료기관 연계와 사후관리 체계 등에 관심을 보였다고 KMI는 설명했다. AI 기반 영상 분석 등 디지털 헬스케어 기술을 활용한 암 조기검진과 예방의료 시스템의...",
+      "link": "https://n.news.naver.com/mnews/article/020/0003755249?sid=103",
+      "originallink": "https://www.donga.com/news/Health/article/all/20261015/134848657/2",
+      "pubDate": "2026-10-15T16:37:00+09:00",
+      "queries": [
+        "의료 AI"
+      ],
+      "category": "기타 (의료 AI·병원 AI 키워드)",
+      "score": 0,
+      "query": "의료 AI",
+      "source_type": "major",
+      "similar_count": 0,
+      "similar_sources": []
+    },
+    {
+      "title": "박수현 \"부여는 대한민국 문화관광 핵심…관광·의료 기반 확충\"",
+      "summary": "인공지능(AI) 관광해설사와 가상 투어 등 관광 콘텐츠를 확충할 계획이다. 박 지사는 한옥마을 조성 사업에 대해 \"현재 변경 계획 없이, 어떻게 하면 더 잘할까 하는 생각으로 속도감 있게 추진할 것\"이라고 말했다. 의료...",
+      "link": "https://n.news.naver.com/mnews/article/001/0016379783?sid=103",
+      "originallink": "https://www.yna.co.kr/view/AKR20261015142000063?input=1195m",
+      "pubDate": "2026-10-15T16:22:00+09:00",
+      "queries": [
+        "의료 AI"
+      ],
+      "category": "기타 (의료 AI·병원 AI 키워드)",
+      "score": 0,
+      "query": "의료 AI",
+      "source_type": "major",
       "similar_count": 0,
       "similar_sources": []
     },
@@ -6590,22 +6307,6 @@
       "similar_sources": []
     },
     {
-      "title": "지방소멸 위기 의성, '8000억 경제효과' 교정시설 유치 사활",
-      "summary": "교육이나 병원 문제 때문에 대구나 안동 신도시에서 출퇴근해 버리면 의성에는 알맹이 없이 껍데기만 남는... 의성군청 유치추진단 관계자는 \"이번 법무부 교정시설은 최첨단 AI 감시 시스템이 도입되는 현대식 강소...",
-      "link": "https://www.thebk.co.kr/news/articleView.html?idxno=312235",
-      "originallink": "https://www.thebk.co.kr/news/articleView.html?idxno=312235",
-      "pubDate": "2026-10-15T11:00:00+09:00",
-      "queries": [
-        "병원 AI"
-      ],
-      "category": "기타 (의료 AI·병원 AI 키워드)",
-      "score": 0,
-      "query": "병원 AI",
-      "source_type": "other",
-      "similar_count": 0,
-      "similar_sources": []
-    },
-    {
       "title": "케어링 스테이, 3개 지점 확장… 브랜드 리뉴얼 및 새 슬로건 공개",
       "summary": "이에 더해 AI 건강 모니터링과 스마트 돌봄일지 발송, 지능형 CCTV를 활용한 스마트 안전관리로 어르신 본인은 물론 가족들이 늘 안심할 수 있도록 서비스를 지원한다. 여기에 전국 지점 인근 대형 병원과 연계한 간호사...",
       "link": "https://n.news.naver.com/mnews/article/050/0000111986?sid=101",
@@ -6618,6 +6319,22 @@
       "score": 0,
       "query": "병원 AI",
       "source_type": "major",
+      "similar_count": 0,
+      "similar_sources": []
+    },
+    {
+      "title": "지방소멸 위기 의성, '8000억 경제효과' 교정시설 유치 사활",
+      "summary": "교육이나 병원 문제 때문에 대구나 안동 신도시에서 출퇴근해 버리면 의성에는 알맹이 없이 껍데기만 남는... 의성군청 유치추진단 관계자는 \"이번 법무부 교정시설은 최첨단 AI 감시 시스템이 도입되는 현대식 강소...",
+      "link": "https://www.thebk.co.kr/news/articleView.html?idxno=312235",
+      "originallink": "https://www.thebk.co.kr/news/articleView.html?idxno=312235",
+      "pubDate": "2026-10-15T11:00:00+09:00",
+      "queries": [
+        "병원 AI"
+      ],
+      "category": "기타 (의료 AI·병원 AI 키워드)",
+      "score": 0,
+      "query": "병원 AI",
+      "source_type": "other",
       "similar_count": 0,
       "similar_sources": []
     },
@@ -6729,6 +6446,22 @@
       "category": "기타 (의료 AI·병원 AI 키워드)",
       "score": 0,
       "query": "의료 AI",
+      "source_type": "other",
+      "similar_count": 0,
+      "similar_sources": []
+    },
+    {
+      "title": "“의령 수박은 주스로, 망개떡은 아이스크림으로”",
+      "summary": "20%를 지원하는 ‘직장인 든든한 점심밥 사업’과 AI를 활용해 교통 수요에 따라 배차와 운행경로를 조정하는... 의령’ 사업과 의료접근성이 낮은 지역을 찾아가는 치과·한의과 통합 진료사업 등이 포함됐다. 관광...",
+      "link": "https://www.knnews.co.kr/news/articleView.php?idxno=1552866",
+      "originallink": "https://www.knnews.co.kr/news/articleView.php?idxno=1552866",
+      "pubDate": "2026-10-15T09:58:00+09:00",
+      "queries": [
+        "의료 AI 지원사업"
+      ],
+      "category": "국내 정책·규제",
+      "score": 0,
+      "query": "의료 AI 지원사업",
       "source_type": "other",
       "similar_count": 0,
       "similar_sources": []
@@ -7102,22 +6835,6 @@
       "similar_sources": []
     },
     {
-      "title": "대구 공공기관 유치 촉구 확산…건축계도 가세",
-      "summary": "특히 대구는 기존 제조업 기반에 인공지능(AI), 로봇, 미래모빌리티, 헬스케어 등 신산업을 육성하고 있으며, 대구혁신도시와 수성알파시티, 첨단의료복합단지 등 산업·연구 거점을 갖추고 있다는 점을 부각했다. 이전기관...",
-      "link": "https://www.kbmaeil.com/article/20261014500528",
-      "originallink": "https://www.kbmaeil.com/article/20261014500528",
-      "pubDate": "2026-10-14T16:30:00+09:00",
-      "queries": [
-        "의료 AI"
-      ],
-      "category": "기타 (의료 AI·병원 AI 키워드)",
-      "score": 0,
-      "query": "의료 AI",
-      "source_type": "other",
-      "similar_count": 0,
-      "similar_sources": []
-    },
-    {
       "title": "[부산은 오늘] 이준호 시의원·부산지방국세청·부산동래구",
       "summary": "이준호 시의원은 지방소멸대응기금을 보건·의료, 주거, 일자리 등 인구 유입과 정착에 도움이 되는 사업에... 국세행정 인공지능(AI) 대전환 사업 예산 확보와 기술검증 등을 추진했으며, 빅데이터센터장 재직 당시...",
       "link": "http://www.iminju.net/news/articleView.html?idxno=170844",
@@ -7166,6 +6883,22 @@
       "similar_sources": []
     },
     {
+      "title": "수원여대, 대학 특성화 및 교육혁신 본격 추진",
+      "summary": "보건·의료·재활 분야 7개 특성화학과에 교육역량을 집중하고, AI 융합교육과 학과 간 협업, 지역사회 현장실습을 통해 통합돌봄 전문인재 양성 및 진로·취업 지원체계를 강화할 예정이다. 이번 선정은 수원여대가...",
+      "link": "https://news.unn.net/news/articleView.html?idxno=598650",
+      "originallink": "https://news.unn.net/news/articleView.html?idxno=598650",
+      "pubDate": "2026-10-14T15:40:00+09:00",
+      "queries": [
+        "의료 AI 지원사업"
+      ],
+      "category": "국내 정책·규제",
+      "score": 0,
+      "query": "의료 AI 지원사업",
+      "source_type": "other",
+      "similar_count": 0,
+      "similar_sources": []
+    },
+    {
       "title": "천안시, 충남 장애인체전 앞두고 1308명 투입 등 준비 점검",
       "summary": "경기를 AI 카메라 시스템으로 생생하게 실시간 중계한다. 안전사고 예방을 위해서는 소방과 경찰, 전문 의료... 응급환자 전용 이송 차량을 고정 배치해 골든타임을 사수한다. 아울러 천안서북모범운전자회와의 협업을...",
       "link": "https://www.newsworker.co.kr/news/articleView.html?idxno=508612",
@@ -7182,6 +6915,22 @@
       "similar_sources": []
     },
     {
+      "title": "산업부, 민간과 초음파 핵심 장비 국산화에 100억 투입",
+      "summary": "강원대학교병원 등이 체결했다. 협약에 따라 2030년까지 5년간 총 305억원(국비 150억원)을 투자해 성능시험... 중심으로 AI·청정산업 혁신 거점으로 성장을 추진하고 있다. 이에 의료기기·식품·관광 등 지역산업 역량...",
+      "link": "https://www.viva100.com/article/20261014501003",
+      "originallink": "https://www.viva100.com/article/20261014501003",
+      "pubDate": "2026-10-14T15:28:00+09:00",
+      "queries": [
+        "병원 AI"
+      ],
+      "category": "기타 (의료 AI·병원 AI 키워드)",
+      "score": 0,
+      "query": "병원 AI",
+      "source_type": "other",
+      "similar_count": 0,
+      "similar_sources": []
+    },
+    {
       "title": "[오늘의 처방전] \"수술 없이 치료해주세요\" 치료법까지 정해오는 관절염...",
       "summary": "화면에는 AI 가상인물이 '연골재생술로 닳은 연골을 다시 살릴 수 있다'고 설명하고 있었다. 몇 년 전만 해도... 치료 효과가 기대에 못 미친다고 병원을 옮겨 다니는 것도 능사는 아니다. 체중을 조절하고 평지 걷기...",
       "link": "https://www.kyongbuk.co.kr/news/articleView.html?idxno=4087145",
@@ -7193,6 +6942,22 @@
       "category": "기타 (의료 AI·병원 AI 키워드)",
       "score": 0,
       "query": "병원 AI",
+      "source_type": "other",
+      "similar_count": 0,
+      "similar_sources": []
+    },
+    {
+      "title": "세라젬 윤미나 전무, 국무총리 표창 수상…디지털 헬스케어 혁신 공로",
+      "summary": "전자·의료기기의 글로벌 경쟁력 강화에도 힘을 보탰다. 세라젬은 제57회 한국전자전(KES 2026) 개막에 맞춰 코엑스 B홀 'AI in Life' 특별관에 헬스케어 제품 체험존을 마련했다. 관람객이 주요 제품을 직접 체험하고...",
+      "link": "https://www.megaeconomy.co.kr/news/newsview.php?ncode=1065593650347597",
+      "originallink": "https://www.megaeconomy.co.kr/news/newsview.php?ncode=1065593650347597",
+      "pubDate": "2026-10-14T15:16:00+09:00",
+      "queries": [
+        "의료 AI 기업"
+      ],
+      "category": "국내 의료 AI 기업",
+      "score": 0,
+      "query": "의료 AI 기업",
       "source_type": "other",
       "similar_count": 0,
       "similar_sources": []
@@ -7219,70 +6984,6 @@
       "link": "https://n.news.naver.com/mnews/article/079/0004198757?sid=102",
       "originallink": "https://www.nocutnews.co.kr/news/6591423?utm_source=naver&utm_medium=article&utm_campaign=20261014031548",
       "pubDate": "2026-10-14T15:16:00+09:00",
-      "queries": [
-        "병원 AI"
-      ],
-      "category": "기타 (의료 AI·병원 AI 키워드)",
-      "score": 0,
-      "query": "병원 AI",
-      "source_type": "other",
-      "similar_count": 0,
-      "similar_sources": []
-    },
-    {
-      "title": "[똑똑한리빙] 쌍용C&B, 피죤, 세라젬, 휴롬, 우녹스, 쿠팡 와우 리빙쇼",
-      "summary": "디지털 헬스케어 제품과 서비스를 확대하는 데 기여한 점도 평가받았다. 세라젬은 같은 날 개막한 '제57회 한국전자전(KES 2026)'에도 참가했다. 코엑스 B홀 'AI in Life' 특별관에 체험 공간을 마련하고 척추 관리 의료기기...",
-      "link": "https://www.ekn.kr/web/view.php?key=20261014027316148",
-      "originallink": "https://www.ekn.kr/web/view.php?key=20261014027316148",
-      "pubDate": "2026-10-14T15:00:00+09:00",
-      "queries": [
-        "디지털의료제품"
-      ],
-      "category": "국내 정책·규제",
-      "score": 0,
-      "query": "디지털의료제품",
-      "source_type": "other",
-      "similar_count": 0,
-      "similar_sources": []
-    },
-    {
-      "title": "국립금오공대, 'KES 2026'에서 공동관 참여해 첨단 제조AX 제품 및 기술...",
-      "summary": "지역기업의 기술과 제품을 알리고, 사업화와 판로 확대를 지원한다고 밝혔다. 공동관에는 의료·헬스케어... 제공하는 'AI 딥러닝 기반 비전 기술을 활용한 제직 원단 결점 자동 검출 양면 검사 비전시스템'을 선보였다....",
-      "link": "https://n.news.naver.com/mnews/article/030/0003475012?sid=102",
-      "originallink": "https://www.etnews.com/20261014000315",
-      "pubDate": "2026-10-14T14:50:00+09:00",
-      "queries": [
-        "의료 AI 기업"
-      ],
-      "category": "국내 의료 AI 기업",
-      "score": 0,
-      "query": "의료 AI 기업",
-      "source_type": "other",
-      "similar_count": 0,
-      "similar_sources": []
-    },
-    {
-      "title": "\"지원금만 준다고 아이 낳나\"…산부인과의사회, 분만 대책 빠진 인구전...",
-      "summary": "지방 수련병원 지원자는 단 1명에 불과했다. 최근 10년간 전국 산부인과 전문의가 5~6% 감소한 가운데 전북에서는 16%나 줄었다. 의사회는 \"인력의 붕괴는 시설의 붕괴보다 더 빠르고, 더 돌이키기 어렵다. 정부는 AI...",
-      "link": "https://www.medigatenews.com/news/2474470594",
-      "originallink": "https://www.medigatenews.com/news/2474470594",
-      "pubDate": "2026-10-14T14:46:00+09:00",
-      "queries": [
-        "병원 AI"
-      ],
-      "category": "기타 (의료 AI·병원 AI 키워드)",
-      "score": 0,
-      "query": "병원 AI",
-      "source_type": "medical",
-      "similar_count": 0,
-      "similar_sources": []
-    },
-    {
-      "title": "청년 주거·노년 돌봄 아우른다…국가인구전략 청사진 공개",
-      "summary": "치매주치의를 전국으로 확대하고, 치매안심병원을 확충하는 한편 재가돌봄서비스 확대를 추진한다.... 인공지능(AI) 중점학교를 올해 1000개교에서 2028년 2000개교로 확대하고, 구직자·재직자·경력단절자에게 맞춤형 AI...",
-      "link": "https://www.kukinews.com/article/view/kuk202610140144",
-      "originallink": "https://www.kukinews.com/article/view/kuk202610140144",
-      "pubDate": "2026-10-14T14:38:00+09:00",
       "queries": [
         "병원 AI"
       ],

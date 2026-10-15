@@ -1,0 +1,1333 @@
+{
+ "month": "2026-10",
+ "generated_at": "2026-10-15T17:16:49.913647+09:00",
+ "prev_month": null,
+ "collected_days": 1,
+ "first_day": "2026-10-15",
+ "last_day": "2026-10-15",
+ "total": 553,
+ "prev_total": null,
+ "by_region": {
+  "국내": 472,
+  "해외": 65,
+  "정부": 16
+ },
+ "weekly": {
+  "2026-W42": {
+   "국내": 472,
+   "해외": 65,
+   "정부": 16
+  }
+ },
+ "categories": [
+  {
+   "name": "국내 · 기타 (의료 AI·병원 AI 키워드)",
+   "count": 116,
+   "prev": 0,
+   "delta": 116
+  },
+  {
+   "name": "국내 · 국내 정책·규제",
+   "count": 105,
+   "prev": 0,
+   "delta": 105
+  },
+  {
+   "name": "국내 · 국내 의료 AI 기업",
+   "count": 92,
+   "prev": 0,
+   "delta": 92
+  },
+  {
+   "name": "국내 · AI 거버넌스·보안",
+   "count": 55,
+   "prev": 0,
+   "delta": 55
+  },
+  {
+   "name": "국내 · 국내 의료기관",
+   "count": 43,
+   "prev": 0,
+   "delta": 43
+  },
+  {
+   "name": "국내 · 학술·연구·행사",
+   "count": 33,
+   "prev": 0,
+   "delta": 33
+  },
+  {
+   "name": "해외 · 해외 의료기관 AI 도입·운영",
+   "count": 31,
+   "prev": 0,
+   "delta": 31
+  },
+  {
+   "name": "국내 · 해외 의료기관·정책·규제",
+   "count": 28,
+   "prev": 0,
+   "delta": 28
+  },
+  {
+   "name": "해외 · 해외 정책·규제 (미국)",
+   "count": 16,
+   "prev": 0,
+   "delta": 16
+  },
+  {
+   "name": "해외 · 해외 연구·학술",
+   "count": 10,
+   "prev": 0,
+   "delta": 10
+  },
+  {
+   "name": "해외 · 해외 정책·규제 (유럽·영국)",
+   "count": 8,
+   "prev": 0,
+   "delta": 8
+  },
+  {
+   "name": "정부 · 국가인공지능전략위원회",
+   "count": 7,
+   "prev": 0,
+   "delta": 7
+  },
+  {
+   "name": "정부 · 정부 보도자료 (검색)",
+   "count": 7,
+   "prev": 0,
+   "delta": 7
+  },
+  {
+   "name": "정부 · 보건복지부",
+   "count": 1,
+   "prev": 0,
+   "delta": 1
+  },
+  {
+   "name": "정부 · 과학기술정보통신부",
+   "count": 1,
+   "prev": 0,
+   "delta": 1
+  }
+ ],
+ "keywords": [
+  {
+   "word": "데이터",
+   "count": 23,
+   "prev": 0,
+   "status": ""
+  },
+  {
+   "word": "강원",
+   "count": 13,
+   "prev": 0,
+   "status": ""
+  },
+  {
+   "word": "이민근",
+   "count": 13,
+   "prev": 0,
+   "status": ""
+  },
+  {
+   "word": "만명",
+   "count": 12,
+   "prev": 0,
+   "status": ""
+  },
+  {
+   "word": "기증",
+   "count": 11,
+   "prev": 0,
+   "status": ""
+  },
+  {
+   "word": "국가",
+   "count": 10,
+   "prev": 0,
+   "status": ""
+  },
+  {
+   "word": "식약처",
+   "count": 8,
+   "prev": 0,
+   "status": ""
+  },
+  {
+   "word": "복지부",
+   "count": 8,
+   "prev": 0,
+   "status": ""
+  },
+  {
+   "word": "개막",
+   "count": 8,
+   "prev": 0,
+   "status": ""
+  },
+  {
+   "word": "취임",
+   "count": 8,
+   "prev": 0,
+   "status": ""
+  },
+  {
+   "word": "진단",
+   "count": 8,
+   "prev": 0,
+   "status": ""
+  },
+  {
+   "word": "안산시장",
+   "count": 8,
+   "prev": 0,
+   "status": ""
+  },
+  {
+   "word": "국민",
+   "count": 7,
+   "prev": 0,
+   "status": ""
+  },
+  {
+   "word": "전략위",
+   "count": 7,
+   "prev": 0,
+   "status": ""
+  },
+  {
+   "word": "속도",
+   "count": 7,
+   "prev": 0,
+   "status": ""
+  },
+  {
+   "word": "확산",
+   "count": 7,
+   "prev": 0,
+   "status": ""
+  },
+  {
+   "word": "시장",
+   "count": 7,
+   "prev": 0,
+   "status": ""
+  },
+  {
+   "word": "청사진",
+   "count": 7,
+   "prev": 0,
+   "status": ""
+  },
+  {
+   "word": "억원",
+   "count": 7,
+   "prev": 0,
+   "status": ""
+  },
+  {
+   "word": "한림대춘천성심병원",
+   "count": 7,
+   "prev": 0,
+   "status": ""
+  }
+ ],
+ "issues_domestic": [
+  {
+   "title": "동아에스티·부산대병원, 스마트병동 구축…AI 해상의료 시스템 공동개...",
+   "link": "http://www.newslock.co.kr/news/articleView.html?idxno=137926",
+   "date": "2026-10-14",
+   "category": "국내 의료기관",
+   "region": "국내",
+   "score": 13,
+   "similar_count": 22,
+   "source": "newslock.co.kr",
+   "importance": 57
+  },
+  {
+   "title": "이민근 안산시장 “민선8기 씨앗, 민선9기 결실로… 중단 없는 안산 발...",
+   "link": "https://www.mk.co.kr/article/12175534",
+   "date": "2026-10-14",
+   "category": "국내 정책·규제",
+   "region": "국내",
+   "score": 5,
+   "similar_count": 18,
+   "source": "mk.co.kr",
+   "importance": 44
+  },
+  {
+   "title": "누구나 생체자료 기증 가능…국가 바이오빅데이터 내달 첫 개방",
+   "link": "https://www.yna.co.kr/view/AKR20261014156400530?input=1195m",
+   "date": "2026-10-15",
+   "category": "국내 의료기관",
+   "region": "국내",
+   "score": 7,
+   "similar_count": 14,
+   "source": "yna.co.kr",
+   "importance": 38
+  },
+  {
+   "title": "한림대춘천성심병원, 중증·필수의료 집중·지역 협력 확대",
+   "link": "https://www.edaily.co.kr/News/Read?newsId=03827766645612920&mediaCodeNo=257&utm_source=naver&utm_medium=referral&utm_campaign=news_syndication&utm_content=original_article",
+   "date": "2026-10-14",
+   "category": "AI 거버넌스·보안",
+   "region": "국내",
+   "score": 6,
+   "similar_count": 14,
+   "source": "edaily.co.kr",
+   "importance": 37
+  },
+  {
+   "title": "한림대춘천성심병원, 지역완결형 의료체계 구축 주력",
+   "link": "https://www.bosa.co.kr/news/articleView.html?idxno=3013943",
+   "date": "2026-10-14",
+   "category": "AI 거버넌스·보안",
+   "region": "국내",
+   "score": 6,
+   "similar_count": 10,
+   "source": "bosa.co.kr",
+   "importance": 29
+  },
+  {
+   "title": "휴로틱스, 250억원 시리즈A 투자유치",
+   "link": "https://view.asiae.co.kr/article/2026101508245845605",
+   "date": "2026-10-15",
+   "category": "국내 의료기관",
+   "region": "국내",
+   "score": 8,
+   "similar_count": 9,
+   "source": "view.asiae.co.kr",
+   "importance": 29
+  },
+  {
+   "title": "‘고양고양이’ 카톡 이모티콘으로 만난다…16일 선착순 4만명 무료 배...",
+   "link": "https://www.segye.com/newsView/20261015504821?OutUrl=naver",
+   "date": "2026-10-15",
+   "category": "국내 정책·규제",
+   "region": "국내",
+   "score": 5,
+   "similar_count": 9,
+   "source": "segye.com",
+   "importance": 26
+  },
+  {
+   "title": "세라젬 윤미나 전무, '전자·IT의 날' 국무총리 표창 수상",
+   "link": "https://www.g-enews.com/view.php?ud=202610141450306501d2373fc0f_1",
+   "date": "2026-10-14",
+   "category": "국내 정책·규제",
+   "region": "국내",
+   "score": 5,
+   "similar_count": 9,
+   "source": "g-enews.com",
+   "importance": 23
+  },
+  {
+   "title": "국가통합바이오빅데이터 기증 참여기준 확대…11월 첫 공개",
+   "link": "https://www.medipana.com/news/articleView.html?idxno=419347",
+   "date": "2026-10-15",
+   "category": "국내 의료기관",
+   "region": "국내",
+   "score": 7,
+   "similar_count": 8,
+   "source": "medipana.com",
+   "importance": 26
+  },
+  {
+   "title": "복지부, WHO와 21~22일 '세계 바이오 서밋' 개최...AI 의료혁신 논의",
+   "link": "https://www.fnnews.com/news/202610141537037627",
+   "date": "2026-10-14",
+   "category": "해외 의료기관·정책·규제",
+   "region": "국내",
+   "score": 12,
+   "similar_count": 7,
+   "source": "fnnews.com",
+   "importance": 29
+  }
+ ],
+ "issues_global": [
+  {
+   "title": "MedTech Regulator publishes 2030 Strategy to modernise patient-centred regulation for AI, digital MedTech and personalised medicines",
+   "link": "https://news.google.com/rss/articles/CBMiggJBVV95cUxOT1NRb1FlTEpRRGdUeHFheXpENFBvVXVlQXJKUFpnRnpuSXNHa2lXd0tuZTR3S1cxYjdGRjJjOGIwazBiWGw1bk96YU5LWUltUzZacEY0OFF4OXRVamxhaWlwYWdnNzdVNDFaclNBREd1NVJISVo0ODJzUmxIN3BvQ1hndVJ4OGNLTjRoVXV0M3NmM05MTHExNkVWSDd6eUd1VC1DQVR0Sm1PM0RNd3lMUllPOWRDYzd0b1ZiUmVWUDA0UUpwR2YyczByZmpBOXl3VU9kQmt5cU1mdE12cVRJMld2cUlKblM2M0lIWUtzVkE4WGlLWm9FNDhHR1FGRDczY3c?oc=5",
+   "date": "2026-10-15",
+   "category": "해외 정책·규제 (미국)",
+   "region": "해외",
+   "score": 4,
+   "similar_count": 0,
+   "source": "Med-Tech Insights, GOV.UK, Open Access Government",
+   "importance": 4
+  },
+  {
+   "title": "AI, tech leaders are lobbying Trump health officials in a government-run chat room",
+   "link": "https://news.google.com/rss/articles/CBMioAFBVV95cUxNaENvVDhCNjJzMEU2dFYzbXR5YWJmZGxQbkpqRVI4UWVKNzMtM2dKc1ltRi1PZTRIRE9Da1JIc1lZOWZ0RzBxZUlPM0tvZ2k1cGVoOVhZWXQ1X1BjV1BSWGN3V05mdW1FcjFCeVBaQ3dBLTVJVzZvT2ZndnVHNmoycVFkTXZ6X2FPQWdDLVMydnBsdDdVU0FhX1pQdzRrSFEx?oc=5",
+   "date": "2026-10-15",
+   "category": "해외 정책·규제 (미국)",
+   "region": "해외",
+   "score": 5,
+   "similar_count": 0,
+   "source": "Medical Marketing and Media, Fierce Healthcare",
+   "importance": 5
+  }
+ ],
+ "policy_announcements": [
+  {
+   "title": "건강검진 수검자 아니라도 국민 누구나 ‘국가통합바이오빅데이터’ 참여 가능해진다",
+   "link": "https://www.mohw.go.kr/board.es?mid=a10503000000&bid=0027&list_no=1492233&act=view",
+   "date": "2026-10-15",
+   "category": "보건복지부",
+   "region": "정부",
+   "score": 0,
+   "similar_count": 0,
+   "source": "보건복지부",
+   "importance": 0
+  },
+  {
+   "title": "정신건강 목적 생성형 AI 이용 가이드라인",
+   "link": "https://news.google.com/rss/articles/CBMidkFVX3lxTE1EX2Q1UThqUnpEbWZaZjBZU0VMRmR3TU1fR2MwVVp1aG1sQ19tYzdZRk1uTmJWYkExbUNjZG5rai0zdHNDX0owcEpuOFp6djlJdThnVS03Y0VHXzBHdFUtR1R5ZDFkYVdvcFJLVmNDSTlEYXlYR0E?oc=5",
+   "date": "2026-10-13",
+   "category": "정부 보도자료 (검색)",
+   "region": "정부",
+   "score": 0,
+   "similar_count": 0,
+   "source": "정부 보도자료 (검색)",
+   "importance": 0
+  },
+  {
+   "title": "국가 AI 데이터의 체계적 관리·활용을 위한 ｢AI기본법｣, ｢데이터산업법｣ 개정안 국무회의 통과",
+   "link": "https://www.msit.go.kr/bbs/view.do?sCode=user&mId=307&mPid=208&bbsSeqNo=94&nttSeqNo=3187861",
+   "date": "2026-10-13",
+   "category": "과학기술정보통신부",
+   "region": "정부",
+   "score": 0,
+   "similar_count": 0,
+   "source": "과학기술정보통신부",
+   "importance": 0
+  }
+ ],
+ "government_other": [
+  {
+   "title": "국가AI전략위-복지부, 바이오 데이터 기증…\"국민 참여 확산되길\"",
+   "link": "https://news.google.com/rss/articles/CBMiaEFVX3lxTE5GekdCZTJ2M19SNDB5amIxMnlGaGxQaVRzWjhFRk1qRnlZR2ljWG54QXZFNUd5YWJQWkhrMFU2UHVUWVMyTDN1VlltM3E2anFKVGh5eUZsaDdHUlh4eGZDRnBqZEs5cGNh?oc=5",
+   "date": "2026-10-15",
+   "category": "국가인공지능전략위원회",
+   "region": "정부",
+   "score": 0,
+   "similar_count": 0,
+   "source": "국가인공지능전략위원회",
+   "importance": 0
+  },
+  {
+   "title": "국가AI전략위-복지부, 바이오 데이터 기증 참여…의료·바이오 AI 활용 기반 확대",
+   "link": "https://news.google.com/rss/articles/CBMiaEFVX3lxTFB1NFIyS3BLQzZWc0plZGM0Sng4M3lKSzZuaE5aakJqaUw1MDRoWWM1XzNNM3MwSFhYRm4xWWJBaE5ZSS00aV8zQ3lUV2FsZ0cxV3BnTWkyRjBHWXF3NXgySEVqYkNUeGli?oc=5",
+   "date": "2026-10-15",
+   "category": "국가인공지능전략위원회",
+   "region": "정부",
+   "score": 0,
+   "similar_count": 0,
+   "source": "국가인공지능전략위원회",
+   "importance": 0
+  },
+  {
+   "title": "소버린 의료AI 향한 '제2의 금 모으기'…국민 100만명 바이오 데이터 구축 속도",
+   "link": "https://news.google.com/rss/articles/CBMiTkFVX3lxTE4wQ29xQkExYjctejJaMUZJY3J3V185ZUxid2FJM0p0ek43c1FqVVR2ZlE5OWZSbC1wbjZ0TENuTWVSaFhGc2t5QWJsS3czZw?oc=5",
+   "date": "2026-10-15",
+   "category": "국가인공지능전략위원회",
+   "region": "정부",
+   "score": 0,
+   "similar_count": 0,
+   "source": "국가인공지능전략위원회",
+   "importance": 0
+  },
+  {
+   "title": "국가AI전략위·복지부, 바이오 데이터 기증 참여 독려…의료 AI 기반 확대",
+   "link": "https://news.google.com/rss/articles/CBMickFVX3lxTFBXZktTZ2haOTFEZXdzLVNFWURVdHBiVU4tR0NDaHJWMU05a1RvUDlIUGVMaTJla0FBM2VJVVN3QU9Xd29yOVhTZ1prZmU4NGFSdFJBdlQ2bjZTTzV5bnVuclpTLXNJQldQYmd1c1NpMTRVQdIBdEFVX3lxTE5tSDEwYnNuWk40Y09IY1F4Yzg4eEN4VUdncVBISjVlYkZnNXgxU3FXOFhtdXZvc2dKTkxzbXAxZktBbFl6MVRHWW85cVdmY2V2RDRIa2RjNERzSEZQVm1FWktkeU1ZZVMtOEhYNXQtbGlWUUlW?oc=5",
+   "date": "2026-10-15",
+   "category": "국가인공지능전략위원회",
+   "region": "정부",
+   "score": 0,
+   "similar_count": 0,
+   "source": "국가인공지능전략위원회",
+   "importance": 0
+  },
+  {
+   "title": "정은경 장관·하정우 부위원장, 의료 AI 위해 바이오 데이터 직접 기증",
+   "link": "https://news.google.com/rss/articles/CBMiVkFVX3lxTE8tREJRMno1NmlUS0dzWnJwUTg1dW1TNlhjd0JhaVphZ1dIcDRoNk9sblk1aXRheGFiTXFMTXl4Wkc2dVlJbmExLXlmMUZoVGlHUTREQmFn?oc=5",
+   "date": "2026-10-15",
+   "category": "국가인공지능전략위원회",
+   "region": "정부",
+   "score": 0,
+   "similar_count": 0,
+   "source": "국가인공지능전략위원회",
+   "importance": 0
+  },
+  {
+   "title": "AI전략위·복지부, 바이오데이터 기증…100만명 구축 속도",
+   "link": "https://news.google.com/rss/articles/CBMigAFBVV95cUxNTGlYY3hhVkhyd0N0V0tDYk9ITXg4OG5mbGRWNlNjalB0ekhiT0VxQnJKYmtaZC1qRkVkQVJSODJjVjB6eWtSVGp1czBkNVduNmNFTGJSUGxNVjM2MjFFYkRFbnpGRDZaNGhYWVh4bWZNb0h0akRnWUpFMU5RUG1laA?oc=5",
+   "date": "2026-10-15",
+   "category": "국가인공지능전략위원회",
+   "region": "정부",
+   "score": 0,
+   "similar_count": 0,
+   "source": "국가인공지능전략위원회",
+   "importance": 0
+  },
+  {
+   "title": "국가AI전략위, 복지부와 국가 의료·바이오 데이터 구축 협력",
+   "link": "https://news.google.com/rss/articles/CBMiWkFVX3lxTE5hdUlyeHI2eFlHOVlEMktHNERTQ0tCWmd0b281UjNjOEdmTGYxaUpNTUJHVHBaVk1BNUFIWjZ6TzI1RzI4UVFUUUFKenNXX0NpOHA3ZmZuYmtwdw?oc=5",
+   "date": "2026-10-15",
+   "category": "국가인공지능전략위원회",
+   "region": "정부",
+   "score": 0,
+   "similar_count": 0,
+   "source": "국가인공지능전략위원회",
+   "importance": 0
+  },
+  {
+   "title": "AI로 피부 진단·맞춤 화장품까지…K-뷰티, 고부가 산업으로 키운다",
+   "link": "https://news.google.com/rss/articles/CBMibEFVX3lxTE5MTzFHZHhHeXRqVERQZVM1QW9DLVhKNDVpNmdFTU1tazhCNHFzZnlFV2hvY3FrTzRrMnZVRE1yaDc5c3JBMlNaT2ZublJwTms5STB5dUx1d1JXYXNJTFhjMFpsajdKLTREeVpCcQ?oc=5",
+   "date": "2026-10-14",
+   "category": "정부 보도자료 (검색)",
+   "region": "정부",
+   "score": 0,
+   "similar_count": 0,
+   "source": "정부 보도자료 (검색)",
+   "importance": 0
+  },
+  {
+   "title": "'AI가 불러올 바이오헬스 혁신의 확산', 국제사회 리더들이 한 곳에 모인다",
+   "link": "https://news.google.com/rss/articles/CBMidEFVX3lxTFBnUW9zUDEyZVhHcFN4WDdYYTVBYnVpMGhOcTRQQ250Znh5ZFdMUmU4WXRWdWxwY0szUkhlZXVYTFM0R2dkdzBhT004Z2dvQXh2bU1Lei14LXNycDdvcTNmSmExTENKTV9oM0pDOW4xNFBValVS?oc=5",
+   "date": "2026-10-14",
+   "category": "정부 보도자료 (검색)",
+   "region": "정부",
+   "score": 0,
+   "similar_count": 0,
+   "source": "정부 보도자료 (검색)",
+   "importance": 0
+  },
+  {
+   "title": "피지컬 AI 시대 '국방혁신'…신뢰할 수 있는 방패 조건",
+   "link": "https://news.google.com/rss/articles/CBMiaEFVX3lxTE1nUUI3VE44QWtrNHRjX3QyTUxsS2cwMkhMYVcyTW90R0dYSHdNTDRhMVhwY2M0UXY1MzRocnZIU19qTnVKbmZ4MjI4Q2JjMW5lcDdFN0lhRUkxdlo5ajBjejRqT3BfQ0lZ?oc=5",
+   "date": "2026-10-14",
+   "category": "정부 보도자료 (검색)",
+   "region": "정부",
+   "score": 0,
+   "similar_count": 0,
+   "source": "정부 보도자료 (검색)",
+   "importance": 0
+  },
+  {
+   "title": "\"AI 대응은 의료·돌봄 등의 기본서비스와 미래대응기금으로\" 국민숙의단 숙의 후 기본사회 실현 기대 65% → 83%",
+   "link": "https://news.google.com/rss/articles/CBMijAFBVV95cUxOUjBGbndSTDZDaTJTQlhSY0xFUXFHQ01MZEpyMm14dVN5Y1BQTTFaVHRmLTg1YWJGQUtwMndQanFtNmpfX3JETmZRQXMwXzV0Sk9wX29VejVyYzNVelhnWmtjdER6aWgzbnJDeFJJaEhhUG1fU0ZCR2F3ME8wZHdQeHFZRnJyUmF3WnE0WA?oc=5",
+   "date": "2026-10-14",
+   "category": "정부 보도자료 (검색)",
+   "region": "정부",
+   "score": 0,
+   "similar_count": 0,
+   "source": "정부 보도자료 (검색)",
+   "importance": 0
+  },
+  {
+   "title": "AI진단 맞춤형 화장품부터 메디컬 뷰티 서비스 글로벌 진출까지... ‘K-뷰티 서비스’ 전방위 지",
+   "link": "https://news.google.com/rss/articles/CBMidkFVX3lxTE9xUFJoOVV0c19SU3BkSFFZTlc1VzllSVRRY0MxOV8tNVdPQ3k2OXZ0T0VMQ085UG9KUk9ZX19xWHdVTVdrbThpS0dfOXl6MzFtaHZSUDV2cG94bzhhc3g2Tzd1VTBFNjR4djlDNDMxTDNSUXVKRGc?oc=5",
+   "date": "2026-10-14",
+   "category": "정부 보도자료 (검색)",
+   "region": "정부",
+   "score": 0,
+   "similar_count": 0,
+   "source": "정부 보도자료 (검색)",
+   "importance": 0
+  },
+  {
+   "title": "급변하는 글로벌 환경 대응 위해 AI·디지털 기반 신약 임상개발 혁신한다",
+   "link": "https://news.google.com/rss/articles/CBMidkFVX3lxTE5Gb3hYMlNsQkxRZm5nam1zaVpFU192c29JMmE3RmFBOFp4YXpueFRkVXZJUzdTV0IweDdjS1JrckM3TGtVY19sMkVNY3dTb0lJRzk3dVdxc3RnVGVWSEg2dUpoOFlXTFFBSFRTY1VzMUJpTGpiQmc?oc=5",
+   "date": "2026-10-12",
+   "category": "정부 보도자료 (검색)",
+   "region": "정부",
+   "score": 0,
+   "similar_count": 0,
+   "source": "정부 보도자료 (검색)",
+   "importance": 0
+  }
+ ],
+ "important_domestic": [
+  {
+   "title": "동아에스티·부산대병원, 스마트병동 구축…AI 해상의료 시스템 공동개...",
+   "link": "http://www.newslock.co.kr/news/articleView.html?idxno=137926",
+   "date": "2026-10-14",
+   "category": "국내 의료기관",
+   "region": "국내",
+   "score": 13,
+   "similar_count": 22,
+   "source": "newslock.co.kr",
+   "importance": 57
+  },
+  {
+   "title": "이민근 안산시장 “민선8기 씨앗, 민선9기 결실로… 중단 없는 안산 발...",
+   "link": "https://www.mk.co.kr/article/12175534",
+   "date": "2026-10-14",
+   "category": "국내 정책·규제",
+   "region": "국내",
+   "score": 5,
+   "similar_count": 18,
+   "source": "mk.co.kr",
+   "importance": 44
+  },
+  {
+   "title": "누구나 생체자료 기증 가능…국가 바이오빅데이터 내달 첫 개방",
+   "link": "https://www.yna.co.kr/view/AKR20261014156400530?input=1195m",
+   "date": "2026-10-15",
+   "category": "국내 의료기관",
+   "region": "국내",
+   "score": 7,
+   "similar_count": 14,
+   "source": "yna.co.kr",
+   "importance": 38
+  },
+  {
+   "title": "한림대춘천성심병원, 중증·필수의료 집중·지역 협력 확대",
+   "link": "https://www.edaily.co.kr/News/Read?newsId=03827766645612920&mediaCodeNo=257&utm_source=naver&utm_medium=referral&utm_campaign=news_syndication&utm_content=original_article",
+   "date": "2026-10-14",
+   "category": "AI 거버넌스·보안",
+   "region": "국내",
+   "score": 6,
+   "similar_count": 14,
+   "source": "edaily.co.kr",
+   "importance": 37
+  },
+  {
+   "title": "분당서울대병원, 상급종합병원 최초 인공지능의료기기 관련 국내외 품질...",
+   "link": "https://biz.heraldcorp.com/article/10902743?ref=naver",
+   "date": "2026-10-14",
+   "category": "국내 의료기관",
+   "region": "국내",
+   "score": 21,
+   "similar_count": 5,
+   "source": "biz.heraldcorp.com",
+   "importance": 34
+  },
+  {
+   "title": "美FDA, 메디컬에이아이 심부전 진단보조 AI 허가",
+   "link": "https://www.dailymedi.com/news/news_view.php?wr_id=941491",
+   "date": "2026-10-15",
+   "category": "해외 의료기관·정책·규제",
+   "region": "국내",
+   "score": 14,
+   "similar_count": 6,
+   "source": "dailymedi.com",
+   "importance": 29
+  },
+  {
+   "title": "복지부, WHO와 21~22일 '세계 바이오 서밋' 개최...AI 의료혁신 논의",
+   "link": "https://www.fnnews.com/news/202610141537037627",
+   "date": "2026-10-14",
+   "category": "해외 의료기관·정책·규제",
+   "region": "국내",
+   "score": 12,
+   "similar_count": 7,
+   "source": "fnnews.com",
+   "importance": 29
+  },
+  {
+   "title": "휴로틱스, 250억원 시리즈A 투자유치",
+   "link": "https://view.asiae.co.kr/article/2026101508245845605",
+   "date": "2026-10-15",
+   "category": "국내 의료기관",
+   "region": "국내",
+   "score": 8,
+   "similar_count": 9,
+   "source": "view.asiae.co.kr",
+   "importance": 29
+  },
+  {
+   "title": "한림대춘천성심병원, 지역완결형 의료체계 구축 주력",
+   "link": "https://www.bosa.co.kr/news/articleView.html?idxno=3013943",
+   "date": "2026-10-14",
+   "category": "AI 거버넌스·보안",
+   "region": "국내",
+   "score": 6,
+   "similar_count": 10,
+   "source": "bosa.co.kr",
+   "importance": 29
+  },
+  {
+   "title": "\"심부전 진단보조\"…메디컬에이아이, 美 FDA 허가",
+   "link": "https://www.newsis.com/view/NISX20261015_0003826575",
+   "date": "2026-10-15",
+   "category": "해외 의료기관·정책·규제",
+   "region": "국내",
+   "score": 13,
+   "similar_count": 5,
+   "source": "newsis.com",
+   "importance": 26
+  },
+  {
+   "title": "산업통상부·식약처, 바이오 산업 AI 전환·글로벌 경쟁력 강화 업무협...",
+   "link": "https://www.medigatenews.com/news/1398648907",
+   "date": "2026-10-14",
+   "category": "국내 정책·규제",
+   "region": "국내",
+   "score": 13,
+   "similar_count": 5,
+   "source": "medigatenews.com",
+   "importance": 26
+  },
+  {
+   "title": "국가통합바이오빅데이터 기증 참여기준 확대…11월 첫 공개",
+   "link": "https://www.medipana.com/news/articleView.html?idxno=419347",
+   "date": "2026-10-15",
+   "category": "국내 의료기관",
+   "region": "국내",
+   "score": 7,
+   "similar_count": 8,
+   "source": "medipana.com",
+   "importance": 26
+  },
+  {
+   "title": "‘고양고양이’ 카톡 이모티콘으로 만난다…16일 선착순 4만명 무료 배...",
+   "link": "https://www.segye.com/newsView/20261015504821?OutUrl=naver",
+   "date": "2026-10-15",
+   "category": "국내 정책·규제",
+   "region": "국내",
+   "score": 5,
+   "similar_count": 9,
+   "source": "segye.com",
+   "importance": 26
+  },
+  {
+   "title": "세라젬 윤미나 전무, '전자·IT의 날' 국무총리 표창 수상",
+   "link": "https://www.g-enews.com/view.php?ud=202610141450306501d2373fc0f_1",
+   "date": "2026-10-14",
+   "category": "국내 정책·규제",
+   "region": "국내",
+   "score": 5,
+   "similar_count": 9,
+   "source": "g-enews.com",
+   "importance": 23
+  },
+  {
+   "title": "AI전략위·복지부, 바이오데이터 기증…100만명 구축 속도",
+   "link": "https://www.edaily.co.kr/News/Read?newsId=03040566645613248&mediaCodeNo=257&utm_source=naver&utm_medium=referral&utm_campaign=news_syndication&utm_content=original_article",
+   "date": "2026-10-15",
+   "category": "국내 의료기관",
+   "region": "국내",
+   "score": 10,
+   "similar_count": 4,
+   "source": "edaily.co.kr",
+   "importance": 21
+  },
+  {
+   "title": "국가AI전략위, 복지부와 국가 의료·바이오 데이터 구축 협력",
+   "link": "https://www.fnnews.com/news/202610141650092730",
+   "date": "2026-10-15",
+   "category": "국내 의료기관",
+   "region": "국내",
+   "score": 10,
+   "similar_count": 4,
+   "source": "fnnews.com",
+   "importance": 21
+  },
+  {
+   "title": "국제성모병원, 카자흐스탄 아스타나와 AI의료 협력 확대",
+   "link": "https://www.newsis.com/view/NISX20261014_0003826084",
+   "date": "2026-10-14",
+   "category": "국내 의료 AI 기업",
+   "region": "국내",
+   "score": 8,
+   "similar_count": 5,
+   "source": "newsis.com",
+   "importance": 21
+  },
+  {
+   "title": "장흥 통합의학박람회 개막…양·한방 치유 프로그램 풍성",
+   "link": "https://www.newsis.com/view/NISX20261015_0003827486",
+   "date": "2026-10-15",
+   "category": "기타 (의료 AI·병원 AI 키워드)",
+   "region": "국내",
+   "score": 4,
+   "similar_count": 7,
+   "source": "newsis.com",
+   "importance": 21
+  },
+  {
+   "title": "씨아이테크, 'AI 스마트 너스패드' 시장 진입 속도",
+   "link": "https://www.newsis.com/view/NISX20261015_0003826711",
+   "date": "2026-10-15",
+   "category": "국내 의료기관",
+   "region": "국내",
+   "score": 9,
+   "similar_count": 4,
+   "source": "newsis.com",
+   "importance": 20
+  },
+  {
+   "title": "가천대 길병원, AI 기반 '환자경험 통합 플랫폼' 본격 가동",
+   "link": "https://www.bosa.co.kr/news/articleView.html?idxno=3013944",
+   "date": "2026-10-14",
+   "category": "기타 (의료 AI·병원 AI 키워드)",
+   "region": "국내",
+   "score": 7,
+   "similar_count": 5,
+   "source": "bosa.co.kr",
+   "importance": 20
+  }
+ ],
+ "important_global": [
+  {
+   "title": "Realizing the value of the divergence event in clinical human-AI interaction",
+   "link": "https://news.google.com/rss/articles/CBMiX0FVX3lxTE0tQzZQMWxqR3VLcC1aZ042U1Bmc0x6UGZfUDM3X25UUWI0Q0lQMzRsQmFRVFJxbDFPd2c1Q1dLRGdxVHVGcnVfbXdJbDhwck5mbjNMampOMmRmOU1JUktN?oc=5",
+   "date": "2026-10-13",
+   "category": "해외 의료기관 AI 도입·운영",
+   "region": "해외",
+   "score": 6,
+   "similar_count": 0,
+   "source": "Nature",
+   "importance": 9
+  },
+  {
+   "title": "Nature Medicine series on real-world clinical AI deployment",
+   "link": "https://news.google.com/rss/articles/CBMiWEFVX3lxTFBOZGI2MlZiTFhJSnN0NmEwUEZhbzhXTGZKc000TVNUNlVINzhyZVZDa2xUZjBJSWNqekpEMkJDYVVrZnlzbHJVbmh4dEJ1ZXRDdV9BZ3pKekc?oc=5",
+   "date": "2026-10-15",
+   "category": "해외 의료기관 AI 도입·운영",
+   "region": "해외",
+   "score": 5,
+   "similar_count": 0,
+   "source": "Nature",
+   "importance": 8
+  },
+  {
+   "title": "AI transforms how mental health clinicians support local people",
+   "link": "https://news.google.com/rss/articles/CBMimgFBVV95cUxOR3NLR0M2dnFPRFh4YmRFTGdxVU5OQ1piVmZ0Njh1ZHdyaFQxNGRzS1NfcnpUZVlYdW16bTI0R2pFZTNtRHRHSV9QcTRkY2N0SU5fbG1OczVqVUFCLXhGbW9jWm9Jay1ubXdPQkN6Z3h2TkJNdS1ET1NvdENVQUZyMnVUaW55d3p0MVFGRVEtN0R4TkduSk5TUTJn?oc=5",
+   "date": "2026-10-15",
+   "category": "해외 정책·규제 (유럽·영국)",
+   "region": "해외",
+   "score": 4,
+   "similar_count": 0,
+   "source": "Rotherham, Doncaster and South Humber NHS Trust",
+   "importance": 7
+  },
+  {
+   "title": "Lobbyists and trade groups fight to shape how states regulate medical AI",
+   "link": "https://news.google.com/rss/articles/CBMipgFBVV95cUxQZE1IbGpvU1dxQWk5dzNSRVBfckN6djhPR0lXQ3BhSml1cWRaNV9LVTgtZko4cWtjZk9NX3lhNG1ibnNNY0lqNmtvVFRrTHhRVUF6VmpwVmN6UVZmX1dYS2JNYUR2U3EyR0VYYjVpUENBeFRlM3dRVG5jN050UzdheXZqM3l0UkYxUlNCWi1XZjljc0JCbDhsZ0wwd1o2b0V4Q0xOVVZ3?oc=5",
+   "date": "2026-10-14",
+   "category": "해외 정책·규제 (미국)",
+   "region": "해외",
+   "score": 4,
+   "similar_count": 0,
+   "source": "STAT",
+   "importance": 7
+  },
+  {
+   "title": "NHS Communications AI Operating Framework v2",
+   "link": "https://news.google.com/rss/articles/CBMiigFBVV95cUxQdzd4N3VFb3pSTk96Y1h6ajlFOTB4OTVzaXVMWmsxTktqWmN5dnVQblJod0EzenFqS2ItTE9uOExweEpveE5mTFU2YkhtS0N4elBXdGVUNjlGNXhQOHFiaXMxc3ZmckVIaWhScGpTbTRtOFpYMlRYQ0JiNkhHTW0xOHRzMXYwRTZpcVE?oc=5",
+   "date": "2026-10-15",
+   "category": "해외 의료기관 AI 도입·운영",
+   "region": "해외",
+   "score": 3,
+   "similar_count": 0,
+   "source": "The NHS Alliance",
+   "importance": 6
+  },
+  {
+   "title": "Artificial intelligence-enabled clinical phenotyping of human brown fat",
+   "link": "https://news.google.com/rss/articles/CBMiX0FVX3lxTE9GZTlIVXVnazYxNTFrWEppcUVrV3ZIVUVNY2RQQURkSGtDR29wcnJ1SUxqSnNlc0ZTVFpnN0RORDBqNFRHWFZBTXZiMWp0TnBPMC1uZnZIWkJwTHI2UGJn?oc=5",
+   "date": "2026-10-15",
+   "category": "해외 연구·학술",
+   "region": "해외",
+   "score": 3,
+   "similar_count": 0,
+   "source": "Nature",
+   "importance": 6
+  },
+  {
+   "title": "HHS awards $1.5M for agentic AI and laboratory interoperability projects",
+   "link": "https://news.google.com/rss/articles/CBMipwFBVV95cUxONnp2N3RoZU1VZUhBbWdkZkNpZnFuei14cTFadXZkVm5CX0pfaWVJMk83dlhjSkM5ZnpOdmc4ald1RlhVUmtLRjRtbHZqdkpyWFpreVhBUkZVNjF4WGFYZEFad3NWcnd6d3NtQ095eVFwNTdTRmF1U3BiaUtnVmhacnpnVkxieFNLQTRNYjNlc1IzQkQtdGxlNjBZSzdtMmU3QjlMZlRlVQ?oc=5",
+   "date": "2026-10-15",
+   "category": "해외 정책·규제 (미국)",
+   "region": "해외",
+   "score": 3,
+   "similar_count": 0,
+   "source": "Healthcare IT News",
+   "importance": 6
+  },
+  {
+   "title": "Does private equity ownership impact hospital AI adoption?",
+   "link": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxNdUhlMHdfYnlEUDVFU2dhcFpCQlR0WVpDUE1CVFFNMFdYZE9ydjdocXVGYU5aS0EtRHJGX011Q0hyM2w1M0dRMnM5V19EX2ZvLW1IdnJlbDRrM3RVc0ZOSHJrcnFSRmRJSGJlZ1VzOW10bk5SdUQ0TUJFLWIzaExCd2RqVXVTdm00X0dmZG1BRVhiRUxubWFhUlVQWlBnQXk4bHRpQlg4TjlpbWsxVVRpNU84RXcyaEN6cUJv?oc=5",
+   "date": "2026-10-14",
+   "category": "해외 의료기관 AI 도입·운영",
+   "region": "해외",
+   "score": 3,
+   "similar_count": 0,
+   "source": "TechTarget",
+   "importance": 6
+  },
+  {
+   "title": "AI investments must advance patient health",
+   "link": "https://news.google.com/rss/articles/CBMihgFBVV95cUxOVncwczU2cVZyMnktVEhqeE11U01Xcll2SWlhTnZlZS1QdXBVVVMxc1NoeDV1NjlSM2U2Q29oQVlkZmE3YllERk9xMkR6a2NhUlNDdlJmcDA2OGFIWG0wX1c1ZnhrZ3lSelJOeGZiU0VKMllFSWZCZHdMOHNJdGY2ZHdFYjczdw?oc=5",
+   "date": "2026-10-13",
+   "category": "해외 의료기관 AI 도입·운영",
+   "region": "해외",
+   "score": 3,
+   "similar_count": 0,
+   "source": "MobiHealthNews",
+   "importance": 6
+  },
+  {
+   "title": "Takeaways from an evaluation of Google’s diagnostic chatbot, AMIE",
+   "link": "https://news.google.com/rss/articles/CBMilwFBVV95cUxQVUs5TWt2MEM4SnVSTzE4Um9pLUdfMjFsSTlGcEVub0dZYTF3WWo3NXhLcTkyU1h5d3I1X243dFJmWmpBNzBzUmNGdXE4T0RyMmlSenI0OXpTMklpN2hjdnhsdVBUbFNsRGxQLTFGcnEzRGxiYnI2SUZ1RFRSa0E1bXE4U0M4b2luNzB2M1NwNjNMOElKTnF3?oc=5",
+   "date": "2026-10-13",
+   "category": "해외 정책·규제 (미국)",
+   "region": "해외",
+   "score": 3,
+   "similar_count": 0,
+   "source": "STAT",
+   "importance": 6
+  },
+  {
+   "title": "AI, tech leaders are lobbying Trump health officials in a government-run chat room",
+   "link": "https://news.google.com/rss/articles/CBMioAFBVV95cUxNaENvVDhCNjJzMEU2dFYzbXR5YWJmZGxQbkpqRVI4UWVKNzMtM2dKc1ltRi1PZTRIRE9Da1JIc1lZOWZ0RzBxZUlPM0tvZ2k1cGVoOVhZWXQ1X1BjV1BSWGN3V05mdW1FcjFCeVBaQ3dBLTVJVzZvT2ZndnVHNmoycVFkTXZ6X2FPQWdDLVMydnBsdDdVU0FhX1pQdzRrSFEx?oc=5",
+   "date": "2026-10-15",
+   "category": "해외 정책·규제 (미국)",
+   "region": "해외",
+   "score": 5,
+   "similar_count": 0,
+   "source": "Medical Marketing and Media, Fierce Healthcare",
+   "importance": 5
+  },
+  {
+   "title": "MedTech Regulator publishes 2030 Strategy to modernise patient-centred regulation for AI, digital MedTech and personalised medicines",
+   "link": "https://news.google.com/rss/articles/CBMiggJBVV95cUxOT1NRb1FlTEpRRGdUeHFheXpENFBvVXVlQXJKUFpnRnpuSXNHa2lXd0tuZTR3S1cxYjdGRjJjOGIwazBiWGw1bk96YU5LWUltUzZacEY0OFF4OXRVamxhaWlwYWdnNzdVNDFaclNBREd1NVJISVo0ODJzUmxIN3BvQ1hndVJ4OGNLTjRoVXV0M3NmM05MTHExNkVWSDd6eUd1VC1DQVR0Sm1PM0RNd3lMUllPOWRDYzd0b1ZiUmVWUDA0UUpwR2YyczByZmpBOXl3VU9kQmt5cU1mdE12cVRJMld2cUlKblM2M0lIWUtzVkE4WGlLWm9FNDhHR1FGRDczY3c?oc=5",
+   "date": "2026-10-15",
+   "category": "해외 정책·규제 (미국)",
+   "region": "해외",
+   "score": 4,
+   "similar_count": 0,
+   "source": "Med-Tech Insights, GOV.UK, Open Access Government",
+   "importance": 4
+  },
+  {
+   "title": "When AI Outruns the Doctor: A New Framework Measures the Human Oversight Gap in Cardiology",
+   "link": "https://news.google.com/rss/articles/CBMitAFBVV95cUxNT1dGa2I2NkpEOHN6ZHJxcDhtNDU0OHo2ekxGNjM1VzVzV2pvMkZwNWl5eWpyUkhSS0t3VEVGYklDX1VfZEliMHlRVzg4bjdhWVZkRlYwcUdZYktzOWtFU0FWMGJ0N2NQa3MtUVlWaVlWc1lDTDlqdDdiSGJhWW9IOXlpVjdUSXZKaUZzaTNndWtKNnpXNEZNSkh3STgyTXVPNzN6VzdOMmJzdmotMEZRSV92cTM?oc=5",
+   "date": "2026-10-14",
+   "category": "해외 정책·규제 (미국)",
+   "region": "해외",
+   "score": 4,
+   "similar_count": 0,
+   "source": "Bioengineer.org",
+   "importance": 4
+  },
+  {
+   "title": "AI Medical Devices in Great Britain: What the MHRA's Response to the National Commission Means for Manufacturers",
+   "link": "https://news.google.com/rss/articles/CBMi3AFBVV95cUxOdXVJbzZsMVBTaEVpUDV6b2tZZ0Flb3Itay1IUjY2eUpOYld2MFVvd3RkOWpPUk4ta2dkb0pqQ1pxR296TGdBVTc1OUdZejJ6eDkxZmt1aUxqVDVtcUZUTWNweDBfVWh4ZzlicFFjRjJMOEVJRnRyR1NkczViR1psOTBYbzd1Q19mWGVxTEQ4RW9pck9RMGx3Z29ZVkxCenBEb1pud0Q0SUVTUXJ1UlRQZkFFOTF4WWpNMGVjY0M3RkFPUDgwRGgxdHk1YWVWamlaSldZcDExTnJORk9L?oc=5",
+   "date": "2026-10-15",
+   "category": "해외 정책·규제 (미국)",
+   "region": "해외",
+   "score": 3,
+   "similar_count": 0,
+   "source": "Ropes & Gray LLP",
+   "importance": 3
+  },
+  {
+   "title": "The barriers to realizing AI’s promise in health care",
+   "link": "https://news.google.com/rss/articles/CBMif0FVX3lxTE41T2RHYkxEdHBjY25IRWptZG83b1haVFNlTWxjNWJfV0NERjhpaEhTVFA4RmJlUmJ3cDU4YUVMX21WM05Tb3FYeVJGeWdROTVrSkNVcUt3Y2F6eWx0X0lMN1NjSDF2Wm5WM2ZFeG1najNkV3ZndnJwUjluLXhOLTg?oc=5",
+   "date": "2026-10-14",
+   "category": "해외 의료기관 AI 도입·운영",
+   "region": "해외",
+   "score": 3,
+   "similar_count": 0,
+   "source": "mezha.net",
+   "importance": 3
+  }
+ ],
+ "top_by_category": {
+  "국내 · 국내 의료기관": [
+   {
+    "title": "동아에스티·부산대병원, 스마트병동 구축…AI 해상의료 시스템 공동개...",
+    "link": "http://www.newslock.co.kr/news/articleView.html?idxno=137926",
+    "date": "2026-10-14",
+    "category": "국내 의료기관",
+    "region": "국내",
+    "score": 13,
+    "similar_count": 22,
+    "source": "newslock.co.kr",
+    "importance": 57
+   },
+   {
+    "title": "누구나 생체자료 기증 가능…국가 바이오빅데이터 내달 첫 개방",
+    "link": "https://www.yna.co.kr/view/AKR20261014156400530?input=1195m",
+    "date": "2026-10-15",
+    "category": "국내 의료기관",
+    "region": "국내",
+    "score": 7,
+    "similar_count": 14,
+    "source": "yna.co.kr",
+    "importance": 38
+   },
+   {
+    "title": "분당서울대병원, 상급종합병원 최초 인공지능의료기기 관련 국내외 품질...",
+    "link": "https://biz.heraldcorp.com/article/10902743?ref=naver",
+    "date": "2026-10-14",
+    "category": "국내 의료기관",
+    "region": "국내",
+    "score": 21,
+    "similar_count": 5,
+    "source": "biz.heraldcorp.com",
+    "importance": 34
+   }
+  ],
+  "국내 · 국내 정책·규제": [
+   {
+    "title": "이민근 안산시장 “민선8기 씨앗, 민선9기 결실로… 중단 없는 안산 발...",
+    "link": "https://www.mk.co.kr/article/12175534",
+    "date": "2026-10-14",
+    "category": "국내 정책·규제",
+    "region": "국내",
+    "score": 5,
+    "similar_count": 18,
+    "source": "mk.co.kr",
+    "importance": 44
+   },
+   {
+    "title": "산업통상부·식약처, 바이오 산업 AI 전환·글로벌 경쟁력 강화 업무협...",
+    "link": "https://www.medigatenews.com/news/1398648907",
+    "date": "2026-10-14",
+    "category": "국내 정책·규제",
+    "region": "국내",
+    "score": 13,
+    "similar_count": 5,
+    "source": "medigatenews.com",
+    "importance": 26
+   },
+   {
+    "title": "‘고양고양이’ 카톡 이모티콘으로 만난다…16일 선착순 4만명 무료 배...",
+    "link": "https://www.segye.com/newsView/20261015504821?OutUrl=naver",
+    "date": "2026-10-15",
+    "category": "국내 정책·규제",
+    "region": "국내",
+    "score": 5,
+    "similar_count": 9,
+    "source": "segye.com",
+    "importance": 26
+   }
+  ],
+  "국내 · AI 거버넌스·보안": [
+   {
+    "title": "한림대춘천성심병원, 중증·필수의료 집중·지역 협력 확대",
+    "link": "https://www.edaily.co.kr/News/Read?newsId=03827766645612920&mediaCodeNo=257&utm_source=naver&utm_medium=referral&utm_campaign=news_syndication&utm_content=original_article",
+    "date": "2026-10-14",
+    "category": "AI 거버넌스·보안",
+    "region": "국내",
+    "score": 6,
+    "similar_count": 14,
+    "source": "edaily.co.kr",
+    "importance": 37
+   },
+   {
+    "title": "한림대춘천성심병원, 지역완결형 의료체계 구축 주력",
+    "link": "https://www.bosa.co.kr/news/articleView.html?idxno=3013943",
+    "date": "2026-10-14",
+    "category": "AI 거버넌스·보안",
+    "region": "국내",
+    "score": 6,
+    "similar_count": 10,
+    "source": "bosa.co.kr",
+    "importance": 29
+   },
+   {
+    "title": "천안시, 2026 장애인체전 무장애 환경과 AI 중계로 혁신",
+    "link": "https://www.viva100.com/article/20261014501346",
+    "date": "2026-10-14",
+    "category": "AI 거버넌스·보안",
+    "region": "국내",
+    "score": 7,
+    "similar_count": 6,
+    "source": "viva100.com",
+    "importance": 19
+   }
+  ],
+  "국내 · 해외 의료기관·정책·규제": [
+   {
+    "title": "美FDA, 메디컬에이아이 심부전 진단보조 AI 허가",
+    "link": "https://www.dailymedi.com/news/news_view.php?wr_id=941491",
+    "date": "2026-10-15",
+    "category": "해외 의료기관·정책·규제",
+    "region": "국내",
+    "score": 14,
+    "similar_count": 6,
+    "source": "dailymedi.com",
+    "importance": 29
+   },
+   {
+    "title": "복지부, WHO와 21~22일 '세계 바이오 서밋' 개최...AI 의료혁신 논의",
+    "link": "https://www.fnnews.com/news/202610141537037627",
+    "date": "2026-10-14",
+    "category": "해외 의료기관·정책·규제",
+    "region": "국내",
+    "score": 12,
+    "similar_count": 7,
+    "source": "fnnews.com",
+    "importance": 29
+   },
+   {
+    "title": "\"심부전 진단보조\"…메디컬에이아이, 美 FDA 허가",
+    "link": "https://www.newsis.com/view/NISX20261015_0003826575",
+    "date": "2026-10-15",
+    "category": "해외 의료기관·정책·규제",
+    "region": "국내",
+    "score": 13,
+    "similar_count": 5,
+    "source": "newsis.com",
+    "importance": 26
+   }
+  ],
+  "국내 · 국내 의료 AI 기업": [
+   {
+    "title": "국제성모병원, 카자흐스탄 아스타나와 AI의료 협력 확대",
+    "link": "https://www.newsis.com/view/NISX20261014_0003826084",
+    "date": "2026-10-14",
+    "category": "국내 의료 AI 기업",
+    "region": "국내",
+    "score": 8,
+    "similar_count": 5,
+    "source": "newsis.com",
+    "importance": 21
+   },
+   {
+    "title": "에이아이트릭스, 美 타임 선정 '세계 최고 헬스테크 기업' 최고 등급",
+    "link": "https://www.mdtoday.co.kr/news/articleView.html?idxno=618742",
+    "date": "2026-10-14",
+    "category": "국내 의료 AI 기업",
+    "region": "국내",
+    "score": 12,
+    "similar_count": 2,
+    "source": "mdtoday.co.kr",
+    "importance": 19
+   },
+   {
+    "title": "﻿국제성모병원-카자흐스탄, 디지털헬스·AI 협력 추진",
+    "link": "https://www.dailymedi.com/news/news_view.php?wr_id=941427",
+    "date": "2026-10-14",
+    "category": "국내 의료 AI 기업",
+    "region": "국내",
+    "score": 8,
+    "similar_count": 4,
+    "source": "dailymedi.com",
+    "importance": 19
+   }
+  ],
+  "국내 · 기타 (의료 AI·병원 AI 키워드)": [
+   {
+    "title": "장흥 통합의학박람회 개막…양·한방 치유 프로그램 풍성",
+    "link": "https://www.newsis.com/view/NISX20261015_0003827486",
+    "date": "2026-10-15",
+    "category": "기타 (의료 AI·병원 AI 키워드)",
+    "region": "국내",
+    "score": 4,
+    "similar_count": 7,
+    "source": "newsis.com",
+    "importance": 21
+   },
+   {
+    "title": "가천대 길병원, AI 기반 '환자경험 통합 플랫폼' 본격 가동",
+    "link": "https://www.bosa.co.kr/news/articleView.html?idxno=3013944",
+    "date": "2026-10-14",
+    "category": "기타 (의료 AI·병원 AI 키워드)",
+    "region": "국내",
+    "score": 7,
+    "similar_count": 5,
+    "source": "bosa.co.kr",
+    "importance": 20
+   },
+   {
+    "title": "다이나믹솔루션, 국내 최초 AI ·BCI 기반 재활 로봇손 개발… WCNR서 시...",
+    "link": "https://www.edaily.co.kr/News/Read?newsId=03283286645613248&mediaCodeNo=257&utm_source=naver&utm_medium=referral&utm_campaign=news_syndication&utm_content=original_article",
+    "date": "2026-10-15",
+    "category": "기타 (의료 AI·병원 AI 키워드)",
+    "region": "국내",
+    "score": 6,
+    "similar_count": 4,
+    "source": "edaily.co.kr",
+    "importance": 17
+   }
+  ],
+  "국내 · 학술·연구·행사": [
+   {
+    "title": "DGIST, 국제 의료영상 AI 대회 1위",
+    "link": "https://www.hankyung.com/article/2026101420551",
+    "date": "2026-10-14",
+    "category": "학술·연구·행사",
+    "region": "국내",
+    "score": 10,
+    "similar_count": 2,
+    "source": "hankyung.com",
+    "importance": 17
+   },
+   {
+    "title": "코어라인소프트, 응급의학회 추계학술대회서 '응급 AI' 솔루션 공개",
+    "link": "https://www.rapportian.com/news/articleView.html?idxno=241295",
+    "date": "2026-10-15",
+    "category": "학술·연구·행사",
+    "region": "국내",
+    "score": 14,
+    "similar_count": 0,
+    "source": "rapportian.com",
+    "importance": 14
+   },
+   {
+    "title": "보산진·유니테이드, 22일 공동포럼…K-의료AI 글로벌 진출 논의",
+    "link": "https://www.news1.kr/bio/pharmaceutical-bio/6320615",
+    "date": "2026-10-15",
+    "category": "학술·연구·행사",
+    "region": "국내",
+    "score": 11,
+    "similar_count": 0,
+    "source": "news1.kr",
+    "importance": 14
+   }
+  ],
+  "해외 · 해외 의료기관 AI 도입·운영": [
+   {
+    "title": "Realizing the value of the divergence event in clinical human-AI interaction",
+    "link": "https://news.google.com/rss/articles/CBMiX0FVX3lxTE0tQzZQMWxqR3VLcC1aZ042U1Bmc0x6UGZfUDM3X25UUWI0Q0lQMzRsQmFRVFJxbDFPd2c1Q1dLRGdxVHVGcnVfbXdJbDhwck5mbjNMampOMmRmOU1JUktN?oc=5",
+    "date": "2026-10-13",
+    "category": "해외 의료기관 AI 도입·운영",
+    "region": "해외",
+    "score": 6,
+    "similar_count": 0,
+    "source": "Nature",
+    "importance": 9
+   },
+   {
+    "title": "Nature Medicine series on real-world clinical AI deployment",
+    "link": "https://news.google.com/rss/articles/CBMiWEFVX3lxTFBOZGI2MlZiTFhJSnN0NmEwUEZhbzhXTGZKc000TVNUNlVINzhyZVZDa2xUZjBJSWNqekpEMkJDYVVrZnlzbHJVbmh4dEJ1ZXRDdV9BZ3pKekc?oc=5",
+    "date": "2026-10-15",
+    "category": "해외 의료기관 AI 도입·운영",
+    "region": "해외",
+    "score": 5,
+    "similar_count": 0,
+    "source": "Nature",
+    "importance": 8
+   },
+   {
+    "title": "NHS Communications AI Operating Framework v2",
+    "link": "https://news.google.com/rss/articles/CBMiigFBVV95cUxQdzd4N3VFb3pSTk96Y1h6ajlFOTB4OTVzaXVMWmsxTktqWmN5dnVQblJod0EzenFqS2ItTE9uOExweEpveE5mTFU2YkhtS0N4elBXdGVUNjlGNXhQOHFiaXMxc3ZmckVIaWhScGpTbTRtOFpYMlRYQ0JiNkhHTW0xOHRzMXYwRTZpcVE?oc=5",
+    "date": "2026-10-15",
+    "category": "해외 의료기관 AI 도입·운영",
+    "region": "해외",
+    "score": 3,
+    "similar_count": 0,
+    "source": "The NHS Alliance",
+    "importance": 6
+   }
+  ],
+  "해외 · 해외 정책·규제 (유럽·영국)": [
+   {
+    "title": "AI transforms how mental health clinicians support local people",
+    "link": "https://news.google.com/rss/articles/CBMimgFBVV95cUxOR3NLR0M2dnFPRFh4YmRFTGdxVU5OQ1piVmZ0Njh1ZHdyaFQxNGRzS1NfcnpUZVlYdW16bTI0R2pFZTNtRHRHSV9QcTRkY2N0SU5fbG1OczVqVUFCLXhGbW9jWm9Jay1ubXdPQkN6Z3h2TkJNdS1ET1NvdENVQUZyMnVUaW55d3p0MVFGRVEtN0R4TkduSk5TUTJn?oc=5",
+    "date": "2026-10-15",
+    "category": "해외 정책·규제 (유럽·영국)",
+    "region": "해외",
+    "score": 4,
+    "similar_count": 0,
+    "source": "Rotherham, Doncaster and South Humber NHS Trust",
+    "importance": 7
+   },
+   {
+    "title": "Nelson Advisors: Strategic Transformation in HealthTech Conformity: Scarlet and the Industrialisation of AI Medical Device Certification",
+    "link": "https://news.google.com/rss/articles/CBMi2AFBVV95cUxPQ0pSUnU3LTFmQ3g5TFF0V0hyNXpMaUk0TTdmTlNlVjZRVmVoamN6NXotdUgtM25ONnRTeEFwQ29XOTU3ZGc1WExnSG1kR3Z0eGRGNVpWMGJpUi1xZHFKZndkdHlaeU1QUnF1M3pFVTJ3OWNabTZ3Z0NkTVZSMjZfbUZtcnk2dWlmU0R2Y1lWajRQaGhPUlc3dzBfMUdyWGluUHFKQlZBQ3BuVHUzRUZXWFlJdVFWaWtJZ1lXUVJVMThFazgwSnFNS1BfeVVfcnpLTDIxN0w3a3c?oc=5",
+    "date": "2026-10-14",
+    "category": "해외 정책·규제 (유럽·영국)",
+    "region": "해외",
+    "score": 2,
+    "similar_count": 0,
+    "source": "https://www.healthcare.digital/",
+    "importance": 2
+   },
+   {
+    "title": "MHRA sets out 2030 strategy for AI, data and faster regulatory pathways",
+    "link": "https://news.google.com/rss/articles/CBMiogFBVV95cUxNSG1TNFRVNktSRUNweWFwbGd6MGN3VnZ2NVFhMndtdG9VbGZUbGxfZEQ1cHhaQ0dmSDBEdWZUTGVvUHhvdk9IcUZtVFJTejRULThjTUQtdUlkUWJ0dVcycXUxalBEa1ZEUHAtaC1ELWE5NUkxOTFxU0ZGbXVhMXJsYmQ0RmszSi1ZN1liQzh4cEdaV0JsYzdMMVBSNENUZlBwTWc?oc=5",
+    "date": "2026-10-15",
+    "category": "해외 정책·규제 (유럽·영국)",
+    "region": "해외",
+    "score": 1,
+    "similar_count": 0,
+    "source": "London Daily News",
+    "importance": 1
+   }
+  ],
+  "해외 · 해외 정책·규제 (미국)": [
+   {
+    "title": "Lobbyists and trade groups fight to shape how states regulate medical AI",
+    "link": "https://news.google.com/rss/articles/CBMipgFBVV95cUxQZE1IbGpvU1dxQWk5dzNSRVBfckN6djhPR0lXQ3BhSml1cWRaNV9LVTgtZko4cWtjZk9NX3lhNG1ibnNNY0lqNmtvVFRrTHhRVUF6VmpwVmN6UVZmX1dYS2JNYUR2U3EyR0VYYjVpUENBeFRlM3dRVG5jN050UzdheXZqM3l0UkYxUlNCWi1XZjljc0JCbDhsZ0wwd1o2b0V4Q0xOVVZ3?oc=5",
+    "date": "2026-10-14",
+    "category": "해외 정책·규제 (미국)",
+    "region": "해외",
+    "score": 4,
+    "similar_count": 0,
+    "source": "STAT",
+    "importance": 7
+   },
+   {
+    "title": "HHS awards $1.5M for agentic AI and laboratory interoperability projects",
+    "link": "https://news.google.com/rss/articles/CBMipwFBVV95cUxONnp2N3RoZU1VZUhBbWdkZkNpZnFuei14cTFadXZkVm5CX0pfaWVJMk83dlhjSkM5ZnpOdmc4ald1RlhVUmtLRjRtbHZqdkpyWFpreVhBUkZVNjF4WGFYZEFad3NWcnd6d3NtQ095eVFwNTdTRmF1U3BiaUtnVmhacnpnVkxieFNLQTRNYjNlc1IzQkQtdGxlNjBZSzdtMmU3QjlMZlRlVQ?oc=5",
+    "date": "2026-10-15",
+    "category": "해외 정책·규제 (미국)",
+    "region": "해외",
+    "score": 3,
+    "similar_count": 0,
+    "source": "Healthcare IT News",
+    "importance": 6
+   },
+   {
+    "title": "Takeaways from an evaluation of Google’s diagnostic chatbot, AMIE",
+    "link": "https://news.google.com/rss/articles/CBMilwFBVV95cUxQVUs5TWt2MEM4SnVSTzE4Um9pLUdfMjFsSTlGcEVub0dZYTF3WWo3NXhLcTkyU1h5d3I1X243dFJmWmpBNzBzUmNGdXE4T0RyMmlSenI0OXpTMklpN2hjdnhsdVBUbFNsRGxQLTFGcnEzRGxiYnI2SUZ1RFRSa0E1bXE4U0M4b2luNzB2M1NwNjNMOElKTnF3?oc=5",
+    "date": "2026-10-13",
+    "category": "해외 정책·규제 (미국)",
+    "region": "해외",
+    "score": 3,
+    "similar_count": 0,
+    "source": "STAT",
+    "importance": 6
+   }
+  ],
+  "해외 · 해외 연구·학술": [
+   {
+    "title": "Artificial intelligence-enabled clinical phenotyping of human brown fat",
+    "link": "https://news.google.com/rss/articles/CBMiX0FVX3lxTE9GZTlIVXVnazYxNTFrWEppcUVrV3ZIVUVNY2RQQURkSGtDR29wcnJ1SUxqSnNlc0ZTVFpnN0RORDBqNFRHWFZBTXZiMWp0TnBPMC1uZnZIWkJwTHI2UGJn?oc=5",
+    "date": "2026-10-15",
+    "category": "해외 연구·학술",
+    "region": "해외",
+    "score": 3,
+    "similar_count": 0,
+    "source": "Nature",
+    "importance": 6
+   },
+   {
+    "title": "Penn's Chatbot Lets Epilepsy Patients Talk Back to Their EEG, and Their Feedback Cut False Seizure Alerts by 80%",
+    "link": "https://news.google.com/rss/articles/CBMijAFBVV95cUxQdVhQSnlQeEVLT2N4MFhxMFdCQ0JnUHA1VmtSWEU3QWVLZGpyWWxENHQzZWJaSGxPM0JnT3RtTl9tb2ZUemxRdjR1aHg3VTduQlhVbTNKUnU1eDFXU19jZ1I1OVNKdTlWbHJfSmVYT0ZMSlFoN2Jwa1VuRWxveUQ3YTBpdzR6VC1RRTZGeQ?oc=5",
+    "date": "2026-10-15",
+    "category": "해외 연구·학술",
+    "region": "해외",
+    "score": 1,
+    "similar_count": 0,
+    "source": "SSBCrack",
+    "importance": 1
+   },
+   {
+    "title": "Epilepsy Patients' Own Alert Labels Helped an AI Seizure Monitor Cut False Alarms by About 80% in Simulation",
+    "link": "https://news.google.com/rss/articles/CBMinAFBVV95cUxQbC1PUDhEUVd2Y2NlR0V4M29saUZPUHlHUzEzalpLaDZSaTNIVVZocmpfRWZPZDZpWHNObjNBdkRhOENYaFVDU3lXSW9Rdk43dUtlaDE5RG1kX3ROUWxIZGpLckVrVHlnVjRralFTMUh5T1VpNmlpZDBvN1BtZVYxV2NyWkpvMlBuY2dMMTdjVEtldlZhaW5uaWVnUUo?oc=5",
+    "date": "2026-10-15",
+    "category": "해외 연구·학술",
+    "region": "해외",
+    "score": 1,
+    "similar_count": 0,
+    "source": "Medical Daily",
+    "importance": 1
+   }
+  ]
+ },
+ "notes": [
+  "importance = 관련도 점수 + 2×유사기사 수 + 3(주요 일간지·의료 전문지·주요 해외 매체). 후보 선정용이며 최종 판단은 검수 필요.",
+  "월 구분은 대시보드 최초 수집일 기준. 수집일 수가 적은 달은 비교에 주의.",
+  "기사 본문은 저장하지 않고 제목·요약·링크만 보관."
+ ]
+}

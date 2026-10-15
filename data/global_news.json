@@ -1,8 +1,8 @@
 {
-  "generated_at": "2026-10-15T16:24:11.198275+09:00",
+  "generated_at": "2026-10-15T17:16:10.898754+09:00",
   "window_hours": 48,
   "count": 61,
-  "filtered_out": 517,
+  "filtered_out": 507,
   "category_order": [
     "해외 정책·규제 (미국)",
     "해외 정책·규제 (유럽·영국)",
@@ -11,6 +11,25 @@
   ],
   "errors": [],
   "items": [
+    {
+      "title": "Realizing the value of the divergence event in clinical human-AI interaction",
+      "link": "https://news.google.com/rss/articles/CBMiX0FVX3lxTE0tQzZQMWxqR3VLcC1aZ042U1Bmc0x6UGZfUDM3X25UUWI0Q0lQMzRsQmFRVFJxbDFPd2c1Q1dLRGdxVHVGcnVfbXdJbDhwck5mbjNMampOMmRmOU1JUktN?oc=5",
+      "source": "Nature",
+      "source_url": "https://www.nature.com",
+      "pubDate": "2026-10-13T19:23:22+09:00",
+      "category": "해외 의료기관 AI 도입·운영",
+      "queries": [
+        "health system ambient AI scribe",
+        "NEJM AI",
+        "Nature Medicine artificial intelligence",
+        "randomized trial AI clinical decision support"
+      ],
+      "sources": [
+        "Nature"
+      ],
+      "preferred": true,
+      "score": 6
+    },
     {
       "title": "Nature Medicine series on real-world clinical AI deployment",
       "link": "https://news.google.com/rss/articles/CBMiWEFVX3lxTFBOZGI2MlZiTFhJSnN0NmEwUEZhbzhXTGZKc000TVNUNlVINzhyZVZDa2xUZjBJSWNqekpEMkJDYVVrZnlzbHJVbmh4dEJ1ZXRDdV9BZ3pKekc?oc=5",
@@ -47,24 +66,6 @@
         "Fierce Healthcare"
       ],
       "preferred": false,
-      "score": 5
-    },
-    {
-      "title": "Realizing the value of the divergence event in clinical human-AI interaction",
-      "link": "https://news.google.com/rss/articles/CBMiX0FVX3lxTE0tQzZQMWxqR3VLcC1aZ042U1Bmc0x6UGZfUDM3X25UUWI0Q0lQMzRsQmFRVFJxbDFPd2c1Q1dLRGdxVHVGcnVfbXdJbDhwck5mbjNMampOMmRmOU1JUktN?oc=5",
-      "source": "Nature",
-      "source_url": "https://www.nature.com",
-      "pubDate": "2026-10-13T19:23:22+09:00",
-      "category": "해외 연구·학술",
-      "queries": [
-        "NEJM AI",
-        "Nature Medicine artificial intelligence",
-        "randomized trial AI clinical decision support"
-      ],
-      "sources": [
-        "Nature"
-      ],
-      "preferred": true,
       "score": 5
     },
     {
@@ -140,7 +141,7 @@
       "score": 4
     },
     {
-      "title": "NHS Communications AI Operating Framework v2",
+      "title": "NHS Communications Artificial Intelligence Operating Framework v2",
       "link": "https://news.google.com/rss/articles/CBMiigFBVV95cUxQdzd4N3VFb3pSTk96Y1h6ajlFOTB4OTVzaXVMWmsxTktqWmN5dnVQblJod0EzenFqS2ItTE9uOExweEpveE5mTFU2YkhtS0N4elBXdGVUNjlGNXhQOHFiaXMxc3ZmckVIaWhScGpTbTRtOFpYMlRYQ0JiNkhHTW0xOHRzMXYwRTZpcVE?oc=5",
       "source": "The NHS Alliance",
       "source_url": "https://thenhsalliance.org",
@@ -531,6 +532,22 @@
       ],
       "sources": [
         "Medical Daily"
+      ],
+      "preferred": false,
+      "score": 1
+    },
+    {
+      "title": "In the UK, family doctors face 20-page AI complaints that eat into patient care",
+      "link": "https://news.google.com/rss/articles/CBMiigFBVV95cUxOcGhxeURSOHJJcDRoci1rSEwzWUJBR0tjNVJ0eXNTa2c5azU2WnJjTVZXOEI5NmlaSmFxNXdEaEpRTGVJMnJ1QkdsV3lYcDhLenNiSXVjRWRrUnZhaE9NUHFRa1paQWl1WnNGX3pscWQ4RkVFNUJ4cVBXcTZQX1VadUFiMl83OTc1bUE?oc=5",
+      "source": "Yahoo",
+      "source_url": "https://www.yahoo.com",
+      "pubDate": "2026-10-15T10:31:00+09:00",
+      "category": "해외 의료기관 AI 도입·운영",
+      "queries": [
+        "Mayo Clinic AI"
+      ],
+      "sources": [
+        "Yahoo"
       ],
       "preferred": false,
       "score": 1
@@ -995,22 +1012,6 @@
       ],
       "sources": [
         "Digital Health News"
-      ],
-      "preferred": false,
-      "score": 1
-    },
-    {
-      "title": "Rotherham, Doncaster and South Humber introduces AI scribe for mental health services",
-      "link": "https://news.google.com/rss/articles/CBMitAFBVV95cUxPWFNjX3ZtTVcxZ1FvU1ZtMWloYXhlQlVLR0xnakdmcHZHZE01UVJ1UzZyTWpCcEN4SEhJYXdXYVZyLVc3c2Fzem9nNUZHTlFvRjVVSkdQb0Z5ZFJPOFFZSHpsOEFFcVFpWV9udUNZdU1EaEpiZUltek95Q2tRQkxIVVVMZ2hsSTJjUG9Mcnk1NGwxUUFSOGVmYnV0b2U3dWNFeFc2dmo4MElWb2FQRjVuWjQxTjA?oc=5",
-      "source": "HTN Health Tech News",
-      "source_url": "https://htn.co.uk",
-      "pubDate": "2026-10-13T17:06:43+09:00",
-      "category": "해외 의료기관 AI 도입·운영",
-      "queries": [
-        "health system ambient AI scribe"
-      ],
-      "sources": [
-        "HTN Health Tech News"
       ],
       "preferred": false,
       "score": 1
