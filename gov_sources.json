@@ -6,8 +6,7 @@
       "agency": "과학기술정보통신부",
       "board": "보도자료",
       "url": "https://www.msit.go.kr/user/rss/rss.do?bbsSeqNo=94",
-      "health_context": false,
-      "fallback_site": "msit.go.kr"
+      "health_context": false
     },
     {
       "agency": "과학기술정보통신부",
@@ -160,5 +159,29 @@
       "협약",
       "육성"
     ]
-  }
+  },
+  "apis": [
+    {
+      "agency": "과학기술정보통신부",
+      "board": "보도자료(공식 API)",
+      "url": "https://apis.data.go.kr/1721000/msitpressreleaseinfo/pressReleaseList",
+      "health_context": false,
+      "rows": 10,
+      "max_pages": 8
+    }
+  ],
+  "policy_pass": [
+    "기본법",
+    "거버넌스",
+    "신뢰",
+    "윤리",
+    "안전",
+    "규제",
+    "가이드라인",
+    "시행령",
+    "개인정보",
+    "가명",
+    "데이터\\s?(법|보호|안심)",
+    "국가인공지능"
+  ]
 }
