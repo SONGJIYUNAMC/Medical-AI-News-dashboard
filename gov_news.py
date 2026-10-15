@@ -13,7 +13,9 @@ from urllib.parse import quote
 import requests
 
 KST = timezone(timedelta(hours=9))
-UA = {"User-Agent": "Mozilla/5.0 (compatible; medical-ai-dashboard/1.0)"}
+UA = {"User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0 Safari/537.36",
+      "Accept": "application/rss+xml, application/xml, text/xml, */*;q=0.8",
+      "Accept-Language": "ko-KR,ko;q=0.9"}
 
 
 def rx(ps):
@@ -26,6 +28,7 @@ def strip(t):
 
 def parse_date(s):
     s = (s or "").strip()
+    s = re.sub(r"^(\d{4})[./](\d{1,2})[./](\d{1,2})", lambda m: f"{m[1]}-{int(m[2]):02d}-{int(m[3]):02d}", s)
     try:
         d = parsedate_to_datetime(s)
     except Exception:
@@ -45,6 +48,9 @@ def get_xml(url, session):
             time.sleep(2 * (attempt + 1))
             continue
         r.raise_for_status()
+        head = r.content[:200].lstrip().lower()
+        if not (head.startswith(b"<?xml") or head.startswith(b"<rss") or head.startswith(b"<feed")):
+            raise RuntimeError("RSS가 아닌 응답(HTML 등) - 주소 확인 필요")
         return ET.fromstring(r.content)
     raise RuntimeError(f"HTTP {r.status_code}")
 
@@ -52,8 +58,8 @@ def get_xml(url, session):
 def parse_items(root):
     for it in root.iter("item"):
         pub = parse_date(it.findtext("pubDate") or it.findtext("{http://purl.org/dc/elements/1.1/}date"))
-        if not pub:
-            continue
+        if not pub:  # 날짜가 없거나 형식을 모르는 RSS는 버리지 않고 수집일(오늘)로 처리
+            pub = datetime.now(KST)
         yield {"title": strip(it.findtext("title")), "link": (it.findtext("link") or "").strip(),
                "summary": strip(it.findtext("description"))[:300], "pubDate": pub}
 
@@ -74,14 +80,18 @@ def main():
     ai, health = rx(cfg["require_ai"]), rx(cfg["require_health"])
     cutoff = datetime.now(KST) - timedelta(hours=cfg.get("hours", 168))
 
-    jobs = [(f["agency"], f["url"], f.get("health_context", False), "rss") for f in cfg["feeds"]]
+    def gnews_url(q):
+        return f"https://news.google.com/rss/search?q={quote(q + ' when:7d')}&hl=ko&gl=KR&ceid=KR:ko"
+
+    jobs = [(f["agency"] + (" " + f["board"] if f.get("board") else ""), f["url"], f.get("health_context", False), "rss", f.get("fallback_site"), f["agency"]) for f in cfg["feeds"]]
     for g in cfg["gnews_queries"]:
-        u = f"https://news.google.com/rss/search?q={quote(g['q'] + ' when:7d')}&hl=ko&gl=KR&ceid=KR:ko"
-        jobs.append((g["agency"], u, False, "gnews"))
+        jobs.append((g["agency"], gnews_url(g["q"]), False, "gnews", None, g["agency"]))
 
     items, seen, errors, dropped = [], set(), [], 0
     with requests.Session() as s:
-        for agency, url, hc, mode in jobs:
+        queue = list(jobs)
+        while queue:
+            label, url, hc, mode, fb, agency = queue.pop(0)
             try:
                 for a in parse_items(get_xml(url, s)):
                     if a["pubDate"] < cutoff:
@@ -100,8 +110,12 @@ def main():
                                   "pubDate": a["pubDate"].isoformat(), "agency": agency,
                                   "kind": kind_of(text, cfg["kinds"]), "via": mode})
             except Exception as e:
-                errors.append({"query": f"{agency} ({url})", "error": str(e)})
-                print(f"[WARN] {agency}: {e}", file=sys.stderr)
+                note = " → 사이트 검색으로 대체" if fb else ""
+                errors.append({"query": f"{label} ({url})", "error": str(e)[:120] + note})
+                print(f"[WARN] {label} {url}: {e}{note}", file=sys.stderr)
+                if fb:  # 부처 RSS 실패 시 해당 부처 사이트를 Google News 에서 검색
+                    for q in (f"site:{fb} 인공지능", f"site:{fb} AI 의료"):
+                        queue.append((agency, gnews_url(q), hc, "gnews", None, agency))
             time.sleep(0.5)
 
     items.sort(key=lambda a: a["pubDate"], reverse=True)
