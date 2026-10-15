@@ -1,0 +1,36 @@
+{
+  "window": "2d",
+  "categories": {
+    "해외 정책·규제 (미국)": [
+      "FDA AI-enabled medical devices",
+      "FDA artificial intelligence guidance medical",
+      "CMS artificial intelligence health",
+      "HHS artificial intelligence health care policy",
+      "ONC health IT AI transparency"
+    ],
+    "해외 정책·규제 (유럽·영국)": [
+      "EU AI Act medical devices",
+      "European Health Data Space AI",
+      "EMA artificial intelligence medicines regulation",
+      "MHRA AI medical device",
+      "NHS AI rollout"
+    ],
+    "해외 의료기관 AI 도입·운영": [
+      "Mayo Clinic AI",
+      "Cleveland Clinic AI",
+      "health system ambient AI scribe",
+      "hospital generative AI deployment",
+      "health system AI governance"
+    ],
+    "해외 연구·학술": [
+      "NEJM AI",
+      "Nature Medicine artificial intelligence",
+      "JAMA large language model clinical",
+      "randomized trial AI clinical decision support"
+    ]
+  },
+  "require_ai": ["\\bAI\\b", "artificial intelligence", "machine learning", "deep learning", "generative", "\\bLLM", "large language model", "chatbot", "algorithm", "copilot", "scribe"],
+  "require_health": ["health", "hospital", "clinic", "medical", "patient", "physician", "doctor", "nurse", "FDA", "NHS", "CMS", "HHS", "EMA", "MHRA", "radiolog", "diagnos", "NEJM", "JAMA", "Lancet", "Mayo", "Epic"],
+  "exclude": ["stock", "shares", "price target", "IPO", "earnings", "funding round", "raises \\$", "series [A-D]\\b", "drug discovery", "biotech", "pharma", "wellness", "skincare"],
+  "preferred_sources": ["statnews", "fiercehealthcare", "healthcareitnews", "healthcare it news", "modern healthcare", "beckers", "mobihealthnews", "fda.gov", "nhs", "reuters", "associated press", "bloomberg", "nature", "nejm", "jama", "the lancet", "bmj", "axios", "politico", "healthcare dive", "medcity news", "techtarget"]
+}
