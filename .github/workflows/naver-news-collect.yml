@@ -2,7 +2,7 @@ name: naver-news-collect
 
 on:
   schedule:
-    - cron: "30 22 * * *"   # UTC 21:30 = KST 06:30 매일
+    - cron: "30 22 * * *"   # UTC 22:30 = KST 07:30 매일
   workflow_dispatch:
 
 permissions:
@@ -17,15 +17,19 @@ jobs:
         with:
           python-version: "3.12"
       - run: pip install requests
-      - name: Collect news
+      - name: Collect Naver news (국내)
         env:
           NAVER_API_KEY_ID: ${{ secrets.NAVER_API_KEY_ID }}
           NAVER_API_KEY: ${{ secrets.NAVER_API_KEY }}
         run: python naver_news.py --hours 26 --out data/news.json
+      - name: Collect Google News (해외)
+        continue-on-error: true   # 해외 수집이 실패해도 국내 결과는 저장
+        run: python global_news.py --config global_keywords.json --hours 48 --out data/global_news.json
       - name: Commit result
         run: |
           git config user.name "github-actions"
           git config user.email "actions@users.noreply.github.com"
           git add data/news.json
+          [ -f data/global_news.json ] && git add data/global_news.json || true
           git diff --staged --quiet || git commit -m "chore: update news data"
           git push
