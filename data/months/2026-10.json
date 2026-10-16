@@ -1,20 +1,20 @@
 {
  "month": "2026-10",
- "generated_at": "2026-10-16T09:31:26.544385+09:00",
+ "generated_at": "2026-10-16T09:57:23.568010+09:00",
  "prev_month": null,
  "collected_days": 2,
  "first_day": "2026-10-15",
  "last_day": "2026-10-16",
- "total": 709,
+ "total": 727,
  "prev_total": null,
  "by_region": {
-  "국내": 591,
+  "국내": 609,
   "해외": 100,
   "정부": 18
  },
  "weekly": {
   "2026-W42": {
-   "국내": 591,
+   "국내": 609,
    "해외": 100,
    "정부": 18
   }
@@ -22,33 +22,33 @@
  "categories": [
   {
    "name": "국내 · 기타 (의료 AI·병원 AI 키워드)",
-   "count": 150,
+   "count": 154,
    "prev": 0,
-   "delta": 150
+   "delta": 154
   },
   {
    "name": "국내 · 국내 정책·규제",
-   "count": 124,
+   "count": 129,
    "prev": 0,
-   "delta": 124
+   "delta": 129
   },
   {
    "name": "국내 · 국내 의료 AI 기업",
-   "count": 111,
+   "count": 117,
    "prev": 0,
-   "delta": 111
+   "delta": 117
   },
   {
    "name": "국내 · AI 거버넌스·보안",
-   "count": 63,
+   "count": 65,
    "prev": 0,
-   "delta": 63
+   "delta": 65
   },
   {
    "name": "국내 · 국내 의료기관",
-   "count": 59,
+   "count": 60,
    "prev": 0,
-   "delta": 59
+   "delta": 60
   },
   {
    "name": "국내 · 학술·연구·행사",
@@ -114,7 +114,7 @@
  "keywords": [
   {
    "word": "식약처",
-   "count": 27,
+   "count": 28,
    "prev": 0,
    "status": ""
   },
@@ -138,7 +138,7 @@
   },
   {
    "word": "세미나",
-   "count": 12,
+   "count": 13,
    "prev": 0,
    "status": ""
   },
@@ -203,6 +203,12 @@
    "status": ""
   },
   {
+   "word": "제이엘케이",
+   "count": 6,
+   "prev": 0,
+   "status": ""
+  },
+  {
    "word": "구글",
    "count": 6,
    "prev": 0,
@@ -223,12 +229,6 @@
   {
    "word": "심평원",
    "count": 5,
-   "prev": 0,
-   "status": ""
-  },
-  {
-   "word": "코어라인",
-   "count": 4,
    "prev": 0,
    "status": ""
   }
