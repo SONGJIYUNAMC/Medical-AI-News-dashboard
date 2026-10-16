@@ -152,12 +152,13 @@ function filtered() {
 }
 
 const regionOf = it => (it.gov ? "정부" : it.global ? "해외" : "국내");
+const todayKST = () => new Date(Date.now() + 9 * 3600 * 1000).toISOString().slice(0, 10);
 const REGION_LABEL = { "국내": "국내 뉴스 (네이버)", "해외": "해외 뉴스 (Google News)", "정부": "정부 발표 (부처 보도자료)" };
 
 function renderTabs() {
   const rbox = $("regions");
   rbox.replaceChildren();
-  ["국내", "해외", "정부"].forEach(r => {
+  ["국내", "정부", "해외"].forEach(r => {
     const n = state.items.filter(it => regionOf(it) === r).length;
     const b = el("button", { className: "tab" + (r === state.region ? " active" : ""), type: "button",
                              textContent: `${REGION_LABEL[r]} ${n.toLocaleString()}` });
@@ -189,10 +190,19 @@ function kwCount(items) {
 
 function renderHot() {
   const box = $("hot");
-  const cur = state.items.filter(it => regionOf(it) === state.region);
   box.replaceChildren();
-  if (cur.length < 5) return;
-  const prevMap = state.prevItems ? kwCount(state.prevItems.filter(it => regionOf(it) === state.region)) : null;
+  const today = todayKST();
+  const inReg = state.items.filter(it => regionOf(it) === state.region);
+  if (!inReg.some(it => it.first_seen)) return;   // 수집일 정보가 없는 구버전 데이터
+  const cur = inReg.filter(it => it.first_seen === today);   // 오늘 수집분만
+  if (!cur.length) {
+    box.append(el("details", {}, [el("summary", { textContent: `오늘(${today}) 핫 토픽` }),
+      el("div", { className: "sub", textContent: "오늘 수집된 기사가 아직 없습니다. 매일 08:00 자동 수집 후 표시됩니다." })]));
+    return;
+  }
+  // 증감 비교: 오늘 이전 가장 최근 수집일
+  const prevDay = [...new Set(inReg.map(it => it.first_seen).filter(d => d && d < today))].sort().pop();
+  const prevMap = prevDay ? kwCount(inReg.filter(it => it.first_seen === prevDay)) : null;
   // 1) 많이 다뤄진 이슈: 유사 기사(여러 매체 보도)가 많은 순
   const issues = cur.filter(it => (it.similar_count || 0) > 0)
     .sort((a, b) => (b.similar_count - a.similar_count) || ((b.score || 0) - (a.score || 0))).slice(0, 3);
@@ -231,7 +241,7 @@ function renderHot() {
       el("a", { href: safeUrl(it.originallink || it.link), target: "_blank", rel: "noopener noreferrer", textContent: it.title }),
       el("span", { className: "sub", textContent: c3Note(it) })])))
       : el("div", { className: "sub", textContent: "해당하는 기사가 아직 없습니다." })]);
-  const det = el("details", {}, [el("summary", { textContent: "이번 기간 핫 토픽" }), el("div", { className: "cols" }, [c1, c2, c3])]);
+  const det = el("details", {}, [el("summary", { textContent: `오늘(${today}) 핫 토픽` }), el("div", { className: "cols" }, [c1, c2, c3])]);
   det.open = state.hotOpen;
   det.addEventListener("toggle", () => { state.hotOpen = det.open; });
   box.append(det);
@@ -368,7 +378,9 @@ async function loadPeriod() {
   const dsel = $("day");
   dsel.replaceChildren(el("option", { value: "전체", textContent: "전체 수집일" }),
     ...days.map(d => el("option", { value: d, textContent: d })));
-  state.day = "전체"; state.cat = "전체";
+  const today = todayKST();
+  state.day = days.includes(today) ? today : (state.period === "n:1" && days.length ? days[0] : "전체");
+  dsel.value = state.day; state.cat = "전체";
   const f0 = files.slice().sort((a, b) => (b.updated_at || "").localeCompare(a.updated_at || ""))[0];
   $("meta").textContent = `기간 ${wk.length === 1 ? wk[0] : wk[wk.length - 1] + " ~ " + wk[0]} · 누적 ${state.items.length.toLocaleString()}건` +
     (f0 ? ` · 마지막 갱신 ${fmtDate(f0.updated_at)}` : "");
