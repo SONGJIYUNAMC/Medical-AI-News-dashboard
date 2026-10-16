@@ -1,20 +1,20 @@
 {
  "month": "2026-10",
- "generated_at": "2026-10-16T08:47:50.925897+09:00",
+ "generated_at": "2026-10-16T09:31:26.544385+09:00",
  "prev_month": null,
  "collected_days": 2,
  "first_day": "2026-10-15",
  "last_day": "2026-10-16",
- "total": 690,
+ "total": 709,
  "prev_total": null,
  "by_region": {
-  "국내": 572,
+  "국내": 591,
   "해외": 100,
   "정부": 18
  },
  "weekly": {
   "2026-W42": {
-   "국내": 572,
+   "국내": 591,
    "해외": 100,
    "정부": 18
   }
@@ -22,21 +22,21 @@
  "categories": [
   {
    "name": "국내 · 기타 (의료 AI·병원 AI 키워드)",
-   "count": 146,
+   "count": 150,
    "prev": 0,
-   "delta": 146
+   "delta": 150
   },
   {
    "name": "국내 · 국내 정책·규제",
-   "count": 122,
+   "count": 124,
    "prev": 0,
-   "delta": 122
+   "delta": 124
   },
   {
    "name": "국내 · 국내 의료 AI 기업",
-   "count": 107,
+   "count": 111,
    "prev": 0,
-   "delta": 107
+   "delta": 111
   },
   {
    "name": "국내 · AI 거버넌스·보안",
@@ -46,21 +46,21 @@
   },
   {
    "name": "국내 · 국내 의료기관",
-   "count": 55,
+   "count": 59,
    "prev": 0,
-   "delta": 55
+   "delta": 59
+  },
+  {
+   "name": "국내 · 학술·연구·행사",
+   "count": 51,
+   "prev": 0,
+   "delta": 51
   },
   {
    "name": "해외 · 해외 의료기관 AI 도입·운영",
    "count": 47,
    "prev": 0,
    "delta": 47
-  },
-  {
-   "name": "국내 · 학술·연구·행사",
-   "count": 46,
-   "prev": 0,
-   "delta": 46
   },
   {
    "name": "국내 · 해외 의료기관·정책·규제",
@@ -114,7 +114,7 @@
  "keywords": [
   {
    "word": "식약처",
-   "count": 26,
+   "count": 27,
    "prev": 0,
    "status": ""
   },
@@ -132,18 +132,30 @@
   },
   {
    "word": "서울대병원",
-   "count": 12,
+   "count": 14,
    "prev": 0,
    "status": ""
   },
   {
    "word": "세미나",
-   "count": 11,
+   "count": 12,
    "prev": 0,
    "status": ""
   },
   {
    "word": "분당서울대",
+   "count": 11,
+   "prev": 0,
+   "status": ""
+  },
+  {
+   "word": "학술대회",
+   "count": 10,
+   "prev": 0,
+   "status": ""
+  },
+  {
+   "word": "아산병원",
    "count": 10,
    "prev": 0,
    "status": ""
@@ -151,18 +163,6 @@
   {
    "word": "포럼",
    "count": 10,
-   "prev": 0,
-   "status": ""
-  },
-  {
-   "word": "학술대회",
-   "count": 9,
-   "prev": 0,
-   "status": ""
-  },
-  {
-   "word": "아산병원",
-   "count": 9,
    "prev": 0,
    "status": ""
   },
@@ -175,6 +175,12 @@
   {
    "word": "스마트병동",
    "count": 8,
+   "prev": 0,
+   "status": ""
+  },
+  {
+   "word": "상급종합병원",
+   "count": 7,
    "prev": 0,
    "status": ""
   },
@@ -209,25 +215,19 @@
    "status": ""
   },
   {
-   "word": "상급종합병원",
-   "count": 5,
-   "prev": 0,
-   "status": ""
-  },
-  {
    "word": "과기정통부",
    "count": 5,
    "prev": 0,
    "status": ""
   },
   {
-   "word": "코어라인",
-   "count": 4,
+   "word": "심평원",
+   "count": 5,
    "prev": 0,
    "status": ""
   },
   {
-   "word": "NHS",
+   "word": "코어라인",
    "count": 4,
    "prev": 0,
    "status": ""
