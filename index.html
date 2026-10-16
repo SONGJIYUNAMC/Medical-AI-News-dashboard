@@ -196,11 +196,16 @@ function renderHot() {
   const inReg = state.items.filter(it => regionOf(it) === state.region);
   if (!inReg.some(it => it.first_seen)) return;   // 수집일 정보가 없는 구버전 데이터
   const cur = inReg.filter(it => it.first_seen === today);   // 오늘 수집분만
-  if (!cur.length) {
-    box.append(el("details", {}, [el("summary", { textContent: `오늘(${today}) 핫 토픽` }),
-      el("div", { className: "sub", textContent: "오늘 수집된 기사가 아직 없습니다. 매일 08:00 자동 수집 후 표시됩니다." })]));
-    return;
-  }
+  // 주요 기사는 최근 7일(수집일 기준) 전체에서 선정
+  const wkStart = new Date(Date.now() + 9 * 3600 * 1000 - 6 * 86400000).toISOString().slice(0, 10);
+  const seen = new Set();
+  const week = [...state.items, ...(state.prevItems || [])].filter(it => {
+    if (regionOf(it) !== state.region || !it.first_seen || it.first_seen < wkStart) return false;
+    const k = it.originallink || it.link;
+    if (seen.has(k)) return false;
+    seen.add(k); return true;
+  });
+  const noToday = "오늘 수집된 기사가 아직 없습니다(매일 08:00 자동 수집).";
   // 증감 비교: 오늘 이전 가장 최근 수집일
   const prevDay = [...new Set(inReg.map(it => it.first_seen).filter(d => d && d < today))].sort().pop();
   const prevMap = prevDay ? kwCount(inReg.filter(it => it.first_seen === prevDay)) : null;
@@ -211,7 +216,7 @@ function renderHot() {
     issues.length ? el("ol", {}, issues.map(it => el("li", {}, [
       el("a", { href: safeUrl(it.originallink || it.link), target: "_blank", rel: "noopener noreferrer", textContent: it.title }),
       el("span", { className: "sub", textContent: ` · 유사 기사 ${it.similar_count}건` })])))
-      : el("div", { className: "sub", textContent: "여러 매체가 함께 보도한 이슈가 아직 없습니다." })]);
+      : el("div", { className: "sub", textContent: cur.length ? "여러 매체가 함께 보도한 이슈가 아직 없습니다." : noToday })]);
   // 2) 설정 키워드 Top 10 (keywords.json 에 정한 키워드만, 이전 기간 대비 증감)
   const kws = [...kwCount(cur)].sort((a, b) => b[1] - a[1]).slice(0, 10);
   const c2 = el("div", {}, [el("h3", { textContent: "설정 키워드 언급 Top 10" }),
@@ -222,17 +227,17 @@ function renderHot() {
       if (tag) b.append(el("span", { className: tag.includes("▼") ? "down" : "up", textContent: tag }));
       b.onclick = () => { $("q").value = word; state.q = word; render(); };
       return b;
-    })) : el("div", { className: "sub", textContent: "설정 키워드가 포함된 기사가 아직 없습니다(누적 데이터 생성 후 표시)." })]);
+    })) : el("div", { className: "sub", textContent: cur.length ? "설정 키워드가 포함된 기사가 아직 없습니다(누적 데이터 생성 후 표시)." : noToday })]);
   // 3) 주요 기사: 국내=주요 일간지·의료 전문지 보도, 해외=주요 해외 매체, 정부=법령·가이드라인
   let c3Title, pool, c3Note;
   if (state.region === "정부") {
-    c3Title = "법령·가이드라인 발표 최신 3건";
-    pool = cur.filter(it => it.kind === "법령·입법" || it.kind === "가이드라인·기준")
+    c3Title = "법령·가이드라인 발표 최신 3건 (최근 7일)";
+    pool = week.filter(it => it.kind === "법령·입법" || it.kind === "가이드라인·기준")
       .sort((a, b) => (b.pubDate || "").localeCompare(a.pubDate || ""));
     c3Note = it => ` · ${it.agency}`;
   } else {
-    c3Title = state.region === "해외" ? "주요 매체 기사 Top 3" : "주요 일간지·의료 전문지 기사 Top 3";
-    pool = cur.filter(it => it.source_type === "major" || it.source_type === "medical" || it.source_type === "global_pref")
+    c3Title = state.region === "해외" ? "주요 매체 기사 Top 3 (최근 7일)" : "주요 일간지·의료 전문지 기사 Top 3 (최근 7일)";
+    pool = week.filter(it => it.source_type === "major" || it.source_type === "medical" || it.source_type === "global_pref")
       .sort((a, b) => ((b.score || 0) + 2 * (b.similar_count || 0)) - ((a.score || 0) + 2 * (a.similar_count || 0)));
     c3Note = it => ` · ${it.global ? (it.sources || []).join(", ") : host(it.originallink || it.link)}`;
   }
