@@ -156,6 +156,12 @@ const todayKST = () => new Date(Date.now() + 9 * 3600 * 1000).toISOString().slic
 const RECRUIT = /채용|인재\s?영입|직원\s?모집|수시\s?모집|인턴\s?모집/;
 const REGION_LABEL = { "국내": "국내 뉴스 (네이버)", "해외": "해외 뉴스 (Google News)", "정부": "정부 발표 (부처 보도자료)" };
 
+// 수집일 기본값: 국내·해외는 오늘(없으면 최근 수집일), 정부 발표는 전체
+function applyDefaultDay() {
+  state.day = state.region === "정부" ? "전체" : (state.defDay || "전체");
+  $("day").value = state.day;
+}
+
 function renderTabs() {
   const rbox = $("regions");
   rbox.replaceChildren();
@@ -163,7 +169,7 @@ function renderTabs() {
     const n = state.items.filter(it => regionOf(it) === r).length;
     const b = el("button", { className: "tab" + (r === state.region ? " active" : ""), type: "button",
                              textContent: `${REGION_LABEL[r]} ${n.toLocaleString()}` });
-    b.onclick = () => { state.region = r; state.cat = "전체"; clearSearch(); render(); };
+    b.onclick = () => { state.region = r; state.cat = "전체"; applyDefaultDay(); clearSearch(); render(); };
     rbox.append(b);
   });
   const inRegion = state.items.filter(it => regionOf(it) === state.region);
@@ -386,8 +392,8 @@ async function loadPeriod() {
   dsel.replaceChildren(el("option", { value: "전체", textContent: "전체 수집일" }),
     ...days.map(d => el("option", { value: d, textContent: d })));
   const today = todayKST();
-  state.day = days.includes(today) ? today : (state.period === "n:1" && days.length ? days[0] : "전체");
-  dsel.value = state.day; state.cat = "전체";
+  state.defDay = days.includes(today) ? today : (state.period === "n:1" && days.length ? days[0] : "전체");
+  applyDefaultDay(); state.cat = "전체";
   const f0 = files.slice().sort((a, b) => (b.updated_at || "").localeCompare(a.updated_at || ""))[0];
   $("meta").textContent = `기간 ${wk.length === 1 ? wk[0] : wk[wk.length - 1] + " ~ " + wk[0]} · 누적 ${state.items.length.toLocaleString()}건` +
     (f0 ? ` · 마지막 갱신 ${fmtDate(f0.updated_at)}` : "");
