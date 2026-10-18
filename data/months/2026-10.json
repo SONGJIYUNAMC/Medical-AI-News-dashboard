@@ -1,90 +1,95 @@
 {
  "month": "2026-10",
- "generated_at": "2026-10-18T08:15:12.752571+09:00",
+ "generated_at": "2026-10-19T08:11:36.084311+09:00",
  "prev_month": null,
- "collected_days": 4,
+ "collected_days": 5,
  "first_day": "2026-10-15",
- "last_day": "2026-10-18",
- "total": 985,
+ "last_day": "2026-10-19",
+ "total": 1099,
  "prev_total": null,
  "by_region": {
-  "국내": 813,
-  "해외": 153,
-  "정부": 19
+  "국내": 904,
+  "해외": 174,
+  "정부": 21
  },
  "weekly": {
   "2026-W42": {
    "국내": 813,
    "해외": 153,
    "정부": 19
+  },
+  "2026-W43": {
+   "국내": 91,
+   "해외": 21,
+   "정부": 2
   }
  },
  "categories": [
   {
    "name": "국내 · 기타 (의료 AI·병원 AI 키워드)",
-   "count": 212,
+   "count": 243,
    "prev": 0,
-   "delta": 212
+   "delta": 243
   },
   {
    "name": "국내 · 국내 정책·규제",
-   "count": 174,
+   "count": 195,
    "prev": 0,
-   "delta": 174
+   "delta": 195
   },
   {
    "name": "국내 · 국내 의료 AI 기업",
-   "count": 166,
+   "count": 179,
    "prev": 0,
-   "delta": 166
-  },
-  {
-   "name": "국내 · 국내 의료기관",
-   "count": 77,
-   "prev": 0,
-   "delta": 77
-  },
-  {
-   "name": "국내 · AI 거버넌스·보안",
-   "count": 77,
-   "prev": 0,
-   "delta": 77
+   "delta": 179
   },
   {
    "name": "해외 · 해외 의료기관 AI 도입·운영",
-   "count": 74,
+   "count": 89,
    "prev": 0,
-   "delta": 74
+   "delta": 89
+  },
+  {
+   "name": "국내 · AI 거버넌스·보안",
+   "count": 86,
+   "prev": 0,
+   "delta": 86
+  },
+  {
+   "name": "국내 · 국내 의료기관",
+   "count": 80,
+   "prev": 0,
+   "delta": 80
   },
   {
    "name": "국내 · 학술·연구·행사",
-   "count": 62,
+   "count": 66,
    "prev": 0,
-   "delta": 62
+   "delta": 66
   },
   {
    "name": "국내 · 해외 의료기관·정책·규제",
-   "count": 45,
+   "count": 55,
    "prev": 0,
-   "delta": 45
+   "delta": 55
   },
   {
    "name": "해외 · 해외 정책·규제 (미국)",
-   "count": 37,
+   "count": 38,
    "prev": 0,
-   "delta": 37
+   "delta": 38
   },
   {
    "name": "해외 · 해외 연구·학술",
-   "count": 23,
+   "count": 25,
    "prev": 0,
-   "delta": 23
+   "delta": 25
   },
   {
    "name": "해외 · 해외 정책·규제 (유럽·영국)",
-   "count": 19,
+   "count": 22,
    "prev": 0,
-   "delta": 19
+   "delta": 22
   },
   {
    "name": "정부 · 국가인공지능전략위원회",
@@ -100,9 +105,9 @@
   },
   {
    "name": "정부 · 보건복지부",
-   "count": 1,
+   "count": 3,
    "prev": 0,
-   "delta": 1
+   "delta": 3
   },
   {
    "name": "정부 · 과학기술정보통신부",
@@ -114,7 +119,7 @@
  "keywords": [
   {
    "word": "식약처",
-   "count": 33,
+   "count": 37,
    "prev": 0,
    "status": ""
   },
@@ -126,25 +131,31 @@
   },
   {
    "word": "보건복지부",
-   "count": 23,
+   "count": 27,
    "prev": 0,
    "status": ""
   },
   {
    "word": "서울대병원",
-   "count": 22,
+   "count": 23,
    "prev": 0,
    "status": ""
   },
   {
    "word": "세미나",
-   "count": 17,
+   "count": 18,
    "prev": 0,
    "status": ""
   },
   {
    "word": "심평원",
-   "count": 15,
+   "count": 16,
+   "prev": 0,
+   "status": ""
+  },
+  {
+   "word": "제이엘케이",
+   "count": 14,
    "prev": 0,
    "status": ""
   },
@@ -155,20 +166,20 @@
    "status": ""
   },
   {
-   "word": "제이엘케이",
-   "count": 12,
+   "word": "포럼",
+   "count": 13,
    "prev": 0,
    "status": ""
   },
   {
-   "word": "포럼",
+   "word": "상급종합병원",
    "count": 12,
    "prev": 0,
    "status": ""
   },
   {
    "word": "학술대회",
-   "count": 11,
+   "count": 12,
    "prev": 0,
    "status": ""
   },
@@ -179,14 +190,38 @@
    "status": ""
   },
   {
-   "word": "상급종합병원",
+   "word": "FDA",
    "count": 10,
    "prev": 0,
    "status": ""
   },
   {
-   "word": "FDA",
+   "word": "국회",
+   "count": 10,
+   "prev": 0,
+   "status": ""
+  },
+  {
+   "word": "WHO",
    "count": 9,
+   "prev": 0,
+   "status": ""
+  },
+  {
+   "word": "건보공단",
+   "count": 9,
+   "prev": 0,
+   "status": ""
+  },
+  {
+   "word": "구글",
+   "count": 9,
+   "prev": 0,
+   "status": ""
+  },
+  {
+   "word": "신의료기술",
+   "count": 8,
    "prev": 0,
    "status": ""
   },
@@ -199,36 +234,6 @@
   {
    "word": "루닛",
    "count": 8,
-   "prev": 0,
-   "status": ""
-  },
-  {
-   "word": "건보공단",
-   "count": 8,
-   "prev": 0,
-   "status": ""
-  },
-  {
-   "word": "구글",
-   "count": 8,
-   "prev": 0,
-   "status": ""
-  },
-  {
-   "word": "국회",
-   "count": 7,
-   "prev": 0,
-   "status": ""
-  },
-  {
-   "word": "MHRA",
-   "count": 7,
-   "prev": 0,
-   "status": ""
-  },
-  {
-   "word": "한국보건산업진흥원",
-   "count": 7,
    "prev": 0,
    "status": ""
   }
@@ -427,6 +432,28 @@
   }
  ],
  "government_other": [
+  {
+   "title": "WHO 서태평양 지역총회서 역내 보건 현안 대응 위한 한국 전략과 성과 알린다",
+   "link": "https://www.mohw.go.kr/board.es?mid=a10503000000&bid=0027&list_no=1492254&act=view",
+   "date": "2026-10-18",
+   "category": "보건복지부",
+   "region": "정부",
+   "score": 0,
+   "similar_count": 0,
+   "source": "보건복지부",
+   "importance": 0
+  },
+  {
+   "title": "2명 이상 장애인가구 1만 3천 명 집중조사 등 복지위기가구 총 19만 명 발굴·조사",
+   "link": "https://www.mohw.go.kr/board.es?mid=a10503000000&bid=0027&list_no=1492253&act=view",
+   "date": "2026-10-18",
+   "category": "보건복지부",
+   "region": "정부",
+   "score": 0,
+   "similar_count": 0,
+   "source": "보건복지부",
+   "importance": 0
+  },
   {
    "title": "[DH times K-정밀의료·의료데이터 정책]“‘한국인 100만명 바이오데이터 의료AI 만든다’…정부, 국가 바이오빅데이터 전 국민 참여 확대”",
    "link": "https://news.google.com/rss/articles/CBMiakFVX3lxTFA3WjlRaG1oS19hcVc2QXh4SzdCaHNNUkF4THFfWlNYM1h2bzhTT1Nkcm16aEk4M3lXUFpCWXFROXU0eTYwdHhPdnZMblQyR3VkNGRJTlk4b1JyWUVvd1Q5Xy01MzVUd3J6OUE?oc=5",
@@ -872,6 +899,17 @@
    "importance": 8
   },
   {
+   "title": "A scoping review of bias in large AI models for medicine and healthcare",
+   "link": "https://news.google.com/rss/articles/CBMiX0FVX3lxTE9hcW1LLVJsZElBWGJQV0ZEN1MwdUdNQk5lMi1PSTVpd2R6a0FYanhsMDBFY1FKZEF2ckRoRER0S05XVlJ4bU5fdzh4VDBLeVo0VUJNdm9GME9KOGFaMVg4?oc=5",
+   "date": "2026-10-17",
+   "category": "해외 연구·학술",
+   "region": "해외",
+   "score": 5,
+   "similar_count": 0,
+   "source": "Nature",
+   "importance": 8
+  },
+  {
    "title": "Medical data crunch poses challenges to ambient AI and clinical agents",
    "link": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxNb2c4bm0wcFg4eVNxTUhIYXZocG95a1N6M09OeVZxdGxQbG9FbjRnRWtHYWxVMVpuakhYZDJHQmRsUDc1blowUi0tcDdQdi1zeVJIMk44bkdhTGRTa01PY3J5M1QyNXN3cXFTZ3dnRG1VS3d6UWhkZ1RJd3ZCc0VsSlJsaTd0eHZCbUt1WU11THBEN3FJQ3NqcDNRQzBKUERqc1Y2X3JCank?oc=5",
    "date": "2026-10-17",
@@ -979,17 +1017,6 @@
    "score": 3,
    "similar_count": 0,
    "source": "Nature World News",
-   "importance": 6
-  },
-  {
-   "title": "NHS Communications AI Operating Framework v2",
-   "link": "https://news.google.com/rss/articles/CBMiigFBVV95cUxQdzd4N3VFb3pSTk96Y1h6ajlFOTB4OTVzaXVMWmsxTktqWmN5dnVQblJod0EzenFqS2ItTE9uOExweEpveE5mTFU2YkhtS0N4elBXdGVUNjlGNXhQOHFiaXMxc3ZmckVIaWhScGpTbTRtOFpYMlRYQ0JiNkhHTW0xOHRzMXYwRTZpcVE?oc=5",
-   "date": "2026-10-15",
-   "category": "해외 의료기관 AI 도입·운영",
-   "region": "해외",
-   "score": 3,
-   "similar_count": 0,
-   "source": "The NHS Alliance",
    "importance": 6
   }
  ],
@@ -1333,18 +1360,29 @@
     "importance": 4
    },
    {
-    "title": "Nelson Advisors: This Week in European HealthTech, MedTech and Health AI: 16th October 2026",
-    "link": "https://news.google.com/rss/articles/CBMiywFBVV95cUxPVTZkSGh3Z1NGenhrLVNtRE5SeXY3dUVoSno4YkFpek5NYzdCNGxuVjdId3F6UXZVLXRPeE56QjlpMUY2ZnZIM3NQSHBLQ2dtTjJMZnV5Q3poT18yX2Zsa29GbkpxZmoyWnU1WDlsaGF5VGZYaW1EOGFGcWpmRTVpUFlBQm9KVWwwNzdfam1nQ3owdU5Cbk5xY05TTjNUM05XZmNuSUkxWllnSGRpTXJiRVFUWHliUHZWdlJxZUpFS3ZyRy0wS1pWRHBxQQ?oc=5",
-    "date": "2026-10-17",
+    "title": "The rise of conversational AI in healthcare",
+    "link": "https://news.google.com/rss/articles/CBMijwFBVV95cUxNVy0yRU54N25GS01PLWZlb3lVY3QtYlJvODdrai1YbWlvNkZLU3BfdHliczVzcDRVeVZuU29ZZDZKYUNzN3VtNkpDZjVwRVpNRktvOEJ3aFJTRllQZWdYRWlRUXpIZ1hfLUNsTFBTQ1JDM3l6VWtFcUphV1luU01POVplWi15V2UyNjBEVXA5QQ?oc=5",
+    "date": "2026-10-18",
     "category": "해외 정책·규제 (유럽·영국)",
     "region": "해외",
-    "score": 3,
+    "score": 4,
     "similar_count": 0,
-    "source": "https://www.healthcare.digital/",
-    "importance": 3
+    "source": "Amazon Web Services (AWS)",
+    "importance": 4
    }
   ],
   "해외 · 해외 연구·학술": [
+   {
+    "title": "A scoping review of bias in large AI models for medicine and healthcare",
+    "link": "https://news.google.com/rss/articles/CBMiX0FVX3lxTE9hcW1LLVJsZElBWGJQV0ZEN1MwdUdNQk5lMi1PSTVpd2R6a0FYanhsMDBFY1FKZEF2ckRoRER0S05XVlJ4bU5fdzh4VDBLeVo0VUJNdm9GME9KOGFaMVg4?oc=5",
+    "date": "2026-10-17",
+    "category": "해외 연구·학술",
+    "region": "해외",
+    "score": 5,
+    "similar_count": 0,
+    "source": "Nature",
+    "importance": 8
+   },
    {
     "title": "Malicious AI and Nuclear Famine Carry Low-Probability Extinction Risk This Century, Lancet Commission on 17 Global Threats Finds",
     "link": "https://news.google.com/rss/articles/CBMi7AFBVV95cUxON2p4UVlacFo3YldybzFGY3BBbkR4anRVZFZmMGpScFFvdnVWaVR0VjJ6NFVMbS1ucDBpdHRibEtEVU1HczNCdktLcFViRDZvdEw4bWJ5RU1jQ3VxczRQMDlZVERfNmpRQ0xSN1JlTE1OMDIyTnVjcndacmp5NkNpLTQ1dkdhNkJzTGVRNW0wV0RxQXBFaDByLVFITExTN2RJald0OFBWYzVTcy04RGMtS1NvOUJNVVM5N0ZSczk3bU41RGtLTnVCR2kwbTlIUXg3M1l2dlFGSnhSWkE2cWt1QmRJMzJzOF9tdDhDSQ?oc=5",
@@ -1366,17 +1404,6 @@
     "similar_count": 0,
     "source": "Nature",
     "importance": 6
-   },
-   {
-    "title": "US Medical Residencies Are Flying Blind on AI Training, National Survey Finds",
-    "link": "https://news.google.com/rss/articles/CBMiowFBVV95cUxPR2hpaFJmdmRSZHUtcVF4VkxFMFNwQUNXM09fYUFwTWk4MFVSQ2pSNlpFZ0xqMjZoLUVFVmtXdFpvNzlBZVkxVTdXdk5BMFQycDF0VWprV2ZNT2FaYVU1QlFyU0doQklUbXM1UDVUMXJLdlp3TDExYVJaeUlmXzVhRWhzMHNjT0JsMVgya1pOYnBBQzQ4eEtydTkxOWF0SFd0TjMw?oc=5",
-    "date": "2026-10-17",
-    "category": "해외 연구·학술",
-    "region": "해외",
-    "score": 2,
-    "similar_count": 0,
-    "source": "Bioengineer.org",
-    "importance": 2
    }
   ]
  },
