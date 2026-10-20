@@ -211,7 +211,7 @@ function renderHot() {
     if (seen.has(k)) return false;
     seen.add(k); return true;
   });
-  const noToday = "오늘 수집된 기사가 아직 없습니다(매일 08:00 자동 수집).";
+  const noToday = "오늘 수집된 기사가 아직 없습니다(매일 07:30 자동 수집).";
   // 증감 비교: 오늘 이전 가장 최근 수집일
   const prevDay = [...new Set(inReg.map(it => it.first_seen).filter(d => d && d < today))].sort().pop();
   const prevMap = prevDay ? kwCount(inReg.filter(it => it.first_seen === prevDay)) : null;
