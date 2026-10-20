@@ -1,16 +1,16 @@
 {
  "month": "2026-10",
- "generated_at": "2026-10-20T17:45:41.699884+09:00",
+ "generated_at": "2026-10-21T07:59:09.801913+09:00",
  "prev_month": null,
- "collected_days": 6,
+ "collected_days": 7,
  "first_day": "2026-10-15",
- "last_day": "2026-10-20",
- "total": 1699,
+ "last_day": "2026-10-21",
+ "total": 1807,
  "prev_total": null,
  "by_region": {
-  "국내": 1439,
-  "해외": 218,
-  "정부": 42
+  "국내": 1522,
+  "해외": 242,
+  "정부": 43
  },
  "weekly": {
   "2026-W42": {
@@ -19,71 +19,71 @@
    "정부": 19
   },
   "2026-W43": {
-   "국내": 626,
-   "해외": 65,
-   "정부": 23
+   "국내": 709,
+   "해외": 89,
+   "정부": 24
   }
  },
  "categories": [
   {
    "name": "국내 · 기타 (의료 AI·병원 AI 키워드)",
-   "count": 367,
+   "count": 388,
    "prev": 0,
-   "delta": 367
+   "delta": 388
   },
   {
    "name": "국내 · 국내 의료 AI 기업",
-   "count": 331,
+   "count": 345,
    "prev": 0,
-   "delta": 331
+   "delta": 345
   },
   {
    "name": "국내 · 국내 정책·규제",
-   "count": 289,
+   "count": 309,
    "prev": 0,
-   "delta": 289
+   "delta": 309
   },
   {
    "name": "국내 · 국내 의료기관",
-   "count": 142,
+   "count": 151,
    "prev": 0,
-   "delta": 142
-  },
-  {
-   "name": "국내 · AI 거버넌스·보안",
-   "count": 124,
-   "prev": 0,
-   "delta": 124
+   "delta": 151
   },
   {
    "name": "해외 · 해외 의료기관 AI 도입·운영",
-   "count": 117,
+   "count": 133,
    "prev": 0,
-   "delta": 117
+   "delta": 133
   },
   {
-   "name": "국내 · 해외 의료기관·정책·규제",
-   "count": 93,
+   "name": "국내 · AI 거버넌스·보안",
+   "count": 127,
    "prev": 0,
-   "delta": 93
+   "delta": 127
   },
   {
    "name": "국내 · 학술·연구·행사",
-   "count": 93,
+   "count": 103,
    "prev": 0,
-   "delta": 93
+   "delta": 103
+  },
+  {
+   "name": "국내 · 해외 의료기관·정책·규제",
+   "count": 99,
+   "prev": 0,
+   "delta": 99
   },
   {
    "name": "해외 · 해외 정책·규제 (미국)",
-   "count": 45,
+   "count": 52,
    "prev": 0,
-   "delta": 45
+   "delta": 52
   },
   {
    "name": "해외 · 해외 연구·학술",
-   "count": 30,
+   "count": 31,
    "prev": 0,
-   "delta": 30
+   "delta": 31
   },
   {
    "name": "정부 · 국가인공지능전략위원회",
@@ -99,9 +99,9 @@
   },
   {
    "name": "정부 · 정부 보도자료 (검색)",
-   "count": 9,
+   "count": 10,
    "prev": 0,
-   "delta": 9
+   "delta": 10
   },
   {
    "name": "정부 · 보건복지부",
@@ -125,43 +125,49 @@
  "keywords": [
   {
    "word": "서울대병원",
-   "count": 50,
+   "count": 54,
    "prev": 0,
    "status": ""
   },
   {
    "word": "식약처",
-   "count": 45,
+   "count": 47,
    "prev": 0,
    "status": ""
   },
   {
    "word": "세브란스",
-   "count": 41,
+   "count": 42,
    "prev": 0,
    "status": ""
   },
   {
    "word": "보건복지부",
-   "count": 38,
-   "prev": 0,
-   "status": ""
-  },
-  {
-   "word": "세미나",
-   "count": 25,
+   "count": 40,
    "prev": 0,
    "status": ""
   },
   {
    "word": "FDA",
-   "count": 25,
+   "count": 31,
+   "prev": 0,
+   "status": ""
+  },
+  {
+   "word": "세미나",
+   "count": 29,
    "prev": 0,
    "status": ""
   },
   {
    "word": "분당서울대",
-   "count": 24,
+   "count": 27,
+   "prev": 0,
+   "status": ""
+  },
+  {
+   "word": "루닛",
+   "count": 22,
    "prev": 0,
    "status": ""
   },
@@ -172,32 +178,32 @@
    "status": ""
   },
   {
-   "word": "루닛",
-   "count": 20,
-   "prev": 0,
-   "status": ""
-  },
-  {
    "word": "제이엘케이",
    "count": 20,
    "prev": 0,
    "status": ""
   },
   {
+   "word": "포럼",
+   "count": 20,
+   "prev": 0,
+   "status": ""
+  },
+  {
    "word": "아산병원",
-   "count": 18,
+   "count": 19,
    "prev": 0,
    "status": ""
   },
   {
    "word": "구글",
-   "count": 18,
+   "count": 19,
    "prev": 0,
    "status": ""
   },
   {
-   "word": "포럼",
-   "count": 17,
+   "word": "국회",
+   "count": 18,
    "prev": 0,
    "status": ""
   },
@@ -220,26 +226,20 @@
    "status": ""
   },
   {
-   "word": "국회",
+   "word": "신의료기술",
    "count": 13,
    "prev": 0,
    "status": ""
   },
   {
-   "word": "신의료기술",
-   "count": 12,
-   "prev": 0,
-   "status": ""
-  },
-  {
-   "word": "의료법",
-   "count": 12,
-   "prev": 0,
-   "status": ""
-  },
-  {
    "word": "WHO",
-   "count": 11,
+   "count": 12,
+   "prev": 0,
+   "status": ""
+  },
+  {
+   "word": "서울성모병원",
+   "count": 12,
    "prev": 0,
    "status": ""
   }
@@ -252,9 +252,9 @@
    "category": "국내 의료 AI 기업",
    "region": "국내",
    "score": 14,
-   "similar_count": 68,
+   "similar_count": 77,
    "source": "news1.kr",
-   "importance": 153
+   "importance": 171
   },
   {
    "title": "삼성전자 투자 미국 DNA분석장비사, 서울서 글로벌 로드쇼",
@@ -274,9 +274,9 @@
    "category": "국내 정책·규제",
    "region": "국내",
    "score": 9,
-   "similar_count": 38,
+   "similar_count": 46,
    "source": "news1.kr",
-   "importance": 88
+   "importance": 104
   },
   {
    "title": "올해 첫 야생조류 고병원성 AI 순천서 검출…위기경보 '심각' 격상",
@@ -285,9 +285,9 @@
    "category": "기타 (의료 AI·병원 AI 키워드)",
    "region": "국내",
    "score": 6,
-   "similar_count": 27,
+   "similar_count": 33,
    "source": "news1.kr",
-   "importance": 63
+   "importance": 75
   },
   {
    "title": "‘노인 건강’ 인기 유튜브 영상 42% AI 제작…의사 사칭도",
@@ -411,6 +411,39 @@
    "similar_count": 0,
    "source": "Business Wire, Yahoo Finance",
    "importance": 3
+  },
+  {
+   "title": "FDA clears AI tool for assessing breast cancer recurrence risk via MRI",
+   "link": "https://news.google.com/rss/articles/CBMiwAFBVV95cUxPa1BRa0xiR3FYRXRJMWliT3VUYzY1QkRhME9RcUFxcU9WczRjMkJLbG0xZnY1SVpMQ19uVDRDdEZIRzJnWFhLaE5jWjl2cG5vdUxLLXRZSGxDNXUxWG9nbm8ySjFSOXJFSU9wS25xVjRSZUV6c2J1aG8xa2tLTDJVdGc0OVdWSWUxNldrNHVfdm15UkthT05ENmRERFU0QU15U1pLOWMyaGNZcXFEdmpTaHRPRHdTUDRHbjRBVU8wRl8?oc=5",
+   "date": "2026-10-19",
+   "category": "해외 정책·규제 (미국)",
+   "region": "해외",
+   "score": 3,
+   "similar_count": 0,
+   "source": "Health Imaging, Imaging Technology News",
+   "importance": 3
+  },
+  {
+   "title": "OpenEvidence AI Moves Deeper Into Clinical Workflows",
+   "link": "https://news.google.com/rss/articles/CBMilwFBVV95cUxPWERkd2FTMHo3b3RYbUUtVFFEZlkwem5mQXRXekZHMjVkdlNGVDFGbTRkb2ZQblRsMV9qZWo3NDNaclhfMWpwWHhoV2I3OHRsMFBsR0gwOUZGLWpGNERjY205Qy1fN1RzeTdpbjkyQnJEZk80Y1NuNVl5NHYyaS1jaDZNWjBhRTJLYnJQOS1TSE4xdGFpdTI4?oc=5",
+   "date": "2026-10-21",
+   "category": "해외 의료기관 AI 도입·운영",
+   "region": "해외",
+   "score": 2,
+   "similar_count": 0,
+   "source": "GovInfoSecurity, BankInfoSecurity",
+   "importance": 2
+  },
+  {
+   "title": "The AI Is Listening: Implications of Machine Generated Clinical Notes on Health Care | Newswise",
+   "link": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxORnBWN1hIVDlmSEgxRHN4Z3JpcV9KdDhLaGdVZ3RZNmhPV3htU2dZT1VON2lZUUt5QlJHYmZpWmdVWURhc0pDai0ydDFmS24yRUptc2g2TUpKNWo3Vi1xX0dfWUhxdHctc0NaREVsdUdMczRTS3QyVEJaMUMzUk9xMkdRYmVsQ0VOVjBWTnpRSTNfMXdoaEpGNUhZcU1nVTVGT2VRdTgwa29tSnpjYnNGd1dmZFozSkx60gG4AUFVX3lxTE5GcFY3WEhUOWZISDFEc3hncmlxX0p0OEtoZ1VndFk2aE9XeG1TZ1lPVU43aVlRS3lCUkdiZmlaZ1VZRGFzSkNqLTJ0MWZLbjJFSm1zaDZNSko1ajdWLXFfR19ZSHF0dy1zQ1pERWx1R0xzNFNLdDJUQloxQzNST3EyR1FiZWxDRU5WMFZOelFJM18xd2hoSkY1SFlxTWdVNUZPZVF1ODBrb21KemNic0Z3V2ZkWjNKTHo?oc=5",
+   "date": "2026-10-20",
+   "category": "해외 의료기관 AI 도입·운영",
+   "region": "해외",
+   "score": 2,
+   "similar_count": 0,
+   "source": "Newswise, Michigan Medicine",
+   "importance": 2
   },
   {
    "title": "AMA Introduces Governance Framework for Agentic AI in Clinical Care",
@@ -615,6 +648,17 @@
    "importance": 0
   },
   {
+   "title": "식약처, 식의약 공공데이터·AI 활용 우수작 5건 선정",
+   "link": "https://news.google.com/rss/articles/CBMidkFVX3lxTE9palYyNDQwZFRRVEt4djNwZHdBdmxvTzlvU2ZFelZfcFZCcUVuVlZFTS1FNVFlZ3JyeVRWSGR3dzVmbnM5TlVJUC1mWG1oNk1KOWt3bVFIZnRvNWN4RE0xQ2hFZHpodW41NWtFR29SU0tUY3puTFE?oc=5",
+   "date": "2026-10-19",
+   "category": "정부 보도자료 (검색)",
+   "region": "정부",
+   "score": 0,
+   "similar_count": 0,
+   "source": "정부 보도자료 (검색)",
+   "importance": 0
+  },
+  {
    "title": "[보도참고] 식약처, 식의약 공공데이터·AI 활용 우수작 5건 선정",
    "link": "https://www.mfds.go.kr/brd/m_99/view.do?seq=50419",
    "date": "2026-10-19",
@@ -778,17 +822,6 @@
    "similar_count": 0,
    "source": "국가인공지능전략위원회",
    "importance": 0
-  },
-  {
-   "title": "정은경 장관·하정우 부위원장, 의료 AI 위해 바이오 데이터 직접 기증",
-   "link": "https://news.google.com/rss/articles/CBMiVkFVX3lxTE8tREJRMno1NmlUS0dzWnJwUTg1dW1TNlhjd0JhaVphZ1dIcDRoNk9sblk1aXRheGFiTXFMTXl4Wkc2dVlJbmExLXlmMUZoVGlHUTREQmFn?oc=5",
-   "date": "2026-10-15",
-   "category": "국가인공지능전략위원회",
-   "region": "정부",
-   "score": 0,
-   "similar_count": 0,
-   "source": "국가인공지능전략위원회",
-   "importance": 0
   }
  ],
  "important_domestic": [
@@ -799,9 +832,9 @@
    "category": "국내 의료 AI 기업",
    "region": "국내",
    "score": 14,
-   "similar_count": 68,
+   "similar_count": 77,
    "source": "news1.kr",
-   "importance": 153
+   "importance": 171
   },
   {
    "title": "삼성전자 투자 미국 DNA분석장비사, 서울서 글로벌 로드쇼",
@@ -821,9 +854,9 @@
    "category": "국내 정책·규제",
    "region": "국내",
    "score": 9,
-   "similar_count": 38,
+   "similar_count": 46,
    "source": "news1.kr",
-   "importance": 88
+   "importance": 104
   },
   {
    "title": "올해 첫 야생조류 고병원성 AI 순천서 검출…위기경보 '심각' 격상",
@@ -832,9 +865,9 @@
    "category": "기타 (의료 AI·병원 AI 키워드)",
    "region": "국내",
    "score": 6,
-   "similar_count": 27,
+   "similar_count": 33,
    "source": "news1.kr",
-   "importance": 63
+   "importance": 75
   },
   {
    "title": "‘노인 건강’ 인기 유튜브 영상 42% AI 제작…의사 사칭도",
@@ -1189,9 +1222,9 @@
     "category": "국내 의료 AI 기업",
     "region": "국내",
     "score": 14,
-    "similar_count": 68,
+    "similar_count": 77,
     "source": "news1.kr",
-    "importance": 153
+    "importance": 171
    },
    {
     "title": "삼성전자 투자 미국 DNA분석장비사, 서울서 글로벌 로드쇼",
@@ -1224,9 +1257,9 @@
     "category": "국내 정책·규제",
     "region": "국내",
     "score": 9,
-    "similar_count": 38,
+    "similar_count": 46,
     "source": "news1.kr",
-    "importance": 88
+    "importance": 104
    },
    {
     "title": "‘노인 건강’ 인기 유튜브 영상 42% AI 제작…의사 사칭도",
@@ -1259,9 +1292,9 @@
     "category": "기타 (의료 AI·병원 AI 키워드)",
     "region": "국내",
     "score": 6,
-    "similar_count": 27,
+    "similar_count": 33,
     "source": "news1.kr",
-    "importance": 63
+    "importance": 75
    },
    {
     "title": "한국타이어, ‘레드닷 디자인 어워드’ 디자인 콘셉트 부문서 최우수상...",
