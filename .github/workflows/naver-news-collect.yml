@@ -2,7 +2,7 @@ name: naver-news-collect
 
 on:
   schedule:
-    - cron: "0 23 * * *"   # UTC 23:00 = KST 08:00 매일
+    - cron: "30 22 * * *"   # UTC 22:30 = KST 07:30 매일
   workflow_dispatch:
 
 permissions:
