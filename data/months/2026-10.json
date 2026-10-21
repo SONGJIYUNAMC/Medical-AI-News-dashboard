@@ -1,14 +1,14 @@
 {
  "month": "2026-10",
- "generated_at": "2026-10-22T08:00:05.058500+09:00",
+ "generated_at": "2026-10-22T08:38:43.987659+09:00",
  "prev_month": null,
  "collected_days": 8,
  "first_day": "2026-10-15",
  "last_day": "2026-10-22",
- "total": 2268,
+ "total": 2265,
  "prev_total": null,
  "by_region": {
-  "국내": 1925,
+  "국내": 1922,
   "해외": 295,
   "정부": 48
  },
@@ -19,7 +19,7 @@
    "정부": 19
   },
   "2026-W43": {
-   "국내": 1112,
+   "국내": 1109,
    "해외": 142,
    "정부": 29
   }
@@ -27,15 +27,15 @@
  "categories": [
   {
    "name": "국내 · 기타 (의료 AI·병원 AI 키워드)",
-   "count": 479,
+   "count": 485,
    "prev": 0,
-   "delta": 479
+   "delta": 485
   },
   {
    "name": "국내 · 국내 의료 AI 기업",
-   "count": 429,
+   "count": 432,
    "prev": 0,
-   "delta": 429
+   "delta": 432
   },
   {
    "name": "국내 · 국내 정책·규제",
@@ -45,15 +45,9 @@
   },
   {
    "name": "국내 · 국내 의료기관",
-   "count": 191,
+   "count": 193,
    "prev": 0,
-   "delta": 191
-  },
-  {
-   "name": "국내 · 해외 의료기관·정책·규제",
-   "count": 166,
-   "prev": 0,
-   "delta": 166
+   "delta": 193
   },
   {
    "name": "국내 · AI 거버넌스·보안",
@@ -66,6 +60,12 @@
    "count": 157,
    "prev": 0,
    "delta": 157
+  },
+  {
+   "name": "국내 · 해외 의료기관·정책·규제",
+   "count": 152,
+   "prev": 0,
+   "delta": 152
   },
   {
    "name": "국내 · 학술·연구·행사",
@@ -125,7 +125,7 @@
  "keywords": [
   {
    "word": "서울대병원",
-   "count": 72,
+   "count": 73,
    "prev": 0,
    "status": ""
   },
@@ -136,20 +136,14 @@
    "status": ""
   },
   {
-   "word": "WHO",
-   "count": 53,
+   "word": "식약처",
+   "count": 51,
    "prev": 0,
    "status": ""
   },
   {
    "word": "보건복지부",
-   "count": 52,
-   "prev": 0,
-   "status": ""
-  },
-  {
-   "word": "식약처",
-   "count": 51,
+   "count": 49,
    "prev": 0,
    "status": ""
   },
@@ -166,8 +160,14 @@
    "status": ""
   },
   {
+   "word": "WHO",
+   "count": 35,
+   "prev": 0,
+   "status": ""
+  },
+  {
    "word": "분당서울대",
-   "count": 33,
+   "count": 34,
    "prev": 0,
    "status": ""
   },
@@ -185,7 +185,7 @@
   },
   {
    "word": "구글",
-   "count": 26,
+   "count": 27,
    "prev": 0,
    "status": ""
   },
@@ -246,6 +246,17 @@
  ],
  "issues_domestic": [
   {
+   "title": "한국·WHO, ‘AI 헬스케어 서울선언’ 발표…의료 AI 혜택 공유 약속",
+   "link": "https://biz.chosun.com/science-chosun/medicine-health/2026/10/21/6DKPUONKMVCQ3GKBNQJ2P7S7JQ/?utm_source=naver&utm_medium=original&utm_campaign=biz",
+   "date": "2026-10-21",
+   "category": "해외 의료기관·정책·규제",
+   "region": "국내",
+   "score": 16,
+   "similar_count": 103,
+   "source": "biz.chosun.com",
+   "importance": 225
+  },
+  {
    "title": "KT, 의료 AI 기업 아크릴과 맞손...병원 맞춤형 AX 사업 확대",
    "link": "https://www.news1.kr/it-science/cc-newmedia/6325330",
    "date": "2026-10-20",
@@ -288,17 +299,6 @@
    "similar_count": 38,
    "source": "news1.kr",
    "importance": 85
-  },
-  {
-   "title": "한국·WHO, ‘AI 헬스케어 서울선언’ 발표…의료 AI 혜택 공유 약속",
-   "link": "https://biz.chosun.com/science-chosun/medicine-health/2026/10/21/6DKPUONKMVCQ3GKBNQJ2P7S7JQ/?utm_source=naver&utm_medium=original&utm_campaign=biz",
-   "date": "2026-10-21",
-   "category": "해외 의료기관·정책·규제",
-   "region": "국내",
-   "score": 16,
-   "similar_count": 32,
-   "source": "biz.chosun.com",
-   "importance": 83
   },
   {
    "title": "李대통령, 오늘 테드로스 WHO 사무총장 면담…'AI 기본의료 전략' 소개",
@@ -837,6 +837,17 @@
  ],
  "important_domestic": [
   {
+   "title": "한국·WHO, ‘AI 헬스케어 서울선언’ 발표…의료 AI 혜택 공유 약속",
+   "link": "https://biz.chosun.com/science-chosun/medicine-health/2026/10/21/6DKPUONKMVCQ3GKBNQJ2P7S7JQ/?utm_source=naver&utm_medium=original&utm_campaign=biz",
+   "date": "2026-10-21",
+   "category": "해외 의료기관·정책·규제",
+   "region": "국내",
+   "score": 16,
+   "similar_count": 103,
+   "source": "biz.chosun.com",
+   "importance": 225
+  },
+  {
    "title": "KT, 의료 AI 기업 아크릴과 맞손...병원 맞춤형 AX 사업 확대",
    "link": "https://www.news1.kr/it-science/cc-newmedia/6325330",
    "date": "2026-10-20",
@@ -879,17 +890,6 @@
    "similar_count": 38,
    "source": "news1.kr",
    "importance": 85
-  },
-  {
-   "title": "한국·WHO, ‘AI 헬스케어 서울선언’ 발표…의료 AI 혜택 공유 약속",
-   "link": "https://biz.chosun.com/science-chosun/medicine-health/2026/10/21/6DKPUONKMVCQ3GKBNQJ2P7S7JQ/?utm_source=naver&utm_medium=original&utm_campaign=biz",
-   "date": "2026-10-21",
-   "category": "해외 의료기관·정책·규제",
-   "region": "국내",
-   "score": 16,
-   "similar_count": 32,
-   "source": "biz.chosun.com",
-   "importance": 83
   },
   {
    "title": "李대통령, 오늘 테드로스 WHO 사무총장 면담…'AI 기본의료 전략' 소개",
@@ -944,6 +944,17 @@
    "score": 13,
    "similar_count": 22,
    "source": "newslock.co.kr",
+   "importance": 57
+  },
+  {
+   "title": "\"AI 의료 혁신, 누구도 소외되지 않아야\"…韓·WHO 서울 선언",
+   "link": "https://www.news1.kr/bio/welfare-medical/6327154",
+   "date": "2026-10-21",
+   "category": "해외 의료기관·정책·규제",
+   "region": "국내",
+   "score": 14,
+   "similar_count": 20,
+   "source": "news1.kr",
    "importance": 57
   },
   {
@@ -1035,26 +1046,15 @@
    "importance": 41
   },
   {
-   "title": "AI로 의료 임상 환경 강화...오라클, 아스트라제네카와 AI 헬스케어 혁신...",
-   "link": "https://www.mk.co.kr/article/12181495",
+   "title": "대구보건대-SCL헬스케어 임상시험 전문인력 육성 MOU",
+   "link": "https://www.kmib.co.kr/article/20261021500707",
    "date": "2026-10-21",
-   "category": "해외 의료기관·정책·규제",
+   "category": "AI 거버넌스·보안",
    "region": "국내",
-   "score": 13,
-   "similar_count": 12,
-   "source": "mk.co.kr",
-   "importance": 40
-  },
-  {
-   "title": "[동정] 백남종 서울대병원장, 한국인 최초 세계신경재활학회 회장 취임",
-   "link": "http://www.doctorstimes.com/news/articleView.html?idxno=240607",
-   "date": "2026-10-21",
-   "category": "국내 의료기관",
-   "region": "국내",
-   "score": 9,
-   "similar_count": 14,
-   "source": "doctorstimes.com",
-   "importance": 40
+   "score": 8,
+   "similar_count": 15,
+   "source": "kmib.co.kr",
+   "importance": 41
   }
  ],
  "important_global": [
@@ -1225,6 +1225,41 @@
   }
  ],
  "top_by_category": {
+  "국내 · 해외 의료기관·정책·규제": [
+   {
+    "title": "한국·WHO, ‘AI 헬스케어 서울선언’ 발표…의료 AI 혜택 공유 약속",
+    "link": "https://biz.chosun.com/science-chosun/medicine-health/2026/10/21/6DKPUONKMVCQ3GKBNQJ2P7S7JQ/?utm_source=naver&utm_medium=original&utm_campaign=biz",
+    "date": "2026-10-21",
+    "category": "해외 의료기관·정책·규제",
+    "region": "국내",
+    "score": 16,
+    "similar_count": 103,
+    "source": "biz.chosun.com",
+    "importance": 225
+   },
+   {
+    "title": "李대통령, 오늘 테드로스 WHO 사무총장 면담…'AI 기본의료 전략' 소개",
+    "link": "https://www.news1.kr/politics/president/6326746",
+    "date": "2026-10-21",
+    "category": "해외 의료기관·정책·규제",
+    "region": "국내",
+    "score": 10,
+    "similar_count": 29,
+    "source": "news1.kr",
+    "importance": 71
+   },
+   {
+    "title": "\"AI 의료 혁신, 누구도 소외되지 않아야\"…韓·WHO 서울 선언",
+    "link": "https://www.news1.kr/bio/welfare-medical/6327154",
+    "date": "2026-10-21",
+    "category": "해외 의료기관·정책·규제",
+    "region": "국내",
+    "score": 14,
+    "similar_count": 20,
+    "source": "news1.kr",
+    "importance": 57
+   }
+  ],
   "국내 · 국내 의료 AI 기업": [
    {
     "title": "KT, 의료 AI 기업 아크릴과 맞손...병원 맞춤형 AX 사업 확대",
@@ -1330,41 +1365,6 @@
     "importance": 31
    }
   ],
-  "국내 · 해외 의료기관·정책·규제": [
-   {
-    "title": "한국·WHO, ‘AI 헬스케어 서울선언’ 발표…의료 AI 혜택 공유 약속",
-    "link": "https://biz.chosun.com/science-chosun/medicine-health/2026/10/21/6DKPUONKMVCQ3GKBNQJ2P7S7JQ/?utm_source=naver&utm_medium=original&utm_campaign=biz",
-    "date": "2026-10-21",
-    "category": "해외 의료기관·정책·규제",
-    "region": "국내",
-    "score": 16,
-    "similar_count": 32,
-    "source": "biz.chosun.com",
-    "importance": 83
-   },
-   {
-    "title": "李대통령, 오늘 테드로스 WHO 사무총장 면담…'AI 기본의료 전략' 소개",
-    "link": "https://www.news1.kr/politics/president/6326746",
-    "date": "2026-10-21",
-    "category": "해외 의료기관·정책·규제",
-    "region": "국내",
-    "score": 10,
-    "similar_count": 29,
-    "source": "news1.kr",
-    "importance": 71
-   },
-   {
-    "title": "AI로 의료 임상 환경 강화...오라클, 아스트라제네카와 AI 헬스케어 혁신...",
-    "link": "https://www.mk.co.kr/article/12181495",
-    "date": "2026-10-21",
-    "category": "해외 의료기관·정책·규제",
-    "region": "국내",
-    "score": 13,
-    "similar_count": 12,
-    "source": "mk.co.kr",
-    "importance": 40
-   }
-  ],
   "국내 · 국내 의료기관": [
    {
     "title": "동아에스티·부산대병원, 스마트병동 구축…AI 해상의료 시스템 공동개...",
@@ -1389,14 +1389,14 @@
     "importance": 48
    },
    {
-    "title": "[동정] 백남종 서울대병원장, 한국인 최초 세계신경재활학회 회장 취임",
-    "link": "http://www.doctorstimes.com/news/articleView.html?idxno=240607",
+    "title": "백남종 서울대병원장, 세계신경재활학회장 취임",
+    "link": "https://www.mt.co.kr/thebio/2026/10/21/2026102113130780100",
     "date": "2026-10-21",
     "category": "국내 의료기관",
     "region": "국내",
     "score": 9,
     "similar_count": 14,
-    "source": "doctorstimes.com",
+    "source": "mt.co.kr",
     "importance": 40
    }
   ],
@@ -1459,15 +1459,15 @@
     "importance": 41
    },
    {
-    "title": "한림대춘천성심병원, 중증·필수의료 집중·지역 협력 확대",
-    "link": "https://www.edaily.co.kr/News/Read?newsId=03827766645612920&mediaCodeNo=257&utm_source=naver&utm_medium=referral&utm_campaign=news_syndication&utm_content=original_article",
-    "date": "2026-10-14",
+    "title": "대구보건대-SCL헬스케어 임상시험 전문인력 육성 MOU",
+    "link": "https://www.kmib.co.kr/article/20261021500707",
+    "date": "2026-10-21",
     "category": "AI 거버넌스·보안",
     "region": "국내",
-    "score": 6,
-    "similar_count": 14,
-    "source": "edaily.co.kr",
-    "importance": 37
+    "score": 8,
+    "similar_count": 15,
+    "source": "kmib.co.kr",
+    "importance": 41
    }
   ],
   "해외 · 해외 정책·규제 (미국)": [
