@@ -1,16 +1,16 @@
 {
  "month": "2026-10",
- "generated_at": "2026-10-21T07:59:09.801913+09:00",
+ "generated_at": "2026-10-21T13:07:20.429436+09:00",
  "prev_month": null,
  "collected_days": 7,
  "first_day": "2026-10-15",
  "last_day": "2026-10-21",
- "total": 1807,
+ "total": 1991,
  "prev_total": null,
  "by_region": {
-  "국내": 1522,
-  "해외": 242,
-  "정부": 43
+  "국내": 1696,
+  "해외": 251,
+  "정부": 44
  },
  "weekly": {
   "2026-W42": {
@@ -19,65 +19,65 @@
    "정부": 19
   },
   "2026-W43": {
-   "국내": 709,
-   "해외": 89,
-   "정부": 24
+   "국내": 883,
+   "해외": 98,
+   "정부": 25
   }
  },
  "categories": [
   {
    "name": "국내 · 기타 (의료 AI·병원 AI 키워드)",
-   "count": 388,
+   "count": 415,
    "prev": 0,
-   "delta": 388
+   "delta": 415
   },
   {
    "name": "국내 · 국내 의료 AI 기업",
-   "count": 345,
+   "count": 385,
    "prev": 0,
-   "delta": 345
+   "delta": 385
   },
   {
    "name": "국내 · 국내 정책·규제",
-   "count": 309,
+   "count": 329,
    "prev": 0,
-   "delta": 309
+   "delta": 329
   },
   {
    "name": "국내 · 국내 의료기관",
-   "count": 151,
+   "count": 172,
    "prev": 0,
-   "delta": 151
-  },
-  {
-   "name": "해외 · 해외 의료기관 AI 도입·운영",
-   "count": 133,
-   "prev": 0,
-   "delta": 133
+   "delta": 172
   },
   {
    "name": "국내 · AI 거버넌스·보안",
-   "count": 127,
+   "count": 143,
    "prev": 0,
-   "delta": 127
+   "delta": 143
   },
   {
-   "name": "국내 · 학술·연구·행사",
-   "count": 103,
+   "name": "해외 · 해외 의료기관 AI 도입·운영",
+   "count": 137,
    "prev": 0,
-   "delta": 103
+   "delta": 137
   },
   {
    "name": "국내 · 해외 의료기관·정책·규제",
-   "count": 99,
+   "count": 131,
    "prev": 0,
-   "delta": 99
+   "delta": 131
+  },
+  {
+   "name": "국내 · 학술·연구·행사",
+   "count": 121,
+   "prev": 0,
+   "delta": 121
   },
   {
    "name": "해외 · 해외 정책·규제 (미국)",
-   "count": 52,
+   "count": 56,
    "prev": 0,
-   "delta": 52
+   "delta": 56
   },
   {
    "name": "해외 · 해외 연구·학술",
@@ -86,16 +86,16 @@
    "delta": 31
   },
   {
-   "name": "정부 · 국가인공지능전략위원회",
+   "name": "해외 · 해외 정책·규제 (유럽·영국)",
    "count": 27,
    "prev": 0,
    "delta": 27
   },
   {
-   "name": "해외 · 해외 정책·규제 (유럽·영국)",
-   "count": 26,
+   "name": "정부 · 국가인공지능전략위원회",
+   "count": 27,
    "prev": 0,
-   "delta": 26
+   "delta": 27
   },
   {
    "name": "정부 · 정부 보도자료 (검색)",
@@ -105,9 +105,9 @@
   },
   {
    "name": "정부 · 보건복지부",
-   "count": 4,
+   "count": 5,
    "prev": 0,
-   "delta": 4
+   "delta": 5
   },
   {
    "name": "정부 · 과학기술정보통신부",
@@ -125,55 +125,79 @@
  "keywords": [
   {
    "word": "서울대병원",
-   "count": 54,
+   "count": 64,
    "prev": 0,
    "status": ""
   },
   {
    "word": "식약처",
-   "count": 47,
-   "prev": 0,
-   "status": ""
-  },
-  {
-   "word": "세브란스",
-   "count": 42,
-   "prev": 0,
-   "status": ""
-  },
-  {
-   "word": "보건복지부",
-   "count": 40,
-   "prev": 0,
-   "status": ""
-  },
-  {
-   "word": "FDA",
-   "count": 31,
+   "count": 50,
    "prev": 0,
    "status": ""
   },
   {
    "word": "세미나",
-   "count": 29,
+   "count": 45,
+   "prev": 0,
+   "status": ""
+  },
+  {
+   "word": "보건복지부",
+   "count": 45,
+   "prev": 0,
+   "status": ""
+  },
+  {
+   "word": "세브란스",
+   "count": 43,
+   "prev": 0,
+   "status": ""
+  },
+  {
+   "word": "FDA",
+   "count": 33,
    "prev": 0,
    "status": ""
   },
   {
    "word": "분당서울대",
-   "count": 27,
+   "count": 30,
+   "prev": 0,
+   "status": ""
+  },
+  {
+   "word": "WHO",
+   "count": 29,
    "prev": 0,
    "status": ""
   },
   {
    "word": "루닛",
-   "count": 22,
+   "count": 25,
+   "prev": 0,
+   "status": ""
+  },
+  {
+   "word": "구글",
+   "count": 25,
+   "prev": 0,
+   "status": ""
+  },
+  {
+   "word": "아산병원",
+   "count": 24,
    "prev": 0,
    "status": ""
   },
   {
    "word": "학술대회",
-   "count": 21,
+   "count": 23,
+   "prev": 0,
+   "status": ""
+  },
+  {
+   "word": "국회",
+   "count": 20,
    "prev": 0,
    "status": ""
   },
@@ -190,56 +214,32 @@
    "status": ""
   },
   {
-   "word": "아산병원",
-   "count": 19,
-   "prev": 0,
-   "status": ""
-  },
-  {
-   "word": "구글",
-   "count": 19,
-   "prev": 0,
-   "status": ""
-  },
-  {
-   "word": "국회",
+   "word": "심평원",
    "count": 18,
    "prev": 0,
    "status": ""
   },
   {
-   "word": "심평원",
-   "count": 16,
-   "prev": 0,
-   "status": ""
-  },
-  {
    "word": "상급종합병원",
-   "count": 14,
+   "count": 17,
    "prev": 0,
    "status": ""
   },
   {
    "word": "뷰노",
+   "count": 15,
+   "prev": 0,
+   "status": ""
+  },
+  {
+   "word": "한국보건산업진흥원",
    "count": 14,
    "prev": 0,
    "status": ""
   },
   {
-   "word": "신의료기술",
-   "count": 13,
-   "prev": 0,
-   "status": ""
-  },
-  {
-   "word": "WHO",
-   "count": 12,
-   "prev": 0,
-   "status": ""
-  },
-  {
-   "word": "서울성모병원",
-   "count": 12,
+   "word": "의료법",
+   "count": 14,
    "prev": 0,
    "status": ""
   }
@@ -274,9 +274,9 @@
    "category": "국내 정책·규제",
    "region": "국내",
    "score": 9,
-   "similar_count": 46,
+   "similar_count": 51,
    "source": "news1.kr",
-   "importance": 104
+   "importance": 114
   },
   {
    "title": "올해 첫 야생조류 고병원성 AI 순천서 검출…위기경보 '심각' 격상",
@@ -285,9 +285,20 @@
    "category": "기타 (의료 AI·병원 AI 키워드)",
    "region": "국내",
    "score": 6,
-   "similar_count": 33,
+   "similar_count": 38,
    "source": "news1.kr",
-   "importance": 75
+   "importance": 85
+  },
+  {
+   "title": "KT, 아크릴과 의료 AI 협력…병원별 맞춤 서비스 발굴",
+   "link": "https://www.mk.co.kr/article/12180637",
+   "date": "2026-10-20",
+   "category": "국내 의료 AI 기업",
+   "region": "국내",
+   "score": 11,
+   "similar_count": 28,
+   "source": "mk.co.kr",
+   "importance": 70
   },
   {
    "title": "‘노인 건강’ 인기 유튜브 영상 42% AI 제작…의사 사칭도",
@@ -323,6 +334,17 @@
    "importance": 57
   },
   {
+   "title": "한국·WHO, ‘AI 헬스케어 서울선언’ 발표…의료 AI 혜택 공유 약속",
+   "link": "https://biz.chosun.com/science-chosun/medicine-health/2026/10/21/6DKPUONKMVCQ3GKBNQJ2P7S7JQ/?utm_source=naver&utm_medium=original&utm_campaign=biz",
+   "date": "2026-10-21",
+   "category": "해외 의료기관·정책·규제",
+   "region": "국내",
+   "score": 16,
+   "similar_count": 20,
+   "source": "biz.chosun.com",
+   "importance": 59
+  },
+  {
    "title": "“100만명 바이오 빅데이터 구축”… 하정우·정은경 생체자료 기증",
    "link": "https://www.kmib.co.kr/article/view.asp?arcid=9000022920&cp=nv",
    "date": "2026-10-15",
@@ -332,28 +354,6 @@
    "similar_count": 19,
    "source": "kmib.co.kr",
    "importance": 51
-  },
-  {
-   "title": "이민근 안산시장 “민선8기 씨앗, 민선9기 결실로… 중단 없는 안산 발...",
-   "link": "https://www.mk.co.kr/article/12175534",
-   "date": "2026-10-14",
-   "category": "국내 정책·규제",
-   "region": "국내",
-   "score": 5,
-   "similar_count": 18,
-   "source": "mk.co.kr",
-   "importance": 44
-  },
-  {
-   "title": "씨어스, UAE서 'AI 부정맥 국가검진' 수행 초읽기…\"최종 테스트 돌입\"",
-   "link": "https://www.mt.co.kr/thebio/2026/10/16/2026101609543629511",
-   "date": "2026-10-16",
-   "category": "국내 의료기관",
-   "region": "국내",
-   "score": 11,
-   "similar_count": 17,
-   "source": "mt.co.kr",
-   "importance": 48
   }
  ],
  "issues_global": [
@@ -493,6 +493,17 @@
   }
  ],
  "government_other": [
+  {
+   "title": "AI 혁신 혜택의 공평한 접근 약속... 보건복지부·세계보건기구, ？AI 헬스케어 서울선언문？ 공동 발표",
+   "link": "https://www.mohw.go.kr/board.es?mid=a10503000000&bid=0027&list_no=1492288&act=view",
+   "date": "2026-10-21",
+   "category": "보건복지부",
+   "region": "정부",
+   "score": 0,
+   "similar_count": 0,
+   "source": "보건복지부",
+   "importance": 0
+  },
   {
    "title": "국가AI전략위, 강원 AI 정책현장 점검…의료·교통·데이터센터 살펴",
    "link": "https://news.google.com/rss/articles/CBMiaEFVX3lxTFBmdG1YZDhqcndiTi1GdEdPN25waEY5Y1dUSjhkM2ZUTlphTG9TS19UckFDM1ZQcllUMUpiMUl6dWJGQ0xZYzVkUDl3ekNvZjdJV3l2d1RielA2WVM4TWs1djJkY1hlb1o4?oc=5",
@@ -811,17 +822,6 @@
    "similar_count": 0,
    "source": "국가인공지능전략위원회",
    "importance": 0
-  },
-  {
-   "title": "국가AI전략위·복지부, 바이오 데이터 기증 참여 독려…의료 AI 기반 확대",
-   "link": "https://news.google.com/rss/articles/CBMickFVX3lxTFBXZktTZ2haOTFEZXdzLVNFWURVdHBiVU4tR0NDaHJWMU05a1RvUDlIUGVMaTJla0FBM2VJVVN3QU9Xd29yOVhTZ1prZmU4NGFSdFJBdlQ2bjZTTzV5bnVuclpTLXNJQldQYmd1c1NpMTRVQdIBdEFVX3lxTE5tSDEwYnNuWk40Y09IY1F4Yzg4eEN4VUdncVBISjVlYkZnNXgxU3FXOFhtdXZvc2dKTkxzbXAxZktBbFl6MVRHWW85cVdmY2V2RDRIa2RjNERzSEZQVm1FWktkeU1ZZVMtOEhYNXQtbGlWUUlW?oc=5",
-   "date": "2026-10-15",
-   "category": "국가인공지능전략위원회",
-   "region": "정부",
-   "score": 0,
-   "similar_count": 0,
-   "source": "국가인공지능전략위원회",
-   "importance": 0
   }
  ],
  "important_domestic": [
@@ -854,9 +854,9 @@
    "category": "국내 정책·규제",
    "region": "국내",
    "score": 9,
-   "similar_count": 46,
+   "similar_count": 51,
    "source": "news1.kr",
-   "importance": 104
+   "importance": 114
   },
   {
    "title": "올해 첫 야생조류 고병원성 AI 순천서 검출…위기경보 '심각' 격상",
@@ -865,9 +865,20 @@
    "category": "기타 (의료 AI·병원 AI 키워드)",
    "region": "국내",
    "score": 6,
-   "similar_count": 33,
+   "similar_count": 38,
    "source": "news1.kr",
-   "importance": 75
+   "importance": 85
+  },
+  {
+   "title": "KT, 아크릴과 의료 AI 협력…병원별 맞춤 서비스 발굴",
+   "link": "https://www.mk.co.kr/article/12180637",
+   "date": "2026-10-20",
+   "category": "국내 의료 AI 기업",
+   "region": "국내",
+   "score": 11,
+   "similar_count": 28,
+   "source": "mk.co.kr",
+   "importance": 70
   },
   {
    "title": "‘노인 건강’ 인기 유튜브 영상 42% AI 제작…의사 사칭도",
@@ -879,6 +890,17 @@
    "similar_count": 24,
    "source": "segye.com",
    "importance": 60
+  },
+  {
+   "title": "한국·WHO, ‘AI 헬스케어 서울선언’ 발표…의료 AI 혜택 공유 약속",
+   "link": "https://biz.chosun.com/science-chosun/medicine-health/2026/10/21/6DKPUONKMVCQ3GKBNQJ2P7S7JQ/?utm_source=naver&utm_medium=original&utm_campaign=biz",
+   "date": "2026-10-21",
+   "category": "해외 의료기관·정책·규제",
+   "region": "국내",
+   "score": 16,
+   "similar_count": 20,
+   "source": "biz.chosun.com",
+   "importance": 59
   },
   {
    "title": "세계은행 총재 만난 李 \"AI 부작용도 살펴야…양극화 해소 국제공조\"(종...",
@@ -947,6 +969,17 @@
    "importance": 41
   },
   {
+   "title": "李대통령, 오늘 테드로스 WHO 사무총장 면담…'AI 기본의료 전략' 소개",
+   "link": "https://www.news1.kr/politics/president/6326746",
+   "date": "2026-10-21",
+   "category": "해외 의료기관·정책·규제",
+   "region": "국내",
+   "score": 10,
+   "similar_count": 13,
+   "source": "news1.kr",
+   "importance": 39
+  },
+  {
    "title": "누구나 생체자료 기증 가능…국가 바이오빅데이터 내달 첫 개방",
    "link": "https://www.yna.co.kr/view/AKR20261014156400530?input=1195m",
    "date": "2026-10-15",
@@ -1002,48 +1035,15 @@
    "importance": 36
   },
   {
-   "title": "이환성 세라젬 회장, 이경수 대표 양자 입양…경영권 승계 착수",
-   "link": "https://biz.chosun.com/industry/business-venture/2026/10/20/SECBE2BYIRAYBP6VBTKEQPYB64/?utm_source=naver&utm_medium=original&utm_campaign=biz",
-   "date": "2026-10-20",
-   "category": "국내 의료 AI 기업",
+   "title": "SCL헬스케어, 대구보건대와 맞손… 'AI 바이오헬스' 실무 인재 키운다",
+   "link": "https://www.mt.co.kr/thebio/2026/10/21/2026102111125365338",
+   "date": "2026-10-21",
+   "category": "국내 정책·규제",
    "region": "국내",
-   "score": 5,
-   "similar_count": 14,
-   "source": "biz.chosun.com",
-   "importance": 36
-  },
-  {
-   "title": "李 대통령 \"AI 격차 해소 위해 국제공조 강화\" [청와대오늘]",
-   "link": "https://www.sisaon.co.kr/news/articleView.html?idxno=205271",
-   "date": "2026-10-19",
-   "category": "국내 의료 AI 기업",
-   "region": "국내",
-   "score": 7,
-   "similar_count": 14,
-   "source": "sisaon.co.kr",
-   "importance": 35
-  },
-  {
-   "title": "분당서울대병원, 상급종합병원 최초 인공지능의료기기 관련 국내외 품질...",
-   "link": "https://biz.heraldcorp.com/article/10902743?ref=naver",
-   "date": "2026-10-14",
-   "category": "국내 의료기관",
-   "region": "국내",
-   "score": 21,
-   "similar_count": 5,
-   "source": "biz.heraldcorp.com",
-   "importance": 34
-  },
-  {
-   "title": "휴로틱스, 250억원 시리즈A 투자유치",
-   "link": "https://view.asiae.co.kr/article/2026101508245845605",
-   "date": "2026-10-15",
-   "category": "국내 의료기관",
-   "region": "국내",
-   "score": 8,
+   "score": 11,
    "similar_count": 11,
-   "source": "view.asiae.co.kr",
-   "importance": 33
+   "source": "mt.co.kr",
+   "importance": 36
   }
  ],
  "important_global": [
@@ -1238,15 +1238,15 @@
     "importance": 117
    },
    {
-    "title": "세계은행 총재 만난 李 \"AI 부작용도 살펴야…양극화 해소 국제공조\"(종...",
-    "link": "https://view.asiae.co.kr/article/2026101914492374042",
-    "date": "2026-10-19",
+    "title": "KT, 아크릴과 의료 AI 협력…병원별 맞춤 서비스 발굴",
+    "link": "https://www.mk.co.kr/article/12180637",
+    "date": "2026-10-20",
     "category": "국내 의료 AI 기업",
     "region": "국내",
-    "score": 7,
-    "similar_count": 24,
-    "source": "view.asiae.co.kr",
-    "importance": 58
+    "score": 11,
+    "similar_count": 28,
+    "source": "mk.co.kr",
+    "importance": 70
    }
   ],
   "국내 · 국내 정책·규제": [
@@ -1257,9 +1257,9 @@
     "category": "국내 정책·규제",
     "region": "국내",
     "score": 9,
-    "similar_count": 46,
+    "similar_count": 51,
     "source": "news1.kr",
-    "importance": 104
+    "importance": 114
    },
    {
     "title": "‘노인 건강’ 인기 유튜브 영상 42% AI 제작…의사 사칭도",
@@ -1292,9 +1292,9 @@
     "category": "기타 (의료 AI·병원 AI 키워드)",
     "region": "국내",
     "score": 6,
-    "similar_count": 33,
+    "similar_count": 38,
     "source": "news1.kr",
-    "importance": 75
+    "importance": 85
    },
    {
     "title": "한국타이어, ‘레드닷 디자인 어워드’ 디자인 콘셉트 부문서 최우수상...",
@@ -1317,6 +1317,41 @@
     "similar_count": 12,
     "source": "news1.kr",
     "importance": 31
+   }
+  ],
+  "국내 · 해외 의료기관·정책·규제": [
+   {
+    "title": "한국·WHO, ‘AI 헬스케어 서울선언’ 발표…의료 AI 혜택 공유 약속",
+    "link": "https://biz.chosun.com/science-chosun/medicine-health/2026/10/21/6DKPUONKMVCQ3GKBNQJ2P7S7JQ/?utm_source=naver&utm_medium=original&utm_campaign=biz",
+    "date": "2026-10-21",
+    "category": "해외 의료기관·정책·규제",
+    "region": "국내",
+    "score": 16,
+    "similar_count": 20,
+    "source": "biz.chosun.com",
+    "importance": 59
+   },
+   {
+    "title": "李대통령, 오늘 테드로스 WHO 사무총장 면담…'AI 기본의료 전략' 소개",
+    "link": "https://www.news1.kr/politics/president/6326746",
+    "date": "2026-10-21",
+    "category": "해외 의료기관·정책·규제",
+    "region": "국내",
+    "score": 10,
+    "similar_count": 13,
+    "source": "news1.kr",
+    "importance": 39
+   },
+   {
+    "title": "美FDA, 메디컬에이아이 심부전 진단보조 AI 허가",
+    "link": "https://www.dailymedi.com/news/news_view.php?wr_id=941491",
+    "date": "2026-10-15",
+    "category": "해외 의료기관·정책·규제",
+    "region": "국내",
+    "score": 14,
+    "similar_count": 6,
+    "source": "dailymedi.com",
+    "importance": 29
    }
   ],
   "국내 · 국내 의료기관": [
@@ -1378,50 +1413,15 @@
     "importance": 29
    },
    {
-    "title": "천안시, 2026 장애인체전 무장애 환경과 AI 중계로 혁신",
-    "link": "https://www.viva100.com/article/20261014501346",
-    "date": "2026-10-14",
+    "title": "보건산업진흥원, 'AI 윤리 준수기관' 확인마크 획득",
+    "link": "https://www.bosa.co.kr/news/articleView.html?idxno=3014440",
+    "date": "2026-10-21",
     "category": "AI 거버넌스·보안",
     "region": "국내",
-    "score": 7,
-    "similar_count": 6,
-    "source": "viva100.com",
-    "importance": 19
-   }
-  ],
-  "국내 · 해외 의료기관·정책·규제": [
-   {
-    "title": "美FDA, 메디컬에이아이 심부전 진단보조 AI 허가",
-    "link": "https://www.dailymedi.com/news/news_view.php?wr_id=941491",
-    "date": "2026-10-15",
-    "category": "해외 의료기관·정책·규제",
-    "region": "국내",
-    "score": 14,
-    "similar_count": 6,
-    "source": "dailymedi.com",
-    "importance": 29
-   },
-   {
-    "title": "복지부, WHO와 21~22일 '세계 바이오 서밋' 개최...AI 의료혁신 논의",
-    "link": "https://www.fnnews.com/news/202610141537037627",
-    "date": "2026-10-14",
-    "category": "해외 의료기관·정책·규제",
-    "region": "국내",
-    "score": 12,
-    "similar_count": 7,
-    "source": "fnnews.com",
-    "importance": 29
-   },
-   {
-    "title": "\"심부전 진단보조\"…메디컬에이아이, 美 FDA 허가",
-    "link": "https://www.newsis.com/view/NISX20261015_0003826575",
-    "date": "2026-10-15",
-    "category": "해외 의료기관·정책·규제",
-    "region": "국내",
-    "score": 13,
-    "similar_count": 5,
-    "source": "newsis.com",
-    "importance": 26
+    "score": 9,
+    "similar_count": 8,
+    "source": "bosa.co.kr",
+    "importance": 28
    }
   ],
   "국내 · 학술·연구·행사": [
