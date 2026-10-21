@@ -120,6 +120,8 @@ def compile_cfg(cfg: dict) -> dict:
         "sources": {k: [d.lower() for d in v] for k, v in cfg.get("preferred_sources", {}).items()},
         "sim": float(cfg.get("dedupe_similarity", 0.4)),
         "assist": tuple(cfg.get("dedupe_assist", [0.25, 0.3])),
+        "anchor_min": float(cfg.get("dedupe_anchor_min", 0.09)),
+        "anchor_generic": set(cfg.get("dedupe_anchor_generic", ["LLM", "EMR", "CDSS", "FDA", "NHS", "CMS", "CT", "MRI"])),
     }
 
 
@@ -170,11 +172,35 @@ def _title_grams(title: str) -> set:
     return {t[i:i + 2] for i in range(len(t) - 1)} if len(t) >= 2 else {t}
 
 
-def dedupe_similar(results: list, cc: dict) -> list:
-    """제목이 비슷한 기사를 묶어 대표 1건만 남긴다 (바이그램 자카드 유사도)."""
+_ACR = re.compile(r"(?<![A-Za-z])[A-Z]{3,}(?![A-Za-z])")
+_EVT = re.compile(r"([가-힣]{2,6})\s?(선언|협약|결의안?|헌장)")   # '서울선언', '서울 선언' 같은 행사·문서 이름
+
+
+def anchors_of(title: str, generic: set) -> set:
+    a = {x for x in _ACR.findall(title) if x not in generic}
+    a |= {m.group(1) + m.group(2) for m in _EVT.finditer(title)}
+    return a
+
+
+def _source_rank(url: str, cc: dict) -> int:
+    """대표 기사 선정용 순위: 설정 목록(preferred_sources)의 앞쪽 매체일수록 작은 값."""
+    h = host_of(url)
+    base = 0
+    for kind in ("major", "medical"):
+        doms = cc["sources"].get(kind, [])
+        for k, d in enumerate(doms):
+            if h == d or h.endswith("." + d):
+                return base + k
+        base += 100
+    return 999
+
+
+def group_similar(results: list, cc: dict) -> list:
+    """제목이 비슷한 기사끼리 묶어 인덱스 그룹 목록을 돌려준다."""
     n = len(results)
     grams = [_title_grams(a["title"]) for a in results]
     sgrams = [_title_grams(a["summary"][:100]) for a in results]
+    anchors = [anchors_of(a_["title"], cc["anchor_generic"]) for a_ in results]
     t_min, s_min = cc["assist"]  # 제목이 조금 달라도 요약이 거의 같으면 같은 기사로 본다
     parent = list(range(n))
 
@@ -194,6 +220,8 @@ def dedupe_similar(results: list, cc: dict) -> list:
             sim = inter / (len(gi) + len(gj) - inter)
             if sim >= cc["sim"]:
                 parent[find(i)] = find(j)
+            elif anchors[i] & anchors[j] and sim >= cc["anchor_min"] * (0.3 if any(len(x) >= 4 and x[-2:] in ("선언", "협약", "헌장") or x.endswith("결의") or x.endswith("결의안") for x in anchors[i] & anchors[j]) else 1):
+                parent[find(i)] = find(j)   # 같은 기관(WHO 등) 약어를 제목에 공유하고 제목도 조금 겹치면 같은 사안
             elif sim >= t_min:
                 si, sj = sgrams[i], sgrams[j]
                 if si and sj and len(si & sj) / len(si | sj) >= s_min:
@@ -201,14 +229,19 @@ def dedupe_similar(results: list, cc: dict) -> list:
 
     groups = {}
     for i in range(n):
-        groups.setdefault(find(i), []).append(results[i])
+        groups.setdefault(find(i), []).append(i)
+    return list(groups.values())
 
+
+def dedupe_similar(results: list, cc: dict) -> list:
+    """제목이 비슷한 기사를 묶어 대표 1건만 남긴다 (바이그램 자카드 유사도)."""
     kept = []
-    for members in groups.values():
+    for idxs in group_similar(results, cc):
+        members = [results[i] for i in idxs]
         for m in members:
             m["source_type"] = source_type(m["originallink"], cc)
-        # 대표 선정: 주요 일간지·의료 전문지 우선 → 관련도 높은 순 → 먼저 나온 순
-        members.sort(key=lambda m: (m["source_type"] == "other", -m["score"], m["pubDate"]))
+        # 대표 선정: 설정 목록 순서상 앞선 주요 일간지 → 의료 전문지 → 기타, 같은 매체면 관련도 높은 순 → 먼저 나온 순
+        members.sort(key=lambda m: (_source_rank(m["originallink"], cc), -m["score"], m["pubDate"]))
         rep, others = members[0], members[1:]
         rep["similar_count"] = len(others)
         rep["similar_sources"] = sorted({host_of(o["originallink"]) for o in others})[:5]
