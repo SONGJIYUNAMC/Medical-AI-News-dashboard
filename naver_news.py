@@ -121,7 +121,7 @@ def compile_cfg(cfg: dict) -> dict:
         "sim": float(cfg.get("dedupe_similarity", 0.4)),
         "assist": tuple(cfg.get("dedupe_assist", [0.25, 0.3])),
         "anchor_min": float(cfg.get("dedupe_anchor_min", 0.09)),
-        "anchor_generic": set(cfg.get("dedupe_anchor_generic", ["LLM", "EMR", "CDSS", "FDA", "NHS", "CMS", "CT", "MRI"])),
+        "anchor_generic": set(cfg.get("dedupe_anchor_generic", ["AI", "IT", "LLM", "EMR", "CDSS", "FDA", "NHS", "CMS", "CT", "MRI", "ICU", "ER", "PC", "DB", "OS", "UI", "AR", "VR", "ICT", "ESG", "IPO", "CEO", "KPI", "API"])),
     }
 
 
@@ -172,7 +172,8 @@ def _title_grams(title: str) -> set:
     return {t[i:i + 2] for i in range(len(t) - 1)} if len(t) >= 2 else {t}
 
 
-_ACR = re.compile(r"(?<![A-Za-z])[A-Z]{3,}(?![A-Za-z])")
+_ACR = re.compile(r"(?<![A-Za-z])[A-Z]{2,}(?![A-Za-z])")
+_EVW = re.compile(r"세미나|포럼|컨퍼런스|콘퍼런스|심포지엄|워크숍|웨비나|설명회|간담회|발표회|학술대회|토론회|개최")
 _EVT = re.compile(r"([가-힣]{2,6})\s?(선언|협약|결의안?|헌장)")   # '서울선언', '서울 선언' 같은 행사·문서 이름
 
 
@@ -202,35 +203,39 @@ def group_similar(results: list, cc: dict) -> list:
     sgrams = [_title_grams(a["summary"][:100]) for a in results]
     anchors = [anchors_of(a_["title"], cc["anchor_generic"]) for a_ in results]
     t_min, s_min = cc["assist"]  # 제목이 조금 달라도 요약이 거의 같으면 같은 기사로 본다
-    parent = list(range(n))
+    def same(i, j):
+        gi, gj = grams[i], grams[j]
+        if not gi or not gj:
+            return False
+        inter = len(gi & gj)
+        sim = inter / (len(gi) + len(gj) - inter)
+        shared = anchors[i] & anchors[j]
+        diff_org = bool(anchors[i] and anchors[j] and not shared)   # 서로 다른 기관(KT vs LG)
+        if sim >= cc["sim"] and not (diff_org and sim < 0.6):
+            return True
+        if shared and _EVW.search(results[i]["title"]) and _EVW.search(results[j]["title"]):
+            return True   # 같은 기관(KT 등)의 세미나·포럼 개최 기사는 한 사안
+        if any(len(x) >= 3 for x in shared):
+            evt = any(x[-2:] in ("선언", "협약", "헌장") or x.endswith(("결의", "결의안")) for x in shared if len(x) >= 4)
+            if sim >= cc["anchor_min"] * (0.3 if evt else 1):
+                return True   # 같은 기관(WHO 등) 약어·같은 선언문을 제목에 공유하고 제목도 조금 겹치면 같은 사안
+        if sim >= t_min:
+            si, sj = sgrams[i], sgrams[j]
+            return bool(si and sj and len(si & sj) / len(si | sj) >= s_min)
+        return False
 
-    def find(x):
-        while parent[x] != x:
-            parent[x] = parent[parent[x]]
-            x = parent[x]
-        return x
-
-    for i in range(n):
-        gi = grams[i]
-        for j in range(i + 1, n):
-            gj = grams[j]
-            if not gi or not gj:
-                continue
-            inter = len(gi & gj)
-            sim = inter / (len(gi) + len(gj) - inter)
-            if sim >= cc["sim"]:
-                parent[find(i)] = find(j)
-            elif anchors[i] & anchors[j] and sim >= cc["anchor_min"] * (0.3 if any(len(x) >= 4 and x[-2:] in ("선언", "협약", "헌장") or x.endswith("결의") or x.endswith("결의안") for x in anchors[i] & anchors[j]) else 1):
-                parent[find(i)] = find(j)   # 같은 기관(WHO 등) 약어를 제목에 공유하고 제목도 조금 겹치면 같은 사안
-            elif sim >= t_min:
-                si, sj = sgrams[i], sgrams[j]
-                if si and sj and len(si & sj) / len(si | sj) >= s_min:
-                    parent[find(i)] = find(j)
-
-    groups = {}
-    for i in range(n):
-        groups.setdefault(find(i), []).append(i)
-    return list(groups.values())
+    # 대표 기사(앞쪽 매체·높은 관련도)부터 차례로 군집을 만들고, 각 군집의 대표와만 비교한다(연쇄 병합 방지)
+    order = sorted(range(n), key=lambda i: (_source_rank(results[i].get("originallink") or "", cc),
+                                           -results[i].get("score", 0), results[i].get("pubDate", "")))
+    clusters = []
+    for i in order:
+        for c in clusters:
+            if same(c[0], i) or any(anchors[m] & anchors[i] and same(m, i) for m in c[1:]):
+                c.append(i)
+                break
+        else:
+            clusters.append([i])
+    return clusters
 
 
 def dedupe_similar(results: list, cc: dict) -> list:
