@@ -1,14 +1,14 @@
 {
  "month": "2026-10",
- "generated_at": "2026-10-22T08:38:43.987659+09:00",
+ "generated_at": "2026-10-22T08:41:58.905989+09:00",
  "prev_month": null,
  "collected_days": 8,
  "first_day": "2026-10-15",
  "last_day": "2026-10-22",
- "total": 2265,
+ "total": 2287,
  "prev_total": null,
  "by_region": {
-  "국내": 1922,
+  "국내": 1944,
   "해외": 295,
   "정부": 48
  },
@@ -19,7 +19,7 @@
    "정부": 19
   },
   "2026-W43": {
-   "국내": 1109,
+   "국내": 1131,
    "해외": 142,
    "정부": 29
   }
@@ -27,15 +27,15 @@
  "categories": [
   {
    "name": "국내 · 기타 (의료 AI·병원 AI 키워드)",
-   "count": 485,
+   "count": 491,
    "prev": 0,
-   "delta": 485
+   "delta": 491
   },
   {
    "name": "국내 · 국내 의료 AI 기업",
-   "count": 432,
+   "count": 437,
    "prev": 0,
-   "delta": 432
+   "delta": 437
   },
   {
    "name": "국내 · 국내 정책·규제",
@@ -45,15 +45,15 @@
   },
   {
    "name": "국내 · 국내 의료기관",
-   "count": 193,
+   "count": 197,
    "prev": 0,
-   "delta": 193
+   "delta": 197
   },
   {
    "name": "국내 · AI 거버넌스·보안",
-   "count": 163,
+   "count": 169,
    "prev": 0,
-   "delta": 163
+   "delta": 169
   },
   {
    "name": "해외 · 해외 의료기관 AI 도입·운영",
@@ -63,9 +63,9 @@
   },
   {
    "name": "국내 · 해외 의료기관·정책·규제",
-   "count": 152,
+   "count": 153,
    "prev": 0,
-   "delta": 152
+   "delta": 153
   },
   {
    "name": "국내 · 학술·연구·행사",
@@ -125,13 +125,13 @@
  "keywords": [
   {
    "word": "서울대병원",
-   "count": 73,
+   "count": 76,
    "prev": 0,
    "status": ""
   },
   {
    "word": "세미나",
-   "count": 61,
+   "count": 60,
    "prev": 0,
    "status": ""
   },
@@ -160,20 +160,20 @@
    "status": ""
   },
   {
+   "word": "분당서울대",
+   "count": 36,
+   "prev": 0,
+   "status": ""
+  },
+  {
    "word": "WHO",
    "count": 35,
    "prev": 0,
    "status": ""
   },
   {
-   "word": "분당서울대",
-   "count": 34,
-   "prev": 0,
-   "status": ""
-  },
-  {
    "word": "아산병원",
-   "count": 30,
+   "count": 31,
    "prev": 0,
    "status": ""
   },
@@ -191,7 +191,7 @@
   },
   {
    "word": "학술대회",
-   "count": 25,
+   "count": 26,
    "prev": 0,
    "status": ""
   },
@@ -214,14 +214,14 @@
    "status": ""
   },
   {
-   "word": "제이엘케이",
+   "word": "심평원",
    "count": 20,
    "prev": 0,
    "status": ""
   },
   {
-   "word": "심평원",
-   "count": 19,
+   "word": "제이엘케이",
+   "count": 20,
    "prev": 0,
    "status": ""
   },
@@ -301,6 +301,17 @@
    "importance": 85
   },
   {
+   "title": "KT, 의료 AX 세미나 개최... 병원 맞춤형 AI 도입 지원",
+   "link": "http://www.newslock.co.kr/news/articleView.html?idxno=138332",
+   "date": "2026-10-21",
+   "category": "학술·연구·행사",
+   "region": "국내",
+   "score": 12,
+   "similar_count": 29,
+   "source": "newslock.co.kr",
+   "importance": 70
+  },
+  {
    "title": "李대통령, 오늘 테드로스 WHO 사무총장 면담…'AI 기본의료 전략' 소개",
    "link": "https://www.news1.kr/politics/president/6326746",
    "date": "2026-10-21",
@@ -343,17 +354,6 @@
    "similar_count": 24,
    "source": "view.asiae.co.kr",
    "importance": 58
-  },
-  {
-   "title": "동아에스티·부산대병원, 스마트병동 구축…AI 해상의료 시스템 공동개...",
-   "link": "http://www.newslock.co.kr/news/articleView.html?idxno=137926",
-   "date": "2026-10-14",
-   "category": "국내 의료기관",
-   "region": "국내",
-   "score": 13,
-   "similar_count": 22,
-   "source": "newslock.co.kr",
-   "importance": 57
   }
  ],
  "issues_global": [
@@ -903,6 +903,17 @@
    "importance": 71
   },
   {
+   "title": "KT, 의료 AX 세미나 개최... 병원 맞춤형 AI 도입 지원",
+   "link": "http://www.newslock.co.kr/news/articleView.html?idxno=138332",
+   "date": "2026-10-21",
+   "category": "학술·연구·행사",
+   "region": "국내",
+   "score": 12,
+   "similar_count": 29,
+   "source": "newslock.co.kr",
+   "importance": 70
+  },
+  {
    "title": "KT, 아크릴과 의료 AI 협력…병원별 맞춤 서비스 발굴",
    "link": "https://www.mk.co.kr/article/12180637",
    "date": "2026-10-20",
@@ -956,17 +967,6 @@
    "similar_count": 20,
    "source": "news1.kr",
    "importance": 57
-  },
-  {
-   "title": "KT, 의료 AX 세미나 개최... 병원 맞춤형 AI 도입 지원",
-   "link": "http://www.newslock.co.kr/news/articleView.html?idxno=138332",
-   "date": "2026-10-21",
-   "category": "학술·연구·행사",
-   "region": "국내",
-   "score": 12,
-   "similar_count": 21,
-   "source": "newslock.co.kr",
-   "importance": 54
   },
   {
    "title": "“100만명 바이오 빅데이터 구축”… 하정우·정은경 생체자료 기증",
@@ -1365,6 +1365,41 @@
     "importance": 31
    }
   ],
+  "국내 · 학술·연구·행사": [
+   {
+    "title": "KT, 의료 AX 세미나 개최... 병원 맞춤형 AI 도입 지원",
+    "link": "http://www.newslock.co.kr/news/articleView.html?idxno=138332",
+    "date": "2026-10-21",
+    "category": "학술·연구·행사",
+    "region": "국내",
+    "score": 12,
+    "similar_count": 29,
+    "source": "newslock.co.kr",
+    "importance": 70
+   },
+   {
+    "title": "스카이랩스 '카트', 임상서 고혈압 환자 목표 혈압 도달률 65.8%",
+    "link": "https://www.medipana.com/news/articleView.html?idxno=419412",
+    "date": "2026-10-16",
+    "category": "학술·연구·행사",
+    "region": "국내",
+    "score": 9,
+    "similar_count": 8,
+    "source": "medipana.com",
+    "importance": 28
+   },
+   {
+    "title": "쓰리빌리언, 북미 최대 인간유전학 학술대회 'ASHG 2026'서 연구 4건 발표",
+    "link": "https://www.news1.kr/bio/pharmaceutical-bio/6322049",
+    "date": "2026-10-16",
+    "category": "학술·연구·행사",
+    "region": "국내",
+    "score": 11,
+    "similar_count": 5,
+    "source": "news1.kr",
+    "importance": 24
+   }
+  ],
   "국내 · 국내 의료기관": [
    {
     "title": "동아에스티·부산대병원, 스마트병동 구축…AI 해상의료 시스템 공동개...",
@@ -1398,41 +1433,6 @@
     "similar_count": 14,
     "source": "mt.co.kr",
     "importance": 40
-   }
-  ],
-  "국내 · 학술·연구·행사": [
-   {
-    "title": "KT, 의료 AX 세미나 개최... 병원 맞춤형 AI 도입 지원",
-    "link": "http://www.newslock.co.kr/news/articleView.html?idxno=138332",
-    "date": "2026-10-21",
-    "category": "학술·연구·행사",
-    "region": "국내",
-    "score": 12,
-    "similar_count": 21,
-    "source": "newslock.co.kr",
-    "importance": 54
-   },
-   {
-    "title": "스카이랩스 '카트', 임상서 고혈압 환자 목표 혈압 도달률 65.8%",
-    "link": "https://www.medipana.com/news/articleView.html?idxno=419412",
-    "date": "2026-10-16",
-    "category": "학술·연구·행사",
-    "region": "국내",
-    "score": 9,
-    "similar_count": 8,
-    "source": "medipana.com",
-    "importance": 28
-   },
-   {
-    "title": "쓰리빌리언, 북미 최대 인간유전학 학술대회 'ASHG 2026'서 연구 4건 발표",
-    "link": "https://www.news1.kr/bio/pharmaceutical-bio/6322049",
-    "date": "2026-10-16",
-    "category": "학술·연구·행사",
-    "region": "국내",
-    "score": 11,
-    "similar_count": 5,
-    "source": "news1.kr",
-    "importance": 24
    }
   ],
   "국내 · AI 거버넌스·보안": [
