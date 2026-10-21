@@ -14,6 +14,12 @@ try:
 except Exception:  # keywords.json 이 없으면 키워드 집계 생략
     TRACKED = []
 
+try:
+    import naver_news as nn
+    CC = nn.compile_cfg(json.loads(Path("keywords.json").read_text(encoding="utf-8")))
+except Exception:
+    CC = None
+
 KST = timezone(timedelta(hours=9))
 DATA = Path("data")
 WEEKS = DATA / "weeks"
@@ -100,6 +106,21 @@ def main():
             for k in ks:
                 index[k] = it
             added += 1
+
+    if CC:  # 오늘 수집분 중 같은 사안 기사를 대표 1건으로 합침(누적 파일에 이미 들어간 중복 정리)
+        todays = [it for it in cur["items"] if it["region"] == "국내" and it.get("first_seen") == today_s]
+        drop = set()
+        for idxs in nn.group_similar(todays, CC):
+            if len(idxs) < 2:
+                continue
+            ms = sorted((todays[i] for i in idxs), key=lambda m: (nn._source_rank(m.get("originallink") or "", CC), -m.get("score", 0), m.get("pubDate", "")))
+            rep, others = ms[0], ms[1:]
+            rep["similar_count"] = max(rep.get("similar_count", 0), len(others) + sum(o.get("similar_count", 0) for o in others))
+            rep["similar_sources"] = sorted(set(rep.get("similar_sources", [])) | {nn.host_of(o.get("originallink") or "") for o in others})[:5]
+            drop |= {id(o) for o in others}
+        if drop:
+            cur["items"] = [it for it in cur["items"] if id(it) not in drop]
+            print(f"오늘 중복 기사 {len(drop)}건 정리")
 
     if TRACKED:  # 설정 키워드(keywords.json terms) 일치 목록을 기사마다 저장 → 키워드 집계용
         for it in cur["items"]:
