@@ -1,14 +1,14 @@
 {
  "month": "2026-10",
- "generated_at": "2026-10-22T08:41:58.905989+09:00",
+ "generated_at": "2026-10-22T09:28:55.234100+09:00",
  "prev_month": null,
  "collected_days": 8,
  "first_day": "2026-10-15",
  "last_day": "2026-10-22",
- "total": 2287,
+ "total": 2276,
  "prev_total": null,
  "by_region": {
-  "국내": 1944,
+  "국내": 1933,
   "해외": 295,
   "정부": 48
  },
@@ -19,7 +19,7 @@
    "정부": 19
   },
   "2026-W43": {
-   "국내": 1131,
+   "국내": 1120,
    "해외": 142,
    "정부": 29
   }
@@ -27,33 +27,33 @@
  "categories": [
   {
    "name": "국내 · 기타 (의료 AI·병원 AI 키워드)",
-   "count": 491,
+   "count": 492,
    "prev": 0,
-   "delta": 491
+   "delta": 492
   },
   {
    "name": "국내 · 국내 의료 AI 기업",
-   "count": 437,
+   "count": 434,
    "prev": 0,
-   "delta": 437
+   "delta": 434
   },
   {
    "name": "국내 · 국내 정책·규제",
-   "count": 351,
+   "count": 352,
    "prev": 0,
-   "delta": 351
+   "delta": 352
   },
   {
    "name": "국내 · 국내 의료기관",
-   "count": 197,
+   "count": 196,
    "prev": 0,
-   "delta": 197
+   "delta": 196
   },
   {
    "name": "국내 · AI 거버넌스·보안",
-   "count": 169,
+   "count": 167,
    "prev": 0,
-   "delta": 169
+   "delta": 167
   },
   {
    "name": "해외 · 해외 의료기관 AI 도입·운영",
@@ -63,15 +63,15 @@
   },
   {
    "name": "국내 · 해외 의료기관·정책·규제",
-   "count": 153,
+   "count": 154,
    "prev": 0,
-   "delta": 153
+   "delta": 154
   },
   {
    "name": "국내 · 학술·연구·행사",
-   "count": 146,
+   "count": 138,
    "prev": 0,
-   "delta": 146
+   "delta": 138
   },
   {
    "name": "해외 · 해외 정책·규제 (미국)",
@@ -125,13 +125,13 @@
  "keywords": [
   {
    "word": "서울대병원",
-   "count": 76,
+   "count": 73,
    "prev": 0,
    "status": ""
   },
   {
    "word": "세미나",
-   "count": 60,
+   "count": 52,
    "prev": 0,
    "status": ""
   },
@@ -160,20 +160,20 @@
    "status": ""
   },
   {
-   "word": "분당서울대",
-   "count": 36,
-   "prev": 0,
-   "status": ""
-  },
-  {
    "word": "WHO",
    "count": 35,
    "prev": 0,
    "status": ""
   },
   {
+   "word": "분당서울대",
+   "count": 34,
+   "prev": 0,
+   "status": ""
+  },
+  {
    "word": "아산병원",
-   "count": 31,
+   "count": 30,
    "prev": 0,
    "status": ""
   },
@@ -214,14 +214,14 @@
    "status": ""
   },
   {
-   "word": "심평원",
+   "word": "제이엘케이",
    "count": 20,
    "prev": 0,
    "status": ""
   },
   {
-   "word": "제이엘케이",
-   "count": 20,
+   "word": "심평원",
+   "count": 19,
    "prev": 0,
    "status": ""
   },
@@ -301,15 +301,15 @@
    "importance": 85
   },
   {
-   "title": "KT, 의료 AX 세미나 개최... 병원 맞춤형 AI 도입 지원",
-   "link": "http://www.newslock.co.kr/news/articleView.html?idxno=138332",
+   "title": "[AI픽] KT, 수술 일정 조정·24시간 환자 상담 돕는 의료 AI 선보여",
+   "link": "https://www.yna.co.kr/view/AKR20261021134200017?input=1195m",
    "date": "2026-10-21",
    "category": "학술·연구·행사",
    "region": "국내",
-   "score": 12,
-   "similar_count": 29,
-   "source": "newslock.co.kr",
-   "importance": 70
+   "score": 13,
+   "similar_count": 32,
+   "source": "yna.co.kr",
+   "importance": 80
   },
   {
    "title": "李대통령, 오늘 테드로스 WHO 사무총장 면담…'AI 기본의료 전략' 소개",
@@ -892,6 +892,17 @@
    "importance": 85
   },
   {
+   "title": "[AI픽] KT, 수술 일정 조정·24시간 환자 상담 돕는 의료 AI 선보여",
+   "link": "https://www.yna.co.kr/view/AKR20261021134200017?input=1195m",
+   "date": "2026-10-21",
+   "category": "학술·연구·행사",
+   "region": "국내",
+   "score": 13,
+   "similar_count": 32,
+   "source": "yna.co.kr",
+   "importance": 80
+  },
+  {
    "title": "李대통령, 오늘 테드로스 WHO 사무총장 면담…'AI 기본의료 전략' 소개",
    "link": "https://www.news1.kr/politics/president/6326746",
    "date": "2026-10-21",
@@ -901,17 +912,6 @@
    "similar_count": 29,
    "source": "news1.kr",
    "importance": 71
-  },
-  {
-   "title": "KT, 의료 AX 세미나 개최... 병원 맞춤형 AI 도입 지원",
-   "link": "http://www.newslock.co.kr/news/articleView.html?idxno=138332",
-   "date": "2026-10-21",
-   "category": "학술·연구·행사",
-   "region": "국내",
-   "score": 12,
-   "similar_count": 29,
-   "source": "newslock.co.kr",
-   "importance": 70
   },
   {
    "title": "KT, 아크릴과 의료 AI 협력…병원별 맞춤 서비스 발굴",
@@ -1367,15 +1367,26 @@
   ],
   "국내 · 학술·연구·행사": [
    {
-    "title": "KT, 의료 AX 세미나 개최... 병원 맞춤형 AI 도입 지원",
-    "link": "http://www.newslock.co.kr/news/articleView.html?idxno=138332",
+    "title": "[AI픽] KT, 수술 일정 조정·24시간 환자 상담 돕는 의료 AI 선보여",
+    "link": "https://www.yna.co.kr/view/AKR20261021134200017?input=1195m",
     "date": "2026-10-21",
     "category": "학술·연구·행사",
     "region": "국내",
-    "score": 12,
-    "similar_count": 29,
-    "source": "newslock.co.kr",
-    "importance": 70
+    "score": 13,
+    "similar_count": 32,
+    "source": "yna.co.kr",
+    "importance": 80
+   },
+   {
+    "title": "\"AI가 수술실 일정 조절·환자 상담\"…KT, 병원 맞춤형 AX 확대",
+    "link": "https://www.fnnews.com/news/202610210924373959",
+    "date": "2026-10-21",
+    "category": "학술·연구·행사",
+    "region": "국내",
+    "score": 11,
+    "similar_count": 13,
+    "source": "fnnews.com",
+    "importance": 40
    },
    {
     "title": "스카이랩스 '카트', 임상서 고혈압 환자 목표 혈압 도달률 65.8%",
@@ -1387,17 +1398,6 @@
     "similar_count": 8,
     "source": "medipana.com",
     "importance": 28
-   },
-   {
-    "title": "쓰리빌리언, 북미 최대 인간유전학 학술대회 'ASHG 2026'서 연구 4건 발표",
-    "link": "https://www.news1.kr/bio/pharmaceutical-bio/6322049",
-    "date": "2026-10-16",
-    "category": "학술·연구·행사",
-    "region": "국내",
-    "score": 11,
-    "similar_count": 5,
-    "source": "news1.kr",
-    "importance": 24
    }
   ],
   "국내 · 국내 의료기관": [
