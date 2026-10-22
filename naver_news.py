@@ -177,6 +177,17 @@ _EVW = re.compile(r"세미나|포럼|컨퍼런스|콘퍼런스|심포지엄|워�
 _EVT = re.compile(r"([가-힣]{2,6})\s?(선언|협약|결의안?|헌장)")   # '서울선언', '서울 선언' 같은 행사·문서 이름
 
 
+_ORG = re.compile(r"[가-힣]{2,8}(?:병원|대학교|진흥원|연구원|협회|학회|공단|재단|위원회)|보건복지부|식약처|식품의약품안전처|과기정통부|과학기술정보통신부|질병관리청|심평원|건보공단|개인정보보호위원회|개인정보위|개보위")
+_ORG_GENERIC = {"대형병원", "상급종합병원", "종합병원", "대학병원", "지역병원", "민간병원", "공공병원", "전국병원", "국내병원", "일반병원", "상급병원", "중소병원", "요양병원", "개인병원", "국립대병원"}
+
+
+def anchors_full(text: str, generic: set) -> set:
+    """제목+요약에서 기관(약어·병원·대학·정부부처)과 선언문 이름을 뽑는다."""
+    a = anchors_of(text, generic)
+    a |= {m.group(0) for m in _ORG.finditer(text) if m.group(0) not in _ORG_GENERIC}
+    return a
+
+
 def anchors_of(title: str, generic: set) -> set:
     a = {x for x in _ACR.findall(title) if x not in generic}
     a |= {m.group(1) + m.group(2) for m in _EVT.finditer(title)}
@@ -202,6 +213,9 @@ def group_similar(results: list, cc: dict) -> list:
     grams = [_title_grams(a["title"]) for a in results]
     sgrams = [_title_grams(a["summary"][:100]) for a in results]
     anchors = [anchors_of(a_["title"], cc["anchor_generic"]) for a_ in results]
+    full = [f'{a_["title"]} {a_.get("summary", "")}' for a_ in results]
+    fanch = [anchors_full(t, cc["anchor_generic"]) for t in full]
+    fgrams = [_title_grams(t[:200]) for t in full]
     t_min, s_min = cc["assist"]  # 제목이 조금 달라도 요약이 거의 같으면 같은 기사로 본다
     def same(i, j):
         gi, gj = grams[i], grams[j]
@@ -219,6 +233,12 @@ def group_similar(results: list, cc: dict) -> list:
             evt = any(x[-2:] in ("선언", "협약", "헌장") or x.endswith(("결의", "결의안")) for x in shared if len(x) >= 4)
             if sim >= cc["anchor_min"] * (0.3 if evt else 1):
                 return True   # 같은 기관(WHO 등) 약어·같은 선언문을 제목에 공유하고 제목도 조금 겹치면 같은 사안
+        # 제목+요약 전체에서 같은 기관·선언문을 공유하고 내용도 겹치면 같은 사안
+        fs = fanch[i] & fanch[j]
+        if fs and fgrams[i] and fgrams[j]:
+            fsim = len(fgrams[i] & fgrams[j]) / len(fgrams[i] | fgrams[j])
+            if (len(fs) >= 2 and fsim >= 0.15) or fsim >= 0.25:
+                return True
         if sim >= t_min:
             si, sj = sgrams[i], sgrams[j]
             return bool(si and sj and len(si & sj) / len(si | sj) >= s_min)
