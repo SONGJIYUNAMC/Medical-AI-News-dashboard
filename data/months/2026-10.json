@@ -1,16 +1,16 @@
 {
  "month": "2026-10",
- "generated_at": "2026-10-23T09:34:22.458006+09:00",
+ "generated_at": "2026-10-23T09:54:49.176559+09:00",
  "prev_month": null,
  "collected_days": 9,
  "first_day": "2026-10-15",
  "last_day": "2026-10-23",
- "total": 2541,
+ "total": 2527,
  "prev_total": null,
  "by_region": {
-  "국내": 2150,
-  "해외": 341,
-  "정부": 50
+  "국내": 2152,
+  "해외": 343,
+  "정부": 32
  },
  "weekly": {
   "2026-W42": {
@@ -19,23 +19,23 @@
    "정부": 19
   },
   "2026-W43": {
-   "국내": 1337,
-   "해외": 188,
-   "정부": 31
+   "국내": 1339,
+   "해외": 190,
+   "정부": 13
   }
  },
  "categories": [
   {
    "name": "국내 · 기타 (의료 AI·병원 AI 키워드)",
-   "count": 533,
+   "count": 532,
    "prev": 0,
-   "delta": 533
+   "delta": 532
   },
   {
    "name": "국내 · 국내 의료 AI 기업",
-   "count": 477,
+   "count": 479,
    "prev": 0,
-   "delta": 477
+   "delta": 479
   },
   {
    "name": "국내 · 국내 정책·규제",
@@ -45,15 +45,15 @@
   },
   {
    "name": "국내 · 국내 의료기관",
-   "count": 231,
+   "count": 230,
    "prev": 0,
-   "delta": 231
+   "delta": 230
   },
   {
    "name": "국내 · AI 거버넌스·보안",
-   "count": 194,
+   "count": 193,
    "prev": 0,
-   "delta": 194
+   "delta": 193
   },
   {
    "name": "해외 · 해외 의료기관 AI 도입·운영",
@@ -63,21 +63,21 @@
   },
   {
    "name": "국내 · 해외 의료기관·정책·규제",
-   "count": 172,
+   "count": 173,
    "prev": 0,
-   "delta": 172
+   "delta": 173
   },
   {
    "name": "국내 · 학술·연구·행사",
-   "count": 157,
+   "count": 159,
    "prev": 0,
-   "delta": 157
+   "delta": 159
   },
   {
    "name": "해외 · 해외 정책·규제 (미국)",
-   "count": 90,
+   "count": 92,
    "prev": 0,
-   "delta": 90
+   "delta": 92
   },
   {
    "name": "해외 · 해외 연구·학술",
@@ -92,16 +92,16 @@
    "delta": 34
   },
   {
-   "name": "정부 · 국가인공지능전략위원회",
-   "count": 28,
-   "prev": 0,
-   "delta": 28
-  },
-  {
    "name": "정부 · 정부 보도자료 (검색)",
    "count": 14,
    "prev": 0,
    "delta": 14
+  },
+  {
+   "name": "정부 · 국가인공지능전략위원회",
+   "count": 10,
+   "prev": 0,
+   "delta": 10
   },
   {
    "name": "정부 · 보건복지부",
@@ -125,7 +125,7 @@
  "keywords": [
   {
    "word": "서울대병원",
-   "count": 83,
+   "count": 84,
    "prev": 0,
    "status": ""
   },
@@ -161,7 +161,7 @@
   },
   {
    "word": "분당서울대",
-   "count": 40,
+   "count": 41,
    "prev": 0,
    "status": ""
   },
@@ -185,7 +185,7 @@
   },
   {
    "word": "학술대회",
-   "count": 29,
+   "count": 30,
    "prev": 0,
    "status": ""
   },
@@ -209,7 +209,7 @@
   },
   {
    "word": "포럼",
-   "count": 22,
+   "count": 23,
    "prev": 0,
    "status": ""
   },
@@ -238,8 +238,8 @@
    "status": ""
   },
   {
-   "word": "스마트 병원",
-   "count": 17,
+   "word": "한국보건산업진흥원",
+   "count": 16,
    "prev": 0,
    "status": ""
   }
@@ -527,17 +527,6 @@
  ],
  "government_other": [
   {
-   "title": "\"환자에게 닿지 않는 AI는 무용지물\"…의료혁신의 조건은 '형평성'",
-   "link": "https://news.google.com/rss/articles/CBMia0FVX3lxTE5QNi15ZzNMZVNQa2pjV2lFekhCYTBvSnpJWkpBRlNnSi1fRWZtZEhBQ2huV3VOT2FrUHZKdDV3R0l3cWZseVFPdV9IUEkwaDMtN3h6UHc4Z3o0QjQ2azVTcFQ0UkhWWEhRd0ZV?oc=5",
-   "date": "2026-10-23",
-   "category": "국가인공지능전략위원회",
-   "region": "정부",
-   "score": 0,
-   "similar_count": 0,
-   "source": "국가인공지능전략위원회",
-   "importance": 0
-  },
-  {
    "title": "'AI 헬스케어 서울선언문' 발표…\"AI 혁신 혜택, 전 인류가 공평하게\"",
    "link": "https://news.google.com/rss/articles/CBMiigFBVV95cUxQX0tjSjg2RFhwVkVIbkpzNFAxRktVRzgydkR6Ym53UThfSmxCLWlPdXVlNk9nYlRmR253MHJKZ1RwZ0x2UzV4RG5UQjNRNk54TkJqS1kxdWVNYWdZNC1NczJYT2VJMklaSTZkZ2o4emNqMG96ajlndTJxTkJhTEZ0YnYtUVpINU5meXc?oc=5",
    "date": "2026-10-21",
@@ -582,160 +571,6 @@
    "importance": 0
   },
   {
-   "title": "국가AI전략위, 강원 AI 정책현장 점검…의료·교통·데이터센터 살펴",
-   "link": "https://news.google.com/rss/articles/CBMiaEFVX3lxTFBmdG1YZDhqcndiTi1GdEdPN25waEY5Y1dUSjhkM2ZUTlphTG9TS19UckFDM1ZQcllUMUpiMUl6dWJGQ0xZYzVkUDl3ekNvZjdJV3l2d1RielA2WVM4TWs1djJkY1hlb1o4?oc=5",
-   "date": "2026-10-20",
-   "category": "국가인공지능전략위원회",
-   "region": "정부",
-   "score": 0,
-   "similar_count": 0,
-   "source": "국가인공지능전략위원회",
-   "importance": 0
-  },
-  {
-   "title": "하정우 AI전략위 부위원장, 강원서 ‘AI 의료·교통·데이터센터’ 현장 점검",
-   "link": "https://news.google.com/rss/articles/CBMijgJBVV95cUxPcm8zZ0E2TDVVMlpBc3pvWDR1S2NRMXZucE9jWUVHMVRkMzFjTHdocS0zZnN1UnBxcl9GcjNHSUFZSWNUNnAtb0F0bnlfSTZKbUdGaFAwaDhTQVNqaGRYQWtOX2NtazJfSTkyVjZhVnlhekx2WkpGYll1RWpRd3pTVGQ0THVMbGZiWDUzLW02S1ZhdC1PbjdId1RFQXhWLWZQWUJ6czV5T0lXR0tIZDVOdnQxWHFYeGhyQmhwdVFmLThPSS1VQ0ZRTU1rQ3drcHdJR2pKenN2OUJLckpVNTQ4OUVpX1NjODdOaW9rTm5oZHFxN09oT0d0d1B1eFFhY3Y4bDFQa25jSVd0a2dSM1E?oc=5",
-   "date": "2026-10-20",
-   "category": "국가인공지능전략위원회",
-   "region": "정부",
-   "score": 0,
-   "similar_count": 0,
-   "source": "국가인공지능전략위원회",
-   "importance": 0
-  },
-  {
-   "title": "[AI픽] 의료부터 데이터센터까지…국가AI전략위, 강원 AI 전환 점검",
-   "link": "https://news.google.com/rss/articles/CBMiUkFVX3lxTFBMVTFrT0haWkQ0QU1zbHRrY1lXMGl3X3hDalVPYkFocHdyWnBYRHhGVEJEQlJ5N3owQ05ZMGY4LUdmWjh6SG1OeXI1VWcwQXV2cmc?oc=5",
-   "date": "2026-10-20",
-   "category": "국가인공지능전략위원회",
-   "region": "정부",
-   "score": 0,
-   "similar_count": 0,
-   "source": "국가인공지능전략위원회",
-   "importance": 0
-  },
-  {
-   "title": "하정우 부위원장, 강원 AI 정책 현장 점검…의료·교통·인프라 살펴",
-   "link": "https://news.google.com/rss/articles/CBMiVkFVX3lxTE1HMERFZVNnYXg1bmt3WXRIRVp0RS1sT1ZMbTFwSHZyajdXSHdFakNoU1BQMk85TjAyd1NKd19LS0cxZlRGaXB3UWlqc1VnOWJKRU1CRkNn?oc=5",
-   "date": "2026-10-20",
-   "category": "국가인공지능전략위원회",
-   "region": "정부",
-   "score": 0,
-   "similar_count": 0,
-   "source": "국가인공지능전략위원회",
-   "importance": 0
-  },
-  {
-   "title": "하정우 AI전략위 부위원장, 강원 AI 기본의료·교통·데이터센터 현장 방문 - 머니투데이",
-   "link": "https://news.google.com/rss/articles/CBMibEFVX3lxTE5mVVRod2tsdEJqMTdnZTFFd0xSU2ZqX0wtWUZSb2xJLTNIYjlxLXdEaE1HUm9oNWxpWGRGdjJTVTVkOWt0UF93WWdHT2xJcHczN0NsdGFjSTQ5eHNIQzJIc0tIMFFCUWVHLVQ3bNIBbEFVX3lxTE5mVVRod2tsdEJqMTdnZTFFd0xSU2ZqX0wtWUZSb2xJLTNIYjlxLXdEaE1HUm9oNWxpWGRGdjJTVTVkOWt0UF93WWdHT2xJcHczN0NsdGFjSTQ5eHNIQzJIc0tIMFFCUWVHLVQ3bA?oc=5",
-   "date": "2026-10-20",
-   "category": "국가인공지능전략위원회",
-   "region": "정부",
-   "score": 0,
-   "similar_count": 0,
-   "source": "국가인공지능전략위원회",
-   "importance": 0
-  },
-  {
-   "title": "대통령직속국가AI전략위, 평창군 의료 AI·디지털 헬스 현장 방문",
-   "link": "https://news.google.com/rss/articles/CBMiW0FVX3lxTFBQblpEcVQ1MG5lN1FJNEN3dFVVLUpPMnRvLW8tUmxBRktyVXlXck95TUNDY1NNR1E1NVlzZ3NVYTRqbFJadUZmeDVNam9LaUxjY2pnY0h6WGNhT2s?oc=5",
-   "date": "2026-10-20",
-   "category": "국가인공지능전략위원회",
-   "region": "정부",
-   "score": 0,
-   "similar_count": 0,
-   "source": "국가인공지능전략위원회",
-   "importance": 0
-  },
-  {
-   "title": "평창군 AI 의료 안전망 국가적 관심",
-   "link": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTFBzRW5SQzNZQlNEY2NoUXdUaFBMNjVoS29lYlVIZnVnWjY0cUxRQkVhNDBXZXhqZUh2XzlvU0JqM0JTbmQzaWRMcS1BZjFsVWJrTVVuNmdyMWZFOXFvZnlHZDFMRnJzY1E?oc=5",
-   "date": "2026-10-20",
-   "category": "국가인공지능전략위원회",
-   "region": "정부",
-   "score": 0,
-   "similar_count": 0,
-   "source": "국가인공지능전략위원회",
-   "importance": 0
-  },
-  {
-   "title": "국가AI전략위, 평창군 의료원 방문…AI 기본의료 현장 점검",
-   "link": "https://news.google.com/rss/articles/CBMibkFVX3lxTFBKYVFFU3FGT1JjelpXbTZ2YVhhUnBFRHoyZndjMkVmQkxNVXpjd01hSjZHUTUtOFBpVmd6QXVkdzU5ajlIWnFzNXJOalhqWW1PbTh1M3hCcTN5Mmp0Y1JzazFvME8yM0ZucHhpQmN3?oc=5",
-   "date": "2026-10-19",
-   "category": "국가인공지능전략위원회",
-   "region": "정부",
-   "score": 0,
-   "similar_count": 0,
-   "source": "국가인공지능전략위원회",
-   "importance": 0
-  },
-  {
-   "title": "평창 찾은 국가AI위 의료취약지 안전망 점검 : 책",
-   "link": "https://news.google.com/rss/articles/CBMiVEFVX3lxTE9TTlFZWHdlVFJ2SmlnQ2xnZFdEZFVnVmxocWZHOFlfdWRiMEZQNjdBNDgxVDZ5OW4zUGlKSFJCVVliVXpTeHBWRTZOYmtsbmJXd296Rw?oc=5",
-   "date": "2026-10-19",
-   "category": "국가인공지능전략위원회",
-   "region": "정부",
-   "score": 0,
-   "similar_count": 0,
-   "source": "국가인공지능전략위원회",
-   "importance": 0
-  },
-  {
-   "title": "국가AI전략위, 평창군보건의료원 현장 방문",
-   "link": "https://news.google.com/rss/articles/CBMiZEFVX3lxTE02Qko5LVFvbkZ0Z2gtZHFzZjZLTzFJNmpKcDhVWWN2ZlVQQUIwa19TeExnUnptaE9zVS1QUzFSTUowMkdDMi11T0JIQ0xsbGlKTWdGcnBGd05MZjg0Zmp6RnlWQjA?oc=5",
-   "date": "2026-10-19",
-   "category": "국가인공지능전략위원회",
-   "region": "정부",
-   "score": 0,
-   "similar_count": 0,
-   "source": "국가인공지능전략위원회",
-   "importance": 0
-  },
-  {
-   "title": "하정우 국가AI전략위 부위원장, 강원서 의료·교통·데이터센터 현장 점검",
-   "link": "https://news.google.com/rss/articles/CBMigAFBVV95cUxPLXNHTm81ZEk1UUlqWEk5M2ZQRnVBZmJRT255eS1uYnltcmVDZ3cxMGlJWUF4Zkk1a1NQTzU1ZFVSNEtZNWVTZXEyeGxnTkxmRmJqekVQczZkd1hxRnI4MzN2Q1ZkNmc2OWdPX0NINkc2dGhVYUdvQXVtM2UzVHdaSQ?oc=5",
-   "date": "2026-10-19",
-   "category": "국가인공지능전략위원회",
-   "region": "정부",
-   "score": 0,
-   "similar_count": 0,
-   "source": "국가인공지능전략위원회",
-   "importance": 0
-  },
-  {
-   "title": "평창군, 의료취약지 AI 일차의료 제도 개선 건의",
-   "link": "https://news.google.com/rss/articles/CBMieEFVX3lxTE40N0FpRTAzbm9Vamw2RkQ0amsySTAtQmZWR19EaDJxUDBlWlIxc1k5ckI4ZDlZY2RRYjNSeEtCQWxPYktRTDRWTElhejVlME5qa203YVF3R0h1TGZIYXZzV2hZVkJERGZIbGl1Qy1kN1dqeXhtYnpzWNIBeEFVX3lxTE40N0FpRTAzbm9Vamw2RkQ0amsySTAtQmZWR19EaDJxUDBlWlIxc1k5ckI4ZDlZY2RRYjNSeEtCQWxPYktRTDRWTElhejVlME5qa203YVF3R0h1TGZIYXZzV2hZVkJERGZIbGl1Qy1kN1dqeXhtYnpzWA?oc=5",
-   "date": "2026-10-19",
-   "category": "국가인공지능전략위원회",
-   "region": "정부",
-   "score": 0,
-   "similar_count": 0,
-   "source": "국가인공지능전략위원회",
-   "importance": 0
-  },
-  {
-   "title": "국가AI전략위원회, 평창 방문…AI로 의료취약지 공백 메운다",
-   "link": "https://news.google.com/rss/articles/CBMiYEFVX3lxTE9GSUtHZ1VkZlNYalZOdU8xdXBPVk43Z1ZoZFlWS2lFWlpmMGFUdmFGcXowRk5Bb29tU0VFVWFSVE42QVl1OEQ0N2NqMENYVjNGYnoxMUZxMGZyVzB3SVhPbdIBYEFVX3lxTE9GSUtHZ1VkZlNYalZOdU8xdXBPVk43Z1ZoZFlWS2lFWlpmMGFUdmFGcXowRk5Bb29tU0VFVWFSVE42QVl1OEQ0N2NqMENYVjNGYnoxMUZxMGZyVzB3SVhPbQ?oc=5",
-   "date": "2026-10-19",
-   "category": "국가인공지능전략위원회",
-   "region": "정부",
-   "score": 0,
-   "similar_count": 0,
-   "source": "국가인공지능전략위원회",
-   "importance": 0
-  },
-  {
-   "title": "의료취약지 공백, AI가 메운다…정부, 평창 공공의료 모델 주목",
-   "link": "https://news.google.com/rss/articles/CBMiakFVX3lxTE9qRjQ5Y2t2TWh6elBTYUdFbmRDVExzZjI1NnJmeUhlRHl0bzgzQTdhYmFWWFZrVmJEMW1OYTdWdWNDRnFsSGZiNHJxUzBUS1EzVTcwaUI5Y01tdjFUWm5UbXUxMy1YY1RaU1E?oc=5",
-   "date": "2026-10-19",
-   "category": "국가인공지능전략위원회",
-   "region": "정부",
-   "score": 0,
-   "similar_count": 0,
-   "source": "국가인공지능전략위원회",
-   "importance": 0
-  },
-  {
    "title": "식약처, 식의약 공공데이터·AI 활용 우수작 5건 선정",
    "link": "https://news.google.com/rss/articles/CBMidkFVX3lxTE9palYyNDQwZFRRVEt4djNwZHdBdmxvTzlvU2ZFelZfcFZCcUVuVlZFTS1FNVFlZ3JyeVRWSGR3dzVmbnM5TlVJUC1mWG1oNk1KOWt3bVFIZnRvNWN4RE0xQ2hFZHpodW41NWtFR29SU0tUY3puTFE?oc=5",
    "date": "2026-10-19",
@@ -758,17 +593,6 @@
    "importance": 0
   },
   {
-   "title": "대통령 직속 국가 AI 전략위원회 평창군보건의료원 현장 방문",
-   "link": "https://news.google.com/rss/articles/CBMic0FVX3lxTE80RlpPbk5LZWE4VDlYSy1jaUhISlE4SE4tRXhad3NveGgxdHJEZk95UXhTclJhanhCRnhZaGhiNVVqZlRWUWFBTTlkWDBMbGRoRTBTT2dQdnNLWkhFNDZUU0VQblozTDItNjBvYjZEWTlGXzTSAXZBVV95cUxNMEZ4NmVQeXpGYkRFdS1oR1JSNndjSExTcHhNYUFLR29SYW1odzQtMGdSMzZUWDgzMjktUGNOWFhQOUduYTZyVlRQUGJKeF9EbEJLd2lmQ2dfRm52SmxZMFVKWFZDeWJELTJmcEZvT0NzVWlaSXpn?oc=5",
-   "date": "2026-10-19",
-   "category": "국가인공지능전략위원회",
-   "region": "정부",
-   "score": 0,
-   "similar_count": 0,
-   "source": "국가인공지능전략위원회",
-   "importance": 0
-  },
-  {
    "title": "이형훈 제2차관, 의료AI 본격 추진 대비 네이버 데이터센터 ‘각(GAK) 세종’ 방문",
    "link": "https://www.mohw.go.kr/board.es?mid=a10503000000&bid=0027&list_no=1492263&act=view",
    "date": "2026-10-19",
@@ -777,17 +601,6 @@
    "score": 0,
    "similar_count": 0,
    "source": "보건복지부",
-   "importance": 0
-  },
-  {
-   "title": "하정우 국가AI전략위 부위원장 , 평창군보건의료원 'AI 기본의료' 현장 방문",
-   "link": "https://news.google.com/rss/articles/CBMiZkFVX3lxTFBCcjc1Qy1pU3VORnN4S3lsVmNYWnZsUXNkUGtLWXdYbDRLdTQ5T3V0dHNQRHUzd0d0RTFhcjQ0LXdtVWhaeFJUejJ4MV9xQU5oNnJKbVI0RzhzRXNJNV82Vi03Nlk5UQ?oc=5",
-   "date": "2026-10-19",
-   "category": "국가인공지능전략위원회",
-   "region": "정부",
-   "score": 0,
-   "similar_count": 0,
-   "source": "국가인공지능전략위원회",
    "importance": 0
   },
   {
@@ -835,17 +648,6 @@
    "importance": 0
   },
   {
-   "title": "평창 AI 의료모델 전국 확대 검토…국가전략위, 의료취약지 공공의료 혁신 현장 점검",
-   "link": "https://news.google.com/rss/articles/CBMiY0FVX3lxTE1wNU1mb01wZTVyOUp5R3hVYjhvSDZQZEljVGl0TkZENHBtMFlNMmZZSW5YbHgyM0NSNi1oWE9aXzNTd29ta1NHZ3cxWGpCRTB0bG5LVy14WmZrZ3Z5dkM2eVlNdw?oc=5",
-   "date": "2026-10-18",
-   "category": "국가인공지능전략위원회",
-   "region": "정부",
-   "score": 0,
-   "similar_count": 0,
-   "source": "국가인공지능전략위원회",
-   "importance": 0
-  },
-  {
    "title": "[DH times K-정밀의료·의료데이터 정책]“‘한국인 100만명 바이오데이터 의료AI 만든다’…정부, 국가 바이오빅데이터 전 국민 참여 확대”",
    "link": "https://news.google.com/rss/articles/CBMiakFVX3lxTFA3WjlRaG1oS19hcVc2QXh4SzdCaHNNUkF4THFfWlNYM1h2bzhTT1Nkcm16aEk4M3lXUFpCWXFROXU0eTYwdHhPdnZMblQyR3VkNGRJTlk4b1JyWUVvd1Q5Xy01MzVUd3J6OUE?oc=5",
    "date": "2026-10-17",
@@ -854,6 +656,171 @@
    "score": 0,
    "similar_count": 0,
    "source": "국가인공지능전략위원회",
+   "importance": 0
+  },
+  {
+   "title": "국민 100만명 건강정보 모아 ‘의료 AI’ 키운다…11월 첫 데이터 개방",
+   "link": "https://news.google.com/rss/articles/CBMiUkFVX3lxTFBld2N2MXhYOUVWNkJGS3k2ZEV1SDlEN1dpWU5rb214VElLakszZElsdktJVHBWdkNlUU9TUHZKa3YyaFJoN3dkR1ItSkcxVWt5NnfSAVNBVV95cUxPbTlXMWhUVTBXVkpNcVd2Z0xJbl9RVnplYzhlbE1SYmdOQmhqQ25rdUpoWlRlSEhvNUJxcDFabk9FcG1xT3RtM3p0cUI4UFNiaXJBMA?oc=5",
+   "date": "2026-10-15",
+   "category": "국가인공지능전략위원회",
+   "region": "정부",
+   "score": 0,
+   "similar_count": 0,
+   "source": "국가인공지능전략위원회",
+   "importance": 0
+  },
+  {
+   "title": "국가AI전략위-복지부, 바이오 데이터 기증…\"국민 참여 확산되길\"",
+   "link": "https://news.google.com/rss/articles/CBMiaEFVX3lxTE5GekdCZTJ2M19SNDB5amIxMnlGaGxQaVRzWjhFRk1qRnlZR2ljWG54QXZFNUd5YWJQWkhrMFU2UHVUWVMyTDN1VlltM3E2anFKVGh5eUZsaDdHUlh4eGZDRnBqZEs5cGNh?oc=5",
+   "date": "2026-10-15",
+   "category": "국가인공지능전략위원회",
+   "region": "정부",
+   "score": 0,
+   "similar_count": 0,
+   "source": "국가인공지능전략위원회",
+   "importance": 0
+  },
+  {
+   "title": "국가AI전략위-복지부, 바이오 데이터 기증 참여…의료·바이오 AI 활용 기반 확대",
+   "link": "https://news.google.com/rss/articles/CBMiaEFVX3lxTFB1NFIyS3BLQzZWc0plZGM0Sng4M3lKSzZuaE5aakJqaUw1MDRoWWM1XzNNM3MwSFhYRm4xWWJBaE5ZSS00aV8zQ3lUV2FsZ0cxV3BnTWkyRjBHWXF3NXgySEVqYkNUeGli?oc=5",
+   "date": "2026-10-15",
+   "category": "국가인공지능전략위원회",
+   "region": "정부",
+   "score": 0,
+   "similar_count": 0,
+   "source": "국가인공지능전략위원회",
+   "importance": 0
+  },
+  {
+   "title": "소버린 의료AI 향한 '제2의 금 모으기'…국민 100만명 바이오 데이터 구축 속도",
+   "link": "https://news.google.com/rss/articles/CBMiTkFVX3lxTE4wQ29xQkExYjctejJaMUZJY3J3V185ZUxid2FJM0p0ek43c1FqVVR2ZlE5OWZSbC1wbjZ0TENuTWVSaFhGc2t5QWJsS3czZw?oc=5",
+   "date": "2026-10-15",
+   "category": "국가인공지능전략위원회",
+   "region": "정부",
+   "score": 0,
+   "similar_count": 0,
+   "source": "국가인공지능전략위원회",
+   "importance": 0
+  },
+  {
+   "title": "국가AI전략위·복지부, 바이오 데이터 기증 참여 독려…의료 AI 기반 확대",
+   "link": "https://news.google.com/rss/articles/CBMickFVX3lxTFBXZktTZ2haOTFEZXdzLVNFWURVdHBiVU4tR0NDaHJWMU05a1RvUDlIUGVMaTJla0FBM2VJVVN3QU9Xd29yOVhTZ1prZmU4NGFSdFJBdlQ2bjZTTzV5bnVuclpTLXNJQldQYmd1c1NpMTRVQdIBdEFVX3lxTE5tSDEwYnNuWk40Y09IY1F4Yzg4eEN4VUdncVBISjVlYkZnNXgxU3FXOFhtdXZvc2dKTkxzbXAxZktBbFl6MVRHWW85cVdmY2V2RDRIa2RjNERzSEZQVm1FWktkeU1ZZVMtOEhYNXQtbGlWUUlW?oc=5",
+   "date": "2026-10-15",
+   "category": "국가인공지능전략위원회",
+   "region": "정부",
+   "score": 0,
+   "similar_count": 0,
+   "source": "국가인공지능전략위원회",
+   "importance": 0
+  },
+  {
+   "title": "정은경 장관·하정우 부위원장, 의료 AI 위해 바이오 데이터 직접 기증",
+   "link": "https://news.google.com/rss/articles/CBMiVkFVX3lxTE8tREJRMno1NmlUS0dzWnJwUTg1dW1TNlhjd0JhaVphZ1dIcDRoNk9sblk1aXRheGFiTXFMTXl4Wkc2dVlJbmExLXlmMUZoVGlHUTREQmFn?oc=5",
+   "date": "2026-10-15",
+   "category": "국가인공지능전략위원회",
+   "region": "정부",
+   "score": 0,
+   "similar_count": 0,
+   "source": "국가인공지능전략위원회",
+   "importance": 0
+  },
+  {
+   "title": "AI전략위·복지부, 바이오데이터 기증…100만명 구축 속도",
+   "link": "https://news.google.com/rss/articles/CBMigAFBVV95cUxNTGlYY3hhVkhyd0N0V0tDYk9ITXg4OG5mbGRWNlNjalB0ekhiT0VxQnJKYmtaZC1qRkVkQVJSODJjVjB6eWtSVGp1czBkNVduNmNFTGJSUGxNVjM2MjFFYkRFbnpGRDZaNGhYWVh4bWZNb0h0akRnWUpFMU5RUG1laA?oc=5",
+   "date": "2026-10-15",
+   "category": "국가인공지능전략위원회",
+   "region": "정부",
+   "score": 0,
+   "similar_count": 0,
+   "source": "국가인공지능전략위원회",
+   "importance": 0
+  },
+  {
+   "title": "국가AI전략위, 복지부와 국가 의료·바이오 데이터 구축 협력",
+   "link": "https://news.google.com/rss/articles/CBMiWkFVX3lxTE5hdUlyeHI2eFlHOVlEMktHNERTQ0tCWmd0b281UjNjOEdmTGYxaUpNTUJHVHBaVk1BNUFIWjZ6TzI1RzI4UVFUUUFKenNXX0NpOHA3ZmZuYmtwdw?oc=5",
+   "date": "2026-10-15",
+   "category": "국가인공지능전략위원회",
+   "region": "정부",
+   "score": 0,
+   "similar_count": 0,
+   "source": "국가인공지능전략위원회",
+   "importance": 0
+  },
+  {
+   "title": "건강검진 비대상자 ‘국가통합바이오빅데이터’ 참여 가능...\"의료 AI 핵심 자원 활용\"",
+   "link": "https://news.google.com/rss/articles/CBMibEFVX3lxTE5SRlY1b1FQUUI1M0kwSktVVEIwWFlXWDNHcmlsbTgweVF2VWNBQXVYMVNZc3pCTjJJTGM3WElQNnRYdTBoazVUM1VFeEdlRG15SkVCSlA1X2lXUUxFaDJrNnM5SkJSamVlTHRyQQ?oc=5",
+   "date": "2026-10-15",
+   "category": "국가인공지능전략위원회",
+   "region": "정부",
+   "score": 0,
+   "similar_count": 0,
+   "source": "국가인공지능전략위원회",
+   "importance": 0
+  },
+  {
+   "title": "AI로 피부 진단·맞춤 화장품까지…K-뷰티, 고부가 산업으로 키운다",
+   "link": "https://news.google.com/rss/articles/CBMibEFVX3lxTE5MTzFHZHhHeXRqVERQZVM1QW9DLVhKNDVpNmdFTU1tazhCNHFzZnlFV2hvY3FrTzRrMnZVRE1yaDc5c3JBMlNaT2ZublJwTms5STB5dUx1d1JXYXNJTFhjMFpsajdKLTREeVpCcQ?oc=5",
+   "date": "2026-10-14",
+   "category": "정부 보도자료 (검색)",
+   "region": "정부",
+   "score": 0,
+   "similar_count": 0,
+   "source": "정부 보도자료 (검색)",
+   "importance": 0
+  },
+  {
+   "title": "'AI가 불러올 바이오헬스 혁신의 확산', 국제사회 리더들이 한 곳에 모인다",
+   "link": "https://news.google.com/rss/articles/CBMidEFVX3lxTFBnUW9zUDEyZVhHcFN4WDdYYTVBYnVpMGhOcTRQQ250Znh5ZFdMUmU4WXRWdWxwY0szUkhlZXVYTFM0R2dkdzBhT004Z2dvQXh2bU1Lei14LXNycDdvcTNmSmExTENKTV9oM0pDOW4xNFBValVS?oc=5",
+   "date": "2026-10-14",
+   "category": "정부 보도자료 (검색)",
+   "region": "정부",
+   "score": 0,
+   "similar_count": 0,
+   "source": "정부 보도자료 (검색)",
+   "importance": 0
+  },
+  {
+   "title": "피지컬 AI 시대 '국방혁신'…신뢰할 수 있는 방패 조건",
+   "link": "https://news.google.com/rss/articles/CBMiaEFVX3lxTE1nUUI3VE44QWtrNHRjX3QyTUxsS2cwMkhMYVcyTW90R0dYSHdNTDRhMVhwY2M0UXY1MzRocnZIU19qTnVKbmZ4MjI4Q2JjMW5lcDdFN0lhRUkxdlo5ajBjejRqT3BfQ0lZ?oc=5",
+   "date": "2026-10-14",
+   "category": "정부 보도자료 (검색)",
+   "region": "정부",
+   "score": 0,
+   "similar_count": 0,
+   "source": "정부 보도자료 (검색)",
+   "importance": 0
+  },
+  {
+   "title": "\"AI 대응은 의료·돌봄 등의 기본서비스와 미래대응기금으로\" 국민숙의단 숙의 후 기본사회 실현 기대 65% → 83%",
+   "link": "https://news.google.com/rss/articles/CBMijAFBVV95cUxOUjBGbndSTDZDaTJTQlhSY0xFUXFHQ01MZEpyMm14dVN5Y1BQTTFaVHRmLTg1YWJGQUtwMndQanFtNmpfX3JETmZRQXMwXzV0Sk9wX29VejVyYzNVelhnWmtjdER6aWgzbnJDeFJJaEhhUG1fU0ZCR2F3ME8wZHdQeHFZRnJyUmF3WnE0WA?oc=5",
+   "date": "2026-10-14",
+   "category": "정부 보도자료 (검색)",
+   "region": "정부",
+   "score": 0,
+   "similar_count": 0,
+   "source": "정부 보도자료 (검색)",
+   "importance": 0
+  },
+  {
+   "title": "AI진단 맞춤형 화장품부터 메디컬 뷰티 서비스 글로벌 진출까지... ‘K-뷰티 서비스’ 전방위 지",
+   "link": "https://news.google.com/rss/articles/CBMidkFVX3lxTE9xUFJoOVV0c19SU3BkSFFZTlc1VzllSVRRY0MxOV8tNVdPQ3k2OXZ0T0VMQ085UG9KUk9ZX19xWHdVTVdrbThpS0dfOXl6MzFtaHZSUDV2cG94bzhhc3g2Tzd1VTBFNjR4djlDNDMxTDNSUXVKRGc?oc=5",
+   "date": "2026-10-14",
+   "category": "정부 보도자료 (검색)",
+   "region": "정부",
+   "score": 0,
+   "similar_count": 0,
+   "source": "정부 보도자료 (검색)",
+   "importance": 0
+  },
+  {
+   "title": "급변하는 글로벌 환경 대응 위해 AI·디지털 기반 신약 임상개발 혁신한다",
+   "link": "https://news.google.com/rss/articles/CBMidkFVX3lxTE5Gb3hYMlNsQkxRZm5nam1zaVpFU192c29JMmE3RmFBOFp4YXpueFRkVXZJUzdTV0IweDdjS1JrckM3TGtVY19sMkVNY3dTb0lJRzk3dVdxc3RnVGVWSEg2dUpoOFlXTFFBSFRTY1VzMUJpTGpiQmc?oc=5",
+   "date": "2026-10-12",
+   "category": "정부 보도자료 (검색)",
+   "region": "정부",
+   "score": 0,
+   "similar_count": 0,
+   "source": "정부 보도자료 (검색)",
    "importance": 0
   }
  ],

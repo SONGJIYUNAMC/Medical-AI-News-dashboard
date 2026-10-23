@@ -1,10 +1,9 @@
 {
-  "generated_at": "2026-10-23T09:34:19.204464+09:00",
+  "generated_at": "2026-10-23T09:54:45.931125+09:00",
   "window_hours": 168,
-  "count": 33,
-  "filtered_out": 255,
+  "count": 14,
+  "filtered_out": 224,
   "category_order": [
-    "국가인공지능전략위원회",
     "정부 보도자료 (검색)",
     "식품의약품안전처",
     "보건복지부"
@@ -12,22 +11,14 @@
   "errors": [],
   "items": [
     {
-      "title": "\"환자에게 닿지 않는 AI는 무용지물\"…의료혁신의 조건은 '형평성'",
-      "link": "https://news.google.com/rss/articles/CBMia0FVX3lxTE5QNi15ZzNMZVNQa2pjV2lFekhCYTBvSnpJWkpBRlNnSi1fRWZtZEhBQ2huV3VOT2FrUHZKdDV3R0l3cWZseVFPdV9IUEkwaDMtN3h6UHc4Z3o0QjQ2azVTcFQ0UkhWWEhRd0ZV?oc=5",
-      "summary": "\"환자에게 닿지 않는 AI는 무용지물\"…의료혁신의 조건은 '형평성' 히트뉴스",
-      "pubDate": "2026-10-23T06:05:00+09:00",
-      "agency": "국가인공지능전략위원회",
-      "kind": "기타 발표",
-      "via": "gnews"
-    },
-    {
       "title": "‘디지털의료·건강지원기기 성능인증 제도’ KIMES 현장 세미나 및 홍보관 운영",
       "link": "https://news.google.com/rss/articles/CBMidkFVX3lxTE82dzdnc1VzcDBNc0RPUnMyNDRPYVYtNkdGYTZGeGZiNkc3WHdNQnF3akQ5cWoyV3UtdDlYMi15anZGbmtWenM2UmVPR0V4R2NFVnQ0WEFHS3hJNC02cmdDZlJjVS1Oamd2RFRkM2hmM3FpZGhRQVE?oc=5",
       "summary": "‘디지털의료·건강지원기기 성능인증 제도’ KIMES 현장 세미나 및 홍보관 운영 대한민국 정책브리핑",
       "pubDate": "2026-10-22T10:25:55+09:00",
       "agency": "정부 보도자료 (검색)",
       "kind": "가이드라인·기준",
-      "via": "gnews"
+      "via": "gnews",
+      "official": true
     },
     {
       "title": "공정위, ｢인공지능(AI) 관련 표시·광고 가이드라인｣ (안) 의견청취 실시",
@@ -36,7 +27,8 @@
       "pubDate": "2026-10-22T10:00:00+09:00",
       "agency": "정부 보도자료 (검색)",
       "kind": "가이드라인·기준",
-      "via": "gnews"
+      "via": "gnews",
+      "official": true
     },
     {
       "title": "[보도참고] ‘디지털의료·건강지원기기 성능인증 제도’ KIMES 현장 세미나 및 홍보관 운영",
@@ -45,7 +37,8 @@
       "pubDate": "2026-10-22T07:59:15+09:00",
       "agency": "식품의약품안전처",
       "kind": "가이드라인·기준",
-      "via": "rss"
+      "via": "rss",
+      "official": true
     },
     {
       "title": "'AI 헬스케어 서울선언문' 발표…\"AI 혁신 혜택, 전 인류가 공평하게\"",
@@ -54,7 +47,8 @@
       "pubDate": "2026-10-21T15:33:45+09:00",
       "agency": "정부 보도자료 (검색)",
       "kind": "지원사업·정책",
-      "via": "gnews"
+      "via": "gnews",
+      "official": true
     },
     {
       "title": "AI 혁신 혜택의 공평한 접근 약속... 보건복지부·세계보건기구, ｢AI 헬스케어 서울선언문｣ 공동",
@@ -63,7 +57,8 @@
       "pubDate": "2026-10-21T11:08:45+09:00",
       "agency": "정부 보도자료 (검색)",
       "kind": "지원사업·정책",
-      "via": "gnews"
+      "via": "gnews",
+      "official": true
     },
     {
       "title": "AI 혁신 혜택의 공평한 접근 약속... 보건복지부·세계보건기구, AI 헬스케어 서울선언문· 공동 발표",
@@ -72,7 +67,8 @@
       "pubDate": "2026-10-21T09:35:00+09:00",
       "agency": "보건복지부",
       "kind": "기타 발표",
-      "via": "rss"
+      "via": "rss",
+      "official": true
     },
     {
       "title": "[9.1.화.석간] 내가 참여한 건강조사 데이터, 인공지능 기반 맞춤 건강리포트로 돌려 드립니다!",
@@ -81,133 +77,8 @@
       "pubDate": "2026-10-21T00:09:23+09:00",
       "agency": "정부 보도자료 (검색)",
       "kind": "지원사업·정책",
-      "via": "gnews"
-    },
-    {
-      "title": "국가AI전략위, 강원 AI 정책현장 점검…의료·교통·데이터센터 살펴",
-      "link": "https://news.google.com/rss/articles/CBMiaEFVX3lxTFBmdG1YZDhqcndiTi1GdEdPN25waEY5Y1dUSjhkM2ZUTlphTG9TS19UckFDM1ZQcllUMUpiMUl6dWJGQ0xZYzVkUDl3ekNvZjdJV3l2d1RielA2WVM4TWs1djJkY1hlb1o4?oc=5",
-      "summary": "국가AI전략위, 강원 AI 정책현장 점검…의료·교통·데이터센터 살펴 테크월드",
-      "pubDate": "2026-10-20T15:40:00+09:00",
-      "agency": "국가인공지능전략위원회",
-      "kind": "지원사업·정책",
-      "via": "gnews"
-    },
-    {
-      "title": "하정우 AI전략위 부위원장, 강원서 ‘AI 의료·교통·데이터센터’ 현장 점검",
-      "link": "https://news.google.com/rss/articles/CBMiU0FVX3lxTE9kSjdCbXJLZkYtanluTDgzcTFsSW05a2pPbG5MQ05pcVpsQXgtbEFOT2dvbElJMEVNQkMwMmVZQk8tM2dyQ3g4NWZPWFA2TjFOTmhR?oc=5",
-      "summary": "하정우 AI전략위 부위원장, 강원서 ‘AI 의료·교통·데이터센터’ 현장 점검 데일리안",
-      "pubDate": "2026-10-20T13:01:00+09:00",
-      "agency": "국가인공지능전략위원회",
-      "kind": "지원사업·정책",
-      "via": "gnews"
-    },
-    {
-      "title": "[AI픽] 의료부터 데이터센터까지…국가AI전략위, 강원 AI 전환 점검",
-      "link": "https://news.google.com/rss/articles/CBMiW0FVX3lxTE5fQ3BuNTMwc2FJVERpWVdSek1YWTBlUjROZTZpcDdXQjh2dTZOclhsNF9OSklOWldyU1hIMkRjWm1EdVJDNkRNYXRWcjJnX05SWGVBcndIclU4cUXSAWBBVV95cUxPdU56X0RrTVJjZHlva1o2RGZsUmxXSmFYSkF4SU01NHRzNkw2YjZwRmJXZFRmZkQ2M09oMmlCemMtRkZoc0NBVEkzM3N0Mjk0ckJjdERVWDJQVjU2SGx0NFc?oc=5",
-      "summary": "[AI픽] 의료부터 데이터센터까지…국가AI전략위, 강원 AI 전환 점검 연합뉴스",
-      "pubDate": "2026-10-20T13:00:03+09:00",
-      "agency": "국가인공지능전략위원회",
-      "kind": "지원사업·정책",
-      "via": "gnews"
-    },
-    {
-      "title": "하정우 부위원장, 강원 AI 정책 현장 점검…의료·교통·인프라 살펴",
-      "link": "https://news.google.com/rss/articles/CBMiVkFVX3lxTE1HMERFZVNnYXg1bmt3WXRIRVp0RS1sT1ZMbTFwSHZyajdXSHdFakNoU1BQMk85TjAyd1NKd19LS0cxZlRGaXB3UWlqc1VnOWJKRU1CRkNn?oc=5",
-      "summary": "하정우 부위원장, 강원 AI 정책 현장 점검…의료·교통·인프라 살펴 지디넷코리아",
-      "pubDate": "2026-10-20T13:00:01+09:00",
-      "agency": "국가인공지능전략위원회",
-      "kind": "지원사업·정책",
-      "via": "gnews"
-    },
-    {
-      "title": "하정우 AI전략위 부위원장, 강원 AI 기본의료·교통·데이터센터 현장 방문 - 머니투데이",
-      "link": "https://news.google.com/rss/articles/CBMidEFVX3lxTE01QXpqYndkTkhXWWhHOFljeXd6UzJwMXlsN1l4RWlNOHBvMDNNS0w1dTlXVkdKWnctVGpabi1NNjRzUk1MWTB5WnVfblN3UmtQal9vckoteDFjMm8xM1FFYnNIUGdYbHozODR2NDFYNDY2QlJw0gF6QVVfeXFMTjJUR1paZEdCZ1lSOHBaeWNidTk1Z2F4b1ZtYzNTWmhwSjhxMzl2S1k1a3pjX1RlMVZtUndxeFY0ZDFwbWgwVFJnMzBxcjJkaGFPaTdFdlQ0Ny1QSElES2NRel9VSmI0WVdCZnlzV1BTcGJjS0JrVVZBOEE?oc=5",
-      "summary": "하정우 AI전략위 부위원장, 강원 AI 기본의료·교통·데이터센터 현장 방문 - 머니투데이 머니투데이",
-      "pubDate": "2026-10-20T13:00:00+09:00",
-      "agency": "국가인공지능전략위원회",
-      "kind": "지원사업·정책",
-      "via": "gnews"
-    },
-    {
-      "title": "대통령직속국가AI전략위, 평창군 의료 AI·디지털 헬스 현장 방문",
-      "link": "https://news.google.com/rss/articles/CBMiW0FVX3lxTFBQblpEcVQ1MG5lN1FJNEN3dFVVLUpPMnRvLW8tUmxBRktyVXlXck95TUNDY1NNR1E1NVlzZ3NVYTRqbFJadUZmeDVNam9LaUxjY2pnY0h6WGNhT2s?oc=5",
-      "summary": "대통령직속국가AI전략위, 평창군 의료 AI·디지털 헬스 현장 방문 강원일보",
-      "pubDate": "2026-10-20T00:05:00+09:00",
-      "agency": "국가인공지능전략위원회",
-      "kind": "지원사업·정책",
-      "via": "gnews"
-    },
-    {
-      "title": "평창군 AI 의료 안전망 국가적 관심",
-      "link": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTFBzRW5SQzNZQlNEY2NoUXdUaFBMNjVoS29lYlVIZnVnWjY0cUxRQkVhNDBXZXhqZUh2XzlvU0JqM0JTbmQzaWRMcS1BZjFsVWJrTVVuNmdyMWZFOXFvZnlHZDFMRnJzY1E?oc=5",
-      "summary": "평창군 AI 의료 안전망 국가적 관심 강원도민일보",
-      "pubDate": "2026-10-20T00:02:02+09:00",
-      "agency": "국가인공지능전략위원회",
-      "kind": "기타 발표",
-      "via": "gnews"
-    },
-    {
-      "title": "국가AI전략위, 평창군 의료원 방문…AI 기본의료 현장 점검",
-      "link": "https://news.google.com/rss/articles/CBMibkFVX3lxTFBKYVFFU3FGT1JjelpXbTZ2YVhhUnBFRHoyZndjMkVmQkxNVXpjd01hSjZHUTUtOFBpVmd6QXVkdzU5ajlIWnFzNXJOalhqWW1PbTh1M3hCcTN5Mmp0Y1JzazFvME8yM0ZucHhpQmN3?oc=5",
-      "summary": "국가AI전략위, 평창군 의료원 방문…AI 기본의료 현장 점검 국제뉴스",
-      "pubDate": "2026-10-19T20:34:47+09:00",
-      "agency": "국가인공지능전략위원회",
-      "kind": "지원사업·정책",
-      "via": "gnews"
-    },
-    {
-      "title": "평창 찾은 국가AI위 의료취약지 안전망 점검 : 책",
-      "link": "https://news.google.com/rss/articles/CBMiVEFVX3lxTE9TTlFZWHdlVFJ2SmlnQ2xnZFdEZFVnVmxocWZHOFlfdWRiMEZQNjdBNDgxVDZ5OW4zUGlKSFJCVVliVXpTeHBWRTZOYmtsbmJXd296Rw?oc=5",
-      "summary": "평창 찾은 국가AI위 의료취약지 안전망 점검 : 책 의약일보",
-      "pubDate": "2026-10-19T18:40:00+09:00",
-      "agency": "국가인공지능전략위원회",
-      "kind": "기타 발표",
-      "via": "gnews"
-    },
-    {
-      "title": "국가AI전략위, 평창군보건의료원 현장 방문",
-      "link": "https://news.google.com/rss/articles/CBMiZEFVX3lxTFBJZE9FYUFNdEE5OTk4bng1Y3d6amE4LVJkWURCWS1yYUZkU3JMM1JQaE9JbVE1YUprdWtrV2RNN3o5RHVfVnpwQXN4STBqcHBWVXdWSXVFR3JCOE1KcFNkLWtNR1M?oc=5",
-      "summary": "국가AI전략위, 평창군보건의료원 현장 방문 G1방송",
-      "pubDate": "2026-10-19T17:36:59+09:00",
-      "agency": "국가인공지능전략위원회",
-      "kind": "지원사업·정책",
-      "via": "gnews"
-    },
-    {
-      "title": "하정우 국가AI전략위 부위원장, 강원서 의료·교통·데이터센터 현장 점검",
-      "link": "https://news.google.com/rss/articles/CBMigAFBVV95cUxPLXNHTm81ZEk1UUlqWEk5M2ZQRnVBZmJRT255eS1uYnltcmVDZ3cxMGlJWUF4Zkk1a1NQTzU1ZFVSNEtZNWVTZXEyeGxnTkxmRmJqekVQczZkd1hxRnI4MzN2Q1ZkNmc2OWdPX0NINkc2dGhVYUdvQXVtM2UzVHdaSQ?oc=5",
-      "summary": "하정우 국가AI전략위 부위원장, 강원서 의료·교통·데이터센터 현장 점검 이데일리",
-      "pubDate": "2026-10-19T17:08:57+09:00",
-      "agency": "국가인공지능전략위원회",
-      "kind": "지원사업·정책",
-      "via": "gnews"
-    },
-    {
-      "title": "평창군, 의료취약지 AI 일차의료 제도 개선 건의",
-      "link": "https://news.google.com/rss/articles/CBMieEFVX3lxTE40N0FpRTAzbm9Vamw2RkQ0amsySTAtQmZWR19EaDJxUDBlWlIxc1k5ckI4ZDlZY2RRYjNSeEtCQWxPYktRTDRWTElhejVlME5qa203YVF3R0h1TGZIYXZzV2hZVkJERGZIbGl1Qy1kN1dqeXhtYnpzWNIBeEFVX3lxTE40N0FpRTAzbm9Vamw2RkQ0amsySTAtQmZWR19EaDJxUDBlWlIxc1k5ckI4ZDlZY2RRYjNSeEtCQWxPYktRTDRWTElhejVlME5qa203YVF3R0h1TGZIYXZzV2hZVkJERGZIbGl1Qy1kN1dqeXhtYnpzWA?oc=5",
-      "summary": "평창군, 의료취약지 AI 일차의료 제도 개선 건의 뉴시스",
-      "pubDate": "2026-10-19T16:13:24+09:00",
-      "agency": "국가인공지능전략위원회",
-      "kind": "기타 발표",
-      "via": "gnews"
-    },
-    {
-      "title": "국가AI전략위원회, 평창 방문…AI로 의료취약지 공백 메운다",
-      "link": "https://news.google.com/rss/articles/CBMiW0FVX3lxTE96LWg3eEFjbi1RSE95bkRoOHhNcThfeVNxNzhLX1ZuYW8xb0NaT21SV2xMYkg0Nm5seEVKS0VpRzVDLXhnVlBadEV1OGFXSWxCb2J3NVlwQmJEdEHSAWBBVV95cUxPRklLR2dVZGZTWGpWTnVPMXVwT1ZON2dWaGRZVktpRVpaZjBhVHZhRnF6MEZOQW9vbVNFRVVhUlRONkFZdThENDdjajBDWFYzRmJ6MTFGcTBmclcwd0lYT20?oc=5",
-      "summary": "국가AI전략위원회, 평창 방문…AI로 의료취약지 공백 메운다 연합뉴스",
-      "pubDate": "2026-10-19T16:08:21+09:00",
-      "agency": "국가인공지능전략위원회",
-      "kind": "지원사업·정책",
-      "via": "gnews"
-    },
-    {
-      "title": "의료취약지 공백, AI가 메운다…정부, 평창 공공의료 모델 주목",
-      "link": "https://news.google.com/rss/articles/CBMiakFVX3lxTE9qRjQ5Y2t2TWh6elBTYUdFbmRDVExzZjI1NnJmeUhlRHl0bzgzQTdhYmFWWFZrVmJEMW1OYTdWdWNDRnFsSGZiNHJxUzBUS1EzVTcwaUI5Y01tdjFUWm5UbXUxMy1YY1RaU1E?oc=5",
-      "summary": "의료취약지 공백, AI가 메운다…정부, 평창 공공의료 모델 주목 nbn 시사경제",
-      "pubDate": "2026-10-19T16:06:19+09:00",
-      "agency": "국가인공지능전략위원회",
-      "kind": "기타 발표",
-      "via": "gnews"
+      "via": "gnews",
+      "official": true
     },
     {
       "title": "식약처, 식의약 공공데이터·AI 활용 우수작 5건 선정",
@@ -216,7 +87,8 @@
       "pubDate": "2026-10-19T16:00:00+09:00",
       "agency": "정부 보도자료 (검색)",
       "kind": "지원사업·정책",
-      "via": "gnews"
+      "via": "gnews",
+      "official": true
     },
     {
       "title": "[보도참고] 식약처, 식의약 공공데이터·AI 활용 우수작 5건 선정",
@@ -225,16 +97,8 @@
       "pubDate": "2026-10-19T15:59:22+09:00",
       "agency": "식품의약품안전처",
       "kind": "기타 발표",
-      "via": "rss"
-    },
-    {
-      "title": "대통령 직속 국가 AI 전략위원회 평창군보건의료원 현장 방문",
-      "link": "https://news.google.com/rss/articles/CBMickFVX3lxTE5UbG1aengzSHZSQ09pOGhtNTZ0VUg4QTU5Rk00OEVfNURuNi1YcnROWWZ1Szc5UXhEQThmNlR3bUd5V3pMazBMUU5mazdxX0V2OFVtbWNuazg5VXpUNVlRYkxLNmJpRmI1Q2h6REJRcnFhQdIBdkFVX3lxTE0wRng2ZVB5ekZiREV1LWhHUlI2d2NITFNweE1hQUtHb1JhbWh3NC0wZ1IzNlRYODMyOS1QY05YWFA5R25hNnJWVFBQYkp4X0RsQkt3aWZDZ19GbnZKbFkwVUpYVkN5YkQtMmZwRm9PQ3NVaVpJemc?oc=5",
-      "summary": "대통령 직속 국가 AI 전략위원회 평창군보건의료원 현장 방문 LG헬로비전",
-      "pubDate": "2026-10-19T15:02:41+09:00",
-      "agency": "국가인공지능전략위원회",
-      "kind": "지원사업·정책",
-      "via": "gnews"
+      "via": "rss",
+      "official": true
     },
     {
       "title": "이형훈 제2차관, 의료AI 본격 추진 대비 네이버 데이터센터 ‘각(GAK) 세종’ 방문",
@@ -243,16 +107,8 @@
       "pubDate": "2026-10-19T14:35:00+09:00",
       "agency": "보건복지부",
       "kind": "지원사업·정책",
-      "via": "rss"
-    },
-    {
-      "title": "하정우 국가AI전략위 부위원장 , 평창군보건의료원 'AI 기본의료' 현장 방문",
-      "link": "https://news.google.com/rss/articles/CBMiZkFVX3lxTFBCcjc1Qy1pU3VORnN4S3lsVmNYWnZsUXNkUGtLWXdYbDRLdTQ5T3V0dHNQRHUzd0d0RTFhcjQ0LXdtVWhaeFJUejJ4MV9xQU5oNnJKbVI0RzhzRXNJNV82Vi03Nlk5UQ?oc=5",
-      "summary": "하정우 국가AI전략위 부위원장 , 평창군보건의료원 'AI 기본의료' 현장 방문 이로운넷",
-      "pubDate": "2026-10-19T14:23:44+09:00",
-      "agency": "국가인공지능전략위원회",
-      "kind": "지원사업·정책",
-      "via": "gnews"
+      "via": "rss",
+      "official": true
     },
     {
       "title": "[모두의 토론회] AI 시대 개인정보, 어떻게 쓰여야 할까요? - 카드/한컷 | 멀티미디어",
@@ -261,7 +117,8 @@
       "pubDate": "2026-10-19T12:20:14+09:00",
       "agency": "정부 보도자료 (검색)",
       "kind": "지원사업·정책",
-      "via": "gnews"
+      "via": "gnews",
+      "official": true
     },
     {
       "title": "[모두의 토론회] AI 시대 개인정보, 어떻게 쓰여야 할까요? - 전체 | 카드/한컷 | 멀티미디어",
@@ -270,7 +127,8 @@
       "pubDate": "2026-10-19T11:06:06+09:00",
       "agency": "정부 보도자료 (검색)",
       "kind": "지원사업·정책",
-      "via": "gnews"
+      "via": "gnews",
+      "official": true
     },
     {
       "title": "WHO 서태평양 지역총회서 역내 보건 현안 대응 위한 한국 전략과 성과 알린다",
@@ -279,7 +137,8 @@
       "pubDate": "2026-10-18T12:05:00+09:00",
       "agency": "보건복지부",
       "kind": "지원사업·정책",
-      "via": "rss"
+      "via": "rss",
+      "official": true
     },
     {
       "title": "2명 이상 장애인가구 1만 3천 명 집중조사 등 복지위기가구 총 19만 명 발굴·조사",
@@ -288,25 +147,8 @@
       "pubDate": "2026-10-18T12:05:00+09:00",
       "agency": "보건복지부",
       "kind": "지원사업·정책",
-      "via": "rss"
-    },
-    {
-      "title": "평창 AI 의료모델 전국 확대 검토…국가전략위, 의료취약지 공공의료 혁신 현장 점검",
-      "link": "https://news.google.com/rss/articles/CBMiY0FVX3lxTE1wNU1mb01wZTVyOUp5R3hVYjhvSDZQZEljVGl0TkZENHBtMFlNMmZZSW5YbHgyM0NSNi1oWE9aXzNTd29ta1NHZ3cxWGpCRTB0bG5LVy14WmZrZ3Z5dkM2eVlNdw?oc=5",
-      "summary": "평창 AI 의료모델 전국 확대 검토…국가전략위, 의료취약지 공공의료 혁신 현장 점검 쿠키뉴스",
-      "pubDate": "2026-10-18T05:04:42+09:00",
-      "agency": "국가인공지능전략위원회",
-      "kind": "지원사업·정책",
-      "via": "gnews"
-    },
-    {
-      "title": "[DH times K-정밀의료·의료데이터 정책]“‘한국인 100만명 바이오데이터 의료AI 만든다’…정부, 국가 바이오빅데이터 전 국민 참여 확대”",
-      "link": "https://news.google.com/rss/articles/CBMiakFVX3lxTFA3WjlRaG1oS19hcVc2QXh4SzdCaHNNUkF4THFfWlNYM1h2bzhTT1Nkcm16aEk4M3lXUFpCWXFROXU0eTYwdHhPdnZMblQyR3VkNGRJTlk4b1JyWUVvd1Q5Xy01MzVUd3J6OUE?oc=5",
-      "summary": "[DH times K-정밀의료·의료데이터 정책]“‘한국인 100만명 바이오데이터 의료AI 만든다’…정부, 국가 바이오빅데이터 전 국민 참여 확대” https://www.dhtimes.co.kr/",
-      "pubDate": "2026-10-17T18:56:51+09:00",
-      "agency": "국가인공지능전략위원회",
-      "kind": "지원사업·정책",
-      "via": "gnews"
+      "via": "rss",
+      "official": true
     }
   ]
 }
