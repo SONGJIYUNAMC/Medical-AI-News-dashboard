@@ -1,15 +1,15 @@
 {
  "month": "2026-10",
- "generated_at": "2026-10-23T08:00:40.852738+09:00",
+ "generated_at": "2026-10-23T09:15:53.916990+09:00",
  "prev_month": null,
  "collected_days": 9,
  "first_day": "2026-10-15",
  "last_day": "2026-10-23",
- "total": 2581,
+ "total": 2598,
  "prev_total": null,
  "by_region": {
-  "국내": 2193,
-  "해외": 337,
+  "국내": 2207,
+  "해외": 340,
   "정부": 51
  },
  "weekly": {
@@ -19,35 +19,35 @@
    "정부": 19
   },
   "2026-W43": {
-   "국내": 1380,
-   "해외": 184,
+   "국내": 1394,
+   "해외": 187,
    "정부": 32
   }
  },
  "categories": [
   {
    "name": "국내 · 기타 (의료 AI·병원 AI 키워드)",
-   "count": 540,
+   "count": 544,
    "prev": 0,
-   "delta": 540
+   "delta": 544
   },
   {
    "name": "국내 · 국내 의료 AI 기업",
-   "count": 489,
+   "count": 493,
    "prev": 0,
-   "delta": 489
+   "delta": 493
   },
   {
    "name": "국내 · 국내 정책·규제",
-   "count": 392,
+   "count": 393,
    "prev": 0,
-   "delta": 392
+   "delta": 393
   },
   {
    "name": "국내 · 국내 의료기관",
-   "count": 238,
+   "count": 241,
    "prev": 0,
-   "delta": 238
+   "delta": 241
   },
   {
    "name": "국내 · AI 거버넌스·보안",
@@ -57,27 +57,27 @@
   },
   {
    "name": "국내 · 해외 의료기관·정책·규제",
-   "count": 178,
+   "count": 179,
    "prev": 0,
-   "delta": 178
+   "delta": 179
   },
   {
    "name": "해외 · 해외 의료기관 AI 도입·운영",
-   "count": 174,
+   "count": 175,
    "prev": 0,
-   "delta": 174
+   "delta": 175
   },
   {
    "name": "국내 · 학술·연구·행사",
-   "count": 156,
+   "count": 157,
    "prev": 0,
-   "delta": 156
+   "delta": 157
   },
   {
    "name": "해외 · 해외 정책·규제 (미국)",
-   "count": 88,
+   "count": 90,
    "prev": 0,
-   "delta": 88
+   "delta": 90
   },
   {
    "name": "해외 · 해외 연구·학술",
@@ -167,7 +167,7 @@
   },
   {
    "word": "아산병원",
-   "count": 39,
+   "count": 40,
    "prev": 0,
    "status": ""
   },
@@ -184,14 +184,14 @@
    "status": ""
   },
   {
-   "word": "구글",
+   "word": "학술대회",
    "count": 29,
    "prev": 0,
    "status": ""
   },
   {
-   "word": "학술대회",
-   "count": 28,
+   "word": "구글",
+   "count": 29,
    "prev": 0,
    "status": ""
   },
@@ -1013,6 +1013,17 @@
    "importance": 52
   },
   {
+   "title": "대구 스타기업 4개사, FIX서 2100만 달러 투자·수출 계약",
+   "link": "https://www.news1.kr/local/daegu-gyeongbuk/6328352",
+   "date": "2026-10-22",
+   "category": "국내 의료 AI 기업",
+   "region": "국내",
+   "score": 5,
+   "similar_count": 22,
+   "source": "news1.kr",
+   "importance": 52
+  },
+  {
    "title": "“100만명 바이오 빅데이터 구축”… 하정우·정은경 생체자료 기증",
    "link": "https://www.kmib.co.kr/article/view.asp?arcid=9000022920&cp=nv",
    "date": "2026-10-15",
@@ -1022,17 +1033,6 @@
    "similar_count": 19,
    "source": "kmib.co.kr",
    "importance": 51
-  },
-  {
-   "title": "대구 스타기업 4개사, FIX서 2100만 달러 투자·수출 계약",
-   "link": "https://www.news1.kr/local/daegu-gyeongbuk/6328352",
-   "date": "2026-10-22",
-   "category": "국내 의료 AI 기업",
-   "region": "국내",
-   "score": 5,
-   "similar_count": 21,
-   "source": "news1.kr",
-   "importance": 50
   },
   {
    "title": "씨어스, UAE서 'AI 부정맥 국가검진' 수행 초읽기…\"최종 테스트 돌입\"",
@@ -1393,9 +1393,9 @@
     "category": "기타 (의료 AI·병원 AI 키워드)",
     "region": "국내",
     "score": 6,
-    "similar_count": 12,
+    "similar_count": 13,
     "source": "khan.co.kr",
-    "importance": 33
+    "importance": 35
    }
   ],
   "국내 · 학술·연구·행사": [
