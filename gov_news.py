@@ -8,7 +8,7 @@ from datetime import datetime, timedelta, timezone
 from email.utils import parsedate_to_datetime
 from html import unescape
 from pathlib import Path
-from urllib.parse import quote
+from urllib.parse import quote, urlparse
 
 import requests
 
@@ -61,7 +61,14 @@ def parse_items(root):
         if not pub:  # 날짜가 없거나 형식을 모르는 RSS는 버리지 않고 수집일(오늘)로 처리
             pub = datetime.now(KST)
         yield {"title": strip(it.findtext("title")), "link": (it.findtext("link") or "").strip(),
-               "summary": strip(it.findtext("description"))[:300], "pubDate": pub}
+               "summary": strip(it.findtext("description"))[:300], "pubDate": pub,
+               "source_url": (it.find("source").get("url") if it.find("source") is not None else "") or ""}
+
+
+def is_official(url: str) -> bool:
+    """공식 출처 도메인(정부·공공기관 .go.kr, 정책브리핑 korea.kr)인지."""
+    h = (urlparse(url).hostname or "").lower()
+    return h == "korea.kr" or h.endswith(".korea.kr") or h == "go.kr" or h.endswith(".go.kr")
 
 
 def kind_of(text, kinds):
@@ -131,8 +138,11 @@ def main():
         if a["pubDate"] < cutoff - (timedelta(days=1) if mode == "api" else timedelta(0)):
             return
         text = a["title"] + " " + a["summary"]
-        if mode == "gnews":  # 제목 끝 '- 매체명' 제거
-            a["title"] = re.sub(r"\s-\s[^-]+$", "", a["title"])
+        if mode == "gnews":
+            if not is_official(a.get("source_url", "")):  # 언론사 기사(검색 결과)는 제외 — 정부·기관이 직접 낸 자료만
+                dropped += 1
+                return
+            a["title"] = re.sub(r"\s-\s[^-]+$", "", a["title"])  # 제목 끝 '- 매체명' 제거
         if not any(p.search(text) for p in ai) or not (hc or any(p.search(text) for p in health) or any(p.search(text) for p in policy)):
             dropped += 1
             return
@@ -142,7 +152,7 @@ def main():
         seen.add(key)
         items.append({"title": a["title"], "link": a["link"], "summary": a["summary"],
                       "pubDate": a["pubDate"].isoformat(), "agency": agency,
-                      "kind": kind_of(text, cfg["kinds"]), "via": mode})
+                      "kind": kind_of(text, cfg["kinds"]), "via": mode, "official": True})
 
     with requests.Session() as s:
         # 1) 공식 API (공공데이터포털) — 먼저 처리해 같은 기사의 우선 출처가 되도록 함
