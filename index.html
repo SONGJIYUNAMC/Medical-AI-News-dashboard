@@ -9,52 +9,89 @@
   @font-face { font-family: "본고딕"; font-weight: 500; font-display: swap; src: url("fonts/NotoSansKR-Medium.woff") format("woff"); }
   @font-face { font-family: "본고딕"; font-weight: 700; font-display: swap; src: url("fonts/NotoSansKR-Bold.woff") format("woff"); }
   :root {
-    --navy: #1f3a5f; --teal: #2a7f9e; --bg: #fbfcfd; --card: #ffffff;
-    --text: #1d2733; --muted: #6b7783; --line: #e6ebf0; --chip: #eef5f9;
-    --head-bg: #ffffff; --head-text: #1f3a5f; --accent-soft: #e6f1f6;
+    --navy: #1f3a5f; --teal: #2a7f9e; --bg: #f4f6f9; --card: #ffffff;
+    --text: #1d2733; --muted: #6b7783; --line: #e6ebf0; --chip: #eef3f7;
+    --accent-soft: #e3eef6; --shadow: 0 1px 3px rgba(20, 40, 70, .06);
   }
   @media (prefers-color-scheme: dark) {
-    :root { --bg: #11161d; --card: #1a222c; --text: #e6ebf1; --muted: #93a0ae; --line: #2a3441; --chip: #22364a; --head-bg: #151c25; --head-text: #e6ebf1; --accent-soft: #1f3445; --navy: #9cc7e0; }
+    :root { --bg: #11161d; --card: #1a222c; --text: #e6ebf1; --muted: #93a0ae; --line: #2a3441; --chip: #22364a;
+            --accent-soft: #1f3445; --navy: #9cc7e0; --shadow: none; }
   }
   * { box-sizing: border-box; }
   body { margin: 0; background: var(--bg); color: var(--text); font-size: 15px;
          font-family: "본고딕", "Noto Sans KR", "Malgun Gothic", "맑은 고딕", -apple-system, "Segoe UI", sans-serif; line-height: 1.6; }
-  header { background: var(--head-bg); color: var(--head-text); padding: 26px 20px 18px; border-bottom: 1px solid var(--line); }
-  .wrap { max-width: 1080px; margin: 0 auto; }
-  header h1 { margin: 0; font-size: 22px; letter-spacing: -.3px; }
-  header p { margin: 4px 0 0; font-size: 13px; color: var(--muted); }
-  .controls { position: sticky; top: 0; z-index: 5; background: var(--bg); padding: 14px 20px 10px; border-bottom: 1px solid var(--line); }
-  .tabs { display: flex; flex-wrap: wrap; gap: 6px; margin-bottom: 10px; }
+  .app { display: grid; grid-template-columns: 272px minmax(0, 1fr); min-height: 100vh; }
+  /* ---- 왼쪽 메뉴 ---- */
+  .side { position: sticky; top: 0; height: 100vh; overflow-y: auto; background: var(--card); border-right: 1px solid var(--line); padding: 22px 14px 28px; }
+  .brand { padding: 0 8px 14px; border-bottom: 1px solid var(--line); }
+  .brand h1 { margin: 0; font-size: 18px; color: var(--navy); letter-spacing: -.3px; line-height: 1.35; }
+  .brand p { margin: 4px 0 0; font-size: 12px; color: var(--muted); }
+  .side h4 { margin: 20px 8px 6px; font-size: 11px; font-weight: 700; color: var(--muted); letter-spacing: .04em; }
+  .navlist { display: flex; flex-direction: column; gap: 2px; }
   .tab { border: 1px solid var(--line); background: var(--card); color: var(--text); padding: 6px 13px;
          border-radius: 16px; font-size: 13px; cursor: pointer; font-family: inherit; }
   .tab:hover { border-color: var(--teal); }
-  .region { gap: 22px; border-bottom: 1px solid var(--line); margin-bottom: 10px; }
-  .region .tab { border: 0; background: none; border-radius: 0; padding: 6px 2px 9px; font-size: 15px; font-weight: 700; color: var(--muted);
-                 border-bottom: 3px solid transparent; margin-bottom: -1px; }
-  .region .tab.active { color: var(--navy); border-bottom-color: var(--teal); background: none; }
-  #tabs { flex-wrap: nowrap; overflow-x: auto; scrollbar-width: none; padding-bottom: 2px; }
-  #tabs::-webkit-scrollbar { display: none; }
-  #tabs .tab { flex: none; white-space: nowrap; }
-  .tab.active { background: var(--teal); border-color: var(--teal); color: #fff; }
-  .row { display: flex; flex-wrap: wrap; gap: 8px; align-items: center; }
-  input[type=search] { flex: 1 1 200px; padding: 8px 12px; border: 1px solid var(--line); border-radius: 8px;
-                       background: var(--card); color: var(--text); font-family: inherit; font-size: 14px; }
-  select { padding: 8px 10px; border: 1px solid var(--line); border-radius: 8px; background: var(--card);
-           color: var(--text); font-family: inherit; font-size: 14px; }
-  .dsel { display: inline-flex; gap: 4px; }
-  .dsel select { padding: 8px 6px; }
-  .more { display: none; flex-wrap: wrap; gap: 8px 14px; align-items: center; margin-top: 10px; padding-top: 10px; border-top: 1px dashed var(--line); }
-  .more.open { display: flex; }
-  .chip.score { background: transparent; border: 1px solid var(--line); color: var(--muted); }
-  label.toggle { font-size: 13px; color: var(--muted); display: flex; gap: 6px; align-items: center; cursor: pointer; }
-  .meta { font-size: 12px; color: var(--muted); padding: 14px 20px 0; }
-  .notice { margin: 10px 20px 0; padding: 10px 12px; border-radius: 8px; font-size: 13px;
+  .navlist .tab { display: flex; justify-content: space-between; align-items: center; gap: 8px; width: 100%; text-align: left;
+                  border: 0; background: none; border-radius: 8px; padding: 9px 12px; font-size: 14px; }
+  .navlist .tab:hover { background: var(--chip); }
+  .navlist .tab.active { background: var(--accent-soft); color: var(--navy); font-weight: 700; }
+  .navlist .tab .n { font-size: 12px; color: var(--muted); font-weight: 400; flex: none; }
+  .navlist.region .tab { font-weight: 700; }
+  .field { margin: 0 8px 8px; }
+  .field label.cap { display: block; font-size: 12px; color: var(--muted); margin-bottom: 3px; }
+  .side select, .side input[type=search] { width: 100%; padding: 8px 10px; border: 1px solid var(--line); border-radius: 8px;
+           background: var(--card); color: var(--text); font-family: inherit; font-size: 14px; }
+  .dsel { display: grid; grid-template-columns: 1.3fr 1fr 1fr; gap: 4px; }
+  .dsel select { padding: 8px 4px; }
+  label.toggle { font-size: 13px; color: var(--text); display: flex; gap: 8px; align-items: flex-start; cursor: pointer; margin: 8px 8px 0; line-height: 1.4; }
+  label.toggle input { margin-top: 2px; }
+  .side .csv { margin: 14px 8px 0; width: calc(100% - 16px); border-radius: 8px; text-align: center; }
+  .foldbtn { display: none; width: calc(100% - 16px); margin: 10px 8px 0; border-radius: 8px; text-align: left; }
+  /* ---- 본문 ---- */
+  .content { padding: 24px 28px 56px; min-width: 0; }
+  .meta { font-size: 12px; color: var(--muted); margin-bottom: 14px; }
+  .notice { margin: 0 0 12px; padding: 10px 12px; border-radius: 8px; font-size: 13px;
             background: #fff4e5; color: #7a4a00; border: 1px solid #f3d19e; }
-  main { padding: 14px 20px 48px; }
+  .hotgrid { display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 14px; margin-bottom: 16px; }
+  .hotgrid:empty { display: none; }
+  .card { background: var(--card); border: 1px solid var(--line); border-radius: 12px; padding: 16px 18px; box-shadow: var(--shadow); font-size: 13px; min-width: 0; }
+  .card h3 { margin: 0; font-size: 14px; color: var(--navy); }
+  .card .hint { margin: 2px 0 10px; font-size: 12px; color: var(--muted); }
+  .card ol { margin: 0; padding-left: 18px; }
+  .card li { margin: 7px 0; line-height: 1.5; }
+  .card a { color: var(--text); text-decoration: none; }
+  .card a:hover { text-decoration: underline; }
+  .card .kw { display: flex; flex-wrap: wrap; gap: 6px; }
+  .card .kw button { border: 1px solid var(--line); background: var(--chip); color: var(--text); border-radius: 12px; padding: 2px 10px; font: inherit; cursor: pointer; }
+  .card .kw button:hover { border-color: var(--teal); }
+  .card .up { color: #c0392b; } .card .down { color: #2d6cdf; } .card .sub { color: var(--muted); }
+  .kwbars { display: flex; flex-direction: column; gap: 4px; }
+  .kwrow { display: grid; grid-template-columns: minmax(70px, 38%) 1fr 22px; align-items: center; gap: 8px; width: 100%; padding: 3px 4px;
+           border: 0; background: none; font: inherit; color: var(--text); cursor: pointer; border-radius: 6px; text-align: left; }
+  .kwrow:hover { background: var(--chip); }
+  .kwrow .nm { white-space: nowrap; overflow: hidden; text-overflow: ellipsis; font-size: 13px; }
+  .kwrow .bar { height: 10px; background: var(--chip); border-radius: 5px; overflow: hidden; }
+  .kwrow .bar i { display: block; height: 100%; background: linear-gradient(90deg, #5aa7c2, var(--teal)); border-radius: 5px; }
+  .kwrow .cnt { text-align: right; font-weight: 700; font-size: 13px; }
+  .kwrow .dlt { font-size: 11px; font-weight: 400; margin-left: 2px; }
+  .ranklist { display: flex; flex-direction: column; }
+  .rk { display: flex; gap: 12px; align-items: flex-start; padding: 10px 0; border-top: 1px solid var(--line); }
+  .rk:first-child { border-top: 0; padding-top: 2px; }
+  .rk .big { flex: none; width: 44px; text-align: center; font-size: 28px; font-weight: 700; line-height: 1.05; color: var(--teal); }
+  .rk .big small { display: block; margin-top: 2px; font-size: 10px; font-weight: 400; color: var(--muted); }
+  .rk .tx { min-width: 0; }
+  .rk .tx a { display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical; overflow: hidden; font-weight: 500; line-height: 1.45; }
+  .rk .tx .sub { display: block; margin-top: 2px; font-size: 12px; }
+  details.trend { margin: 0 0 14px; font-size: 13px; }
+  details.trend summary { cursor: pointer; color: var(--muted); }
+  .trend table { border-collapse: collapse; margin-top: 8px; width: 100%; background: var(--card); }
+  .trend th, .trend td { border: 1px solid var(--line); padding: 4px 8px; text-align: right; white-space: nowrap; }
+  .trend th:first-child, .trend td:first-child { text-align: left; white-space: normal; }
+  .trend th { background: var(--chip); }
+  .trend { overflow-x: auto; }
   main { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 14px; align-items: start; }
   main .empty { grid-column: 1 / -1; }
-  article { background: var(--card); border: 1px solid var(--line); border-radius: 12px; padding: 18px 20px; margin: 0; height: 100%; }
-  @media (max-width: 760px) { main { grid-template-columns: 1fr; } }
+  article { background: var(--card); border: 1px solid var(--line); border-radius: 12px; padding: 18px 20px; margin: 0; height: 100%; box-shadow: var(--shadow); }
   article.hi { box-shadow: inset 4px 0 0 var(--teal); }
   article h2 { margin: 0 0 8px; font-size: 17px; line-height: 1.45; letter-spacing: -.2px; }
   article h2 a { color: var(--navy); text-decoration: none; }
@@ -63,78 +100,51 @@
               display: -webkit-box; -webkit-line-clamp: 3; -webkit-box-orient: vertical; overflow: hidden; }
   .foot { display: flex; flex-wrap: wrap; gap: 6px 10px; align-items: center; font-size: 12px; color: var(--muted); }
   .chip { background: var(--chip); color: var(--teal); padding: 1px 9px; border-radius: 10px; }
-  .hot { margin: 14px 20px 0; background: var(--card); border: 1px solid var(--line); border-radius: 12px; padding: 14px 18px; font-size: 13px; }
-  .hot:empty { display: none; }
-  .hot h3 { margin: 12px 0 6px; font-size: 13px; color: var(--navy); }
-  .hot .cols { display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 6px 22px; }
-  .hot ol { margin: 0; padding-left: 18px; }
-  .hot li { margin: 5px 0; }
-  .hot a { color: var(--text); text-decoration: none; }
-  .hot a:hover { text-decoration: underline; }
-  .hot .kw { display: flex; flex-wrap: wrap; gap: 6px; }
-  .hot .kw button { border: 1px solid var(--line); background: var(--chip); color: var(--text); border-radius: 12px; padding: 2px 10px; font: inherit; cursor: pointer; }
-  .hot .up { color: #c0392b; } .hot .down { color: #2d6cdf; } .hot .sub { color: var(--muted); }
-  .foldbtn { display: block; margin-bottom: 8px; }
-  .controls.collapsed #ctlbody { display: none; }
-  .controls.collapsed .foldbtn { margin-bottom: 0; }
-  @media (max-width: 700px) {
-    body { font-size: 15px; }
-    .controls:not(.collapsed) { position: static; }
-    .controls { padding: 10px 14px 8px; }
-    header { padding: 18px 14px 14px; }
-    .region { gap: 16px; }
-    .region .tab { font-size: 14px; }
-    .meta, .notice { margin-left: 14px; margin-right: 14px; padding-left: 14px; }
-    .hot { margin: 12px 14px 0; }
-    main { padding: 12px 14px 40px; }
-    article { padding: 16px; }
-  }
-  .hot summary { cursor: pointer; font-weight: 700; color: var(--navy); font-size: 14px; }
-  details.trend { margin: 10px 20px 0; font-size: 13px; }
-  details.trend summary { cursor: pointer; color: var(--muted); }
-  .trend table { border-collapse: collapse; margin-top: 8px; width: 100%; background: var(--card); }
-  .trend th, .trend td { border: 1px solid var(--line); padding: 4px 8px; text-align: right; white-space: nowrap; }
-  .trend th:first-child, .trend td:first-child { text-align: left; white-space: normal; }
-  .trend th { background: var(--chip); }
-  .trend { overflow-x: auto; }
+  .chip.score { background: transparent; border: 1px solid var(--line); color: var(--muted); }
   .empty { text-align: center; color: var(--muted); padding: 40px 0; }
+  @media (max-width: 1100px) { main { grid-template-columns: 1fr; } }
+  @media (max-width: 900px) {
+    .app { grid-template-columns: 1fr; }
+    .side { position: static; height: auto; border-right: 0; border-bottom: 1px solid var(--line); padding: 16px 12px 12px; }
+    .foldbtn { display: block; }
+    .controls.collapsed #ctlbody { display: none; }
+    .content { padding: 16px 14px 40px; }
+  }
 </style>
 </head>
 <body>
-<header><div class="wrap">
-  <h1>의료 AI 뉴스 모니터링</h1>
-  <p>AI혁신지원팀 · 뉴스 검색 자동 수집</p>
-</div></header>
-
-<div class="controls" id="controls"><div class="wrap">
+<div class="app">
+<aside class="side controls" id="controls">
+  <div class="brand">
+    <h1>의료 AI 뉴스 모니터링</h1>
+    <p>AI혁신지원팀 · 뉴스 검색 자동 수집</p>
+  </div>
   <button class="tab foldbtn" id="fold" type="button" aria-expanded="true">▴ 접기</button>
   <div id="ctlbody">
-  <div class="tabs region" id="regions"></div>
-  <div class="tabs" id="tabs"></div>
-  <div class="row">
-    <span class="dsel" id="dayWrap" aria-label="수집일"><select id="dy" aria-label="연"></select><select id="dm" aria-label="월"></select><select id="dd" aria-label="일"></select></span>
-    <select id="sort" aria-label="정렬">
-      <option value="score">관련도순</option>
-      <option value="date">최신순</option>
-    </select>
-    <input type="search" id="q" placeholder="제목·요약 검색">
-    <button class="tab" id="moreBtn" type="button" aria-expanded="false">필터 더보기 ▾</button>
-  </div>
-  <div class="more" id="more">
-    <select id="period" aria-label="기간"></select>
+    <h4>구분</h4>
+    <div class="navlist region" id="regions"></div>
+    <h4>카테고리</h4>
+    <div class="navlist" id="tabs"></div>
+    <h4>필터</h4>
+    <div class="field"><label class="cap">수집일</label>
+      <span class="dsel" id="dayWrap"><select id="dy" aria-label="연"></select><select id="dm" aria-label="월"></select><select id="dd" aria-label="일"></select></span></div>
+    <div class="field"><label class="cap">기간</label><select id="period" aria-label="기간"></select></div>
+    <div class="field"><label class="cap">정렬</label>
+      <select id="sort" aria-label="정렬"><option value="score">관련도순</option><option value="date">최신순</option></select></div>
+    <div class="field"><label class="cap">검색</label><input type="search" id="q" placeholder="제목·요약 검색"></div>
     <label class="toggle"><input type="checkbox" id="rel"> 의료·병원·헬스 관련어 포함 기사만</label>
     <label class="toggle"><input type="checkbox" id="aiT"> 제목에 AI 포함 기사만</label>
-    <button class="tab" id="csv" type="button">CSV 내려받기</button>
+    <button class="tab csv" id="csv" type="button">CSV 내려받기</button>
   </div>
-  </div>
-</div></div>
+</aside>
 
-<div class="wrap">
+<div class="content">
   <div class="meta" id="meta">불러오는 중…</div>
   <div id="notice"></div>
-  <section class="hot" id="hot"></section>
+  <section class="hotgrid" id="hot"></section>
   <details class="trend" id="trendBox"><summary>기간 요약 (카테고리별 건수)</summary><div id="trend"></div></details>
   <main id="list"></main>
+</div>
 </div>
 
 <script>
@@ -218,8 +228,8 @@ function renderTabs() {
   rbox.replaceChildren();
   ["국내", "정부", "해외"].forEach(r => {
     const n = state.items.filter(it => regionOf(it) === r).length;
-    const b = el("button", { className: "tab" + (r === state.region ? " active" : ""), type: "button",
-                             textContent: `${REGION_LABEL[r]} ${n.toLocaleString()}` });
+    const b = el("button", { className: "tab" + (r === state.region ? " active" : ""), type: "button" },
+                 [el("span", { textContent: REGION_LABEL[r] }), el("span", { className: "n", textContent: n.toLocaleString() })]);
     b.onclick = () => { state.region = r; state.cat = "전체"; applyDefaultDay(); clearSearch(); render(); };
     rbox.append(b);
   });
@@ -233,8 +243,8 @@ function renderTabs() {
   box.replaceChildren();
   cats.forEach(c => {
     const n = c === "전체" ? inRegion.length : counts[c];
-    const b = el("button", { className: "tab" + (c === state.cat ? " active" : ""), type: "button",
-                             textContent: `${c} ${n.toLocaleString()}` });
+    const b = el("button", { className: "tab" + (c === state.cat ? " active" : ""), type: "button" },
+                 [el("span", { textContent: c }), el("span", { className: "n", textContent: n.toLocaleString() })]);
     b.onclick = () => { state.cat = c; clearSearch(); render(); };
     box.append(b);
   });
@@ -266,48 +276,49 @@ function renderHot() {
   // 증감 비교: 오늘 이전 가장 최근 수집일
   const prevDay = [...new Set(inReg.map(it => it.first_seen).filter(d => d && d < today))].sort().pop();
   const prevMap = prevDay ? kwCount(inReg.filter(it => it.first_seen === prevDay)) : null;
-  // 1) 많이 다뤄진 이슈: 유사 기사(여러 매체 보도)가 많은 순
-  const issues = cur.filter(it => (it.similar_count || 0) > 0)
-    .sort((a, b) => (b.similar_count - a.similar_count) || ((b.score || 0) - (a.score || 0))).slice(0, 3);
-  const c1 = el("div", {}, [el("h3", { textContent: "많이 다뤄진 이슈 Top 3" }),
-    issues.length ? el("ol", {}, issues.map(it => el("li", {}, [
-      el("a", { href: safeUrl(it.originallink || it.link), target: "_blank", rel: "noopener noreferrer", textContent: it.title }),
-      el("span", { className: "sub", textContent: ` · 유사 기사 ${it.similar_count}건` })])))
-      : el("div", { className: "sub", textContent: cur.length ? "여러 매체가 함께 보도한 이슈가 아직 없습니다." : noToday })]);
-  // 2) 설정 키워드 Top 10 (keywords.json 에 정한 키워드만, 이전 기간 대비 증감)
+  const link = it => el("a", { href: safeUrl(it.originallink || it.link), target: "_blank", rel: "noopener noreferrer", textContent: it.title });
+  // 1) 많이 언급된 키워드: 설정 키워드(keywords.json)만, 어제(직전 수집일) 대비 증감
   const kws = [...kwCount(cur)].sort((a, b) => b[1] - a[1]).slice(0, 10);
-  const c2 = el("div", {}, [el("h3", { textContent: "설정 키워드 언급 Top 10" }),
-    kws.length ? el("div", { className: "kw" }, kws.map(([word, n]) => {
+  const kmax = kws.length ? kws[0][1] : 1;
+  const cKw = el("div", { className: "card" }, [el("h3", { textContent: "많이 언급된 키워드" }), el("div", { className: "hint", textContent: `오늘(${today}) · 설정 키워드 Top 10 · 막대=기사 수` }),
+    kws.length ? el("div", { className: "kwbars" }, kws.map(([word, n]) => {
       const p = prevMap ? (prevMap.get(word) || 0) : null;
-      const tag = p === null ? "" : p === 0 ? " 신규" : n > p ? ` ▲${n - p}` : n < p ? ` ▼${p - n}` : "";
-      const b = el("button", { type: "button", title: "클릭하면 이 키워드로 검색", textContent: `${word} ${n}` });
-      if (tag) b.append(el("span", { className: tag.includes("▼") ? "down" : "up", textContent: tag }));
+      const tag = p === null ? "" : p === 0 ? "신규" : n > p ? `▲${n - p}` : n < p ? `▼${p - n}` : "";
+      const bar = el("span", { className: "bar" }, [el("i", { style: `width:${Math.max(6, Math.round(n / kmax * 100))}%` })]);
+      const cnt = el("span", { className: "cnt", textContent: String(n) });
+      if (tag) cnt.append(el("span", { className: "dlt " + (tag.includes("▼") ? "down" : "up"), textContent: tag }));
+      const b = el("button", { type: "button", className: "kwrow", title: "클릭하면 이 키워드로 검색" }, [el("span", { className: "nm", textContent: word }), bar, cnt]);
       b.onclick = () => { $("q").value = word; state.q = word; render(); };
       return b;
-    })) : el("div", { className: "sub", textContent: cur.length ? "설정 키워드가 포함된 기사가 아직 없습니다(누적 데이터 생성 후 표시)." : noToday })]);
-  // 3) 주요 기사: 국내=주요 일간지·의료 전문지 보도, 해외=주요 해외 매체, 정부=법령·가이드라인
-  let c3Title, pool, c3Note;
+    })) : el("div", { className: "sub", textContent: cur.length ? "설정 키워드가 포함된 기사가 아직 없습니다." : noToday })]);
+  // 2) 핫 토픽: 여러 매체가 함께 보도한 이슈(유사 기사 많은 순)
+  const issues = cur.filter(it => (it.similar_count || 0) > 0)
+    .sort((a, b) => (b.similar_count - a.similar_count) || ((b.score || 0) - (a.score || 0))).slice(0, 3);
+  const cHot = el("div", { className: "card" }, [el("h3", { textContent: "핫 토픽" }), el("div", { className: "hint", textContent: `오늘(${today}) · 여러 매체가 함께 보도한 이슈 Top 3` }),
+    issues.length ? el("div", { className: "ranklist" }, issues.map(it => el("div", { className: "rk" }, [
+      el("div", { className: "big" }, [String(it.similar_count + 1), el("small", { textContent: "건 보도" })]),
+      el("div", { className: "tx" }, [link(it)])])))
+      : el("div", { className: "sub", textContent: cur.length ? "여러 매체가 함께 보도한 이슈가 아직 없습니다." : noToday })]);
+  // 3) 주간 Top 3: 국내=주요 일간지·의료 전문지, 해외=주요 매체, 정부=법령·가이드라인
+  let c3Hint, pool, c3Note;
   if (state.region === "정부") {
-    c3Title = "법령·가이드라인 발표 최신 3건 (최근 7일)";
+    c3Hint = "최근 7일 · 법령·가이드라인 발표 최신 3건";
     pool = week.filter(it => it.kind === "법령·입법" || it.kind === "가이드라인·기준")
       .sort((a, b) => (b.pubDate || "").localeCompare(a.pubDate || ""));
     c3Note = it => ` · ${it.agency}`;
   } else {
-    c3Title = state.region === "해외" ? "주요 매체 기사 Top 3 (최근 7일)" : "주요 일간지·의료 전문지 기사 Top 3 (최근 7일)";
+    c3Hint = state.region === "해외" ? "최근 7일 · 주요 매체 기사 Top 3" : "최근 7일 · 주요 일간지·의료 전문지 기사 Top 3";
     pool = week.filter(it => it.source_type === "major" || it.source_type === "medical" || it.source_type === "global_pref")
       .sort((a, b) => ((b.score || 0) + 2 * (b.similar_count || 0)) - ((a.score || 0) + 2 * (a.similar_count || 0)));
     c3Note = it => ` · ${it.global ? (it.sources || []).join(", ") : host(it.originallink || it.link)}`;
   }
   const top3 = pool.slice(0, 3);
-  const c3 = el("div", {}, [el("h3", { textContent: c3Title }),
-    top3.length ? el("ol", {}, top3.map(it => el("li", {}, [
-      el("a", { href: safeUrl(it.originallink || it.link), target: "_blank", rel: "noopener noreferrer", textContent: it.title }),
-      el("span", { className: "sub", textContent: c3Note(it) })])))
+  const cWeek = el("div", { className: "card" }, [el("h3", { textContent: "주간 Top 3" }), el("div", { className: "hint", textContent: c3Hint }),
+    top3.length ? el("div", { className: "ranklist" }, top3.map((it, i) => el("div", { className: "rk" }, [
+      el("div", { className: "big", textContent: String(i + 1) }),
+      el("div", { className: "tx" }, [link(it), el("span", { className: "sub", textContent: c3Note(it).replace(/^ · /, "") })])])))
       : el("div", { className: "sub", textContent: "해당하는 기사가 아직 없습니다." })]);
-  const det = el("details", {}, [el("summary", { textContent: `오늘(${today}) 핫 토픽` }), el("div", { className: "cols" }, [c1, c2, c3])]);
-  det.open = state.hotOpen;
-  det.addEventListener("toggle", () => { state.hotOpen = det.open; });
-  box.append(det);
+  box.append(cKw, cHot, cWeek);
 }
 
 function render() {
@@ -513,7 +524,7 @@ function updateFoldLabel() {
 $("fold").addEventListener("click", () => setFold(!$("controls").classList.contains("collapsed"), true));
 let _stored = null;
 try { _stored = localStorage.getItem("ctlCollapsed"); } catch (e) {}
-setFold(_stored === null ? window.innerWidth < 700 : _stored === "1", false);
+setFold(_stored === null ? window.innerWidth < 900 : _stored === "1", false);
 
 $("period").addEventListener("change", e => { state.period = e.target.value; clearSearch(); loadPeriod(); });
 ["dy", "dm", "dd"].forEach(id => $(id).addEventListener("change", () => {
@@ -531,11 +542,7 @@ $("period").addEventListener("change", e => { state.period = e.target.value; cle
   render();
 }));
 $("csv").addEventListener("click", toCsv);
-$("moreBtn").addEventListener("click", () => {
-  const o = $("more").classList.toggle("open");
-  $("moreBtn").setAttribute("aria-expanded", String(o));
-  $("moreBtn").textContent = o ? "필터 접기 ▴" : "필터 더보기 ▾";
-});
+
 $("q").addEventListener("input", e => { state.q = e.target.value; render(); });
 $("rel").addEventListener("change", e => { state.rel = e.target.checked; render(); });
 $("aiT").addEventListener("change", e => { state.aiT = e.target.checked; render(); });
