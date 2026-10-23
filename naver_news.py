@@ -181,10 +181,13 @@ _ORG = re.compile(r"[가-힣]{2,8}(?:병원|대학교|진흥원|연구원|협회
 _ORG_GENERIC = {"대형병원", "상급종합병원", "종합병원", "대학병원", "지역병원", "민간병원", "공공병원", "전국병원", "국내병원", "일반병원", "상급병원", "중소병원", "요양병원", "개인병원", "국립대병원"}
 
 
+_ORG_GEN_RX = re.compile(r"(?:스마트|미래|디지털|가상|로봇|지능형|첨단|종합|대형|상급종합|국립|시립|도립|공공|민간|지역|대학|요양|전문|일반|상급|중소|개인|국내|해외|의료|연구|AI|정부)?(?:병원|대학교|연구원|협회|학회|재단|공단|위원회|진흥원)")
+
+
 def anchors_full(text: str, generic: set) -> set:
     """제목+요약에서 기관(약어·병원·대학·정부부처)과 선언문 이름을 뽑는다."""
     a = anchors_of(text, generic)
-    a |= {m.group(0) for m in _ORG.finditer(text) if m.group(0) not in _ORG_GENERIC}
+    a |= {m.group(0) for m in _ORG.finditer(text) if m.group(0) not in _ORG_GENERIC and not _ORG_GEN_RX.fullmatch(m.group(0))}
     return a
 
 
@@ -207,6 +210,28 @@ def _source_rank(url: str, cc: dict) -> int:
     return 999
 
 
+_TOK = re.compile(r"[0-9A-Za-z]+[가-힣]*|[가-힣]+")
+_JOSA = "은는이가을를의에도과와로"
+_STOP = {"의료", "병원", "의료AI", "AI", "인공지능", "도입", "개발", "서비스", "기술", "시스템", "국내", "발표", "확대", "강화", "추진",
+         "개최", "협력", "지원", "활용", "구축", "출시", "공개", "선정", "제공", "운영", "계획", "본격", "관련", "통해", "위한", "대한",
+         "헬스케어", "디지털", "플랫폼", "솔루션", "연구", "환자", "진료", "진단", "AI기반", "기반", "신규", "첫", "최초", "나선다"}
+
+
+def title_tokens(title: str) -> set:
+    t = re.sub(r"\[[^\]]*\]|【[^】]*】", " ", title)
+    out = set()
+    for w in _TOK.findall(t):
+        if len(w) >= 3 and w[-1] in _JOSA and len(w) - 1 >= 2:
+            w = w[:-1]
+        if len(w) >= 2 and w not in _STOP and not re.fullmatch(r"\d+", w):
+            out.add(w)
+    return out
+
+
+def _tok_match(a: str, b: str) -> bool:
+    return a == b or (min(len(a), len(b)) >= 3 and (a.startswith(b) or b.startswith(a)))
+
+
 def group_similar(results: list, cc: dict) -> list:
     """제목이 비슷한 기사끼리 묶어 인덱스 그룹 목록을 돌려준다."""
     n = len(results)
@@ -216,6 +241,13 @@ def group_similar(results: list, cc: dict) -> list:
     full = [f'{a_["title"]} {a_.get("summary", "")}' for a_ in results]
     fanch = [anchors_full(t, cc["anchor_generic"]) for t in full]
     fgrams = [_title_grams(t[:200]) for t in full]
+    toks = [title_tokens(a_["title"]) for a_ in results]
+    df = {}
+    for ts in toks:
+        for w in ts:
+            df[w] = df.get(w, 0) + 1
+    lim = max(12, int(0.06 * len(results)))
+    rare = [{w for w in ts if df[w] <= lim} for ts in toks]
     t_min, s_min = cc["assist"]  # 제목이 조금 달라도 요약이 거의 같으면 같은 기사로 본다
     def same(i, j):
         gi, gj = grams[i], grams[j]
@@ -233,6 +265,11 @@ def group_similar(results: list, cc: dict) -> list:
             evt = any(x[-2:] in ("선언", "협약", "헌장") or x.endswith(("결의", "결의안")) for x in shared if len(x) >= 4)
             if sim >= cc["anchor_min"] * (0.3 if evt else 1):
                 return True   # 같은 기관(WHO 등) 약어·같은 선언문을 제목에 공유하고 제목도 조금 겹치면 같은 사안
+        # 제목에서 흔하지 않은 핵심어(삼성서울, 스마트병원, 4위 …)를 3개 이상 공유하면 같은 사안
+        if rare[i] and rare[j]:
+            shared_t = [w for w in rare[i] if any(_tok_match(w, v) for v in rare[j])]
+            if len(shared_t) >= 3:
+                return True
         # 제목+요약 전체에서 같은 기관·선언문을 공유하고 내용도 겹치면 같은 사안
         fs = fanch[i] & fanch[j]
         if fs and fgrams[i] and fgrams[j]:
