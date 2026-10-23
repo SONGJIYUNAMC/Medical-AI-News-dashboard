@@ -1,15 +1,15 @@
 {
  "month": "2026-10",
- "generated_at": "2026-10-23T09:15:53.916990+09:00",
+ "generated_at": "2026-10-23T09:26:00.937657+09:00",
  "prev_month": null,
  "collected_days": 9,
  "first_day": "2026-10-15",
  "last_day": "2026-10-23",
- "total": 2598,
+ "total": 2568,
  "prev_total": null,
  "by_region": {
-  "국내": 2207,
-  "해외": 340,
+  "국내": 2176,
+  "해외": 341,
   "정부": 51
  },
  "weekly": {
@@ -19,59 +19,59 @@
    "정부": 19
   },
   "2026-W43": {
-   "국내": 1394,
-   "해외": 187,
+   "국내": 1363,
+   "해외": 188,
    "정부": 32
   }
  },
  "categories": [
   {
    "name": "국내 · 기타 (의료 AI·병원 AI 키워드)",
-   "count": 544,
+   "count": 538,
    "prev": 0,
-   "delta": 544
+   "delta": 538
   },
   {
    "name": "국내 · 국내 의료 AI 기업",
-   "count": 493,
+   "count": 487,
    "prev": 0,
-   "delta": 493
+   "delta": 487
   },
   {
    "name": "국내 · 국내 정책·규제",
-   "count": 393,
+   "count": 392,
    "prev": 0,
-   "delta": 393
+   "delta": 392
   },
   {
    "name": "국내 · 국내 의료기관",
-   "count": 241,
+   "count": 233,
    "prev": 0,
-   "delta": 241
+   "delta": 233
   },
   {
    "name": "국내 · AI 거버넌스·보안",
-   "count": 200,
+   "count": 193,
    "prev": 0,
-   "delta": 200
+   "delta": 193
   },
   {
    "name": "국내 · 해외 의료기관·정책·규제",
-   "count": 179,
+   "count": 177,
    "prev": 0,
-   "delta": 179
+   "delta": 177
   },
   {
    "name": "해외 · 해외 의료기관 AI 도입·운영",
-   "count": 175,
+   "count": 176,
    "prev": 0,
-   "delta": 175
+   "delta": 176
   },
   {
    "name": "국내 · 학술·연구·행사",
-   "count": 157,
+   "count": 156,
    "prev": 0,
-   "delta": 157
+   "delta": 156
   },
   {
    "name": "해외 · 해외 정책·규제 (미국)",
@@ -125,7 +125,7 @@
  "keywords": [
   {
    "word": "서울대병원",
-   "count": 89,
+   "count": 86,
    "prev": 0,
    "status": ""
   },
@@ -136,13 +136,13 @@
    "status": ""
   },
   {
-   "word": "세브란스",
-   "count": 58,
+   "word": "식약처",
+   "count": 57,
    "prev": 0,
    "status": ""
   },
   {
-   "word": "식약처",
+   "word": "세브란스",
    "count": 57,
    "prev": 0,
    "status": ""
@@ -161,13 +161,13 @@
   },
   {
    "word": "분당서울대",
-   "count": 44,
+   "count": 42,
    "prev": 0,
    "status": ""
   },
   {
    "word": "아산병원",
-   "count": 40,
+   "count": 38,
    "prev": 0,
    "status": ""
   },
@@ -220,26 +220,26 @@
    "status": ""
   },
   {
-   "word": "스마트 병원",
-   "count": 21,
-   "prev": 0,
-   "status": ""
-  },
-  {
    "word": "심평원",
    "count": 20,
    "prev": 0,
    "status": ""
   },
   {
-   "word": "삼성서울병원",
-   "count": 19,
+   "word": "신의료기술",
+   "count": 18,
    "prev": 0,
    "status": ""
   },
   {
-   "word": "신의료기술",
+   "word": "뷰노",
    "count": 18,
+   "prev": 0,
+   "status": ""
+  },
+  {
+   "word": "서울성모병원",
+   "count": 16,
    "prev": 0,
    "status": ""
   }
@@ -334,6 +334,17 @@
    "importance": 70
   },
   {
+   "title": "AI 앞서나가는 삼성서울, 세계 스마트병원 4위… 1~3위는 美병원",
+   "link": "https://www.chosun.com/national/welfare-medical/2026/10/22/DODME63MRRCHJALLY246ULSSII/?utm_source=naver&utm_medium=referral&utm_campaign=naver-news",
+   "date": "2026-10-22",
+   "category": "국내 의료기관",
+   "region": "국내",
+   "score": 19,
+   "similar_count": 26,
+   "source": "chosun.com",
+   "importance": 74
+  },
+  {
    "title": "‘노인 건강’ 인기 유튜브 영상 42% AI 제작…의사 사칭도",
    "link": "https://www.segye.com/newsView/20261020506365?OutUrl=naver",
    "date": "2026-10-20",
@@ -343,17 +354,6 @@
    "similar_count": 24,
    "source": "segye.com",
    "importance": 60
-  },
-  {
-   "title": "세계은행 총재 만난 李 \"AI 부작용도 살펴야…양극화 해소 국제공조\"(종...",
-   "link": "https://view.asiae.co.kr/article/2026101914492374042",
-   "date": "2026-10-19",
-   "category": "국내 의료 AI 기업",
-   "region": "국내",
-   "score": 7,
-   "similar_count": 24,
-   "source": "view.asiae.co.kr",
-   "importance": 58
   }
  ],
  "issues_global": [
@@ -936,6 +936,17 @@
    "importance": 80
   },
   {
+   "title": "AI 앞서나가는 삼성서울, 세계 스마트병원 4위… 1~3위는 美병원",
+   "link": "https://www.chosun.com/national/welfare-medical/2026/10/22/DODME63MRRCHJALLY246ULSSII/?utm_source=naver&utm_medium=referral&utm_campaign=naver-news",
+   "date": "2026-10-22",
+   "category": "국내 의료기관",
+   "region": "국내",
+   "score": 19,
+   "similar_count": 26,
+   "source": "chosun.com",
+   "importance": 74
+  },
+  {
    "title": "李대통령, 오늘 테드로스 WHO 사무총장 면담…'AI 기본의료 전략' 소개",
    "link": "https://www.news1.kr/politics/president/6326746",
    "date": "2026-10-21",
@@ -1002,26 +1013,15 @@
    "importance": 57
   },
   {
-   "title": "AI 앞서나가는 삼성서울, 세계 스마트병원 4위… 1~3위는 美병원",
-   "link": "https://www.chosun.com/national/welfare-medical/2026/10/22/DODME63MRRCHJALLY246ULSSII/?utm_source=naver&utm_medium=referral&utm_campaign=naver-news",
-   "date": "2026-10-22",
-   "category": "국내 의료기관",
-   "region": "국내",
-   "score": 19,
-   "similar_count": 15,
-   "source": "chosun.com",
-   "importance": 52
-  },
-  {
    "title": "대구 스타기업 4개사, FIX서 2100만 달러 투자·수출 계약",
    "link": "https://www.news1.kr/local/daegu-gyeongbuk/6328352",
    "date": "2026-10-22",
    "category": "국내 의료 AI 기업",
    "region": "국내",
    "score": 5,
-   "similar_count": 22,
+   "similar_count": 23,
    "source": "news1.kr",
-   "importance": 52
+   "importance": 54
   },
   {
    "title": "“100만명 바이오 빅데이터 구축”… 하정우·정은경 생체자료 기증",
@@ -1422,18 +1422,29 @@
     "importance": 40
    },
    {
-    "title": "스카이랩스 '카트', 임상서 고혈압 환자 목표 혈압 도달률 65.8%",
-    "link": "https://www.medipana.com/news/articleView.html?idxno=419412",
-    "date": "2026-10-16",
+    "title": "[동정] 고대 안암 강신혁 교수, 대한신경외과학회 학술상 수상",
+    "link": "https://www.monews.co.kr/news/articleView.html?idxno=414725",
+    "date": "2026-10-22",
     "category": "학술·연구·행사",
     "region": "국내",
-    "score": 9,
+    "score": 10,
     "similar_count": 8,
-    "source": "medipana.com",
-    "importance": 28
+    "source": "monews.co.kr",
+    "importance": 29
    }
   ],
   "국내 · 국내 의료기관": [
+   {
+    "title": "AI 앞서나가는 삼성서울, 세계 스마트병원 4위… 1~3위는 美병원",
+    "link": "https://www.chosun.com/national/welfare-medical/2026/10/22/DODME63MRRCHJALLY246ULSSII/?utm_source=naver&utm_medium=referral&utm_campaign=naver-news",
+    "date": "2026-10-22",
+    "category": "국내 의료기관",
+    "region": "국내",
+    "score": 19,
+    "similar_count": 26,
+    "source": "chosun.com",
+    "importance": 74
+   },
    {
     "title": "동아에스티·부산대병원, 스마트병동 구축…AI 해상의료 시스템 공동개...",
     "link": "http://www.newslock.co.kr/news/articleView.html?idxno=137926",
@@ -1444,17 +1455,6 @@
     "similar_count": 22,
     "source": "newslock.co.kr",
     "importance": 57
-   },
-   {
-    "title": "AI 앞서나가는 삼성서울, 세계 스마트병원 4위… 1~3위는 美병원",
-    "link": "https://www.chosun.com/national/welfare-medical/2026/10/22/DODME63MRRCHJALLY246ULSSII/?utm_source=naver&utm_medium=referral&utm_campaign=naver-news",
-    "date": "2026-10-22",
-    "category": "국내 의료기관",
-    "region": "국내",
-    "score": 19,
-    "similar_count": 15,
-    "source": "chosun.com",
-    "importance": 52
    },
    {
     "title": "씨어스, UAE서 'AI 부정맥 국가검진' 수행 초읽기…\"최종 테스트 돌입\"",
