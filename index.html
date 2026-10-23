@@ -65,6 +65,23 @@
   .card .kw button { border: 1px solid var(--line); background: var(--chip); color: var(--text); border-radius: 12px; padding: 2px 10px; font: inherit; cursor: pointer; }
   .card .kw button:hover { border-color: var(--teal); }
   .card .up { color: #c0392b; } .card .down { color: #2d6cdf; } .card .sub { color: var(--muted); }
+  .kwbars { display: flex; flex-direction: column; gap: 4px; }
+  .kwrow { display: grid; grid-template-columns: minmax(70px, 38%) 1fr 22px; align-items: center; gap: 8px; width: 100%; padding: 3px 4px;
+           border: 0; background: none; font: inherit; color: var(--text); cursor: pointer; border-radius: 6px; text-align: left; }
+  .kwrow:hover { background: var(--chip); }
+  .kwrow .nm { white-space: nowrap; overflow: hidden; text-overflow: ellipsis; font-size: 13px; }
+  .kwrow .bar { height: 10px; background: var(--chip); border-radius: 5px; overflow: hidden; }
+  .kwrow .bar i { display: block; height: 100%; background: linear-gradient(90deg, #5aa7c2, var(--teal)); border-radius: 5px; }
+  .kwrow .cnt { text-align: right; font-weight: 700; font-size: 13px; }
+  .kwrow .dlt { font-size: 11px; font-weight: 400; margin-left: 2px; }
+  .ranklist { display: flex; flex-direction: column; }
+  .rk { display: flex; gap: 12px; align-items: flex-start; padding: 10px 0; border-top: 1px solid var(--line); }
+  .rk:first-child { border-top: 0; padding-top: 2px; }
+  .rk .big { flex: none; width: 44px; text-align: center; font-size: 28px; font-weight: 700; line-height: 1.05; color: var(--teal); }
+  .rk .big small { display: block; margin-top: 2px; font-size: 10px; font-weight: 400; color: var(--muted); }
+  .rk .tx { min-width: 0; }
+  .rk .tx a { display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical; overflow: hidden; font-weight: 500; line-height: 1.45; }
+  .rk .tx .sub { display: block; margin-top: 2px; font-size: 12px; }
   details.trend { margin: 0 0 14px; font-size: 13px; }
   details.trend summary { cursor: pointer; color: var(--muted); }
   .trend table { border-collapse: collapse; margin-top: 8px; width: 100%; background: var(--card); }
@@ -262,20 +279,25 @@ function renderHot() {
   const link = it => el("a", { href: safeUrl(it.originallink || it.link), target: "_blank", rel: "noopener noreferrer", textContent: it.title });
   // 1) 많이 언급된 키워드: 설정 키워드(keywords.json)만, 어제(직전 수집일) 대비 증감
   const kws = [...kwCount(cur)].sort((a, b) => b[1] - a[1]).slice(0, 10);
-  const cKw = el("div", { className: "card" }, [el("h3", { textContent: "많이 언급된 키워드" }), el("div", { className: "hint", textContent: `오늘(${today}) · 설정 키워드 Top 10` }),
-    kws.length ? el("div", { className: "kw" }, kws.map(([word, n]) => {
+  const kmax = kws.length ? kws[0][1] : 1;
+  const cKw = el("div", { className: "card" }, [el("h3", { textContent: "많이 언급된 키워드" }), el("div", { className: "hint", textContent: `오늘(${today}) · 설정 키워드 Top 10 · 막대=기사 수` }),
+    kws.length ? el("div", { className: "kwbars" }, kws.map(([word, n]) => {
       const p = prevMap ? (prevMap.get(word) || 0) : null;
-      const tag = p === null ? "" : p === 0 ? " 신규" : n > p ? ` ▲${n - p}` : n < p ? ` ▼${p - n}` : "";
-      const b = el("button", { type: "button", title: "클릭하면 이 키워드로 검색", textContent: `${word} ${n}` });
-      if (tag) b.append(el("span", { className: tag.includes("▼") ? "down" : "up", textContent: tag }));
+      const tag = p === null ? "" : p === 0 ? "신규" : n > p ? `▲${n - p}` : n < p ? `▼${p - n}` : "";
+      const bar = el("span", { className: "bar" }, [el("i", { style: `width:${Math.max(6, Math.round(n / kmax * 100))}%` })]);
+      const cnt = el("span", { className: "cnt", textContent: String(n) });
+      if (tag) cnt.append(el("span", { className: "dlt " + (tag.includes("▼") ? "down" : "up"), textContent: tag }));
+      const b = el("button", { type: "button", className: "kwrow", title: "클릭하면 이 키워드로 검색" }, [el("span", { className: "nm", textContent: word }), bar, cnt]);
       b.onclick = () => { $("q").value = word; state.q = word; render(); };
       return b;
     })) : el("div", { className: "sub", textContent: cur.length ? "설정 키워드가 포함된 기사가 아직 없습니다." : noToday })]);
   // 2) 핫 토픽: 여러 매체가 함께 보도한 이슈(유사 기사 많은 순)
   const issues = cur.filter(it => (it.similar_count || 0) > 0)
     .sort((a, b) => (b.similar_count - a.similar_count) || ((b.score || 0) - (a.score || 0))).slice(0, 3);
-  const cHot = el("div", { className: "card" }, [el("h3", { textContent: "핫 토픽" }), el("div", { className: "hint", textContent: `오늘(${today}) · 많이 다뤄진 이슈 Top 3` }),
-    issues.length ? el("ol", {}, issues.map(it => el("li", {}, [link(it), el("span", { className: "sub", textContent: ` · 유사 기사 ${it.similar_count}건` })])))
+  const cHot = el("div", { className: "card" }, [el("h3", { textContent: "핫 토픽" }), el("div", { className: "hint", textContent: `오늘(${today}) · 여러 매체가 함께 보도한 이슈 Top 3` }),
+    issues.length ? el("div", { className: "ranklist" }, issues.map(it => el("div", { className: "rk" }, [
+      el("div", { className: "big" }, [String(it.similar_count + 1), el("small", { textContent: "건 보도" })]),
+      el("div", { className: "tx" }, [link(it)])])))
       : el("div", { className: "sub", textContent: cur.length ? "여러 매체가 함께 보도한 이슈가 아직 없습니다." : noToday })]);
   // 3) 주간 Top 3: 국내=주요 일간지·의료 전문지, 해외=주요 매체, 정부=법령·가이드라인
   let c3Hint, pool, c3Note;
@@ -292,7 +314,9 @@ function renderHot() {
   }
   const top3 = pool.slice(0, 3);
   const cWeek = el("div", { className: "card" }, [el("h3", { textContent: "주간 Top 3" }), el("div", { className: "hint", textContent: c3Hint }),
-    top3.length ? el("ol", {}, top3.map(it => el("li", {}, [link(it), el("span", { className: "sub", textContent: c3Note(it) })])))
+    top3.length ? el("div", { className: "ranklist" }, top3.map((it, i) => el("div", { className: "rk" }, [
+      el("div", { className: "big", textContent: String(i + 1) }),
+      el("div", { className: "tx" }, [link(it), el("span", { className: "sub", textContent: c3Note(it).replace(/^ · /, "") })])])))
       : el("div", { className: "sub", textContent: "해당하는 기사가 아직 없습니다." })]);
   box.append(cKw, cHot, cWeek);
 }
