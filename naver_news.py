@@ -214,7 +214,7 @@ _TOK = re.compile(r"[0-9A-Za-z]+[가-힣]*|[가-힣]+")
 _JOSA = "은는이가을를의에도과와로"
 _STOP = {"의료", "병원", "의료AI", "AI", "인공지능", "도입", "개발", "서비스", "기술", "시스템", "국내", "발표", "확대", "강화", "추진",
          "개최", "협력", "지원", "활용", "구축", "출시", "공개", "선정", "제공", "운영", "계획", "본격", "관련", "통해", "위한", "대한",
-         "헬스케어", "디지털", "플랫폼", "솔루션", "연구", "환자", "진료", "진단", "AI기반", "기반", "신규", "첫", "최초", "나선다"}
+         "헬스케어", "디지털", "플랫폼", "솔루션", "연구", "환자", "진료", "진단", "AI기반", "기반", "신규", "첫", "최초", "나선다", "현장", "방문", "점검", "보도참고", "보도자료", "정책", "제도", "정부"}
 
 
 def title_tokens(title: str) -> set:
@@ -229,7 +229,10 @@ def title_tokens(title: str) -> set:
 
 
 def _tok_match(a: str, b: str) -> bool:
-    return a == b or (min(len(a), len(b)) >= 3 and (a.startswith(b) or b.startswith(a)))
+    if a == b:
+        return True
+    lo, hi = sorted((a, b), key=len)
+    return hi.startswith(lo) and (len(lo) >= 3 or (len(lo) == 2 and len(hi) == 3))
 
 
 def group_similar(results: list, cc: dict) -> list:
@@ -246,7 +249,7 @@ def group_similar(results: list, cc: dict) -> list:
     for ts in toks:
         for w in ts:
             df[w] = df.get(w, 0) + 1
-    lim = max(12, int(0.06 * len(results)))
+    lim = max(25, int(0.15 * len(results)))
     rare = [{w for w in ts if df[w] <= lim} for ts in toks]
     t_min, s_min = cc["assist"]  # 제목이 조금 달라도 요약이 거의 같으면 같은 기사로 본다
     def same(i, j):
@@ -268,7 +271,7 @@ def group_similar(results: list, cc: dict) -> list:
         # 제목에서 흔하지 않은 핵심어(삼성서울, 스마트병원, 4위 …)를 3개 이상 공유하면 같은 사안
         if rare[i] and rare[j]:
             shared_t = [w for w in rare[i] if any(_tok_match(w, v) for v in rare[j])]
-            if len(shared_t) >= 3:
+            if len(shared_t) >= cc.get("min_shared", 3):
                 return True
         # 제목+요약 전체에서 같은 기관·선언문을 공유하고 내용도 겹치면 같은 사안
         fs = fanch[i] & fanch[j]
@@ -287,11 +290,23 @@ def group_similar(results: list, cc: dict) -> list:
     clusters = []
     for i in order:
         for c in clusters:
-            if same(c[0], i) or any(anchors[m] & anchors[i] and same(m, i) for m in c[1:]):
+            if same(c[0], i) or any((cc.get("bridge") or anchors[m] & anchors[i]) and same(m, i) for m in c[1:]):
                 c.append(i)
                 break
         else:
             clusters.append([i])
+    if cc.get("bridge"):   # 정부 발표처럼 한 사안 기사가 많은 경우: 군집끼리도 한 쌍이라도 같은 사안이면 합침
+        merged = True
+        while merged:
+            merged = False
+            for x in range(len(clusters)):
+                for y in range(x + 1, len(clusters)):
+                    if any(same(p, q) for p in clusters[x] for q in clusters[y]):
+                        clusters[x] += clusters.pop(y)
+                        merged = True
+                        break
+                if merged:
+                    break
     return clusters
 
 
