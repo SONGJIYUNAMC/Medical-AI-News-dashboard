@@ -1,16 +1,16 @@
 {
  "month": "2026-10",
- "generated_at": "2026-10-23T09:54:49.176559+09:00",
+ "generated_at": "2026-10-24T07:59:30.119396+09:00",
  "prev_month": null,
- "collected_days": 9,
+ "collected_days": 10,
  "first_day": "2026-10-15",
- "last_day": "2026-10-23",
- "total": 2527,
+ "last_day": "2026-10-24",
+ "total": 2726,
  "prev_total": null,
  "by_region": {
-  "국내": 2152,
-  "해외": 343,
-  "정부": 32
+  "국내": 2313,
+  "해외": 380,
+  "정부": 33
  },
  "weekly": {
   "2026-W42": {
@@ -19,77 +19,77 @@
    "정부": 19
   },
   "2026-W43": {
-   "국내": 1339,
-   "해외": 190,
-   "정부": 13
+   "국내": 1500,
+   "해외": 227,
+   "정부": 14
   }
  },
  "categories": [
   {
    "name": "국내 · 기타 (의료 AI·병원 AI 키워드)",
-   "count": 532,
+   "count": 571,
    "prev": 0,
-   "delta": 532
+   "delta": 571
   },
   {
    "name": "국내 · 국내 의료 AI 기업",
-   "count": 479,
+   "count": 513,
    "prev": 0,
-   "delta": 479
+   "delta": 513
   },
   {
    "name": "국내 · 국내 정책·규제",
-   "count": 386,
+   "count": 417,
    "prev": 0,
-   "delta": 386
+   "delta": 417
   },
   {
    "name": "국내 · 국내 의료기관",
-   "count": 230,
+   "count": 242,
    "prev": 0,
-   "delta": 230
+   "delta": 242
   },
   {
    "name": "국내 · AI 거버넌스·보안",
+   "count": 205,
+   "prev": 0,
+   "delta": 205
+  },
+  {
+   "name": "해외 · 해외 의료기관 AI 도입·운영",
+   "count": 194,
+   "prev": 0,
+   "delta": 194
+  },
+  {
+   "name": "국내 · 해외 의료기관·정책·규제",
    "count": 193,
    "prev": 0,
    "delta": 193
   },
   {
-   "name": "해외 · 해외 의료기관 AI 도입·운영",
-   "count": 176,
-   "prev": 0,
-   "delta": 176
-  },
-  {
-   "name": "국내 · 해외 의료기관·정책·규제",
-   "count": 173,
-   "prev": 0,
-   "delta": 173
-  },
-  {
    "name": "국내 · 학술·연구·행사",
-   "count": 159,
+   "count": 172,
    "prev": 0,
-   "delta": 159
+   "delta": 172
   },
   {
    "name": "해외 · 해외 정책·규제 (미국)",
-   "count": 92,
+   "count": 99,
    "prev": 0,
-   "delta": 92
+   "delta": 99
   },
   {
    "name": "해외 · 해외 연구·학술",
-   "count": 41,
+   "count": 50,
    "prev": 0,
-   "delta": 41
+   "delta": 50
   },
   {
    "name": "해외 · 해외 정책·규제 (유럽·영국)",
-   "count": 34,
+   "count": 37,
    "prev": 0,
-   "delta": 34
+   "delta": 37
   },
   {
    "name": "정부 · 정부 보도자료 (검색)",
@@ -105,9 +105,9 @@
   },
   {
    "name": "정부 · 보건복지부",
-   "count": 5,
+   "count": 6,
    "prev": 0,
-   "delta": 5
+   "delta": 6
   },
   {
    "name": "정부 · 식품의약품안전처",
@@ -125,67 +125,73 @@
  "keywords": [
   {
    "word": "서울대병원",
-   "count": 84,
-   "prev": 0,
-   "status": ""
-  },
-  {
-   "word": "세미나",
-   "count": 57,
+   "count": 86,
    "prev": 0,
    "status": ""
   },
   {
    "word": "식약처",
-   "count": 56,
+   "count": 63,
+   "prev": 0,
+   "status": ""
+  },
+  {
+   "word": "세미나",
+   "count": 61,
    "prev": 0,
    "status": ""
   },
   {
    "word": "세브란스",
-   "count": 55,
-   "prev": 0,
-   "status": ""
-  },
-  {
-   "word": "보건복지부",
-   "count": 51,
+   "count": 56,
    "prev": 0,
    "status": ""
   },
   {
    "word": "FDA",
-   "count": 48,
+   "count": 53,
+   "prev": 0,
+   "status": ""
+  },
+  {
+   "word": "보건복지부",
+   "count": 52,
    "prev": 0,
    "status": ""
   },
   {
    "word": "분당서울대",
-   "count": 41,
+   "count": 42,
    "prev": 0,
    "status": ""
   },
   {
    "word": "아산병원",
-   "count": 38,
+   "count": 40,
    "prev": 0,
    "status": ""
   },
   {
    "word": "WHO",
-   "count": 36,
-   "prev": 0,
-   "status": ""
-  },
-  {
-   "word": "루닛",
-   "count": 33,
+   "count": 38,
    "prev": 0,
    "status": ""
   },
   {
    "word": "학술대회",
-   "count": 30,
+   "count": 37,
+   "prev": 0,
+   "status": ""
+  },
+  {
+   "word": "루닛",
+   "count": 35,
+   "prev": 0,
+   "status": ""
+  },
+  {
+   "word": "국회",
+   "count": 28,
    "prev": 0,
    "status": ""
   },
@@ -196,20 +202,20 @@
    "status": ""
   },
   {
-   "word": "국회",
+   "word": "마이크로소프트",
    "count": 26,
    "prev": 0,
    "status": ""
   },
   {
    "word": "상급종합병원",
-   "count": 23,
+   "count": 24,
    "prev": 0,
    "status": ""
   },
   {
    "word": "포럼",
-   "count": 23,
+   "count": 24,
    "prev": 0,
    "status": ""
   },
@@ -227,19 +233,13 @@
   },
   {
    "word": "뷰노",
-   "count": 18,
+   "count": 20,
    "prev": 0,
    "status": ""
   },
   {
-   "word": "신의료기술",
-   "count": 17,
-   "prev": 0,
-   "status": ""
-  },
-  {
-   "word": "한국보건산업진흥원",
-   "count": 16,
+   "word": "스마트 병원",
+   "count": 19,
    "prev": 0,
    "status": ""
   }
@@ -391,6 +391,17 @@
    "importance": 7
   },
   {
+   "title": "DataMEDS AI Enters Into Amended and Restated LOI to License and Acquire IP that Enables Goal-Driven Prescription Drug Telehealth, Medical Drones and Healthcare Blockchain Technologies",
+   "link": "https://news.google.com/rss/articles/CBMi3wJBVV95cUxNR2NnOXBwY2xINWh3NjBFeWE0eHMxbjdBcm5WM1ZkOEFubEpUSGZXcS1mSmI5dFhQNVEyYUxrUjNrSnpoZHRHUmdxcWE1XzVOTHVTZWI1ZWtHek43UFZvWHJQMnhrNl9DU3c0WF9xaE5HUWRrZjRmZk05TEpwdWZmOTZXUVVfVDRaanRodzVmLTBBMDM5MENMWHpWZThWS2UtUDg2RmxiRFZKcHcwM1lFY2lCSEZKYWNiRTZKTElvTjJOaFhaLXVfSWZNSWIzZzhRSFlZR1cxa0FwOWp2SE81M0dYRXdYLUJ5VUY0ZUdkdndjbU55N0NIV1hBYVFxS0llSFRYeGY0d2NZbzl1c2ZQN29QZXBiMHdHVm9YSTRTX2taSi16T3I5WjF4VEl0ZTdLOFJ2RHBqTXhKQndVSU5UeTBWNjgtZmVJNTRTSlE2UmRLQTZrM1FEaGJpc2NCNGs?oc=5",
+   "date": "2026-10-22",
+   "category": "해외 정책·규제 (미국)",
+   "region": "해외",
+   "score": 4,
+   "similar_count": 0,
+   "source": "TradingView, azcentral.com and The Arizona Republic",
+   "importance": 4
+  },
+  {
    "title": "Waterdrop Inc. Releases 2025 ESG Report: Empowering Full-Chain Business with AI and Building an Inclusive, Diverse Healthcare Ecosystem",
    "link": "https://news.google.com/rss/articles/CBMingJBVV95cUxOUjNqTUc2YzQ3Q1FBVEVWeG9BYUhkU1VmWWZxQlZya1ZjVHFxdl9EalptRThzQ3FPUGVMRWcybjhCcUZzWVJiNnpzUWhxbFRTTGJnQ214REVoZmdOcUsxVGpxRlVUaXZJSnhCeE5DYlZ6YXhVcVZwNWxFRS1KZW9kaEtSN1BUb09CVzN5NU5tWWU0RHJ2T2RmZ1lOUV9fQjdmSHFPNVZTNWwzSnIxOEtnZERyU2RLRV95VXVKNVVzSVRZdVY3X0M2bVJ1LS1kd245RG1HUTdNSUZuWFFxUnRQdjEwbVYtcXczRGxZb0g2dU10SExGNjZzc0d0cXl3UVYza21XdUtxeERzaVdMT3pqTk9ISlZMRmNpTnlhYWJn?oc=5",
    "date": "2026-10-15",
@@ -402,14 +413,25 @@
    "importance": 3
   },
   {
-   "title": "DataMEDS AI Enters Into Amended and Restated LOI to License and Acquire IP that Enables Goal-Driven Prescription Drug Telehealth, Medical Drones and Healthcare Blockchain Technologies",
-   "link": "https://news.google.com/rss/articles/CBMi3wJBVV95cUxNR2NnOXBwY2xINWh3NjBFeWE0eHMxbjdBcm5WM1ZkOEFubEpUSGZXcS1mSmI5dFhQNVEyYUxrUjNrSnpoZHRHUmdxcWE1XzVOTHVTZWI1ZWtHek43UFZvWHJQMnhrNl9DU3c0WF9xaE5HUWRrZjRmZk05TEpwdWZmOTZXUVVfVDRaanRodzVmLTBBMDM5MENMWHpWZThWS2UtUDg2RmxiRFZKcHcwM1lFY2lCSEZKYWNiRTZKTElvTjJOaFhaLXVfSWZNSWIzZzhRSFlZR1cxa0FwOWp2SE81M0dYRXdYLUJ5VUY0ZUdkdndjbU55N0NIV1hBYVFxS0llSFRYeGY0d2NZbzl1c2ZQN29QZXBiMHdHVm9YSTRTX2taSi16T3I5WjF4VEl0ZTdLOFJ2RHBqTXhKQndVSU5UeTBWNjgtZmVJNTRTSlE2UmRLQTZrM1FEaGJpc2NCNGs?oc=5",
-   "date": "2026-10-22",
+   "title": "Microsoft’s AI Diagnostic System Outperforms Generalist Doctors on Complex Cases, Science Study Finds",
+   "link": "https://news.google.com/rss/articles/CBMi0wFBVV95cUxNcXVOY1RMbGU3TGR5MEZLcVVKaEJBeVIzV2RaR3JKTUtKSmdONW9WeWQ3aUVRWDdxTzdlVXp0NzV3LXI1dGpEMThRM3F3WmRISnpiVU9sd0JjaWVSY3czdWJvajBEWGRfNUpzQzdoSUE4aEFEdzFzbWUzTXV3bF9SMDR3a2V1NkpWamEzcmpWNjBvbkRLV3lIaVI2cFNWLWdSWnViR1Q5NDUxRDBFTUhPOE9sN1c0WmZMNlg1ME5JMEQ5TjM0akpxQVAtNE51UEt1VzZV?oc=5",
+   "date": "2026-10-23",
+   "category": "해외 의료기관 AI 도입·운영",
+   "region": "해외",
+   "score": 3,
+   "similar_count": 0,
+   "source": "AI Insider, Crypto Briefing",
+   "importance": 3
+  },
+  {
+   "title": "Coreline Soft Receives U.S. FDA 510(k) Clearance for AVIEW Aorta Metrics, Expanding Its Chest CT AI Portfolio in the U.S.",
+   "link": "https://news.google.com/rss/articles/CBMi_wFBVV95cUxPS2NObHFaOC1hS2dOYXhQNXpWWE1UVTlfUzZVWFoteGRjV3QwVzdoVzRDb3VzMmFEU0FNaHN5b09fQ0lkY3ctSGIxN0pTNnM1c1lVY0IydmhzMFNocVFOUjNuR3RUbTAwR1pKeXhpcUFKT1hBY2hpM1R4MHhEZGlEQWlSb09nSFRuajRPWllyYlMxVC1xaGZ4Y2pFcXBJWlhieEhBUjNfUWtSTkRZdkE2YzhINE9MOG1YYzdkZTJIZDVNRWZhQkxZT2d1clFrTm9ZQzFqZGtFbkFPQ25RcG9tRm1Xc0xBRDVucV9rR1pUeUREdldFOEdfWHlhS1Q1N2s?oc=5",
+   "date": "2026-10-23",
    "category": "해외 정책·규제 (미국)",
    "region": "해외",
    "score": 3,
    "similar_count": 0,
-   "source": "TradingView, azcentral.com and The Arizona Republic",
+   "source": "PR Newswire, Ortho Spine News",
    "importance": 3
   },
   {
@@ -444,31 +466,20 @@
    "similar_count": 0,
    "source": "Health Imaging, Imaging Technology News",
    "importance": 3
-  },
-  {
-   "title": "OpenEvidence AI Moves Deeper Into Clinical Workflows",
-   "link": "https://news.google.com/rss/articles/CBMilwFBVV95cUxPWERkd2FTMHo3b3RYbUUtVFFEZlkwem5mQXRXekZHMjVkdlNGVDFGbTRkb2ZQblRsMV9qZWo3NDNaclhfMWpwWHhoV2I3OHRsMFBsR0gwOUZGLWpGNERjY205Qy1fN1RzeTdpbjkyQnJEZk80Y1NuNVl5NHYyaS1jaDZNWjBhRTJLYnJQOS1TSE4xdGFpdTI4?oc=5",
-   "date": "2026-10-21",
-   "category": "해외 의료기관 AI 도입·운영",
-   "region": "해외",
-   "score": 2,
-   "similar_count": 0,
-   "source": "GovInfoSecurity, BankInfoSecurity",
-   "importance": 2
-  },
-  {
-   "title": "The AI Is Listening: Implications of Machine Generated Clinical Notes on Health Care | Newswise",
-   "link": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxORnBWN1hIVDlmSEgxRHN4Z3JpcV9KdDhLaGdVZ3RZNmhPV3htU2dZT1VON2lZUUt5QlJHYmZpWmdVWURhc0pDai0ydDFmS24yRUptc2g2TUpKNWo3Vi1xX0dfWUhxdHctc0NaREVsdUdMczRTS3QyVEJaMUMzUk9xMkdRYmVsQ0VOVjBWTnpRSTNfMXdoaEpGNUhZcU1nVTVGT2VRdTgwa29tSnpjYnNGd1dmZFozSkx60gG4AUFVX3lxTE5GcFY3WEhUOWZISDFEc3hncmlxX0p0OEtoZ1VndFk2aE9XeG1TZ1lPVU43aVlRS3lCUkdiZmlaZ1VZRGFzSkNqLTJ0MWZLbjJFSm1zaDZNSko1ajdWLXFfR19ZSHF0dy1zQ1pERWx1R0xzNFNLdDJUQloxQzNST3EyR1FiZWxDRU5WMFZOelFJM18xd2hoSkY1SFlxTWdVNUZPZVF1ODBrb21KemNic0Z3V2ZkWjNKTHo?oc=5",
-   "date": "2026-10-20",
-   "category": "해외 의료기관 AI 도입·운영",
-   "region": "해외",
-   "score": 2,
-   "similar_count": 0,
-   "source": "Newswise, Michigan Medicine",
-   "importance": 2
   }
  ],
  "policy_announcements": [
+  {
+   "title": "“성장에 날개를, 민생에 활력을, 지역에 미래를” 대통령 주재 규제합리화위원회 제2차 전체회의 개최",
+   "link": "https://www.mohw.go.kr/board.es?mid=a10503000000&bid=0027&list_no=1492315&act=view",
+   "date": "2026-10-23",
+   "category": "보건복지부",
+   "region": "정부",
+   "score": 0,
+   "similar_count": 0,
+   "source": "보건복지부",
+   "importance": 0
+  },
   {
    "title": "공정위, ｢인공지능(AI) 관련 표시·광고 가이드라인｣ (안) 의견청취 실시",
    "link": "https://news.google.com/rss/articles/CBMidkFVX3lxTE5aUE0wTC0zQUJ5cHU4ZlBWWlFESU5BbGhKQkVYLTUxcWZUX0x2eEEtR1N2MEd5Qm8xcWVIRDNmTkJYUV9GMUVjQ1B5YnREa1prYm5ScjJWSGZPcDZfQXNtX2tUZmF0eFMtaFNCMzNFRmhxdDRyd0E?oc=5",
@@ -1070,6 +1081,17 @@
    "importance": 9
   },
   {
+   "title": "Developers, not doctors, should be held accountable for generative AI medical devices, providers say",
+   "link": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxPbURiMDdtRktfZ3c4eDczeEdYMUdENTI4ejhuTW8tSDlYcFNjckpvMXhMY0xWeXl1YkhXSFlfWjF0U3JHdlctU0xjNGs0ZmVEbFFmT0F6VlBlYXBVek1CVF80dFVhaE5IZWYtbTdHUlJHN3dxeTNWNjFVRjU1RUgyTVpDM05KYk1xMG5PNHI1Q3hkSmNJZjRwczRFS2xEenM5Q1ZQN1IxZkpqclcxMzNmXzZvdWVNUHE1?oc=5",
+   "date": "2026-10-23",
+   "category": "해외 정책·규제 (미국)",
+   "region": "해외",
+   "score": 6,
+   "similar_count": 0,
+   "source": "Healthcare Dive",
+   "importance": 9
+  },
+  {
    "title": "AI transforms how mental health clinicians support local people",
    "link": "https://news.google.com/rss/articles/CBMimgFBVV95cUxOR3NLR0M2dnFPRFh4YmRFTGdxVU5OQ1piVmZ0Njh1ZHdyaFQxNGRzS1NfcnpUZVlYdW16bTI0R2pFZTNtRHRHSV9QcTRkY2N0SU5fbG1OczVqVUFCLXhGbW9jWm9Jay1ubXdPQkN6Z3h2TkJNdS1ET1NvdENVQUZyMnVUaW55d3p0MVFGRVEtN0R4TkduSk5TUTJn?oc=5",
    "date": "2026-10-15",
@@ -1144,17 +1166,6 @@
    "score": 4,
    "similar_count": 0,
    "source": "STAT",
-   "importance": 7
-  },
-  {
-   "title": "Developers, not doctors, should be held accountable for generative AI medical devices, providers say",
-   "link": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxPbURiMDdtRktfZ3c4eDczeEdYMUdENTI4ejhuTW8tSDlYcFNjckpvMXhMY0xWeXl1YkhXSFlfWjF0U3JHdlctU0xjNGs0ZmVEbFFmT0F6VlBlYXBVek1CVF80dFVhaE5IZWYtbTdHUlJHN3dxeTNWNjFVRjU1RUgyTVpDM05KYk1xMG5PNHI1Q3hkSmNJZjRwczRFS2xEenM5Q1ZQN1IxZkpqclcxMzNmXzZvdWVNUHE1?oc=5",
-   "date": "2026-10-23",
-   "category": "해외 정책·규제 (미국)",
-   "region": "해외",
-   "score": 4,
-   "similar_count": 0,
-   "source": "Healthcare Dive",
    "importance": 7
   },
   {
@@ -1472,6 +1483,17 @@
     "importance": 9
    },
    {
+    "title": "Developers, not doctors, should be held accountable for generative AI medical devices, providers say",
+    "link": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxPbURiMDdtRktfZ3c4eDczeEdYMUdENTI4ejhuTW8tSDlYcFNjckpvMXhMY0xWeXl1YkhXSFlfWjF0U3JHdlctU0xjNGs0ZmVEbFFmT0F6VlBlYXBVek1CVF80dFVhaE5IZWYtbTdHUlJHN3dxeTNWNjFVRjU1RUgyTVpDM05KYk1xMG5PNHI1Q3hkSmNJZjRwczRFS2xEenM5Q1ZQN1IxZkpqclcxMzNmXzZvdWVNUHE1?oc=5",
+    "date": "2026-10-23",
+    "category": "해외 정책·규제 (미국)",
+    "region": "해외",
+    "score": 6,
+    "similar_count": 0,
+    "source": "Healthcare Dive",
+    "importance": 9
+   },
+   {
     "title": "Lobbyists and trade groups fight to shape how states regulate medical AI",
     "link": "https://news.google.com/rss/articles/CBMipgFBVV95cUxQZE1IbGpvU1dxQWk5dzNSRVBfckN6djhPR0lXQ3BhSml1cWRaNV9LVTgtZko4cWtjZk9NX3lhNG1ibnNNY0lqNmtvVFRrTHhRVUF6VmpwVmN6UVZmX1dYS2JNYUR2U3EyR0VYYjVpUENBeFRlM3dRVG5jN050UzdheXZqM3l0UkYxUlNCWi1XZjljc0JCbDhsZ0wwd1o2b0V4Q0xOVVZ3?oc=5",
     "date": "2026-10-14",
@@ -1480,17 +1502,6 @@
     "score": 4,
     "similar_count": 0,
     "source": "STAT",
-    "importance": 7
-   },
-   {
-    "title": "Developers, not doctors, should be held accountable for generative AI medical devices, providers say",
-    "link": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxPbURiMDdtRktfZ3c4eDczeEdYMUdENTI4ejhuTW8tSDlYcFNjckpvMXhMY0xWeXl1YkhXSFlfWjF0U3JHdlctU0xjNGs0ZmVEbFFmT0F6VlBlYXBVek1CVF80dFVhaE5IZWYtbTdHUlJHN3dxeTNWNjFVRjU1RUgyTVpDM05KYk1xMG5PNHI1Q3hkSmNJZjRwczRFS2xEenM5Q1ZQN1IxZkpqclcxMzNmXzZvdWVNUHE1?oc=5",
-    "date": "2026-10-23",
-    "category": "해외 정책·규제 (미국)",
-    "region": "해외",
-    "score": 4,
-    "similar_count": 0,
-    "source": "Healthcare Dive",
     "importance": 7
    }
   ],
