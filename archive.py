@@ -85,6 +85,7 @@ def main():
         for it in json.loads(prev_path.read_text(encoding="utf-8")).get("items", []):
             prev_keys |= keys(it)
 
+    dropped = set(cur.get("dropped_keys", []))
     index = {}
     for it in cur["items"]:
         for k in keys(it):
@@ -100,6 +101,8 @@ def main():
             updated += 1
         elif ks & prev_keys:  # 지난주 파일에 이미 있는 기사(주 경계 겹침)
             continue
+        elif ks & dropped:  # 이미 같은 사안으로 합쳐 정리한 기사(다음 수집 때 다시 들어오는 것 방지)
+            continue
         else:
             it["first_seen"] = today_s
             cur["items"].append(it)
@@ -107,25 +110,47 @@ def main():
                 index[k] = it
             added += 1
 
-    if CC:  # 오늘 수집분 중 같은 사안 기사를 대표 1건으로 합침(누적 파일에 이미 들어간 중복 정리)
-        todays = [it for it in cur["items"] if it["region"] == "국내" and it.get("first_seen") == today_s]
-        drop = set()
-        for idxs in nn.group_similar(todays, CC):
-            if len(idxs) < 2:
-                continue
-            ms = sorted((todays[i] for i in idxs), key=lambda m: (nn._source_rank(m.get("originallink") or "", CC), -m.get("score", 0), m.get("pubDate", "")))
-            rep, others = ms[0], ms[1:]
-            rep["similar_count"] = max(rep.get("similar_count", 0), len(others) + sum(o.get("similar_count", 0) for o in others))
-            rep["similar_sources"] = sorted(set(rep.get("similar_sources", [])) | {nn.host_of(o.get("originallink") or "") for o in others})[:5]
-            drop |= {id(o) for o in others}
-        if drop:
-            cur["items"] = [it for it in cur["items"] if id(it) not in drop]
-            print(f"오늘 중복 기사 {len(drop)}건 정리")
+    if CC:  # 같은 사안 기사를 대표 1건으로 합침(오늘 수집분 대상, 어제 기사와 겹치면 어제 기사를 대표로 유지)
+        yday_s = (today - timedelta(days=1)).isoformat()
+        total_drop = 0
+        for region, ccx, official_first in (("국내", CC, False), ("정부", {**CC, "min_shared": 2, "bridge": True}, True)):
+            pool = [it for it in cur["items"] if it["region"] == region and it.get("first_seen") in (today_s, yday_s)]
+
+            def rank(m, official_first=official_first):
+                if official_first:  # 정부: 부처 직접 발표 > 검색(언론·재게시), 그다음 먼저 나온 순
+                    return (m.get("category") == "정부 보도자료 (검색)", m.get("pubDate", ""))
+                return (nn._source_rank(m.get("originallink") or "", CC), -m.get("score", 0), m.get("pubDate", ""))
+
+            drop = set()
+            for idxs in nn.group_similar(pool, ccx):
+                if len(idxs) < 2:
+                    continue
+                ms = [pool[i] for i in idxs]
+                olds = [m for m in ms if m.get("first_seen") != today_s]
+                news = [m for m in ms if m.get("first_seen") == today_s]
+                if not news:
+                    continue
+                rep = sorted(olds or news, key=rank)[0]
+                others = [m for m in news if m is not rep]
+                if not others:
+                    continue
+                rep["similar_count"] = max(rep.get("similar_count", 0), len(others) + sum(o.get("similar_count", 0) for o in others))
+                rep["similar_sources"] = sorted(set(rep.get("similar_sources", [])) | {nn.host_of(o.get("originallink") or o.get("link") or "") for o in others})[:5]
+                for o in others:
+                    drop.add(id(o))
+                    cur.setdefault("dropped_keys", []).extend(keys(o))
+            if drop:
+                cur["items"] = [it for it in cur["items"] if id(it) not in drop]
+                total_drop += len(drop)
+        if total_drop:
+            print(f"중복 기사 {total_drop}건 정리")
 
     if TRACKED:  # 설정 키워드(keywords.json terms) 일치 목록을 기사마다 저장 → 키워드 집계용
         for it in cur["items"]:
             it["kw"] = tracked.hits(it["title"], it.get("summary", ""), TRACKED)
 
+    if cur.get("dropped_keys"):
+        cur["dropped_keys"] = list(dict.fromkeys(cur["dropped_keys"]))[-6000:]
     cur["week"], cur["start"], cur["end"] = wk, start.isoformat(), end.isoformat()
     cur["updated_at"] = now.isoformat()
     cur["category_order"] = list(dict.fromkeys(cur.get("category_order", []) + order))
