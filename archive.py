@@ -110,6 +110,13 @@ def main():
                 index[k] = it
             added += 1
 
+    # 정부 발표 탭에는 기관이 직접 낸 자료만: 예전에 들어온 언론 기사(전략위 검색 결과) 정리
+    before = len(cur["items"])
+    cur["items"] = [it for it in cur["items"] if not (it["region"] == "정부" and it.get("via") == "gnews"
+                    and it.get("agency") == "국가인공지능전략위원회" and not it.get("official"))]
+    if len(cur["items"]) != before:
+        print(f"정부 발표 탭 언론 기사 {before - len(cur['items'])}건 제거")
+
     if CC:  # 같은 사안 기사를 대표 1건으로 합침(오늘 수집분 대상, 어제 기사와 겹치면 어제 기사를 대표로 유지)
         yday_s = (today - timedelta(days=1)).isoformat()
         total_drop = 0
