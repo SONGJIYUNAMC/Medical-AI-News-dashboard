@@ -1,16 +1,16 @@
 {
  "month": "2026-10",
- "generated_at": "2026-10-24T07:59:30.119396+09:00",
+ "generated_at": "2026-10-25T07:54:32.165150+09:00",
  "prev_month": null,
- "collected_days": 10,
+ "collected_days": 11,
  "first_day": "2026-10-15",
- "last_day": "2026-10-24",
- "total": 2726,
+ "last_day": "2026-10-25",
+ "total": 2793,
  "prev_total": null,
  "by_region": {
-  "국내": 2313,
-  "해외": 380,
-  "정부": 33
+  "국내": 2359,
+  "해외": 399,
+  "정부": 35
  },
  "weekly": {
   "2026-W42": {
@@ -19,83 +19,83 @@
    "정부": 19
   },
   "2026-W43": {
-   "국내": 1500,
-   "해외": 227,
-   "정부": 14
+   "국내": 1546,
+   "해외": 246,
+   "정부": 16
   }
  },
  "categories": [
   {
    "name": "국내 · 기타 (의료 AI·병원 AI 키워드)",
-   "count": 571,
+   "count": 586,
    "prev": 0,
-   "delta": 571
+   "delta": 586
   },
   {
    "name": "국내 · 국내 의료 AI 기업",
-   "count": 513,
+   "count": 519,
    "prev": 0,
-   "delta": 513
+   "delta": 519
   },
   {
    "name": "국내 · 국내 정책·규제",
-   "count": 417,
+   "count": 426,
    "prev": 0,
-   "delta": 417
+   "delta": 426
   },
   {
    "name": "국내 · 국내 의료기관",
-   "count": 242,
+   "count": 250,
    "prev": 0,
-   "delta": 242
+   "delta": 250
   },
   {
    "name": "국내 · AI 거버넌스·보안",
-   "count": 205,
+   "count": 208,
    "prev": 0,
-   "delta": 205
+   "delta": 208
   },
   {
    "name": "해외 · 해외 의료기관 AI 도입·운영",
-   "count": 194,
+   "count": 208,
    "prev": 0,
-   "delta": 194
+   "delta": 208
   },
   {
    "name": "국내 · 해외 의료기관·정책·규제",
-   "count": 193,
+   "count": 197,
    "prev": 0,
-   "delta": 193
+   "delta": 197
   },
   {
    "name": "국내 · 학술·연구·행사",
-   "count": 172,
+   "count": 173,
    "prev": 0,
-   "delta": 172
+   "delta": 173
   },
   {
    "name": "해외 · 해외 정책·규제 (미국)",
-   "count": 99,
+   "count": 102,
    "prev": 0,
-   "delta": 99
+   "delta": 102
   },
   {
    "name": "해외 · 해외 연구·학술",
-   "count": 50,
+   "count": 51,
    "prev": 0,
-   "delta": 50
+   "delta": 51
   },
   {
    "name": "해외 · 해외 정책·규제 (유럽·영국)",
-   "count": 37,
+   "count": 38,
    "prev": 0,
-   "delta": 37
+   "delta": 38
   },
   {
    "name": "정부 · 정부 보도자료 (검색)",
-   "count": 14,
+   "count": 16,
    "prev": 0,
-   "delta": 14
+   "delta": 16
   },
   {
    "name": "정부 · 국가인공지능전략위원회",
@@ -125,31 +125,31 @@
  "keywords": [
   {
    "word": "서울대병원",
-   "count": 86,
+   "count": 89,
    "prev": 0,
    "status": ""
   },
   {
    "word": "식약처",
-   "count": 63,
+   "count": 64,
    "prev": 0,
    "status": ""
   },
   {
    "word": "세미나",
-   "count": 61,
+   "count": 62,
    "prev": 0,
    "status": ""
   },
   {
    "word": "세브란스",
-   "count": 56,
+   "count": 58,
    "prev": 0,
    "status": ""
   },
   {
    "word": "FDA",
-   "count": 53,
+   "count": 54,
    "prev": 0,
    "status": ""
   },
@@ -167,7 +167,7 @@
   },
   {
    "word": "아산병원",
-   "count": 40,
+   "count": 42,
    "prev": 0,
    "status": ""
   },
@@ -190,20 +190,20 @@
    "status": ""
   },
   {
-   "word": "국회",
-   "count": 28,
+   "word": "마이크로소프트",
+   "count": 32,
    "prev": 0,
    "status": ""
   },
   {
    "word": "구글",
-   "count": 28,
+   "count": 29,
    "prev": 0,
    "status": ""
   },
   {
-   "word": "마이크로소프트",
-   "count": 26,
+   "word": "국회",
+   "count": 28,
    "prev": 0,
    "status": ""
   },
@@ -492,6 +492,17 @@
    "importance": 0
   },
   {
+   "title": "AI관련 표시광고 가이드라인 초안 의견청취 실시",
+   "link": "https://news.google.com/rss/articles/CBMidEFVX3lxTFBDZnVyd21QVm1BQTVqRzNuT0JPckk1VzlFTXpQZ2VHUS04cWh6TlBIZlF2am04QzlCV25YT1E4SXN5VlBrN1NiYU9GQ050NjFlalF5VGpVdGJRX1U0TTVlME5XR0E3Q21UeUs4MGpDVGo4NWxo?oc=5",
+   "date": "2026-10-22",
+   "category": "정부 보도자료 (검색)",
+   "region": "정부",
+   "score": 0,
+   "similar_count": 0,
+   "source": "정부 보도자료 (검색)",
+   "importance": 0
+  },
+  {
    "title": "[보도참고] ‘디지털의료·건강지원기기 성능인증 제도’ KIMES 현장 세미나 및 홍보관 운영",
    "link": "https://www.mfds.go.kr/brd/m_99/view.do?seq=50429",
    "date": "2026-10-22",
@@ -612,6 +623,17 @@
    "score": 0,
    "similar_count": 0,
    "source": "보건복지부",
+   "importance": 0
+  },
+  {
+   "title": "[모두의 토론회] AI 시대 개인정보, 어떻게 쓰여야 할까요? - 전체 | 카드/한컷",
+   "link": "https://news.google.com/rss/articles/CBMibkFVX3lxTE5jR2dhcnRpbnpxalpiSDZGb3VDaGF5dXZycXlaX2YyMnpDTm9LSHZ6Yy15TjgtVDJHeU5sUzQ2Y0FwTk9HR3d3TW5Sc3ZLMDBLQVZ3eFJfQXFfek4xNjNabldtYTZDOVRzS3Vta2pn?oc=5",
+   "date": "2026-10-19",
+   "category": "정부 보도자료 (검색)",
+   "region": "정부",
+   "score": 0,
+   "similar_count": 0,
+   "source": "정부 보도자료 (검색)",
    "importance": 0
   },
   {
