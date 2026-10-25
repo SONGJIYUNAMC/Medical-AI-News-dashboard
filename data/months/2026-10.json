@@ -1,16 +1,16 @@
 {
  "month": "2026-10",
- "generated_at": "2026-10-25T07:54:32.165150+09:00",
+ "generated_at": "2026-10-26T07:54:06.985264+09:00",
  "prev_month": null,
- "collected_days": 11,
+ "collected_days": 12,
  "first_day": "2026-10-15",
- "last_day": "2026-10-25",
- "total": 2793,
+ "last_day": "2026-10-26",
+ "total": 2901,
  "prev_total": null,
  "by_region": {
-  "국내": 2359,
-  "해외": 399,
-  "정부": 35
+  "국내": 2456,
+  "해외": 409,
+  "정부": 36
  },
  "weekly": {
   "2026-W42": {
@@ -22,56 +22,61 @@
    "국내": 1546,
    "해외": 246,
    "정부": 16
+  },
+  "2026-W44": {
+   "국내": 97,
+   "해외": 10,
+   "정부": 1
   }
  },
  "categories": [
   {
    "name": "국내 · 기타 (의료 AI·병원 AI 키워드)",
-   "count": 586,
+   "count": 613,
    "prev": 0,
-   "delta": 586
+   "delta": 613
   },
   {
    "name": "국내 · 국내 의료 AI 기업",
-   "count": 519,
+   "count": 529,
    "prev": 0,
-   "delta": 519
+   "delta": 529
   },
   {
    "name": "국내 · 국내 정책·규제",
-   "count": 426,
+   "count": 438,
    "prev": 0,
-   "delta": 426
+   "delta": 438
   },
   {
    "name": "국내 · 국내 의료기관",
-   "count": 250,
+   "count": 268,
    "prev": 0,
-   "delta": 250
+   "delta": 268
   },
   {
    "name": "국내 · AI 거버넌스·보안",
-   "count": 208,
+   "count": 219,
    "prev": 0,
-   "delta": 208
+   "delta": 219
   },
   {
    "name": "해외 · 해외 의료기관 AI 도입·운영",
-   "count": 208,
+   "count": 215,
    "prev": 0,
-   "delta": 208
+   "delta": 215
   },
   {
    "name": "국내 · 해외 의료기관·정책·규제",
-   "count": 197,
+   "count": 206,
    "prev": 0,
-   "delta": 197
+   "delta": 206
   },
   {
    "name": "국내 · 학술·연구·행사",
-   "count": 173,
+   "count": 183,
    "prev": 0,
-   "delta": 173
+   "delta": 183
   },
   {
    "name": "해외 · 해외 정책·규제 (미국)",
@@ -81,9 +86,9 @@
   },
   {
    "name": "해외 · 해외 연구·학술",
-   "count": 51,
+   "count": 54,
    "prev": 0,
-   "delta": 51
+   "delta": 54
   },
   {
    "name": "해외 · 해외 정책·규제 (유럽·영국)",
@@ -93,9 +98,9 @@
   },
   {
    "name": "정부 · 정부 보도자료 (검색)",
-   "count": 16,
+   "count": 17,
    "prev": 0,
-   "delta": 16
+   "delta": 17
   },
   {
    "name": "정부 · 국가인공지능전략위원회",
@@ -125,7 +130,13 @@
  "keywords": [
   {
    "word": "서울대병원",
-   "count": 89,
+   "count": 96,
+   "prev": 0,
+   "status": ""
+  },
+  {
+   "word": "세미나",
+   "count": 65,
    "prev": 0,
    "status": ""
   },
@@ -136,50 +147,44 @@
    "status": ""
   },
   {
-   "word": "세미나",
-   "count": 62,
-   "prev": 0,
-   "status": ""
-  },
-  {
    "word": "세브란스",
-   "count": 58,
+   "count": 63,
    "prev": 0,
    "status": ""
   },
   {
    "word": "FDA",
-   "count": 54,
+   "count": 55,
    "prev": 0,
    "status": ""
   },
   {
    "word": "보건복지부",
-   "count": 52,
-   "prev": 0,
-   "status": ""
-  },
-  {
-   "word": "분당서울대",
-   "count": 42,
+   "count": 53,
    "prev": 0,
    "status": ""
   },
   {
    "word": "아산병원",
-   "count": 42,
+   "count": 48,
+   "prev": 0,
+   "status": ""
+  },
+  {
+   "word": "분당서울대",
+   "count": 45,
+   "prev": 0,
+   "status": ""
+  },
+  {
+   "word": "학술대회",
+   "count": 45,
    "prev": 0,
    "status": ""
   },
   {
    "word": "WHO",
    "count": 38,
-   "prev": 0,
-   "status": ""
-  },
-  {
-   "word": "학술대회",
-   "count": 37,
    "prev": 0,
    "status": ""
   },
@@ -191,13 +196,13 @@
   },
   {
    "word": "마이크로소프트",
-   "count": 32,
+   "count": 34,
    "prev": 0,
    "status": ""
   },
   {
    "word": "구글",
-   "count": 29,
+   "count": 31,
    "prev": 0,
    "status": ""
   },
@@ -208,14 +213,20 @@
    "status": ""
   },
   {
+   "word": "포럼",
+   "count": 26,
+   "prev": 0,
+   "status": ""
+  },
+  {
    "word": "상급종합병원",
    "count": 24,
    "prev": 0,
    "status": ""
   },
   {
-   "word": "포럼",
-   "count": 24,
+   "word": "심평원",
+   "count": 21,
    "prev": 0,
    "status": ""
   },
@@ -226,19 +237,13 @@
    "status": ""
   },
   {
-   "word": "심평원",
-   "count": 20,
-   "prev": 0,
-   "status": ""
-  },
-  {
    "word": "뷰노",
-   "count": 20,
+   "count": 21,
    "prev": 0,
    "status": ""
   },
   {
-   "word": "스마트 병원",
+   "word": "서울성모병원",
    "count": 19,
    "prev": 0,
    "status": ""
@@ -478,6 +483,17 @@
    "score": 0,
    "similar_count": 0,
    "source": "보건복지부",
+   "importance": 0
+  },
+  {
+   "title": "‘디지털의료·건강지원기기 성능인증 제도’ KIMES 현장 세미나 및 홍보관 운영",
+   "link": "https://news.google.com/rss/articles/CBMidkFVX3lxTE82dzdnc1VzcDBNc0RPUnMyNDRPYVYtNkdGYTZGeGZiNkc3WHdNQnF3akQ5cWoyV3UtdDlYMi15anZGbmtWenM2UmVPR0V4R2NFVnQ0WEFHS3hJNC02cmdDZlJjVS1Oamd2RFRkM2hmM3FpZGhRQVE?oc=5",
+   "date": "2026-10-22",
+   "category": "정부 보도자료 (검색)",
+   "region": "정부",
+   "score": 0,
+   "similar_count": 0,
+   "source": "정부 보도자료 (검색)",
    "importance": 0
   },
   {
@@ -1147,6 +1163,17 @@
    "importance": 8
   },
   {
+   "title": "Conversational diagnostic artificial intelligence in ambulatory primary care: a prospective feasibility study",
+   "link": "https://news.google.com/rss/articles/CBMiwwFBVV95cUxPNnBqeGYzUklNTEctcl9KRzNBTEdteDM1N1BqWmtxNUt0LTV5VjV3N05vcVFscjk0Sm1tQ3phMTJRQjhCUXNfdGRjWU9xWmp6R0lyWDB4ektzaWRFdWVLYlUxcHBFdXhzZ3F0UWZOa01ONzJLcGVhMFdLdUJReUhMTmhZdjNQUldsdGNiWldWYU8wUS1RMkVqS0pLRmZ0ck90bFo1VjNRRnRwQjlfbE9yZmIwX0FjYWk5aXBNWVJyWmJwc00?oc=5",
+   "date": "2026-10-24",
+   "category": "해외 연구·학술",
+   "region": "해외",
+   "score": 5,
+   "similar_count": 0,
+   "source": "The Lancet",
+   "importance": 8
+  },
+  {
    "title": "Medical data crunch poses challenges to ambient AI and clinical agents",
    "link": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxNb2c4bm0wcFg4eVNxTUhIYXZocG95a1N6M09OeVZxdGxQbG9FbjRnRWtHYWxVMVpuakhYZDJHQmRsUDc1blowUi0tcDdQdi1zeVJIMk44bkdhTGRTa01PY3J5M1QyNXN3cXFTZ3dnRG1VS3d6UWhkZ1RJd3ZCc0VsSlJsaTd0eHZCbUt1WU11THBEN3FJQ3NqcDNRQzBKUERqc1Y2X3JCank?oc=5",
    "date": "2026-10-17",
@@ -1232,17 +1259,6 @@
    "score": 3,
    "similar_count": 0,
    "source": "MobiHealthNews",
-   "importance": 6
-  },
-  {
-   "title": "American Medical Association rolls out governance framework for agentic AI solutions",
-   "link": "https://news.google.com/rss/articles/CBMiwgFBVV95cUxPWHpsNFBWMDdsUVpza0hwN3BMeUZnSEhhdkNIWWNNS01KUWg2ZFZpLU5KSktYUFo2alVPQTJRQlV6eEZqdWo4cU50R2hXc19hb29pU1c3ZzJSVkl4dTY0Nk5yc3ZtUDRRV09NN1lsUmRmSmJrZTRxTXoyTU1fZGF3bEZ0MFlNQUVCTWQ3Wm9SUWpoNjdjSTRMTnBVQkkydTI5T2lJUG9BTHlSNzRnOGloTncyWXowOC1CcFJ0cDFTY0NCdw?oc=5",
-   "date": "2026-10-17",
-   "category": "해외 의료기관 AI 도입·운영",
-   "region": "해외",
-   "score": 3,
-   "similar_count": 0,
-   "source": "Fierce Healthcare",
    "importance": 6
   }
  ],
@@ -1610,6 +1626,17 @@
     "importance": 8
    },
    {
+    "title": "Conversational diagnostic artificial intelligence in ambulatory primary care: a prospective feasibility study",
+    "link": "https://news.google.com/rss/articles/CBMiwwFBVV95cUxPNnBqeGYzUklNTEctcl9KRzNBTEdteDM1N1BqWmtxNUt0LTV5VjV3N05vcVFscjk0Sm1tQ3phMTJRQjhCUXNfdGRjWU9xWmp6R0lyWDB4ektzaWRFdWVLYlUxcHBFdXhzZ3F0UWZOa01ONzJLcGVhMFdLdUJReUhMTmhZdjNQUldsdGNiWldWYU8wUS1RMkVqS0pLRmZ0ck90bFo1VjNRRnRwQjlfbE9yZmIwX0FjYWk5aXBNWVJyWmJwc00?oc=5",
+    "date": "2026-10-24",
+    "category": "해외 연구·학술",
+    "region": "해외",
+    "score": 5,
+    "similar_count": 0,
+    "source": "The Lancet",
+    "importance": 8
+   },
+   {
     "title": "Malicious AI and Nuclear Famine Carry Low-Probability Extinction Risk This Century, Lancet Commission on 17 Global Threats Finds",
     "link": "https://news.google.com/rss/articles/CBMi7AFBVV95cUxON2p4UVlacFo3YldybzFGY3BBbkR4anRVZFZmMGpScFFvdnVWaVR0VjJ6NFVMbS1ucDBpdHRibEtEVU1HczNCdktLcFViRDZvdEw4bWJ5RU1jQ3VxczRQMDlZVERfNmpRQ0xSN1JlTE1OMDIyTnVjcndacmp5NkNpLTQ1dkdhNkJzTGVRNW0wV0RxQXBFaDByLVFITExTN2RJald0OFBWYzVTcy04RGMtS1NvOUJNVVM5N0ZSczk3bU41RGtLTnVCR2kwbTlIUXg3M1l2dlFGSnhSWkE2cWt1QmRJMzJzOF9tdDhDSQ?oc=5",
     "date": "2026-10-15",
@@ -1618,17 +1645,6 @@
     "score": 3,
     "similar_count": 0,
     "source": "Nature World News",
-    "importance": 6
-   },
-   {
-    "title": "Artificial intelligence-enabled clinical phenotyping of human brown fat",
-    "link": "https://news.google.com/rss/articles/CBMiX0FVX3lxTE9GZTlIVXVnazYxNTFrWEppcUVrV3ZIVUVNY2RQQURkSGtDR29wcnJ1SUxqSnNlc0ZTVFpnN0RORDBqNFRHWFZBTXZiMWp0TnBPMC1uZnZIWkJwTHI2UGJn?oc=5",
-    "date": "2026-10-15",
-    "category": "해외 연구·학술",
-    "region": "해외",
-    "score": 3,
-    "similar_count": 0,
-    "source": "Nature",
     "importance": 6
    }
   ]
