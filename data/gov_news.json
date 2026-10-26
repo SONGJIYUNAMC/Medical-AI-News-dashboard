@@ -1,19 +1,25 @@
 {
-  "generated_at": "2026-10-26T07:54:06.674969+09:00",
+  "generated_at": "2026-10-27T08:05:48.873569+09:00",
   "window_hours": 168,
-  "count": 13,
-  "filtered_out": 281,
+  "count": 9,
+  "filtered_out": 242,
   "category_order": [
     "보건복지부",
+    "과학기술정보통신부",
     "정부 보도자료 (검색)",
     "식품의약품안전처"
   ],
-  "errors": [],
+  "errors": [
+    {
+      "query": "과학기술정보통신부 보도자료 (https://www.msit.go.kr/user/rss/rss.do?bbsSeqNo=94)",
+      "error": "HTTPSConnectionPool(host='www.msit.go.kr', port=443): Read timed out. (read timeout=30)"
+    }
+  ],
   "items": [
     {
       "title": "“성장에 날개를, 민생에 활력을, 지역에 미래를” 대통령 주재 규제합리화위원회 제2차 전체회의 개최",
       "link": "https://www.mohw.go.kr/board.es?mid=a10503000000&bid=0027&list_no=1492315&act=view",
-      "summary": "“성장에 날개를, 민생에 활력을, 지역에 미래를” 대통령 주재 규제합리화위원회 제2차 전체회의 개최 - ？메가프로젝트·5극3특 성장엔진 등 지방주도 성장 조기성과 창출 적극 뒷받침 ？단일 법률 역대 최대 규제특례 + 범정부 지원을 결합한 초광역특구법 제정 추진 ？메가프로젝트로봇·반도체·AI데이터센터·5극3특 성장엔진자율차·바이오 경쟁국 수준 규제 합리화 - ？창업기업 규제합리화를 통해 국가창업시대로의 전환 가속화 ？획일적·경직적 창업 인정 기준, 불합리한 금융거래 등 창업 핵심 규제 해소 ？과도한 서류 폐지, 분량과 양식 합리화 등",
+      "summary": "“성장에 날개를, 민생에 활력을, 지역에 미래를” 대통령 주재 규제합리화위원회 제2차 전체회의 개최 - 메가프로젝트·5극3특 성장엔진 등 지방주도 성장 조기성과 창출 적극 뒷받침 단일 법률 역대 최대 규제특례 + 범정부 지원을 결합한 초광역특구법 제정 추진 메가프로젝트로봇·반도체·AI데이터센터·5극3특 성장엔진자율차·바이오 경쟁국 수준 규제 합리화 - 창업기업 규제합리화를 통해 국가창업시대로의 전환 가속화 획일적·경직적 창업 인정 기준, 불합리한 금융거래 등 창업 핵심 규제 해소 과도한 서류 폐지, 분량과 양식 합리화 등 창업기업 ",
       "pubDate": "2026-10-23T14:05:00+09:00",
       "agency": "보건복지부",
       "kind": "법령·입법",
@@ -21,20 +27,20 @@
       "official": true
     },
     {
+      "title": "과기정통부, 제2차 규제합리화위원회에서 ‘AIDC 생태계 지원 방안’ 발표",
+      "link": "https://www.msit.go.kr/bbs/view.do?sCode=user&mId=307&mPid=208&bbsSeqNo=94&nttSeqNo=3187892",
+      "summary": "담당부서: 인공지능데이터진흥과",
+      "pubDate": "2026-10-23T00:00:00+09:00",
+      "agency": "과학기술정보통신부",
+      "kind": "지원사업·정책",
+      "via": "api",
+      "official": true
+    },
+    {
       "title": "‘디지털의료·건강지원기기 성능인증 제도’ KIMES 현장 세미나 및 홍보관 운영",
       "link": "https://news.google.com/rss/articles/CBMidkFVX3lxTE82dzdnc1VzcDBNc0RPUnMyNDRPYVYtNkdGYTZGeGZiNkc3WHdNQnF3akQ5cWoyV3UtdDlYMi15anZGbmtWenM2UmVPR0V4R2NFVnQ0WEFHS3hJNC02cmdDZlJjVS1Oamd2RFRkM2hmM3FpZGhRQVE?oc=5",
       "summary": "‘디지털의료·건강지원기기 성능인증 제도’ KIMES 현장 세미나 및 홍보관 운영 대한민국 정책브리핑",
       "pubDate": "2026-10-22T10:25:55+09:00",
-      "agency": "정부 보도자료 (검색)",
-      "kind": "가이드라인·기준",
-      "via": "gnews",
-      "official": true
-    },
-    {
-      "title": "AI관련 표시광고 가이드라인 초안 의견청취 실시",
-      "link": "https://news.google.com/rss/articles/CBMidEFVX3lxTFBDZnVyd21QVm1BQTVqRzNuT0JPckk1VzlFTXpQZ2VHUS04cWh6TlBIZlF2am04QzlCV25YT1E4SXN5VlBrN1NiYU9GQ050NjFlalF5VGpVdGJRX1U0TTVlME5XR0E3Q21UeUs4MGpDVGo4NWxo?oc=5",
-      "summary": "AI관련 표시광고 가이드라인 초안 의견청취 실시 대한민국 정책브리핑",
-      "pubDate": "2026-10-22T10:00:00+09:00",
       "agency": "정부 보도자료 (검색)",
       "kind": "가이드라인·기준",
       "via": "gnews",
@@ -62,9 +68,9 @@
     },
     {
       "title": "'AI 헬스케어 서울선언문' 발표…\"AI 혁신 혜택, 전 인류가 공평하게\"",
-      "link": "https://news.google.com/rss/articles/CBMikgFBVV95cUxOakozTm84Wnc4WDUyZW5WanBvYWFCczEyQVJSdW5LNEd1U2ozaExuOU9nNk55ak42RjhVYkRoS2dELVUtYUZBRlJONmFYS2tZaFZENUFvMDIzY3Z2N0RWMWRrYUpkcEM2SXhNWXhZTERjWlFwenV2bU5FU1M4U0dxMHAtY3J2cWZESUtYWF9xOEJvUQ?oc=5",
+      "link": "https://news.google.com/rss/articles/CBMibEFVX3lxTE9NTkdjTE9aM1JJemVrYzh4bnhDa0l0NU9ONHNOVWVEYjl2b1NhZjRTN2ZBUlA2WVFWX3NNdkNtazdfSjJhSXZWcWtIOVBvbXNaQm1xLTQtQlExU2NFOXNxM05vaTBpOEdGdEZVQw?oc=5",
       "summary": "'AI 헬스케어 서울선언문' 발표…\"AI 혁신 혜택, 전 인류가 공평하게\" 대한민국 정책브리핑",
-      "pubDate": "2026-10-21T17:03:45+09:00",
+      "pubDate": "2026-10-21T18:52:13+09:00",
       "agency": "정부 보도자료 (검색)",
       "kind": "지원사업·정책",
       "via": "gnews",
@@ -95,46 +101,6 @@
       "link": "https://news.google.com/rss/articles/CBMizAFBVV95cUxOenA3QWpNRVFUYWF2Ml9TQjBNNUVPRWxCM1A1eEFSZmRLaTZ5QVV0Qi1heFRCc0dTb3RRa3oyQU1tWkozeUl4NFRKRWJkSzJzYmRqY1N2LTVpN0tjWEFpVURlY3JJMjB4UWlHU251NkJwbURVeDVZelFhWGMyb29IRUdiSHU1VjJROEJnYlh2TjhpRkhXd0pnQU1vOEV1MnJkbklEWVU2bzNWMHk4V2ZhVUlvRkZISU1RWklmd3ZSR2xpR2hmbTE0bFB5dnY?oc=5",
       "summary": "[9.1.화.석간] 내가 참여한 건강조사 데이터, 인공지능 기반 맞춤 건강리포트로 돌려 드립니다! 정책브리핑",
       "pubDate": "2026-10-21T00:09:23+09:00",
-      "agency": "정부 보도자료 (검색)",
-      "kind": "지원사업·정책",
-      "via": "gnews",
-      "official": true
-    },
-    {
-      "title": "식약처, 식의약 공공데이터·AI 활용 우수작 5건 선정",
-      "link": "https://news.google.com/rss/articles/CBMidkFVX3lxTE9palYyNDQwZFRRVEt4djNwZHdBdmxvTzlvU2ZFelZfcFZCcUVuVlZFTS1FNVFlZ3JyeVRWSGR3dzVmbnM5TlVJUC1mWG1oNk1KOWt3bVFIZnRvNWN4RE0xQ2hFZHpodW41NWtFR29SU0tUY3puTFE?oc=5",
-      "summary": "식약처, 식의약 공공데이터·AI 활용 우수작 5건 선정 정책브리핑",
-      "pubDate": "2026-10-19T16:00:00+09:00",
-      "agency": "정부 보도자료 (검색)",
-      "kind": "지원사업·정책",
-      "via": "gnews",
-      "official": true
-    },
-    {
-      "title": "[보도참고] 식약처, 식의약 공공데이터·AI 활용 우수작 5건 선정",
-      "link": "https://www.mfds.go.kr/brd/m_99/view.do?seq=50419",
-      "summary": "",
-      "pubDate": "2026-10-19T15:59:22+09:00",
-      "agency": "식품의약품안전처",
-      "kind": "기타 발표",
-      "via": "rss",
-      "official": true
-    },
-    {
-      "title": "이형훈 제2차관, 의료AI 본격 추진 대비 네이버 데이터센터 ‘각(GAK) 세종’ 방문",
-      "link": "https://www.mohw.go.kr/board.es?mid=a10503000000&bid=0027&list_no=1492263&act=view",
-      "summary": "이형훈 제2차관, 의료AI 본격 추진 대비 네이버 데이터센터 ‘각(GAK) 세종’ 방문 - AI 기본의료 전략 추진 위한 인공지능데이터센터(AIDC) 현장 점검 -- 데이터센터 조성을 위한 AI 핵심 인프라 운영 현황과 현장 경험 청취 - 보건복지부(장관 정은경)는 이형훈 보건복지부 제2차관이 10월 19일(월) 세종특별자치시 집현동에 위치한 네이버 데이터센터 ‘각 세종’을 방문하여 인공지능(AI) 기반 시설 현장을 살펴보았다고 밝혔다. 이번 방문은 의료AI와 신약 연구 등 「AI 기본의료 전략」 추진의 기반이 되는 운영 자원을 현",
-      "pubDate": "2026-10-19T14:35:00+09:00",
-      "agency": "보건복지부",
-      "kind": "지원사업·정책",
-      "via": "rss",
-      "official": true
-    },
-    {
-      "title": "[모두의 토론회] AI 시대 개인정보, 어떻게 쓰여야 할까요? - 전체 | 카드/한컷 | 멀티미디어",
-      "link": "https://news.google.com/rss/articles/CBMibkFVX3lxTE5jR2dhcnRpbnpxalpiSDZGb3VDaGF5dXZycXlaX2YyMnpDTm9LSHZ6Yy15TjgtVDJHeU5sUzQ2Y0FwTk9HR3d3TW5Sc3ZLMDBLQVZ3eFJfQXFfek4xNjNabldtYTZDOVRzS3Vta2pn?oc=5",
-      "summary": "[모두의 토론회] AI 시대 개인정보, 어떻게 쓰여야 할까요? - 전체 | 카드/한컷 | 멀티미디어 대한민국 정책브리핑",
-      "pubDate": "2026-10-19T11:06:06+09:00",
       "agency": "정부 보도자료 (검색)",
       "kind": "지원사업·정책",
       "via": "gnews",
