@@ -1,16 +1,16 @@
 {
  "month": "2026-10",
- "generated_at": "2026-10-27T08:05:51.121364+09:00",
+ "generated_at": "2026-10-28T08:05:18.885155+09:00",
  "prev_month": null,
- "collected_days": 13,
+ "collected_days": 14,
  "first_day": "2026-10-15",
- "last_day": "2026-10-27",
- "total": 3196,
+ "last_day": "2026-10-28",
+ "total": 3461,
  "prev_total": null,
  "by_region": {
-  "국내": 2717,
-  "해외": 442,
-  "정부": 37
+  "국내": 2938,
+  "해외": 484,
+  "정부": 39
  },
  "weekly": {
   "2026-W42": {
@@ -24,77 +24,77 @@
    "정부": 16
   },
   "2026-W44": {
-   "국내": 358,
-   "해외": 43,
-   "정부": 2
+   "국내": 579,
+   "해외": 85,
+   "정부": 4
   }
  },
  "categories": [
   {
    "name": "국내 · 기타 (의료 AI·병원 AI 키워드)",
-   "count": 666,
+   "count": 741,
    "prev": 0,
-   "delta": 666
+   "delta": 741
   },
   {
    "name": "국내 · 국내 의료 AI 기업",
-   "count": 584,
+   "count": 625,
    "prev": 0,
-   "delta": 584
+   "delta": 625
   },
   {
    "name": "국내 · 국내 정책·규제",
-   "count": 487,
+   "count": 512,
    "prev": 0,
-   "delta": 487
+   "delta": 512
   },
   {
    "name": "국내 · 국내 의료기관",
-   "count": 308,
+   "count": 330,
    "prev": 0,
-   "delta": 308
+   "delta": 330
   },
   {
    "name": "국내 · AI 거버넌스·보안",
-   "count": 242,
+   "count": 261,
    "prev": 0,
-   "delta": 242
+   "delta": 261
   },
   {
    "name": "해외 · 해외 의료기관 AI 도입·운영",
-   "count": 230,
+   "count": 252,
    "prev": 0,
-   "delta": 230
+   "delta": 252
   },
   {
    "name": "국내 · 해외 의료기관·정책·규제",
-   "count": 223,
+   "count": 244,
    "prev": 0,
-   "delta": 223
+   "delta": 244
   },
   {
    "name": "국내 · 학술·연구·행사",
-   "count": 207,
+   "count": 225,
    "prev": 0,
-   "delta": 207
+   "delta": 225
   },
   {
    "name": "해외 · 해외 정책·규제 (미국)",
-   "count": 115,
+   "count": 128,
    "prev": 0,
-   "delta": 115
+   "delta": 128
   },
   {
    "name": "해외 · 해외 연구·학술",
-   "count": 58,
+   "count": 61,
    "prev": 0,
-   "delta": 58
+   "delta": 61
   },
   {
    "name": "해외 · 해외 정책·규제 (유럽·영국)",
-   "count": 39,
+   "count": 43,
    "prev": 0,
-   "delta": 39
+   "delta": 43
   },
   {
    "name": "정부 · 정부 보도자료 (검색)",
@@ -110,18 +110,18 @@
   },
   {
    "name": "정부 · 보건복지부",
-   "count": 6,
+   "count": 7,
    "prev": 0,
-   "delta": 6
-  },
-  {
-   "name": "정부 · 과학기술정보통신부",
-   "count": 2,
-   "prev": 0,
-   "delta": 2
+   "delta": 7
   },
   {
    "name": "정부 · 식품의약품안전처",
+   "count": 3,
+   "prev": 0,
+   "delta": 3
+  },
+  {
+   "name": "정부 · 과학기술정보통신부",
    "count": 2,
    "prev": 0,
    "delta": 2
@@ -130,13 +130,25 @@
  "keywords": [
   {
    "word": "서울대병원",
-   "count": 107,
+   "count": 117,
    "prev": 0,
    "status": ""
   },
   {
    "word": "세미나",
-   "count": 75,
+   "count": 77,
+   "prev": 0,
+   "status": ""
+  },
+  {
+   "word": "FDA",
+   "count": 69,
+   "prev": 0,
+   "status": ""
+  },
+  {
+   "word": "식약처",
+   "count": 69,
    "prev": 0,
    "status": ""
   },
@@ -147,62 +159,56 @@
    "status": ""
   },
   {
-   "word": "식약처",
-   "count": 65,
-   "prev": 0,
-   "status": ""
-  },
-  {
-   "word": "FDA",
-   "count": 64,
-   "prev": 0,
-   "status": ""
-  },
-  {
    "word": "아산병원",
-   "count": 57,
-   "prev": 0,
-   "status": ""
-  },
-  {
-   "word": "루닛",
-   "count": 56,
+   "count": 63,
    "prev": 0,
    "status": ""
   },
   {
    "word": "보건복지부",
-   "count": 55,
+   "count": 58,
+   "prev": 0,
+   "status": ""
+  },
+  {
+   "word": "루닛",
+   "count": 58,
    "prev": 0,
    "status": ""
   },
   {
    "word": "학술대회",
-   "count": 53,
+   "count": 57,
    "prev": 0,
    "status": ""
   },
   {
    "word": "분당서울대",
-   "count": 49,
-   "prev": 0,
-   "status": ""
-  },
-  {
-   "word": "WHO",
-   "count": 39,
-   "prev": 0,
-   "status": ""
-  },
-  {
-   "word": "마이크로소프트",
-   "count": 37,
+   "count": 55,
    "prev": 0,
    "status": ""
   },
   {
    "word": "구글",
-   "count": 33,
+   "count": 41,
+   "prev": 0,
+   "status": ""
+  },
+  {
+   "word": "WHO",
+   "count": 40,
+   "prev": 0,
+   "status": ""
+  },
+  {
+   "word": "마이크로소프트",
+   "count": 38,
+   "prev": 0,
+   "status": ""
+  },
+  {
+   "word": "포럼",
+   "count": 31,
    "prev": 0,
    "status": ""
   },
@@ -213,20 +219,14 @@
    "status": ""
   },
   {
-   "word": "포럼",
+   "word": "상급종합병원",
    "count": 29,
    "prev": 0,
    "status": ""
   },
   {
    "word": "뷰노",
-   "count": 28,
-   "prev": 0,
-   "status": ""
-  },
-  {
-   "word": "상급종합병원",
-   "count": 26,
+   "count": 29,
    "prev": 0,
    "status": ""
   },
@@ -237,14 +237,14 @@
    "status": ""
   },
   {
-   "word": "제이엘케이",
-   "count": 23,
+   "word": "심포지엄",
+   "count": 25,
    "prev": 0,
    "status": ""
   },
   {
    "word": "삼성서울병원",
-   "count": 23,
+   "count": 25,
    "prev": 0,
    "status": ""
   }
@@ -374,6 +374,17 @@
    "importance": 4
   },
   {
+   "title": "Deep Reasoning AI and Innolitics Achieve FDA 510(k) Clearance for NeuroDR, AI Software for Neurovascular CT Angiography",
+   "link": "https://news.google.com/rss/articles/CBMigwJBVV95cUxPdm1rMjhqd0w0TXdHV2lNRVNwUjJydDY4dTNNX3dyOWM2ZDdzNERfNXhUTTRpWk5XdngzVVlBTXRuTFVqM0h2Y0kwSk1Hbm1fcTVFaDhMdF9HMTJkQWtZdV9VLWxDXzl0TGdTOU1JRWt5OGYwZVE3dWpXT09xZ2JJbVBjZ2ZGcTVsbk5PdDIxYkJ6S3VJTEI1QWVkOWFVU3RzUG5wZHRDN2lqeGI5X1RXMHZvTG9fWTZ6VXlldGx4V05RbHpGTDlRTEpScndaVTQwVDNWMmZuVEt1U18yMnNmZTJ1OUZpS1FVQTNVdU1hQmNVTHYtck9rYlQzZWt6Q0dGa2pj?oc=5",
+   "date": "2026-10-28",
+   "category": "해외 정책·규제 (미국)",
+   "region": "해외",
+   "score": 4,
+   "similar_count": 0,
+   "source": "Business Wire, 01net, Yahoo Finance",
+   "importance": 4
+  },
+  {
    "title": "American Hospital Dubai and HEI Global Health Announce Strategic Partnership to Collaboratively Build an Advanced AI-Powered Revenue Cycle Innovation",
    "link": "https://news.google.com/rss/articles/CBMisAJBVV95cUxQdFhsOUxLMjNob1J6bEp1RXFEckhiUXczVjRXTUE1ZC02ZkNDUFNxZE9hQWZwSGpkOXdBUUVVU1lKc3F0eERNeU5mTlRVeWZqX1N1aVJGTGtzSGFhNHpPby1ZdWNqelA4RngyUl9OQ2hfaEEwQVJ0aV9yYWtBdHRHSFF1bnkxV3RTUWxOa1lYWmZoeUZRVVdSRnZXUWhrRnNwWXJPZTFYSkhPa3dmLV85NGkzb2ZGbHhzSGUxbnM3WlcwSko0eTluSnVsbjhYYnlJSG5DYlhUMHRIOEpTT2tfdjJSaUV6bnVVdHRvd3ZNbFgzdE92eGFJVHRMSnpndkZhODRHMkFhdVhhYXJLZkU4bFBaa1ZwUGZvMTE1MFd2YVZGUk8yTlowZVllbTVGMng0?oc=5",
    "date": "2026-10-26",
@@ -460,20 +471,20 @@
    "similar_count": 0,
    "source": "EME Outlook Magazine, HLTH",
    "importance": 3
-  },
-  {
-   "title": "Tempus Presents Data Demonstrating AI-Enabled Pre-Screening Can Help Identify Patients for Biomarker Testing in NSCLC",
-   "link": "https://news.google.com/rss/articles/CBMihAJBVV95cUxQRDAyNW9ob05MRF9fR20tWG53MDEya3lWWUp5S0tWTGJMd0x0VnVTRWpVYXNIQ3p0MkZRNEsyRkxidW1jSWM1QTRlRV9mdFo0SWZKMVg0Y2Z6dkxQelN1ekV1d3FpaWFFdElJWV9ibE9VdWdoRFQ3N0RvZ29tSVlOY0o2aUJWWTB5OEVrdnRFWlNzZzlfelJCMHhoQXVQcFFYeUFrV1NlV0cxTFZqM0RoZ2VPOGoyX1BPT0xtMzFkbERxZ0ZYcjZYRU1ZcTNHWjRyZTFfWktWOGFIRVk3WFlLRGFqbzlOdWoyQmxoeVdwdGNkQ2ZPSktWQ1ZfOHl1bjBpLUpvSg?oc=5",
-   "date": "2026-10-19",
-   "category": "해외 정책·규제 (유럽·영국)",
-   "region": "해외",
-   "score": 3,
-   "similar_count": 0,
-   "source": "Business Wire, Yahoo Finance",
-   "importance": 3
   }
  ],
  "policy_announcements": [
+  {
+   "title": "[보도참고] 식약처, 최신의 디지털의료기기 허가심사 기준 짚어준다",
+   "link": "https://www.mfds.go.kr/brd/m_99/view.do?seq=50439",
+   "date": "2026-10-28",
+   "category": "식품의약품안전처",
+   "region": "정부",
+   "score": 0,
+   "similar_count": 0,
+   "source": "식품의약품안전처",
+   "importance": 0
+  },
   {
    "title": "“성장에 날개를, 민생에 활력을, 지역에 미래를” 대통령 주재 규제합리화위원회 제2차 전체회의 개최",
    "link": "https://www.mohw.go.kr/board.es?mid=a10503000000&bid=0027&list_no=1492315&act=view",
@@ -564,6 +575,17 @@
   }
  ],
  "government_other": [
+  {
+   "title": "보건복지부 복지돌봄인공지능정책과 파견 근무자 모집",
+   "link": "https://www.mohw.go.kr/board.es?mid=a10501010000&bid=0003&list_no=1492332&act=view",
+   "date": "2026-10-27",
+   "category": "보건복지부",
+   "region": "정부",
+   "score": 0,
+   "similar_count": 0,
+   "source": "보건복지부",
+   "importance": 0
+  },
   {
    "title": "과기정통부, 제2차 규제합리화위원회에서 ‘AIDC 생태계 지원 방안’ 발표",
    "link": "https://www.msit.go.kr/bbs/view.do?sCode=user&mId=307&mPid=208&bbsSeqNo=94&nttSeqNo=3187892",
@@ -1251,26 +1273,26 @@
    "importance": 7
   },
   {
-   "title": "AI, tech leaders are lobbying Trump health officials in a government-run chat room",
-   "link": "https://news.google.com/rss/articles/CBMioAFBVV95cUxNaENvVDhCNjJzMEU2dFYzbXR5YWJmZGxQbkpqRVI4UWVKNzMtM2dKc1ltRi1PZTRIRE9Da1JIc1lZOWZ0RzBxZUlPM0tvZ2k1cGVoOVhZWXQ1X1BjV1BSWGN3V05mdW1FcjFCeVBaQ3dBLTVJVzZvT2ZndnVHNmoycVFkTXZ6X2FPQWdDLVMydnBsdDdVU0FhX1pQdzRrSFEx?oc=5",
-   "date": "2026-10-15",
-   "category": "해외 정책·규제 (미국)",
-   "region": "해외",
-   "score": 6,
-   "similar_count": 0,
-   "source": "Medical Marketing and Media, Fierce Healthcare",
-   "importance": 6
-  },
-  {
-   "title": "Event: AI’s role in rural healthcare transformation",
-   "link": "https://news.google.com/rss/articles/CBMiigFBVV95cUxOaXRYMUFCWmNHOERTUURKcE1tWE9HMmtTYlZxcmxQNVBkM3JVb2tuclVqcEpBZ2tUeWN4UlRZY1Z4c2JRcU9Ecy0xaldQckZYeGdWSXRpSjkxcl9FRWptRm1rbUVMcHk5SlBnVDdubFpJTnFzeVY1dW5PSDBHQjZrVXEzeFh6MnhzT3c?oc=5",
-   "date": "2026-10-17",
+   "title": "AI's recommendations cost 3x more than physician care plans",
+   "link": "https://news.google.com/rss/articles/CBMivAFBVV95cUxOV0szVVM2N3ZPSzJTdHZsQ0pYTGRNVlI0YkVrRE9PMnRKZDdXU3NVWlBTMzVIZ2xKRGxoc1JmZEVpeGhwTDNmUlU3YkdWSllIWklDUUwtT2I4NUo1Um82S05iRExjT0ZjOXl3ZUI2YWRtbWRfZHJzdEROUUwxVEFZNy1HVE51ME11WlJsV1A2RDY5UjF6SmFzYUt0VUluN3RmYTZ6RENFWE1OcDhJdHliSnJyT0JTT2JvRFJFWA?oc=5",
+   "date": "2026-10-28",
    "category": "해외 의료기관 AI 도입·운영",
    "region": "해외",
-   "score": 3,
+   "score": 4,
    "similar_count": 0,
-   "source": "MobiHealthNews",
-   "importance": 6
+   "source": "TechTarget",
+   "importance": 7
+  },
+  {
+   "title": "A Market, Not a Mandate, Is the Fastest Way to Bring AI Into Hospitals",
+   "link": "https://news.google.com/rss/articles/CBMiowFBVV95cUxQcnpHdFVZZmQ0SnZDMFJWUHpISHVQSzBrVWc1cHlDY1JwNXRfMkRTYVRaQkRLRFVqMC04R0RvSUdvaGcxQk0wRWRVRTlLYnBkUjUtMWpwMkxNczZ2eHAySzlOb1R4T2wyTm9yLU1Tem5ROUFpVTVEODk4TnVLelIwX2tkUHR5eDVpYkx6d1lEN09TaEcwaHZzMXltNHhNSUE3Z09r?oc=5",
+   "date": "2026-10-27",
+   "category": "해외 정책·규제 (미국)",
+   "region": "해외",
+   "score": 4,
+   "similar_count": 0,
+   "source": "MedCity News",
+   "importance": 7
   }
  ],
  "top_by_category": {

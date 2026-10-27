@@ -1,21 +1,44 @@
 {
-  "generated_at": "2026-10-27T08:05:48.873569+09:00",
+  "generated_at": "2026-10-28T08:05:16.296549+09:00",
   "window_hours": 168,
-  "count": 9,
-  "filtered_out": 242,
+  "count": 8,
+  "filtered_out": 230,
   "category_order": [
+    "식품의약품안전처",
     "보건복지부",
-    "과학기술정보통신부",
-    "정부 보도자료 (검색)",
-    "식품의약품안전처"
+    "정부 보도자료 (검색)"
   ],
   "errors": [
+    {
+      "query": "과학기술정보통신부 보도자료(공식 API) (공공데이터포털 API)",
+      "error": "HTTPSConnectionPool(host='apis.data.go.kr', port=443): Read timed out. (read timeout=30)"
+    },
     {
       "query": "과학기술정보통신부 보도자료 (https://www.msit.go.kr/user/rss/rss.do?bbsSeqNo=94)",
       "error": "HTTPSConnectionPool(host='www.msit.go.kr', port=443): Read timed out. (read timeout=30)"
     }
   ],
   "items": [
+    {
+      "title": "[보도참고] 식약처, 최신의 디지털의료기기 허가심사 기준 짚어준다",
+      "link": "https://www.mfds.go.kr/brd/m_99/view.do?seq=50439",
+      "summary": "",
+      "pubDate": "2026-10-28T08:01:23+09:00",
+      "agency": "식품의약품안전처",
+      "kind": "가이드라인·기준",
+      "via": "rss",
+      "official": true
+    },
+    {
+      "title": "보건복지부 복지돌봄인공지능정책과 파견 근무자 모집",
+      "link": "https://www.mohw.go.kr/board.es?mid=a10501010000&bid=0003&list_no=1492332&act=view",
+      "summary": "보건복지부 공고 제2026-814호 보건복지부 복지돌봄인공지능정책과 파견근무자 모집 안내 보건복지부 복지돌봄인공지능정책과에서는 돌봄인력 부족 대응 및 돌봄서비스 질 향상을 위해 돌봄과 복지를 아우르는 중장기(’26~’30) AI 복지？돌봄 혁신 전략인 「복지돌봄 AI 대전환 로드맵」을 발표(10.6.)하였으며, AI 스마트홈시설 상용화 지원, 피지컬 AI 기반 돌봄로봇 사업 등 관련 시범사업 및 R&D 등을 추진하고 있습니다. 혁신계획의 차질없는 이행과 지자체 현장 의견을 반영한 사업 기획 및 추진을 위하여 일선 복지현장 경험이 풍",
+      "pubDate": "2026-10-27T17:31:00+09:00",
+      "agency": "보건복지부",
+      "kind": "지원사업·정책",
+      "via": "rss",
+      "official": true
+    },
     {
       "title": "“성장에 날개를, 민생에 활력을, 지역에 미래를” 대통령 주재 규제합리화위원회 제2차 전체회의 개최",
       "link": "https://www.mohw.go.kr/board.es?mid=a10503000000&bid=0027&list_no=1492315&act=view",
@@ -24,26 +47,6 @@
       "agency": "보건복지부",
       "kind": "법령·입법",
       "via": "rss",
-      "official": true
-    },
-    {
-      "title": "과기정통부, 제2차 규제합리화위원회에서 ‘AIDC 생태계 지원 방안’ 발표",
-      "link": "https://www.msit.go.kr/bbs/view.do?sCode=user&mId=307&mPid=208&bbsSeqNo=94&nttSeqNo=3187892",
-      "summary": "담당부서: 인공지능데이터진흥과",
-      "pubDate": "2026-10-23T00:00:00+09:00",
-      "agency": "과학기술정보통신부",
-      "kind": "지원사업·정책",
-      "via": "api",
-      "official": true
-    },
-    {
-      "title": "‘디지털의료·건강지원기기 성능인증 제도’ KIMES 현장 세미나 및 홍보관 운영",
-      "link": "https://news.google.com/rss/articles/CBMidkFVX3lxTE82dzdnc1VzcDBNc0RPUnMyNDRPYVYtNkdGYTZGeGZiNkc3WHdNQnF3akQ5cWoyV3UtdDlYMi15anZGbmtWenM2UmVPR0V4R2NFVnQ0WEFHS3hJNC02cmdDZlJjVS1Oamd2RFRkM2hmM3FpZGhRQVE?oc=5",
-      "summary": "‘디지털의료·건강지원기기 성능인증 제도’ KIMES 현장 세미나 및 홍보관 운영 대한민국 정책브리핑",
-      "pubDate": "2026-10-22T10:25:55+09:00",
-      "agency": "정부 보도자료 (검색)",
-      "kind": "가이드라인·기준",
-      "via": "gnews",
       "official": true
     },
     {
@@ -94,16 +97,6 @@
       "agency": "보건복지부",
       "kind": "기타 발표",
       "via": "rss",
-      "official": true
-    },
-    {
-      "title": "[9.1.화.석간] 내가 참여한 건강조사 데이터, 인공지능 기반 맞춤 건강리포트로 돌려 드립니다!",
-      "link": "https://news.google.com/rss/articles/CBMizAFBVV95cUxOenA3QWpNRVFUYWF2Ml9TQjBNNUVPRWxCM1A1eEFSZmRLaTZ5QVV0Qi1heFRCc0dTb3RRa3oyQU1tWkozeUl4NFRKRWJkSzJzYmRqY1N2LTVpN0tjWEFpVURlY3JJMjB4UWlHU251NkJwbURVeDVZelFhWGMyb29IRUdiSHU1VjJROEJnYlh2TjhpRkhXd0pnQU1vOEV1MnJkbklEWVU2bzNWMHk4V2ZhVUlvRkZISU1RWklmd3ZSR2xpR2hmbTE0bFB5dnY?oc=5",
-      "summary": "[9.1.화.석간] 내가 참여한 건강조사 데이터, 인공지능 기반 맞춤 건강리포트로 돌려 드립니다! 정책브리핑",
-      "pubDate": "2026-10-21T00:09:23+09:00",
-      "agency": "정부 보도자료 (검색)",
-      "kind": "지원사업·정책",
-      "via": "gnews",
       "official": true
     }
   ]
