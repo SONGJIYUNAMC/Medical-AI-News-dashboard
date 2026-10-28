@@ -1,15 +1,15 @@
 {
  "month": "2026-10",
- "generated_at": "2026-10-28T09:14:51.949336+09:00",
+ "generated_at": "2026-10-28T09:46:21.270922+09:00",
  "prev_month": null,
  "collected_days": 14,
  "first_day": "2026-10-15",
  "last_day": "2026-10-28",
- "total": 3486,
+ "total": 3511,
  "prev_total": null,
  "by_region": {
-  "국내": 2961,
-  "해외": 486,
+  "국내": 2985,
+  "해외": 487,
   "정부": 39
  },
  "weekly": {
@@ -24,41 +24,41 @@
    "정부": 16
   },
   "2026-W44": {
-   "국내": 602,
-   "해외": 87,
+   "국내": 626,
+   "해외": 88,
    "정부": 4
   }
  },
  "categories": [
   {
    "name": "국내 · 기타 (의료 AI·병원 AI 키워드)",
-   "count": 745,
+   "count": 750,
    "prev": 0,
-   "delta": 745
+   "delta": 750
   },
   {
    "name": "국내 · 국내 의료 AI 기업",
-   "count": 631,
+   "count": 633,
    "prev": 0,
-   "delta": 631
+   "delta": 633
   },
   {
    "name": "국내 · 국내 정책·규제",
-   "count": 516,
+   "count": 521,
    "prev": 0,
-   "delta": 516
+   "delta": 521
   },
   {
    "name": "국내 · 국내 의료기관",
-   "count": 331,
+   "count": 333,
    "prev": 0,
-   "delta": 331
+   "delta": 333
   },
   {
    "name": "국내 · AI 거버넌스·보안",
-   "count": 262,
+   "count": 269,
    "prev": 0,
-   "delta": 262
+   "delta": 269
   },
   {
    "name": "해외 · 해외 의료기관 AI 도입·운영",
@@ -68,15 +68,15 @@
   },
   {
    "name": "국내 · 해외 의료기관·정책·규제",
-   "count": 246,
+   "count": 248,
    "prev": 0,
-   "delta": 246
+   "delta": 248
   },
   {
    "name": "국내 · 학술·연구·행사",
-   "count": 230,
+   "count": 231,
    "prev": 0,
-   "delta": 230
+   "delta": 231
   },
   {
    "name": "해외 · 해외 정책·규제 (미국)",
@@ -92,9 +92,9 @@
   },
   {
    "name": "해외 · 해외 정책·규제 (유럽·영국)",
-   "count": 44,
+   "count": 45,
    "prev": 0,
-   "delta": 44
+   "delta": 45
   },
   {
    "name": "정부 · 정부 보도자료 (검색)",
@@ -136,13 +136,13 @@
   },
   {
    "word": "세미나",
-   "count": 77,
+   "count": 78,
    "prev": 0,
    "status": ""
   },
   {
    "word": "FDA",
-   "count": 71,
+   "count": 72,
    "prev": 0,
    "status": ""
   },
@@ -165,13 +165,13 @@
    "status": ""
   },
   {
-   "word": "학술대회",
-   "count": 58,
+   "word": "보건복지부",
+   "count": 59,
    "prev": 0,
    "status": ""
   },
   {
-   "word": "보건복지부",
+   "word": "학술대회",
    "count": 58,
    "prev": 0,
    "status": ""
@@ -213,14 +213,14 @@
    "status": ""
   },
   {
-   "word": "국회",
+   "word": "상급종합병원",
    "count": 30,
    "prev": 0,
    "status": ""
   },
   {
-   "word": "상급종합병원",
-   "count": 29,
+   "word": "국회",
+   "count": 30,
    "prev": 0,
    "status": ""
   },
@@ -1018,6 +1018,17 @@
    "importance": 70
   },
   {
+   "title": "갤럭시 워치, 수면 무호흡 '징후' 넘어 호흡장애 수준까지 분석",
+   "link": "https://www.newsis.com/view/NISX20261028_0003843964",
+   "date": "2026-10-28",
+   "category": "국내 정책·규제",
+   "region": "국내",
+   "score": 6,
+   "similar_count": 26,
+   "source": "newsis.com",
+   "importance": 61
+  },
+  {
    "title": "‘노인 건강’ 인기 유튜브 영상 42% AI 제작…의사 사칭도",
    "link": "https://www.segye.com/newsView/20261020506365?OutUrl=naver",
    "date": "2026-10-20",
@@ -1092,17 +1103,6 @@
    "score": 10,
    "similar_count": 19,
    "source": "kmib.co.kr",
-   "importance": 51
-  },
-  {
-   "title": "갤럭시 워치, 수면 무호흡 '징후' 넘어 호흡장애 수준까지 분석",
-   "link": "https://www.newsis.com/view/NISX20261028_0003843964",
-   "date": "2026-10-28",
-   "category": "국내 정책·규제",
-   "region": "국내",
-   "score": 6,
-   "similar_count": 21,
-   "source": "newsis.com",
    "importance": 51
   },
   {
@@ -1379,6 +1379,17 @@
     "importance": 114
    },
    {
+    "title": "갤럭시 워치, 수면 무호흡 '징후' 넘어 호흡장애 수준까지 분석",
+    "link": "https://www.newsis.com/view/NISX20261028_0003843964",
+    "date": "2026-10-28",
+    "category": "국내 정책·규제",
+    "region": "국내",
+    "score": 6,
+    "similar_count": 26,
+    "source": "newsis.com",
+    "importance": 61
+   },
+   {
     "title": "‘노인 건강’ 인기 유튜브 영상 42% AI 제작…의사 사칭도",
     "link": "https://www.segye.com/newsView/20261020506365?OutUrl=naver",
     "date": "2026-10-20",
@@ -1388,17 +1399,6 @@
     "similar_count": 24,
     "source": "segye.com",
     "importance": 60
-   },
-   {
-    "title": "“100만명 바이오 빅데이터 구축”… 하정우·정은경 생체자료 기증",
-    "link": "https://www.kmib.co.kr/article/view.asp?arcid=9000022920&cp=nv",
-    "date": "2026-10-15",
-    "category": "국내 정책·규제",
-    "region": "국내",
-    "score": 10,
-    "similar_count": 19,
-    "source": "kmib.co.kr",
-    "importance": 51
    }
   ],
   "국내 · 기타 (의료 AI·병원 AI 키워드)": [
