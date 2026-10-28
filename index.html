@@ -214,10 +214,13 @@ function ovMerge(o) { if (!o) return; ["imp", "pin", "cat"].forEach(k => Object.
 const COMPANY_NEWS = /(허가|인증|승인)\s?(획득|취득|받|통과)|획득|수주|투자\s?유치|공급\s?계약/;
 const POLICY_DOC = /설명회|가이드라인|개정|입법|시행|고시|지침|공고|공모|심사\s?기준|제도\s?개선|정책|위원회/;
 const POLICY_AGENCY = /복지부|식약처|식품의약품안전|심평원|건보공단|과기정통부|질병관리청|보건산업진흥원|한국보건의료연구원|국회|정부/;
+const GOV_TERM = /거버넌스|환자안전|환각|드리프트|이상사례|사후\s?모니터링|도입\s?심의|개발자\s?책임|책임\s?(소재|논란|공방)|AI\s?책임|법적\s?책임|편향|랜섬웨어|개인정보\s?유출|해킹/;
+const HOSP_NAME = /서울아산|아산병원|서울대병원|서울대학교병원|분당서울대|삼성서울|세브란스|서울성모|상급종합|스마트\s?(병원|병동)|앰비언트|[가-힣]{2,6}(대|의료원)?병원/;
 function catOf(it) {
   const o = state.ov.cat[ovKey(it)]; if (o) return o;
-  const c = it.category || "기타", t = it.title || "";
-  if (c === "규제·정책" && COMPANY_NEWS.test(t) && !POLICY_DOC.test(t) && !POLICY_AGENCY.test(t)) return "의료 AI 일반";
+  const c = it.category || "기타", t = it.title || "", txt = t + " " + (it.summary || "");
+  if (c === "국내 정책·규제" && COMPANY_NEWS.test(t) && !POLICY_DOC.test(t)) return "국내 의료 AI 기업";
+  if (c === "국내 의료기관" && GOV_TERM.test(txt) && !HOSP_NAME.test(t)) return "AI 거버넌스·보안";
   return c;
 }
 function ovExport() {
@@ -400,7 +403,7 @@ function renderHot() {
 
 
 function editBox(it, cat) {
-  const wrap = el("details", { className: "editbox" }, [el("summary", { textContent: "편집" })]);
+  const wrap = el("details", { className: "editbox" }, [el("summary", { textContent: "분류·중요도 수정" })]);
   fillEdit(wrap, it, cat); return wrap;
 }
 function editBtn(it) { return editBox(it, catOf(it)); }
