@@ -1,23 +1,15 @@
 {
-  "generated_at": "2026-10-28T08:05:16.296549+09:00",
+  "generated_at": "2026-10-28T09:14:49.827711+09:00",
   "window_hours": 168,
-  "count": 8,
-  "filtered_out": 230,
+  "count": 9,
+  "filtered_out": 219,
   "category_order": [
     "식품의약품안전처",
     "보건복지부",
+    "과학기술정보통신부",
     "정부 보도자료 (검색)"
   ],
-  "errors": [
-    {
-      "query": "과학기술정보통신부 보도자료(공식 API) (공공데이터포털 API)",
-      "error": "HTTPSConnectionPool(host='apis.data.go.kr', port=443): Read timed out. (read timeout=30)"
-    },
-    {
-      "query": "과학기술정보통신부 보도자료 (https://www.msit.go.kr/user/rss/rss.do?bbsSeqNo=94)",
-      "error": "HTTPSConnectionPool(host='www.msit.go.kr', port=443): Read timed out. (read timeout=30)"
-    }
-  ],
+  "errors": [],
   "items": [
     {
       "title": "[보도참고] 식약처, 최신의 디지털의료기기 허가심사 기준 짚어준다",
@@ -47,6 +39,16 @@
       "agency": "보건복지부",
       "kind": "법령·입법",
       "via": "rss",
+      "official": true
+    },
+    {
+      "title": "과기정통부, 제2차 규제합리화위원회에서 ‘AIDC 생태계 지원 방안’ 발표",
+      "link": "https://www.msit.go.kr/bbs/view.do?sCode=user&mId=307&mPid=208&bbsSeqNo=94&nttSeqNo=3187892",
+      "summary": "담당부서: 인공지능데이터진흥과",
+      "pubDate": "2026-10-23T00:00:00+09:00",
+      "agency": "과학기술정보통신부",
+      "kind": "지원사업·정책",
+      "via": "api",
       "official": true
     },
     {

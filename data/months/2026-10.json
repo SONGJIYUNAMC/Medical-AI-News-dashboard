@@ -1,15 +1,15 @@
 {
  "month": "2026-10",
- "generated_at": "2026-10-28T08:05:18.885155+09:00",
+ "generated_at": "2026-10-28T09:14:51.949336+09:00",
  "prev_month": null,
  "collected_days": 14,
  "first_day": "2026-10-15",
  "last_day": "2026-10-28",
- "total": 3461,
+ "total": 3486,
  "prev_total": null,
  "by_region": {
-  "국내": 2938,
-  "해외": 484,
+  "국내": 2961,
+  "해외": 486,
   "정부": 39
  },
  "weekly": {
@@ -24,41 +24,41 @@
    "정부": 16
   },
   "2026-W44": {
-   "국내": 579,
-   "해외": 85,
+   "국내": 602,
+   "해외": 87,
    "정부": 4
   }
  },
  "categories": [
   {
    "name": "국내 · 기타 (의료 AI·병원 AI 키워드)",
-   "count": 741,
+   "count": 745,
    "prev": 0,
-   "delta": 741
+   "delta": 745
   },
   {
    "name": "국내 · 국내 의료 AI 기업",
-   "count": 625,
+   "count": 631,
    "prev": 0,
-   "delta": 625
+   "delta": 631
   },
   {
    "name": "국내 · 국내 정책·규제",
-   "count": 512,
+   "count": 516,
    "prev": 0,
-   "delta": 512
+   "delta": 516
   },
   {
    "name": "국내 · 국내 의료기관",
-   "count": 330,
+   "count": 331,
    "prev": 0,
-   "delta": 330
+   "delta": 331
   },
   {
    "name": "국내 · AI 거버넌스·보안",
-   "count": 261,
+   "count": 262,
    "prev": 0,
-   "delta": 261
+   "delta": 262
   },
   {
    "name": "해외 · 해외 의료기관 AI 도입·운영",
@@ -68,21 +68,21 @@
   },
   {
    "name": "국내 · 해외 의료기관·정책·규제",
-   "count": 244,
+   "count": 246,
    "prev": 0,
-   "delta": 244
+   "delta": 246
   },
   {
    "name": "국내 · 학술·연구·행사",
-   "count": 225,
+   "count": 230,
    "prev": 0,
-   "delta": 225
+   "delta": 230
   },
   {
    "name": "해외 · 해외 정책·규제 (미국)",
-   "count": 128,
+   "count": 129,
    "prev": 0,
-   "delta": 128
+   "delta": 129
   },
   {
    "name": "해외 · 해외 연구·학술",
@@ -92,9 +92,9 @@
   },
   {
    "name": "해외 · 해외 정책·규제 (유럽·영국)",
-   "count": 43,
+   "count": 44,
    "prev": 0,
-   "delta": 43
+   "delta": 44
   },
   {
    "name": "정부 · 정부 보도자료 (검색)",
@@ -130,7 +130,7 @@
  "keywords": [
   {
    "word": "서울대병원",
-   "count": 117,
+   "count": 118,
    "prev": 0,
    "status": ""
   },
@@ -142,13 +142,13 @@
   },
   {
    "word": "FDA",
-   "count": 69,
+   "count": 71,
    "prev": 0,
    "status": ""
   },
   {
    "word": "식약처",
-   "count": 69,
+   "count": 71,
    "prev": 0,
    "status": ""
   },
@@ -165,6 +165,12 @@
    "status": ""
   },
   {
+   "word": "학술대회",
+   "count": 58,
+   "prev": 0,
+   "status": ""
+  },
+  {
    "word": "보건복지부",
    "count": 58,
    "prev": 0,
@@ -177,26 +183,20 @@
    "status": ""
   },
   {
-   "word": "학술대회",
-   "count": 57,
+   "word": "분당서울대",
+   "count": 56,
    "prev": 0,
    "status": ""
   },
   {
-   "word": "분당서울대",
-   "count": 55,
+   "word": "WHO",
+   "count": 41,
    "prev": 0,
    "status": ""
   },
   {
    "word": "구글",
    "count": 41,
-   "prev": 0,
-   "status": ""
-  },
-  {
-   "word": "WHO",
-   "count": 40,
    "prev": 0,
    "status": ""
   },
@@ -208,7 +208,7 @@
   },
   {
    "word": "포럼",
-   "count": 31,
+   "count": 35,
    "prev": 0,
    "status": ""
   },
@@ -231,13 +231,13 @@
    "status": ""
   },
   {
-   "word": "심평원",
-   "count": 25,
+   "word": "심포지엄",
+   "count": 26,
    "prev": 0,
    "status": ""
   },
   {
-   "word": "심포지엄",
+   "word": "심평원",
    "count": 25,
    "prev": 0,
    "status": ""
@@ -1095,6 +1095,17 @@
    "importance": 51
   },
   {
+   "title": "갤럭시 워치, 수면 무호흡 '징후' 넘어 호흡장애 수준까지 분석",
+   "link": "https://www.newsis.com/view/NISX20261028_0003843964",
+   "date": "2026-10-28",
+   "category": "국내 정책·규제",
+   "region": "국내",
+   "score": 6,
+   "similar_count": 21,
+   "source": "newsis.com",
+   "importance": 51
+  },
+  {
    "title": "씨어스, UAE서 'AI 부정맥 국가검진' 수행 초읽기…\"최종 테스트 돌입\"",
    "link": "https://www.mt.co.kr/thebio/2026/10/16/2026101609543629511",
    "date": "2026-10-16",
@@ -1114,17 +1125,6 @@
    "score": 5,
    "similar_count": 18,
    "source": "mk.co.kr",
-   "importance": 44
-  },
-  {
-   "title": "SCL헬스케어, 대구보건대와 맞손… 'AI 바이오헬스' 실무 인재 키운다",
-   "link": "https://www.mt.co.kr/thebio/2026/10/21/2026102111125365338",
-   "date": "2026-10-21",
-   "category": "국내 정책·규제",
-   "region": "국내",
-   "score": 11,
-   "similar_count": 15,
-   "source": "mt.co.kr",
    "importance": 44
   }
  ],
