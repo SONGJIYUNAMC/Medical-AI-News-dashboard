@@ -1,0 +1,586 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>의료 AI 뉴스 모니터링</title>
+<style>
+  @font-face { font-family: "본고딕"; font-weight: 400; font-display: swap; src: url("fonts/NotoSansKR-Regular.woff") format("woff"); }
+  @font-face { font-family: "본고딕"; font-weight: 500; font-display: swap; src: url("fonts/NotoSansKR-Medium.woff") format("woff"); }
+  @font-face { font-family: "본고딕"; font-weight: 700; font-display: swap; src: url("fonts/NotoSansKR-Bold.woff") format("woff"); }
+  :root {
+    --navy: #1f3a5f; --teal: #2a7f9e; --bg: #f4f6f9; --card: #ffffff;
+    --text: #1d2733; --muted: #6b7783; --line: #e6ebf0; --chip: #eef3f7;
+    --accent-soft: #e3eef6; --shadow: 0 1px 3px rgba(20, 40, 70, .06);
+  }
+  @media (prefers-color-scheme: dark) {
+    :root { --bg: #11161d; --card: #1a222c; --text: #e6ebf1; --muted: #93a0ae; --line: #2a3441; --chip: #22364a;
+            --accent-soft: #1f3445; --navy: #9cc7e0; --shadow: none; }
+  }
+  * { box-sizing: border-box; }
+  body { margin: 0; background: var(--bg); color: var(--text); font-size: 15px;
+         font-family: "본고딕", "Noto Sans KR", "Malgun Gothic", "맑은 고딕", -apple-system, "Segoe UI", sans-serif; line-height: 1.6; }
+  .app { display: grid; grid-template-columns: 272px minmax(0, 1fr); min-height: 100vh; }
+  /* ---- 왼쪽 메뉴 ---- */
+  .side { position: sticky; top: 0; height: 100vh; overflow-y: auto; background: var(--card); border-right: 1px solid var(--line); padding: 22px 14px 28px; }
+  .brand { padding: 0 8px 14px; border-bottom: 1px solid var(--line); }
+  .brand h1 { margin: 0; font-size: 18px; color: var(--navy); letter-spacing: -.3px; line-height: 1.35; }
+  .brand p { margin: 4px 0 0; font-size: 12px; color: var(--muted); }
+  .side h4 { margin: 20px 8px 6px; font-size: 11px; font-weight: 700; color: var(--muted); letter-spacing: .04em; }
+  .navlist { display: flex; flex-direction: column; gap: 2px; }
+  .tab { border: 1px solid var(--line); background: var(--card); color: var(--text); padding: 6px 13px;
+         border-radius: 16px; font-size: 13px; cursor: pointer; font-family: inherit; }
+  .tab:hover { border-color: var(--teal); }
+  .navlist .tab { display: flex; justify-content: space-between; align-items: center; gap: 8px; width: 100%; text-align: left;
+                  border: 0; background: none; border-radius: 8px; padding: 9px 12px; font-size: 14px; }
+  .navlist .tab:hover { background: var(--chip); }
+  .navlist .tab.active { background: var(--accent-soft); color: var(--navy); font-weight: 700; }
+  .navlist .tab .n { font-size: 12px; color: var(--muted); font-weight: 400; flex: none; }
+  .navlist.region .tab { font-weight: 700; }
+  .field { margin: 0 8px 8px; }
+  .field label.cap { display: block; font-size: 12px; color: var(--muted); margin-bottom: 3px; }
+  .side select, .side input[type=search] { width: 100%; padding: 8px 10px; border: 1px solid var(--line); border-radius: 8px;
+           background: var(--card); color: var(--text); font-family: inherit; font-size: 14px; }
+  .dsel { display: grid; grid-template-columns: 1.3fr 1fr 1fr; gap: 4px; }
+  .dsel select { padding: 8px 4px; }
+  label.toggle { font-size: 13px; color: var(--text); display: flex; gap: 8px; align-items: flex-start; cursor: pointer; margin: 8px 8px 0; line-height: 1.4; }
+  label.toggle input { margin-top: 2px; }
+  .side .csv { margin: 14px 8px 0; width: calc(100% - 16px); border-radius: 8px; text-align: center; }
+  .foldbtn { display: none; width: calc(100% - 16px); margin: 10px 8px 0; border-radius: 8px; text-align: left; }
+  /* ---- 본문 ---- */
+  .content { padding: 24px 28px 56px; min-width: 0; }
+  .meta { font-size: 12px; color: var(--muted); margin-bottom: 14px; }
+  .notice { margin: 0 0 12px; padding: 10px 12px; border-radius: 8px; font-size: 13px;
+            background: #fff4e5; color: #7a4a00; border: 1px solid #f3d19e; }
+  .hotgrid { display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 14px; margin-bottom: 16px; }
+  .hotgrid:empty { display: none; }
+  .card { background: var(--card); border: 1px solid var(--line); border-radius: 12px; padding: 16px 18px; box-shadow: var(--shadow); font-size: 13px; min-width: 0; }
+  .card h3 { margin: 0; font-size: 14px; color: var(--navy); }
+  .card .hint { margin: 2px 0 10px; font-size: 12px; color: var(--muted); }
+  .card ol { margin: 0; padding-left: 18px; }
+  .card li { margin: 7px 0; line-height: 1.5; }
+  .card a { color: var(--text); text-decoration: none; }
+  .card a:hover { text-decoration: underline; }
+  .card .kw { display: flex; flex-wrap: wrap; gap: 6px; }
+  .card .kw button { border: 1px solid var(--line); background: var(--chip); color: var(--text); border-radius: 12px; padding: 2px 10px; font: inherit; cursor: pointer; }
+  .card .kw button:hover { border-color: var(--teal); }
+  .card .up { color: #c0392b; } .card .down { color: #2d6cdf; } .card .sub { color: var(--muted); }
+  .kwbars { display: flex; flex-direction: column; gap: 4px; }
+  .kwrow { display: grid; grid-template-columns: minmax(70px, 38%) 1fr 22px; align-items: center; gap: 8px; width: 100%; padding: 3px 4px;
+           border: 0; background: none; font: inherit; color: var(--text); cursor: pointer; border-radius: 6px; text-align: left; }
+  .kwrow:hover { background: var(--chip); }
+  .kwrow .nm { white-space: nowrap; overflow: hidden; text-overflow: ellipsis; font-size: 13px; }
+  .kwrow .bar { height: 10px; background: var(--chip); border-radius: 5px; overflow: hidden; }
+  .kwrow .bar i { display: block; height: 100%; background: linear-gradient(90deg, #5aa7c2, var(--teal)); border-radius: 5px; }
+  .kwrow .cnt { text-align: right; font-weight: 700; font-size: 13px; }
+  .kwrow .dlt { font-size: 11px; font-weight: 400; margin-left: 2px; }
+  .ranklist { display: flex; flex-direction: column; }
+  .rk { display: flex; gap: 12px; align-items: flex-start; padding: 10px 0; border-top: 1px solid var(--line); }
+  .rk:first-child { border-top: 0; padding-top: 2px; }
+  .rk .big { flex: none; width: 44px; text-align: center; font-size: 28px; font-weight: 700; line-height: 1.05; color: var(--teal); }
+  .rk .big small { display: block; margin-top: 2px; font-size: 10px; font-weight: 400; color: var(--muted); }
+  .rk .tx { min-width: 0; }
+  .rk .tx a { display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical; overflow: hidden; font-weight: 500; line-height: 1.45; }
+  .rk .tx .sub { display: block; margin-top: 2px; font-size: 12px; }
+  details.trend { margin: 0 0 14px; font-size: 13px; }
+  details.trend summary { cursor: pointer; color: var(--muted); }
+  .trend table { border-collapse: collapse; margin-top: 8px; width: 100%; background: var(--card); }
+  .trend th, .trend td { border: 1px solid var(--line); padding: 4px 8px; text-align: right; white-space: nowrap; }
+  .trend th:first-child, .trend td:first-child { text-align: left; white-space: normal; }
+  .trend th { background: var(--chip); }
+  .trend { overflow-x: auto; }
+  main { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 14px; align-items: start; }
+  main .empty { grid-column: 1 / -1; }
+  article { background: var(--card); border: 1px solid var(--line); border-radius: 12px; padding: 18px 20px; margin: 0; height: 100%; box-shadow: var(--shadow); }
+  article.hi { box-shadow: inset 4px 0 0 var(--teal); }
+  article h2 { margin: 0 0 8px; font-size: 17px; line-height: 1.45; letter-spacing: -.2px; }
+  article h2 a { color: var(--navy); text-decoration: none; }
+  article h2 a:hover { text-decoration: underline; }
+  article p { margin: 0 0 12px; font-size: 14px; color: var(--muted); line-height: 1.65;
+              display: -webkit-box; -webkit-line-clamp: 3; -webkit-box-orient: vertical; overflow: hidden; }
+  .foot { display: flex; flex-wrap: wrap; gap: 6px 10px; align-items: center; font-size: 12px; color: var(--muted); }
+  .chip { background: var(--chip); color: var(--teal); padding: 1px 9px; border-radius: 10px; }
+  .chip.score { background: transparent; border: 1px solid var(--line); color: var(--muted); }
+  .empty { text-align: center; color: var(--muted); padding: 40px 0; }
+  @media (max-width: 1100px) { main { grid-template-columns: 1fr; } }
+  @media (max-width: 900px) {
+    .app { grid-template-columns: 1fr; }
+    .side { position: static; height: auto; border-right: 0; border-bottom: 1px solid var(--line); padding: 16px 12px 12px; }
+    .foldbtn { display: block; }
+    .controls.collapsed #ctlbody { display: none; }
+    .content { padding: 16px 14px 40px; }
+  }
+.chip.imp3{background:#fff1e0;color:#b45309;font-weight:700}.chip.imp2{background:#fef9e0;color:#8a6d00;font-weight:600}
+</style>
+</head>
+<body>
+<div class="app">
+<aside class="side controls" id="controls">
+  <div class="brand">
+    <h1>의료 AI 뉴스 모니터링</h1>
+    <p>AI혁신지원팀 · 뉴스 검색 자동 수집</p>
+  </div>
+  <button class="tab foldbtn" id="fold" type="button" aria-expanded="true">▴ 접기</button>
+  <div id="ctlbody">
+    <h4>구분</h4>
+    <div class="navlist region" id="regions"></div>
+    <h4>카테고리</h4>
+    <div class="navlist" id="tabs"></div>
+    <h4>필터</h4>
+    <div class="field"><label class="cap">수집일</label>
+      <span class="dsel" id="dayWrap"><select id="dy" aria-label="연"></select><select id="dm" aria-label="월"></select><select id="dd" aria-label="일"></select></span></div>
+    <div class="field"><label class="cap">기간</label><select id="period" aria-label="기간"></select></div>
+    <div class="field"><label class="cap">정렬</label>
+      <select id="sort" aria-label="정렬"><option value="imp">내 기준 중요도순</option><option value="score">관련도순</option><option value="date">최신순</option></select></div>
+    <div class="field"><label class="cap">검색</label><input type="search" id="q" placeholder="제목·요약 검색"></div>
+    <label class="toggle"><input type="checkbox" id="impOnly"> ★ 내 기준 중요 기사만 (★★ 이상)</label>
+    <label class="toggle"><input type="checkbox" id="rel"> 의료·병원·헬스 관련어 포함 기사만</label>
+    <label class="toggle"><input type="checkbox" id="aiT"> 제목에 AI 포함 기사만</label>
+    <button class="tab csv" id="csv" type="button">CSV 내려받기</button>
+  </div>
+</aside>
+
+<div class="content">
+  <div class="meta" id="meta">불러오는 중…</div>
+  <div id="notice"></div>
+  <section class="hotgrid" id="hot"></section>
+  <details class="trend" id="trendBox"><summary>기간 요약 (카테고리별 건수)</summary><div id="trend"></div></details>
+  <main id="list"></main>
+</div>
+</div>
+
+<script>
+const REL = /의료|병원|헬스|환자|진료|임상|의사|간호|보건|의약|바이오|건강|health|hospital|clinic|medical|patient/i;
+const AI_T = /(^|[^A-Za-z])AI(?![A-Za-z])|인공지능|딥러닝|머신러닝|생성형|LLM|언어\s?모델|챗\s?GPT|파운데이션\s?모델|디지털의료기기/i;
+const state = { items: [], order: [], hotOpen: window.innerWidth >= 700, period: "", day: "전체", weeksLoaded: [], manifest: null, region: "국내", cat: "전체", q: "", rel: false, aiT: false, impOnly: false, sort: "imp" };
+const $ = id => document.getElementById(id);
+
+function fmtDate(iso) {
+  const d = new Date(iso);
+  if (isNaN(d)) return "";
+  return d.toLocaleString("ko-KR", { timeZone: "Asia/Seoul", month: "numeric", day: "numeric",
+    hour: "2-digit", minute: "2-digit", hour12: false }) + " KST";
+}
+function safeUrl(u) { return /^https?:\/\//i.test(u) ? u : "#"; }
+function host(u) { try { return new URL(u).hostname.replace(/^www\./, ""); } catch { return ""; } }
+
+function el(tag, props, children) {
+  const e = document.createElement(tag);
+  Object.assign(e, props || {});
+  (children || []).forEach(c => e.append(c));
+  return e;
+}
+
+// 내 기준 중요도: 일일동향 보고 13일분(102건) 대비 사이트 기사 비교로 가중치 산출(로지스틱 회귀 → 정수화)
+const IMP_RULES = [
+  ["정책기관", 2, /보건복지부|복지부|식약처|식품의약품안전|심평원|건강보험심사평가원|건보공단|국민건강보험|과기정통부|과학기술정보통신부|산업통상부|질병관리청|보건산업진흥원|한국보건의료연구원|국회|국감|국정감사|세계보건기구|WHO|FDA|MHRA|NHS|CMS|지식재산처|공정위|개인정보위|개인정보보호위원회/],
+  ["제도·수가", 2, /수가|급여|비급여|신의료기술|평가유예|가이드라인|허가|인증|심사|규제|법안|입법|고시|지침|시행령|제도|보상체계|등재|PCCP|샌드박스|법률|인허가|국가\s?전략|로드맵|한국형\s?ARPA/],
+  ["안전·거버넌스", 1, /안전|오류|환각|편향|책임|유출|보안|개인정보|사후관리|이상사례|위험|윤리|검증|거버넌스|감독|동조|유해|지적|오남용|신뢰|투명/],
+  ["도입·성과", 1, /도입|운영|구축|착수|개시|가동|실증|시범|성과|절감|단축|효과|근거|AX|전환|스마트병원|스마트병동|EMR|워크플로|표준화/],
+  ["빅5·상급", 3, /서울아산|아산병원|서울대병원|분당서울대|삼성서울|세브란스|서울성모|빅5|상급종합|국립대병원|국립중앙의료원|고대구로|아주대병원|길병원/],
+  ["의료AI기업", 2, /루닛|뷰노|메디컬에이아이|코어라인|제이엘케이|에이아이트릭스|씨어스|온코소프트|비트컴퓨터|딥노이드|뉴로핏|이지케어텍|메디아크|시선AI|퍼슬리/],
+  ["연구·학술지", 2, /npj|Nature|JAMA|Lancet|NEJM|학술지|연구팀|연구진|논문|전향적|다기관|무작위|연구\s?결과|임상시험/],
+  ["행사", 2, /세미나|심포지엄|컨퍼런스|포럼|학술대회|전시회|웨비나|설명회|세계병원대회/],
+  ["생성형·LLM", 2, /생성형|LLM|언어\s?모델|챗\s?GPT|ChatGPT|에이전트|바이브코딩|파운데이션|멀티모달/],
+  ["임상적용", 1, /진단|판독|예측|조기|환자|진료|수술|영상|심전도|CT|MRI|병동|중환자/],
+  ["해외정책", 1, /미국|캘리포니아|유럽|EU|영국|일본|중국|해외|글로벌|세계/],
+  ["AI명시", 2, /(?<![A-Za-z])AI(?![A-Za-z])|인공지능/],
+  ["노이즈", -2, /주가|증시|목표주가|투자\s?유치|지분|공모|코스닥|수주|채용|이벤트|할인|프로모션|분양|부동산|화장품|뷰티|건기식/]
+];
+function impOf(it) {
+  if (it._imp) return it._imp;
+  const t = it.title || "", s = (it.summary || "").slice(0, 100);
+  let sc = 0; const hit = [];
+  for (const [name, w, rx] of IMP_RULES) {
+    const v = rx.test(t) ? 2 : rx.test(s) ? 1 : 0;
+    if (v) { const c = w * v / 2; sc += c; if (c > 0) hit.push([name, c]); }
+  }
+  hit.sort((a, b) => b[1] - a[1]);
+  return (it._imp = { sc, lv: sc >= 7 ? 3 : sc >= 5 ? 2 : 0, why: hit.slice(0, 3).map(h => h[0]).filter(n => n !== "AI명시") });
+}
+
+function clearSearch() { state.q = ""; $("q").value = ""; }
+
+function filtered() {
+  const q = state.q.trim().toLowerCase();
+  const rows = state.items.filter(it => {
+    if (regionOf(it) !== state.region) return false;
+    if (state.day !== "전체" && !(it.first_seen || "").startsWith(state.day)) return false;
+    if (state.cat !== "전체" && it.category !== state.cat) return false;
+    const text = (it.title + " " + it.summary);
+    if (state.rel && !REL.test(text)) return false;
+    if (state.aiT && !AI_T.test(it.title)) return false;
+    if (state.impOnly && impOf(it).lv < 2) return false;
+    if (q && !text.toLowerCase().includes(q)) return false;
+    return true;
+  });
+  const byDate = (a, b) => (a.pubDate < b.pubDate ? 1 : a.pubDate > b.pubDate ? -1 : 0);
+  rows.sort(state.sort === "date" ? byDate : state.sort === "imp" ? (a, b) => (impOf(b).sc - impOf(a).sc) || byDate(a, b) : (a, b) => ((b.score || 0) - (a.score || 0)) || byDate(a, b));
+  return rows;
+}
+
+const regionOf = it => (it.gov ? "정부" : it.global ? "해외" : "국내");
+const todayKST = () => new Date(Date.now() + 9 * 3600 * 1000).toISOString().slice(0, 10);
+const RECRUIT = /채용|인재\s?영입|직원\s?모집|수시\s?모집|인턴\s?모집|오늘의\s?국회|국회\s?일정|오늘의\s?일정|(오늘|내일|이번\s?주)\s?일정|한방|한의|한약|개교\s?\d*\s?(주년|기념)|개원\s?\d+\s?주년|\d+\s?주년|고병원성|조류\s?(인플루엔자|독감)|철새|살처분|산란계|가금|인수공통|사육|농장|계란/;
+// 정부 발표 탭: 언론 기사(검색 결과)는 제외하고 기관 직접 발표만(이전에 저장된 데이터 보정)
+const keepItem = it => !RECRUIT.test(it.title) &&
+  !(it.region === "정부" && it.via === "gnews" && it.agency === "국가인공지능전략위원회" && !it.official);
+const REGION_LABEL = { "국내": "국내 뉴스 (네이버)", "해외": "해외 뉴스 (Google News)", "정부": "정부 발표 (부처 보도자료)" };
+
+// 수집일 기본값: 국내·해외는 오늘(없으면 최근 수집일), 정부 발표는 전체
+function applyDefaultDay() {
+  state.day = state.region === "정부" ? "전체" : (state.defDay || "전체");
+  setDaySelects(state.day);
+}
+
+// 수집일 선택: 연·월·일 따로. 연만/연+월만 골라도 해당 범위로 필터(앞부분 일치)
+(function buildDaySelects() {
+  const cy = new Date().getFullYear(), last = Math.max(cy + 1, 2027);
+  const fill = (id, label, vals, fmt) => $(id).replaceChildren(el("option", { value: "", textContent: label }),
+    ...vals.map(v => el("option", { value: String(v).padStart(2, "0").replace(/^0(\d\d\d)$/, "$1"), textContent: fmt(v) })));
+  fill("dy", "연도", Array.from({ length: last - 2025 }, (_, i) => 2026 + i), v => v + "년");
+  fill("dm", "월", Array.from({ length: 12 }, (_, i) => i + 1), v => v + "월");
+  fill("dd", "일", Array.from({ length: 31 }, (_, i) => i + 1), v => v + "일");
+})();
+function getDay() {
+  const y = $("dy").value, m = $("dm").value, d = $("dd").value;
+  if (!y) return "전체";
+  if (!m) return y;
+  return d ? `${y}-${m}-${d}` : `${y}-${m}`;
+}
+function setDaySelects(day) {
+  const [y = "", m = "", d = ""] = day === "전체" ? [] : day.split("-");
+  $("dy").value = y; $("dm").value = y ? m : ""; $("dd").value = y && m ? d : "";
+  $("dm").disabled = !y; $("dd").disabled = !(y && m);
+}
+
+function renderTabs() {
+  const rbox = $("regions");
+  rbox.replaceChildren();
+  ["국내", "정부", "해외"].forEach(r => {
+    const n = state.items.filter(it => regionOf(it) === r).length;
+    const b = el("button", { className: "tab" + (r === state.region ? " active" : ""), type: "button" },
+                 [el("span", { textContent: REGION_LABEL[r] }), el("span", { className: "n", textContent: n.toLocaleString() })]);
+    b.onclick = () => { state.region = r; state.cat = "전체"; applyDefaultDay(); clearSearch(); render(); };
+    rbox.append(b);
+  });
+  const inRegion = state.items.filter(it => regionOf(it) === state.region);
+  const counts = {};
+  inRegion.forEach(it => counts[it.category] = (counts[it.category] || 0) + 1);
+  const known = state.order.filter(c => counts[c]);
+  const extra = Object.keys(counts).filter(c => !state.order.includes(c));
+  const cats = ["전체", ...known, ...extra];
+  const box = $("tabs");
+  box.replaceChildren();
+  cats.forEach(c => {
+    const n = c === "전체" ? inRegion.length : counts[c];
+    const b = el("button", { className: "tab" + (c === state.cat ? " active" : ""), type: "button" },
+                 [el("span", { textContent: c }), el("span", { className: "n", textContent: n.toLocaleString() })]);
+    b.onclick = () => { state.cat = c; clearSearch(); render(); };
+    box.append(b);
+  });
+}
+
+function kwCount(items) {
+  const m = new Map();
+  items.forEach(it => (it.kw || []).forEach(w => m.set(w, (m.get(w) || 0) + 1)));
+  return m;
+}
+
+function renderHot() {
+  const box = $("hot");
+  box.replaceChildren();
+  const today = todayKST();
+  const inReg = state.items.filter(it => regionOf(it) === state.region);
+  if (!inReg.some(it => it.first_seen)) return;   // 수집일 정보가 없는 구버전 데이터
+  const cur = inReg.filter(it => it.first_seen === today);   // 오늘 수집분만
+  // 주요 기사는 최근 7일(수집일 기준) 전체에서 선정
+  const wkStart = new Date(Date.now() + 9 * 3600 * 1000 - 6 * 86400000).toISOString().slice(0, 10);
+  const seen = new Set();
+  const week = [...state.items, ...(state.prevItems || [])].filter(it => {
+    if (regionOf(it) !== state.region || !it.first_seen || it.first_seen < wkStart) return false;
+    const k = it.originallink || it.link;
+    if (seen.has(k)) return false;
+    seen.add(k); return true;
+  });
+  const noToday = "오늘 수집된 기사가 아직 없습니다(매일 07:30 자동 수집).";
+  // 증감 비교: 오늘 이전 가장 최근 수집일
+  const prevDay = [...new Set(inReg.map(it => it.first_seen).filter(d => d && d < today))].sort().pop();
+  const prevMap = prevDay ? kwCount(inReg.filter(it => it.first_seen === prevDay)) : null;
+  const link = it => el("a", { href: safeUrl(it.originallink || it.link), target: "_blank", rel: "noopener noreferrer", textContent: it.title });
+  // 1) 많이 언급된 키워드: 설정 키워드(keywords.json)만, 어제(직전 수집일) 대비 증감
+  const kws = [...kwCount(cur)].sort((a, b) => b[1] - a[1]).slice(0, 10);
+  const kmax = kws.length ? kws[0][1] : 1;
+  const cKw = el("div", { className: "card" }, [el("h3", { textContent: "많이 언급된 키워드" }), el("div", { className: "hint", textContent: `오늘(${today}) · 설정 키워드 Top 10 · 막대=기사 수` }),
+    kws.length ? el("div", { className: "kwbars" }, kws.map(([word, n]) => {
+      const p = prevMap ? (prevMap.get(word) || 0) : null;
+      const tag = p === null ? "" : p === 0 ? "신규" : n > p ? `▲${n - p}` : n < p ? `▼${p - n}` : "";
+      const bar = el("span", { className: "bar" }, [el("i", { style: `width:${Math.max(6, Math.round(n / kmax * 100))}%` })]);
+      const cnt = el("span", { className: "cnt", textContent: String(n) });
+      if (tag) cnt.append(el("span", { className: "dlt " + (tag.includes("▼") ? "down" : "up"), textContent: tag }));
+      const b = el("button", { type: "button", className: "kwrow", title: "클릭하면 이 키워드로 검색" }, [el("span", { className: "nm", textContent: word }), bar, cnt]);
+      b.onclick = () => { $("q").value = word; state.q = word; render(); };
+      return b;
+    })) : el("div", { className: "sub", textContent: cur.length ? "설정 키워드가 포함된 기사가 아직 없습니다." : noToday })]);
+  // 2) 핫 토픽: 여러 매체가 함께 보도한 이슈(유사 기사 많은 순)
+  const issues = cur.filter(it => (it.similar_count || 0) > 0)
+    .sort((a, b) => (b.similar_count - a.similar_count) || ((b.score || 0) - (a.score || 0))).slice(0, 3);
+  const cHot = el("div", { className: "card" }, [el("h3", { textContent: "핫 토픽" }), el("div", { className: "hint", textContent: `오늘(${today}) · 여러 매체가 함께 보도한 이슈 Top 3` }),
+    issues.length ? el("div", { className: "ranklist" }, issues.map(it => el("div", { className: "rk" }, [
+      el("div", { className: "big" }, [String(it.similar_count + 1), el("small", { textContent: "건 보도" })]),
+      el("div", { className: "tx" }, [link(it)])])))
+      : el("div", { className: "sub", textContent: cur.length ? "여러 매체가 함께 보도한 이슈가 아직 없습니다." : noToday })]);
+  // 3) 주간 Top 3: 국내=주요 일간지·의료 전문지, 해외=주요 매체, 정부=법령·가이드라인
+  let c3Hint, pool, c3Note;
+  if (state.region === "정부") {
+    c3Hint = "최근 7일 · 법령·가이드라인 발표 최신 3건";
+    pool = week.filter(it => it.kind === "법령·입법" || it.kind === "가이드라인·기준")
+      .sort((a, b) => (b.pubDate || "").localeCompare(a.pubDate || ""));
+    c3Note = it => ` · ${it.agency}`;
+  } else {
+    c3Hint = state.region === "해외" ? "최근 7일 · 주요 매체 기사 Top 3" : "최근 7일 · 주요 일간지·의료 전문지 기사 Top 3";
+    pool = week.filter(it => it.source_type === "major" || it.source_type === "medical" || it.source_type === "global_pref")
+      .sort((a, b) => ((b.score || 0) + 2 * (b.similar_count || 0)) - ((a.score || 0) + 2 * (a.similar_count || 0)));
+    c3Note = it => ` · ${it.global ? (it.sources || []).join(", ") : host(it.originallink || it.link)}`;
+  }
+  const top3 = pool.slice(0, 3);
+  const cWeek = el("div", { className: "card" }, [el("h3", { textContent: "주간 Top 3" }), el("div", { className: "hint", textContent: c3Hint }),
+    top3.length ? el("div", { className: "ranklist" }, top3.map((it, i) => el("div", { className: "rk" }, [
+      el("div", { className: "big", textContent: String(i + 1) }),
+      el("div", { className: "tx" }, [link(it), el("span", { className: "sub", textContent: c3Note(it).replace(/^ · /, "") })])])))
+      : el("div", { className: "sub", textContent: "해당하는 기사가 아직 없습니다." })]);
+  box.append(cKw, cHot, cWeek);
+}
+
+function render() {
+  if ($("fold")) updateFoldLabel();
+  renderHot();
+  renderTabs();
+  const rows = filtered();
+  const list = $("list");
+  list.replaceChildren();
+  if (!rows.length) { list.append(el("div", { className: "empty", textContent: "조건에 맞는 기사가 없습니다." })); return; }
+  rows.forEach(it => {
+    const a = el("a", { href: safeUrl(it.originallink || it.link), target: "_blank", rel: "noopener noreferrer", textContent: it.title });
+    const foot = el("div", { className: "foot" }, [
+      ...(impOf(it).lv ? [el("span", { className: "chip imp" + impOf(it).lv, title: "내 기준 중요도 점수 " + impOf(it).sc.toFixed(1) + " · " + impOf(it).why.join(", "),
+        textContent: (impOf(it).lv === 3 ? "★★★ 핵심" : "★★ 주목") + (impOf(it).why.length ? " · " + impOf(it).why.join("·") : "") })] : []),
+      el("span", { className: "chip", textContent: it.category }),
+      ...(it.gov ? [el("span", { className: "chip score", textContent: it.kind }),
+           ...((it.kw && it.kw.length) ? [el("span", { className: "kws", textContent: "키워드: " + it.kw.join(", ") })] : [])]
+        : [el("span", { className: "chip score", textContent: "관련도 " + (it.score ?? 0) }),
+           ...((it.kw && it.kw.length) ? [el("span", { className: "kws", textContent: "키워드: " + it.kw.join(", ") })] : [])]),
+      el("span", { textContent: it.gov ? it.agency : it.global ? (it.sources || []).join(", ") + " (Google News)" : host(it.originallink || it.link) }),
+      ...(it.source_type === "major" ? [el("span", { className: "chip", textContent: "주요 일간지" })]
+        : it.source_type === "medical" ? [el("span", { className: "chip", textContent: "의료 전문지" })]
+        : it.source_type === "global_pref" ? [el("span", { className: "chip", textContent: "주요 매체" })] : []),
+      ...(it.similar_count ? [el("span", { className: "chip score", title: (it.similar_sources || []).join(", "),
+        textContent: "유사 기사 " + it.similar_count + "건" })] : []),
+      el("span", { textContent: fmtDate(it.pubDate) }),
+      ...(it.first_seen ? [el("span", { className: "chip score", textContent: "수집 " + it.first_seen.slice(5) })] : []),
+    ]);
+    list.append(el("article", { className: it.similar_count ? "hi" : "" }, [el("h2", {}, [a]), (it.summary ? el("p", { textContent: it.summary }) : ""), foot]));
+  });
+}
+
+const getJson = u => fetch(u, { cache: "no-store" }).then(r => { if (!r.ok) throw new Error(r.status); return r.json(); });
+function legacyLoad() {
+  return Promise.allSettled([getJson("data/news.json"), getJson("data/global_news.json"), getJson("data/gov_news.json")]).then(([kr, gl, gv]) => {
+  if (kr.status !== "fulfilled") throw new Error(kr.reason.message);
+  const d = kr.value;
+  state.items = d.items || [];
+  state.order = (d.category_order || []).slice();
+  let extra = "";
+  if (gl.status === "fulfilled") {
+    const g = gl.value;
+    (g.items || []).forEach(it => {
+      state.items.push({ ...it, summary: "", global: true, originallink: it.link,
+        queries: it.queries, source_type: it.preferred ? "global_pref" : "" });
+    });
+    (g.category_order || []).forEach(c => { if (!state.order.includes(c)) state.order.push(c); });
+    extra = ` · 해외(Google News) ${(g.count || 0).toLocaleString()}건`;
+    if (g.errors && g.errors.length)
+      $("notice").append(el("div", { className: "notice",
+        textContent: `해외 검색어 ${g.errors.length}건 수집 실패: ` + g.errors.map(e => e.query).join(", ") }));
+  }
+  if (gv.status === "fulfilled") {
+    const v = gv.value;
+    (v.items || []).forEach(it => {
+      state.items.push({ ...it, gov: true, category: it.agency, originallink: it.link, score: 0,
+        queries: [it.kind], source_type: "" });
+    });
+    (v.category_order || []).forEach(c => { if (!state.order.includes(c)) state.order.push(c); });
+    extra += ` · 정부 발표(최근 ${Math.round((v.window_hours || 168) / 24)}일) ${(v.count || 0).toLocaleString()}건`;
+    if (v.errors && v.errors.length)
+      $("notice").append(el("div", { className: "notice",
+        textContent: `정부 발표 출처 ${v.errors.length}곳 수집 실패(주소 확인 필요): ` + v.errors.map(e => e.query.split(" (")[0] + " - " + (e.error || "")).join(" / ") }));
+  }
+  $("meta").textContent = `수집 시각 ${fmtDate(d.generated_at)} · 국내 최근 ${d.window_hours}시간 ${d.count.toLocaleString()}건${extra}`;
+  if (d.errors && d.errors.length) {
+    $("notice").append(el("div", { className: "notice",
+      textContent: `일부 검색어(${d.errors.length}개) 수집에 실패했습니다: ` + d.errors.map(e => e.query).join(", ") }));
+  }
+  render();
+}).catch(e => { $("meta").textContent = "데이터를 불러오지 못했습니다 (" + e.message + "). data/news.json이 있는지 확인해 주세요."; });
+}
+
+const md = d => `${+d.slice(5, 7)}/${+d.slice(8, 10)}`;
+function rangeLabel(start, end) {   // 10/19-25, 월이 다르면 10/26-11/1, 해가 다르면 연도 표시
+  if (!start || !end) return "";
+  const y = start.slice(0, 4), cy = String(new Date().getFullYear());
+  const tail = start.slice(5, 7) === end.slice(5, 7) ? String(+end.slice(8, 10)) : md(end);
+  return (y !== cy || end.slice(0, 4) !== y ? `${y.slice(2)}년 ` : "") + md(start) + "-" + tail;
+}
+const weekLabel = w => `${rangeLabel(w.start, w.end)} (${w.count.toLocaleString()}건)`;
+const periodText = wk => {
+  const m = state.manifest || [], a = m.find(x => x.week === wk[wk.length - 1]), b = m.find(x => x.week === wk[0]);
+  return a && b ? rangeLabel(a.start, b.end) : wk.join(", ");
+};
+const weekName = id => { const w = (state.manifest || []).find(x => x.week === id); return w ? rangeLabel(w.start, w.end) : id; };
+function isoWeekId(ds) {
+  const d = new Date(ds + "T00:00:00Z"); const day = (d.getUTCDay() + 6) % 7;
+  d.setUTCDate(d.getUTCDate() - day + 3);
+  const y = d.getUTCFullYear(), j = new Date(Date.UTC(y, 0, 4));
+  const w = 1 + Math.round(((d - j) / 86400000 - 3 + ((j.getUTCDay() + 6) % 7)) / 7);
+  return `${y}-W${String(w).padStart(2, "0")}`;
+}
+
+function buildPeriods() {
+  const ws = state.manifest;               // 최신 주가 앞
+  const sel = $("period");
+  sel.replaceChildren();
+  const opts = [[`n:1`, "이번 주(최신 주)"], [`n:2`, "최근 2주"], [`n:4`, "최근 4주(월간)"], [`n:8`, "최근 8주"]];
+  opts.forEach(([v, t]) => sel.append(el("option", { value: v, textContent: t })));
+  ws.forEach(w => sel.append(el("option", { value: "w:" + w.week, textContent: weekLabel(w) })));
+  sel.value = state.period || "n:1";
+  state.period = sel.value;
+}
+
+function weeksFor(period) {
+  const ws = state.manifest.map(w => w.week);
+  if (period.startsWith("w:")) return [period.slice(2)];
+  return ws.slice(0, parseInt(period.slice(2), 10));
+}
+
+function buildTrend(files) {
+  const single = files.length === 1;
+  const cols = single ? [...new Set(state.items.map(i => i.first_seen))].sort() : files.map(f => f.week).sort();
+  const colOf = it => single ? it.first_seen : it._week;
+  const rows = {};
+  state.items.forEach(it => {
+    const k = regionOf(it) + " · " + it.category;
+    (rows[k] = rows[k] || {})[colOf(it)] = ((rows[k] || {})[colOf(it)] || 0) + 1;
+  });
+  const t = el("table", {}, []);
+  t.append(el("tr", {}, [el("th", { textContent: "구분 · 카테고리" }), ...cols.map(c => el("th", { textContent: single ? md(c) : weekName(c) })), el("th", { textContent: "합계" })]));
+  Object.keys(rows).sort().forEach(k => {
+    const tot = cols.reduce((a, c) => a + (rows[k][c] || 0), 0);
+    t.append(el("tr", {}, [el("td", { textContent: k }), ...cols.map(c => el("td", { textContent: rows[k][c] || "" })), el("td", { textContent: tot })]));
+  });
+  $("trend").replaceChildren(t);
+  $("trendBox").style.display = state.items.length ? "" : "none";
+}
+
+async function loadPeriod() {
+  const wk = weeksFor(state.period);
+  const res = await Promise.allSettled(wk.map(w => getJson(`data/weeks/${w}.json`)));
+  const files = res.filter(r => r.status === "fulfilled").map(r => r.value);
+  // 비교용: 같은 길이의 직전 기간
+  const all = state.manifest.map(w => w.week);
+  let prevWeeks = [];
+  if (state.period.startsWith("w:")) { const k = all.indexOf(state.period.slice(2)); prevWeeks = all.slice(k + 1, k + 2); }
+  else prevWeeks = all.slice(wk.length, wk.length * 2);
+  state.prevItems = null;
+  if (prevWeeks.length) {
+    const pr = await Promise.allSettled(prevWeeks.map(w => getJson(`data/weeks/${w}.json`)));
+    const pf = pr.filter(r => r.status === "fulfilled").map(r => r.value);
+    if (pf.length) { state.prevItems = []; pf.forEach(f => (f.items || []).filter(keepItem).forEach(it => state.prevItems.push({ ...it, gov: it.region === "정부", global: it.region === "해외" }))); }
+  }
+  state.items = []; state.order = [];
+  files.forEach(f => {
+    (f.items || []).filter(keepItem).forEach(it => state.items.push({ ...it, _week: f.week, gov: it.region === "정부", global: it.region === "해외" }));
+    (f.category_order || []).forEach(c => { if (!state.order.includes(c)) state.order.push(c); });
+  });
+  const days = [...new Set(state.items.map(i => i.first_seen).filter(Boolean))].sort().reverse();
+  const today = todayKST();
+  state.defDay = days.includes(today) ? today : (state.period === "n:1" && days.length ? days[0] : "전체");
+  if (state.keepDay) { state.day = state.keepDay; state.keepDay = null; setDaySelects(state.day); } else applyDefaultDay();
+  state.cat = "전체";
+  const f0 = files.slice().sort((a, b) => (b.updated_at || "").localeCompare(a.updated_at || ""))[0];
+  $("meta").textContent = `기간 ${periodText(wk)} · 누적 ${state.items.length.toLocaleString()}건` +
+    (f0 ? ` · 마지막 갱신 ${fmtDate(f0.updated_at)}` : "");
+  buildTrend(files);
+  render();
+}
+
+function showRunNotices(lr) {
+  $("notice").replaceChildren();
+  Object.entries(lr || {}).forEach(([r, v]) => {
+    if (v.errors && v.errors.length)
+      $("notice").append(el("div", { className: "notice",
+        textContent: `[${r}] 마지막 수집에서 ${v.errors.length}건 실패: ` + v.errors.join(", ") }));
+  });
+}
+
+function toCsv() {
+  const q = v => '"' + String(v ?? "").replace(/"/g, '""') + '"';
+  const head = ["수집일", "발행일", "구분", "카테고리", "제목", "출처", "링크", "관련도", "요약"];
+  const lines = filtered().map(it => [it.first_seen, (it.pubDate || "").slice(0, 10), regionOf(it), it.category, it.title,
+    it.gov ? it.agency : it.global ? (it.sources || []).join("/") : host(it.originallink || it.link),
+    it.originallink || it.link, it.score ?? "", it.summary].map(q).join(","));
+  const blob = new Blob(["\ufeff" + [head.map(q).join(","), ...lines].join("\r\n")], { type: "text/csv;charset=utf-8" });
+  const a = el("a", { href: URL.createObjectURL(blob), download: `news_${state.period.replace(":", "-")}_${state.region}.csv` });
+  document.body.append(a); a.click(); a.remove();
+}
+
+getJson("data/weeks/index.json").then(m => {
+  state.manifest = (m.weeks || []).slice().reverse();
+  if (!state.manifest.length) throw new Error("empty");
+  showRunNotices(m.last_run);
+  buildPeriods();
+  return loadPeriod();
+}).catch(() => legacyLoad());
+
+function setFold(collapsed, save) {
+  const c = $("controls");
+  c.classList.toggle("collapsed", collapsed);
+  $("fold").setAttribute("aria-expanded", String(!collapsed));
+  updateFoldLabel();
+  if (save) { try { localStorage.setItem("ctlCollapsed", collapsed ? "1" : "0"); } catch (e) {} }
+}
+function updateFoldLabel() {
+  const collapsed = $("controls").classList.contains("collapsed");
+  $("fold").textContent = collapsed
+    ? `▾ 탭·필터 펼치기 (${REGION_LABEL[state.region].split(" ")[0]} · ${state.cat})`
+    : "▴ 접기";
+}
+$("fold").addEventListener("click", () => setFold(!$("controls").classList.contains("collapsed"), true));
+let _stored = null;
+try { _stored = localStorage.getItem("ctlCollapsed"); } catch (e) {}
+setFold(_stored === null ? window.innerWidth < 900 : _stored === "1", false);
+
+$("period").addEventListener("change", e => { state.period = e.target.value; clearSearch(); loadPeriod(); });
+["dy", "dm", "dd"].forEach(id => $(id).addEventListener("change", () => {
+  if (!$("dy").value) { $("dm").value = ""; $("dd").value = ""; }
+  if (!$("dm").value) $("dd").value = "";
+  setDaySelects(getDay());
+  state.day = getDay();
+  // 고른 날짜가 지금 불러온 주 밖이면 그 주를 자동으로 불러옴
+  if (/^\d{4}-\d\d-\d\d$/.test(state.day) && state.manifest) {
+    const wid = isoWeekId(state.day);
+    if (state.manifest.some(w => w.week === wid) && !weeksFor(state.period).includes(wid)) {
+      state.period = "w:" + wid; $("period").value = state.period; state.keepDay = state.day; loadPeriod(); return;
+    }
+  }
+  render();
+}));
+$("csv").addEventListener("click", toCsv);
+
+$("q").addEventListener("input", e => { state.q = e.target.value; render(); });
+$("impOnly").addEventListener("change", e => { state.impOnly = e.target.checked; render(); });
+$("rel").addEventListener("change", e => { state.rel = e.target.checked; render(); });
+$("aiT").addEventListener("change", e => { state.aiT = e.target.checked; render(); });
+$("sort").addEventListener("change", e => { state.sort = e.target.value; render(); });
+</script>
+</body>
+</html>
