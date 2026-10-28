@@ -110,6 +110,8 @@
     .controls.collapsed #ctlbody { display: none; }
     .content { padding: 16px 14px 40px; }
   }
+.editbox{margin-top:6px;font-size:12px}.editbox summary{cursor:pointer;color:var(--muted);display:inline-block}
+.editrow{display:flex;flex-wrap:wrap;gap:6px;margin-top:6px}.editrow select,.editrow .tab{font:inherit;font-size:12px;padding:3px 8px;width:auto}
 .homehead,.homegrid{grid-column:1/-1}
 .homehead{font-size:13px;color:var(--muted);margin:0 0 12px}
 .homegrid{display:grid;grid-template-columns:1fr 1fr;gap:14px}
@@ -148,6 +150,9 @@
     <label class="toggle"><input type="checkbox" id="rel"> 의료·병원·헬스 관련어 포함 기사만</label>
     <label class="toggle"><input type="checkbox" id="aiT"> 제목에 AI 포함 기사만</label>
     <button class="tab csv" id="csv" type="button">CSV 내려받기</button>
+    <h4>직접 지정</h4>
+    <button class="tab csv" id="ovExp" type="button">내 지정 내보내기 (overrides.json)</button>
+    <button class="tab csv" id="ovClr" type="button">내 지정 모두 초기화</button>
   </div>
 </aside>
 
@@ -184,6 +189,7 @@ function el(tag, props, children) {
 
 // 내 기준 중요도: 일일동향 보고 13일분(102건) 대비 사이트 기사 비교로 가중치 산출(로지스틱 회귀 → 정수화)
 const IMP_RULES = [
+  ["허가·제도 설명회", 4, /(허가|심사|인증|제도|가이드라인|규제|급여|수가)[^,…]{0,14}(설명회|교육|워크숍)|디지털\s?의료(기기|제품)[^,…]{0,10}(설명회|교육|허가|가이드)/],
   ["정책기관", 2, /보건복지부|복지부|식약처|식품의약품안전|심평원|건강보험심사평가원|건보공단|국민건강보험|과기정통부|과학기술정보통신부|산업통상부|질병관리청|보건산업진흥원|한국보건의료연구원|국회|국감|국정감사|세계보건기구|WHO|FDA|MHRA|NHS|CMS|지식재산처|공정위|개인정보위|개인정보보호위원회/],
   ["제도·수가", 2, /수가|급여|비급여|신의료기술|평가유예|가이드라인|허가|인증|심사|규제|법안|입법|고시|지침|시행령|제도|보상체계|등재|PCCP|샌드박스|법률|인허가|국가\s?전략|로드맵|한국형\s?ARPA/],
   ["안전·거버넌스", 1, /안전|오류|환각|편향|책임|유출|보안|개인정보|사후관리|이상사례|위험|윤리|검증|거버넌스|감독|동조|유해|지적|오남용|신뢰|투명/],
@@ -198,7 +204,32 @@ const IMP_RULES = [
   ["AI명시", 2, /(?<![A-Za-z])AI(?![A-Za-z])|인공지능/],
   ["노이즈", -2, /주가|증시|목표주가|투자\s?유치|지분|공모|코스닥|수주|채용|이벤트|할인|프로모션|분양|부동산|화장품|뷰티|건기식/]
 ];
+
+// ---- 직접 지정(중요도·대표 기사·카테고리): 이 브라우저에 저장, 내보내기 파일(data/overrides.json)로 공유 ----
+const OV_KEY = "newsOverrides";
+state.ov = { imp: {}, pin: {}, cat: {} };
+const ovKey = it => it.originallink || it.link || it.title;
+function ovSave() { try { localStorage.setItem(OV_KEY, JSON.stringify(state.ov)); } catch (e) {} }
+function ovMerge(o) { if (!o) return; ["imp", "pin", "cat"].forEach(k => Object.assign(state.ov[k], o[k] || {})); }
+const COMPANY_NEWS = /(허가|인증|승인)\s?(획득|취득|받|통과)|획득|수주|투자\s?유치|공급\s?계약/;
+const POLICY_DOC = /설명회|가이드라인|개정|입법|시행|고시|지침|공고|공모|심사\s?기준|제도\s?개선|정책|위원회/;
+const POLICY_AGENCY = /복지부|식약처|식품의약품안전|심평원|건보공단|과기정통부|질병관리청|보건산업진흥원|한국보건의료연구원|국회|정부/;
+function catOf(it) {
+  const o = state.ov.cat[ovKey(it)]; if (o) return o;
+  const c = it.category || "기타", t = it.title || "";
+  if (c === "규제·정책" && COMPANY_NEWS.test(t) && !POLICY_DOC.test(t) && !POLICY_AGENCY.test(t)) return "의료 AI 일반";
+  return c;
+}
+function ovExport() {
+  const blob = new Blob([JSON.stringify(state.ov, null, 1)], { type: "application/json" });
+  const a = el("a", { href: URL.createObjectURL(blob), download: "overrides.json" }); document.body.append(a); a.click(); a.remove();
+}
 function impOf(it) {
+  const o = state.ov.imp[ovKey(it)];
+  if (o !== undefined) return { sc: o === "3" ? 99 : o === "2" ? 6 : -1, lv: +o, why: ["직접 지정"] };
+  return impAuto(it);
+}
+function impAuto(it) {
   if (it._imp) return it._imp;
   const t = it.title || "", s = (it.summary || "").slice(0, 100);
   let sc = 0; const hit = [];
@@ -217,7 +248,7 @@ function filtered() {
   const rows = state.items.filter(it => {
     if (regionOf(it) !== state.region) return false;
     if (state.day !== "전체" && !(it.first_seen || "").startsWith(state.day)) return false;
-    if (state.cat !== "전체" && it.category !== state.cat) return false;
+    if (state.cat !== "전체" && catOf(it) !== state.cat) return false;
     const text = (it.title + " " + it.summary);
     if (state.rel && !REL.test(text)) return false;
     if (state.aiT && !AI_T.test(it.title)) return false;
@@ -281,7 +312,7 @@ function renderTabs() {
   });
   const inRegion = state.items.filter(it => regionOf(it) === state.region);
   const counts = {};
-  inRegion.forEach(it => counts[it.category] = (counts[it.category] || 0) + 1);
+  inRegion.forEach(it => { const c = catOf(it); counts[c] = (counts[c] || 0) + 1; });
   const known = state.order.filter(c => counts[c]);
   const extra = Object.keys(counts).filter(c => !state.order.includes(c));
   const cats = ["전체", ...known, ...extra];
@@ -368,15 +399,36 @@ function renderHot() {
 }
 
 
+function editBox(it, cat) {
+  const wrap = el("details", { className: "editbox" }, [el("summary", { textContent: "편집" })]);
+  fillEdit(wrap, it, cat); return wrap;
+}
+function editBtn(it) { return editBox(it, catOf(it)); }
+function fillEdit(wrap, it, cat) {
+  const k = ovKey(it);
+  const sel = el("select", {}), cs = el("select", {});
+  [["", "중요도: 자동"], ["3", "중요도: 상"], ["2", "중요도: 중"], ["0", "중요도: 없음"]].forEach(([v, t]) => sel.append(el("option", { value: v, textContent: t })));
+  sel.value = state.ov.imp[k] ?? "";
+  sel.onchange = () => { if (sel.value === "") delete state.ov.imp[k]; else state.ov.imp[k] = sel.value; ovSave(); render(); };
+  const cats = [...new Set([...state.order, catOf(it)])];
+  cats.forEach(c => cs.append(el("option", { value: c, textContent: "카테고리: " + c })));
+  cs.value = catOf(it);
+  cs.onchange = () => { state.ov.cat[k] = cs.value; ovSave(); render(); };
+  const pin = el("button", { type: "button", className: "tab", textContent: state.ov.pin[cat] === k ? "대표 해제" : "이 카테고리 대표로 지정" });
+  pin.onclick = () => { if (state.ov.pin[cat] === k) delete state.ov.pin[cat]; else state.ov.pin[cat] = k; ovSave(); state.home = true; render(); };
+  wrap.append(el("div", { className: "editrow" }, [sel, cs, pin]));
+}
+
 function renderHome(rows, list) {
   const by = new Map();
-  rows.forEach(it => { const c = it.category || "기타"; if (!by.has(c)) by.set(c, []); by.get(c).push(it); });
+  rows.forEach(it => { const c = catOf(it); if (!by.has(c)) by.set(c, []); by.get(c).push(it); });
   const cats = [...state.order.filter(c => by.has(c)), ...[...by.keys()].filter(c => !state.order.includes(c))];
   const better = (a, b) => (impOf(b).sc - impOf(a).sc) || ((b.similar_count || 0) - (a.similar_count || 0)) || (a.pubDate < b.pubDate ? 1 : -1);
   list.append(el("div", { className: "homehead", textContent: "카테고리별 핵심 기사 · 중요도가 가장 높은 기사 1건 (동점이면 여러 매체가 다룬 기사 우선)" }));
   const grid = el("div", { className: "homegrid" });
   cats.forEach(c => {
-    const arr = by.get(c).slice().sort(better), it = arr[0], im = impOf(it);
+    const arr = by.get(c).slice().sort(better), pinK = state.ov.pin[c];
+    const pinned = pinK && arr.find(x => ovKey(x) === pinK), it = pinned || arr[0], im = impOf(it);
     const a = el("a", { href: safeUrl(it.originallink || it.link), target: "_blank", rel: "noopener noreferrer", textContent: it.title });
     const meta = [
       ...(im.lv ? [el("span", { className: "chip imp" + im.lv, textContent: im.lv === 3 ? "중요도 상" : "중요도 중" })] : []),
@@ -390,8 +442,8 @@ function renderHome(rows, list) {
       el("div", { className: "hch" }, [el("b", { textContent: c }), el("em", { textContent: by.get(c).length.toLocaleString() + "건" })]),
       el("h3", {}, [a]), (it.summary ? el("p", { textContent: it.summary }) : ""),
       el("div", { className: "foot" }, meta),
-      ...(im.why.length ? [el("div", { className: "why", textContent: "판단 근거: " + im.why.join(" · ") })] : []),
-      more]));
+      ...(im.why.length ? [el("div", { className: "why", textContent: (pinned ? "직접 지정한 대표 기사 · " : "") + "판단 근거: " + im.why.join(" · ") })] : []),
+      editBox(it, c), more]));
   });
   list.append(grid);
 }
@@ -410,7 +462,7 @@ function render() {
     const foot = el("div", { className: "foot" }, [
       ...(impOf(it).lv ? [el("span", { className: "chip imp" + impOf(it).lv, title: "중요도 점수 " + impOf(it).sc.toFixed(1) + " · " + impOf(it).why.join(", "),
         textContent: (impOf(it).lv === 3 ? "중요도 상" : "중요도 중") })] : []),
-      el("span", { className: "chip", textContent: it.category }),
+      el("span", { className: "chip", textContent: catOf(it) }),
       ...(it.gov ? [el("span", { className: "chip score", textContent: it.kind }),
            ...((it.kw && it.kw.length) ? [el("span", { className: "kws", textContent: "키워드: " + it.kw.join(", ") })] : [])]
         : [el("span", { className: "chip score", textContent: "관련도 " + (it.score ?? 0) }),
@@ -422,6 +474,7 @@ function render() {
       ...(it.similar_count ? [el("span", { className: "chip score", title: (it.similar_sources || []).join(", "),
         textContent: "유사 기사 " + it.similar_count + "건" })] : []),
       el("span", { textContent: fmtDate(it.pubDate) }),
+      editBtn(it),
       ...(it.first_seen ? [el("span", { className: "chip score", textContent: "수집 " + it.first_seen.slice(5) })] : []),
     ]);
     list.append(el("article", { className: it.similar_count ? "hi" : "" }, [el("h2", {}, [a]), (it.summary ? el("p", { textContent: it.summary }) : ""), foot]));
@@ -570,7 +623,7 @@ function showRunNotices(lr) {
 function toCsv() {
   const q = v => '"' + String(v ?? "").replace(/"/g, '""') + '"';
   const head = ["수집일", "발행일", "구분", "카테고리", "제목", "출처", "링크", "관련도", "요약"];
-  const lines = filtered().map(it => [it.first_seen, (it.pubDate || "").slice(0, 10), regionOf(it), it.category, it.title,
+  const lines = filtered().map(it => [it.first_seen, (it.pubDate || "").slice(0, 10), regionOf(it), catOf(it), it.title,
     it.gov ? it.agency : it.global ? (it.sources || []).join("/") : host(it.originallink || it.link),
     it.originallink || it.link, it.score ?? "", it.summary].map(q).join(","));
   const blob = new Blob(["\ufeff" + [head.map(q).join(","), ...lines].join("\r\n")], { type: "text/csv;charset=utf-8" });
@@ -620,6 +673,9 @@ $("period").addEventListener("change", e => { state.period = e.target.value; cle
   render();
 }));
 $("csv").addEventListener("click", toCsv);
+$("ovExp").addEventListener("click", ovExport);
+$("ovClr").addEventListener("click", () => { if (confirm("직접 지정한 중요도·대표 기사·카테고리를 모두 초기화할까요?")) { state.ov = { imp: {}, pin: {}, cat: {} }; ovSave(); render(); } });
+getJson("data/overrides.json").catch(() => null).then(o => { ovMerge(o); try { ovMerge(JSON.parse(localStorage.getItem(OV_KEY) || "null")); } catch (e) {} if (state.items.length) render(); });
 
 $("q").addEventListener("input", e => { state.q = e.target.value; render(); });
 $("impOnly").addEventListener("change", e => { state.impOnly = e.target.checked; render(); });
