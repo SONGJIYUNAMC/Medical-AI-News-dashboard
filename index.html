@@ -110,6 +110,17 @@
     .controls.collapsed #ctlbody { display: none; }
     .content { padding: 16px 14px 40px; }
   }
+.homehead,.homegrid{grid-column:1/-1}
+.homehead{font-size:13px;color:var(--muted);margin:0 0 12px}
+.homegrid{display:grid;grid-template-columns:1fr 1fr;gap:14px}
+.homecard{background:var(--card);border:1px solid var(--line);border-radius:12px;padding:16px 18px;display:flex;flex-direction:column;box-shadow:var(--shadow)}
+.hch{display:flex;justify-content:space-between;align-items:center;margin-bottom:8px}.hch b{color:var(--navy);font-size:15px}.hch em{font-style:normal;font-size:12px;color:var(--muted)}
+.homecard h3{margin:0 0 6px;font-size:16px;line-height:1.45}.homecard h3 a{color:var(--text);text-decoration:none}.homecard h3 a:hover{color:var(--teal)}
+.homecard p{margin:0 0 10px;font-size:13px;color:var(--muted);display:-webkit-box;-webkit-line-clamp:3;-webkit-box-orient:vertical;overflow:hidden}
+.why{margin-top:8px;font-size:12px;color:var(--muted)}
+.homemore{margin-top:auto;font:inherit;font-size:13px;font-weight:700;color:var(--teal);background:none;border:0;border-top:1px solid var(--line);padding:12px 0 0;cursor:pointer;display:flex;justify-content:space-between;width:100%;margin-top:14px}
+@media(max-width:800px){.homegrid{grid-template-columns:1fr}}
+.chip.imp3{background:#fff1e0;color:#b45309;font-weight:700}.chip.imp2{background:#fef9e0;color:#8a6d00;font-weight:600}
 </style>
 </head>
 <body>
@@ -121,6 +132,7 @@
   </div>
   <button class="tab foldbtn" id="fold" type="button" aria-expanded="true">▴ 접기</button>
   <div id="ctlbody">
+    <div class="navlist" id="homeBox" style="margin-top:14px"></div>
     <h4>구분</h4>
     <div class="navlist region" id="regions"></div>
     <h4>카테고리</h4>
@@ -130,8 +142,9 @@
       <span class="dsel" id="dayWrap"><select id="dy" aria-label="연"></select><select id="dm" aria-label="월"></select><select id="dd" aria-label="일"></select></span></div>
     <div class="field"><label class="cap">기간</label><select id="period" aria-label="기간"></select></div>
     <div class="field"><label class="cap">정렬</label>
-      <select id="sort" aria-label="정렬"><option value="score">관련도순</option><option value="date">최신순</option></select></div>
+      <select id="sort" aria-label="정렬"><option value="imp">중요도순</option><option value="score">관련도순</option><option value="date">최신순</option></select></div>
     <div class="field"><label class="cap">검색</label><input type="search" id="q" placeholder="제목·요약 검색"></div>
+    <label class="toggle"><input type="checkbox" id="impOnly"> 중요도 중 이상 기사만</label>
     <label class="toggle"><input type="checkbox" id="rel"> 의료·병원·헬스 관련어 포함 기사만</label>
     <label class="toggle"><input type="checkbox" id="aiT"> 제목에 AI 포함 기사만</label>
     <button class="tab csv" id="csv" type="button">CSV 내려받기</button>
@@ -150,7 +163,7 @@
 <script>
 const REL = /의료|병원|헬스|환자|진료|임상|의사|간호|보건|의약|바이오|건강|health|hospital|clinic|medical|patient/i;
 const AI_T = /(^|[^A-Za-z])AI(?![A-Za-z])|인공지능|딥러닝|머신러닝|생성형|LLM|언어\s?모델|챗\s?GPT|파운데이션\s?모델|디지털의료기기/i;
-const state = { items: [], order: [], hotOpen: window.innerWidth >= 700, period: "", day: "전체", weeksLoaded: [], manifest: null, region: "국내", cat: "전체", q: "", rel: false, aiT: false, sort: "score" };
+const state = { items: [], order: [], hotOpen: window.innerWidth >= 700, period: "", day: "전체", weeksLoaded: [], manifest: null, region: "국내", cat: "전체", q: "", rel: false, aiT: false, impOnly: false, sort: "imp", home: true };
 const $ = id => document.getElementById(id);
 
 function fmtDate(iso) {
@@ -169,6 +182,34 @@ function el(tag, props, children) {
   return e;
 }
 
+// 내 기준 중요도: 일일동향 보고 13일분(102건) 대비 사이트 기사 비교로 가중치 산출(로지스틱 회귀 → 정수화)
+const IMP_RULES = [
+  ["정책기관", 2, /보건복지부|복지부|식약처|식품의약품안전|심평원|건강보험심사평가원|건보공단|국민건강보험|과기정통부|과학기술정보통신부|산업통상부|질병관리청|보건산업진흥원|한국보건의료연구원|국회|국감|국정감사|세계보건기구|WHO|FDA|MHRA|NHS|CMS|지식재산처|공정위|개인정보위|개인정보보호위원회/],
+  ["제도·수가", 2, /수가|급여|비급여|신의료기술|평가유예|가이드라인|허가|인증|심사|규제|법안|입법|고시|지침|시행령|제도|보상체계|등재|PCCP|샌드박스|법률|인허가|국가\s?전략|로드맵|한국형\s?ARPA/],
+  ["안전·거버넌스", 1, /안전|오류|환각|편향|책임|유출|보안|개인정보|사후관리|이상사례|위험|윤리|검증|거버넌스|감독|동조|유해|지적|오남용|신뢰|투명/],
+  ["도입·성과", 1, /도입|운영|구축|착수|개시|가동|실증|시범|성과|절감|단축|효과|근거|AX|전환|스마트병원|스마트병동|EMR|워크플로|표준화/],
+  ["빅5·상급", 3, /서울아산|아산병원|서울대병원|분당서울대|삼성서울|세브란스|서울성모|빅5|상급종합|국립대병원|국립중앙의료원|고대구로|아주대병원|길병원/],
+  ["의료AI기업", 2, /루닛|뷰노|메디컬에이아이|코어라인|제이엘케이|에이아이트릭스|씨어스|온코소프트|비트컴퓨터|딥노이드|뉴로핏|이지케어텍|메디아크|시선AI|퍼슬리/],
+  ["연구·학술지", 2, /npj|Nature|JAMA|Lancet|NEJM|학술지|연구팀|연구진|논문|전향적|다기관|무작위|연구\s?결과|임상시험/],
+  ["행사", 2, /세미나|심포지엄|컨퍼런스|포럼|학술대회|전시회|웨비나|설명회|세계병원대회/],
+  ["생성형·LLM", 2, /생성형|LLM|언어\s?모델|챗\s?GPT|ChatGPT|에이전트|바이브코딩|파운데이션|멀티모달/],
+  ["임상적용", 1, /진단|판독|예측|조기|환자|진료|수술|영상|심전도|CT|MRI|병동|중환자/],
+  ["해외정책", 1, /미국|캘리포니아|유럽|EU|영국|일본|중국|해외|글로벌|세계/],
+  ["AI명시", 2, /(?<![A-Za-z])AI(?![A-Za-z])|인공지능/],
+  ["노이즈", -2, /주가|증시|목표주가|투자\s?유치|지분|공모|코스닥|수주|채용|이벤트|할인|프로모션|분양|부동산|화장품|뷰티|건기식/]
+];
+function impOf(it) {
+  if (it._imp) return it._imp;
+  const t = it.title || "", s = (it.summary || "").slice(0, 100);
+  let sc = 0; const hit = [];
+  for (const [name, w, rx] of IMP_RULES) {
+    const v = rx.test(t) ? 2 : rx.test(s) ? 1 : 0;
+    if (v) { const c = w * v / 2; sc += c; if (c > 0) hit.push([name, c]); }
+  }
+  hit.sort((a, b) => b[1] - a[1]);
+  return (it._imp = { sc, lv: sc >= 7 ? 3 : sc >= 5 ? 2 : 0, why: hit.slice(0, 3).map(h => h[0]).filter(n => n !== "AI명시") });
+}
+
 function clearSearch() { state.q = ""; $("q").value = ""; }
 
 function filtered() {
@@ -180,11 +221,12 @@ function filtered() {
     const text = (it.title + " " + it.summary);
     if (state.rel && !REL.test(text)) return false;
     if (state.aiT && !AI_T.test(it.title)) return false;
+    if (state.impOnly && impOf(it).lv < 2) return false;
     if (q && !text.toLowerCase().includes(q)) return false;
     return true;
   });
   const byDate = (a, b) => (a.pubDate < b.pubDate ? 1 : a.pubDate > b.pubDate ? -1 : 0);
-  rows.sort(state.sort === "date" ? byDate : (a, b) => ((b.score || 0) - (a.score || 0)) || byDate(a, b));
+  rows.sort(state.sort === "date" ? byDate : state.sort === "imp" ? (a, b) => (impOf(b).sc - impOf(a).sc) || byDate(a, b) : (a, b) => ((b.score || 0) - (a.score || 0)) || byDate(a, b));
   return rows;
 }
 
@@ -224,13 +266,17 @@ function setDaySelects(day) {
 }
 
 function renderTabs() {
+  const hb = $("homeBox"); hb.replaceChildren();
+  const hbtn = el("button", { className: "tab" + (state.home ? " active" : ""), type: "button" }, [el("span", { textContent: "홈 (카테고리별 핵심)" })]);
+  hbtn.onclick = () => { state.home = true; state.cat = "전체"; clearSearch(); render(); };
+  hb.append(hbtn);
   const rbox = $("regions");
   rbox.replaceChildren();
   ["국내", "정부", "해외"].forEach(r => {
     const n = state.items.filter(it => regionOf(it) === r).length;
     const b = el("button", { className: "tab" + (r === state.region ? " active" : ""), type: "button" },
                  [el("span", { textContent: REGION_LABEL[r] }), el("span", { className: "n", textContent: n.toLocaleString() })]);
-    b.onclick = () => { state.region = r; state.cat = "전체"; applyDefaultDay(); clearSearch(); render(); };
+    b.onclick = () => { state.region = r; state.cat = "전체"; state.home = true; applyDefaultDay(); clearSearch(); render(); };
     rbox.append(b);
   });
   const inRegion = state.items.filter(it => regionOf(it) === state.region);
@@ -243,9 +289,9 @@ function renderTabs() {
   box.replaceChildren();
   cats.forEach(c => {
     const n = c === "전체" ? inRegion.length : counts[c];
-    const b = el("button", { className: "tab" + (c === state.cat ? " active" : ""), type: "button" },
+    const b = el("button", { className: "tab" + (!state.home && c === state.cat ? " active" : ""), type: "button" },
                  [el("span", { textContent: c }), el("span", { className: "n", textContent: n.toLocaleString() })]);
-    b.onclick = () => { state.cat = c; clearSearch(); render(); };
+    b.onclick = () => { state.cat = c; state.home = false; clearSearch(); render(); };
     box.append(b);
   });
 }
@@ -321,6 +367,35 @@ function renderHot() {
   box.append(cKw, cHot, cWeek);
 }
 
+
+function renderHome(rows, list) {
+  const by = new Map();
+  rows.forEach(it => { const c = it.category || "기타"; if (!by.has(c)) by.set(c, []); by.get(c).push(it); });
+  const cats = [...state.order.filter(c => by.has(c)), ...[...by.keys()].filter(c => !state.order.includes(c))];
+  const better = (a, b) => (impOf(b).sc - impOf(a).sc) || ((b.similar_count || 0) - (a.similar_count || 0)) || (a.pubDate < b.pubDate ? 1 : -1);
+  list.append(el("div", { className: "homehead", textContent: "카테고리별 핵심 기사 · 중요도가 가장 높은 기사 1건 (동점이면 여러 매체가 다룬 기사 우선)" }));
+  const grid = el("div", { className: "homegrid" });
+  cats.forEach(c => {
+    const arr = by.get(c).slice().sort(better), it = arr[0], im = impOf(it);
+    const a = el("a", { href: safeUrl(it.originallink || it.link), target: "_blank", rel: "noopener noreferrer", textContent: it.title });
+    const meta = [
+      ...(im.lv ? [el("span", { className: "chip imp" + im.lv, textContent: im.lv === 3 ? "중요도 상" : "중요도 중" })] : []),
+      ...(it.source_type === "major" ? [el("span", { className: "chip", textContent: "주요 일간지" })] : it.source_type === "medical" ? [el("span", { className: "chip", textContent: "의료 전문지" })] : []),
+      el("span", { textContent: it.gov ? it.agency : it.global ? (it.sources || []).join(", ") : host(it.originallink || it.link) + (it.similar_count ? " 외 " + it.similar_count + "곳 보도" : "") }),
+      el("span", { textContent: fmtDate(it.pubDate) }),
+    ];
+    const more = el("button", { className: "homemore", type: "button" }, [el("span", { textContent: c + " 전체 " + by.get(c).length.toLocaleString() + "건 보기" }), el("span", { textContent: "→" })]);
+    more.onclick = () => { state.cat = c; state.home = false; clearSearch(); render(); window.scrollTo(0, 0); };
+    grid.append(el("section", { className: "homecard" }, [
+      el("div", { className: "hch" }, [el("b", { textContent: c }), el("em", { textContent: by.get(c).length.toLocaleString() + "건" })]),
+      el("h3", {}, [a]), (it.summary ? el("p", { textContent: it.summary }) : ""),
+      el("div", { className: "foot" }, meta),
+      ...(im.why.length ? [el("div", { className: "why", textContent: "판단 근거: " + im.why.join(" · ") })] : []),
+      more]));
+  });
+  list.append(grid);
+}
+
 function render() {
   if ($("fold")) updateFoldLabel();
   renderHot();
@@ -329,9 +404,12 @@ function render() {
   const list = $("list");
   list.replaceChildren();
   if (!rows.length) { list.append(el("div", { className: "empty", textContent: "조건에 맞는 기사가 없습니다." })); return; }
+  if (state.home && !state.q.trim()) { renderHome(rows, list); return; }
   rows.forEach(it => {
     const a = el("a", { href: safeUrl(it.originallink || it.link), target: "_blank", rel: "noopener noreferrer", textContent: it.title });
     const foot = el("div", { className: "foot" }, [
+      ...(impOf(it).lv ? [el("span", { className: "chip imp" + impOf(it).lv, title: "중요도 점수 " + impOf(it).sc.toFixed(1) + " · " + impOf(it).why.join(", "),
+        textContent: (impOf(it).lv === 3 ? "중요도 상" : "중요도 중") })] : []),
       el("span", { className: "chip", textContent: it.category }),
       ...(it.gov ? [el("span", { className: "chip score", textContent: it.kind }),
            ...((it.kw && it.kw.length) ? [el("span", { className: "kws", textContent: "키워드: " + it.kw.join(", ") })] : [])]
@@ -544,6 +622,7 @@ $("period").addEventListener("change", e => { state.period = e.target.value; cle
 $("csv").addEventListener("click", toCsv);
 
 $("q").addEventListener("input", e => { state.q = e.target.value; render(); });
+$("impOnly").addEventListener("change", e => { state.impOnly = e.target.checked; render(); });
 $("rel").addEventListener("change", e => { state.rel = e.target.checked; render(); });
 $("aiT").addEventListener("change", e => { state.aiT = e.target.checked; render(); });
 $("sort").addEventListener("change", e => { state.sort = e.target.value; render(); });
