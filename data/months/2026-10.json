@@ -1,14 +1,14 @@
 {
  "month": "2026-10",
- "generated_at": "2026-10-28T09:58:03.359661+09:00",
+ "generated_at": "2026-10-28T10:05:04.967331+09:00",
  "prev_month": null,
  "collected_days": 14,
  "first_day": "2026-10-15",
  "last_day": "2026-10-28",
- "total": 3518,
+ "total": 3520,
  "prev_total": null,
  "by_region": {
-  "국내": 2991,
+  "국내": 2993,
   "해외": 487,
   "정부": 40
  },
@@ -24,7 +24,7 @@
    "정부": 16
   },
   "2026-W44": {
-   "국내": 632,
+   "국내": 634,
    "해외": 88,
    "정부": 5
   }
@@ -32,21 +32,21 @@
  "categories": [
   {
    "name": "국내 · 기타 (의료 AI·병원 AI 키워드)",
-   "count": 752,
+   "count": 753,
    "prev": 0,
-   "delta": 752
+   "delta": 753
   },
   {
    "name": "국내 · 국내 의료 AI 기업",
-   "count": 633,
+   "count": 632,
    "prev": 0,
-   "delta": 633
+   "delta": 632
   },
   {
    "name": "국내 · 국내 정책·규제",
-   "count": 521,
+   "count": 524,
    "prev": 0,
-   "delta": 521
+   "delta": 524
   },
   {
    "name": "국내 · 국내 의료기관",
@@ -56,9 +56,9 @@
   },
   {
    "name": "국내 · AI 거버넌스·보안",
-   "count": 270,
+   "count": 269,
    "prev": 0,
-   "delta": 270
+   "delta": 269
   },
   {
    "name": "해외 · 해외 의료기관 AI 도입·운영",
@@ -141,14 +141,14 @@
    "status": ""
   },
   {
-   "word": "FDA",
-   "count": 72,
+   "word": "식약처",
+   "count": 73,
    "prev": 0,
    "status": ""
   },
   {
-   "word": "식약처",
-   "count": 71,
+   "word": "FDA",
+   "count": 72,
    "prev": 0,
    "status": ""
   },
@@ -165,14 +165,14 @@
    "status": ""
   },
   {
-   "word": "보건복지부",
+   "word": "학술대회",
    "count": 59,
    "prev": 0,
    "status": ""
   },
   {
-   "word": "학술대회",
-   "count": 58,
+   "word": "보건복지부",
+   "count": 59,
    "prev": 0,
    "status": ""
   },
@@ -350,15 +350,15 @@
    "importance": 71
   },
   {
-   "title": "KT, 아크릴과 의료 AI 협력…병원별 맞춤 서비스 발굴",
-   "link": "https://www.mk.co.kr/article/12180637",
-   "date": "2026-10-20",
-   "category": "국내 의료 AI 기업",
+   "title": "갤럭시 워치, 수면 무호흡 '징후' 넘어 호흡장애 수준까지 분석",
+   "link": "https://www.newsis.com/view/NISX20261028_0003843964",
+   "date": "2026-10-28",
+   "category": "국내 정책·규제",
    "region": "국내",
-   "score": 11,
-   "similar_count": 28,
-   "source": "mk.co.kr",
-   "importance": 70
+   "score": 6,
+   "similar_count": 29,
+   "source": "newsis.com",
+   "importance": 67
   }
  ],
  "issues_global": [
@@ -1024,9 +1024,9 @@
    "category": "국내 정책·규제",
    "region": "국내",
    "score": 6,
-   "similar_count": 26,
+   "similar_count": 29,
    "source": "newsis.com",
-   "importance": 61
+   "importance": 67
   },
   {
    "title": "‘노인 건강’ 인기 유튜브 영상 42% AI 제작…의사 사칭도",
@@ -1385,9 +1385,9 @@
     "category": "국내 정책·규제",
     "region": "국내",
     "score": 6,
-    "similar_count": 26,
+    "similar_count": 29,
     "source": "newsis.com",
-    "importance": 61
+    "importance": 67
    },
    {
     "title": "‘노인 건강’ 인기 유튜브 영상 42% AI 제작…의사 사칭도",
