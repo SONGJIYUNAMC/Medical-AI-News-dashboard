@@ -1,24 +1,56 @@
 {
-  "generated_at": "2026-10-28T10:05:01.577632+09:00",
+  "generated_at": "2026-10-29T08:08:57.276167+09:00",
   "window_hours": 168,
-  "count": 7,
-  "filtered_out": 225,
+  "count": 10,
+  "filtered_out": 278,
   "category_order": [
+    "정부 보도자료 (검색)",
     "식품의약품안전처",
-    "보건복지부",
-    "정부 보도자료 (검색)"
+    "과학기술정보통신부",
+    "보건복지부"
   ],
-  "errors": [
+  "errors": [],
+  "items": [
     {
-      "query": "과학기술정보통신부 보도자료(공식 API) (공공데이터포털 API)",
-      "error": "HTTPSConnectionPool(host='apis.data.go.kr', port=443): Read timed out. (read timeout=30)"
+      "title": "'AI 건강도우미 챗봇' 서비스 시작…국민 누구나 24시간 이용",
+      "link": "https://news.google.com/rss/articles/CBMiaEFVX3lxTFA1UkxnZDFMdURFZ0g1ZHJkRDZnTnY2Nk1LZnctcWxZbFVCOFhJamlFWVU4LUl5RVRiT3JHcURWSXAzdGNXUDR1eVZfSnZEdFdRQkFYYzU2UGxlZEY2QmxkOFdsUUNSWnR3?oc=5",
+      "summary": "'AI 건강도우미 챗봇' 서비스 시작…국민 누구나 24시간 이용 대한민국 정책브리핑",
+      "pubDate": "2026-10-28T16:26:10+09:00",
+      "agency": "정부 보도자료 (검색)",
+      "kind": "지원사업·정책",
+      "via": "gnews",
+      "official": true
     },
     {
-      "query": "과학기술정보통신부 보도자료 (https://www.msit.go.kr/user/rss/rss.do?bbsSeqNo=94)",
-      "error": "HTTPSConnectionPool(host='www.msit.go.kr', port=443): Read timed out. (read timeout=30)"
-    }
-  ],
-  "items": [
+      "title": "식약처, 최신의 디지털의료기기 허가·심사 기준 짚어준다",
+      "link": "https://news.google.com/rss/articles/CBMidkFVX3lxTE41WXEzM1hVdEJvblRYSFlCNmZRX1lYckpRdDRXc1kyYmJFSGJCb0tVdXZLVFkwUnFzUGpBYk96bXdfenowQXBQV1QtWFBXejRGTjk5TVVyVlpYRzJIdmxYRnltVmVqQk01dHl3S0tLVGdBdTY4ZXc?oc=5",
+      "summary": "식약처, 최신의 디지털의료기기 허가·심사 기준 짚어준다 대한민국 정책브리핑",
+      "pubDate": "2026-10-28T09:23:45+09:00",
+      "agency": "정부 보도자료 (검색)",
+      "kind": "가이드라인·기준",
+      "via": "gnews",
+      "official": true
+    },
+    {
+      "title": "국민 누구나 24시간 이용하는 ‘AI 건강도우미 챗봇’ 운영 시작",
+      "link": "https://news.google.com/rss/articles/CBMidkFVX3lxTFBiN25lV2g0dUxBNWlMLVpMbnVIcVhIS2JRbFN5NnVqSU94ZG84djd4azJHWUVRMEFja1F5RG9oeE5sUFpQLXV6TWFPVmFsOXJWcmw1Q0FoMXA2cHBVMXdNNkhRRkFkbElXaW56WlNfSHVVQi00Rnc?oc=5",
+      "summary": "국민 누구나 24시간 이용하는 ‘AI 건강도우미 챗봇’ 운영 시작 대한민국 정책브리핑",
+      "pubDate": "2026-10-28T08:50:00+09:00",
+      "agency": "정부 보도자료 (검색)",
+      "kind": "지원사업·정책",
+      "via": "gnews",
+      "official": true
+    },
+    {
+      "title": "(관계부처합동) 국민 누구나 24시간 이용하는 'AI 건강도우미 챗봇' 운영 시작(10.28.수)",
+      "link": "https://news.google.com/rss/articles/CBMilAFBVV95cUxNOUFqTlNqeEJuaEJQbzhKanpjejBaX3k2UjZMZDg3U2Y2OGtPMGhOTGw5b1lvUVlzTVItSFpzYnpnd09ZRUloWV9WeEt6TllNZWZLQlNKQVh0YlFncXB1SVZRUHhhWEhYdENLZUo5anZKaVhBRWVNMTQtZG5xZzZYQVJZZmRhRko4blk0Zy04MkZSUGt0?oc=5",
+      "summary": "(관계부처합동) 국민 누구나 24시간 이용하는 'AI 건강도우미 챗봇' 운영 시작(10.28.수) 대한민국 정책브리핑",
+      "pubDate": "2026-10-28T08:50:00+09:00",
+      "agency": "정부 보도자료 (검색)",
+      "kind": "지원사업·정책",
+      "via": "gnews",
+      "official": true
+    },
     {
       "title": "[보도참고] 식약처, 최신의 디지털의료기기 허가심사 기준 짚어준다",
       "link": "https://www.mfds.go.kr/brd/m_99/view.do?seq=50439",
@@ -27,6 +59,16 @@
       "agency": "식품의약품안전처",
       "kind": "가이드라인·기준",
       "via": "rss",
+      "official": true
+    },
+    {
+      "title": "[보도참고] 국민 누구나 24시간 이용하는 ‘인공지능 건강도우미 대화 로봇(AI 건강도우미 챗봇)’ 운영 시작",
+      "link": "https://www.msit.go.kr/bbs/view.do?sCode=user&mId=307&mPid=208&bbsSeqNo=94&nttSeqNo=3187896",
+      "summary": "담당부서: 디지털사회기획과",
+      "pubDate": "2026-10-28T00:00:00+09:00",
+      "agency": "과학기술정보통신부",
+      "kind": "기타 발표",
+      "via": "api",
       "official": true
     },
     {
@@ -50,42 +92,22 @@
       "official": true
     },
     {
+      "title": "과기정통부, 제2차 규제합리화위원회에서 ‘AIDC 생태계 지원 방안’ 발표",
+      "link": "https://www.msit.go.kr/bbs/view.do?sCode=user&mId=307&mPid=208&bbsSeqNo=94&nttSeqNo=3187892",
+      "summary": "담당부서: 인공지능데이터진흥과",
+      "pubDate": "2026-10-23T00:00:00+09:00",
+      "agency": "과학기술정보통신부",
+      "kind": "지원사업·정책",
+      "via": "api",
+      "official": true
+    },
+    {
       "title": "공정위, ｢인공지능(AI) 관련 표시·광고 가이드라인｣ (안) 의견청취 실시",
       "link": "https://news.google.com/rss/articles/CBMidkFVX3lxTE5aUE0wTC0zQUJ5cHU4ZlBWWlFESU5BbGhKQkVYLTUxcWZUX0x2eEEtR1N2MEd5Qm8xcWVIRDNmTkJYUV9GMUVjQ1B5YnREa1prYm5ScjJWSGZPcDZfQXNtX2tUZmF0eFMtaFNCMzNFRmhxdDRyd0E?oc=5",
       "summary": "공정위, ｢인공지능(AI) 관련 표시·광고 가이드라인｣ (안) 의견청취 실시 대한민국 정책브리핑",
       "pubDate": "2026-10-22T10:00:00+09:00",
       "agency": "정부 보도자료 (검색)",
       "kind": "가이드라인·기준",
-      "via": "gnews",
-      "official": true
-    },
-    {
-      "title": "[보도참고] ‘디지털의료·건강지원기기 성능인증 제도’ KIMES 현장 세미나 및 홍보관 운영",
-      "link": "https://www.mfds.go.kr/brd/m_99/view.do?seq=50429",
-      "summary": "",
-      "pubDate": "2026-10-22T07:59:15+09:00",
-      "agency": "식품의약품안전처",
-      "kind": "가이드라인·기준",
-      "via": "rss",
-      "official": true
-    },
-    {
-      "title": "'AI 헬스케어 서울선언문' 발표…\"AI 혁신 혜택, 전 인류가 공평하게\"",
-      "link": "https://news.google.com/rss/articles/CBMibEFVX3lxTE9NTkdjTE9aM1JJemVrYzh4bnhDa0l0NU9ONHNOVWVEYjl2b1NhZjRTN2ZBUlA2WVFWX3NNdkNtazdfSjJhSXZWcWtIOVBvbXNaQm1xLTQtQlExU2NFOXNxM05vaTBpOEdGdEZVQw?oc=5",
-      "summary": "'AI 헬스케어 서울선언문' 발표…\"AI 혁신 혜택, 전 인류가 공평하게\" 대한민국 정책브리핑",
-      "pubDate": "2026-10-21T18:52:13+09:00",
-      "agency": "정부 보도자료 (검색)",
-      "kind": "지원사업·정책",
-      "via": "gnews",
-      "official": true
-    },
-    {
-      "title": "AI 혁신 혜택의 공평한 접근 약속... 보건복지부·세계보건기구, ｢AI 헬스케어 서울선언문｣ 공동",
-      "link": "https://news.google.com/rss/articles/CBMidkFVX3lxTFBuTGJUdlBtRzdhNWlzZDBBN3pRbVB2Z2RfTzFyYkNrc2RNNkxxNVVFY3dNdm5hRjBKeEd6SzZ5TTVoanFqU3NTeDAzM1ZKZXJvbmp3NGZERkhzNWxhT0pPOHU0am9oUEpIbGNEVTJZRWhIVEtFVXc?oc=5",
-      "summary": "AI 혁신 혜택의 공평한 접근 약속... 보건복지부·세계보건기구, ｢AI 헬스케어 서울선언문｣ 공동 대한민국 정책브리핑",
-      "pubDate": "2026-10-21T11:08:45+09:00",
-      "agency": "정부 보도자료 (검색)",
-      "kind": "지원사업·정책",
       "via": "gnews",
       "official": true
     }

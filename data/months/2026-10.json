@@ -1,15 +1,15 @@
 {
  "month": "2026-10",
- "generated_at": "2026-10-28T10:05:04.967331+09:00",
+ "generated_at": "2026-10-29T08:08:59.701242+09:00",
  "prev_month": null,
- "collected_days": 14,
+ "collected_days": 15,
  "first_day": "2026-10-15",
- "last_day": "2026-10-28",
- "total": 3520,
+ "last_day": "2026-10-29",
+ "total": 3753,
  "prev_total": null,
  "by_region": {
-  "국내": 2993,
-  "해외": 487,
+  "국내": 3189,
+  "해외": 524,
   "정부": 40
  },
  "weekly": {
@@ -24,77 +24,77 @@
    "정부": 16
   },
   "2026-W44": {
-   "국내": 634,
-   "해외": 88,
+   "국내": 830,
+   "해외": 125,
    "정부": 5
   }
  },
  "categories": [
   {
    "name": "국내 · 기타 (의료 AI·병원 AI 키워드)",
-   "count": 753,
+   "count": 789,
    "prev": 0,
-   "delta": 753
+   "delta": 789
   },
   {
    "name": "국내 · 국내 의료 AI 기업",
-   "count": 632,
+   "count": 672,
    "prev": 0,
-   "delta": 632
+   "delta": 672
   },
   {
    "name": "국내 · 국내 정책·규제",
-   "count": 524,
+   "count": 558,
    "prev": 0,
-   "delta": 524
+   "delta": 558
   },
   {
    "name": "국내 · 국내 의료기관",
-   "count": 335,
+   "count": 354,
    "prev": 0,
-   "delta": 335
+   "delta": 354
   },
   {
    "name": "국내 · AI 거버넌스·보안",
-   "count": 269,
+   "count": 291,
    "prev": 0,
-   "delta": 269
-  },
-  {
-   "name": "해외 · 해외 의료기관 AI 도입·운영",
-   "count": 252,
-   "prev": 0,
-   "delta": 252
+   "delta": 291
   },
   {
    "name": "국내 · 해외 의료기관·정책·규제",
-   "count": 249,
+   "count": 268,
    "prev": 0,
-   "delta": 249
+   "delta": 268
+  },
+  {
+   "name": "해외 · 해외 의료기관 AI 도입·운영",
+   "count": 267,
+   "prev": 0,
+   "delta": 267
   },
   {
    "name": "국내 · 학술·연구·행사",
-   "count": 231,
+   "count": 257,
    "prev": 0,
-   "delta": 231
+   "delta": 257
   },
   {
    "name": "해외 · 해외 정책·규제 (미국)",
-   "count": 129,
+   "count": 145,
    "prev": 0,
-   "delta": 129
+   "delta": 145
   },
   {
    "name": "해외 · 해외 연구·학술",
-   "count": 61,
+   "count": 64,
    "prev": 0,
-   "delta": 61
+   "delta": 64
   },
   {
    "name": "해외 · 해외 정책·규제 (유럽·영국)",
-   "count": 45,
+   "count": 48,
    "prev": 0,
-   "delta": 45
+   "delta": 48
   },
   {
    "name": "정부 · 정부 보도자료 (검색)",
@@ -130,73 +130,79 @@
  "keywords": [
   {
    "word": "서울대병원",
-   "count": 119,
+   "count": 123,
    "prev": 0,
    "status": ""
   },
   {
    "word": "세미나",
-   "count": 78,
+   "count": 83,
    "prev": 0,
    "status": ""
   },
   {
    "word": "식약처",
-   "count": 73,
+   "count": 79,
    "prev": 0,
    "status": ""
   },
   {
    "word": "FDA",
-   "count": 72,
+   "count": 78,
    "prev": 0,
    "status": ""
   },
   {
    "word": "세브란스",
-   "count": 69,
+   "count": 71,
    "prev": 0,
    "status": ""
   },
   {
    "word": "아산병원",
-   "count": 63,
+   "count": 66,
    "prev": 0,
    "status": ""
   },
   {
    "word": "학술대회",
-   "count": 59,
+   "count": 64,
    "prev": 0,
    "status": ""
   },
   {
    "word": "보건복지부",
-   "count": 59,
+   "count": 62,
    "prev": 0,
    "status": ""
   },
   {
    "word": "루닛",
-   "count": 58,
+   "count": 60,
    "prev": 0,
    "status": ""
   },
   {
    "word": "분당서울대",
-   "count": 56,
+   "count": 57,
    "prev": 0,
    "status": ""
   },
   {
    "word": "WHO",
-   "count": 41,
+   "count": 44,
+   "prev": 0,
+   "status": ""
+  },
+  {
+   "word": "포럼",
+   "count": 43,
    "prev": 0,
    "status": ""
   },
   {
    "word": "구글",
-   "count": 41,
+   "count": 42,
    "prev": 0,
    "status": ""
   },
@@ -207,43 +213,37 @@
    "status": ""
   },
   {
-   "word": "포럼",
-   "count": 35,
+   "word": "국회",
+   "count": 32,
    "prev": 0,
    "status": ""
   },
   {
    "word": "상급종합병원",
-   "count": 30,
-   "prev": 0,
-   "status": ""
-  },
-  {
-   "word": "국회",
-   "count": 30,
+   "count": 31,
    "prev": 0,
    "status": ""
   },
   {
    "word": "뷰노",
-   "count": 29,
+   "count": 30,
    "prev": 0,
    "status": ""
   },
   {
    "word": "심포지엄",
-   "count": 26,
-   "prev": 0,
-   "status": ""
-  },
-  {
-   "word": "심평원",
-   "count": 25,
+   "count": 28,
    "prev": 0,
    "status": ""
   },
   {
    "word": "삼성서울병원",
+   "count": 27,
+   "prev": 0,
+   "status": ""
+  },
+  {
+   "word": "심평원",
    "count": 25,
    "prev": 0,
    "status": ""
@@ -271,6 +271,17 @@
    "similar_count": 77,
    "source": "news1.kr",
    "importance": 171
+  },
+  {
+   "title": "갤럭시 워치, 수면 무호흡 '징후' 넘어 호흡장애 수준까지 분석",
+   "link": "https://www.newsis.com/view/NISX20261028_0003843964",
+   "date": "2026-10-28",
+   "category": "국내 정책·규제",
+   "region": "국내",
+   "score": 6,
+   "similar_count": 67,
+   "source": "newsis.com",
+   "importance": 143
   },
   {
    "title": "삼성전자 투자 미국 DNA분석장비사, 서울서 글로벌 로드쇼",
@@ -348,17 +359,6 @@
    "similar_count": 29,
    "source": "news1.kr",
    "importance": 71
-  },
-  {
-   "title": "갤럭시 워치, 수면 무호흡 '징후' 넘어 호흡장애 수준까지 분석",
-   "link": "https://www.newsis.com/view/NISX20261028_0003843964",
-   "date": "2026-10-28",
-   "category": "국내 정책·규제",
-   "region": "국내",
-   "score": 6,
-   "similar_count": 29,
-   "source": "newsis.com",
-   "importance": 67
   }
  ],
  "issues_global": [
@@ -481,9 +481,9 @@
    "category": "식품의약품안전처",
    "region": "정부",
    "score": 0,
-   "similar_count": 0,
+   "similar_count": 1,
    "source": "식품의약품안전처",
-   "importance": 0
+   "importance": 2
   },
   {
    "title": "“성장에 날개를, 민생에 활력을, 지역에 미래를” 대통령 주재 규제합리화위원회 제2차 전체회의 개최",
@@ -582,9 +582,9 @@
    "category": "정부 보도자료 (검색)",
    "region": "정부",
    "score": 0,
-   "similar_count": 0,
+   "similar_count": 3,
    "source": "정부 보도자료 (검색)",
-   "importance": 0
+   "importance": 6
   },
   {
    "title": "보건복지부 복지돌봄인공지능정책과 파견 근무자 모집",
@@ -930,6 +930,17 @@
    "importance": 171
   },
   {
+   "title": "갤럭시 워치, 수면 무호흡 '징후' 넘어 호흡장애 수준까지 분석",
+   "link": "https://www.newsis.com/view/NISX20261028_0003843964",
+   "date": "2026-10-28",
+   "category": "국내 정책·규제",
+   "region": "국내",
+   "score": 6,
+   "similar_count": 67,
+   "source": "newsis.com",
+   "importance": 143
+  },
+  {
    "title": "삼성전자 투자 미국 DNA분석장비사, 서울서 글로벌 로드쇼",
    "link": "https://www.yna.co.kr/view/AKR20261020029700003?input=1195m",
    "date": "2026-10-20",
@@ -1016,17 +1027,6 @@
    "similar_count": 28,
    "source": "mk.co.kr",
    "importance": 70
-  },
-  {
-   "title": "갤럭시 워치, 수면 무호흡 '징후' 넘어 호흡장애 수준까지 분석",
-   "link": "https://www.newsis.com/view/NISX20261028_0003843964",
-   "date": "2026-10-28",
-   "category": "국내 정책·규제",
-   "region": "국내",
-   "score": 6,
-   "similar_count": 29,
-   "source": "newsis.com",
-   "importance": 67
   },
   {
    "title": "‘노인 건강’ 인기 유튜브 영상 42% AI 제작…의사 사칭도",
@@ -1368,6 +1368,17 @@
   ],
   "국내 · 국내 정책·규제": [
    {
+    "title": "갤럭시 워치, 수면 무호흡 '징후' 넘어 호흡장애 수준까지 분석",
+    "link": "https://www.newsis.com/view/NISX20261028_0003843964",
+    "date": "2026-10-28",
+    "category": "국내 정책·규제",
+    "region": "국내",
+    "score": 6,
+    "similar_count": 67,
+    "source": "newsis.com",
+    "importance": 143
+   },
+   {
     "title": "동아ST, AI 보행분석 솔루션 국내 독점 판매…디지털 헬스케어 확대",
     "link": "https://www.news1.kr/bio/pharmaceutical-bio/6326057",
     "date": "2026-10-20",
@@ -1377,17 +1388,6 @@
     "similar_count": 51,
     "source": "news1.kr",
     "importance": 114
-   },
-   {
-    "title": "갤럭시 워치, 수면 무호흡 '징후' 넘어 호흡장애 수준까지 분석",
-    "link": "https://www.newsis.com/view/NISX20261028_0003843964",
-    "date": "2026-10-28",
-    "category": "국내 정책·규제",
-    "region": "국내",
-    "score": 6,
-    "similar_count": 29,
-    "source": "newsis.com",
-    "importance": 67
    },
    {
     "title": "‘노인 건강’ 인기 유튜브 영상 42% AI 제작…의사 사칭도",
