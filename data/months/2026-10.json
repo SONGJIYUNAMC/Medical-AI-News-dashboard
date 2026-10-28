@@ -1,16 +1,16 @@
 {
  "month": "2026-10",
- "generated_at": "2026-10-28T09:46:21.270922+09:00",
+ "generated_at": "2026-10-28T09:58:03.359661+09:00",
  "prev_month": null,
  "collected_days": 14,
  "first_day": "2026-10-15",
  "last_day": "2026-10-28",
- "total": 3511,
+ "total": 3518,
  "prev_total": null,
  "by_region": {
-  "국내": 2985,
+  "국내": 2991,
   "해외": 487,
-  "정부": 39
+  "정부": 40
  },
  "weekly": {
   "2026-W42": {
@@ -24,17 +24,17 @@
    "정부": 16
   },
   "2026-W44": {
-   "국내": 626,
+   "국내": 632,
    "해외": 88,
-   "정부": 4
+   "정부": 5
   }
  },
  "categories": [
   {
    "name": "국내 · 기타 (의료 AI·병원 AI 키워드)",
-   "count": 750,
+   "count": 752,
    "prev": 0,
-   "delta": 750
+   "delta": 752
   },
   {
    "name": "국내 · 국내 의료 AI 기업",
@@ -50,15 +50,15 @@
   },
   {
    "name": "국내 · 국내 의료기관",
-   "count": 333,
+   "count": 335,
    "prev": 0,
-   "delta": 333
+   "delta": 335
   },
   {
    "name": "국내 · AI 거버넌스·보안",
-   "count": 269,
+   "count": 270,
    "prev": 0,
-   "delta": 269
+   "delta": 270
   },
   {
    "name": "해외 · 해외 의료기관 AI 도입·운영",
@@ -68,9 +68,9 @@
   },
   {
    "name": "국내 · 해외 의료기관·정책·규제",
-   "count": 248,
+   "count": 249,
    "prev": 0,
-   "delta": 248
+   "delta": 249
   },
   {
    "name": "국내 · 학술·연구·행사",
@@ -98,9 +98,9 @@
   },
   {
    "name": "정부 · 정부 보도자료 (검색)",
-   "count": 17,
+   "count": 18,
    "prev": 0,
-   "delta": 17
+   "delta": 18
   },
   {
    "name": "정부 · 국가인공지능전략위원회",
@@ -130,7 +130,7 @@
  "keywords": [
   {
    "word": "서울대병원",
-   "count": 118,
+   "count": 119,
    "prev": 0,
    "status": ""
   },
@@ -154,7 +154,7 @@
   },
   {
    "word": "세브란스",
-   "count": 68,
+   "count": 69,
    "prev": 0,
    "status": ""
   },
@@ -576,6 +576,17 @@
  ],
  "government_other": [
   {
+   "title": "(관계부처합동) 국민 누구나 24시간 이용하는 'AI 건강도우미 챗봇' 운영 시작(10.28.수)",
+   "link": "https://news.google.com/rss/articles/CBMilAFBVV95cUxNOUFqTlNqeEJuaEJQbzhKanpjejBaX3k2UjZMZDg3U2Y2OGtPMGhOTGw5b1lvUVlzTVItSFpzYnpnd09ZRUloWV9WeEt6TllNZWZLQlNKQVh0YlFncXB1SVZRUHhhWEhYdENLZUo5anZKaVhBRWVNMTQtZG5xZzZYQVJZZmRhRko4blk0Zy04MkZSUGt0?oc=5",
+   "date": "2026-10-28",
+   "category": "정부 보도자료 (검색)",
+   "region": "정부",
+   "score": 0,
+   "similar_count": 0,
+   "source": "정부 보도자료 (검색)",
+   "importance": 0
+  },
+  {
    "title": "보건복지부 복지돌봄인공지능정책과 파견 근무자 모집",
    "link": "https://www.mohw.go.kr/board.es?mid=a10501010000&bid=0003&list_no=1492332&act=view",
    "date": "2026-10-27",
@@ -887,17 +898,6 @@
    "title": "AI진단 맞춤형 화장품부터 메디컬 뷰티 서비스 글로벌 진출까지... ‘K-뷰티 서비스’ 전방위 지",
    "link": "https://news.google.com/rss/articles/CBMidkFVX3lxTE9xUFJoOVV0c19SU3BkSFFZTlc1VzllSVRRY0MxOV8tNVdPQ3k2OXZ0T0VMQ085UG9KUk9ZX19xWHdVTVdrbThpS0dfOXl6MzFtaHZSUDV2cG94bzhhc3g2Tzd1VTBFNjR4djlDNDMxTDNSUXVKRGc?oc=5",
    "date": "2026-10-14",
-   "category": "정부 보도자료 (검색)",
-   "region": "정부",
-   "score": 0,
-   "similar_count": 0,
-   "source": "정부 보도자료 (검색)",
-   "importance": 0
-  },
-  {
-   "title": "급변하는 글로벌 환경 대응 위해 AI·디지털 기반 신약 임상개발 혁신한다",
-   "link": "https://news.google.com/rss/articles/CBMidkFVX3lxTE5Gb3hYMlNsQkxRZm5nam1zaVpFU192c29JMmE3RmFBOFp4YXpueFRkVXZJUzdTV0IweDdjS1JrckM3TGtVY19sMkVNY3dTb0lJRzk3dVdxc3RnVGVWSEg2dUpoOFlXTFFBSFRTY1VzMUJpTGpiQmc?oc=5",
-   "date": "2026-10-12",
    "category": "정부 보도자료 (검색)",
    "region": "정부",
    "score": 0,
