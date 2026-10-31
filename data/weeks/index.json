@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-10-31T08:06:09.965808+09:00",
+ "generated_at": "2026-11-01T08:06:25.269352+09:00",
  "weeks": [
   {
    "week": "2026-W42",
@@ -60,23 +60,23 @@
    "week": "2026-W44",
    "start": "2026-10-26",
    "end": "2026-11-01",
-   "count": 1492,
+   "count": 1556,
    "by_region": {
-    "국내": 1290,
-    "해외": 188,
+    "국내": 1339,
+    "해외": 203,
     "정부": 14
    },
    "by_category": {
-    "국내 의료 AI 기업": 250,
-    "국내 정책·규제": 222,
-    "국내 의료기관": 161,
-    "해외 의료기관·정책·규제": 103,
-    "학술·연구·행사": 121,
-    "AI 거버넌스·보안": 116,
-    "기타 (의료 AI·병원 AI 키워드)": 317,
-    "해외 정책·규제 (미국)": 69,
-    "해외 연구·학술": 23,
-    "해외 의료기관 AI 도입·운영": 77,
+    "국내 의료 AI 기업": 256,
+    "국내 정책·규제": 229,
+    "국내 의료기관": 169,
+    "해외 의료기관·정책·규제": 105,
+    "학술·연구·행사": 123,
+    "AI 거버넌스·보안": 124,
+    "기타 (의료 AI·병원 AI 키워드)": 333,
+    "해외 정책·규제 (미국)": 70,
+    "해외 연구·학술": 25,
+    "해외 의료기관 AI 도입·운영": 89,
     "해외 정책·규제 (유럽·영국)": 19,
     "보건복지부": 6,
     "정부 보도자료 (검색)": 6,
@@ -87,16 +87,27 @@
  ],
  "last_run": {
   "국내": {
-   "generated_at": "2026-10-31T08:05:03.037968+09:00",
+   "generated_at": "2026-11-01T08:00:35.569065+09:00",
    "errors": []
   },
   "해외": {
-   "generated_at": "2026-10-31T08:05:32.169589+09:00",
+   "generated_at": "2026-11-01T08:01:06.315788+09:00",
    "errors": []
   },
   "정부": {
-   "generated_at": "2026-10-31T08:06:09.857119+09:00",
-   "errors": []
+   "generated_at": "2026-11-01T08:06:25.089746+09:00",
+   "errors": [
+    "과학기술정보통신부 보도자료(공식 API) - HTTPSConnectionPool(host='apis.data.go.kr', port=443): Max retries exceeded with url: /1721000/msitpressreleaseinfo/pres",
+    "과학기술정보통신부 보도자료 - HTTPSConnectionPool(host='www.msit.go.kr', port=443): Max retries exceeded with url: /user/rss/rss.do?bbsSeqNo=94 (Cause",
+    "과학기술정보통신부 보도설명 - HTTPSConnectionPool(host='www.msit.go.kr', port=443): Max retries exceeded with url: /user/rss/rss.do?bbsSeqNo=86 (Cause",
+    "과학기술정보통신부 주간동향 - HTTPSConnectionPool(host='www.msit.go.kr', port=443): Max retries exceeded with url: /user/rss/rss.do?bbsSeqNo=81 (Cause",
+    "보건복지부 보도자료 - HTTPSConnectionPool(host='www.mohw.go.kr', port=443): Max retries exceeded with url: /rss/board.es?mid=a10503000000&bid= → 사이트 검색으로 대체",
+    "보건복지부 공지사항 - HTTPSConnectionPool(host='www.mohw.go.kr', port=443): Max retries exceeded with url: /rss/board.es?mid=a10501010000&bid=",
+    "보건복지부 훈령·예규·고시·지침 - HTTPSConnectionPool(host='www.mohw.go.kr', port=443): Max retries exceeded with url: /rss/board.es?mid=a10409020000&upda",
+    "식품의약품안전처 보도자료 - HTTPSConnectionPool(host='www.mfds.go.kr', port=443): Max retries exceeded with url: /www/rss/brd.do?brdId=ntc0021 (Caus → 사이트 검색으로 대체",
+    "국가데이터처 보도자료 - HTTPSConnectionPool(host='mods.go.kr', port=443): Max retries exceeded with url: /board.es?mid=a10301010000&bid=a1030101",
+    "국가데이터처 공지사항 - HTTPSConnectionPool(host='mods.go.kr', port=443): Max retries exceeded with url: /board.es?mid=a10306020000&bid=a1030601"
+   ]
   }
  }
 }

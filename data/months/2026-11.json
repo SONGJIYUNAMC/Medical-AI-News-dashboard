@@ -1,0 +1,814 @@
+{
+ "month": "2026-11",
+ "generated_at": "2026-11-01T08:06:26.587719+09:00",
+ "prev_month": "2026-10",
+ "collected_days": 1,
+ "first_day": "2026-11-01",
+ "last_day": "2026-11-01",
+ "total": 64,
+ "prev_total": 4285,
+ "by_region": {
+  "국내": 49,
+  "해외": 15
+ },
+ "weekly": {
+  "2026-W44": {
+   "국내": 49,
+   "해외": 15
+  }
+ },
+ "categories": [
+  {
+   "name": "국내 · 기타 (의료 AI·병원 AI 키워드)",
+   "count": 16,
+   "prev": 903,
+   "delta": -887
+  },
+  {
+   "name": "해외 · 해외 의료기관 AI 도입·운영",
+   "count": 12,
+   "prev": 285,
+   "delta": -273
+  },
+  {
+   "name": "국내 · AI 거버넌스·보안",
+   "count": 8,
+   "prev": 324,
+   "delta": -316
+  },
+  {
+   "name": "국내 · 국내 의료기관",
+   "count": 8,
+   "prev": 411,
+   "delta": -403
+  },
+  {
+   "name": "국내 · 국내 정책·규제",
+   "count": 7,
+   "prev": 648,
+   "delta": -641
+  },
+  {
+   "name": "국내 · 국내 의료 AI 기업",
+   "count": 6,
+   "prev": 769,
+   "delta": -763
+  },
+  {
+   "name": "국내 · 학술·연구·행사",
+   "count": 2,
+   "prev": 294,
+   "delta": -292
+  },
+  {
+   "name": "해외 · 해외 연구·학술",
+   "count": 2,
+   "prev": 74,
+   "delta": -72
+  },
+  {
+   "name": "국내 · 해외 의료기관·정책·규제",
+   "count": 2,
+   "prev": 300,
+   "delta": -298
+  },
+  {
+   "name": "해외 · 해외 정책·규제 (미국)",
+   "count": 1,
+   "prev": 171,
+   "delta": -170
+  }
+ ],
+ "keywords": [
+  {
+   "word": "서울대병원",
+   "count": 3,
+   "prev": 143,
+   "status": ""
+  },
+  {
+   "word": "루닛",
+   "count": 2,
+   "prev": 64,
+   "status": ""
+  }
+ ],
+ "issues_domestic": [
+  {
+   "title": "305억 투입 ‘춘천 체외진단의료기기 센터’ 가속도… 바이오 수도 도약...",
+   "link": "https://www.viva100.com/article/20261031500068",
+   "date": "2026-10-31",
+   "category": "국내 의료 AI 기업",
+   "region": "국내",
+   "score": 3,
+   "similar_count": 1,
+   "source": "viva100.com",
+   "importance": 5
+  },
+  {
+   "title": "충북진로교육원, 초·중·고 주말진로탐색 프로그램 운영",
+   "link": "https://www.newsis.com/view/NISX20261031_0003849141",
+   "date": "2026-10-31",
+   "category": "기타 (의료 AI·병원 AI 키워드)",
+   "region": "국내",
+   "score": 1,
+   "similar_count": 1,
+   "source": "newsis.com",
+   "importance": 6
+  }
+ ],
+ "issues_global": [],
+ "policy_announcements": [],
+ "government_other": [],
+ "important_domestic": [
+  {
+   "title": "의료AI 도입…의사·간호사 직무만족도 영향",
+   "link": "https://www.dailymedi.com/news/news_view.php?wr_id=942026",
+   "date": "2026-11-01",
+   "category": "AI 거버넌스·보안",
+   "region": "국내",
+   "score": 9,
+   "similar_count": 0,
+   "source": "dailymedi.com",
+   "importance": 12
+  },
+  {
+   "title": "차트부터 영상분석까지…'동물병원용AI' 쏟아진다",
+   "link": "https://www.newsis.com/view/NISX20261030_0003848659",
+   "date": "2026-11-01",
+   "category": "국내 의료기관",
+   "region": "국내",
+   "score": 8,
+   "similar_count": 0,
+   "source": "newsis.com",
+   "importance": 11
+  },
+  {
+   "title": "AI 영상제작툴부터 암 진단솔루션까지…과기대 학생창업가의 도전",
+   "link": "https://www.mt.co.kr/future/2026/10/31/2026103110041540871",
+   "date": "2026-10-31",
+   "category": "국내 정책·규제",
+   "region": "국내",
+   "score": 8,
+   "similar_count": 0,
+   "source": "mt.co.kr",
+   "importance": 11
+  },
+  {
+   "title": "국제무대서 기술력 인정받은 ‘뇌건강 AI’…의료시장 진출 채비",
+   "link": "https://www.kukinews.com/article/view/kuk202610310012",
+   "date": "2026-10-31",
+   "category": "국내 의료 AI 기업",
+   "region": "국내",
+   "score": 10,
+   "similar_count": 0,
+   "source": "kukinews.com",
+   "importance": 10
+  },
+  {
+   "title": "막아낼 돈도 사람도 부족한데…학원·병원까지 번진 'AI 해킹' 위협",
+   "link": "https://www.news1.kr/society/incident-accident/6338302",
+   "date": "2026-11-01",
+   "category": "AI 거버넌스·보안",
+   "region": "국내",
+   "score": 7,
+   "similar_count": 0,
+   "source": "news1.kr",
+   "importance": 10
+  },
+  {
+   "title": "“눈 보고 치매 진단”…AI 의료 시대 열렸지만 [AI너머]",
+   "link": "https://news.kbs.co.kr/news/pc/view/view.do?ncd=8700571&ref=A",
+   "date": "2026-10-31",
+   "category": "국내 의료기관",
+   "region": "국내",
+   "score": 8,
+   "similar_count": 0,
+   "source": "news.kbs.co.kr",
+   "importance": 8
+  },
+  {
+   "title": "코벳, 수의사 중심 AI 영상진단 '엑스칼리버 2.0' 日 진출 추진",
+   "link": "https://www.news1.kr/industry/general-industry/6338777",
+   "date": "2026-11-01",
+   "category": "국내 의료 AI 기업",
+   "region": "국내",
+   "score": 5,
+   "similar_count": 0,
+   "source": "news1.kr",
+   "importance": 8
+  },
+  {
+   "title": "“보고서 쓰던 AI는 가라”…매출 목표 주면 ‘해답’ 내놓는 오믈렛의...",
+   "link": "https://economist.co.kr/article/view/ecn202610270023",
+   "date": "2026-11-01",
+   "category": "국내 의료기관",
+   "region": "국내",
+   "score": 7,
+   "similar_count": 0,
+   "source": "economist.co.kr",
+   "importance": 7
+  },
+  {
+   "title": "계명대 동산의료원, 임상 연구 성과 공유 미래 의료 방향 제시",
+   "link": "https://tk.newdaily.co.kr/site/data/html/2026/10/31/2026103100068.html",
+   "date": "2026-10-31",
+   "category": "국내 정책·규제",
+   "region": "국내",
+   "score": 7,
+   "similar_count": 0,
+   "source": "tk.newdaily.co.kr",
+   "importance": 7
+  },
+  {
+   "title": "안랩 51%·지니언스 43% 급등…금융권 해킹에 보안주 강세",
+   "link": "http://www.kjdaily.com/article.php?aid=1793422282690751276",
+   "date": "2026-10-31",
+   "category": "AI 거버넌스·보안",
+   "region": "국내",
+   "score": 7,
+   "similar_count": 0,
+   "source": "kjdaily.com",
+   "importance": 7
+  },
+  {
+   "title": "[빅5 명의들의 건강 열전]오래 사는 시대, 건강을 제대로 아는 법",
+   "link": "https://magazine.hankyung.com/business/article/202610281080b",
+   "date": "2026-11-01",
+   "category": "국내 정책·규제",
+   "region": "국내",
+   "score": 4,
+   "similar_count": 0,
+   "source": "magazine.hankyung.com",
+   "importance": 7
+  },
+  {
+   "title": "AI·로봇 시대 승부처는 에너지…새만금, 첨단산업 혁신 플랫폼으로",
+   "link": "https://www.sedaily.com/article/20108626?ref=naver",
+   "date": "2026-10-31",
+   "category": "학술·연구·행사",
+   "region": "국내",
+   "score": 4,
+   "similar_count": 0,
+   "source": "sedaily.com",
+   "importance": 7
+  },
+  {
+   "title": "GDP 넘는 빚잔치엔 ‘AI 경제성장’도 시한폭탄 [트럼프 스톡커]",
+   "link": "https://www.sedaily.com/article/20108577?ref=naver",
+   "date": "2026-10-31",
+   "category": "국내 의료 AI 기업",
+   "region": "국내",
+   "score": 4,
+   "similar_count": 0,
+   "source": "sedaily.com",
+   "importance": 7
+  },
+  {
+   "title": "서울 원격중환자실 1일 가동…삼성서울병원 거점",
+   "link": "https://www.vegannews.co.kr/news/article.html?no=398744",
+   "date": "2026-11-01",
+   "category": "국내 의료기관",
+   "region": "국내",
+   "score": 6,
+   "similar_count": 0,
+   "source": "vegannews.co.kr",
+   "importance": 6
+  },
+  {
+   "title": "피지컬 AI부터 모빌리티까지…FIX 2026 글로벌 미디어가 고른 혁신기업...",
+   "link": "https://www.cnet.co.kr/view/?no=20261031233834",
+   "date": "2026-11-01",
+   "category": "국내 정책·규제",
+   "region": "국내",
+   "score": 6,
+   "similar_count": 0,
+   "source": "cnet.co.kr",
+   "importance": 6
+  },
+  {
+   "title": "[의정 브리프] AI 데이터센터 전력망 정비·산업용 전기요금 개선 필요",
+   "link": "https://www.etnews.com/20261031000029",
+   "date": "2026-10-31",
+   "category": "국내 의료 AI 기업",
+   "region": "국내",
+   "score": 6,
+   "similar_count": 0,
+   "source": "etnews.com",
+   "importance": 6
+  },
+  {
+   "title": "아시아계·고학력·소득층, AI 의료에 가장 호의적",
+   "link": "https://biz.sbs.co.kr/article_hub/20000343394?division=NAVER",
+   "date": "2026-10-31",
+   "category": "AI 거버넌스·보안",
+   "region": "국내",
+   "score": 6,
+   "similar_count": 0,
+   "source": "biz.sbs.co.kr",
+   "importance": 6
+  },
+  {
+   "title": "[AI혁명](220)\"데이터만 1억건\"...먹은 음식 영양분 판독하는 누비랩, 병...",
+   "link": "https://view.asiae.co.kr/article/2026102920203665306",
+   "date": "2026-11-01",
+   "category": "기타 (의료 AI·병원 AI 키워드)",
+   "region": "국내",
+   "score": 3,
+   "similar_count": 0,
+   "source": "view.asiae.co.kr",
+   "importance": 6
+  },
+  {
+   "title": "충북진로교육원, 초·중·고 주말진로탐색 프로그램 운영",
+   "link": "https://www.newsis.com/view/NISX20261031_0003849141",
+   "date": "2026-10-31",
+   "category": "기타 (의료 AI·병원 AI 키워드)",
+   "region": "국내",
+   "score": 1,
+   "similar_count": 1,
+   "source": "newsis.com",
+   "importance": 6
+  },
+  {
+   "title": "“쌀쌀한 날씨, 문화로 채우는 온기” 11월 문화소식",
+   "link": "https://bravo.etoday.co.kr/view/atc_view/20390",
+   "date": "2026-11-01",
+   "category": "국내 의료기관",
+   "region": "국내",
+   "score": 5,
+   "similar_count": 0,
+   "source": "bravo.etoday.co.kr",
+   "importance": 5
+  }
+ ],
+ "important_global": [
+  {
+   "title": "Predicting persistent fever in patients with cancer receiving antibiotics: a machine learning approach",
+   "link": "https://news.google.com/rss/articles/CBMiX0FVX3lxTE9hSU5PMzNucjN4bkdrSUgxUG8wT3I0THpTUEg5YmJzMWhZMDdqV05fTWJ2RkRDa25YVko3TnhkNHB2UmtCQll2YXZoWGljVVB0cElZc05zOFdtYnRXREdB?oc=5",
+   "date": "2026-10-31",
+   "category": "해외 연구·학술",
+   "region": "해외",
+   "score": 3,
+   "similar_count": 0,
+   "source": "Nature",
+   "importance": 6
+  },
+  {
+   "title": "Hospital balance sheet: How AI could cut costs and improve efficiency",
+   "link": "https://news.google.com/rss/articles/CBMi7gFBVV95cUxOT2RrTEEyQmJyaGVfNFJfN09scml3aFlOMWVoZGNsM25jR3FPTXFSNVRNZklWVTVDdF9RMDBFWmVfNXJqbDhuR1FFd0tZTHpGUk1XU0dzMHE4Z0lLbnFuODRXT09kdkhaaURSNG1McmhMckJDQkFja3FkLVh6cEtuUk9KSWV0aVR5UzUyQ3h5c3FYMjR3SlZreEw4UW1nOFR0N3BpTGhGWFFaV0l1ekVZbzNaMFZVSm41TmF5WTZaRksyZVBjT0FuellTUHJRcm0xMlp1djVDaXhTaGt4YmRFOHFreHlkcnEtc1hGaVNR0gHzAUFVX3lxTFBBWjFpTGFLX241QTZRYS1SNkJFSnc3VVhoS3dtVEUza0g2TzU5ZkZQM1dyeDdscGtaRk1uMGppSkc5N09DdWd4X2FkeWpNcHVBS2RfUVozSHZqMVlrOWtsREwza3FtRExfN3RaZ0VPNXEtNlVsRzRZLVNmeTRMeGZneU9KUVA0NmF2NHYwNzR2RHNnTXRJNFJrYWJoU29yV2NFbS1weVJtQlNqRWJXY3NwemtmSTg4Rk5jejdMc1dVZGowRUNIaFd2LVpMNG9HVnlLODA3aGwzUTg0QzFKS3pWTHo5cnVFZDZOVllrRHpxU2d0SQ?oc=5",
+   "date": "2026-10-31",
+   "category": "해외 정책·규제 (미국)",
+   "region": "해외",
+   "score": 2,
+   "similar_count": 0,
+   "source": "The Economic Times",
+   "importance": 2
+  },
+  {
+   "title": "Liam Ghiam: What Are the Best Ways to Evaluate Clinical Appropriateness in AI?",
+   "link": "https://news.google.com/rss/articles/CBMiWkFVX3lxTE1UcUpMRUh2VVBkU0wwZEZRelNjeFFJemJJWF8xYXZJWTlfbU5ZbkNMQzd3VnJZYk5lb0FsbHNLdEhUcndwN1BHOEFqblUxZ0tvZF94MTZPaTdXZw?oc=5",
+   "date": "2026-11-01",
+   "category": "해외 연구·학술",
+   "region": "해외",
+   "score": 1,
+   "similar_count": 0,
+   "source": "Oncodaily",
+   "importance": 1
+  },
+  {
+   "title": "AI-based attendance system leads to dismissal of 72 doctors in Balochistan",
+   "link": "https://news.google.com/rss/articles/CBMiSEFVX3lxTE8zM3piQWEwaVE5MUQ5dnRmY2tmbDNjUVJpN04ydHFuTnJZYnVfaWJuVHRzbjQwTkpsVjVtOHFkdEZnM3lqa0pYcQ?oc=5",
+   "date": "2026-10-31",
+   "category": "해외 의료기관 AI 도입·운영",
+   "region": "해외",
+   "score": 1,
+   "similar_count": 0,
+   "source": "Dawn",
+   "importance": 1
+  },
+  {
+   "title": "Balochistan Dismisses 72 More Doctors Over Absenteeism, AI-Based Attendance System Announced",
+   "link": "https://news.google.com/rss/articles/CBMixgFBVV95cUxNM29fQnV4Qk9PWVpFdURmOFRXcUVILUZJYnkyLVdQV3hPRGd5cGZNWjU2NWtEUXlycktiUF93QjJPcUg4dUJHT2FyWXBwOGFXRjNnUFVhTFAxSFE2WVJHODAtS1lkSVNXWEhpZXFKN2l5UktyZzdaVG5MNzZPb3VtdkJaSVE3Wk1rVjNoVnFtNTlLdzdtZ2E3MUkyQkVseThXZk1Zcy1rVGVzXzktNy1MTzZMWVk4cWZ5V1c2NWhOSXhGaGV5ZGc?oc=5",
+   "date": "2026-10-31",
+   "category": "해외 의료기관 AI 도입·운영",
+   "region": "해외",
+   "score": 1,
+   "similar_count": 0,
+   "source": "https://quettavoice.com/",
+   "importance": 1
+  },
+  {
+   "title": "Public Health AI Hubs",
+   "link": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTE16LUtseldjZlczb0dpRkd4ZzNPNW9WSHBNbFpWZzk4ZlJXUnZfS3FSeU5uVFk3SUxSNlZVV3M4bEN4U1JLRGlxSkZGT0FMalU1WkNCTmF2b25MMjJUS0lmMmNjaUdhaEU?oc=5",
+   "date": "2026-10-31",
+   "category": "해외 의료기관 AI 도입·운영",
+   "region": "해외",
+   "score": 1,
+   "similar_count": 0,
+   "source": "Trend Hunter",
+   "importance": 1
+  },
+  {
+   "title": "Loblaw (TSX:L): What Does PC Health’s Canadian AI Chat Offer?",
+   "link": "https://news.google.com/rss/articles/CBMitAFBVV95cUxOeGZ2ZFpTcHktOFhaZk5TczBsU1c2bl9EQjFNRUtQYkNvLS1NYjhBNUZYRnJ2NkdXRmVJd3FnTlBKLWJvNnhwWlNIckdFMnExSlJNLVpXcFBKNzBTemtySmhPYXJnNUktR1dxTUZvOE5FajRldmlnQTVEbXZVRXhqQ3RLdzlNWTJCYldRU1hPeWpBbGtBVlhLMlEtOGtlSVA4WTRyMlpkSll0QmJMVDBObmZ4VnQ?oc=5",
+   "date": "2026-10-31",
+   "category": "해외 의료기관 AI 도입·운영",
+   "region": "해외",
+   "score": 1,
+   "similar_count": 0,
+   "source": "Kalkine Media",
+   "importance": 1
+  },
+  {
+   "title": "Americans open to AI in health care but want humans calling the shots",
+   "link": "https://news.google.com/rss/articles/CBMirwFBVV95cUxPLUNlNWFVMDVpbzRSTEQyVUxraVMxTFJXZXBuMDJzSW9INm9BT1RuLXk1TGlhdEdtRWgxcVFLZ216Vm9QaFRCNXd5VlAxV3FmR2kwRERvWVIxTG0zYW0tLUlJQkZzckI0X0t0Q3ZuZ0NfM2VWSFZEWGFiUDM2aHVwVmpuUlV5bWZBSmhhVllINjNkLTVpcWtYYWFBRWhCWmdvWm9ZM0hqd0toa0hycWt3?oc=5",
+   "date": "2026-10-31",
+   "category": "해외 의료기관 AI 도입·운영",
+   "region": "해외",
+   "score": 1,
+   "similar_count": 0,
+   "source": "KSNV",
+   "importance": 1
+  },
+  {
+   "title": "Baby Memorial Hospital Group Partners with DeepInfinity.AI to Scale Healthcare AI in Workflows",
+   "link": "https://news.google.com/rss/articles/CBMixwFBVV95cUxObDFoMUFERXpNdU1HUndhMFJnZ0dUOEVPQmlCeEtqMWZMazF4ZUZQVXJmSWlrMndhZkhILW1iSVQxbUpwSEJiUUwzckhJRUY3dEhJRXRLSDdZYmtaclhpTjZfZnhockFtY09iWDdSSUtDR3dBTHFiUThqLTM1SUlJeHVvd0xxVnlUSkEzSnByeHNtUkhYOTZybHc4Z05FczJ2Mm5maU1IUDdkMUFyR3c2VlBLNml3TjVXNXpEa1d0a0d6MUt5TWs0?oc=5",
+   "date": "2026-10-30",
+   "category": "해외 의료기관 AI 도입·운영",
+   "region": "해외",
+   "score": 1,
+   "similar_count": 0,
+   "source": "Digital Health News",
+   "importance": 1
+  },
+  {
+   "title": "Ministry to raise cooperation with ASEAN in AI used in healthcare",
+   "link": "https://news.google.com/rss/articles/CBMib0FVX3lxTE0yVW44b1p6TkZVbXFWRnlSNnZUYVB5SUlxMzE2b2FMY3R2RHZQLWhrQVcwSUZlNHo2VUtXUzVBWTNSbEtaVGN0WjFsTzBTcDJSLUZDcmtiS0VjR3hORzZBQ2UxME1qcFJWbkRWbTJ3QQ?oc=5",
+   "date": "2026-10-30",
+   "category": "해외 의료기관 AI 도입·운영",
+   "region": "해외",
+   "score": 1,
+   "similar_count": 0,
+   "source": "Korea.net",
+   "importance": 1
+  },
+  {
+   "title": "AI to support permits, healthcare and fraud detection under Seychelles' $50 million digital plan",
+   "link": "https://news.google.com/rss/articles/CBMi9AFBVV95cUxQMmRGcVZWUnl0NHJCbjFGMHBadGc3c19DZi1CT1lwbV9HN0hxTjFIcWRxcFBZYTVsSDdLbHI1TW9SUi1MaHBEUU1GYU9CemZYeHgtY0R1WHRaRlRMNnhsRzIyVldyVFBheXNjQkZrZXUwOFJZY2U1UGd1dm1GelZISjBMZ0plNzBIVEFOdjB2NUJ5YVd2LWlxVlBkV1pObjgyRWpVM2ppTGxQUXU1aGJGcFJfSm1rZ3U3YnMyR0NCTDAxZmplMVE4U3htbnJaVEt1MXJNVWMxLWxlRGhMbmtKMFI3eWM5YVR6czFKM3BiYWZyVVhu?oc=5",
+   "date": "2026-10-30",
+   "category": "해외 의료기관 AI 도입·운영",
+   "region": "해외",
+   "score": 1,
+   "similar_count": 0,
+   "source": "Seychelles News Agency",
+   "importance": 1
+  },
+  {
+   "title": "Korea's medical AI advances, but clinical adoption remains slow",
+   "link": "https://news.google.com/rss/articles/CBMiugFBVV95cUxQX2tFWEFJTGJWYV9heU5wV0Y4cFlvMnBZc0xyNzd5YWFyRW1zNVFWT252aG9OWGxMM1p0d3hJMUlXSDJsRWw4OTRGNlYybmsyOGRWTWxOLXBwc3BFZURPUnEySmdsbjVUbkI1a2d1bjI4emVKUFUyd3Jtd0ZfZVo2Wjl5SnZGT0tvaERaVG5TV0Y4anRYMm9QdEZSeGRYSnlfeEFNTWFvSHVWNkJxRGtUQ0xTZDREVVpUNEHSAb8BQVVfeXFMTWd6amJERUFyNTJWOHloSm11SUExREhtdW1salg3UmZrS2JLMzk5NGhMMDJOeGJDWWw0VzdtWFh4SVN0MkFFb0gtdEQ1b25tVW1vUHprQ3NjNDVpSmhhS3V6dFlHT2JlckpEal9xVGdyakFQODlzNXBPbHFtZ2lXY2ZBOGR3bFFzdVo3SGRlczkzMkxwdlFIMlVuRFFMWjluckt3a0NiN0RuX2FrV3N3U0xzT1FMeXhocllUZXBsUFk?oc=5",
+   "date": "2026-10-30",
+   "category": "해외 의료기관 AI 도입·운영",
+   "region": "해외",
+   "score": 1,
+   "similar_count": 0,
+   "source": "The Korea Times",
+   "importance": 1
+  },
+  {
+   "title": "Google Wires AI Into Every Layer of Singapore Health System in Asia-Pacific First",
+   "link": "https://news.google.com/rss/articles/CBMiwwFBVV95cUxOaTM3amVQWW5QZVpBUXFjMkljcDZJcnlRbm95Q1ZnSDBwbmxkZWtoNVdfTk5aVGNUSmZEVWNHVDlBMUdzT2NvZFRJNlJBc1p2bWktaWttMENxdlk4a2dabjlXWXJGSkNPNkNkd1gxdE9mYVdfNDQ1cUlvZjVtaG5JM3IyMXF4elA1NVMtVzh0c3E4b2ZMbklkaGJlNWZYNEFJcmJCM0RMelU2TnN5djZqRS0tYVd5U1Q5OEVSY0d0RDdhODQ?oc=5",
+   "date": "2026-10-30",
+   "category": "해외 의료기관 AI 도입·운영",
+   "region": "해외",
+   "score": 1,
+   "similar_count": 0,
+   "source": "Tech Times",
+   "importance": 1
+  },
+  {
+   "title": "AI could deepen patient distrust of hospitals, advocate warns",
+   "link": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxOM1NkVDRaLVlTZnB4dDNvdDVTNndRdVJOa0d6UVRoQTVPclRZeXBxbWhGeGpUUjBXRGJzSmVCS3V3ZDhrdkZDaWFWOFRoTzFoWnRyUklXaEpwLU9yVEpKZS1sNVFzOThMLU8xMjlaa1Q1aXJQcXNoZHdUcmdnT0hLalRYbllsamQwa0ZFczFiTlVhVG1UZFVmVVlMNVZvX2Z4bkZINkxJaXk?oc=5",
+   "date": "2026-10-30",
+   "category": "해외 의료기관 AI 도입·운영",
+   "region": "해외",
+   "score": 1,
+   "similar_count": 0,
+   "source": "Health Services Daily",
+   "importance": 1
+  },
+  {
+   "title": "AI scribe developers brace for tighter medical device regulation",
+   "link": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxOZFNLaDZJSVdyRlJJOG1mNEthNjRkNlBZdTRJMDNmd2VlOENBVW5LSnRxbDlkc2VpcjJuWGZBYXIwYllGaG9kOFpvLW5WbEFyYjNwM2NVZENEUWtTZUlrSGVzRlRNX1pTMDlZSU5tVlB0d1EzVkJQOEFSeEJsTGI2ZDVkZVZWckN0bTNocW41OERIbHp1Y2Z5a0haSzJhQjNnQmZaN3liZHFOQQ?oc=5",
+   "date": "2026-10-30",
+   "category": "해외 의료기관 AI 도입·운영",
+   "region": "해외",
+   "score": 1,
+   "similar_count": 0,
+   "source": "Medical Republic",
+   "importance": 1
+  }
+ ],
+ "top_by_category": {
+  "국내 · AI 거버넌스·보안": [
+   {
+    "title": "의료AI 도입…의사·간호사 직무만족도 영향",
+    "link": "https://www.dailymedi.com/news/news_view.php?wr_id=942026",
+    "date": "2026-11-01",
+    "category": "AI 거버넌스·보안",
+    "region": "국내",
+    "score": 9,
+    "similar_count": 0,
+    "source": "dailymedi.com",
+    "importance": 12
+   },
+   {
+    "title": "막아낼 돈도 사람도 부족한데…학원·병원까지 번진 'AI 해킹' 위협",
+    "link": "https://www.news1.kr/society/incident-accident/6338302",
+    "date": "2026-11-01",
+    "category": "AI 거버넌스·보안",
+    "region": "국내",
+    "score": 7,
+    "similar_count": 0,
+    "source": "news1.kr",
+    "importance": 10
+   },
+   {
+    "title": "안랩 51%·지니언스 43% 급등…금융권 해킹에 보안주 강세",
+    "link": "http://www.kjdaily.com/article.php?aid=1793422282690751276",
+    "date": "2026-10-31",
+    "category": "AI 거버넌스·보안",
+    "region": "국내",
+    "score": 7,
+    "similar_count": 0,
+    "source": "kjdaily.com",
+    "importance": 7
+   }
+  ],
+  "국내 · 국내 의료기관": [
+   {
+    "title": "차트부터 영상분석까지…'동물병원용AI' 쏟아진다",
+    "link": "https://www.newsis.com/view/NISX20261030_0003848659",
+    "date": "2026-11-01",
+    "category": "국내 의료기관",
+    "region": "국내",
+    "score": 8,
+    "similar_count": 0,
+    "source": "newsis.com",
+    "importance": 11
+   },
+   {
+    "title": "“눈 보고 치매 진단”…AI 의료 시대 열렸지만 [AI너머]",
+    "link": "https://news.kbs.co.kr/news/pc/view/view.do?ncd=8700571&ref=A",
+    "date": "2026-10-31",
+    "category": "국내 의료기관",
+    "region": "국내",
+    "score": 8,
+    "similar_count": 0,
+    "source": "news.kbs.co.kr",
+    "importance": 8
+   },
+   {
+    "title": "“보고서 쓰던 AI는 가라”…매출 목표 주면 ‘해답’ 내놓는 오믈렛의...",
+    "link": "https://economist.co.kr/article/view/ecn202610270023",
+    "date": "2026-11-01",
+    "category": "국내 의료기관",
+    "region": "국내",
+    "score": 7,
+    "similar_count": 0,
+    "source": "economist.co.kr",
+    "importance": 7
+   }
+  ],
+  "국내 · 국내 정책·규제": [
+   {
+    "title": "AI 영상제작툴부터 암 진단솔루션까지…과기대 학생창업가의 도전",
+    "link": "https://www.mt.co.kr/future/2026/10/31/2026103110041540871",
+    "date": "2026-10-31",
+    "category": "국내 정책·규제",
+    "region": "국내",
+    "score": 8,
+    "similar_count": 0,
+    "source": "mt.co.kr",
+    "importance": 11
+   },
+   {
+    "title": "계명대 동산의료원, 임상 연구 성과 공유 미래 의료 방향 제시",
+    "link": "https://tk.newdaily.co.kr/site/data/html/2026/10/31/2026103100068.html",
+    "date": "2026-10-31",
+    "category": "국내 정책·규제",
+    "region": "국내",
+    "score": 7,
+    "similar_count": 0,
+    "source": "tk.newdaily.co.kr",
+    "importance": 7
+   },
+   {
+    "title": "[빅5 명의들의 건강 열전]오래 사는 시대, 건강을 제대로 아는 법",
+    "link": "https://magazine.hankyung.com/business/article/202610281080b",
+    "date": "2026-11-01",
+    "category": "국내 정책·규제",
+    "region": "국내",
+    "score": 4,
+    "similar_count": 0,
+    "source": "magazine.hankyung.com",
+    "importance": 7
+   }
+  ],
+  "국내 · 국내 의료 AI 기업": [
+   {
+    "title": "국제무대서 기술력 인정받은 ‘뇌건강 AI’…의료시장 진출 채비",
+    "link": "https://www.kukinews.com/article/view/kuk202610310012",
+    "date": "2026-10-31",
+    "category": "국내 의료 AI 기업",
+    "region": "국내",
+    "score": 10,
+    "similar_count": 0,
+    "source": "kukinews.com",
+    "importance": 10
+   },
+   {
+    "title": "코벳, 수의사 중심 AI 영상진단 '엑스칼리버 2.0' 日 진출 추진",
+    "link": "https://www.news1.kr/industry/general-industry/6338777",
+    "date": "2026-11-01",
+    "category": "국내 의료 AI 기업",
+    "region": "국내",
+    "score": 5,
+    "similar_count": 0,
+    "source": "news1.kr",
+    "importance": 8
+   },
+   {
+    "title": "GDP 넘는 빚잔치엔 ‘AI 경제성장’도 시한폭탄 [트럼프 스톡커]",
+    "link": "https://www.sedaily.com/article/20108577?ref=naver",
+    "date": "2026-10-31",
+    "category": "국내 의료 AI 기업",
+    "region": "국내",
+    "score": 4,
+    "similar_count": 0,
+    "source": "sedaily.com",
+    "importance": 7
+   }
+  ],
+  "국내 · 학술·연구·행사": [
+   {
+    "title": "AI·로봇 시대 승부처는 에너지…새만금, 첨단산업 혁신 플랫폼으로",
+    "link": "https://www.sedaily.com/article/20108626?ref=naver",
+    "date": "2026-10-31",
+    "category": "학술·연구·행사",
+    "region": "국내",
+    "score": 4,
+    "similar_count": 0,
+    "source": "sedaily.com",
+    "importance": 7
+   },
+   {
+    "title": "비뇨기암 치료, 새 조합·모달리티로 미충족 수요 해법 탐색\"",
+    "link": "https://www.hitnews.co.kr/news/articleView.html?idxno=80364",
+    "date": "2026-11-01",
+    "category": "학술·연구·행사",
+    "region": "국내",
+    "score": 4,
+    "similar_count": 0,
+    "source": "hitnews.co.kr",
+    "importance": 4
+   }
+  ],
+  "국내 · 기타 (의료 AI·병원 AI 키워드)": [
+   {
+    "title": "[AI혁명](220)\"데이터만 1억건\"...먹은 음식 영양분 판독하는 누비랩, 병...",
+    "link": "https://view.asiae.co.kr/article/2026102920203665306",
+    "date": "2026-11-01",
+    "category": "기타 (의료 AI·병원 AI 키워드)",
+    "region": "국내",
+    "score": 3,
+    "similar_count": 0,
+    "source": "view.asiae.co.kr",
+    "importance": 6
+   },
+   {
+    "title": "충북진로교육원, 초·중·고 주말진로탐색 프로그램 운영",
+    "link": "https://www.newsis.com/view/NISX20261031_0003849141",
+    "date": "2026-10-31",
+    "category": "기타 (의료 AI·병원 AI 키워드)",
+    "region": "국내",
+    "score": 1,
+    "similar_count": 1,
+    "source": "newsis.com",
+    "importance": 6
+   },
+   {
+    "title": "“귀신 쫓으려 물고문” 10살 조카 학대해 살해한 이모…119엔 “욕조에...",
+    "link": "https://www.seoul.co.kr/news/plan/listenthecase/2026/10/31/20261031500018?wlog_tag3=naver",
+    "date": "2026-10-31",
+    "category": "기타 (의료 AI·병원 AI 키워드)",
+    "region": "국내",
+    "score": 1,
+    "similar_count": 0,
+    "source": "seoul.co.kr",
+    "importance": 4
+   }
+  ],
+  "해외 · 해외 연구·학술": [
+   {
+    "title": "Predicting persistent fever in patients with cancer receiving antibiotics: a machine learning approach",
+    "link": "https://news.google.com/rss/articles/CBMiX0FVX3lxTE9hSU5PMzNucjN4bkdrSUgxUG8wT3I0THpTUEg5YmJzMWhZMDdqV05fTWJ2RkRDa25YVko3TnhkNHB2UmtCQll2YXZoWGljVVB0cElZc05zOFdtYnRXREdB?oc=5",
+    "date": "2026-10-31",
+    "category": "해외 연구·학술",
+    "region": "해외",
+    "score": 3,
+    "similar_count": 0,
+    "source": "Nature",
+    "importance": 6
+   },
+   {
+    "title": "Liam Ghiam: What Are the Best Ways to Evaluate Clinical Appropriateness in AI?",
+    "link": "https://news.google.com/rss/articles/CBMiWkFVX3lxTE1UcUpMRUh2VVBkU0wwZEZRelNjeFFJemJJWF8xYXZJWTlfbU5ZbkNMQzd3VnJZYk5lb0FsbHNLdEhUcndwN1BHOEFqblUxZ0tvZF94MTZPaTdXZw?oc=5",
+    "date": "2026-11-01",
+    "category": "해외 연구·학술",
+    "region": "해외",
+    "score": 1,
+    "similar_count": 0,
+    "source": "Oncodaily",
+    "importance": 1
+   }
+  ],
+  "국내 · 해외 의료기관·정책·규제": [
+   {
+    "title": "이자만 1조 달러, 미국의 청구서가 날아온다 [글로벌 모닝 브리핑]",
+    "link": "https://www.sedaily.com/article/20108503?ref=naver",
+    "date": "2026-10-31",
+    "category": "해외 의료기관·정책·규제",
+    "region": "국내",
+    "score": 2,
+    "similar_count": 0,
+    "source": "sedaily.com",
+    "importance": 5
+   },
+   {
+    "title": "총알 3발 맞은 텀블러리지 생존 여학생, 9개월 만에 퇴원",
+    "link": "https://www.koreadaily.com/article/20261030193719189",
+    "date": "2026-10-31",
+    "category": "해외 의료기관·정책·규제",
+    "region": "국내",
+    "score": 3,
+    "similar_count": 0,
+    "source": "koreadaily.com",
+    "importance": 3
+   }
+  ],
+  "해외 · 해외 정책·규제 (미국)": [
+   {
+    "title": "Hospital balance sheet: How AI could cut costs and improve efficiency",
+    "link": "https://news.google.com/rss/articles/CBMi7gFBVV95cUxOT2RrTEEyQmJyaGVfNFJfN09scml3aFlOMWVoZGNsM25jR3FPTXFSNVRNZklWVTVDdF9RMDBFWmVfNXJqbDhuR1FFd0tZTHpGUk1XU0dzMHE4Z0lLbnFuODRXT09kdkhaaURSNG1McmhMckJDQkFja3FkLVh6cEtuUk9KSWV0aVR5UzUyQ3h5c3FYMjR3SlZreEw4UW1nOFR0N3BpTGhGWFFaV0l1ekVZbzNaMFZVSm41TmF5WTZaRksyZVBjT0FuellTUHJRcm0xMlp1djVDaXhTaGt4YmRFOHFreHlkcnEtc1hGaVNR0gHzAUFVX3lxTFBBWjFpTGFLX241QTZRYS1SNkJFSnc3VVhoS3dtVEUza0g2TzU5ZkZQM1dyeDdscGtaRk1uMGppSkc5N09DdWd4X2FkeWpNcHVBS2RfUVozSHZqMVlrOWtsREwza3FtRExfN3RaZ0VPNXEtNlVsRzRZLVNmeTRMeGZneU9KUVA0NmF2NHYwNzR2RHNnTXRJNFJrYWJoU29yV2NFbS1weVJtQlNqRWJXY3NwemtmSTg4Rk5jejdMc1dVZGowRUNIaFd2LVpMNG9HVnlLODA3aGwzUTg0QzFKS3pWTHo5cnVFZDZOVllrRHpxU2d0SQ?oc=5",
+    "date": "2026-10-31",
+    "category": "해외 정책·규제 (미국)",
+    "region": "해외",
+    "score": 2,
+    "similar_count": 0,
+    "source": "The Economic Times",
+    "importance": 2
+   }
+  ],
+  "해외 · 해외 의료기관 AI 도입·운영": [
+   {
+    "title": "AI-based attendance system leads to dismissal of 72 doctors in Balochistan",
+    "link": "https://news.google.com/rss/articles/CBMiSEFVX3lxTE8zM3piQWEwaVE5MUQ5dnRmY2tmbDNjUVJpN04ydHFuTnJZYnVfaWJuVHRzbjQwTkpsVjVtOHFkdEZnM3lqa0pYcQ?oc=5",
+    "date": "2026-10-31",
+    "category": "해외 의료기관 AI 도입·운영",
+    "region": "해외",
+    "score": 1,
+    "similar_count": 0,
+    "source": "Dawn",
+    "importance": 1
+   },
+   {
+    "title": "Balochistan Dismisses 72 More Doctors Over Absenteeism, AI-Based Attendance System Announced",
+    "link": "https://news.google.com/rss/articles/CBMixgFBVV95cUxNM29fQnV4Qk9PWVpFdURmOFRXcUVILUZJYnkyLVdQV3hPRGd5cGZNWjU2NWtEUXlycktiUF93QjJPcUg4dUJHT2FyWXBwOGFXRjNnUFVhTFAxSFE2WVJHODAtS1lkSVNXWEhpZXFKN2l5UktyZzdaVG5MNzZPb3VtdkJaSVE3Wk1rVjNoVnFtNTlLdzdtZ2E3MUkyQkVseThXZk1Zcy1rVGVzXzktNy1MTzZMWVk4cWZ5V1c2NWhOSXhGaGV5ZGc?oc=5",
+    "date": "2026-10-31",
+    "category": "해외 의료기관 AI 도입·운영",
+    "region": "해외",
+    "score": 1,
+    "similar_count": 0,
+    "source": "https://quettavoice.com/",
+    "importance": 1
+   },
+   {
+    "title": "Public Health AI Hubs",
+    "link": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTE16LUtseldjZlczb0dpRkd4ZzNPNW9WSHBNbFpWZzk4ZlJXUnZfS3FSeU5uVFk3SUxSNlZVV3M4bEN4U1JLRGlxSkZGT0FMalU1WkNCTmF2b25MMjJUS0lmMmNjaUdhaEU?oc=5",
+    "date": "2026-10-31",
+    "category": "해외 의료기관 AI 도입·운영",
+    "region": "해외",
+    "score": 1,
+    "similar_count": 0,
+    "source": "Trend Hunter",
+    "importance": 1
+   }
+  ]
+ },
+ "notes": [
+  "importance = 관련도 점수 + 2×유사기사 수 + 3(주요 일간지·의료 전문지·주요 해외 매체). 후보 선정용이며 최종 판단은 검수 필요.",
+  "월 구분은 대시보드 최초 수집일 기준. 수집일 수가 적은 달은 비교에 주의.",
+  "기사 본문은 저장하지 않고 제목·요약·링크만 보관."
+ ]
+}
