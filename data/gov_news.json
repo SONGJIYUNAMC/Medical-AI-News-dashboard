@@ -1,52 +1,21 @@
 {
-  "generated_at": "2026-11-01T08:06:25.089746+09:00",
+  "generated_at": "2026-11-02T08:03:32.634909+09:00",
   "window_hours": 168,
-  "count": 12,
-  "filtered_out": 231,
+  "count": 15,
+  "filtered_out": 300,
   "category_order": [
     "정부 보도자료 (검색)",
-    "보건복지부"
+    "보건복지부",
+    "식품의약품안전처"
   ],
   "errors": [
     {
       "query": "과학기술정보통신부 보도자료(공식 API) (공공데이터포털 API)",
-      "error": "HTTPSConnectionPool(host='apis.data.go.kr', port=443): Max retries exceeded with url: /1721000/msitpressreleaseinfo/pres"
+      "error": "HTTPSConnectionPool(host='apis.data.go.kr', port=443): Read timed out. (read timeout=30)"
     },
     {
       "query": "과학기술정보통신부 보도자료 (https://www.msit.go.kr/user/rss/rss.do?bbsSeqNo=94)",
-      "error": "HTTPSConnectionPool(host='www.msit.go.kr', port=443): Max retries exceeded with url: /user/rss/rss.do?bbsSeqNo=94 (Cause"
-    },
-    {
-      "query": "과학기술정보통신부 보도설명 (https://www.msit.go.kr/user/rss/rss.do?bbsSeqNo=86)",
-      "error": "HTTPSConnectionPool(host='www.msit.go.kr', port=443): Max retries exceeded with url: /user/rss/rss.do?bbsSeqNo=86 (Cause"
-    },
-    {
-      "query": "과학기술정보통신부 주간동향 (https://www.msit.go.kr/user/rss/rss.do?bbsSeqNo=81)",
-      "error": "HTTPSConnectionPool(host='www.msit.go.kr', port=443): Max retries exceeded with url: /user/rss/rss.do?bbsSeqNo=81 (Cause"
-    },
-    {
-      "query": "보건복지부 보도자료 (https://www.mohw.go.kr/rss/board.es?mid=a10503000000&bid=0027&info)",
-      "error": "HTTPSConnectionPool(host='www.mohw.go.kr', port=443): Max retries exceeded with url: /rss/board.es?mid=a10503000000&bid= → 사이트 검색으로 대체"
-    },
-    {
-      "query": "보건복지부 공지사항 (https://www.mohw.go.kr/rss/board.es?mid=a10501010000&bid=0003&cg_code=C01&info)",
-      "error": "HTTPSConnectionPool(host='www.mohw.go.kr', port=443): Max retries exceeded with url: /rss/board.es?mid=a10501010000&bid="
-    },
-    {
-      "query": "보건복지부 훈령·예규·고시·지침 (https://www.mohw.go.kr/rss/board.es?mid=a10409020000&update=&cg_code=&bid=0026)",
-      "error": "HTTPSConnectionPool(host='www.mohw.go.kr', port=443): Max retries exceeded with url: /rss/board.es?mid=a10409020000&upda"
-    },
-    {
-      "query": "식품의약품안전처 보도자료 (https://www.mfds.go.kr/www/rss/brd.do?brdId=ntc0021)",
-      "error": "HTTPSConnectionPool(host='www.mfds.go.kr', port=443): Max retries exceeded with url: /www/rss/brd.do?brdId=ntc0021 (Caus → 사이트 검색으로 대체"
-    },
-    {
-      "query": "국가데이터처 보도자료 (https://mods.go.kr/board.es?mid=a10301010000&bid=a103010100&act=rss)",
-      "error": "HTTPSConnectionPool(host='mods.go.kr', port=443): Max retries exceeded with url: /board.es?mid=a10301010000&bid=a1030101"
-    },
-    {
-      "query": "국가데이터처 공지사항 (https://mods.go.kr/board.es?mid=a10306020000&bid=a103060100&act=rss)",
-      "error": "HTTPSConnectionPool(host='mods.go.kr', port=443): Max retries exceeded with url: /board.es?mid=a10306020000&bid=a1030601"
+      "error": "HTTPSConnectionPool(host='www.msit.go.kr', port=443): Read timed out. (read timeout=30)"
     }
   ],
   "items": [
@@ -62,12 +31,22 @@
     },
     {
       "title": "AI 발전 속도에 발맞춰 보건의료데이터 안전 활용법 교육한다",
-      "link": "https://news.google.com/rss/articles/CBMi6wFBVV95cUxNUmRDdzkwSEtOQ0dWZHZOVzNxdlFXTWMtSmFSTWlQSktBZWV5UGpZbXQwWlVXSmlNYUI4bWJGXzFTNUtsTFdjZEFSMUlBaFg1dnN6dHpHeVZvN0RCLThHQW9yYXFqQXFyWjlqRnlJRUFnXzJQamtFZDNQSldmTTZRU0FSVmNyTGNERmI1NWJSd0Q4N29MLTNtcDg5N0VsbENLaXdoTmlKajhQQm55TUdhNng3VjZhNnVPQTdZYjNZMGFpWmZrVjRMSGlZcjhNVnYwYjFYU2lQMHJNQUk1ZnZQNTNNZzI5YXdDNS1v?oc=5",
-      "summary": "AI 발전 속도에 발맞춰 보건의료데이터 안전 활용법 교육한다 대한민국 정책브리핑",
-      "pubDate": "2026-10-30T14:12:47+09:00",
-      "agency": "정부 보도자료 (검색)",
+      "link": "https://www.mohw.go.kr/board.es?mid=a10503000000&bid=0027&list_no=1492383&act=view",
+      "summary": "AI 발전 속도에 발맞춰 보건의료데이터 안전 활용법 교육한다 - 2026년 하반기 보건의료데이터 활용 정기교육 개최 - - 가이드라인 개정 방향 안내 및 AI 기반 연구 사례 교육으로 연구자 실무 역량 강화 - 보건복지부(장관 정은경)와 한국보건의료정보원(원장 염민섭), 대한의료정보학회(이사장 김종엽)는 10월 30일(금) 14시 서울 서소문 부영태평빌딩 컨벤션홀에서 의료계·학계·산업계 등 연구자를 대상으로 2026년 하반기 보건의료데이터 활용 정기교육을 진행했다고 밝혔다. 이번 교육은 10월 28일부터 10월 3일까지 의견수렴을 ",
+      "pubDate": "2026-10-30T14:12:00+09:00",
+      "agency": "보건복지부",
+      "kind": "법령·입법",
+      "via": "rss",
+      "official": true
+    },
+    {
+      "title": "대한민국-몽골 보건의료협력, 디지털 전환과 K-의료 인재양성 새 지평 연다",
+      "link": "https://www.mohw.go.kr/board.es?mid=a10503000000&bid=0027&list_no=1492382&act=view",
+      "summary": "대한민국-몽골 보건의료협력, 디지털 전환과 K-의료 인재양성 새 지평 연다 - 제7차 한-몽 보건의료협의체 개최로 보건의료협력 고도화 - - 몽골 의료인 팀 기반 다학제 연수 도입으로 의료역량 강화 -- AI 기반 디지털 헬스케어 및 필수의약품 공급망 구축 등 전략적 파트너십 확대 - 보건복지부(장관 정은경)는 10월 30일(금) 오후 2시, 외교부 양자회의실(서울 종로구)에서 몽골 보건부와「제7차 한-몽 보건의료협의체」회의를 개최하였다고 밝혔다. 보건복지부는 몽골 보건부와 몽골 의료진의 다학제 협진 역량 강화를 위한 팀 기반 연수",
+      "pubDate": "2026-10-30T14:05:00+09:00",
+      "agency": "보건복지부",
       "kind": "지원사업·정책",
-      "via": "gnews",
+      "via": "rss",
       "official": true
     },
     {
@@ -91,13 +70,33 @@
       "official": true
     },
     {
-      "title": "\"AI로 누구도 소외되지 않는 보건체계 구축\", 한국-아세안 보건 협력 연결망 강화",
-      "link": "https://news.google.com/rss/articles/CBMidEFVX3lxTFAzNHJheFhXRGJYc0FIaFgxT1dLWElWdWRhRlhCaFhkMlVSRmFndjhJQ2Q0V3EyWnlGdE5OMTJuV3hESkpHN1FOWHBVN1FzVHU0YkowME5tVXotdmRQbjJmcDV5Unp4VzM0ODlycHVhcEpjajNO?oc=5",
-      "summary": "\"AI로 누구도 소외되지 않는 보건체계 구축\", 한국-아세안 보건 협력 연결망 강화 대한민국 정책브리핑",
-      "pubDate": "2026-10-29T14:02:28+09:00",
-      "agency": "정부 보도자료 (검색)",
+      "title": "“AI로 누구도 소외되지 않는 보건체계 구축”, 한국-아세안 보건 협력 연결망 강화",
+      "link": "https://www.mohw.go.kr/board.es?mid=a10503000000&bid=0027&list_no=1492360&act=view",
+      "summary": "“AI로 누구도 소외되지 않는 보건체계 구축”, 한국-아세안 보건 협력 연결망 강화 - 2026 한-아세안 보건 콘퍼런스 개최(10.29.~30.) - - 아세안 8개국 디지털헬스？AI 보건부, 주아세안대표부, 학계？산업계 등 참석 - - ‘인간 존엄을 위한 첨단기술’ 주제로 한-아세안 회원국, 학계 및 산업계 전문가 간 보건의료 AI 협력 방안 모색 - 보건복지부(장관 정은경)는 10월 29일(목)부터 30일(금)까지 서울 채빛섬에서 ‘인간 존엄을 위한 첨단기술: AI와 디지털 헬스케어로 누구도 소외되지 않는 보건체계를 향하여’를",
+      "pubDate": "2026-10-29T14:02:00+09:00",
+      "agency": "보건복지부",
+      "kind": "기타 발표",
+      "via": "rss",
+      "official": true
+    },
+    {
+      "title": "복지부·중기부, 글로벌 제약바이오 시장 선도할 「K-제약바이오 프론티어기업」 200개 육성",
+      "link": "https://www.mohw.go.kr/board.es?mid=a10503000000&bid=0027&list_no=1492354&act=view",
+      "summary": "복지부·중기부, 글로벌 제약바이오 시장 선도할 「K-제약바이오 프론티어기업」 200개 육성 - 성장 가능성 높은 제약바이오 중소벤처기업 매년 50개 선별, 최대 5년간 집중 지원 - - R&D 전담은행 통해 3년간 600억 원 투자 및 900억 원 규모 사업화 보증 - - AI·신기술, 창업·투자, 지역 인프라 및 글로벌 가치사슬 연계해 제약바이오 혁신생태계 강화 - 보건복지부(장관 정은경, 이하 복지부)와 중소벤처기업부(장관 이소영, 이하 중기부)는 10월 29일 국가정책조정회의에서 「K-제약바이오 프론티어기업 육성 방안」을 발표",
+      "pubDate": "2026-10-29T12:45:00+09:00",
+      "agency": "보건복지부",
       "kind": "지원사업·정책",
-      "via": "gnews",
+      "via": "rss",
+      "official": true
+    },
+    {
+      "title": "원격중환자실, 강원·충북 권역에 이어 11월 서울 권역까지 확대",
+      "link": "https://www.mohw.go.kr/board.es?mid=a10503000000&bid=0027&list_no=1492350&act=view",
+      "summary": "원격중환자실, 강원·충북 권역에 이어 11월 서울 권역까지 확대 - 강원·충북 권역 10월, 서울 권역 11월 운영 개시, 기존 경기와 인천 권역 운영 중, 전국 4개 권역으로 확대 - - 거점병원 전문인력·의료AI 활용해 지역 의료기관 중환자 진료지원 강화 - 보건복지부(장관 정은경)는 「원격중환자실(e-ICU) 협력 네트워크 구축사업」을 확대해 강원·충북 및 서울권역에 원격중환자실을 새롭게 구축한다고 밝혔다. 강원·충북권역 원격중환자실은 10월 1일부터 운영하고 있으며, 서울권역은 11월 1일부터 운영할 계획이다. 원격중환자실(",
+      "pubDate": "2026-10-29T12:05:00+09:00",
+      "agency": "보건복지부",
+      "kind": "지원사업·정책",
+      "via": "rss",
       "official": true
     },
     {
@@ -152,22 +151,22 @@
     },
     {
       "title": "[보도참고] 식약처, 최신의 디지털의료기기 허가심사 기준 짚어준다",
-      "link": "https://news.google.com/rss/articles/CBMidEFVX3lxTFBNLV8xeXdwaVhTQ0V0bUIyWkVPSTVERHhzbzBna3EyRmJiZGI5WV9Gb2ZnaTdlb1lmSEV4bFpvZEUzaDV3Rk5mYTd2ZmZaeHd6SnctLUxVTlViTHJNUzdHMGtlXzNEdWc3RER0SEdzUDFWM08t?oc=5",
-      "summary": "[보도참고] 식약처, 최신의 디지털의료기기 허가심사 기준 짚어준다 대한민국 정책브리핑",
+      "link": "https://www.mfds.go.kr/brd/m_99/view.do?seq=50439",
+      "summary": "",
       "pubDate": "2026-10-28T08:01:23+09:00",
-      "agency": "정부 보도자료 (검색)",
+      "agency": "식품의약품안전처",
       "kind": "가이드라인·기준",
-      "via": "gnews",
+      "via": "rss",
       "official": true
     },
     {
       "title": "보건복지부 복지돌봄인공지능정책과 파견 근무자 모집",
-      "link": "https://news.google.com/rss/articles/CBMiigFBVV95cUxNaWNQMXRPWW00WDZBME0zUk9lWGJ6VFd1SlkwYlJHTWxSeFFvdWZ2RmdOVldNOWJ1UnN3NVBBdFpfX0RKNnRUb1dzdzdKT3pjQXZoRnFMVHZ6Mkt5RjE5Yl84aEJ3MzhjQ1JXaTgxcWtUcHVVeUgwbllfSnFaQzhQd0lFTFNkclR1NWc?oc=5",
-      "summary": "보건복지부 복지돌봄인공지능정책과 파견 근무자 모집 보건복지부 대표홈페이지",
+      "link": "https://www.mohw.go.kr/board.es?mid=a10501010000&bid=0003&list_no=1492332&act=view",
+      "summary": "보건복지부 공고 제2026-814호 보건복지부 복지돌봄인공지능정책과 파견근무자 모집 안내 보건복지부 복지돌봄인공지능정책과에서는 돌봄인력 부족 대응 및 돌봄서비스 질 향상을 위해 돌봄과 복지를 아우르는 중장기(’26~’30) AI 복지？돌봄 혁신 전략인 「복지돌봄 AI 대전환 로드맵」을 발표(10.6.)하였으며, AI 스마트홈시설 상용화 지원, 피지컬 AI 기반 돌봄로봇 사업 등 관련 시범사업 및 R&D 등을 추진하고 있습니다. 혁신계획의 차질없는 이행과 지자체 현장 의견을 반영한 사업 기획 및 추진을 위하여 일선 복지현장 경험이 풍",
       "pubDate": "2026-10-27T17:31:00+09:00",
       "agency": "보건복지부",
       "kind": "지원사업·정책",
-      "via": "gnews",
+      "via": "rss",
       "official": true
     }
   ]
