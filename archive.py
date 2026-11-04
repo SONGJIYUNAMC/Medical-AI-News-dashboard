@@ -65,6 +65,7 @@ def write_index(now, runinfo=None):
                       "by_region": dict(Counter(i["region"] for i in its)),
                       "by_category": dict(Counter(i["category"] for i in its))})
     idx.write_text(json.dumps({"generated_at": now.isoformat(), "weeks": weeks, "last_run": runinfo}, ensure_ascii=False, indent=1), encoding="utf-8")
+    return len(weeks)
 
 
 def main():
@@ -135,6 +136,13 @@ def main():
     if len(cur["items"]) != before:
         print(f"정부 발표 탭 언론 기사 {before - len(cur['items'])}건 제거")
 
+    if CC and CC.get("drop"):  # 수집 대상에서 뺀 카테고리(기타)의 기존 기사 정리(직접 등록 기사는 유지)
+        n0 = len(cur["items"])
+        cur["items"] = [it for it in cur["items"] if not (it.get("region") == "국내" and it.get("category") in CC["drop"] and not it.get("manual"))]
+        cur["category_order"] = [c for c in cur.get("category_order", []) if c not in CC["drop"]]
+        if n0 != len(cur["items"]):
+            print(f"제외 카테고리 기사 {n0 - len(cur['items'])}건 정리")
+
     if CC:  # 같은 사안 기사를 대표 1건으로 합침(오늘 수집분 대상, 어제 기사와 겹치면 어제 기사를 대표로 유지)
         yday_s = (today - timedelta(days=1)).isoformat()
         total_drop = 0
@@ -178,13 +186,13 @@ def main():
         cur["dropped_keys"] = list(dict.fromkeys(cur["dropped_keys"]))[-6000:]
     cur["week"], cur["start"], cur["end"] = wk, start.isoformat(), end.isoformat()
     cur["updated_at"] = now.isoformat()
-    cur["category_order"] = list(dict.fromkeys(cur.get("category_order", []) + order))
+    cur["category_order"] = [c for c in dict.fromkeys(cur.get("category_order", []) + order) if not (CC and c in CC.get("drop", ()))]
     cur["count"] = len(cur["items"])
     cur["items"].sort(key=lambda a: (a.get("score", 0), a.get("pubDate", "")), reverse=True)
     path.write_text(json.dumps(cur, ensure_ascii=False, indent=1), encoding="utf-8")
 
-    write_index(now, runinfo)
-    print(f"{wk}: 신규 {added}건, 갱신 {updated}건, 주 누계 {len(cur['items'])}건 / 보관 주 {len(weeks)}개")
+    n_weeks = write_index(now, runinfo)
+    print(f"{wk}: 신규 {added}건, 갱신 {updated}건, 주 누계 {len(cur['items'])}건 / 보관 주 {n_weeks}개")
 
 
 if __name__ == "__main__":
