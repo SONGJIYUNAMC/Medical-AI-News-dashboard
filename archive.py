@@ -49,6 +49,24 @@ def keys(it):
     return {f"{it['region']}|{it.get('originallink') or it.get('link')}", f"{it['region']}|t|{norm(it['title'])}"}
 
 
+def write_index(now, runinfo=None):
+    """주별 요약 목록(data/weeks/index.json) 갱신. runinfo 가 없으면 기존 last_run 유지."""
+    idx = WEEKS / "index.json"
+    if runinfo is None:
+        try:
+            runinfo = json.loads(idx.read_text(encoding="utf-8")).get("last_run", {})
+        except Exception:
+            runinfo = {}
+    weeks = []
+    for p in sorted(WEEKS.glob("[0-9][0-9][0-9][0-9]-W[0-9][0-9].json")):
+        w = json.loads(p.read_text(encoding="utf-8"))
+        its = w.get("items", [])
+        weeks.append({"week": w["week"], "start": w.get("start"), "end": w.get("end"), "count": len(its),
+                      "by_region": dict(Counter(i["region"] for i in its)),
+                      "by_category": dict(Counter(i["category"] for i in its))})
+    idx.write_text(json.dumps({"generated_at": now.isoformat(), "weeks": weeks, "last_run": runinfo}, ensure_ascii=False, indent=1), encoding="utf-8")
+
+
 def main():
     now = datetime.now(KST)
     today = now.date()
@@ -121,7 +139,7 @@ def main():
         yday_s = (today - timedelta(days=1)).isoformat()
         total_drop = 0
         for region, ccx, official_first in (("국내", CC, False), ("정부", {**CC, "min_shared": 2, "bridge": True}, True)):
-            pool = [it for it in cur["items"] if it["region"] == region and it.get("first_seen") in (today_s, yday_s)]
+            pool = [it for it in cur["items"] if it["region"] == region and it.get("first_seen") in (today_s, yday_s) and not it.get("manual")]
 
             def rank(m, official_first=official_first):
                 if official_first:  # 정부: 부처 직접 발표 > 검색(언론·재게시), 그다음 먼저 나온 순
@@ -165,15 +183,7 @@ def main():
     cur["items"].sort(key=lambda a: (a.get("score", 0), a.get("pubDate", "")), reverse=True)
     path.write_text(json.dumps(cur, ensure_ascii=False, indent=1), encoding="utf-8")
 
-    weeks = []
-    for p in sorted(WEEKS.glob("[0-9][0-9][0-9][0-9]-W[0-9][0-9].json")):
-        w = json.loads(p.read_text(encoding="utf-8"))
-        its = w.get("items", [])
-        weeks.append({"week": w["week"], "start": w.get("start"), "end": w.get("end"), "count": len(its),
-                      "by_region": dict(Counter(i["region"] for i in its)),
-                      "by_category": dict(Counter(i["category"] for i in its))})
-    (WEEKS / "index.json").write_text(json.dumps(
-        {"generated_at": now.isoformat(), "weeks": weeks, "last_run": runinfo}, ensure_ascii=False, indent=1), encoding="utf-8")
+    write_index(now, runinfo)
     print(f"{wk}: 신규 {added}건, 갱신 {updated}건, 주 누계 {len(cur['items'])}건 / 보관 주 {len(weeks)}개")
 
 
