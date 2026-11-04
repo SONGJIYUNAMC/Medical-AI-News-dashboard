@@ -244,6 +244,10 @@ const POLICY_DOC = /설명회|가이드라인|개정|입법|시행|고시|지침
 const POLICY_AGENCY = /복지부|식약처|식품의약품안전|심평원|건보공단|과기정통부|질병관리청|보건산업진흥원|한국보건의료연구원|국회|정부/;
 const GOV_TERM = /거버넌스|환자안전|환각|드리프트|이상사례|사후\s?모니터링|도입\s?심의|개발자\s?책임|책임\s?(소재|논란|공방)|AI\s?책임|법적\s?책임|편향|랜섬웨어|개인정보\s?유출|해킹/;
 const HOSP_NAME = /서울아산|아산병원|서울대병원|서울대학교병원|분당서울대|삼성서울|세브란스|서울성모|상급종합|스마트\s?(병원|병동)|앰비언트|[가-힣]{2,6}(대|의료원)?병원/;
+// 카테고리 표시 순서(화면 전체 공통): 학술·연구·행사는 항상 맨 아래
+const CAT_ORDER = ["국내 정책·규제", "국내 의료기관", "정부 발표", "국내 의료 AI 기업", "AI 거버넌스·보안", "해외", "학술·연구·행사"];
+const catRank = c => { const i = CAT_ORDER.indexOf(c); return i >= 0 ? i : CAT_ORDER.length - 1.5; };   // 목록에 없는 이름은 학술 바로 앞
+const sortCats = names => names.slice().sort((a, b) => catRank(a) - catRank(b));
 const DOM_CATS = ["국내 정책·규제", "국내 의료기관", "국내 의료 AI 기업", "AI 거버넌스·보안", "학술·연구·행사", "정부 발표", "해외"];
 function autoCat(it) {
   const c = it.category || "기타", t = it.title || "", txt = t + " " + (it.summary || "");
@@ -411,9 +415,7 @@ function renderTabs() {
   const inRegion = state.items.filter(it => regionOf(it) === state.region);
   const counts = {};
   inRegion.forEach(it => { const c = catOf(it); counts[c] = (counts[c] || 0) + 1; });
-  const known = state.order.filter(c => counts[c]);
-  const extra = Object.keys(counts).filter(c => !state.order.includes(c));
-  const cats = ["전체", ...known, ...extra];
+  const cats = ["전체", ...sortCats(Object.keys(counts))];
   const box = $("tabs");
   box.replaceChildren();
   cats.forEach(c => {
@@ -708,7 +710,7 @@ function dayPicksFor(day, region) {
   });
   return out;
 }
-const orderedCats = names => [...state.order.filter(c => names.includes(c)), ...names.filter(c => !state.order.includes(c))];
+const orderedCats = names => sortCats(names);
 const daysLoaded = () => [...new Set(state.items.map(i => i.first_seen).filter(Boolean))].sort().reverse();
 function dayDefault(days) { const t = todayKST(); return days.includes(t) ? t : (days[0] || ""); }
 
@@ -779,7 +781,7 @@ function renderCatsView(list) {
   list.append(el("div", { className: "wkhead" }, [el("h2", { textContent: "카테고리" }), regionChips(), back]));
   const inReg = state.items.filter(it => regionOf(it) === state.region), counts = new Map();
   inReg.forEach(it => { const c = catOf(it); counts.set(c, (counts.get(c) || 0) + 1); });
-  const cats = [...state.order.filter(c => counts.has(c)), ...[...counts.keys()].filter(c => !state.order.includes(c))];
+  const cats = sortCats([...counts.keys()]);
   const grid = el("div", { className: "catgrid" });
   [["전체", inReg.length], ...cats.map(c => [c, counts.get(c)])].forEach(([c, n]) => {
     const b = el("button", { type: "button", className: "catbtn" }, [el("b", { textContent: c }), el("span", { textContent: n.toLocaleString() + "건" })]);
