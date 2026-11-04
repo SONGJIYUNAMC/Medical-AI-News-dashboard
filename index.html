@@ -110,6 +110,21 @@
     .controls.collapsed #ctlbody { display: none; }
     .content { padding: 16px 14px 40px; }
   }
+.wkhead{grid-column:1/-1;display:flex;flex-wrap:wrap;align-items:center;gap:8px 12px;margin:0 0 4px}.wkhead h2{margin:0;font-size:19px;color:var(--navy)}
+.wkhead select,.wkhead .tab,.editrow select,.editrow .tab,.addrow input,.addrow select,.addrow .tab{font:inherit;font-size:13px;width:auto;padding:4px 10px}
+.chips{display:flex;gap:6px}.chips .tab{padding:4px 12px}.tab.primary{background:var(--teal);color:#fff;border-color:var(--teal);margin-left:auto}
+.wksec,.addbox,.candbox{grid-column:1/-1;background:var(--card);border:1px solid var(--line);border-radius:12px;padding:14px 18px;box-shadow:var(--shadow)}
+.addbox summary,.candbox summary{cursor:pointer;font-weight:700;color:var(--navy)}.addrow{display:flex;flex-wrap:wrap;gap:6px;margin:10px 0 4px}.addrow input{flex:1 1 240px;border:1px solid var(--line);border-radius:8px;background:var(--card);color:var(--text)}
+.candrow{display:flex;gap:10px;align-items:center;padding:6px 0;border-top:1px solid var(--line)}.candrow a{flex:1;color:var(--text);text-decoration:none;font-size:14px}
+.wkgrid{display:grid;grid-template-columns:1fr 1fr;gap:12px}.wkcard{border:1px solid var(--line);border-radius:10px;padding:12px 14px;display:flex;flex-direction:column;gap:2px}
+.wkcard.nl-on{border-color:var(--teal);box-shadow:inset 3px 0 0 var(--teal)}.wkcard h3{margin:0 0 4px;font-size:15px;line-height:1.45}.wkcard h3 a{color:var(--text);text-decoration:none}.wkcard h3 a:hover{color:var(--teal)}
+.wkcard p{margin:0 0 6px;font-size:13px;color:var(--muted);display:-webkit-box;-webkit-line-clamp:3;-webkit-box-orient:vertical;overflow:hidden}
+.nl{font-size:12px;display:inline-flex;align-items:center;cursor:pointer}.ghstat{font-size:11px;color:var(--muted);margin:6px 8px}
+.catgrid{grid-column:1/-1;display:grid;grid-template-columns:repeat(auto-fill,minmax(200px,1fr));gap:12px}
+.catbtn{font:inherit;text-align:left;background:var(--card);border:1px solid var(--line);border-radius:12px;padding:16px 18px;cursor:pointer;display:flex;flex-direction:column;gap:4px;box-shadow:var(--shadow);color:var(--text)}
+.catbtn b{color:var(--navy)}.catbtn span{font-size:13px;color:var(--muted)}.catbtn:hover{border-color:var(--teal)}
+@media(max-width:800px){.wkgrid{grid-template-columns:1fr}}
+
 .editbox{margin-top:6px;font-size:12px}.editbox summary{cursor:pointer;color:var(--muted);display:inline-block}
 .editrow{display:flex;flex-wrap:wrap;gap:6px;margin-top:6px}.editrow select,.editrow .tab{font:inherit;font-size:12px;padding:3px 8px;width:auto}
 .homehead,.homegrid{grid-column:1/-1}
@@ -150,8 +165,11 @@
     <label class="toggle"><input type="checkbox" id="rel"> 의료·병원·헬스 관련어 포함 기사만</label>
     <label class="toggle"><input type="checkbox" id="aiT"> 제목에 AI 포함 기사만</label>
     <button class="tab csv" id="csv" type="button">CSV 내려받기</button>
+    <h4>GitHub 연결 (선택)</h4>
+    <button class="tab csv" id="ghBtn" type="button">토큰 입력/해제</button>
+    <div class="ghstat" id="ghStat"></div>
     <h4>직접 지정</h4>
-    <button class="tab csv" id="ovExp" type="button">내 지정 내보내기 (overrides.json)</button>
+    <button class="tab csv" id="ovExp" type="button">내 지정 내보내기 (백업)</button>
     <button class="tab csv" id="ovClr" type="button">내 지정 모두 초기화</button>
   </div>
 </aside>
@@ -168,7 +186,7 @@
 <script>
 const REL = /의료|병원|헬스|환자|진료|임상|의사|간호|보건|의약|바이오|건강|health|hospital|clinic|medical|patient/i;
 const AI_T = /(^|[^A-Za-z])AI(?![A-Za-z])|인공지능|딥러닝|머신러닝|생성형|LLM|언어\s?모델|챗\s?GPT|파운데이션\s?모델|디지털의료기기/i;
-const state = { items: [], order: [], hotOpen: window.innerWidth >= 700, period: "", day: "전체", weeksLoaded: [], manifest: null, region: "국내", cat: "전체", q: "", rel: false, aiT: false, impOnly: false, sort: "imp", home: true };
+const state = { items: [], order: [], hotOpen: window.innerWidth >= 700, period: "", day: "전체", weeksLoaded: [], manifest: null, region: "국내", cat: "전체", q: "", rel: false, aiT: false, impOnly: false, sort: "imp", home: true, cats: false };
 const $ = id => document.getElementById(id);
 
 function fmtDate(iso) {
@@ -207,10 +225,16 @@ const IMP_RULES = [
 
 // ---- 직접 지정(중요도·대표 기사·카테고리): 이 브라우저에 저장, 내보내기 파일(data/overrides.json)로 공유 ----
 const OV_KEY = "newsOverrides";
-state.ov = { imp: {}, pin: {}, cat: {} };
+state.ov = { t: 0, imp: {}, pin: {}, cat: {}, nl: {} };
 const ovKey = it => it.originallink || it.link || it.title;
-function ovSave() { try { localStorage.setItem(OV_KEY, JSON.stringify(state.ov)); } catch (e) {} }
-function ovMerge(o) { if (!o) return; ["imp", "pin", "cat"].forEach(k => Object.assign(state.ov[k], o[k] || {})); }
+function ovSave() { state.ov.t = Date.now(); try { localStorage.setItem(OV_KEY, JSON.stringify(state.ov)); } catch (e) {} ghSync(); }
+function ovNorm(o) { return { t: +(o && o.t) || 0, imp: (o && o.imp) || {}, pin: (o && o.pin) || {}, cat: (o && o.cat) || {}, nl: (o && o.nl) || {} }; }
+// 이 브라우저 저장본과 GitHub 파일 중 더 최근에 바꾼 쪽을 사용
+function ovLoad(fileOv) {
+  let loc = null; try { loc = JSON.parse(localStorage.getItem(OV_KEY) || "null"); } catch (e) {}
+  const f = ovNorm(fileOv), l = ovNorm(loc);
+  state.ov = l.t > f.t ? l : f;
+}
 const COMPANY_NEWS = /(허가|인증|승인)\s?(획득|취득|받|통과)|획득|수주|투자\s?유치|공급\s?계약/;
 const POLICY_DOC = /설명회|가이드라인|개정|입법|시행|고시|지침|공고|공모|심사\s?기준|제도\s?개선|정책|위원회/;
 const POLICY_AGENCY = /복지부|식약처|식품의약품안전|심평원|건보공단|과기정통부|질병관리청|보건산업진흥원|한국보건의료연구원|국회|정부/;
@@ -229,6 +253,7 @@ function ovExport() {
 }
 function impOf(it) {
   const o = state.ov.imp[ovKey(it)];
+  if (o === undefined && it.manual) return { sc: 50, lv: 3, why: ["직접 등록"] };
   if (o !== undefined) return { sc: o === "3" ? 99 : o === "2" ? 6 : -1, lv: +o, why: ["직접 지정"] };
   return impAuto(it);
 }
@@ -301,16 +326,18 @@ function setDaySelects(day) {
 
 function renderTabs() {
   const hb = $("homeBox"); hb.replaceChildren();
-  const hbtn = el("button", { className: "tab" + (state.home ? " active" : ""), type: "button" }, [el("span", { textContent: "홈 (카테고리별 핵심)" })]);
-  hbtn.onclick = () => { state.home = true; state.cat = "전체"; clearSearch(); render(); };
-  hb.append(hbtn);
+  const hbtn = el("button", { className: "tab" + (state.home ? " active" : ""), type: "button" }, [el("span", { textContent: "홈 (주간 대시보드)" })]);
+  hbtn.onclick = () => { state.home = true; state.cats = false; state.cat = "전체"; clearSearch(); render(); };
+  const cbtn = el("button", { className: "tab" + (state.cats ? " active" : ""), type: "button" }, [el("span", { textContent: "다른 뉴스 보기" })]);
+  cbtn.onclick = () => { state.home = false; state.cats = true; state.cat = "전체"; state.day = "전체"; setDaySelects("전체"); clearSearch(); render(); };
+  hb.append(hbtn, cbtn);
   const rbox = $("regions");
   rbox.replaceChildren();
   ["국내", "정부", "해외"].forEach(r => {
     const n = state.items.filter(it => regionOf(it) === r).length;
     const b = el("button", { className: "tab" + (r === state.region ? " active" : ""), type: "button" },
                  [el("span", { textContent: REGION_LABEL[r] }), el("span", { className: "n", textContent: n.toLocaleString() })]);
-    b.onclick = () => { state.region = r; state.cat = "전체"; state.home = true; applyDefaultDay(); clearSearch(); render(); };
+    b.onclick = () => { state.region = r; state.cat = "전체"; if (!state.home) { state.cats = true; state.day = "전체"; setDaySelects("전체"); } else applyDefaultDay(); clearSearch(); render(); };
     rbox.append(b);
   });
   const inRegion = state.items.filter(it => regionOf(it) === state.region);
@@ -323,9 +350,9 @@ function renderTabs() {
   box.replaceChildren();
   cats.forEach(c => {
     const n = c === "전체" ? inRegion.length : counts[c];
-    const b = el("button", { className: "tab" + (!state.home && c === state.cat ? " active" : ""), type: "button" },
+    const b = el("button", { className: "tab" + (!state.home && !state.cats && c === state.cat ? " active" : ""), type: "button" },
                  [el("span", { textContent: c }), el("span", { className: "n", textContent: n.toLocaleString() })]);
-    b.onclick = () => { state.cat = c; state.home = false; clearSearch(); render(); };
+    b.onclick = () => { state.cat = c; state.home = false; state.cats = false; clearSearch(); render(); };
     box.append(b);
   });
 }
@@ -402,64 +429,196 @@ function renderHot() {
 }
 
 
-function editBox(it, cat) {
-  const wrap = el("details", { className: "editbox" }, [el("summary", { textContent: "분류·중요도 수정" })]);
-  fillEdit(wrap, it, cat); return wrap;
+// ================= GitHub 연동 (토큰은 이 브라우저에만 저장, 코드·저장소에는 넣지 않음) =================
+const GH_REPO = "songjiyunamc/Medical-AI-News-dashboard";
+const lsGet = k => { try { return localStorage.getItem(k) || ""; } catch (e) { return ""; } };
+const lsSet = (k, v) => { try { localStorage.setItem(k, v); } catch (e) {} };
+const ghTok = () => lsGet("ghToken");
+let ghTimer = null;
+function ghStatus(t) { const e = $("ghStat"); if (e) e.textContent = t; }
+const ghApi = (path, opt) => fetch("https://api.github.com/repos/" + GH_REPO + path, { ...(opt || {}), headers: {
+  Authorization: "Bearer " + ghTok(), Accept: "application/vnd.github+json", "X-GitHub-Api-Version": "2022-11-28" } });
+function b64(str) { let s = ""; new TextEncoder().encode(str).forEach(c => s += String.fromCharCode(c)); return btoa(s); }
+function ghSync() { if (!ghTok()) return; clearTimeout(ghTimer); ghStatus("저장 대기 중…"); ghTimer = setTimeout(ghPush, 1500); }
+async function ghPush() {
+  try {
+    for (let t = 0; t < 2; t++) {
+      const g = await ghApi("/contents/data/overrides.json?ref=main");
+      let sha; if (g.ok) sha = (await g.json()).sha; else if (g.status !== 404) throw new Error(g.status);
+      const body = { message: "chore: update overrides", branch: "main", content: b64(JSON.stringify(state.ov, null, 1)), ...(sha ? { sha } : {}) };
+      const r = await ghApi("/contents/data/overrides.json", { method: "PUT", body: JSON.stringify(body) });
+      if (r.ok) { ghStatus("GitHub에 저장됨 " + new Date().toLocaleTimeString("ko-KR")); return; }
+      if (r.status !== 409 && r.status !== 422) throw new Error(r.status);
+    }
+    throw new Error("충돌");
+  } catch (e) { ghStatus("GitHub 저장 실패(" + e.message + ") · 토큰 권한 확인. 이 브라우저에는 저장됨"); }
 }
-function editBtn(it) { return editBox(it, catOf(it)); }
-function fillEdit(wrap, it, cat) {
-  const k = ovKey(it);
-  const sel = el("select", {}), cs = el("select", {});
-  [["", "중요도: 자동"], ["3", "중요도: 상"], ["2", "중요도: 중"], ["0", "중요도: 없음"]].forEach(([v, t]) => sel.append(el("option", { value: v, textContent: t })));
-  sel.value = state.ov.imp[k] ?? "";
-  sel.onchange = () => { if (sel.value === "") delete state.ov.imp[k]; else state.ov.imp[k] = sel.value; ovSave(); render(); };
-  const cats = [...new Set([...state.order, catOf(it)])];
-  cats.forEach(c => cs.append(el("option", { value: c, textContent: "카테고리: " + c })));
-  cs.value = catOf(it);
-  cs.onchange = () => { state.ov.cat[k] = cs.value; ovSave(); render(); };
-  const pin = el("button", { type: "button", className: "tab", textContent: state.ov.pin[cat] === k ? "대표 해제" : "이 카테고리 대표로 지정" });
-  pin.onclick = () => { if (state.ov.pin[cat] === k) delete state.ov.pin[cat]; else state.ov.pin[cat] = k; ovSave(); state.home = true; render(); };
-  wrap.append(el("div", { className: "editrow" }, [sel, cs, pin]));
+async function addByLink(url, region, category, title) {
+  if (!/^https?:\/\//i.test(url)) { alert("http:// 또는 https:// 로 시작하는 기사 주소를 입력하세요."); return; }
+  if (!ghTok()) { alert("사이드바 'GitHub 연결'에서 토큰을 먼저 등록하세요."); return; }
+  const r = await ghApi("/actions/workflows/add-news.yml/dispatches", { method: "POST",
+    body: JSON.stringify({ ref: "main", inputs: { url, region, category: category || "", title: title || "" } }) });
+  alert(r.status === 204 ? "등록을 요청했습니다. 1~2분 뒤 새로고침하면 다른 뉴스와 똑같이 보입니다."
+    : "요청에 실패했습니다(" + r.status + "). 토큰의 Actions 권한(Read and write)과 add-news.yml 업로드 여부를 확인하세요.");
 }
 
-function renderHome(rows, list) {
+// ================= 중요도·뉴스레터 후보·대표 고정 =================
+const LV_LABEL = { 3: "상", 2: "중", 0: "없음" };
+function ovChanged() { ovSave(); render(); }
+function impSelect(it) {
+  const k = ovKey(it), auto = impAuto(it).lv;
+  const sel = el("select", { ariaLabel: "중요도" });
+  [["", "중요도: 자동(" + (LV_LABEL[it.manual ? 3 : auto] || "없음") + ")"], ["3", "중요도: 상"], ["2", "중요도: 중"], ["0", "중요도: 없음"]]
+    .forEach(([v, t]) => sel.append(el("option", { value: v, textContent: t })));
+  sel.value = state.ov.imp[k] ?? "";
+  sel.onchange = () => { if (sel.value === "") delete state.ov.imp[k]; else state.ov.imp[k] = sel.value; ovChanged(); };
+  return sel;
+}
+function nlCheck(it) {
+  const k = ovKey(it), box = el("input", { type: "checkbox", checked: !!state.ov.nl[k] });
+  box.onchange = () => { if (box.checked) state.ov.nl[k] = 1; else delete state.ov.nl[k]; ovChanged(); };
+  return el("label", { className: "nl" }, [box, el("span", { textContent: " 뉴스레터 후보" })]);
+}
+function catSelect(it) {
+  const k = ovKey(it), cs = el("select", { ariaLabel: "카테고리" });
+  [...new Set([...state.order, catOf(it)])].forEach(c => cs.append(el("option", { value: c, textContent: "카테고리: " + c })));
+  cs.value = catOf(it);
+  cs.onchange = () => { state.ov.cat[k] = cs.value; ovChanged(); };
+  return cs;
+}
+function editBox(it) {
+  return el("details", { className: "editbox" }, [el("summary", { textContent: "분류·중요도 수정" }), el("div", { className: "editrow" }, [impSelect(it), catSelect(it), nlCheck(it)])]);
+}
+
+// ================= 홈: 주간 대시보드 =================
+const pinKey = c => `${state.period}|${state.region}|${c}`;
+const pinsOf = c => { const v = state.ov.pin[pinKey(c)]; return Array.isArray(v) ? v : []; };
+const better = (a, b) => (impOf(b).sc - impOf(a).sc) || ((b.similar_count || 0) - (a.similar_count || 0)) || (a.pubDate < b.pubDate ? 1 : -1);
+function regionChips() {
+  const bar = el("div", { className: "chips" });
+  ["국내", "정부", "해외"].forEach(r => {
+    const b = el("button", { type: "button", className: "tab" + (r === state.region ? " active" : ""), textContent: r });
+    b.onclick = () => { state.region = r; state.cat = "전체"; render(); };
+    bar.append(b);
+  });
+  return bar;
+}
+function weekSelect() {
+  const sel = el("select", { ariaLabel: "주 선택" });
+  [...$("period").options].forEach(o => sel.append(el("option", { value: o.value, textContent: o.textContent })));
+  sel.value = state.period;
+  sel.onchange = () => { state.period = sel.value; $("period").value = sel.value; clearSearch(); loadPeriod(); };
+  return sel;
+}
+function newsCard(it, c, pinnable) {
+  const im = impOf(it), pins = pinsOf(c), pinned = pins.includes(ovKey(it));
+  const a = el("a", { href: safeUrl(it.originallink || it.link), target: "_blank", rel: "noopener noreferrer", textContent: it.title });
+  const meta = [
+    ...(im.lv ? [el("span", { className: "chip imp" + im.lv, textContent: "중요도 " + (im.lv === 3 ? "상" : "중") })] : []),
+    ...(it.manual ? [el("span", { className: "chip", textContent: "직접 등록" })] : []),
+    ...(it.source_type === "major" ? [el("span", { className: "chip", textContent: "주요 일간지" })] : it.source_type === "medical" ? [el("span", { className: "chip", textContent: "의료 전문지" })] : []),
+    el("span", { textContent: it.gov ? it.agency : it.global ? (it.sources || []).join(", ") : host(it.originallink || it.link) + (it.similar_count ? " 외 " + it.similar_count + "곳 보도" : "") }),
+    el("span", { textContent: fmtDate(it.pubDate) }),
+  ];
+  const pin = el("button", { type: "button", className: "tab", textContent: pinned ? "대표 고정 해제" : "대표로 고정" });
+  pin.onclick = () => {
+    const k = ovKey(it), cur = pinsOf(c).filter(x => x !== k);
+    if (!pinned) cur.push(k);
+    state.ov.pin[pinKey(c)] = cur.slice(-2);
+    ovChanged();
+  };
+  return el("div", { className: "wkcard" + (state.ov.nl[ovKey(it)] ? " nl-on" : "") }, [
+    el("h3", {}, [a]), (it.summary ? el("p", { textContent: it.summary }) : ""),
+    el("div", { className: "foot" }, meta),
+    ...(pinned ? [el("div", { className: "why", textContent: "직접 고정한 대표 기사" })] : (im.why.length ? [el("div", { className: "why", textContent: "판단 근거: " + im.why.join(" · ") })] : [])),
+    el("div", { className: "editrow" }, [impSelect(it), nlCheck(it), ...(pinnable ? [pin] : [])]),
+    el("details", { className: "editbox" }, [el("summary", { textContent: "분류 수정" }), el("div", { className: "editrow" }, [catSelect(it)])]),
+  ]);
+}
+function copyCandidates(items) {
+  const lines = [`[${periodText(weeksFor(state.period))} 의료 AI 동향 — 뉴스레터 후보]`, ""];
+  items.forEach((it, i) => lines.push(`${i + 1}. ${it.title} (${it.gov ? it.agency : host(it.originallink || it.link)})`, `   ${it.originallink || it.link}`, ...(it.summary ? [`   ${it.summary.slice(0, 160)}`] : []), ""));
+  const txt = lines.join("\n");
+  (navigator.clipboard ? navigator.clipboard.writeText(txt) : Promise.reject()).then(() => alert("뉴스레터 후보 목록을 복사했습니다."), () => prompt("아래 내용을 복사하세요", txt));
+}
+function addLinkBox() {
+  const box = el("details", { className: "addbox" }, [el("summary", { textContent: "＋ 뉴스 링크로 추가하기" })]);
+  const url = el("input", { placeholder: "기사 주소 (https://…)" }), title = el("input", { placeholder: "제목 (선택 · 자동 추출이 안 될 때만)" });
+  const rg = el("select", {}, ["국내", "해외"].map(r => el("option", { value: r, textContent: r })));
+  const cs = el("select", {}, [el("option", { value: "", textContent: "카테고리: 자동 분류" }), ...state.order.map(c => el("option", { value: c, textContent: c }))]);
+  const go = el("button", { type: "button", className: "tab", textContent: "추가" });
+  go.onclick = async () => { go.disabled = true; await addByLink(url.value.trim(), rg.value, cs.value, title.value.trim()); go.disabled = false; url.value = ""; title.value = ""; };
+  box.append(el("div", { className: "addrow" }, [url, title, rg, cs, go]),
+    el("div", { className: "why", textContent: "GitHub 연결(토큰)이 필요합니다. 요청 후 1~2분 뒤 새로고침하면 다른 뉴스와 똑같이 올라옵니다." }));
+  return box;
+}
+function renderWeekly(list) {
+  const rows = state.items.filter(it => regionOf(it) === state.region);
+  const cands = state.items.filter(it => state.ov.nl[ovKey(it)]);
+  const more = el("button", { type: "button", className: "tab primary", textContent: "다른 뉴스 보기 →" });
+  more.onclick = () => { state.home = false; state.cats = true; state.day = "전체"; setDaySelects("전체"); clearSearch(); render(); window.scrollTo(0, 0); };
+  list.append(el("div", { className: "wkhead" }, [el("h2", { textContent: "주간 대시보드" }), weekSelect(), regionChips(), more]));
+  list.append(addLinkBox());
+  const cp = el("details", { className: "candbox", open: cands.length > 0 }, [el("summary", { textContent: `뉴스레터 후보 ${cands.length}건` })]);
+  if (cands.length) {
+    cands.sort(better).forEach(it => {
+      const x = el("button", { type: "button", className: "tab", textContent: "후보 해제" });
+      x.onclick = () => { delete state.ov.nl[ovKey(it)]; ovChanged(); };
+      cp.append(el("div", { className: "candrow" }, [el("a", { href: safeUrl(it.originallink || it.link), target: "_blank", rel: "noopener noreferrer", textContent: it.title }), el("span", { className: "why", textContent: catOf(it) }), x]));
+    });
+    const cb = el("button", { type: "button", className: "tab", textContent: "후보 목록 복사" }); cb.onclick = () => copyCandidates(cands);
+    cp.append(el("div", { className: "editrow" }, [cb]));
+  } else cp.append(el("div", { className: "why", textContent: "기사 카드의 '뉴스레터 후보'를 체크하면 여기에 모입니다." }));
+  list.append(cp);
+  if (!rows.length) { list.append(el("div", { className: "empty", textContent: "이 기간·구분에 기사가 없습니다." })); return; }
   const by = new Map();
   rows.forEach(it => { const c = catOf(it); if (!by.has(c)) by.set(c, []); by.get(c).push(it); });
   const cats = [...state.order.filter(c => by.has(c)), ...[...by.keys()].filter(c => !state.order.includes(c))];
-  const better = (a, b) => (impOf(b).sc - impOf(a).sc) || ((b.similar_count || 0) - (a.similar_count || 0)) || (a.pubDate < b.pubDate ? 1 : -1);
-  list.append(el("div", { className: "homehead", textContent: "카테고리별 핵심 기사 · 중요도가 가장 높은 기사 1건 (동점이면 여러 매체가 다룬 기사 우선)" }));
-  const grid = el("div", { className: "homegrid" });
   cats.forEach(c => {
-    const arr = by.get(c).slice().sort(better), pinK = state.ov.pin[c];
-    const pinned = pinK && arr.find(x => ovKey(x) === pinK), it = pinned || arr[0], im = impOf(it);
-    const a = el("a", { href: safeUrl(it.originallink || it.link), target: "_blank", rel: "noopener noreferrer", textContent: it.title });
-    const meta = [
-      ...(im.lv ? [el("span", { className: "chip imp" + im.lv, textContent: im.lv === 3 ? "중요도 상" : "중요도 중" })] : []),
-      ...(it.source_type === "major" ? [el("span", { className: "chip", textContent: "주요 일간지" })] : it.source_type === "medical" ? [el("span", { className: "chip", textContent: "의료 전문지" })] : []),
-      el("span", { textContent: it.gov ? it.agency : it.global ? (it.sources || []).join(", ") : host(it.originallink || it.link) + (it.similar_count ? " 외 " + it.similar_count + "곳 보도" : "") }),
-      el("span", { textContent: fmtDate(it.pubDate) }),
-    ];
-    const more = el("button", { className: "homemore", type: "button" }, [el("span", { textContent: c + " 전체 " + by.get(c).length.toLocaleString() + "건 보기" }), el("span", { textContent: "→" })]);
-    more.onclick = () => { state.cat = c; state.home = false; clearSearch(); render(); window.scrollTo(0, 0); };
-    grid.append(el("section", { className: "homecard" }, [
-      el("div", { className: "hch" }, [el("b", { textContent: c }), el("em", { textContent: by.get(c).length.toLocaleString() + "건" })]),
-      el("h3", {}, [a]), (it.summary ? el("p", { textContent: it.summary }) : ""),
-      el("div", { className: "foot" }, meta),
-      ...(im.why.length ? [el("div", { className: "why", textContent: (pinned ? "직접 지정한 대표 기사 · " : "") + "판단 근거: " + im.why.join(" · ") })] : []),
-      editBox(it, c), more]));
+    const arr = by.get(c).slice().sort(better);
+    const pinned = pinsOf(c).map(k => arr.find(x => ovKey(x) === k)).filter(Boolean);
+    const top = [...pinned, ...arr.filter(x => !pinned.includes(x))].slice(0, 2);
+    list.append(el("section", { className: "wksec" }, [
+      el("div", { className: "hch" }, [el("b", { textContent: c }), el("em", { textContent: "이 기간 " + by.get(c).length.toLocaleString() + "건 중 상위 " + top.length + "건" })]),
+      el("div", { className: "wkgrid" }, top.map(it => newsCard(it, c, true)))]));
+  });
+}
+
+// ================= 다른 뉴스 보기: 카테고리 목록 → 뉴스 목록 =================
+function renderCatsView(list) {
+  const back = el("button", { type: "button", className: "tab", textContent: "← 주간 대시보드" });
+  back.onclick = () => { state.home = true; state.cats = false; render(); window.scrollTo(0, 0); };
+  list.append(el("div", { className: "wkhead" }, [el("h2", { textContent: "카테고리" }), regionChips(), back]));
+  const inReg = state.items.filter(it => regionOf(it) === state.region), counts = new Map();
+  inReg.forEach(it => { const c = catOf(it); counts.set(c, (counts.get(c) || 0) + 1); });
+  const cats = [...state.order.filter(c => counts.has(c)), ...[...counts.keys()].filter(c => !state.order.includes(c))];
+  const grid = el("div", { className: "catgrid" });
+  [["전체", inReg.length], ...cats.map(c => [c, counts.get(c)])].forEach(([c, n]) => {
+    const b = el("button", { type: "button", className: "catbtn" }, [el("b", { textContent: c }), el("span", { textContent: n.toLocaleString() + "건" })]);
+    b.onclick = () => { state.cat = c; state.cats = false; state.home = false; clearSearch(); render(); window.scrollTo(0, 0); };
+    grid.append(b);
   });
   list.append(grid);
+}
+function backBar() {
+  const h = el("button", { type: "button", className: "tab", textContent: "← 주간 대시보드" }), c = el("button", { type: "button", className: "tab", textContent: "← 카테고리 목록" });
+  h.onclick = () => { state.home = true; state.cats = false; render(); window.scrollTo(0, 0); };
+  c.onclick = () => { state.cats = true; state.home = false; render(); window.scrollTo(0, 0); };
+  return el("div", { className: "wkhead" }, [h, c, el("b", { textContent: `${state.region} · ${state.cat}` })]);
 }
 
 function render() {
   if ($("fold")) updateFoldLabel();
   renderHot();
+  $("hot").style.display = state.home ? "none" : "";
   renderTabs();
   const rows = filtered();
   const list = $("list");
   list.replaceChildren();
+  if (state.home) { renderWeekly(list); return; }
+  if (state.cats) { renderCatsView(list); return; }
+  list.append(backBar());
   if (!rows.length) { list.append(el("div", { className: "empty", textContent: "조건에 맞는 기사가 없습니다." })); return; }
-  if (state.home && !state.q.trim()) { renderHome(rows, list); return; }
   rows.forEach(it => {
     const a = el("a", { href: safeUrl(it.originallink || it.link), target: "_blank", rel: "noopener noreferrer", textContent: it.title });
     const foot = el("div", { className: "foot" }, [
@@ -477,7 +636,7 @@ function render() {
       ...(it.similar_count ? [el("span", { className: "chip score", title: (it.similar_sources || []).join(", "),
         textContent: "유사 기사 " + it.similar_count + "건" })] : []),
       el("span", { textContent: fmtDate(it.pubDate) }),
-      editBtn(it),
+      editBox(it),
       ...(it.first_seen ? [el("span", { className: "chip score", textContent: "수집 " + it.first_seen.slice(5) })] : []),
     ]);
     list.append(el("article", { className: it.similar_count ? "hi" : "" }, [el("h2", {}, [a]), (it.summary ? el("p", { textContent: it.summary }) : ""), foot]));
@@ -677,8 +836,14 @@ $("period").addEventListener("change", e => { state.period = e.target.value; cle
 }));
 $("csv").addEventListener("click", toCsv);
 $("ovExp").addEventListener("click", ovExport);
-$("ovClr").addEventListener("click", () => { if (confirm("직접 지정한 중요도·대표 기사·카테고리를 모두 초기화할까요?")) { state.ov = { imp: {}, pin: {}, cat: {} }; ovSave(); render(); } });
-getJson("data/overrides.json").catch(() => null).then(o => { ovMerge(o); try { ovMerge(JSON.parse(localStorage.getItem(OV_KEY) || "null")); } catch (e) {} if (state.items.length) render(); });
+$("ghBtn").addEventListener("click", () => {
+  if (ghTok()) { if (confirm("이 브라우저에 저장된 GitHub 토큰을 지울까요?")) { lsSet("ghToken", ""); ghStatus(""); } return; }
+  const k = (prompt("GitHub 토큰(fine-grained)을 붙여넣으세요. 이 브라우저에만 저장됩니다.") || "").trim();
+  if (k) { lsSet("ghToken", k); ghStatus("토큰 등록됨 · 변경 내용이 GitHub에 자동 저장됩니다"); }
+});
+if (ghTok()) ghStatus("GitHub 연결됨");
+$("ovClr").addEventListener("click", () => { if (confirm("직접 지정한 중요도·대표 기사·카테고리·뉴스레터 후보를 모두 초기화할까요?")) { state.ov = { t: 0, imp: {}, pin: {}, cat: {}, nl: {} }; ovSave(); render(); } });
+getJson("data/overrides.json").catch(() => null).then(o => { ovLoad(o); if (state.items.length) render(); });
 
 $("q").addEventListener("input", e => { state.q = e.target.value; render(); });
 $("impOnly").addEventListener("change", e => { state.impOnly = e.target.checked; render(); });
