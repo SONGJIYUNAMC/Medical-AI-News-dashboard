@@ -126,6 +126,7 @@
 @media(max-width:800px){.wkgrid{grid-template-columns:1fr}}
 
 .editbox{margin-top:6px;font-size:12px}.editbox summary{cursor:pointer;color:var(--muted);display:inline-block}
+.tab.mini{padding:2px 10px;font-size:12px;line-height:1.7}article.nl-on{border-left:3px solid var(--navy)}.editwrap{margin-top:8px;border-top:1px dashed var(--line);padding-top:8px}
 .editrow{display:flex;flex-wrap:wrap;gap:6px;margin-top:6px}.editrow select,.editrow .tab{font:inherit;font-size:12px;padding:3px 8px;width:auto}
 .homehead,.homegrid{grid-column:1/-1}
 .homehead{font-size:13px;color:var(--muted);margin:0 0 12px}
@@ -232,6 +233,11 @@ const IMP_RULES = [
 // ---- 직접 지정(중요도·대표 기사·카테고리): 이 브라우저에 저장, 내보내기 파일(data/overrides.json)로 공유 ----
 const OV_KEY = "newsOverrides";
 state.ov = { t: 0, imp: {}, pin: {}, cat: {}, nl: {}, ti: {} };
+state.snap = {};                                  // 주간 확정본: 주 코드 → {w, t, rows}
+const SNAP_KEY = "medai_snap_v1";
+function snapLoad() { try { state.snap = JSON.parse(localStorage.getItem(SNAP_KEY) || "{}") || {}; } catch (e) { state.snap = {}; } }
+function snapSaveLocal() { try { localStorage.setItem(SNAP_KEY, JSON.stringify(state.snap)); } catch (e) {} }
+snapLoad();
 const ovKey = it => it.originallink || it.link || it.title;
 function ovSave() { state.ov.t = Date.now(); try { localStorage.setItem(OV_KEY, JSON.stringify(state.ov)); } catch (e) {} if (!fbDb) ghSync(); }
 function ovNorm(o) { return { t: +(o && o.t) || 0, imp: (o && o.imp) || {}, pin: (o && o.pin) || {}, cat: (o && o.cat) || {}, nl: (o && o.nl) || {}, ti: (o && o.ti) || {} }; }
@@ -575,6 +581,11 @@ function fbInit() {
     snap.forEach(d => { const x = d.data(); if (!x.k) return; if (x.imp) imp[x.k] = x.imp; if (x.nl) nl[x.k] = 1; if (x.cat) cat[x.k] = x.cat; if (x.ti) ti[x.k] = x.ti; });
     state.ov.imp = imp; state.ov.nl = nl; state.ov.cat = cat; state.ov.ti = ti; done(snap);
   }, bad);
+  fbDb.collection("weeks").onSnapshot(snap => {
+    const sn = {};
+    snap.forEach(d => { const x = d.data(); if (!x.w) return; let rows = []; try { rows = JSON.parse(x.rows || "[]"); } catch (e) {} if (rows.length) sn[x.w] = { w: x.w, t: x.t || 0, rows }; });
+    state.snap = sn; snapSaveLocal(); done(snap);
+  }, bad);
   fbDb.collection("pins").onSnapshot(snap => {
     const pin = {}; snap.forEach(d => { const x = d.data(); if (x.k && Array.isArray(x.keys)) pin[x.k] = x.keys; });
     state.ov.pin = pin; done(snap);
@@ -729,11 +740,98 @@ function csvRow(it, day) {
   return [regionOf(it), day, catOf(it), it.title, it.gov ? it.agency : it.global ? (it.sources || []).join("/") : host(it.originallink || it.link),
     it.originallink || it.link, (it.pubDate || "").slice(0, 10), lv === 3 ? "상" : lv === 2 ? "중" : "", state.ov.nl[ovKey(it)] ? "Y" : "", it.summary || ""];
 }
+// ---------- 주간 확정(스냅샷) ----------
+const snapWeek = () => (state.manifest ? (weeksFor(state.period)[0] || "") : "");
+const snapOf = w => (w && state.snap[w] && state.snap[w].rows && state.snap[w].rows.length ? state.snap[w] : null);
+function snapRowsFor(week) {   // 이 주에 선정된 기사 전부(국내+해외)를 표 한 줄씩으로
+  const rows = [];
+  ["국내", "해외"].forEach(region => {
+    const by = weeklyBy(region === "해외", week);
+    orderedCats([...by.keys()]).forEach(c => by.get(c).forEach(x => rows.push(csvRow(x.it, x.day))));
+  });
+  return rows;
+}
+function snapSet(w, rows) {
+  if (rows && rows.length) state.snap[w] = { w, t: Date.now(), rows }; else delete state.snap[w];
+  snapSaveLocal();
+  if (fbDb) fbWrite("weeks", w, { w, rows: JSON.stringify(rows || []), n: (rows || []).length });
+  render();
+}
+function snapConfirm(w) {
+  const rows = snapRowsFor(w);
+  if (!rows.length) { alert("이 주에 선정된 기사가 없습니다."); return; }
+  const nl = rows.filter(r => r[8] === "Y").length;
+  if (!confirm(`${weekName(w)} 확정: 선정 기사 ${rows.length}건(뉴스레터 후보 ${nl}건)을 이 주의 확정본으로 저장합니다.\n확정 후에는 주간 대시보드가 이 내용으로 고정됩니다.`)) return;
+  snapSet(w, rows);
+}
+// ---------- xlsx(엑셀) 만들기 ----------
+function crc32(u8) {
+  let t = crc32.t;
+  if (!t) { t = crc32.t = new Uint32Array(256); for (let n = 0; n < 256; n++) { let c = n; for (let k = 0; k < 8; k++) c = c & 1 ? 0xEDB88320 ^ (c >>> 1) : c >>> 1; t[n] = c >>> 0; } }
+  let crc = 0xFFFFFFFF;
+  for (let i = 0; i < u8.length; i++) crc = (crc >>> 8) ^ t[(crc ^ u8[i]) & 0xFF];
+  return (crc ^ 0xFFFFFFFF) >>> 0;
+}
+function zipStore(files) {
+  const enc = s => new TextEncoder().encode(s), parts = [], cen = [];
+  let off = 0;
+  files.forEach(f => {
+    const nm = enc(f.name), crc = crc32(f.data), sz = f.data.length;
+    const lh = new DataView(new ArrayBuffer(30));
+    lh.setUint32(0, 0x04034b50, true); lh.setUint16(4, 20, true); lh.setUint16(6, 0x0800, true);
+    lh.setUint32(14, crc, true); lh.setUint32(18, sz, true); lh.setUint32(22, sz, true);
+    lh.setUint16(26, nm.length, true);
+    parts.push(new Uint8Array(lh.buffer), nm, f.data);
+    const ch = new DataView(new ArrayBuffer(46));
+    ch.setUint32(0, 0x02014b50, true); ch.setUint16(4, 20, true); ch.setUint16(6, 20, true); ch.setUint16(8, 0x0800, true);
+    ch.setUint32(16, crc, true); ch.setUint32(20, sz, true); ch.setUint32(24, sz, true);
+    ch.setUint16(28, nm.length, true); ch.setUint32(42, off, true);
+    cen.push(new Uint8Array(ch.buffer), nm);
+    off += 30 + nm.length + sz;
+  });
+  let cLen = 0; cen.forEach(x => cLen += x.length);
+  const ed = new DataView(new ArrayBuffer(22));
+  ed.setUint32(0, 0x06054b50, true); ed.setUint16(8, files.length, true); ed.setUint16(10, files.length, true);
+  ed.setUint32(12, cLen, true); ed.setUint32(16, off, true);
+  return new Blob([...parts, ...cen, new Uint8Array(ed.buffer)], { type: "application/vnd.openxmlformats-officedocument.spreadsheetml.sheet" });
+}
+const xlEsc = v => String(v ?? "").replace(/[\x00-\x08\x0b\x0c\x0e-\x1f]/g, "").replace(/&/g, "&amp;").replace(/</g, "&lt;").replace(/>/g, "&gt;");
+function xlCol(i) { let s = "", n = i + 1; while (n) { const m = (n - 1) % 26; s = String.fromCharCode(65 + m) + s; n = Math.floor((n - 1) / 26); } return s; }
+function xlSheet(rows) {
+  const body = rows.map((r, ri) => `<row r="${ri + 1}">` + r.map((v, ci) => `<c r="${xlCol(ci)}${ri + 1}" t="inlineStr"${ri === 0 ? ' s="1"' : ''}><is><t xml:space="preserve">${xlEsc(v)}</t></is></c>`).join("") + "</row>").join("");
+  const w = (rows[0] || []).map((_, i) => `<col min="${i + 1}" max="${i + 1}" width="${[10, 11, 16, 52, 16, 40, 12, 9, 11, 70][i] || 16}" customWidth="1"/>`).join("");
+  return `<?xml version="1.0" encoding="UTF-8" standalone="yes"?><worksheet xmlns="http://schemas.openxmlformats.org/spreadsheetml/2006/main"><cols>${w}</cols><sheetData>${body}</sheetData></worksheet>`;
+}
+function xlsxSave(filename, sheets) {
+  const enc = s => new TextEncoder().encode(s), N = sheets.length;
+  const ct = `<?xml version="1.0" encoding="UTF-8" standalone="yes"?><Types xmlns="http://schemas.openxmlformats.org/package/2006/content-types"><Default Extension="rels" ContentType="application/vnd.openxmlformats-package.relationships+xml"/><Default Extension="xml" ContentType="application/xml"/><Override PartName="/xl/workbook.xml" ContentType="application/vnd.openxmlformats-officedocument.spreadsheetml.sheet.main+xml"/><Override PartName="/xl/styles.xml" ContentType="application/vnd.openxmlformats-officedocument.spreadsheetml.styles+xml"/>` +
+    sheets.map((_, i) => `<Override PartName="/xl/worksheets/sheet${i + 1}.xml" ContentType="application/vnd.openxmlformats-officedocument.spreadsheetml.worksheet+xml"/>`).join("") + `</Types>`;
+  const rels = `<?xml version="1.0" encoding="UTF-8" standalone="yes"?><Relationships xmlns="http://schemas.openxmlformats.org/package/2006/relationships"><Relationship Id="rId1" Type="http://schemas.openxmlformats.org/officeDocument/2006/relationships/officeDocument" Target="xl/workbook.xml"/></Relationships>`;
+  const wb = `<?xml version="1.0" encoding="UTF-8" standalone="yes"?><workbook xmlns="http://schemas.openxmlformats.org/spreadsheetml/2006/main" xmlns:r="http://schemas.openxmlformats.org/officeDocument/2006/relationships"><sheets>` +
+    sheets.map((sh, i) => `<sheet name="${xlEsc(sh.name).slice(0, 31)}" sheetId="${i + 1}" r:id="rId${i + 1}"/>`).join("") + `</sheets></workbook>`;
+  const wbr = `<?xml version="1.0" encoding="UTF-8" standalone="yes"?><Relationships xmlns="http://schemas.openxmlformats.org/package/2006/relationships">` +
+    sheets.map((_, i) => `<Relationship Id="rId${i + 1}" Type="http://schemas.openxmlformats.org/officeDocument/2006/relationships/worksheet" Target="worksheets/sheet${i + 1}.xml"/>`).join("") +
+    `<Relationship Id="rId${N + 1}" Type="http://schemas.openxmlformats.org/officeDocument/2006/relationships/styles" Target="styles.xml"/></Relationships>`;
+  const st = `<?xml version="1.0" encoding="UTF-8" standalone="yes"?><styleSheet xmlns="http://schemas.openxmlformats.org/spreadsheetml/2006/main"><fonts count="2"><font><sz val="11"/><name val="맑은 고딕"/></font><font><b/><sz val="11"/><name val="맑은 고딕"/></font></fonts><fills count="1"><fill><patternFill patternType="none"/></fill></fills><borders count="1"><border/></borders><cellStyleXfs count="1"><xf numFmtId="0" fontId="0" fillId="0" borderId="0"/></cellStyleXfs><cellXfs count="2"><xf numFmtId="0" fontId="0" fillId="0" borderId="0" xfId="0" applyAlignment="1"><alignment vertical="top" wrapText="1"/></xf><xf numFmtId="0" fontId="1" fillId="0" borderId="0" xfId="0"/></cellXfs><cellStyles count="1"><cellStyle name="Normal" xfId="0" builtinId="0"/></cellStyles></styleSheet>`;
+  const files = [{ name: "[Content_Types].xml", data: enc(ct) }, { name: "_rels/.rels", data: enc(rels) },
+    { name: "xl/workbook.xml", data: enc(wb) }, { name: "xl/_rels/workbook.xml.rels", data: enc(wbr) }, { name: "xl/styles.xml", data: enc(st) },
+    ...sheets.map((sh, i) => ({ name: `xl/worksheets/sheet${i + 1}.xml`, data: enc(xlSheet(sh.rows)) }))];
+  const blob = zipStore(files);
+  const a = document.createElement("a"); a.href = URL.createObjectURL(blob); a.setAttribute("download", filename);
+  document.body.append(a); a.click(); setTimeout(() => { URL.revokeObjectURL(a.href); a.remove(); }, 1000);
+}
+const NL_HEAD = ["순번", "구분", "카테고리", "제목", "출처", "링크", "발행일", "선정일", "중요도", "요약", "뉴스레터 문안(직접 작성)"];
+function newsletterXlsx(w, rows) {
+  const cand = rows.filter(r => r[8] === "Y");
+  if (!cand.length) { alert("뉴스레터 후보로 체크된 기사가 없습니다. 기사 카드의 '뉴스레터 후보'를 체크해 주세요."); return; }
+  const nl = [NL_HEAD, ...cand.map((r, i) => [i + 1, r[0], r[2], r[3], r[4], r[5], r[6], r[1], r[7], r[9], ""])];
+  xlsxSave(`newsletter_${w || "week"}.xlsx`, [{ name: "뉴스레터 초안", rows: nl }, { name: "주간 선정 전체", rows: [CSV_HEAD, ...rows] }]);
+}
 function csvBtn(label, fn) { const b = el("button", { type: "button", className: "tab", textContent: label }); b.onclick = fn; return b; }
-function weeklyBy() {
+function weeklyBy(gl, week) {
   const by = new Map();
-  const put = (day, region) => dayPicksFor(day, region).forEach((p, c) => { if (!by.has(c)) by.set(c, []); p.top.forEach(it => by.get(c).push({ it, day })); });
-  daysLoaded().forEach(day => put(day, state.wkGl ? "해외" : "국내"));
+  const put = (day, region) => dayPicksFor(day, region).forEach((p, c) => { if (!by.has(c)) by.set(c, []); p.top.forEach(it => { if (!week || it._week === week) by.get(c).push({ it, day }); }); });
+  daysLoaded().forEach(day => put(day, (gl === undefined ? state.wkGl : gl) ? "해외" : "국내"));
   by.forEach(arr => arr.sort((a, b) => better(a.it, b.it) || (a.day < b.day ? 1 : -1)));
   return by;
 }
@@ -760,15 +858,15 @@ function renderToday(list) {
   list.append(el("div", { className: "wkhead" }, [el("h2", { textContent: "오늘의 주요 뉴스" }), dsel, regionChips(), dayCsv, more]));
   list.append(el("div", { className: "why wide", textContent: "수집한 뉴스 중 카테고리별 중요도·관련도가 높은 2건입니다. 중요도 변경·대표 고정은 모든 사용자에게 반영되고, 선정된 기사는 매일 자동으로 주간 대시보드에 쌓입니다." }));
   list.append(addLinkBox());
-  list.append(learnBox());
   const picks = dayPicksFor(day, state.region);
-  if (!picks.size) { list.append(el("div", { className: "empty", textContent: "이 날짜·구분에 수집된 기사가 없습니다." })); return; }
+  if (!picks.size) { list.append(el("div", { className: "empty", textContent: "이 날짜·구분에 수집된 기사가 없습니다." })); list.append(learnBox()); return; }
   orderedCats([...picks.keys()]).forEach(c => {
     const p = picks.get(c);
     list.append(el("section", { className: "wksec" }, [
       el("div", { className: "hch" }, [el("b", { textContent: c }), el("em", { textContent: md(day) + " " + p.total.toLocaleString() + "건 중 상위 " + p.top.length + "건" })]),
       el("div", { className: "wkgrid" }, p.top.map(it => newsCard(it, p.pk, true)))]));
   });
+  list.append(learnBox());
 }
 
 function renderWeekly(list) {
@@ -785,21 +883,67 @@ function renderWeekly(list) {
   const wkNl = csvBtn("뉴스레터 후보만 CSV", () => { const rows = weeklyRows(true); if (!rows.length) { alert("뉴스레터 후보로 체크된 선정 기사가 없습니다."); return; } csvSave(`newsletter_${wkName()}_${rg()}.csv`, CSV_HEAD, rows); });
   list.append(el("div", { className: "wkhead" }, [el("h2", { textContent: "주간 대시보드" }), weekSelect(), wchips, tg, wkCsv, wkNl, more]));
   list.append(el("div", { className: "why wide", textContent: "'오늘의 주요 뉴스'에서 매일 선정된 기사가 자동으로 모입니다. 정부 발표는 국내 뉴스의 한 카테고리로 함께 모이고, 해외는 따로 봅니다." }));
-  list.append(learnBox());
-  const cands = state.items.filter(it => state.ov.nl[ovKey(it)]);
-  const cp = el("details", { className: "candbox", open: cands.length > 0 }, [el("summary", { textContent: `뉴스레터 후보 ${cands.length}건` })]);
+
+  const wk = snapWeek(), sn = snapOf(wk);
+  const snRows = sn ? sn.rows : null;
+  const cands = snRows ? snRows.filter(r => r[8] === "Y") : state.items.filter(it => state.ov.nl[ovKey(it)]).sort(better);
+  const cp = el("details", { className: "candbox", open: true }, [el("summary", { textContent: `뉴스레터 후보 ${cands.length}건` + (sn ? " (확정본)" : "") })]);
+
+  // 확정 버튼 · 엑셀 초안 (목록 맨 위)
+  const topRow = el("div", { className: "editrow" }, []);
+  if (sn) {
+    const un = el("button", { type: "button", className: "tab", textContent: "확정 해제" });
+    un.onclick = () => { if (confirm(`${weekName(wk)} 확정을 해제하고 다시 자동 집계로 돌아갑니다.`)) snapSet(wk, []); };
+    topRow.append(el("span", { className: "chip imp3", textContent: weekName(wk) + " 확정됨" }),
+      el("span", { className: "why", textContent: fmtDate(new Date(sn.t).toISOString()) + " 기준 · 선정 " + sn.rows.length + "건" }), un);
+  } else {
+    const fx = el("button", { type: "button", className: "tab primary", textContent: "이번 주 확정" });
+    fx.onclick = () => snapConfirm(wk);
+    topRow.append(fx, el("span", { className: "why", textContent: "확정하면 " + (wk ? weekName(wk) : "이번 주") + " 선정 기사·후보가 지금 상태로 고정되고, 아래 엑셀 초안이 확정본으로 만들어집니다." }));
+  }
+  const xb = el("button", { type: "button", className: "tab", textContent: "뉴스레터 초안 엑셀 내려받기" });
+  xb.onclick = () => newsletterXlsx(wk, snRows || snapRowsFor(wk));
+  topRow.append(xb);
+  cp.append(topRow);
+
   if (cands.length) {
-    cands.sort(better).forEach(it => {
+    if (snRows) cands.forEach(r => cp.append(el("div", { className: "candrow" }, [
+      el("a", { href: safeUrl(r[5]), target: "_blank", rel: "noopener noreferrer", textContent: r[3] }), el("span", { className: "why", textContent: r[2] })])));
+    else cands.forEach(it => {
       const x = el("button", { type: "button", className: "tab", textContent: "후보 해제" });
       x.onclick = () => markSet(ovKey(it), "nl", false, it.title);
       cp.append(el("div", { className: "candrow" }, [el("a", { href: safeUrl(it.originallink || it.link), target: "_blank", rel: "noopener noreferrer", textContent: it.title }), el("span", { className: "why", textContent: catOf(it) }), x]));
     });
-    const cb = el("button", { type: "button", className: "tab", textContent: "후보 목록 복사" }); cb.onclick = () => copyCandidates(cands);
+    const cb = el("button", { type: "button", className: "tab", textContent: "후보 목록 복사" });
+    cb.onclick = () => copyCandidates(snRows ? cands.map(r => ({ title: r[3], originallink: r[5], agency: r[4], summary: r[9] })) : cands);
     cp.append(el("div", { className: "editrow" }, [cb]));
   } else cp.append(el("div", { className: "why", textContent: "기사 카드의 '뉴스레터 후보'를 체크하면 여기에 모입니다." }));
   list.append(cp);
+
+  if (snRows) {   // 확정본: 고정된 내용 그대로 표시
+    const reg = state.wkGl ? "해외" : "국내";
+    const by = new Map();
+    snRows.filter(r => r[0] === reg).forEach(r => { if (!by.has(r[2])) by.set(r[2], []); by.get(r[2]).push(r); });
+    if (!by.size) list.append(el("div", { className: "empty", textContent: "확정본에 이 구분의 기사가 없습니다." }));
+    orderedCats([...by.keys()]).forEach(c => {
+      const arr = by.get(c), shown = state.wkTop2 ? arr.slice(0, 2) : arr;
+      list.append(el("section", { className: "wksec" }, [
+        el("div", { className: "hch" }, [el("b", { textContent: c }), el("em", { textContent: "확정 " + arr.length + "건" + (state.wkTop2 ? " 중 상위 " + shown.length + "건" : "") })]),
+        el("div", { className: "wkgrid" }, shown.map(r => el("div", { className: "wkcard" + (r[8] === "Y" ? " nl-on" : "") }, [
+          el("h3", {}, [el("a", { href: safeUrl(r[5]), target: "_blank", rel: "noopener noreferrer", textContent: r[3] })]),
+          (r[9] ? el("p", { textContent: r[9] }) : ""),
+          el("div", { className: "foot" }, [
+            ...(r[7] ? [el("span", { className: "chip imp" + (r[7] === "상" ? 3 : 2), textContent: "중요도 " + r[7] })] : []),
+            ...(r[8] === "Y" ? [el("span", { className: "chip", textContent: "뉴스레터 후보" })] : []),
+            el("span", { className: "chip score", textContent: "선정 " + md(r[1]) }),
+            el("span", { textContent: r[4] }), el("span", { textContent: r[6] })])])))]));
+    });
+    list.append(learnBox());
+    return;
+  }
+
   const by = weeklyBy();
-  if (!by.size) { list.append(el("div", { className: "empty", textContent: "이 기간·구분에 선정된 기사가 없습니다." })); return; }
+  if (!by.size) { list.append(el("div", { className: "empty", textContent: "이 기간·구분에 선정된 기사가 없습니다." })); list.append(learnBox()); return; }
   orderedCats([...by.keys()]).forEach(c => {
     const arr = by.get(c);
     const shown = state.wkTop2 ? arr.slice(0, 2) : arr;
@@ -807,6 +951,7 @@ function renderWeekly(list) {
       el("div", { className: "hch" }, [el("b", { textContent: c }), el("em", { textContent: "선정 " + arr.length + "건" + (state.wkTop2 ? " 중 상위 " + shown.length + "건" : "") })]),
       el("div", { className: "wkgrid" }, shown.map(x => newsCard(x.it, "", false, x.day)))]));
   });
+  list.append(learnBox());
 }
 
 // ================= 다른 뉴스 보기: 카테고리 목록 → 뉴스 목록 =================
@@ -847,14 +992,17 @@ function render() {
   if (!rows.length) { list.append(el("div", { className: "empty", textContent: "조건에 맞는 기사가 없습니다." })); return; }
   rows.forEach(it => {
     const a = el("a", { href: safeUrl(it.originallink || it.link), target: "_blank", rel: "noopener noreferrer", textContent: it.title });
-    const foot = el("div", { className: "foot" }, [
-      ...(impOf(it).lv ? [el("span", { className: "chip imp" + impOf(it).lv, title: "중요도 점수 " + impOf(it).sc.toFixed(1) + " · " + impOf(it).why.join(", "),
-        textContent: (impOf(it).lv === 3 ? "중요도 상" : "중요도 중") })] : []),
+    const im = impOf(it);
+    // 목록에서는 제목·요약·중요도만 보여주고, 나머지 정보와 수정 기능은 '편집'을 눌렀을 때만
+    const head = el("div", { className: "foot" }, [
+      ...(im.lv ? [el("span", { className: "chip imp" + im.lv, title: "중요도 점수 " + im.sc.toFixed(1) + " · " + im.why.join(", "),
+        textContent: (im.lv === 3 ? "중요도 상" : "중요도 중") })] : [el("span", { className: "chip", textContent: "중요도 없음" })]),
+    ]);
+    const detail = el("div", { className: "foot" }, [
       el("span", { className: "chip", textContent: catOf(it) }),
-      ...(it.gov ? [el("span", { className: "chip score", textContent: it.kind }),
-           ...((it.kw && it.kw.length) ? [el("span", { className: "kws", textContent: "키워드: " + it.kw.join(", ") })] : [])]
-        : [el("span", { className: "chip score", textContent: "관련도 " + (it.score ?? 0) }),
-           ...((it.kw && it.kw.length) ? [el("span", { className: "kws", textContent: "키워드: " + it.kw.join(", ") })] : [])]),
+      ...(it.gov ? [el("span", { className: "chip score", textContent: it.kind })]
+        : [el("span", { className: "chip score", textContent: "관련도 " + (it.score ?? 0) })]),
+      ...((it.kw && it.kw.length) ? [el("span", { className: "kws", textContent: "키워드: " + it.kw.join(", ") })] : []),
       el("span", { textContent: it.gov ? it.agency : it.global ? (it.sources || []).join(", ") + " (Google News)" : host(it.originallink || it.link) }),
       ...(it.source_type === "major" ? [el("span", { className: "chip", textContent: "주요 일간지" })]
         : it.source_type === "medical" ? [el("span", { className: "chip", textContent: "의료 전문지" })]
@@ -862,10 +1010,15 @@ function render() {
       ...(it.similar_count ? [el("span", { className: "chip score", title: (it.similar_sources || []).join(", "),
         textContent: "유사 기사 " + it.similar_count + "건" })] : []),
       el("span", { textContent: fmtDate(it.pubDate) }),
-      editBox(it),
       ...(it.first_seen ? [el("span", { className: "chip score", textContent: "수집 " + it.first_seen.slice(5) })] : []),
     ]);
-    list.append(el("article", { className: it.similar_count ? "hi" : "" }, [el("h2", {}, [a]), (it.summary ? el("p", { textContent: it.summary }) : ""), foot]));
+    const more = el("div", { className: "editwrap" }, [detail, el("div", { className: "editrow" }, [impSelect(it), catSelect(it), nlCheck(it)])]);
+    more.style.display = "none";
+    const tgl = el("button", { type: "button", className: "tab mini", textContent: "편집" });
+    tgl.onclick = () => { const on = more.style.display === "none"; more.style.display = on ? "" : "none"; tgl.textContent = on ? "닫기" : "편집"; };
+    head.append(tgl);
+    list.append(el("article", { className: (it.similar_count ? "hi" : "") + (state.ov.nl[ovKey(it)] ? " nl-on" : "") },
+      [el("h2", {}, [a]), (it.summary ? el("p", { textContent: it.summary }) : ""), head, more]));
   });
 }
 
