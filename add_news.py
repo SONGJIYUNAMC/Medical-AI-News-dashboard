@@ -92,7 +92,7 @@ def build_item(url, region, category, title_in, doc=None, final_url=None, now=No
             "region": region, "queries": ["직접 등록"], "manual": True, "first_seen": now.date().isoformat(), "score": 99}
     if region == "해외":
         item["sources"] = [info["site"] or nn.host_of(link)]
-        item["category"] = category or "해외 직접 등록"
+        item["category"] = category or "해외"
         item["source_type"] = ""
     else:
         cc = nn.compile_cfg(json.loads(Path("keywords.json").read_text(encoding="utf-8")))
