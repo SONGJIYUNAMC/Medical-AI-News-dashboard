@@ -433,5 +433,8 @@
     "((?-i:AI)|인공지능)\\s?기본법": "AI 기본법",
     "EU\\s?AI\\s?Act|유럽연합\\s?인공지능법|유럽\\s?AI\\s?법": "EU AI Act"
   },
-  "tracked_exclude": []
+  "tracked_exclude": [],
+  "drop_categories": [
+    "기타 (의료 AI·병원 AI 키워드)"
+  ]
 }
