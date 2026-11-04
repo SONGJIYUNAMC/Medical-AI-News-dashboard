@@ -189,7 +189,7 @@
 <script>
 const REL = /의료|병원|헬스|환자|진료|임상|의사|간호|보건|의약|바이오|건강|health|hospital|clinic|medical|patient/i;
 const AI_T = /(^|[^A-Za-z])AI(?![A-Za-z])|인공지능|딥러닝|머신러닝|생성형|LLM|언어\s?모델|챗\s?GPT|파운데이션\s?모델|디지털의료기기/i;
-const state = { items: [], order: [], hotOpen: window.innerWidth >= 700, period: "", day: "전체", weeksLoaded: [], manifest: null, region: "국내", cat: "전체", q: "", rel: false, aiT: false, impOnly: false, sort: "imp", today: true, home: false, cats: false, wkTop2: false, todayDay: "" };
+const state = { items: [], order: [], hotOpen: window.innerWidth >= 700, period: "", day: "전체", weeksLoaded: [], manifest: null, region: "국내", cat: "전체", q: "", rel: false, aiT: false, impOnly: false, sort: "imp", today: true, home: false, cats: false, wkTop2: false, wkGl: false, todayDay: "" };
 function setView(v) { state.today = v === "today"; state.home = v === "weekly"; state.cats = v === "cats"; }
 const $ = id => document.getElementById(id);
 
@@ -244,7 +244,7 @@ const POLICY_DOC = /설명회|가이드라인|개정|입법|시행|고시|지침
 const POLICY_AGENCY = /복지부|식약처|식품의약품안전|심평원|건보공단|과기정통부|질병관리청|보건산업진흥원|한국보건의료연구원|국회|정부/;
 const GOV_TERM = /거버넌스|환자안전|환각|드리프트|이상사례|사후\s?모니터링|도입\s?심의|개발자\s?책임|책임\s?(소재|논란|공방)|AI\s?책임|법적\s?책임|편향|랜섬웨어|개인정보\s?유출|해킹/;
 const HOSP_NAME = /서울아산|아산병원|서울대병원|서울대학교병원|분당서울대|삼성서울|세브란스|서울성모|상급종합|스마트\s?(병원|병동)|앰비언트|[가-힣]{2,6}(대|의료원)?병원/;
-const DOM_CATS = ["국내 정책·규제", "국내 의료기관", "국내 의료 AI 기업", "AI 거버넌스·보안", "학술·연구·행사", "해외", "기타 (의료 AI·병원 AI 키워드)"];
+const DOM_CATS = ["국내 정책·규제", "국내 의료기관", "국내 의료 AI 기업", "AI 거버넌스·보안", "학술·연구·행사", "해외"];
 function autoCat(it) {
   const c = it.category || "기타", t = it.title || "", txt = t + " " + (it.summary || "");
   if (it.region === "해외" || it.global || /^해외/.test(c)) return "해외";
@@ -361,7 +361,7 @@ const regionOf = it => (it.gov ? "정부" : it.global ? "해외" : "국내");
 const todayKST = () => new Date(Date.now() + 9 * 3600 * 1000).toISOString().slice(0, 10);
 const RECRUIT = /채용|인재\s?영입|직원\s?모집|수시\s?모집|인턴\s?모집|오늘의\s?국회|국회\s?일정|오늘의\s?일정|(오늘|내일|이번\s?주)\s?일정|한방|한의|한약|개교\s?\d*\s?(주년|기념)|개원\s?\d+\s?주년|\d+\s?주년|고병원성|조류\s?(인플루엔자|독감)|철새|살처분|산란계|가금|인수공통|사육|농장|계란/;
 // 정부 발표 탭: 언론 기사(검색 결과)는 제외하고 기관 직접 발표만(이전에 저장된 데이터 보정)
-const keepItem = it => !RECRUIT.test(it.title) &&
+const keepItem = it => !RECRUIT.test(it.title) && !(it.region === "국내" && !it.manual && /^기타/.test(it.category || "")) &&
   !(it.region === "정부" && it.via === "gnews" && it.agency === "국가인공지능전략위원회" && !it.official);
 const REGION_LABEL = { "국내": "국내 뉴스 (네이버)", "해외": "해외 뉴스 (Google News)", "정부": "정부 발표 (부처 보도자료)" };
 
@@ -633,7 +633,7 @@ function editBox(it) {
 }
 
 // ================= 홈: 주간 대시보드 =================
-const pinKey = (day, c) => `d:${day}|${state.region}|${c}`;
+const pinKey = (day, c, r) => `d:${day}|${r || state.region}|${c}`;
 const pinsOf = pk => { const v = state.ov.pin[pk]; return Array.isArray(v) ? v : []; };
 const better = (a, b) => (impOf(b).sc - impOf(a).sc) || ((b.similar_count || 0) - (a.similar_count || 0)) || (a.pubDate < b.pubDate ? 1 : -1);
 function regionChips() {
@@ -703,8 +703,8 @@ function dayPicksFor(day, region) {
   const out = new Map();
   by.forEach((arr, c) => {
     arr.sort(better);
-    const pinned = pinsOf(pinKey(day, c)).map(k => arr.find(x => ovKey(x) === k)).filter(Boolean);
-    out.set(c, { total: arr.length, pk: pinKey(day, c), top: [...pinned, ...arr.filter(x => !pinned.includes(x))].slice(0, 2) });
+    const pinned = pinsOf(pinKey(day, c, region)).map(k => arr.find(x => ovKey(x) === k)).filter(Boolean);
+    out.set(c, { total: arr.length, pk: pinKey(day, c, region), top: [...pinned, ...arr.filter(x => !pinned.includes(x))].slice(0, 2) });
   });
   return out;
 }
@@ -734,13 +734,23 @@ function renderToday(list) {
   });
 }
 
+// 정부 발표: 하루 상위 2건(오늘의 주요 뉴스에서 직접 고정한 기사 우선) — 주간 대시보드에서 하나의 카테고리로 합쳐 사용
+function govDayPicks(day) {
+  const all = state.items.filter(it => it.first_seen === day && regionOf(it) === "정부").sort(better);
+  const pinned = [];
+  new Set(all.map(catOf)).forEach(c => pinsOf(`d:${day}|정부|${c}`).forEach(k => { const x = all.find(i => ovKey(i) === k); if (x && !pinned.includes(x)) pinned.push(x); }));
+  return [...pinned, ...all.filter(x => !pinned.includes(x))].slice(0, 2);
+}
 function renderWeekly(list) {
   const more = el("button", { type: "button", className: "tab primary", textContent: "다른 뉴스 보기 →" });
   more.onclick = () => { setView("cats"); state.day = "전체"; setDaySelects("전체"); clearSearch(); render(); window.scrollTo(0, 0); };
   const tg = el("select", { ariaLabel: "표시 방식" }, [el("option", { value: "0", textContent: "일별 선정 기사 모두" }), el("option", { value: "1", textContent: "카테고리별 중요도 상위 2건만" })]);
   tg.value = state.wkTop2 ? "1" : "0"; tg.onchange = () => { state.wkTop2 = tg.value === "1"; render(); };
-  list.append(el("div", { className: "wkhead" }, [el("h2", { textContent: "주간 대시보드" }), weekSelect(), regionChips(), tg, more]));
-  list.append(el("div", { className: "why wide", textContent: "'오늘의 주요 뉴스'에서 매일 선정된 기사(카테고리별 2건)가 자동으로 모입니다." }));
+  const wchips = el("div", { className: "chips" }, [["kr", "국내·정부"], ["gl", "해외"]].map(([v, t]) => {
+    const x = el("button", { type: "button", className: "tab" + ((state.wkGl ? "gl" : "kr") === v ? " active" : ""), textContent: t });
+    x.onclick = () => { state.wkGl = v === "gl"; render(); }; return x; }));
+  list.append(el("div", { className: "wkhead" }, [el("h2", { textContent: "주간 대시보드" }), weekSelect(), wchips, tg, more]));
+  list.append(el("div", { className: "why wide", textContent: "'오늘의 주요 뉴스'에서 매일 선정된 기사가 자동으로 모입니다. 국내 뉴스와 정부 발표는 합쳐서 보여주고(정부 발표는 하루 2건), 해외는 따로 봅니다." }));
   list.append(learnBox());
   const cands = state.items.filter(it => state.ov.nl[ovKey(it)]);
   const cp = el("details", { className: "candbox", open: cands.length > 0 }, [el("summary", { textContent: `뉴스레터 후보 ${cands.length}건` })]);
@@ -755,10 +765,11 @@ function renderWeekly(list) {
   } else cp.append(el("div", { className: "why", textContent: "기사 카드의 '뉴스레터 후보'를 체크하면 여기에 모입니다." }));
   list.append(cp);
   const by = new Map();
-  daysLoaded().forEach(day => dayPicksFor(day, state.region).forEach((p, c) => {
-    if (!by.has(c)) by.set(c, []);
-    p.top.forEach(it => by.get(c).push({ it, day }));
-  }));
+  daysLoaded().forEach(day => {
+    if (state.wkGl) { dayPicksFor(day, "해외").forEach((p, c) => { if (!by.has(c)) by.set(c, []); p.top.forEach(it => by.get(c).push({ it, day })); }); return; }
+    dayPicksFor(day, "국내").forEach((p, c) => { if (!by.has(c)) by.set(c, []); p.top.forEach(it => by.get(c).push({ it, day })); });
+    govDayPicks(day).forEach(it => { if (!by.has("정부 발표")) by.set("정부 발표", []); by.get("정부 발표").push({ it, day }); });
+  });
   if (!by.size) { list.append(el("div", { className: "empty", textContent: "이 기간·구분에 선정된 기사가 없습니다." })); return; }
   orderedCats([...by.keys()]).forEach(c => {
     const arr = by.get(c).sort((a, b) => better(a.it, b.it) || (a.day < b.day ? 1 : -1));
