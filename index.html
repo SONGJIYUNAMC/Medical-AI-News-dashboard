@@ -468,7 +468,7 @@ async function addByLink(url, region, category, title) {
 // ================= 공유 저장 (Firebase Firestore) — 여러 사람이 같은 중요도·후보·고정을 보고 바꿈 =================
 // 설정: Firebase 콘솔에서 만든 웹 앱 설정값을 아래 null 대신 { apiKey: "...", authDomain: "...", projectId: "...", appId: "..." } 형태로 붙여넣으세요.
 // (이 값은 공개되어도 되는 식별 정보입니다. 쓰기 권한은 Firebase 보안 규칙과 로그인 비밀번호가 막습니다.)
-const firebaseConfig = {
+const FIREBASE_CONFIG = {
   apiKey: "AIzaSyCy2QRhACTvjamy56JMHzxnxxNQYyptQfw",
   authDomain: "news-monitor-9797c.firebaseapp.com",
   projectId: "news-monitor-9797c",
