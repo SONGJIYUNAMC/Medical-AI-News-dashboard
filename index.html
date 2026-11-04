@@ -997,9 +997,10 @@ function render() {
     const head = el("div", { className: "foot" }, [
       ...(im.lv ? [el("span", { className: "chip imp" + im.lv, title: "중요도 점수 " + im.sc.toFixed(1) + " · " + im.why.join(", "),
         textContent: (im.lv === 3 ? "중요도 상" : "중요도 중") })] : [el("span", { className: "chip", textContent: "중요도 없음" })]),
+      el("span", { className: "chip", textContent: catOf(it) }),
+      el("span", { textContent: fmtDate(it.pubDate) }),
     ]);
     const detail = el("div", { className: "foot" }, [
-      el("span", { className: "chip", textContent: catOf(it) }),
       ...(it.gov ? [el("span", { className: "chip score", textContent: it.kind })]
         : [el("span", { className: "chip score", textContent: "관련도 " + (it.score ?? 0) })]),
       ...((it.kw && it.kw.length) ? [el("span", { className: "kws", textContent: "키워드: " + it.kw.join(", ") })] : []),
@@ -1009,7 +1010,6 @@ function render() {
         : it.source_type === "global_pref" ? [el("span", { className: "chip", textContent: "주요 매체" })] : []),
       ...(it.similar_count ? [el("span", { className: "chip score", title: (it.similar_sources || []).join(", "),
         textContent: "유사 기사 " + it.similar_count + "건" })] : []),
-      el("span", { textContent: fmtDate(it.pubDate) }),
       ...(it.first_seen ? [el("span", { className: "chip score", textContent: "수집 " + it.first_seen.slice(5) })] : []),
     ]);
     const more = el("div", { className: "editwrap" }, [detail, el("div", { className: "editrow" }, [impSelect(it), catSelect(it), nlCheck(it)])]);
