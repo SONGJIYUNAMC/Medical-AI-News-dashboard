@@ -170,7 +170,7 @@
     <div class="ghstat" id="ghStat"></div>
     <h4>직접 지정</h4>
     <button class="tab csv" id="ovExp" type="button">내 지정 내보내기 (백업)</button>
-    <button class="tab csv" id="ovClr" type="button">내 지정 모두 초기화</button>
+    <div class="ghstat" id="fbStat"></div>
   </div>
 </aside>
 
@@ -183,6 +183,9 @@
 </div>
 </div>
 
+<script src="https://www.gstatic.com/firebasejs/10.12.2/firebase-app-compat.js"></script>
+<script src="https://www.gstatic.com/firebasejs/10.12.2/firebase-auth-compat.js"></script>
+<script src="https://www.gstatic.com/firebasejs/10.12.2/firebase-firestore-compat.js"></script>
 <script>
 const REL = /의료|병원|헬스|환자|진료|임상|의사|간호|보건|의약|바이오|건강|health|hospital|clinic|medical|patient/i;
 const AI_T = /(^|[^A-Za-z])AI(?![A-Za-z])|인공지능|딥러닝|머신러닝|생성형|LLM|언어\s?모델|챗\s?GPT|파운데이션\s?모델|디지털의료기기/i;
@@ -227,7 +230,7 @@ const IMP_RULES = [
 const OV_KEY = "newsOverrides";
 state.ov = { t: 0, imp: {}, pin: {}, cat: {}, nl: {} };
 const ovKey = it => it.originallink || it.link || it.title;
-function ovSave() { state.ov.t = Date.now(); try { localStorage.setItem(OV_KEY, JSON.stringify(state.ov)); } catch (e) {} ghSync(); }
+function ovSave() { state.ov.t = Date.now(); try { localStorage.setItem(OV_KEY, JSON.stringify(state.ov)); } catch (e) {} if (!fbDb) ghSync(); }
 function ovNorm(o) { return { t: +(o && o.t) || 0, imp: (o && o.imp) || {}, pin: (o && o.pin) || {}, cat: (o && o.cat) || {}, nl: (o && o.nl) || {} }; }
 // 이 브라우저 저장본과 GitHub 파일 중 더 최근에 바꾼 쪽을 사용
 function ovLoad(fileOv) {
@@ -462,6 +465,66 @@ async function addByLink(url, region, category, title) {
     : "요청에 실패했습니다(" + r.status + "). 토큰의 Actions 권한(Read and write)과 add-news.yml 업로드 여부를 확인하세요.");
 }
 
+// ================= 공유 저장 (Firebase Firestore) — 여러 사람이 같은 중요도·후보·고정을 보고 바꿈 =================
+// 설정: Firebase 콘솔에서 만든 웹 앱 설정값을 아래 null 대신 { apiKey: "...", authDomain: "...", projectId: "...", appId: "..." } 형태로 붙여넣으세요.
+// (이 값은 공개되어도 되는 식별 정보입니다. 쓰기 권한은 Firebase 보안 규칙과 로그인 비밀번호가 막습니다.)
+const FIREBASE_CONFIG = null;
+const FB_EMAIL = "team@news-monitor.example";   // Firebase 콘솔 Authentication에서 만든 공용 계정 이메일
+let fbDb = null, fbAuth = null, fbReady = null;
+function fbStatus(t) { const e = $("fbStat"); if (e) e.textContent = t; }
+function hash53(str) { // 기사 주소 → 짧은 문서 ID
+  let h1 = 0xdeadbeef, h2 = 0x41c6ce57;
+  for (let i = 0; i < str.length; i++) { const c = str.charCodeAt(i); h1 = Math.imul(h1 ^ c, 2654435761); h2 = Math.imul(h2 ^ c, 1597334677); }
+  h1 = Math.imul(h1 ^ (h1 >>> 16), 2246822507) ^ Math.imul(h2 ^ (h2 >>> 13), 3266489909);
+  h2 = Math.imul(h2 ^ (h2 >>> 16), 2246822507) ^ Math.imul(h1 ^ (h1 >>> 13), 3266489909);
+  return (4294967296 * (2097151 & h2) + (h1 >>> 0)).toString(36);
+}
+function fbInit() {
+  if (!FIREBASE_CONFIG) return;
+  if (!window.firebase) { fbStatus("공유 저장 불가: 구글 서버에 접속할 수 없습니다. 이 브라우저에만 저장됩니다."); return; }
+  try {
+    firebase.initializeApp(FIREBASE_CONFIG);
+    fbDb = firebase.firestore(); fbAuth = firebase.auth();
+    fbReady = new Promise(res => { const un = fbAuth.onAuthStateChanged(u => { un(); res(u); }); });
+  } catch (e) { fbDb = null; fbStatus("공유 저장 설정 오류: " + e.message); return; }
+  fbStatus("공유 저장: 연결 중…");
+  const done = snap => {
+    fbStatus("공유 저장: 연결됨" + (fbAuth.currentUser ? " (편집 가능)" : " (보기 전용 · 처음 바꿀 때 비밀번호 입력)"));
+    try { localStorage.setItem(OV_KEY, JSON.stringify(state.ov)); } catch (e) {}
+    if (!snap.metadata.hasPendingWrites && state.items.length) render();
+  };
+  const bad = e => fbStatus("공유 저장 오류: " + (e.code === "permission-denied" ? "읽기 권한 없음(보안 규칙 확인)" : e.message));
+  fbDb.collection("marks").onSnapshot(snap => {
+    const imp = {}, nl = {}, cat = {};
+    snap.forEach(d => { const x = d.data(); if (!x.k) return; if (x.imp) imp[x.k] = x.imp; if (x.nl) nl[x.k] = 1; if (x.cat) cat[x.k] = x.cat; });
+    state.ov.imp = imp; state.ov.nl = nl; state.ov.cat = cat; done(snap);
+  }, bad);
+  fbDb.collection("pins").onSnapshot(snap => {
+    const pin = {}; snap.forEach(d => { const x = d.data(); if (x.k && Array.isArray(x.keys)) pin[x.k] = x.keys; });
+    state.ov.pin = pin; done(snap);
+  }, bad);
+}
+async function fbEnsureAuth() {
+  await fbReady;
+  if (fbAuth.currentUser) return;
+  const pw = prompt("편집 비밀번호를 입력하세요 (처음 한 번만 · 이 브라우저에 로그인 유지)");
+  if (!pw) throw new Error("cancel");
+  try { await fbAuth.signInWithEmailAndPassword(FB_EMAIL, pw); fbStatus("공유 저장: 연결됨 (편집 가능)"); }
+  catch (e) { alert("비밀번호가 맞지 않습니다."); throw e; }
+}
+function fbWrite(coll, key, data) {
+  if (!fbDb) return;
+  fbEnsureAuth().then(() => fbDb.collection(coll).doc(hash53(key)).set({ ...data, t: Date.now() }, { merge: true }))
+    .catch(e => { if (e.message !== "cancel") fbStatus("저장 실패: " + (e.code || e.message)); });
+}
+function markSet(k, f, v) {
+  if (f === "imp") { if (v === "") delete state.ov.imp[k]; else state.ov.imp[k] = v; }
+  if (f === "nl") { if (v) state.ov.nl[k] = 1; else delete state.ov.nl[k]; }
+  if (f === "cat") { if (v === "") delete state.ov.cat[k]; else state.ov.cat[k] = v; }
+  ovSave(); fbWrite("marks", k, { k, [f]: f === "nl" ? !!v : v }); render();
+}
+function pinSet(pk, arr) { state.ov.pin[pk] = arr; ovSave(); fbWrite("pins", pk, { k: pk, keys: arr }); render(); }
+
 // ================= 중요도·뉴스레터 후보·대표 고정 =================
 const LV_LABEL = { 3: "상", 2: "중", 0: "없음" };
 function ovChanged() { ovSave(); render(); }
@@ -471,19 +534,19 @@ function impSelect(it) {
   [["", "중요도: 자동(" + (LV_LABEL[it.manual ? 3 : auto] || "없음") + ")"], ["3", "중요도: 상"], ["2", "중요도: 중"], ["0", "중요도: 없음"]]
     .forEach(([v, t]) => sel.append(el("option", { value: v, textContent: t })));
   sel.value = state.ov.imp[k] ?? "";
-  sel.onchange = () => { if (sel.value === "") delete state.ov.imp[k]; else state.ov.imp[k] = sel.value; ovChanged(); };
+  sel.onchange = () => markSet(k, "imp", sel.value);
   return sel;
 }
 function nlCheck(it) {
   const k = ovKey(it), box = el("input", { type: "checkbox", checked: !!state.ov.nl[k] });
-  box.onchange = () => { if (box.checked) state.ov.nl[k] = 1; else delete state.ov.nl[k]; ovChanged(); };
+  box.onchange = () => markSet(k, "nl", box.checked);
   return el("label", { className: "nl" }, [box, el("span", { textContent: " 뉴스레터 후보" })]);
 }
 function catSelect(it) {
   const k = ovKey(it), cs = el("select", { ariaLabel: "카테고리" });
   [...new Set([...state.order, catOf(it)])].forEach(c => cs.append(el("option", { value: c, textContent: "카테고리: " + c })));
   cs.value = catOf(it);
-  cs.onchange = () => { state.ov.cat[k] = cs.value; ovChanged(); };
+  cs.onchange = () => markSet(k, "cat", cs.value);
   return cs;
 }
 function editBox(it) {
@@ -524,8 +587,7 @@ function newsCard(it, c, pinnable) {
   pin.onclick = () => {
     const k = ovKey(it), cur = pinsOf(c).filter(x => x !== k);
     if (!pinned) cur.push(k);
-    state.ov.pin[pinKey(c)] = cur.slice(-2);
-    ovChanged();
+    pinSet(pinKey(c), cur.slice(-2));
   };
   return el("div", { className: "wkcard" + (state.ov.nl[ovKey(it)] ? " nl-on" : "") }, [
     el("h3", {}, [a]), (it.summary ? el("p", { textContent: it.summary }) : ""),
@@ -563,7 +625,7 @@ function renderWeekly(list) {
   if (cands.length) {
     cands.sort(better).forEach(it => {
       const x = el("button", { type: "button", className: "tab", textContent: "후보 해제" });
-      x.onclick = () => { delete state.ov.nl[ovKey(it)]; ovChanged(); };
+      x.onclick = () => markSet(ovKey(it), "nl", false);
       cp.append(el("div", { className: "candrow" }, [el("a", { href: safeUrl(it.originallink || it.link), target: "_blank", rel: "noopener noreferrer", textContent: it.title }), el("span", { className: "why", textContent: catOf(it) }), x]));
     });
     const cb = el("button", { type: "button", className: "tab", textContent: "후보 목록 복사" }); cb.onclick = () => copyCandidates(cands);
@@ -842,8 +904,8 @@ $("ghBtn").addEventListener("click", () => {
   if (k) { lsSet("ghToken", k); ghStatus("토큰 등록됨 · 변경 내용이 GitHub에 자동 저장됩니다"); }
 });
 if (ghTok()) ghStatus("GitHub 연결됨");
-$("ovClr").addEventListener("click", () => { if (confirm("직접 지정한 중요도·대표 기사·카테고리·뉴스레터 후보를 모두 초기화할까요?")) { state.ov = { t: 0, imp: {}, pin: {}, cat: {}, nl: {} }; ovSave(); render(); } });
-getJson("data/overrides.json").catch(() => null).then(o => { ovLoad(o); if (state.items.length) render(); });
+fbInit();
+if (!fbDb) getJson("data/overrides.json").catch(() => null).then(o => { ovLoad(o); if (state.items.length) render(); });
 
 $("q").addEventListener("input", e => { state.q = e.target.value; render(); });
 $("impOnly").addEventListener("change", e => { state.impOnly = e.target.checked; render(); });
