@@ -112,7 +112,7 @@
   }
 .wkhead{grid-column:1/-1;display:flex;flex-wrap:wrap;align-items:center;gap:8px 12px;margin:0 0 4px}.wkhead h2{margin:0;font-size:19px;color:var(--navy)}
 .wkhead select,.wkhead .tab,.editrow select,.editrow .tab,.addrow input,.addrow select,.addrow .tab{font:inherit;font-size:13px;width:auto;padding:4px 10px}
-.chips{display:flex;gap:6px}.chips .tab{padding:4px 12px}.tab.primary{background:var(--teal);color:#fff;border-color:var(--teal);margin-left:auto}
+.why.wide{grid-column:1/-1;margin:0 0 4px}.chips{display:flex;gap:6px}.chips .tab{padding:4px 12px}.tab.primary{background:var(--teal);color:#fff;border-color:var(--teal);margin-left:auto}
 .wksec,.addbox,.candbox{grid-column:1/-1;background:var(--card);border:1px solid var(--line);border-radius:12px;padding:14px 18px;box-shadow:var(--shadow)}
 .addbox summary,.candbox summary{cursor:pointer;font-weight:700;color:var(--navy)}.addrow{display:flex;flex-wrap:wrap;gap:6px;margin:10px 0 4px}.addrow input{flex:1 1 240px;border:1px solid var(--line);border-radius:8px;background:var(--card);color:var(--text)}
 .candrow{display:flex;gap:10px;align-items:center;padding:6px 0;border-top:1px solid var(--line)}.candrow a{flex:1;color:var(--text);text-decoration:none;font-size:14px}
@@ -189,7 +189,8 @@
 <script>
 const REL = /의료|병원|헬스|환자|진료|임상|의사|간호|보건|의약|바이오|건강|health|hospital|clinic|medical|patient/i;
 const AI_T = /(^|[^A-Za-z])AI(?![A-Za-z])|인공지능|딥러닝|머신러닝|생성형|LLM|언어\s?모델|챗\s?GPT|파운데이션\s?모델|디지털의료기기/i;
-const state = { items: [], order: [], hotOpen: window.innerWidth >= 700, period: "", day: "전체", weeksLoaded: [], manifest: null, region: "국내", cat: "전체", q: "", rel: false, aiT: false, impOnly: false, sort: "imp", home: true, cats: false };
+const state = { items: [], order: [], hotOpen: window.innerWidth >= 700, period: "", day: "전체", weeksLoaded: [], manifest: null, region: "국내", cat: "전체", q: "", rel: false, aiT: false, impOnly: false, sort: "imp", today: true, home: false, cats: false, wkTop2: false, todayDay: "" };
+function setView(v) { state.today = v === "today"; state.home = v === "weekly"; state.cats = v === "cats"; }
 const $ = id => document.getElementById(id);
 
 function fmtDate(iso) {
@@ -329,18 +330,17 @@ function setDaySelects(day) {
 
 function renderTabs() {
   const hb = $("homeBox"); hb.replaceChildren();
-  const hbtn = el("button", { className: "tab" + (state.home ? " active" : ""), type: "button" }, [el("span", { textContent: "홈 (주간 대시보드)" })]);
-  hbtn.onclick = () => { state.home = true; state.cats = false; state.cat = "전체"; clearSearch(); render(); };
-  const cbtn = el("button", { className: "tab" + (state.cats ? " active" : ""), type: "button" }, [el("span", { textContent: "다른 뉴스 보기" })]);
-  cbtn.onclick = () => { state.home = false; state.cats = true; state.cat = "전체"; state.day = "전체"; setDaySelects("전체"); clearSearch(); render(); };
-  hb.append(hbtn, cbtn);
+  const mk = (label, view, on) => { const x = el("button", { className: "tab" + (on ? " active" : ""), type: "button" }, [el("span", { textContent: label })]);
+    x.onclick = () => { setView(view); state.cat = "전체"; if (view === "cats") { state.day = "전체"; setDaySelects("전체"); } clearSearch(); render(); window.scrollTo(0, 0); }; return x; };
+  const hbtn = mk("홈 (오늘의 주요 뉴스)", "today", state.today), wbtn = mk("주간 대시보드", "weekly", state.home), cbtn = mk("다른 뉴스 보기", "cats", state.cats);
+  hb.append(hbtn, wbtn, cbtn);
   const rbox = $("regions");
   rbox.replaceChildren();
   ["국내", "정부", "해외"].forEach(r => {
     const n = state.items.filter(it => regionOf(it) === r).length;
     const b = el("button", { className: "tab" + (r === state.region ? " active" : ""), type: "button" },
                  [el("span", { textContent: REGION_LABEL[r] }), el("span", { className: "n", textContent: n.toLocaleString() })]);
-    b.onclick = () => { state.region = r; state.cat = "전체"; if (!state.home) { state.cats = true; state.day = "전체"; setDaySelects("전체"); } else applyDefaultDay(); clearSearch(); render(); };
+    b.onclick = () => { state.region = r; state.cat = "전체"; if (!state.today && !state.home) { setView("cats"); state.day = "전체"; setDaySelects("전체"); } else applyDefaultDay(); clearSearch(); render(); };
     rbox.append(b);
   });
   const inRegion = state.items.filter(it => regionOf(it) === state.region);
@@ -353,9 +353,9 @@ function renderTabs() {
   box.replaceChildren();
   cats.forEach(c => {
     const n = c === "전체" ? inRegion.length : counts[c];
-    const b = el("button", { className: "tab" + (!state.home && !state.cats && c === state.cat ? " active" : ""), type: "button" },
+    const b = el("button", { className: "tab" + (!state.today && !state.home && !state.cats && c === state.cat ? " active" : ""), type: "button" },
                  [el("span", { textContent: c }), el("span", { className: "n", textContent: n.toLocaleString() })]);
-    b.onclick = () => { state.cat = c; state.home = false; state.cats = false; clearSearch(); render(); };
+    b.onclick = () => { state.cat = c; setView("list"); clearSearch(); render(); };
     box.append(b);
   });
 }
@@ -561,8 +561,8 @@ function editBox(it) {
 }
 
 // ================= 홈: 주간 대시보드 =================
-const pinKey = c => `${state.period}|${state.region}|${c}`;
-const pinsOf = c => { const v = state.ov.pin[pinKey(c)]; return Array.isArray(v) ? v : []; };
+const pinKey = (day, c) => `d:${day}|${state.region}|${c}`;
+const pinsOf = pk => { const v = state.ov.pin[pk]; return Array.isArray(v) ? v : []; };
 const better = (a, b) => (impOf(b).sc - impOf(a).sc) || ((b.similar_count || 0) - (a.similar_count || 0)) || (a.pubDate < b.pubDate ? 1 : -1);
 function regionChips() {
   const bar = el("div", { className: "chips" });
@@ -580,11 +580,12 @@ function weekSelect() {
   sel.onchange = () => { state.period = sel.value; $("period").value = sel.value; clearSearch(); loadPeriod(); };
   return sel;
 }
-function newsCard(it, c, pinnable) {
-  const im = impOf(it), pins = pinsOf(c), pinned = pins.includes(ovKey(it));
+function newsCard(it, pk, pinnable, dayChip) {
+  const im = impOf(it), pins = pinsOf(pk), pinned = pins.includes(ovKey(it));
   const a = el("a", { href: safeUrl(it.originallink || it.link), target: "_blank", rel: "noopener noreferrer", textContent: it.title });
   const meta = [
     ...(im.lv ? [el("span", { className: "chip imp" + im.lv, textContent: "중요도 " + (im.lv === 3 ? "상" : "중") })] : []),
+    ...(dayChip ? [el("span", { className: "chip score", textContent: "선정 " + md(dayChip) })] : []),
     ...(it.manual ? [el("span", { className: "chip", textContent: "직접 등록" })] : []),
     ...(it.source_type === "major" ? [el("span", { className: "chip", textContent: "주요 일간지" })] : it.source_type === "medical" ? [el("span", { className: "chip", textContent: "의료 전문지" })] : []),
     el("span", { textContent: it.gov ? it.agency : it.global ? (it.sources || []).join(", ") : host(it.originallink || it.link) + (it.similar_count ? " 외 " + it.similar_count + "곳 보도" : "") }),
@@ -592,9 +593,9 @@ function newsCard(it, c, pinnable) {
   ];
   const pin = el("button", { type: "button", className: "tab", textContent: pinned ? "대표 고정 해제" : "대표로 고정" });
   pin.onclick = () => {
-    const k = ovKey(it), cur = pinsOf(c).filter(x => x !== k);
+    const k = ovKey(it), cur = pinsOf(pk).filter(x => x !== k);
     if (!pinned) cur.push(k);
-    pinSet(pinKey(c), cur.slice(-2));
+    pinSet(pk, cur.slice(-2));
   };
   return el("div", { className: "wkcard" + (state.ov.nl[ovKey(it)] ? " nl-on" : "") }, [
     el("h3", {}, [a]), (it.summary ? el("p", { textContent: it.summary }) : ""),
@@ -621,13 +622,51 @@ function addLinkBox() {
     el("div", { className: "why", textContent: "GitHub 연결(토큰)이 필요합니다. 요청 후 1~2분 뒤 새로고침하면 다른 뉴스와 똑같이 올라옵니다." }));
   return box;
 }
-function renderWeekly(list) {
-  const rows = state.items.filter(it => regionOf(it) === state.region);
-  const cands = state.items.filter(it => state.ov.nl[ovKey(it)]);
+// 하루치 기사에서 카테고리별 상위 2건(직접 고정한 기사 우선) — "오늘의 주요 뉴스"이자 주간 대시보드로 자동 누적되는 선정분
+function dayPicksFor(day, region) {
+  const by = new Map();
+  state.items.forEach(it => { if (it.first_seen === day && regionOf(it) === region) { const c = catOf(it); if (!by.has(c)) by.set(c, []); by.get(c).push(it); } });
+  const out = new Map();
+  by.forEach((arr, c) => {
+    arr.sort(better);
+    const pinned = pinsOf(pinKey(day, c)).map(k => arr.find(x => ovKey(x) === k)).filter(Boolean);
+    out.set(c, { total: arr.length, pk: pinKey(day, c), top: [...pinned, ...arr.filter(x => !pinned.includes(x))].slice(0, 2) });
+  });
+  return out;
+}
+const orderedCats = names => [...state.order.filter(c => names.includes(c)), ...names.filter(c => !state.order.includes(c))];
+const daysLoaded = () => [...new Set(state.items.map(i => i.first_seen).filter(Boolean))].sort().reverse();
+function dayDefault(days) { const t = todayKST(); return days.includes(t) ? t : (days[0] || ""); }
+
+function renderToday(list) {
+  const days = daysLoaded();
+  if (!days.includes(state.todayDay)) state.todayDay = dayDefault(days);
+  const day = state.todayDay;
+  const dsel = el("select", { ariaLabel: "날짜 선택" }, days.map(d => el("option", { value: d, textContent: md(d) + (d === todayKST() ? " (오늘)" : "") })));
+  dsel.value = day; dsel.onchange = () => { state.todayDay = dsel.value; render(); };
   const more = el("button", { type: "button", className: "tab primary", textContent: "다른 뉴스 보기 →" });
-  more.onclick = () => { state.home = false; state.cats = true; state.day = "전체"; setDaySelects("전체"); clearSearch(); render(); window.scrollTo(0, 0); };
-  list.append(el("div", { className: "wkhead" }, [el("h2", { textContent: "주간 대시보드" }), weekSelect(), regionChips(), more]));
+  more.onclick = () => { setView("cats"); state.day = "전체"; setDaySelects("전체"); clearSearch(); render(); window.scrollTo(0, 0); };
+  list.append(el("div", { className: "wkhead" }, [el("h2", { textContent: "오늘의 주요 뉴스" }), dsel, regionChips(), more]));
+  list.append(el("div", { className: "why wide", textContent: "수집한 뉴스 중 카테고리별 중요도·관련도가 높은 2건입니다. 중요도 변경·대표 고정은 모든 사용자에게 반영되고, 선정된 기사는 매일 자동으로 주간 대시보드에 쌓입니다." }));
   list.append(addLinkBox());
+  const picks = dayPicksFor(day, state.region);
+  if (!picks.size) { list.append(el("div", { className: "empty", textContent: "이 날짜·구분에 수집된 기사가 없습니다." })); return; }
+  orderedCats([...picks.keys()]).forEach(c => {
+    const p = picks.get(c);
+    list.append(el("section", { className: "wksec" }, [
+      el("div", { className: "hch" }, [el("b", { textContent: c }), el("em", { textContent: md(day) + " " + p.total.toLocaleString() + "건 중 상위 " + p.top.length + "건" })]),
+      el("div", { className: "wkgrid" }, p.top.map(it => newsCard(it, p.pk, true)))]));
+  });
+}
+
+function renderWeekly(list) {
+  const more = el("button", { type: "button", className: "tab primary", textContent: "다른 뉴스 보기 →" });
+  more.onclick = () => { setView("cats"); state.day = "전체"; setDaySelects("전체"); clearSearch(); render(); window.scrollTo(0, 0); };
+  const tg = el("select", { ariaLabel: "표시 방식" }, [el("option", { value: "0", textContent: "일별 선정 기사 모두" }), el("option", { value: "1", textContent: "카테고리별 중요도 상위 2건만" })]);
+  tg.value = state.wkTop2 ? "1" : "0"; tg.onchange = () => { state.wkTop2 = tg.value === "1"; render(); };
+  list.append(el("div", { className: "wkhead" }, [el("h2", { textContent: "주간 대시보드" }), weekSelect(), regionChips(), tg, more]));
+  list.append(el("div", { className: "why wide", textContent: "'오늘의 주요 뉴스'에서 매일 선정된 기사(카테고리별 2건)가 자동으로 모입니다." }));
+  const cands = state.items.filter(it => state.ov.nl[ovKey(it)]);
   const cp = el("details", { className: "candbox", open: cands.length > 0 }, [el("summary", { textContent: `뉴스레터 후보 ${cands.length}건` })]);
   if (cands.length) {
     cands.sort(better).forEach(it => {
@@ -639,24 +678,25 @@ function renderWeekly(list) {
     cp.append(el("div", { className: "editrow" }, [cb]));
   } else cp.append(el("div", { className: "why", textContent: "기사 카드의 '뉴스레터 후보'를 체크하면 여기에 모입니다." }));
   list.append(cp);
-  if (!rows.length) { list.append(el("div", { className: "empty", textContent: "이 기간·구분에 기사가 없습니다." })); return; }
   const by = new Map();
-  rows.forEach(it => { const c = catOf(it); if (!by.has(c)) by.set(c, []); by.get(c).push(it); });
-  const cats = [...state.order.filter(c => by.has(c)), ...[...by.keys()].filter(c => !state.order.includes(c))];
-  cats.forEach(c => {
-    const arr = by.get(c).slice().sort(better);
-    const pinned = pinsOf(c).map(k => arr.find(x => ovKey(x) === k)).filter(Boolean);
-    const top = [...pinned, ...arr.filter(x => !pinned.includes(x))].slice(0, 2);
+  daysLoaded().forEach(day => dayPicksFor(day, state.region).forEach((p, c) => {
+    if (!by.has(c)) by.set(c, []);
+    p.top.forEach(it => by.get(c).push({ it, day }));
+  }));
+  if (!by.size) { list.append(el("div", { className: "empty", textContent: "이 기간·구분에 선정된 기사가 없습니다." })); return; }
+  orderedCats([...by.keys()]).forEach(c => {
+    const arr = by.get(c).sort((a, b) => better(a.it, b.it) || (a.day < b.day ? 1 : -1));
+    const shown = state.wkTop2 ? arr.slice(0, 2) : arr;
     list.append(el("section", { className: "wksec" }, [
-      el("div", { className: "hch" }, [el("b", { textContent: c }), el("em", { textContent: "이 기간 " + by.get(c).length.toLocaleString() + "건 중 상위 " + top.length + "건" })]),
-      el("div", { className: "wkgrid" }, top.map(it => newsCard(it, c, true)))]));
+      el("div", { className: "hch" }, [el("b", { textContent: c }), el("em", { textContent: "선정 " + arr.length + "건" + (state.wkTop2 ? " 중 상위 " + shown.length + "건" : "") })]),
+      el("div", { className: "wkgrid" }, shown.map(x => newsCard(x.it, "", false, x.day)))]));
   });
 }
 
 // ================= 다른 뉴스 보기: 카테고리 목록 → 뉴스 목록 =================
 function renderCatsView(list) {
-  const back = el("button", { type: "button", className: "tab", textContent: "← 주간 대시보드" });
-  back.onclick = () => { state.home = true; state.cats = false; render(); window.scrollTo(0, 0); };
+  const back = el("button", { type: "button", className: "tab", textContent: "← 오늘의 주요 뉴스" });
+  back.onclick = () => { setView("today"); render(); window.scrollTo(0, 0); };
   list.append(el("div", { className: "wkhead" }, [el("h2", { textContent: "카테고리" }), regionChips(), back]));
   const inReg = state.items.filter(it => regionOf(it) === state.region), counts = new Map();
   inReg.forEach(it => { const c = catOf(it); counts.set(c, (counts.get(c) || 0) + 1); });
@@ -664,26 +704,27 @@ function renderCatsView(list) {
   const grid = el("div", { className: "catgrid" });
   [["전체", inReg.length], ...cats.map(c => [c, counts.get(c)])].forEach(([c, n]) => {
     const b = el("button", { type: "button", className: "catbtn" }, [el("b", { textContent: c }), el("span", { textContent: n.toLocaleString() + "건" })]);
-    b.onclick = () => { state.cat = c; state.cats = false; state.home = false; clearSearch(); render(); window.scrollTo(0, 0); };
+    b.onclick = () => { state.cat = c; setView("list"); clearSearch(); render(); window.scrollTo(0, 0); };
     grid.append(b);
   });
   list.append(grid);
 }
 function backBar() {
-  const h = el("button", { type: "button", className: "tab", textContent: "← 주간 대시보드" }), c = el("button", { type: "button", className: "tab", textContent: "← 카테고리 목록" });
-  h.onclick = () => { state.home = true; state.cats = false; render(); window.scrollTo(0, 0); };
-  c.onclick = () => { state.cats = true; state.home = false; render(); window.scrollTo(0, 0); };
+  const h = el("button", { type: "button", className: "tab", textContent: "← 오늘의 주요 뉴스" }), c = el("button", { type: "button", className: "tab", textContent: "← 카테고리 목록" });
+  h.onclick = () => { setView("today"); render(); window.scrollTo(0, 0); };
+  c.onclick = () => { setView("cats"); render(); window.scrollTo(0, 0); };
   return el("div", { className: "wkhead" }, [h, c, el("b", { textContent: `${state.region} · ${state.cat}` })]);
 }
 
 function render() {
   if ($("fold")) updateFoldLabel();
   renderHot();
-  $("hot").style.display = state.home ? "none" : "";
+  $("hot").style.display = (state.today || state.home) ? "none" : "";
   renderTabs();
   const rows = filtered();
   const list = $("list");
   list.replaceChildren();
+  if (state.today) { renderToday(list); return; }
   if (state.home) { renderWeekly(list); return; }
   if (state.cats) { renderCatsView(list); return; }
   list.append(backBar());
