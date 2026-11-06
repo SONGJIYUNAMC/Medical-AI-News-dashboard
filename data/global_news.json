@@ -1,8 +1,8 @@
 {
-  "generated_at": "2026-11-06T08:15:42.253124+09:00",
+  "generated_at": "2026-11-07T08:11:39.867701+09:00",
   "window_hours": 48,
   "count": 57,
-  "filtered_out": 321,
+  "filtered_out": 329,
   "category_order": [
     "해외 정책·규제 (미국)",
     "해외 정책·규제 (유럽·영국)",
@@ -12,27 +12,58 @@
   "errors": [],
   "items": [
     {
-      "title": "AI Tracker: Mayo Clinic Platform rolls out AI tool for clinicians",
-      "link": "https://news.google.com/rss/articles/CBMikAFBVV95cUxQb0Zsbm5XcmxTU0JuTzczTC1fUF9FVzB3LTJ3X2hLYVRJUFl3ZXB6TEZoMldEOXlkTXBTOVp2amNpLXFVeWlBUUd4X2dZNzlvUnB2LUoybW9LRThOY2pjN18tbnB3S2NieGMwSm9fVVBuZHprWUFrTU50Wk91ZVREV3NDZ1hvQ3RxcW9zeEMxMGs?oc=5",
-      "source": "Modern Healthcare",
-      "source_url": "https://www.modernhealthcare.com",
-      "pubDate": "2026-11-05T20:54:21+09:00",
+      "title": "Mayo Clinic Platform launches AI-driven clinical decision support tool",
+      "link": "https://news.google.com/rss/articles/CBMiugFBVV95cUxQcVpvdFdnQWI4NW1vaFF0eXJjMlBHOEwwQU9MU0pYV09ycVA4ODZxRHdaYlZHTWtwVUdmeC1fckFpVHZSZlNvNWVBUzhrVHNZUlh4eTE1RkZ5Nk14aDNtZS0wNHhzcHVRM3pqX0U3ak9zQlE4SzhadTdTV2Z3Ym4yM204WkFIZXctVXBLeVB4Z0kwdV9oVXNqWjBiX2NiY3ZQWHV3RklrUU9idEFXeTlYc0ZUS1JuQTEtelE?oc=5",
+      "source": "Fierce Healthcare",
+      "source_url": "https://www.fiercehealthcare.com",
+      "pubDate": "2026-11-07T03:30:00+09:00",
+      "category": "해외 의료기관 AI 도입·운영",
+      "queries": [
+        "Mayo Clinic AI",
+        "health system AI governance"
+      ],
+      "sources": [
+        "Fierce Healthcare",
+        "Healthcare Dive",
+        "TechTarget"
+      ],
+      "preferred": true,
+      "score": 6
+    },
+    {
+      "title": "The Big Challenge for AI in Healthcare Comes After Approval",
+      "link": "https://news.google.com/rss/articles/CBMilwFBVV95cUxQSW5WcktDc2k2ZVkxX0pyR09iTUZNem82b0FxRy0yNTlZdi0xT0lVdnc1Ri1jamd0aTVDT1BlOXEwYzIzSmxlMEl1Q1pJT3J0akNRYy1BbE54ZkV1QzhRUFZYMnY2M0Rjb2V2MlMxZHgtMVdveTFYenl4dlZZeXk3czdDa2ZHOGVRbTRfeEEzMlFrVE9VNHow?oc=5",
+      "source": "MedCity News",
+      "source_url": "https://medcitynews.com",
+      "pubDate": "2026-11-06T23:46:54+09:00",
       "category": "해외 정책·규제 (미국)",
       "queries": [
         "FDA AI-enabled medical devices",
         "FDA artificial intelligence guidance medical",
-        "Mayo Clinic AI",
-        "Cleveland Clinic AI",
-        "health system ambient AI scribe",
-        "hospital generative AI deployment",
-        "health system AI governance",
-        "randomized trial AI clinical decision support"
+        "EU AI Act medical devices"
       ],
       "sources": [
-        "Modern Healthcare"
+        "MedCity News"
       ],
       "preferred": true,
-      "score": 6
+      "score": 5
+    },
+    {
+      "title": "Debunked Episode 31: CVS Health Restructure, AI ROI Report Findings, FTC Warning Letters",
+      "link": "https://news.google.com/rss/articles/CBMiugFBVV95cUxOd1MtMmVCeTFuSWNDeUZFWHE3UmZtQjYyTTJ4VzdQQXNtamN3ZEN5bEV3Mkc5NmoxdnVVOFFPdjRENHF5ZlZEVzVrSHcyWmJGdXNJRmFCZDlrTi0tSmM4T3BTckYxeF9wUVZMV1NHcDJOU1lKNUlIdzZvSUtSNmZvVkFYOEZGTTFoSENoOE90bzJVaHQ3TXA4ekN6WGRkR3RJeEwyQmJrR05QVWkxSzNQU0tCOV9QbTBxdFE?oc=5",
+      "source": "MedCity News",
+      "source_url": "https://medcitynews.com",
+      "pubDate": "2026-11-06T21:41:55+09:00",
+      "category": "해외 정책·규제 (미국)",
+      "queries": [
+        "FDA AI-enabled medical devices",
+        "FDA artificial intelligence guidance medical"
+      ],
+      "sources": [
+        "MedCity News"
+      ],
+      "preferred": true,
+      "score": 4
     },
     {
       "title": "Role of Artificial Intelligence in Healthcare [Latest Data]",
@@ -54,17 +85,17 @@
       "score": 4
     },
     {
-      "title": "Mayo Clinic Platform launches AI tool to streamline clinical decision-making",
-      "link": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxQejYyLV8xdmtxTzNiR0txQmZaMUM4RWlYcDVqTVF1RmVfVDR5eWdmY09XNTVVbUg1aXgwZzNkblVLc1o1QjJJcjRrSDIwV3oyaEE0Wmd1SU45STMxbzhzRWQ4UjRmZjVkclltV0JTX3Q1VDh6ZjhuRVhBN0daMkRSenBhNlZxVmQyTjBTYzIyTS1HdHFDdGZBc2RWNXdGNHlWY2lfcno3bC1TVGZJOVhnSFlCeW5GSWtMTXdn?oc=5",
-      "source": "Healthcare Dive",
-      "source_url": "https://www.healthcaredive.com",
-      "pubDate": "2026-11-06T03:48:52+09:00",
+      "title": "Te Whatu Ora explores AI for surgery prep, radiology referral",
+      "link": "https://news.google.com/rss/articles/CBMinwFBVV95cUxOSTRDY3RBckNsdzNPZmc5dUFVU1A0eEozLUVHVDdiQmx1MUpaSGlyV3ZoS2JDbkFxWFk4RE1rREVyOG5idjBLc09ueHd5Y2hwV2ptZkoxY2U0WVRSMFR0WVExRy1WVnUxT0VDaS1ORFdSclFNUEhBbkh3WlpGcDZveTFfODdrbTdYOWJhX2RreFBxcThidWJhMzRDLUs5NGs?oc=5",
+      "source": "Healthcare IT News",
+      "source_url": "https://www.healthcareitnews.com",
+      "pubDate": "2026-11-06T17:15:42+09:00",
       "category": "해외 의료기관 AI 도입·운영",
       "queries": [
-        "Mayo Clinic AI"
+        "health system AI governance"
       ],
       "sources": [
-        "Healthcare Dive"
+        "Healthcare IT News"
       ],
       "preferred": true,
       "score": 3
@@ -136,120 +167,52 @@
       "score": 3
     },
     {
-      "title": "70% of Healthcare Organizations Found an AI-Built Tool That Handled Patient Data Without It or Security Knowing, Paubox Report Finds",
-      "link": "https://news.google.com/rss/articles/CBMilgJBVV95cUxOVGFiX0phakZlZ3VlYWdmOHY1OV8zZy1NVzZJdUliVU5Tczctc0YzMEZhT0p1Z3daYVAzUkw3NEFwS1FoOWpnT1Nrdy1RSU9scXh0amRheVBzckg0RERHbV9ZZUluaWs0UTB6OEg0Q29iTDRYZjUxNHNIOHBBTC1ERVF3czZYNXZMZFRRNU01b3luVFhaWGhUT2g3RFdCT3dzekVPbjZlS1k1N3hYbnMwVzFXVkpZMFQ5Y0F1TVdna2xMdHJhT1JSME9vYXlCNG9kVVhNclc1M3NucTMteWhsd3ZhUjE3Y1ZrOUp6S1VJVjN2akQ3MXhsekpDWHhLeGdrUHBkN0ZwQ1ZvV0hIR2poMGlxSlh5dw?oc=5",
-      "source": "Business Wire",
-      "source_url": "https://www.businesswire.com",
-      "pubDate": "2026-11-05T03:16:00+09:00",
-      "category": "해외 정책·규제 (미국)",
+      "title": "Nelson Advisors: This Week in European HealthTech, MedTech and Health AI: 6th November 2026",
+      "link": "https://news.google.com/rss/articles/CBMiywFBVV95cUxOc2pYSHNEa29uRnBSWHRNQTlvVzFsbFVfQ1NXNGx2Q0kxTHVQVzl5bE1fb1hMYWFoWVR3TDlVNWRnQk4wZ3hGYzJNd1E3VjhkWHQ1M0RualVPZ1JXRDF6d2NFUUk5MHpxTHlKWnpEWUNTd1M4Z0hXWkVyLXNnOW9lbm5tVWZaLXZUczRQUFluZXJSNVpFLXlQVzBWNGNjTEdtSG4yaWVFdWg3MWNLOW5LVTc3YWV6UGIxbmdveVAtRm9aMjgwcmMtbDcwUQ?oc=5",
+      "source": "https://www.healthcare.digital/",
+      "source_url": "https://www.healthcare.digital",
+      "pubDate": "2026-11-07T03:01:47+09:00",
+      "category": "해외 정책·규제 (유럽·영국)",
       "queries": [
-        "HHS artificial intelligence health care policy",
-        "health system AI governance"
+        "EU AI Act medical devices",
+        "European Health Data Space AI"
       ],
       "sources": [
-        "Business Wire",
-        "01net"
+        "https://www.healthcare.digital/"
       ],
       "preferred": false,
-      "score": 3
+      "score": 2
     },
     {
-      "title": "Cross-paradigm audit of large language model judges for clinical text evaluation",
-      "link": "https://news.google.com/rss/articles/CBMiX0FVX3lxTE1RME9jYTNKZzhzLUtKVFloc3c5Ml9pRWViWExjUUdDV2VfTVhobVoyTEtfXzBxVmhxLWxseUlzNEZYVkJINzlCMC1lc3RrSWlSNk5zSEdtVTVMejFRYnVn?oc=5",
-      "source": "Nature",
-      "source_url": "https://www.nature.com",
-      "pubDate": "2026-11-05T01:39:14+09:00",
-      "category": "해외 연구·학술",
-      "queries": [
-        "Nature Medicine artificial intelligence"
-      ],
-      "sources": [
-        "Nature"
-      ],
-      "preferred": true,
-      "score": 3
-    },
-    {
-      "title": "Patients want a human in the loop for AI healthcare tools",
-      "link": "https://news.google.com/rss/articles/CBMilgFBVV95cUxQU3k3T3o1UTZRYUp1aDlER2FpY2ZKbTV4dndoTk5oT1YzRTJuZFh1cXlLZnVyVnRiWDV6aVpVZy1iYmVrRTVLZW44SGpuVTBENXBzODNrV1BHUEZXcjJtLUdVcmRlZlpXQTN1TlU4ZW5NaEl6LUVWbFBMdlRKRXBoemIzWVVJbDF3bEFhX2MzZ2k0VklfMWc?oc=5",
-      "source": "Healthcare Dive",
-      "source_url": "https://www.healthcaredive.com",
-      "pubDate": "2026-11-05T01:09:16+09:00",
+      "title": "Who Is Accountable When Healthcare AI Fails?",
+      "link": "https://news.google.com/rss/articles/CBMipAFBVV95cUxNcEVILThTZnNYeTg4YmNMRmxQUktXS2U3WHNOckpXS203dUtERlcwMzJWTWpTT1VSaUJXcnB6Z3VnSXBfTmdsVlJSRkZTSWd1dE9ZRF92NmVHYl9VckV5STRKdlF1dlg0RXR6alBfNXp2TnpCMkN4b0RNZkpfSC05MVVKQUN0VnJGeHlNMFUzUzdwZXRsLURoTmRwR2szeUw5OUJPaA?oc=5",
+      "source": "Medscape",
+      "source_url": "https://www.medscape.com",
+      "pubDate": "2026-11-06T17:55:57+09:00",
       "category": "해외 의료기관 AI 도입·운영",
       "queries": [
-        "health system ambient AI scribe"
+        "health system AI governance",
+        "randomized trial AI clinical decision support"
       ],
       "sources": [
-        "Healthcare Dive"
-      ],
-      "preferred": true,
-      "score": 3
-    },
-    {
-      "title": "Senate Bill Seeks to Expand Use of AI Technologies in Healthcare and Reimburse for Adoption",
-      "link": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTE4xR2RQWGVnWGxXd01jLVBNSGZCLXBJcWJPWGVkSmlBcDVuZ2FYNFludlNjbXJnQWZhWEVCaklBZUU1b2xqZWIxNmYwOXZ4c1RJckNwZ2szOEVOT1JWQlpZeWNHa0pSNzA?oc=5",
-      "source": "The HIPAA Journal",
-      "source_url": "https://www.hipaajournal.com",
-      "pubDate": "2026-11-05T00:36:30+09:00",
-      "category": "해외 정책·규제 (미국)",
-      "queries": [
-        "FDA artificial intelligence guidance medical",
-        "HHS artificial intelligence health care policy",
-        "ONC health IT AI transparency"
-      ],
-      "sources": [
-        "The HIPAA Journal"
+        "Medscape"
       ],
       "preferred": false,
-      "score": 3
+      "score": 2
     },
     {
-      "title": "Google Unveils Safety Framework for Medical AI Development",
-      "link": "https://news.google.com/rss/articles/CBMilgFBVV95cUxOZXQ4ZmFWanJuRzJ3N2pRMWZpc1U3QU1FaTJ0QmlIdm1TYXp1bjE3eXh1RVVrQTBWa2lxMXZoclE2LW8tZTRCMExjMjJ1TS10M2E1M2FnOW1NYzRFamhIZmlOX0Q4azgzOU9DeFlQbXgzZEdkYUdkT25Eb0FBM1dQTmUxLWR6US16R0tUMWVXdHViNTkwUWc?oc=5",
-      "source": "The Tech Buzz",
-      "source_url": "https://www.techbuzz.ai",
-      "pubDate": "2026-11-05T00:00:51+09:00",
+      "title": "Mayo Clinic releases new AI-powered clinical decision support tool to ‘individualize’ patient care",
+      "link": "https://news.google.com/rss/articles/CBMi4AFBVV95cUxNMEprMjBfRmtVazNfU1ljWFBnTzc2VHdVNEJWQ0hzMUY3X09wSVhmVGRIYmhNU0RIZHQyNHN5TzRVMVkxTlBoYXNhNk82V0hvT25ZLVZYbUxMUkVSMTRLTEhfVC1kZExEY2JxbFloeVk2TXVwWmdHZUFOUG1PZTk3cUpnZlpfSUV5aFdkdmNDMGtVdnVpQ05qd3NxN3FZbGdUZnA5dU1sMzRiRm5GWTd2OEd2YnFoTjVVSzhrWjIxMUlNckM3UlhuaWpYc1A1Z0lSZ3ZaXzAtRUtWc0FONkZueQ?oc=5",
+      "source": "HealthExec",
+      "source_url": "https://healthexec.com",
+      "pubDate": "2026-11-06T08:41:12+09:00",
       "category": "해외 정책·규제 (미국)",
       "queries": [
-        "FDA AI-enabled medical devices",
-        "FDA artificial intelligence guidance medical"
+        "CMS artificial intelligence health",
+        "Mayo Clinic AI"
       ],
       "sources": [
-        "The Tech Buzz",
-        "RS Web Solutions"
-      ],
-      "preferred": false,
-      "score": 3
-    },
-    {
-      "title": "ResNet-GA: genetic algorithm-driven optimization of ResNet for automated dental caries detection in medical imaging",
-      "link": "https://news.google.com/rss/articles/CBMiX0FVX3lxTE01Rk56dkVSZV94cGROM2JWNHFGeWgzNkZMY2IyQ1Z2cW5wbFo2eXF1WHVGV0Jfd1RfRHBjc3h1dXZTanMzMW8xa0gyMkVoOE5pYmZIZmRDODNjRVYwZEhz?oc=5",
-      "source": "Nature",
-      "source_url": "https://www.nature.com",
-      "pubDate": "2026-11-04T20:33:50+09:00",
-      "category": "해외 연구·학술",
-      "queries": [
-        "Nature Medicine artificial intelligence"
-      ],
-      "sources": [
-        "Nature"
-      ],
-      "preferred": true,
-      "score": 3
-    },
-    {
-      "title": "Where the human-AI workflow in health care breaks down",
-      "link": "https://news.google.com/rss/articles/CBMi5gFBVV95cUxNU3ZhTmwtVDNldXM3SE94RHRoX2hNdnByLWRNbUpPOHpraWF2NTVCUWh1cy1ERjVNZ0xsSHUxWVRzWDFiMzVKZ2ZCelZ1NVlLYldseHFaSTVLZ2pCR3ZENFByYS1MVjNJenZlMzNOdURBRVZPUGxGSzk5ZW8yU2dOT1JyNHA1M18zenRzVHZZaDYtQWtpakRFbFZ5Q3Z4V3lSUGNtcFM0bEpUeEh2cm9nVDNsQUJNWXVmR3NPcDd0aHI0LVNQUWI4NHJFa0p3Q1JYRnRyVXg0b3RRVGNTOURGX3V2bGRlQQ?oc=5",
-      "source": "The Anniston Star",
-      "source_url": "https://www.annistonstar.com",
-      "pubDate": "2026-11-06T04:32:11+09:00",
-      "category": "해외 정책·규제 (미국)",
-      "queries": [
-        "CMS artificial intelligence health"
-      ],
-      "sources": [
-        "The Anniston Star",
-        "Omaha World-Herald"
+        "HealthExec"
       ],
       "preferred": false,
       "score": 2
@@ -289,6 +252,40 @@
       "score": 2
     },
     {
+      "title": "Google Unveils New Safety Guidelines for Medical AI Development",
+      "link": "https://news.google.com/rss/articles/CBMimwFBVV95cUxNLUo0bC1pSFZhd2NHLWhvYzJIRS05SjMtbjdmenFzSmlfMjR0QlZ6VlZZTk9ES29oaVBnUTZ4NmkwS1plbUZVYkg3WTZYR0ZfdG5XNjNhNzRVbk5CV0ItZWJidTVzMVpVay1ZUjJxVFBDUHh2dmtoUUNxeDhQYktyX28wSnJpSWJ6Zmp2QjRhcVl3RHJBS181aTREcw?oc=5",
+      "source": "RS Web Solutions",
+      "source_url": "https://www.rswebsols.com",
+      "pubDate": "2026-11-05T23:00:00+09:00",
+      "category": "해외 정책·규제 (미국)",
+      "queries": [
+        "FDA AI-enabled medical devices",
+        "FDA artificial intelligence guidance medical"
+      ],
+      "sources": [
+        "RS Web Solutions"
+      ],
+      "preferred": false,
+      "score": 2
+    },
+    {
+      "title": "US Senate bill pushes for expanding use of AI in healthcare",
+      "link": "https://news.google.com/rss/articles/CBMikAFBVV95cUxOd1Q5SndmVGt6TUh5TlRtRHBhSzdMby1EaU9vLUpKcDROVXNJdTctZ2ZyTTZQcF9XcFJ0RzVWQ1hIMExadWNWSVIwVzNaMk9FTTdiSDl2UUhJRC1lOFFFdDNxSU9TNnRtYkJzRGh1YjgtV2s3VjlvTWxXMFZlRWxKaDJaVGlxZGZrTm04OWxZT2U?oc=5",
+      "source": "Medical Buyer",
+      "source_url": "https://medicalbuyer.co.in",
+      "pubDate": "2026-11-05T20:14:57+09:00",
+      "category": "해외 정책·규제 (미국)",
+      "queries": [
+        "HHS artificial intelligence health care policy",
+        "ONC health IT AI transparency"
+      ],
+      "sources": [
+        "Medical Buyer"
+      ],
+      "preferred": false,
+      "score": 2
+    },
+    {
       "title": "What Happens to Britain's Doctors When Their AI Scribe Loses Its Founders?",
       "link": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxPZlYzNElHclhzLXJhTUg1aUJDX0ZqVmhraUViRm9zdzl5OVB5TTJUX3VibVJ4aTBHeEJLbHpNUUNyeTRyMTBoejFzejdEXzRhc3FhZFhEb2J1RllCdG03ckRhc3ZqT3Z3YmpMQ3JlY0F4MlVCY0ExcXoyLVpVRFZ4bWx1UmhUSnJrTEFKMmR5WlNfeDhkQUZzWmhHWmIzbzlOcU95Tk5WMzhaSE0?oc=5",
       "source": "Distilled Post",
@@ -306,85 +303,337 @@
       "score": 2
     },
     {
-      "title": "As Hospitals Turn to AI as an Administrative Tool, Neurologists Question What That Means for Them",
-      "link": "https://news.google.com/rss/articles/CBMieEFVX3lxTE1mcHFwbnNWZjI5eEE1ZkZtZkRDdlBJRmNpVzhGa1c0Tk94Qlh3Y3c3OFBEZmNJcVFvQ3c4Z05HY3BqYUZkQzlHaVdTZ293ankzTDBEVndJd1pKSlVMUHh2SEtOTzBLbVVoV2xZWFlyNkpneXRBUFJZbA?oc=5",
-      "source": "Neurology Today",
-      "source_url": "https://neurologytoday.aan.com",
-      "pubDate": "2026-11-05T18:34:04+09:00",
+      "title": "AI May Step In to Fill Healthcare Workforce Gaps",
+      "link": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxQZmJtTG15V3pvRXpoSkg2a2lucXA0T3lzeHF3ckJWWlZXbnBZTF9hY0lLYXVBZmstRjdNVWVIZHBJV3UxNGt1eFB0dHA4YllQeGdHcV9tUmZmVkRkd0pHcllUcE9mVm9HUGhDMHNqb25XT0M2Q1NIT0tqRXFGRFhoX1VNV1JBWnE5R3hIXzkzMGJmN2RNZDZKdjlCZU9KQ0RfSThRM3Y4MERodw?oc=5",
+      "source": "Medscape",
+      "source_url": "https://www.medscape.com",
+      "pubDate": "2026-11-07T05:51:53+09:00",
       "category": "해외 의료기관 AI 도입·운영",
       "queries": [
-        "Cleveland Clinic AI",
-        "hospital generative AI deployment"
-      ],
-      "sources": [
-        "Neurology Today"
-      ],
-      "preferred": false,
-      "score": 2
-    },
-    {
-      "title": "Independent Study of FDA Correspondence Finds Earliest CDER Warning Letter Citing AI Use",
-      "link": "https://news.google.com/rss/articles/CBMiygFBVV95cUxPdElzeDdpN0l6MTBaMFhDdl9aQlNuam0tWWhpdC1taGtzMjQxbUc2TVkxckhobF9KUENiV1dBbkZSZXdDNkVFS1h6azdaZzJQX3Y1V1RlVVk3OVFiZkc3RWhZRlE0dEdsRk93dDNkWURwdmV6UThxTTRCbnhJaGdBSVNWVDBXbHl6dEdxMEdRWVY0ZGtUeW9pdl9CYWxiemFCZmh2bGt5dC1WNW42WUxaOGN0Y01uajlZRmRmWm50QVZ4dDUycm5zcEpn?oc=5",
-      "source": "EIN News",
-      "source_url": "https://www.einnews.com",
-      "pubDate": "2026-11-05T07:00:00+09:00",
-      "category": "해외 정책·규제 (미국)",
-      "queries": [
-        "FDA AI-enabled medical devices",
-        "FDA artificial intelligence guidance medical"
-      ],
-      "sources": [
-        "EIN News"
-      ],
-      "preferred": false,
-      "score": 2
-    },
-    {
-      "title": "As AI Listens In on Doctor Visits, States Are Writing the Rules",
-      "link": "https://news.google.com/rss/articles/CBMipAFBVV95cUxNSlFEMjVnektSd0MxZXI1R3ZybU1tOXY4Ty13UEt2U0hVU2JMZFUwQlh6a1N5ZGNweEJySXgxWUx4dkdHRDFnVjBVT2Q5eVNaZDZHUUNReFp6cWRoalRYcW5MeWw5UERXZXhhRmItX3pzUWZRTm5fMzRxaFIza2ZWVzZ1REI2M2kxWDBrYTlnWE1oOEoyT3lFVkxIVnlXS1JqTDFVeA?oc=5",
-      "source": "PYMNTS.com",
-      "source_url": "https://www.pymnts.com",
-      "pubDate": "2026-11-05T04:19:50+09:00",
-      "category": "해외 의료기관 AI 도입·운영",
-      "queries": [
-        "Cleveland Clinic AI",
         "health system ambient AI scribe"
       ],
       "sources": [
-        "PYMNTS.com"
+        "Medscape"
       ],
       "preferred": false,
-      "score": 2
+      "score": 1
     },
     {
-      "title": "Evident Vascular Receives FDA Clearance for High-Fidelity AI Powered IVUS Imaging Platform",
-      "link": "https://news.google.com/rss/articles/CBMi4AFBVV95cUxOR2FHX3dkay05LTBXOTByUENMZEtHUmZBTU9lejE3bjVHUDRFMHVuc0JJMVlYcEVERmtjUWgtaGhyTUxpUlZjYnFBZ0NjMllUNVg1Yk5qSG94eHctYTdtZE9VQTJSNGtmblhBUnA1Zmk0S1lPa0h2NHM0WU5mdkxEUkhPTWNBcTduOFVDaFN4WkwtaFFiaHQwelJnVWlSX0NVZUw0TFVBX3dQOWJxMG9kWk1NTXlkVm5hMFRyOEtOWWIzM2RhLUczbHZ4dFdZbGJKNWJoLTNXaHZuVlNfaFdNTQ?oc=5",
-      "source": "Business Wire",
-      "source_url": "https://www.businesswire.com",
-      "pubDate": "2026-11-04T22:00:00+09:00",
-      "category": "해외 정책·규제 (미국)",
-      "queries": [
-        "FDA AI-enabled medical devices",
-        "FDA artificial intelligence guidance medical"
-      ],
-      "sources": [
-        "Business Wire"
-      ],
-      "preferred": false,
-      "score": 2
-    },
-    {
-      "title": "Most healthcare workers in Lagos use AI tools, but few have any formal training",
-      "link": "https://news.google.com/rss/articles/CBMipgFBVV95cUxPUHMtTl9yNnV0dHdYMGdxSTMtQlBwWTFWWThKR1BmQUdHMmJZVkhiQUtOS1N1U1B6OFNzNWtfdEd0SEVLcHdqNTlGMnhMVG1KaW1pUEE0NnJ5VDlEQlVzUjlhRTA2c3FramhVVkpoNEstUlNYazQtbkUtb3BBMk00Z1ZGN0xHVy1EYVh0Y3ZxX0xzTWtCenY5ZFdvV2QxQnprcjFPSEpn?oc=5",
+      "title": "Ten Simple Rules Outline Practical AI Training Framework for Healthcare Data Teams",
+      "link": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxQRzFhckQwZGxWcm5tS1BoQmZsblJBMFZIYWk3NU5FWXVjOER0NkxDMjBRQkhlMUlSMzZZclNiTWYtUGZ3cnBJN3NQWWtnVGhMY2JwcWt1ZmMxMFVhT0swTEZfdlB2UUVlWTBtakh5N2tIYnJFdDBSeFBobkl6cl9wZl9mZ1BWSGptZnd6S3VIYm5TYzJmSzczX29GQlFzS2Q3REh4V1hSTklFdWs?oc=5",
       "source": "Bioengineer.org",
       "source_url": "https://bioengineer.org",
-      "pubDate": "2026-11-06T06:33:45+09:00",
+      "pubDate": "2026-11-07T04:17:57+09:00",
       "category": "해외 의료기관 AI 도입·운영",
       "queries": [
         "health system AI governance"
       ],
       "sources": [
         "Bioengineer.org"
+      ],
+      "preferred": false,
+      "score": 1
+    },
+    {
+      "title": "Who Gets to Be Wrong? The Double Standard Shaping AI Accountability in Healthcare",
+      "link": "https://news.google.com/rss/articles/CBMirAFBVV95cUxOYmM5Sk1yZnlMY0ItVXRWdmRDVHA2Z045dEVCTXJ4bHFhTUtKNTBzcUk4dXB4WXB2TkJLNXdoRVJfczhyeWpweGYxbXhuVm10N1N4WnkwX0djR0tQRlRNRUhVLWNvN2hsSlFJdDFzdjFsYVpCX2I4eXYwZTF2c1h5a1ZvbXJwa1JtTHJJclZrTFJRUXI5eHNZNjdoQkZRSTRyR0tLaVBtZVJrZUdm?oc=5",
+      "source": "The National Law Review",
+      "source_url": "https://natlawreview.com",
+      "pubDate": "2026-11-07T03:34:27+09:00",
+      "category": "해외 의료기관 AI 도입·운영",
+      "queries": [
+        "Mayo Clinic AI"
+      ],
+      "sources": [
+        "The National Law Review"
+      ],
+      "preferred": false,
+      "score": 1
+    },
+    {
+      "title": "Leading Academic Medical Centers to Present New AI-ECG Research on Viz.ai’s Cardio Suite at AHA 2026",
+      "link": "https://news.google.com/rss/articles/CBMivgFBVV95cUxPVlZ3NG1uaUx4UlZrVjl0VVRrNHFPRGIxSGpqcWRrUDh3QnJqTXZ1MDFoX2tDUjJDdkk4eEgyZ1F6ZlNqR2VhczdsZ25hS1pSRm9UWnhITEg4VU4yZ2J0V0wzVkN6c3h6QUVmeUZPM0Jrdi1uWVJRR1VmLVRsVkhRMXJKdnN0czJDdjVEbkQ3VFdnNGpmcXJySEVEWVF0S1k0dm1ja0xQY1Y3alMtal9odnBzOGp4QmplSjU1LTBR?oc=5",
+      "source": "01net",
+      "source_url": "https://www.01net.it",
+      "pubDate": "2026-11-07T02:12:00+09:00",
+      "category": "해외 정책·규제 (미국)",
+      "queries": [
+        "CMS artificial intelligence health"
+      ],
+      "sources": [
+        "01net"
+      ],
+      "preferred": false,
+      "score": 1
+    },
+    {
+      "title": "More than 100 charities urge government to address misinformation in AI-generated health information",
+      "link": "https://news.google.com/rss/articles/CBMi3gFBVV95cUxPVTI3RnVLTVhpSDluQlVBVUFMNkQtVFdWNlFjNnBvd1pna3R3NTNNUzZyaEk3VS1OT3NmVHZ4NUFHaXpZTWNVVFp1OTVLX2RJWjNxbzgwd3FvM3RTQVJWM3BiWFB6U211UG50RkZHVDhDZ0V1RUt1bE9uWUtVNmlRYmFaVHU0Y25wSktHTXRmc1RCd2FIcmtnLXRqSnRXOGk1QnNOOG9ENVpZRUE4ZWhGV3dYalYyZlFJZUx6WE1aZzhWZm1tai1vSVBIeWZEamdhUGVnTk1BNE5Vc2lyUGc?oc=5",
+      "source": "Third Sector",
+      "source_url": "https://www.thirdsector.co.uk",
+      "pubDate": "2026-11-07T02:01:35+09:00",
+      "category": "해외 의료기관 AI 도입·운영",
+      "queries": [
+        "health system AI governance"
+      ],
+      "sources": [
+        "Third Sector"
+      ],
+      "preferred": false,
+      "score": 1
+    },
+    {
+      "title": "GE HealthCare invests in AI-powered cath lab robotics",
+      "link": "https://news.google.com/rss/articles/CBMixgFBVV95cUxPMVEzYWVrLThwMnBJRXpld3ZGOVpabnF0MXZGREF0ckVXX0x6VUJPcjZaS2FCdXVFUkRWOEo4STlOQXFTUjgtcTFwck5zVnJETmU5NEdWckNfcjdXQzJKNEc5OVFMWjV2cXI3M0pyQ0dlMkNjX2Q5aGdZQ2lCemdYb2JTcENkTTA3Vm1qdVhkMWVqQXktU0tFR292N0NBU3oyQVE3ZGtvVjZ2YWlaUHh5UktFeTdTaVdtdGh3ak1yX0hQRDE5LVE?oc=5",
+      "source": "Cardiovascular Business",
+      "source_url": "https://cardiovascularbusiness.com",
+      "pubDate": "2026-11-07T01:37:26+09:00",
+      "category": "해외 정책·규제 (미국)",
+      "queries": [
+        "FDA artificial intelligence guidance medical"
+      ],
+      "sources": [
+        "Cardiovascular Business"
+      ],
+      "preferred": false,
+      "score": 1
+    },
+    {
+      "title": "Why legacy EHR data decides whether healthcare AI pays off",
+      "link": "https://news.google.com/rss/articles/CBMitwFBVV95cUxOUGpZQzdQdlV0S1NNVkVfeUpWVnFqUjlaVnFwVVlvR3hNT1kzcXVHMURsWjF3TzB4N042Qk45azRoRnlNWTI3T1J5QTVvOE82Tm9tOTNVS1JFR1d1X1lENTY5Z1ltaDQzNlBPZnhET0VuTUNKTEpxMVgwcjNpMFMwU3ZkYUQwem1DSjU2N3FFZ3FtTDRxZzFVMkVaMXJPYTNRd19wdHZmcTlpUGZZT0MwakREa3dwcGc?oc=5",
+      "source": "MarketScale",
+      "source_url": "https://www.marketscale.com",
+      "pubDate": "2026-11-07T00:04:26+09:00",
+      "category": "해외 의료기관 AI 도입·운영",
+      "queries": [
+        "health system AI governance"
+      ],
+      "sources": [
+        "MarketScale"
+      ],
+      "preferred": false,
+      "score": 1
+    },
+    {
+      "title": "Mayo Clinic unveils new AI clinical decision support tool | Federal court blocks ACA broker moratorium following lawsuit",
+      "link": "https://news.google.com/rss/articles/CBMi3gFBVV95cUxOSExQV3NwSXBFa05mQzBtVkJZV3ExQkV2SlNRc2RuSEVzUFc5N2dRT0xtRUhKZG9XOFJWdFdJNzMxd3dXb2VwUjVjcVo1c3laTm1ubXpTSUN1a0xQdjdEZnZLRnhwdXZScE5GY1VfS1JLNHVBMDRmZ1VXNWNnb3JOREs0UGotTFNhWVh4ZHkzbjQxNEdpRXpJbDE0Q2NFNjRLOHZCclZ1cTJtcnBEeXU1NjBrSEVkc3RTci1TOE5GZVppNThaa2Exb3pqenNaZ2RNbUgxdWltbTRVc2hrLVE?oc=5",
+      "source": "HealthExec",
+      "source_url": "https://healthexec.com",
+      "pubDate": "2026-11-07T00:00:58+09:00",
+      "category": "해외 의료기관 AI 도입·운영",
+      "queries": [
+        "Mayo Clinic AI"
+      ],
+      "sources": [
+        "HealthExec"
+      ],
+      "preferred": false,
+      "score": 1
+    },
+    {
+      "title": "PulseAI Wins FDA Nod for AI Wearable Arrhythmia Analysis",
+      "link": "https://news.google.com/rss/articles/CBMimwFBVV95cUxNd20yQjBYRnJuQzJUOEVwSDZIVU5rSWpqSUZKR005Q1k5OXRjZ1ZqR3RpYW0wVGJPX2c5bVNqN1VROU1qbDU5REszajB4d2pXZHp3d0UzRzBsVDM4VDhmM0N5aHpobGJ6bXlPTjJ1QWJiTnR2OFh6N0xlamZfZmd3SnZLRkotcV9aNmVteVNjTWh2QmNRMm5OSE5RSQ?oc=5",
+      "source": "Medical Product Outsourcing",
+      "source_url": "https://www.mpo-mag.com",
+      "pubDate": "2026-11-06T23:41:09+09:00",
+      "category": "해외 정책·규제 (미국)",
+      "queries": [
+        "FDA artificial intelligence guidance medical"
+      ],
+      "sources": [
+        "Medical Product Outsourcing"
+      ],
+      "preferred": false,
+      "score": 1
+    },
+    {
+      "title": "Health Ministry Charts Future for AB PM-JAY, ABDM: Focus on Digital Health, AI to Boost Healthcare Access",
+      "link": "https://news.google.com/rss/articles/CBMi4wFBVV95cUxPM2JEM21pTHJNclI5OUFwYWVuZk1LbFd6cURMUzNhTU9US2NDU3dSZWxQV1dLejJhdnRTcV9MaWpuNDZhcEM0b0VBc01CTTRDLXUyWGdyMVVDZndfZGl1eEptVmxreFJpM0ZNWFpqaThHbF9hZlZlMzJrdmhXYmQxYzlPbXNWc045MklWZ1RtcFNWcGxmNE5pYkQ1cDBHQzhZdGpMTktPZGFlMG16aFJVcjBKcEpVZ0c3RGJPZWhlbnkxSV9FUjJmV09GcGxFdVI3VFBQQ1AwczBTakNtNXdLYXFDNNIB6AFBVV95cUxQV0p5S1lYOUtFXzA3TVBmYVZvYkFfNGYydTF1SlFreUJGLVJiWVBuYkc2aEI2em5YWnlGX00ycktVT0t3Ty1taWppOHBUWjhURjgtWU5GWjktcU1Db0hCamZPM01PY2JSQzVoSU5JN0VyY19vMWVnUjRoMXBpOVotOVE2YXU3a0ZxV3ppWnFuM3NOaEU2QjNFdm1sSlNkcl9DVzBNMnNHZEZhbHFKaWEzV0drRFAwQkFNeDFzVmpKbVY3S21YNC1ORXdrbHFSRXZCWHp4VXBLQkNSMzFrXzl0REJnV2d4SUli?oc=5",
+      "source": "Lokmat Times",
+      "source_url": "https://www.lokmattimes.com",
+      "pubDate": "2026-11-06T23:24:06+09:00",
+      "category": "해외 의료기관 AI 도입·운영",
+      "queries": [
+        "health system ambient AI scribe"
+      ],
+      "sources": [
+        "Lokmat Times"
+      ],
+      "preferred": false,
+      "score": 1
+    },
+    {
+      "title": "Charities call for safeguards for AI-generated health information",
+      "link": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxOQVVQbTA3M3R1MFA5a2lVQlozS2NKYkhSbUlsSzl6ZVdiRlJxbmNlT1gwVE0xTEFhQmpTOFpGZEgzOElXQ1Z1c2JzSjhqZjJkMXNnTVRjdGtCS0tmY01JUjc0ZlUyMFo1Nk50LUtmYXJHazN5VUgwUWVSM2JmNDRIWFp6blR5dGdJcmZEVjVGN1dOeW9zRHlUVE1PUk5lbnJYck1MUWgzZ0w?oc=5",
+      "source": "Home | Digital Health",
+      "source_url": "https://www.digitalhealth.net",
+      "pubDate": "2026-11-06T22:35:53+09:00",
+      "category": "해외 의료기관 AI 도입·운영",
+      "queries": [
+        "health system AI governance"
+      ],
+      "sources": [
+        "Home | Digital Health"
+      ],
+      "preferred": false,
+      "score": 1
+    },
+    {
+      "title": "What Are Physicians Asking AI? A JAMA Study of 952,008 Clinicians",
+      "link": "https://news.google.com/rss/articles/CBMifEFVX3lxTFBoZXVtRjI5VlJaUml5SkcwTWd3Z1IwWkdNU3hQWEhFTERrUWU1X2tsZTRHaEZ0QndBZk5nVkhxbVkyUjB4SmQxVll1NXFFT1IwdFllZnduRDdsaVFBWDhfQ0laQzk2ZFpOOWRhYmpBZjdhSUc3Q0IwWWRNMW0?oc=5",
+      "source": "Passive Income MD",
+      "source_url": "https://passiveincomemd.com",
+      "pubDate": "2026-11-06T22:33:10+09:00",
+      "category": "해외 연구·학술",
+      "queries": [
+        "JAMA large language model clinical"
+      ],
+      "sources": [
+        "Passive Income MD"
+      ],
+      "preferred": false,
+      "score": 1
+    },
+    {
+      "title": "SFDA CEO: AI, Computer Simulation Open New Horizons for Accelerating Drug Development and Enhancing Patient Access to Treatments",
+      "link": "https://news.google.com/rss/articles/CBMiSkFVX3lxTE03Q3JhVWdMNnVQQWh6VEhSbE0waWhYNzg3aXluM1d1VzFJNVU4ajZfdUdEVnpnMWJlSml2b1NMOEtYWUxORHF6UFNB?oc=5",
+      "source": "وكالة الأنباء السعودية",
+      "source_url": "https://www.spa.gov.sa",
+      "pubDate": "2026-11-06T21:52:49+09:00",
+      "category": "해외 정책·규제 (유럽·영국)",
+      "queries": [
+        "EMA artificial intelligence medicines regulation"
+      ],
+      "sources": [
+        "وكالة الأنباء السعودية"
+      ],
+      "preferred": false,
+      "score": 1
+    },
+    {
+      "title": "Evident Vascular receives US FDA clearance for high-fidelity AI-powered IVUS imaging platform",
+      "link": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxNaFFFdFZXWUtfd1Exb1d2eUUyU3d5aGw5RUU0Wnh6TnJzVWJCNUpseW94c2YyTEo0eUtXZnFmUWxxRFpOOGdfQUZyWS10MHlXb1VKS1preXBjRElyamNVR05wTlBmM3hVMGc4czJpdHc2ZnZjNFRkSGIyTWlVNjREd0lFdEJDakxSbjNWM3FITlVBQjZ6QzVTTmZuNURSQ0pGLTR1TTFqOVNNUmxnZzN1S3lfS2FHczJ6TkVj?oc=5",
+      "source": "Vascular News",
+      "source_url": "https://vascularnews.com",
+      "pubDate": "2026-11-06T20:15:12+09:00",
+      "category": "해외 정책·규제 (미국)",
+      "queries": [
+        "FDA artificial intelligence guidance medical"
+      ],
+      "sources": [
+        "Vascular News"
+      ],
+      "preferred": false,
+      "score": 1
+    },
+    {
+      "title": "HIMSS Gives AI a Bigger Role in Digital Health Assessment",
+      "link": "https://news.google.com/rss/articles/CBMibkFVX3lxTE9HZ3VMV1phbkZEazRCSTFXWHJXUEVSb2cyZUNvYTlNSGJlTUFqcm9ILWhxUmZzSTFXVlhjMGxCQTlZdlBUUEdwa2Z4MUJHemp2YlVaUFVOb0lGdUJpbmpib2R0RDhhTVp4bEx3Q1FR?oc=5",
+      "source": "DesignRush",
+      "source_url": "https://news.designrush.com",
+      "pubDate": "2026-11-06T18:58:50+09:00",
+      "category": "해외 의료기관 AI 도입·운영",
+      "queries": [
+        "health system AI governance"
+      ],
+      "sources": [
+        "DesignRush"
+      ],
+      "preferred": false,
+      "score": 1
+    },
+    {
+      "title": "Could Delaying Healthcare AI Put Patients at Risk?",
+      "link": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxQZlpsbVRUODA2UnlpSzdxY3ZEYXUzZVNpTzRwQzRQdlFwQ3hiejJWRVYxOW50VkhNSjlMMGZBRGdfSUM1VlZkU1RmaHctZEpVTm51YUphUG1HY2FQZVFzYTRObm5jWV9YeXc5ZjA5RGVVT0JyazZTN0NDOFBpT3Y1UDFnTVh4WUV4UU4xZFlXdWVlRk5Wc0R4MHhOa2sxcHI5aTBXSENEZVpmUQ?oc=5",
+      "source": "Medscape",
+      "source_url": "https://www.medscape.com",
+      "pubDate": "2026-11-06T18:58:28+09:00",
+      "category": "해외 의료기관 AI 도입·운영",
+      "queries": [
+        "health system AI governance"
+      ],
+      "sources": [
+        "Medscape"
+      ],
+      "preferred": false,
+      "score": 1
+    },
+    {
+      "title": "Nihon Kohden : Neurotronics Receives FDA Clearance for Sleep Analysis Module, Advancing Nihon Kohden’s AI/ML-Enabled Sleep Analysis Capabilities",
+      "link": "https://news.google.com/rss/articles/CBMi5AFBVV95cUxQeGJXMnBYQXM0N25KNnQwdTd5cF95Zmt4TnAwMm5Zc1l2clQ1TUJBMnFua0stU2ZwaEE0NVg5clc1bkFNcnUwX1A5ZlN3UmtjVXkxUFdQaEdxbi1HbnBNR1ZBRy1iT2J3RHF0TTY2V3dkMEg3dW02YlBHZ0RxTW8yQTJtZWl0dV9iTDN3blNlNTFkNVBCeUJBelhVSzVZZDJfTHd5bVFWX1lfWU1yOTVzbllMeHE4akdPcUxsZ3NKamN5RG5TNW1VYlFacUhfdE9aQWtES1B1TW9zdUlGR0hrMkdieEU?oc=5",
+      "source": "www.marketscreener.com",
+      "source_url": "https://www.marketscreener.com",
+      "pubDate": "2026-11-06T17:51:05+09:00",
+      "category": "해외 정책·규제 (미국)",
+      "queries": [
+        "FDA AI-enabled medical devices"
+      ],
+      "sources": [
+        "www.marketscreener.com"
+      ],
+      "preferred": false,
+      "score": 1
+    },
+    {
+      "title": "Why Healthcare Can’t Skip Steps on the Way to Conversational AI",
+      "link": "https://news.google.com/rss/articles/CBMiowFBVV95cUxPWmZvR1dUaF9BRGN1WlNTNHNxbnRiVXVVMm1QMnpGa1dxVVVTWVpmMlB2VGdFQmN6QVhIeHQ2ZXp0dDNpMm4xb0hIWVJTMkFHSVNuMFhsb0VNSWlHdlFOTkJJUDRBOWI4c3FhdnRLOGY2NGgxU0RycmJTRGttWGgxWThMYUgxUDI2TF9nM3B3WjZoRTFMMnZwR244aDVnRHhFZUZB?oc=5",
+      "source": "HIT Consultant",
+      "source_url": "https://hitconsultant.net",
+      "pubDate": "2026-11-06T16:39:46+09:00",
+      "category": "해외 의료기관 AI 도입·운영",
+      "queries": [
+        "health system ambient AI scribe"
+      ],
+      "sources": [
+        "HIT Consultant"
+      ],
+      "preferred": false,
+      "score": 1
+    },
+    {
+      "title": "FDA clears AI-powered intravascular ultrasound imaging platform",
+      "link": "https://news.google.com/rss/articles/CBMi2AFBVV95cUxQOWg0NVJVZDZURkllZzN3bHA4Rk5DTUpUUWNUdWFKZzRIUGdkQk53ajVid3htdTh5U25GZjN6TFlPZXFCM3phMW5RTzVDR3Rid210dXJIVFA4QnhUOVplSFo1ZVI3UlBwbm51QW1lWmtyMFVZZXNpcnVoU0hvMGRTOVR0NHNqSGtMMVJxS01WTDBKU0FWam92R2hsdlR1ZF9WQ0lUREdyMllHeVBKbVgybTRmc3FydEIyalh2ekl4QnZiemZQRHpqYld2a2NLV0lnckxSTmRXNks?oc=5",
+      "source": "Radiology Business",
+      "source_url": "https://radiologybusiness.com",
+      "pubDate": "2026-11-06T16:14:14+09:00",
+      "category": "해외 정책·규제 (미국)",
+      "queries": [
+        "FDA artificial intelligence guidance medical"
+      ],
+      "sources": [
+        "Radiology Business"
+      ],
+      "preferred": false,
+      "score": 1
+    },
+    {
+      "title": "NTT partners with Ubie to trial medical AI information platform at Tokyo hospital",
+      "link": "https://news.google.com/rss/articles/CBMiwgFBVV95cUxQTkhXOFJreTFWNWgzWGt2dW1WdG93c3VMUEMxZzVkMzNtbUxLQVhsbDUwMzJPUHZkTVVrNVMwaXF0b1oxclc3T1NNMmFzZFprRnBGUTU2ZGQwUE55dnBraWlBN1NSazJNcHRjQmF0blZQZUZJdl9SdUZTYnRRRDBnZHRkNzRrZXRSaXVUUkpNZ2dodmtWd3NxTHpLTUJzTmtTaVl6SGlvZXVMczJzRUxVZDhYdG9kSzlKanZJeWJBOTFFQQ?oc=5",
+      "source": "Telecompaper",
+      "source_url": "https://www.telecompaper.com",
+      "pubDate": "2026-11-06T14:36:56+09:00",
+      "category": "해외 의료기관 AI 도입·운영",
+      "queries": [
+        "hospital generative AI deployment"
+      ],
+      "sources": [
+        "Telecompaper"
+      ],
+      "preferred": false,
+      "score": 1
+    },
+    {
+      "title": "FDA Clears High-Fidelity AI Powered IVUS Imaging Platform",
+      "link": "https://news.google.com/rss/articles/CBMimgFBVV95cUxNRENUeTlZck42dFV3VVdraHdMdGs4NWF3Q0ZGUU9nd0xmQlZKS2pNTUM1MmhSMmJaTzFaa2RTT0N2UXNpSVNvb29ScWdZSkt3X1J1VnVHcERyRTdQX0o0cmVSb29zZUtERTZWZVFHcG9tT1hKYkhzMUItWEZwU2U3MUJrS3l1dEVnSmJTUnBETEZnaG16eFFsdkNn?oc=5",
+      "source": "www.dicardiology.com",
+      "source_url": "https://www.dicardiology.com",
+      "pubDate": "2026-11-06T10:04:49+09:00",
+      "category": "해외 정책·규제 (미국)",
+      "queries": [
+        "FDA artificial intelligence guidance medical"
+      ],
+      "sources": [
+        "www.dicardiology.com"
       ],
       "preferred": false,
       "score": 1
@@ -401,6 +650,22 @@
       ],
       "sources": [
         "AOL.com"
+      ],
+      "preferred": false,
+      "score": 1
+    },
+    {
+      "title": "Researchers Say AI Can Flag Pancreatic Cancer Risk 3 Years Before Diagnosis Using Routine Health Records",
+      "link": "https://news.google.com/rss/articles/CBMimwFBVV95cUxPcGNfeXBpV3NhOFA1X1FCUGV3X3A0dWxVaVlBQ0daQ0xhaTFjQ2txQWZaWXI3cFNaN2RtUk5pd251OGVqWFl1QVRsWVNNZDlKZmVJaFZiM2prMGpCSXQ0bTI1YnFISDdCZ2tyQ241UUpCSXN6elZYakZ1THFaSTE1MldrU201ZU8wSXNhM0o1N0V2ZjJWWWJjdXpEbw?oc=5",
+      "source": "Men's Journal",
+      "source_url": "https://www.mensjournal.com",
+      "pubDate": "2026-11-06T02:24:20+09:00",
+      "category": "해외 의료기관 AI 도입·운영",
+      "queries": [
+        "Mayo Clinic AI"
+      ],
+      "sources": [
+        "Men's Journal"
       ],
       "preferred": false,
       "score": 1
@@ -439,9 +704,9 @@
     },
     {
       "title": "[Op-Ed] Mental health: AI listens, but who provides care?",
-      "link": "https://news.google.com/rss/articles/CBMilAFBVV95cUxNV1pBU2NweU9WV0FsNHFaaDRGLXNzZmtaYzFMMnYzN1hfQlFvYVIxdXEtbGZkai1OQThaUUwzTkZ4SmZkbm02a3JlRHpSQ2VkN2x4WVBsMTlZYl9kaThXSmpwV0tReWl4SXkydmVoNHBPY1lZUXpsWnphdW5ibWFjVzZMblhoQnI5a3plSXRlU0VvYXNJ?oc=5",
+      "link": "https://news.google.com/rss/articles/CBMingFBVV95cUxNSU5XSjFtdHlJbEQ5QURfMlJFYkNUN2FIdnZOeDBrRjNGR0czanZ3QVhYSUdRZXNOS2xOdURNZFdzN1VmTTNJUDZpQml5Z3FINXJPNFAwTWE5aGZOSnNPV2N3TUtRR1lhd0lNaXdkLXRuRzFNVDFOTjNvZXAwWC1vWFMyNl85MmFTMDJKOFZXaU92aGduOVh4ekNFQkhYQQ?oc=5",
       "source": "Telquel.ma",
-      "source_url": "https://telquel.ma",
+      "source_url": "https://mobile.telquel.ma",
       "pubDate": "2026-11-06T02:00:28+09:00",
       "category": "해외 연구·학술",
       "queries": [
@@ -465,22 +730,6 @@
       ],
       "sources": [
         "EurekAlert!"
-      ],
-      "preferred": false,
-      "score": 1
-    },
-    {
-      "title": "Radiologists: how artificial intelligence frees up time for building relationships with patients",
-      "link": "https://news.google.com/rss/articles/CBMiygFBVV95cUxPNkJoQV9Cc3oxX3pQNU9uT2RGa05Oclh5MjZ3LTRyV3VjRHl4MXNRemFXMVBaR0wyWWhqZTFwUUJZeGJiTEV2Zm5TQmNaaWFEdkI1N2YzZHRtQzM2cEFUYnAtT2lxZ3Rsdlo2YjZ5WERnRVN5YS1MeF9lSDRBRGRMUnFqY3ZGNU5rVFhIWmVVUVktU0EyRC1kVWE0VDZTUjZ2MXoxSFRaM1pwbEJ0ZUpaTTB5MWw5Y1FySnFoS0s0ZGloaWVqemM0QmlB?oc=5",
-      "source": "Il Sole 24 ORE",
-      "source_url": "https://en.ilsole24ore.com",
-      "pubDate": "2026-11-06T00:25:34+09:00",
-      "category": "해외 연구·학술",
-      "queries": [
-        "Nature Medicine artificial intelligence"
-      ],
-      "sources": [
-        "Il Sole 24 ORE"
       ],
       "preferred": false,
       "score": 1
@@ -646,305 +895,49 @@
       "score": 1
     },
     {
-      "title": "70% of Healthcare Organizations Found an AI-Built Tool That Handl",
-      "link": "https://news.google.com/rss/articles/CBMitwFBVV95cUxNTzZGVjBEbnlHT2FNeHRBWXFKNnNpdFJXZzRzWi1zVFJrNS1jRjdaaEZiRE1vTmxyU1drMmpGQ3czTkM5dlYxZlRMSF8za0xGUFpfUWstVGtjdWRTVExtS0kxTFlWM0VOcExmRkl1c2FxVktPVnA4bGRXUTFqdVdJWFlFUUFWc2VoUXV4R19TME1MVXpKWTBIdGU5WFQ4dzFaeVJQYXJwNC1XblRRZXV0Q1dnMEJFVDQ?oc=5",
-      "source": "The National Law Review",
-      "source_url": "https://natlawreview.com",
-      "pubDate": "2026-11-05T05:10:25+09:00",
+      "title": "Your old medical reports may reveal a disease risk you don't know about. Here's how AI can help",
+      "link": "https://news.google.com/rss/articles/CBMikwJBVV95cUxQNi1WU0tCcXVMTnVKZjBTNzA1TElHNk1FS2poWU96NEEtNkNYemU4M010bkMtNlVaX2N4WWVSYTZnVUQ1UkoxLWRvS3M1dVVIZUt5azRCUEZTRnhJeVNXRmNoSTU2N0E0ekU4bGVfZjdtSlE1RUpKUDBWdDhWRGNSM3Mwd3BhWi1NaWtfbm94SmV6SzU4SG91TDNGVERrb2V2RkJsaUNON0F4N2FtSUNMQzB3S3BjUVBvVTM4OWliaEhmdjNIeVAydENoUk9saDdERVNiSWNmSlEybTNfeWtVbVY2bktPRFFhVWtTX29aMEZHRVY3VTlfN1pMTWs2VkhQbHJDY29Za3pQNXVUcjJiYTFXRdIBmAJBVV95cUxPaWhSbFNoMnI0eDBGN3ZiRzNmVlY2aXdqS2Z0TlpRUUQyV0JXSTEzLWNwS0ZWaEp1c3Q4Q2owS28wQUFKUTVZaXphVlBHTno5cThtZnNIbHNnOUYxUktjSUJ3aUFkSWkxci1JTFRWNGRZZVVmalI2QllLU0dHa0tmQm9ibDdPSFI2cDhxa210UG1rSmF6eVFNSkQ5VzhWMXh1TzgzUXVRQnZaWVhZX1VTd2pQeGJqdVFWb1BpcUw4N2hzX1VXbnpWc3Q1UkFIbXhILTlPS20yRVlKT3pER0UxX1JFbXVWSHpwTzVfcmRlalV2VUVLa0VwaVZLWjhjTGttb1NUcFNNcmFIMHhYa2k5eTZjMXE1bk93?oc=5",
+      "source": "The Economic Times",
+      "source_url": "https://m.economictimes.com",
+      "pubDate": "2026-11-05T12:35:41+09:00",
+      "category": "해외 정책·규제 (미국)",
+      "queries": [
+        "CMS artificial intelligence health"
+      ],
+      "sources": [
+        "The Economic Times"
+      ],
+      "preferred": false,
+      "score": 1
+    },
+    {
+      "title": "AI Telehealth Documentation Tools",
+      "link": "https://news.google.com/rss/articles/CBMid0FVX3lxTFBIUV8weVBtemN2UVl5Mjlsc2dFMXJDWVVfUjdOWWg4Mnl6VWZEWHAxUEJtbVlRLUszNl8xY2F1ZFRoTUxQV3VHQklpampiNTlybW5ZNktQMzVRc0hnN3pjYkJSM28zYTdNdTFUNEpfYkEzUVpMellz?oc=5",
+      "source": "Trend Hunter",
+      "source_url": "https://www.trendhunter.com",
+      "pubDate": "2026-11-05T09:12:54+09:00",
       "category": "해외 의료기관 AI 도입·운영",
       "queries": [
-        "health system AI governance"
+        "health system ambient AI scribe"
+      ],
+      "sources": [
+        "Trend Hunter"
+      ],
+      "preferred": false,
+      "score": 1
+    },
+    {
+      "title": "Independent Study of FDA Correspondence Finds Earliest CDER Warning Letter Citing AI Use",
+      "link": "https://news.google.com/rss/articles/CBMisAFBVV95cUxPSUtnekpUMzRBdUtJNkIwSWZVbWxyOTFmNVVyTHhTaGR1TFNqSlV1WXNOaDIzaWxoM013LWwxTEdvMmV4NGlmczJCY3J5VFd2Y1dYaUttRWMzVVdoczBVaEJfdlAzNGxpWkNERk1jU3dkYUtYRXpRdTctSkZRNHVUZGJPRGZReWEtNkFtVnR0djJjOG8xaWhKT2lYNVhTVHBhTXQ4bTFrTnF6bFBlanhPWg?oc=5",
+      "source": "The National Law Review",
+      "source_url": "https://natlawreview.com",
+      "pubDate": "2026-11-05T08:34:01+09:00",
+      "category": "해외 정책·규제 (미국)",
+      "queries": [
+        "FDA artificial intelligence guidance medical"
       ],
       "sources": [
         "The National Law Review"
-      ],
-      "preferred": false,
-      "score": 1
-    },
-    {
-      "title": "FDA Clears Emerging AI-Enabled Platform for Intravascular Ultrasound",
-      "link": "https://news.google.com/rss/articles/CBMipgFBVV95cUxPb0ZWYXNEM3Y2TlVXMlZaUWJQd1BweUpWTk5WZEVWNnVqcXFjZHRCOVE1TG9qN1FHWjhzcU5RVy1YOWFpMUViVkNlZGYyY2NxbkF3QjE3a1otX21GMGlRMmdaQ0o3Z3BKQ2ZUNEp4d2VIM3UwVWd2dmFla1FvVlpTaG5jbkZoRTRnWXFick9EZzdGUElfMURiWjhid3dTcmVfSElrTm5B?oc=5",
-      "source": "Diagnostic Imaging",
-      "source_url": "https://www.diagnosticimaging.com",
-      "pubDate": "2026-11-05T04:40:49+09:00",
-      "category": "해외 정책·규제 (미국)",
-      "queries": [
-        "FDA AI-enabled medical devices"
-      ],
-      "sources": [
-        "Diagnostic Imaging"
-      ],
-      "preferred": false,
-      "score": 1
-    },
-    {
-      "title": "Willis Knighton Health Uses Ambient AI from Commure to Reduce Physician Burden",
-      "link": "https://news.google.com/rss/articles/CBMiwgFBVV95cUxPZzdSVFVfSXp0OW5kcDFZSHpXYV9VcF80LTlkN2U1cWRaOGZkQ3hnZUpBWGQwcUo2MVJiRW1PdWNjY29TR2huMy1nTmlsUVJHMWZRR281b1lsUzB0UVhkaC10dkVDd2pSdlBWeEZoQXpoLXJmRVh1T21QOUNGR0hINURYTGRPRkRDMHhZODhYNWtRRkRvWElXejBydmx2djg5ZDB6TDdXMzFIV2VsYUpSNGVTTERabGxDNUduV2dYS1Awdw?oc=5",
-      "source": "Healthcare IT Today",
-      "source_url": "https://www.healthcareittoday.com",
-      "pubDate": "2026-11-05T04:14:39+09:00",
-      "category": "해외 의료기관 AI 도입·운영",
-      "queries": [
-        "health system ambient AI scribe"
-      ],
-      "sources": [
-        "Healthcare IT Today"
-      ],
-      "preferred": false,
-      "score": 1
-    },
-    {
-      "title": "Microsoft’s Medical AI Is Over Twice as Good Diagnosing Diseases as Doctors",
-      "link": "https://news.google.com/rss/articles/CBMiswFBVV95cUxOT1RneWZyTXdjVzBhN0owd3pqUGE0SFJIWlktVERseHo5SjhSVGF2cnNucEVJX1p6M0dScXkta3BUaWh1UzFsWTZqZWNESV9mUFBobWZyLS02X0NWSnJ5S2hYSWV4WFhmaWJsX25ocXhRaGZVd1RFMm9NSUxYUm9ucklUbXgwcUJmQkJ1TFJrbkdRSkZfeXNKdWMtY0JTVXhVbWpZdDVKNnB5TnBNU0duTEhKOA?oc=5",
-      "source": "SingularityHub",
-      "source_url": "https://singularityhub.com",
-      "pubDate": "2026-11-05T03:55:52+09:00",
-      "category": "해외 연구·학술",
-      "queries": [
-        "NEJM AI"
-      ],
-      "sources": [
-        "SingularityHub"
-      ],
-      "preferred": false,
-      "score": 1
-    },
-    {
-      "title": "AI and Medicine: Who’s the Doctor?",
-      "link": "https://news.google.com/rss/articles/CBMif0FVX3lxTE4tR1Vwd2hyMGZ3ejJnX01JWk5hRHJaR0VHM0JWbG5CNDN0WXl6b1dtVHpDbC1GQzZORjltTlA0SGszLWF6LWpON0szTlpxSVlmRWVxNnZfN01TMGppLXNBa1o1bnZjVEhNU2MyM19kMTR5bW1mLUlGblRzN3RFcjg?oc=5",
-      "source": "HPCwire",
-      "source_url": "https://www.hpcwire.com",
-      "pubDate": "2026-11-05T02:39:13+09:00",
-      "category": "해외 정책·규제 (미국)",
-      "queries": [
-        "FDA artificial intelligence guidance medical"
-      ],
-      "sources": [
-        "HPCwire"
-      ],
-      "preferred": false,
-      "score": 1
-    },
-    {
-      "title": "How to Choose the Best EHR With AI Clinical Documentation",
-      "link": "https://news.google.com/rss/articles/CBMikwFBVV95cUxPaU5DeVhaT2dDSjFZTW9yMDhWQTYwOFlYcmZlbnZZRVA4dEtvWTRFS0FOdk5SbF9ZUF80dGV6TnJjcVdLdEJLT29LYmdkMFZoTHZnTDJISm9oYnF0Z29ZU3RIdHhnTExqalRoWS1nNlkyMFBfdlZaV2JuN3BkOW5Nc0RXUG1uaTFuSGh4N0hMQnllUE0?oc=5",
-      "source": "Nerdbot",
-      "source_url": "https://nerdbot.com",
-      "pubDate": "2026-11-05T02:02:49+09:00",
-      "category": "해외 의료기관 AI 도입·운영",
-      "queries": [
-        "health system ambient AI scribe"
-      ],
-      "sources": [
-        "Nerdbot"
-      ],
-      "preferred": false,
-      "score": 1
-    },
-    {
-      "title": "Decoding real cost of healthcare AI",
-      "link": "https://news.google.com/rss/articles/CBMicEFVX3lxTFB4QkR1QVZ2MFNVbkw3QlZZbllOVjdGVkFDS0FMUW9MSXNDUnhWUjI4cG9hVWVoTVRoMVdrOUIwVU03UGU4bTJDYXZxT0JxMERnNHJ4dUFaUHhITmF6d3FhNUFFS3VtdHVxZkVrNDNBWGc?oc=5",
-      "source": "Medical Buyer",
-      "source_url": "https://medicalbuyer.co.in",
-      "pubDate": "2026-11-05T01:56:32+09:00",
-      "category": "해외 연구·학술",
-      "queries": [
-        "randomized trial AI clinical decision support"
-      ],
-      "sources": [
-        "Medical Buyer"
-      ],
-      "preferred": false,
-      "score": 1
-    },
-    {
-      "title": "GE HealthCare Adds 2 AI Tools to Vscan Air Handheld Ultrasound",
-      "link": "https://news.google.com/rss/articles/CBMiowFBVV95cUxOVU1RRkFvQmJJQ0tzcWpQbThMWFMwQnZvN2YyZW9SbFlvUzQ0a0tBamlNWVVkaTZyb3k4OVRXRDNOeFdtaFg3NnhLb01pMkZlbllMbTBabVBVSUhLNFl1SzBaWUp3a1V4VDVqbVpJVmF5RFpBb05hbkRoNlR0c2cwbWJwdk96WnFFSjJaTGFrYWxndzZCS3NOdVhLMll4elJfVnFz?oc=5",
-      "source": "Medical Product Outsourcing",
-      "source_url": "https://www.mpo-mag.com",
-      "pubDate": "2026-11-05T01:38:05+09:00",
-      "category": "해외 정책·규제 (미국)",
-      "queries": [
-        "FDA AI-enabled medical devices"
-      ],
-      "sources": [
-        "Medical Product Outsourcing"
-      ],
-      "preferred": false,
-      "score": 1
-    },
-    {
-      "title": "Comparative Cost of Care Recommended by LLMs vs. Treating Physicians",
-      "link": "https://news.google.com/rss/articles/CBMilgFBVV95cUxORWg3REJKLWh0YlNsa1hmWFVGTzBWTXhsNDRZeDg3WXI4bC1YUWRLVTY4N3I0MVZSeE53aEhlR25IUnpEWGduc1REVkx4dUpjcWtnVjg3N2N3Ykk5WXVNWDY1bDBXNEVISk1jVEJaQ3J2ZmdKUVpuSGtKNTY1U3h1Z3kzZldoSEtCZkF3U1JNTjBodFEzTUE?oc=5",
-      "source": "Freeman Spogli Institute for International Studies",
-      "source_url": "https://fsi.stanford.edu",
-      "pubDate": "2026-11-04T21:00:00+09:00",
-      "category": "해외 연구·학술",
-      "queries": [
-        "NEJM AI"
-      ],
-      "sources": [
-        "Freeman Spogli Institute for International Studies"
-      ],
-      "preferred": false,
-      "score": 1
-    },
-    {
-      "title": "Three-quarters of GP clinicians say AI scribe improves patient interactions",
-      "link": "https://news.google.com/rss/articles/CBMinAFBVV95cUxQcmpDUHpib3hISUcyMHRQcDlaS2hPZmREQnpHbmFZZnBqQnRGWXNwZlZmd09rd0hYZlMtdXdPNGpxT3FEalNtSHp4d2thc25lUF9LdnRRWWF6LUJZS3ZFMmdUczlBajdtUDNLcGpjRTJDbGJfRHFzY3BOY0x5QV9vekdlSW1IOHdNdTNxOUM3T0hneGNwSlFHd1l0X3I?oc=5",
-      "source": "Healthcare Management Magazine",
-      "source_url": "https://www.healthcare-management.uk",
-      "pubDate": "2026-11-04T20:09:57+09:00",
-      "category": "해외 의료기관 AI 도입·운영",
-      "queries": [
-        "health system ambient AI scribe"
-      ],
-      "sources": [
-        "Healthcare Management Magazine"
-      ],
-      "preferred": false,
-      "score": 1
-    },
-    {
-      "title": "FDA warning letters rarely mention AI, retrospective analysis finds",
-      "link": "https://news.google.com/rss/articles/CBMilgFBVV95cUxQYjJ5MnZSNHNiQzV4cHhyQUpXZG5EZ3BGSFRhQ3l1YTVpZjczZlR1cUZCTmh2N0NJLU5DVldsd1k1bUJJc1Zmbm84TG92SUxZS2NtdWVVSzgwXzZDcTNjOE5MQzY3bTZNQUd3WS0zTHRwQmNPY0ZGdndDR0J6ejd3UVktdVZyNUF1d3IzYlRwT2RmemZKcWc?oc=5",
-      "source": "Bioengineer.org",
-      "source_url": "https://bioengineer.org",
-      "pubDate": "2026-11-04T19:32:12+09:00",
-      "category": "해외 정책·규제 (미국)",
-      "queries": [
-        "FDA artificial intelligence guidance medical"
-      ],
-      "sources": [
-        "Bioengineer.org"
-      ],
-      "preferred": false,
-      "score": 1
-    },
-    {
-      "title": "AI in kidney care shows promise but clinical proof still lags behind",
-      "link": "https://news.google.com/rss/articles/CBMimAFBVV95cUxQSmUwcU45OGpJTVhPUFp3MlZsYWF4d0NIRmlxYjdZdkx0NDFxdllZYWZ0QThJdkFwLWMyakRTSjY3LWE1bnN5T3oyenhRZjU5REhIRFlqX2c1d1dmV2owNzJad041U2M5U2JXWXVDSlJMMVBuTTFremtyckRQNnNxYVZFdnJYUkVKbXhYbEJkdVVFX1N5ZHo2MQ?oc=5",
-      "source": "Bioengineer.org",
-      "source_url": "https://bioengineer.org",
-      "pubDate": "2026-11-04T19:32:12+09:00",
-      "category": "해외 연구·학술",
-      "queries": [
-        "randomized trial AI clinical decision support"
-      ],
-      "sources": [
-        "Bioengineer.org"
-      ],
-      "preferred": false,
-      "score": 1
-    },
-    {
-      "title": "When Hospital AI Harms Patients, Who Pays? University of Bologna Researchers Expose a Growing Liability Gap",
-      "link": "https://news.google.com/rss/articles/CBMi3wFBVV95cUxQWW5TckJIYjllOVN5bWc1Vk5DdHZPWko2czc0WERQNXlWeWZ4X1pPTWhVSmZrN1FQanpfc3ZuR1VtRlptWmF6UzJaNDBKRFRPTVBjRFNLYkxJbUJkal9NTVB4RUdUVVVtWGtQaVR0Y1E4aFBHWUhSbmNBODBxVmlSVG5FMFBqWUdpQ0pjc18yNFhpdk5uVWp3ZVZhanBudVJNbW1aOTBNRFBoUTRadmUzMTBoa3Vua1A0dTZvcVVTOTVkdzVwQTJONGNzV01zWnFLX2paMWQzQXFyZjVOcGJz?oc=5",
-      "source": "Trial Site News",
-      "source_url": "https://www.trialsitenews.com",
-      "pubDate": "2026-11-04T16:28:32+09:00",
-      "category": "해외 정책·규제 (유럽·영국)",
-      "queries": [
-        "EU AI Act medical devices"
-      ],
-      "sources": [
-        "Trial Site News"
-      ],
-      "preferred": false,
-      "score": 1
-    },
-    {
-      "title": "Nurses Given Two Hours of Training Used AI Guidance to Capture Usable Heart Scans for 4,597 Rural Adults",
-      "link": "https://news.google.com/rss/articles/CBMijAFBVV95cUxNRVduYV82YlNIYkh4SnZzOGJPY3lhMl9qR3hzNDFZYVRnWkhjNElFMTFVSjBNYUwycUZfSWEwX19DN3VWVUZSS2FkSnZfRm5rRlk0RTlzUXlJYzJnZ2NvakxWUTlVWGZNbkZkd1FkLWJzWDJRUTIxbDNrQ1ZKaU1kc000VDNoQXNZby1jMw?oc=5",
-      "source": "Medical Daily",
-      "source_url": "https://www.medicaldaily.com",
-      "pubDate": "2026-11-04T16:24:14+09:00",
-      "category": "해외 의료기관 AI 도입·운영",
-      "queries": [
-        "Mayo Clinic AI"
-      ],
-      "sources": [
-        "Medical Daily"
-      ],
-      "preferred": false,
-      "score": 1
-    },
-    {
-      "title": "Japan’s NTT, U. of Tokyo, Create AI-based System to Predict Risk of Developing Health Issues",
-      "link": "https://news.google.com/rss/articles/CBMif0FVX3lxTE1MamZtQWQ4ZkllNjRxTUNSTzE3bGxlM1pjRk54Q0thMUlZS3JJUUU5TDdlWjVrbkxFaHZSeUVRN3NQY0tmUGV5VU90VHZfUWV2Rm5GejVzYXZKQ1lnVWdXS2dxcWIwWEJEOUZ3X3hDX2k1MGRzbVZGZ2QyNzk0TVk?oc=5",
-      "source": "The Japan News",
-      "source_url": "https://japannews.yomiuri.co.jp",
-      "pubDate": "2026-11-04T14:43:00+09:00",
-      "category": "해외 연구·학술",
-      "queries": [
-        "Nature Medicine artificial intelligence"
-      ],
-      "sources": [
-        "The Japan News"
-      ],
-      "preferred": false,
-      "score": 1
-    },
-    {
-      "title": "AI-enabled Mayo Clinic tool supports individualized patient care decisions",
-      "link": "https://news.google.com/rss/articles/CBMivwFBVV95cUxORU81ZEZ3eVBoUVFjY2pBRG1fcFlnd25qWHE2d0EybUQzSHJfN3h0ZGZOeXM1R3Y1OTNvdV9kdHVkSVVYTFdFUUNnZ0dybFJ4WVRYQjlZQU1BS0Y0VG5JTjJzS1UxX281V041NmlIYm5EeGpYN2pMd3JCbDNIcEYzR1V4LV9oZXBpLUxaV1BYNzRLektmRW9jR19GSEx6YzhKUEZaMml3eTdyNXV0Z0VtWWtDbGxRMlA3RTNWV0NxRQ?oc=5",
-      "source": "News-Medical",
-      "source_url": "https://www.news-medical.net",
-      "pubDate": "2026-11-04T14:30:00+09:00",
-      "category": "해외 의료기관 AI 도입·운영",
-      "queries": [
-        "Mayo Clinic AI"
-      ],
-      "sources": [
-        "News-Medical"
-      ],
-      "preferred": false,
-      "score": 1
-    },
-    {
-      "title": "Healthcare companies split over risks of autonomous AI",
-      "link": "https://news.google.com/rss/articles/CBMinAFBVV95cUxNSnFGZnU2aVdTd1VYWmpRZ1FKS29LTzY0UThXY1czeEYtc3p0NHlRNzIzZnp3enNMQUVtd2Zjc183WUR3SFpLeEtCRk9qWS10cU91X0pEcEZiZnk5V2lUcWZ6Q3drdlEyT2U4LVZVNGplUWgtVWI4UmFzVjl3dG5ZbmwzYjVGaVRjcG9uY1hVTXJ2bkZuQUdRR2EtWkw?oc=5",
-      "source": "Medical Republic",
-      "source_url": "https://www.medicalrepublic.com.au",
-      "pubDate": "2026-11-04T14:00:06+09:00",
-      "category": "해외 의료기관 AI 도입·운영",
-      "queries": [
-        "health system AI governance"
-      ],
-      "sources": [
-        "Medical Republic"
-      ],
-      "preferred": false,
-      "score": 1
-    },
-    {
-      "title": "AI can assist, but doctors must have the final say: BMH",
-      "link": "https://news.google.com/rss/articles/CBMitgFBVV95cUxPbjhnb3BGWjVER2tYTlJPNHdWbDkwaTlRMEg2VFNpbzN4aWlWRXFEMldQeGhxN0N0dDAwZUJMOHBoZ3Rmb25hVXc1cWRUT1J6SU85a1AtbllqaGs4X3VFaU55TVBXVkVZUllCZWlyY3pobUNYekwtRzcxNDF5dHpCN2ZHT0g3VWtJYUZMVFpyUlJHTjE3bjdqdURFR1VZUVlxRHNLRzlfb1hwT2xVXzRJZkFPVlRKd9IBwwFBVV95cUxOSUZMRHF5LUxQTldxWk5ha0ZuT3lDdEx3UEc0V2NSMG10NGhjalIxYjlhLVZjZzBFMXpyWFU4M2h6MWt6aW9ycmFYSGFtaHlqaGdZZmpNTXNPRm5qbnAxRW1JT3BRVzJhSUw2RUU0blZ5UkRfdlMzTzFaUVJXcjFwM1F1aWJCU29NeC13UnVLdHN6R3lvMWs4VmE5dmlhUjVBMU1fOExtcGJzN05GS1lVb2N5SEUweFZsdFQxRVplMmp4aW8?oc=5",
-      "source": "The New Indian Express",
-      "source_url": "https://www.newindianexpress.com",
-      "pubDate": "2026-11-04T12:47:20+09:00",
-      "category": "해외 의료기관 AI 도입·운영",
-      "queries": [
-        "health system AI governance"
-      ],
-      "sources": [
-        "The New Indian Express"
-      ],
-      "preferred": false,
-      "score": 1
-    },
-    {
-      "title": "Trust in Clinical AI Starts with Governance",
-      "link": "https://news.google.com/rss/articles/CBMilwFBVV95cUxNY3E1T1lRdEdlRFB0VGlkczdRRVVfZHBsdnplc04ydWxrUi02eUVsMkpKdWJXa1RQT0ZDYkFmQUlha3d6eTh5czVJOHpKbVl1TUNobUlyaG5rTFUwT3VjZDRoMFh6R0ZoZnZITU40a2pES0ZUV1lNUDZzb3c3dnVNOV85MUFMQTBsUTNWa3Q4Qmh3S0x2b2VV?oc=5",
-      "source": "Wolters Kluwer",
-      "source_url": "https://www.wolterskluwer.com",
-      "pubDate": "2026-11-04T08:30:00+09:00",
-      "category": "해외 의료기관 AI 도입·운영",
-      "queries": [
-        "health system AI governance"
-      ],
-      "sources": [
-        "Wolters Kluwer"
       ],
       "preferred": false,
       "score": 1
