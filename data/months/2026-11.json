@@ -1,16 +1,16 @@
 {
  "month": "2026-11",
- "generated_at": "2026-11-07T08:12:14.607652+09:00",
+ "generated_at": "2026-11-08T08:05:30.742889+09:00",
  "prev_month": "2026-10",
- "collected_days": 7,
+ "collected_days": 8,
  "first_day": "2026-11-01",
- "last_day": "2026-11-07",
- "total": 1229,
+ "last_day": "2026-11-08",
+ "total": 1276,
  "prev_total": 4285,
  "by_region": {
-  "국내": 1013,
-  "해외": 200,
-  "정부": 16
+  "국내": 1047,
+  "해외": 212,
+  "정부": 17
  },
  "weekly": {
   "2026-W44": {
@@ -18,71 +18,71 @@
    "해외": 15
   },
   "2026-W45": {
-   "국내": 964,
-   "해외": 185,
-   "정부": 16
+   "국내": 998,
+   "해외": 197,
+   "정부": 17
   }
  },
  "categories": [
   {
    "name": "국내 · 국내 의료 AI 기업",
-   "count": 271,
+   "count": 278,
    "prev": 769,
-   "delta": -498
+   "delta": -491
   },
   {
    "name": "국내 · 국내 정책·규제",
-   "count": 233,
+   "count": 241,
    "prev": 648,
-   "delta": -415
+   "delta": -407
   },
   {
    "name": "국내 · 국내 의료기관",
-   "count": 161,
+   "count": 172,
    "prev": 411,
-   "delta": -250
+   "delta": -239
   },
   {
    "name": "국내 · AI 거버넌스·보안",
-   "count": 139,
+   "count": 140,
    "prev": 324,
-   "delta": -185
+   "delta": -184
   },
   {
    "name": "국내 · 학술·연구·행사",
-   "count": 108,
+   "count": 112,
    "prev": 294,
-   "delta": -186
+   "delta": -182
   },
   {
    "name": "해외 · 해외 의료기관 AI 도입·운영",
-   "count": 98,
+   "count": 104,
    "prev": 285,
-   "delta": -187
+   "delta": -181
   },
   {
    "name": "국내 · 해외 의료기관·정책·규제",
-   "count": 85,
+   "count": 88,
    "prev": 300,
-   "delta": -215
+   "delta": -212
   },
   {
    "name": "해외 · 해외 정책·규제 (미국)",
-   "count": 61,
+   "count": 65,
    "prev": 171,
-   "delta": -110
+   "delta": -106
   },
   {
    "name": "해외 · 해외 연구·학술",
-   "count": 24,
+   "count": 25,
    "prev": 74,
-   "delta": -50
+   "delta": -49
   },
   {
    "name": "해외 · 해외 정책·규제 (유럽·영국)",
-   "count": 17,
+   "count": 18,
    "prev": 57,
-   "delta": -40
+   "delta": -39
   },
   {
    "name": "국내 · 기타 (의료 AI·병원 AI 키워드)",
@@ -92,9 +92,9 @@
   },
   {
    "name": "정부 · 정부 보도자료 (검색)",
-   "count": 9,
+   "count": 10,
    "prev": 22,
-   "delta": -13
+   "delta": -12
   },
   {
    "name": "정부 · 과학기술정보통신부",
@@ -124,7 +124,7 @@
  "keywords": [
   {
    "word": "서울대병원",
-   "count": 40,
+   "count": 43,
    "prev": 143,
    "status": ""
   },
@@ -136,7 +136,7 @@
   },
   {
    "word": "FDA",
-   "count": 32,
+   "count": 33,
    "prev": 86,
    "status": ""
   },
@@ -148,25 +148,25 @@
   },
   {
    "word": "학술대회",
-   "count": 28,
+   "count": 29,
    "prev": 76,
    "status": ""
   },
   {
    "word": "아산병원",
-   "count": 28,
+   "count": 29,
    "prev": 70,
    "status": ""
   },
   {
    "word": "세브란스",
-   "count": 25,
+   "count": 28,
    "prev": 78,
    "status": ""
   },
   {
    "word": "보건복지부",
-   "count": 21,
+   "count": 25,
    "prev": 76,
    "status": ""
   },
@@ -177,20 +177,20 @@
    "status": ""
   },
   {
+   "word": "분당서울대",
+   "count": 20,
+   "prev": 65,
+   "status": ""
+  },
+  {
    "word": "국회",
    "count": 20,
    "prev": 37,
    "status": ""
   },
   {
-   "word": "분당서울대",
-   "count": 18,
-   "prev": 65,
-   "status": ""
-  },
-  {
    "word": "세미나",
-   "count": 18,
+   "count": 19,
    "prev": 91,
    "status": ""
   },
@@ -202,8 +202,14 @@
   },
   {
    "word": "삼성서울병원",
-   "count": 14,
+   "count": 15,
    "prev": 34,
+   "status": ""
+  },
+  {
+   "word": "메이요",
+   "count": 15,
+   "prev": 12,
    "status": ""
   },
   {
@@ -213,9 +219,9 @@
    "status": ""
   },
   {
-   "word": "메이요",
-   "count": 14,
-   "prev": 12,
+   "word": "서울성모병원",
+   "count": 12,
+   "prev": 26,
    "status": ""
   },
   {
@@ -225,21 +231,15 @@
    "status": ""
   },
   {
-   "word": "서울성모병원",
-   "count": 11,
-   "prev": 26,
-   "status": ""
-  },
-  {
    "word": "상급종합병원",
    "count": 11,
    "prev": 34,
    "status": ""
   },
   {
-   "word": "신의료기술",
-   "count": 10,
-   "prev": 26,
+   "word": "NHS",
+   "count": 11,
+   "prev": 18,
    "status": ""
   }
  ],
@@ -457,6 +457,17 @@
   }
  ],
  "policy_announcements": [
+  {
+   "title": "공공부문 AI 윤리기준, 신뢰받는 'AI정부'의 출발점",
+   "link": "https://news.google.com/rss/articles/CBMidEFVX3lxTE94SEwyVTJxdHZDLXJhSWROMkU2RGVXS3UyVjN1QmZpQVZQRHNMQXV6TkhwYm9wV0pmUFgwdlBTWmloSEpaR1AwNFZKT3M0SWNYdkNuT1VHQ29fd0Fja3VSMkpXMkJBUHllR1p0M3dHRzc4VjA4?oc=5",
+   "date": "2026-11-06",
+   "category": "정부 보도자료 (검색)",
+   "region": "정부",
+   "score": 0,
+   "similar_count": 0,
+   "source": "정부 보도자료 (검색)",
+   "importance": 0
+  },
   {
    "title": "국제 공동연구 추진 및 연구자 교류 확대 등 한·중 전통의학 글로벌 협력 강화",
    "link": "https://www.mohw.go.kr/board.es?mid=a10503000000&bid=0027&list_no=1492455&act=view",
