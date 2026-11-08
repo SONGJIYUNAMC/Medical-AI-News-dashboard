@@ -651,7 +651,8 @@ function editBox(it) {
 // ================= 홈: 주간 대시보드 =================
 const pinKey = (day, c, r) => `d:${day}|${r || state.region}|${c}`;
 const pinsOf = pk => { const v = state.ov.pin[pk]; return Array.isArray(v) ? v : []; };
-const better = (a, b) => (impOf(b).sc - impOf(a).sc) || ((b.similar_count || 0) - (a.similar_count || 0)) || (a.pubDate < b.pubDate ? 1 : -1);
+const srcRank = it => it.source_type === "major" ? 0 : it.source_type === "global_pref" ? 0 : it.source_type === "medical" ? 1 : 2;   // 주요 방송사·신문사 우선
+const better = (a, b) => (impOf(b).sc - impOf(a).sc) || (srcRank(a) - srcRank(b)) || ((b.similar_count || 0) - (a.similar_count || 0)) || (a.pubDate < b.pubDate ? 1 : -1);
 function regionChips() {
   const bar = el("div", { className: "chips" });
   ["국내", "해외"].forEach(r => {
