@@ -190,7 +190,7 @@
 <script>
 const REL = /의료|병원|헬스|환자|진료|임상|의사|간호|보건|의약|바이오|건강|health|hospital|clinic|medical|patient/i;
 const AI_T = /(^|[^A-Za-z])AI(?![A-Za-z])|인공지능|딥러닝|머신러닝|생성형|LLM|언어\s?모델|챗\s?GPT|파운데이션\s?모델|디지털의료기기/i;
-const state = { items: [], order: [], hotOpen: window.innerWidth >= 700, period: "", day: "전체", weeksLoaded: [], manifest: null, region: "국내", cat: "전체", q: "", rel: false, aiT: false, impOnly: false, sort: "imp", today: true, home: false, cats: false, wkTop2: false, wkGl: false, todayDay: "" };
+const state = { items: [], order: [], hotOpen: window.innerWidth >= 700, period: "", day: "전체", weeksLoaded: [], manifest: null, region: "국내", cat: "전체", q: "", rel: false, aiT: false, impOnly: false, sort: "imp", today: true, home: false, cats: false, wkTop2: false, wkGl: false, todayDay: "", nlWeek: "", nlItems: [], nlLoaded: "" };
 function setView(v) { state.today = v === "today"; state.home = v === "weekly"; state.cats = v === "cats"; }
 const $ = id => document.getElementById(id);
 
@@ -372,6 +372,28 @@ function filtered() {
 
 const regionOf = it => (it.global ? "해외" : "국내");   // 정부 발표는 국내 뉴스의 한 카테고리("정부 발표")
 const todayKST = () => new Date(Date.now() + 9 * 3600 * 1000).toISOString().slice(0, 10);
+const DOW = ds => new Date(ds + "T00:00:00Z").getUTCDay();                 // 0=일, 1=월 … 6=토
+const addDays = (ds, n) => { const d = new Date(ds + "T00:00:00Z"); d.setUTCDate(d.getUTCDate() + n); return d.toISOString().slice(0, 10); };
+// 월요일 수집분은 토·일 수집분을 함께 집계한다
+function dayGroup(day) {
+  if (!day || DOW(day) !== 1) return [day];
+  const have = new Set(state.items.map(i => i.first_seen));
+  return [addDays(day, -2), addDays(day, -1), day].filter(d => have.has(d));
+}
+function dayList() {   // 토·일은 (수집된) 다음 월요일에 합쳐 표시
+  const all = [...new Set(state.items.map(i => i.first_seen).filter(Boolean))], have = new Set(all);
+  return all.filter(d => { const w = DOW(d); return !((w === 6 && have.has(addDays(d, 2))) || (w === 0 && have.has(addDays(d, 1)))); }).sort().reverse();
+}
+// 뉴스레터 주간: 화요일 ~ 다음 월요일 오전 수집분(주말 기사 포함). 마감 월요일 날짜를 주차 ID로 쓴다
+const nlEnd = ds => { const w = DOW(ds); return w === 1 ? ds : addDays(ds, (8 - w) % 7 || 7); };
+const nlLabel = id => id ? rangeLabel(addDays(id, -6), id) : "";
+function nlWeeks() {
+  const m = state.manifest || []; if (!m.length) return [];
+  const first = m[m.length - 1].start, out = [];
+  let d = nlEnd(todayKST());
+  while (d >= first && out.length < 60) { out.push(d); d = addDays(d, -7); }
+  return out;   // 최신 주가 앞
+}
 const RECRUIT = /채용|인재\s?영입|직원\s?모집|수시\s?모집|인턴\s?모집|오늘의\s?국회|국회\s?일정|오늘의\s?일정|(오늘|내일|이번\s?주)\s?일정|한방|한의|한약|개교\s?\d*\s?(주년|기념)|개원\s?\d+\s?주년|\d+\s?주년|고병원성|조류\s?(인플루엔자|독감)|철새|살처분|산란계|가금|인수공통|사육|농장|계란/;
 // 정부 발표 탭: 언론 기사(검색 결과)는 제외하고 기관 직접 발표만(이전에 저장된 데이터 보정)
 const keepItem = it => !RECRUIT.test(it.title) && !(it.region === "국내" && !it.manual && /^기타/.test(it.category || "")) &&
@@ -708,8 +730,8 @@ function newsCard(it, pk, pinnable, dayChip) {
       : (catOptions(regionOf(it)).length ? [el("details", { className: "editbox" }, [el("summary", { textContent: "분류 수정" }), el("div", { className: "editrow" }, [catSelect(it)])])] : [])),
   ]);
 }
-function copyCandidates(items) {
-  const lines = [`[${periodText(weeksFor(state.period))} 의료 AI 동향 — 뉴스레터 후보]`, ""];
+function copyCandidates(items, label) {
+  const lines = [`[${label || periodText(weeksFor(state.period))} 의료 AI 동향 — 뉴스레터 후보]`, ""];
   items.forEach((it, i) => lines.push(`${i + 1}. ${it.title} (${it.gov ? it.agency : host(it.originallink || it.link)})`, `   ${it.originallink || it.link}`, ...(it.summary ? [`   ${it.summary.slice(0, 160)}`] : []), ""));
   const txt = lines.join("\n");
   (navigator.clipboard ? navigator.clipboard.writeText(txt) : Promise.reject()).then(() => alert("뉴스레터 후보 목록을 복사했습니다."), () => prompt("아래 내용을 복사하세요", txt));
@@ -729,8 +751,8 @@ function addLinkBox() {
 }
 // 하루치 기사에서 카테고리별 상위 2건(직접 고정한 기사 우선) — "오늘의 주요 뉴스"이자 주간 대시보드로 자동 누적되는 선정분
 function dayPicksFor(day, region) {
-  const by = new Map();
-  state.items.forEach(it => { if (it.first_seen === day && regionOf(it) === region) { const c = catOf(it); if (!by.has(c)) by.set(c, []); by.get(c).push(it); } });
+  const by = new Map(), grp = dayGroup(day);
+  state.items.forEach(it => { if (grp.includes(it.first_seen) && regionOf(it) === region) { const c = catOf(it); if (!by.has(c)) by.set(c, []); by.get(c).push(it); } });
   const out = new Map();
   by.forEach((arr, c) => {
     arr.sort(better);
@@ -757,12 +779,12 @@ function csvRow(it, day) {
     it.originallink || it.link, (it.pubDate || "").slice(0, 10), lv === 3 ? "상" : lv === 2 ? "중" : "", state.ov.nl[ovKey(it)] ? "Y" : "", it.summary || ""];
 }
 // ---------- 주간 확정(스냅샷) ----------
-const snapWeek = () => (state.manifest ? (weeksFor(state.period)[0] || "") : "");
+const snapWeek = () => state.nlWeek || "";
 const snapOf = w => (w && state.snap[w] && state.snap[w].rows && state.snap[w].rows.length ? state.snap[w] : null);
-function snapRowsFor(week) {   // 이 주에 선정된 기사 전부(국내+해외)를 표 한 줄씩으로
+function snapRowsFor(week) {   // 이 주에 올린 기사 전부(국내+해외)를 표 한 줄씩으로
   const rows = [];
   ["국내", "해외"].forEach(region => {
-    const by = weeklyBy(region === "해외", week);
+    const by = weeklyBy(region === "해외");
     orderedCats([...by.keys()]).forEach(c => by.get(c).forEach(x => rows.push(csvRow(x.it, x.day))));
   });
   return rows;
@@ -777,7 +799,7 @@ function snapConfirm(w) {
   const rows = snapRowsFor(w);
   if (!rows.length) { alert("이 주에 선정된 기사가 없습니다."); return; }
   const nl = rows.filter(r => r[8] === "Y").length;
-  if (!confirm(`${weekName(w)} 확정: 올린 기사 ${rows.length}건(뉴스레터 후보 ${nl}건)을 이 주의 확정본으로 저장합니다.\n확정 후에는 주간 대시보드가 이 내용으로 고정됩니다.`)) return;
+  if (!confirm(`${nlLabel(w)} 확정: 올린 기사 ${rows.length}건(뉴스레터 후보 ${nl}건)을 이 주의 확정본으로 저장합니다.\n확정 후에는 주간 대시보드가 이 내용으로 고정됩니다.`)) return;
   snapSet(w, rows);
 }
 // ---------- xlsx(엑셀) 만들기 ----------
@@ -845,11 +867,10 @@ function newsletterXlsx(w, rows) {
 }
 function csvBtn(label, fn) { const b = el("button", { type: "button", className: "tab", textContent: label }); b.onclick = fn; return b; }
 const isWk = it => { const k = ovKey(it); return !!(state.ov.wk || {})[k] || !!state.ov.nl[k]; };   // 뉴스레터 후보는 자동으로 주간 등록
-function weeklyBy(gl, week) {   // '주간 대시보드에 올리기'를 누른 기사만 모음
+function weeklyBy(gl) {   // 선택한 주간(화~다음 월) 중 '주간 대시보드에 올리기'를 누른 기사만 모음
   const by = new Map(), region = (gl === undefined ? state.wkGl : gl) ? "해외" : "국내";
-  state.items.forEach(it => {
+  (state.nlItems || []).forEach(it => {
     if (!isWk(it) || regionOf(it) !== region) return;
-    if (week && it._week !== week) return;
     const c = catOf(it); if (!by.has(c)) by.set(c, []);
     by.get(c).push({ it, day: it.first_seen || "" });
   });
@@ -863,16 +884,16 @@ function weeklyRows(candOnly) {
 }
 
 function renderToday(list) {
-  const days = daysLoaded();
+  const days = dayList();
   if (!days.includes(state.todayDay)) state.todayDay = dayDefault(days);
   const day = state.todayDay;
-  const dsel = el("select", { ariaLabel: "날짜 선택" }, days.map(d => el("option", { value: d, textContent: md(d) + (d === todayKST() ? " (오늘)" : "") })));
+  const dsel = el("select", { ariaLabel: "날짜 선택" }, days.map(d => el("option", { value: d, textContent: md(d) + (dayGroup(d).length > 1 ? " (주말 포함)" : "") + (d === todayKST() ? " (오늘)" : "") })));
   dsel.value = day; dsel.onchange = () => { state.todayDay = dsel.value; render(); };
   const more = el("button", { type: "button", className: "tab primary", textContent: "다른 뉴스 보기 →" });
   more.onclick = () => { setView("cats"); applyDefaultDay(); clearSearch(); render(); window.scrollTo(0, 0); };
   const dayCsv = csvBtn("일간 CSV 내려받기", () => {
     const pk = dayPicksFor(day, state.region), rows = [];
-    orderedCats([...pk.keys()]).forEach(c => pk.get(c).top.forEach(it => rows.push(csvRow(it, day))));
+    orderedCats([...pk.keys()]).forEach(c => pk.get(c).top.forEach(it => rows.push(csvRow(it, it.first_seen || day))));
     if (!rows.length) { alert("내려받을 선정 기사가 없습니다."); return; }
     csvSave(`daily_${day}_${state.region === "해외" ? "GL" : "KR"}.csv`, CSV_HEAD, rows);
   });
@@ -885,7 +906,7 @@ function renderToday(list) {
     const p = picks.get(c);
     list.append(el("section", { className: "wksec" }, [
       el("div", { className: "hch" }, [el("b", { textContent: c }), el("em", { textContent: md(day) + " " + p.total.toLocaleString() + "건 중 상위 " + p.top.length + "건" })]),
-      el("div", { className: "wkgrid" }, p.top.map(it => newsCard(it, p.pk, true)))]));
+      el("div", { className: "wkgrid" }, p.top.map(it => newsCard(it, p.pk, true, it.first_seen !== day ? it.first_seen : "")))]));
   });
   list.append(learnBox());
 }
@@ -898,29 +919,40 @@ function renderWeekly(list) {
   const wchips = el("div", { className: "chips" }, [["kr", "국내"], ["gl", "해외"]].map(([v, t]) => {
     const x = el("button", { type: "button", className: "tab" + ((state.wkGl ? "gl" : "kr") === v ? " active" : ""), textContent: t });
     x.onclick = () => { state.wkGl = v === "gl"; render(); }; return x; }));
-  const wkName = () => { const w = weeksFor(state.period); return w.length > 1 ? `${w[w.length - 1]}_${w[0]}` : (w[0] || "week"); };
+  const nws = nlWeeks();
+  if (!nws.includes(state.nlWeek)) state.nlWeek = nws[0] || "";
+  const nsel = el("select", { ariaLabel: "주간 선택" }, nws.map(id => el("option", { value: id, textContent: nlLabel(id) + (id === nws[0] ? " (이번 주)" : "") })));
+  nsel.value = state.nlWeek;
+  nsel.onchange = () => { state.nlWeek = nsel.value; render(); };
+  const wkName = () => state.nlWeek || "week";
   const rg = () => (state.wkGl ? "GL" : "KR");
   const wkCsv = csvBtn("주간 CSV 내려받기", () => { const rows = weeklyRows(false); if (!rows.length) { alert("내려받을 선정 기사가 없습니다."); return; } csvSave(`weekly_${wkName()}_${rg()}.csv`, CSV_HEAD, rows); });
   const wkNl = csvBtn("뉴스레터 후보만 CSV", () => { const rows = weeklyRows(true); if (!rows.length) { alert("뉴스레터 후보로 체크된 선정 기사가 없습니다."); return; } csvSave(`newsletter_${wkName()}_${rg()}.csv`, CSV_HEAD, rows); });
-  list.append(el("div", { className: "wkhead" }, [el("h2", { textContent: "주간 대시보드" }), weekSelect(), wchips, tg, wkCsv, wkNl, more]));
-  list.append(el("div", { className: "why wide", textContent: "'오늘의 주요 뉴스'에서 [편집] → [주간 대시보드에 올리기]를 누른 기사만 모입니다. 정부 발표는 국내 뉴스의 한 카테고리로 함께 모이고, 해외는 따로 봅니다." }));
+  list.append(el("div", { className: "wkhead" }, [el("h2", { textContent: "주간 대시보드" }), nsel, wchips, tg, wkCsv, wkNl, more]));
+  list.append(el("div", { className: "why wide", textContent: `뉴스레터 대상 기간: ${nlLabel(state.nlWeek)} (화요일 ~ 다음 월요일 오전 수집분, 월요일 수집분에는 토·일 기사 포함). '오늘의 주요 뉴스'에서 [편집] → [주간 대시보드에 올리기]를 누르거나 뉴스레터 후보로 체크한 기사만 모입니다.` }));
+
+  if (state.nlLoaded !== state.nlWeek) {   // 이 주를 포함하는 주차 파일을 불러온 뒤 다시 그린다
+    list.append(el("div", { className: "empty", textContent: "주간 기사를 불러오는 중…" }));
+    loadNlWeek(state.nlWeek).then(render, () => { state.nlLoaded = state.nlWeek; state.nlItems = []; render(); });
+    return;
+  }
 
   const wk = snapWeek(), sn = snapOf(wk);
   const snRows = sn ? sn.rows : null;
-  const cands = snRows ? snRows.filter(r => r[8] === "Y") : state.items.filter(it => state.ov.nl[ovKey(it)] && isWk(it)).sort(better);
+  const cands = snRows ? snRows.filter(r => r[8] === "Y") : (state.nlItems || []).filter(it => state.ov.nl[ovKey(it)]).sort(better);
   const cp = el("details", { className: "candbox", open: true }, [el("summary", { textContent: `뉴스레터 후보 ${cands.length}건` + (sn ? " (확정본)" : "") })]);
 
   // 확정 버튼 · 엑셀 초안 (목록 맨 위)
   const topRow = el("div", { className: "editrow" }, []);
   if (sn) {
     const un = el("button", { type: "button", className: "tab", textContent: "확정 해제" });
-    un.onclick = () => { if (confirm(`${weekName(wk)} 확정을 해제하고 다시 수정 가능한 상태로 돌아갑니다.`)) snapSet(wk, []); };
-    topRow.append(el("span", { className: "chip imp3", textContent: weekName(wk) + " 확정됨" }),
+    un.onclick = () => { if (confirm(`${nlLabel(wk)} 확정을 해제하고 다시 수정 가능한 상태로 돌아갑니다.`)) snapSet(wk, []); };
+    topRow.append(el("span", { className: "chip imp3", textContent: nlLabel(wk) + " 확정됨" }),
       el("span", { className: "why", textContent: fmtDate(new Date(sn.t).toISOString()) + " 기준 · 선정 " + sn.rows.length + "건" }), un);
   } else {
     const fx = el("button", { type: "button", className: "tab primary", textContent: "이번 주 확정" });
     fx.onclick = () => snapConfirm(wk);
-    topRow.append(fx, el("span", { className: "why", textContent: "확정하면 " + (wk ? weekName(wk) : "이번 주") + " 올린 기사·후보가 지금 상태로 고정되고, 아래 엑셀 초안이 확정본으로 만들어집니다." }));
+    topRow.append(fx, el("span", { className: "why", textContent: "확정하면 " + (wk ? nlLabel(wk) : "이번 주") + " 올린 기사·후보가 지금 상태로 고정되고, 아래 엑셀 초안이 확정본으로 만들어집니다." }));
   }
   const xb = el("button", { type: "button", className: "tab", textContent: "뉴스레터 초안 엑셀 내려받기" });
   xb.onclick = () => newsletterXlsx(wk, snRows || snapRowsFor(wk));
@@ -936,7 +968,7 @@ function renderWeekly(list) {
       cp.append(el("div", { className: "candrow" }, [el("a", { href: safeUrl(it.originallink || it.link), target: "_blank", rel: "noopener noreferrer", textContent: it.title }), el("span", { className: "why", textContent: catOf(it) }), x]));
     });
     const cb = el("button", { type: "button", className: "tab", textContent: "후보 목록 복사" });
-    cb.onclick = () => copyCandidates(snRows ? cands.map(r => ({ title: r[3], originallink: r[5], agency: r[4], summary: r[9] })) : cands);
+    cb.onclick = () => copyCandidates(snRows ? cands.map(r => ({ title: r[3], originallink: r[5], agency: r[4], summary: r[9] })) : cands, nlLabel(state.nlWeek));
     cp.append(el("div", { className: "editrow" }, [cb]));
   } else cp.append(el("div", { className: "why", textContent: "주간 대시보드에 올린 기사 중 '뉴스레터 후보'로 체크된 기사가 여기에 모입니다." }));
   list.append(cp);
@@ -1141,6 +1173,18 @@ function buildTrend(files) {
   $("trendBox").style.display = state.items.length ? "" : "none";
 }
 
+async function loadNlWeek(id) {
+  const man = state.manifest || [];
+  const ids = [...new Set([isoWeekId(addDays(id, -6)), isoWeekId(id)])].filter(w => man.some(x => x.week === w));
+  const res = await Promise.allSettled(ids.map(w => getJson(`data/weeks/${w}.json`)));
+  const items = [];
+  res.filter(r => r.status === "fulfilled").forEach(r => (r.value.items || []).filter(keepItem).forEach(it => {
+    if (!it.first_seen || nlEnd(it.first_seen) !== id) return;
+    items.push({ ...it, _week: r.value.week, _nw: id, gov: it.region === "정부", global: it.region === "해외" });
+  }));
+  state.nlItems = items; state.nlLoaded = id;
+}
+
 async function loadPeriod() {
   const wk = weeksFor(state.period);
   const res = await Promise.allSettled(wk.map(w => getJson(`data/weeks/${w}.json`)));
@@ -1161,13 +1205,32 @@ async function loadPeriod() {
     (f.items || []).filter(keepItem).forEach(it => state.items.push({ ...it, _week: f.week, gov: it.region === "정부", global: it.region === "해외" }));
     (f.category_order || []).forEach(c => { if (!state.order.includes(c)) state.order.push(c); });
   });
+  // 월요일 집계에 쓸 직전 토·일 수집분이 다른 주차 파일에 있으면 함께 불러온다
+  state.wkndAdd = false;
+  const seen = new Set(state.items.map(i => i.first_seen));
+  const monFirst = [...seen].filter(d => d && DOW(d) === 1).sort()[0];
+  if (monFirst && !(seen.has(addDays(monFirst, -1)) || seen.has(addDays(monFirst, -2)))) {
+    const pw = isoWeekId(addDays(monFirst, -1));
+    if (!wk.includes(pw) && (state.manifest || []).some(x => x.week === pw)) {
+      try {
+        const f = await getJson(`data/weeks/${pw}.json`);
+        (f.items || []).filter(keepItem).forEach(it => {
+          if (it.first_seen === addDays(monFirst, -1) || it.first_seen === addDays(monFirst, -2)) {
+            state.items.push({ ...it, _week: f.week, gov: it.region === "정부", global: it.region === "해외" });
+            state.wkndAdd = true;
+          }
+        });
+      } catch (e) {}
+    }
+  }
   const days = [...new Set(state.items.map(i => i.first_seen).filter(Boolean))].sort().reverse();
   const today = todayKST();
   state.defDay = days.includes(today) ? today : (state.period === "n:1" && days.length ? days[0] : "전체");
   if (state.keepDay) { state.day = state.keepDay; state.keepDay = null; setDaySelects(state.day); } else applyDefaultDay();
   state.cat = "전체";
+  if (!state.nlWeek) state.nlWeek = nlWeeks()[0] || "";
   const f0 = files.slice().sort((a, b) => (b.updated_at || "").localeCompare(a.updated_at || ""))[0];
-  $("meta").textContent = `기간 ${periodText(wk)} · 누적 ${state.items.length.toLocaleString()}건` +
+  $("meta").textContent = `기간 ${periodText(wk)}${state.wkndAdd ? " (+직전 주말 수집분)" : ""} · 누적 ${state.items.length.toLocaleString()}건` +
     (f0 ? ` · 마지막 갱신 ${fmtDate(f0.updated_at)}` : "");
   buildTrend(files);
   render();
