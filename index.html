@@ -165,6 +165,7 @@
     <label class="toggle"><input type="checkbox" id="impOnly"> 중요도 중 이상 기사만</label>
     <label class="toggle"><input type="checkbox" id="rel"> 의료·병원·헬스 관련어 포함 기사만</label>
     <label class="toggle"><input type="checkbox" id="aiT"> 제목에 AI 포함 기사만</label>
+    <label class="toggle"><input type="checkbox" id="mergeCo" checked> 같은 기업·같은 날 기사 합치기</label>
     <button class="tab csv" id="csv" type="button">CSV 내려받기</button>
     <h4>GitHub 연결 (선택)</h4>
     <button class="tab csv" id="ghBtn" type="button">토큰 입력/해제</button>
@@ -190,7 +191,7 @@
 <script>
 const REL = /의료|병원|헬스|환자|진료|임상|의사|간호|보건|의약|바이오|건강|health|hospital|clinic|medical|patient/i;
 const AI_T = /(^|[^A-Za-z])AI(?![A-Za-z])|인공지능|딥러닝|머신러닝|생성형|LLM|언어\s?모델|챗\s?GPT|파운데이션\s?모델|디지털의료기기/i;
-const state = { items: [], order: [], hotOpen: window.innerWidth >= 700, period: "", day: "전체", weeksLoaded: [], manifest: null, region: "국내", cat: "전체", q: "", rel: false, aiT: false, impOnly: false, sort: "imp", today: true, home: false, cats: false, wkTop2: false, wkGl: false, todayDay: "", nlWeek: "", nlItems: [], nlLoaded: "" };
+const state = { items: [], order: [], hotOpen: window.innerWidth >= 700, period: "", day: "전체", weeksLoaded: [], manifest: null, region: "국내", cat: "전체", q: "", rel: false, aiT: false, impOnly: false, sort: "imp", today: true, home: false, cats: false, wkTop2: false, wkGl: false, mergeCo: true, todayDay: "", nlWeek: "", nlItems: [], nlLoaded: "" };
 function setView(v) { state.today = v === "today"; state.home = v === "weekly"; state.cats = v === "cats"; }
 const $ = id => document.getElementById(id);
 
@@ -366,8 +367,9 @@ function filtered() {
     return true;
   });
   const byDate = (a, b) => (a.pubDate < b.pubDate ? 1 : a.pubDate > b.pubDate ? -1 : 0);
-  rows.sort(state.sort === "date" ? byDate : state.sort === "imp" ? (a, b) => (impOf(b).sc - impOf(a).sc) || byDate(a, b) : (a, b) => ((b.score || 0) - (a.score || 0)) || byDate(a, b));
-  return rows;
+  const merged = mergeCompany(rows);
+  merged.sort(state.sort === "date" ? byDate : state.sort === "imp" ? (a, b) => (impOf(b).sc - impOf(a).sc) || byDate(a, b) : (a, b) => ((b.score || 0) - (a.score || 0)) || byDate(a, b));
+  return merged;
 }
 
 const regionOf = it => (it.global ? "해외" : "국내");   // 정부 발표는 국내 뉴스의 한 카테고리("정부 발표")
@@ -674,6 +676,48 @@ function editBox(it) {
 const pinKey = (day, c, r) => `d:${day}|${r || state.region}|${c}`;
 const pinsOf = pk => { const v = state.ov.pin[pk]; return Array.isArray(v) ? v : []; };
 const srcRank = it => it.source_type === "major" ? 0 : it.source_type === "global_pref" ? 0 : it.source_type === "medical" ? 1 : 2;   // 주요 방송사·신문사 우선
+// ---- 같은 기업·같은 날 기사 합치기 ----
+const COMPANIES = ["루닛", "뷰노", "딥노이드", "제이엘케이", "코어라인소프트", "코어라인", "에이아이트릭스", "뉴로핏", "이지케어텍", "비트컴퓨터",
+  "메디컬아이피", "퍼즐에이아이", "웨이센", "프로메디우스", "딥바이오", "셀바스", "노을", "클라리파이", "휴런", "스카이랩스", "메디웨일", "뷰웍스",
+  "제노스코", "티엔에이치", "에임메드", "라이프시맨틱스", "네이버", "카카오", "삼성전자", "삼성SDS", "삼성메디슨", "LG전자", "LG CNS", "SK텔레콤", "KT",
+  "엔비디아", "구글", "오픈AI", "마이크로소프트", "아마존", "애플", "메타", "지멘스", "GE헬스케어", "필립스", "인피니트헬스케어", "레이", "디알젬"];
+const ORG_STOP = ["정부", "국회", "식약처", "복지부", "보건복지부", "과기정통부", "질병관리청", "심평원", "건보공단", "의협", "병협", "간협", "교육부", "산업부", "공정위", "서울시", "경기도"];
+function companyOf(it) {
+  const t = it.title || "";
+  for (const c of COMPANIES) if (t.includes(c)) return c;
+  const m = t.match(/^([가-힣A-Za-z0-9][가-힣A-Za-z0-9·&.]{1,11}),\s/);
+  if (m && !ORG_STOP.includes(m[1]) && !/(병원|대학|학회|협회|연구원|진흥원|공단|청|처)$/.test(m[1])) return m[1];
+  return "";
+}
+const MAJOR_ORDER = ["ytn.co.kr", "yna.co.kr", "yonhapnewstv.co.kr", "kbs.co.kr", "mbc.co.kr", "imbc.com", "sbs.co.kr", "jtbc.co.kr", "mbn.co.kr",
+  "chosun.com", "joongang.co.kr", "donga.com", "hani.co.kr", "khan.co.kr", "kmib.co.kr", "segye.com", "mk.co.kr", "hankookilbo.com", "munhwa.com",
+  "seoul.co.kr", "newsis.com", "news1.kr", "hankyung.com", "sedaily.com", "edaily.co.kr", "mt.co.kr", "fnnews.com", "asiae.co.kr", "heraldcorp.com"];
+function srcOrder(it) {
+  const h = (host(it.originallink || it.link) || "").toLowerCase();
+  const i = MAJOR_ORDER.findIndex(d => h === d || h.endsWith("." + d));
+  if (i >= 0) return i;
+  return it.source_type === "medical" ? 200 : it.source_type === "global_pref" ? 150 : 300;
+}
+function mergeCompany(arr) {   // 같은 날·같은 기업 기사는 가장 주요 매체 1건만 남긴다
+  arr.forEach(it => { it._co = null; });
+  if (!state.mergeCo) return arr;
+  const g = new Map(), out = [];
+  arr.forEach(it => {
+    const c = companyOf(it);
+    if (!c || it.manual) { out.push(it); return; }
+    const k = c + "|" + (it.first_seen || "") + "|" + regionOf(it);
+    if (!g.has(k)) g.set(k, []);
+    g.get(k).push(it);
+  });
+  g.forEach((arr2, k) => {
+    arr2.sort((a, b) => srcOrder(a) - srcOrder(b) || (impOf(b).sc - impOf(a).sc) || (a.pubDate < b.pubDate ? 1 : -1));
+    const rep0 = arr2[0];
+    if (arr2.length > 1) rep0._co = { name: k.split("|")[0], n: arr2.length - 1,
+      srcs: [...new Set(arr2.slice(1).map(o => host(o.originallink || o.link)))].slice(0, 8) };
+    out.push(rep0);
+  });
+  return out;
+}
 const better = (a, b) => (impOf(b).sc - impOf(a).sc) || (srcRank(a) - srcRank(b)) || ((b.similar_count || 0) - (a.similar_count || 0)) || (a.pubDate < b.pubDate ? 1 : -1);
 function regionChips() {
   const bar = el("div", { className: "chips" });
@@ -709,6 +753,7 @@ function newsCard(it, pk, pinnable, dayChip) {
     ...(im.lv ? [el("span", { className: "chip imp" + im.lv, textContent: "중요도 " + (im.lv === 3 ? "상" : "중") })] : []),
     ...(dayChip ? [el("span", { className: "chip score", textContent: "선정 " + md(dayChip) })] : []),
     ...(pinnable && isWk(it) ? [el("span", { className: "chip imp3", textContent: "주간 등록됨" })] : []),
+    ...(it._co ? [el("span", { className: "chip score", title: it._co.srcs.join(", "), textContent: `${it._co.name} 관련 ${it._co.n}건 더` })] : []),
     ...(it.manual ? [el("span", { className: "chip", textContent: "직접 등록" })] : []),
     ...(it.source_type === "major" ? [el("span", { className: "chip", textContent: "주요 일간지" })] : it.source_type === "medical" ? [el("span", { className: "chip", textContent: "의료 전문지" })] : []),
     el("span", { textContent: it.gov ? it.agency : it.global ? (it.sources || []).join(", ") : host(it.originallink || it.link) + (it.similar_count ? " 외 " + it.similar_count + "곳 보도" : "") }),
@@ -754,10 +799,11 @@ function dayPicksFor(day, region) {
   const by = new Map(), grp = dayGroup(day);
   state.items.forEach(it => { if (grp.includes(it.first_seen) && regionOf(it) === region) { const c = catOf(it); if (!by.has(c)) by.set(c, []); by.get(c).push(it); } });
   const out = new Map();
-  by.forEach((arr, c) => {
+  by.forEach((arr0, c) => {
+    const arr = mergeCompany(arr0);
     arr.sort(better);
-    const pinned = pinsOf(pinKey(day, c, region)).map(k => arr.find(x => ovKey(x) === k)).filter(Boolean);
-    out.set(c, { total: arr.length, pk: pinKey(day, c, region), top: [...pinned, ...arr.filter(x => !pinned.includes(x))].slice(0, 2) });
+    const pinned = pinsOf(pinKey(day, c, region)).map(k => arr0.find(x => ovKey(x) === k)).filter(Boolean);
+    out.set(c, { total: arr0.length, pk: pinKey(day, c, region), top: [...pinned, ...arr.filter(x => !pinned.includes(x))].slice(0, 2) });
   });
   return out;
 }
@@ -1051,6 +1097,7 @@ function render() {
       ...(im.lv ? [el("span", { className: "chip imp" + im.lv, title: "중요도 점수 " + im.sc.toFixed(1) + " · " + im.why.join(", "),
         textContent: (im.lv === 3 ? "중요도 상" : "중요도 중") })] : [el("span", { className: "chip", textContent: "중요도 없음" })]),
       el("span", { className: "chip", textContent: catOf(it) }),
+      ...(it._co ? [el("span", { className: "chip score", title: it._co.srcs.join(", "), textContent: `${it._co.name} 관련 ${it._co.n}건 더` })] : []),
       el("span", { textContent: fmtDate(it.pubDate) }),
     ]);
     const detail = el("div", { className: "foot" }, [
@@ -1312,6 +1359,8 @@ $("q").addEventListener("input", e => { state.q = e.target.value; render(); });
 $("impOnly").addEventListener("change", e => { state.impOnly = e.target.checked; render(); });
 $("rel").addEventListener("change", e => { state.rel = e.target.checked; render(); });
 $("aiT").addEventListener("change", e => { state.aiT = e.target.checked; render(); });
+try { if (localStorage.getItem("mergeCo") === "0") { state.mergeCo = false; $("mergeCo").checked = false; } } catch (e) {}
+$("mergeCo").addEventListener("change", e => { state.mergeCo = e.target.checked; try { localStorage.setItem("mergeCo", e.target.checked ? "1" : "0"); } catch (x) {} render(); });
 $("sort").addEventListener("change", e => { state.sort = e.target.value; render(); });
 </script>
 </body>
