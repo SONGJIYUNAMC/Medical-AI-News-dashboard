@@ -1,16 +1,16 @@
 {
  "month": "2026-11",
- "generated_at": "2026-11-09T08:05:59.872364+09:00",
+ "generated_at": "2026-11-10T08:15:46.686167+09:00",
  "prev_month": "2026-10",
- "collected_days": 9,
+ "collected_days": 10,
  "first_day": "2026-11-01",
- "last_day": "2026-11-09",
- "total": 1368,
+ "last_day": "2026-11-10",
+ "total": 1567,
  "prev_total": 4285,
  "by_region": {
-  "국내": 1127,
-  "해외": 223,
-  "정부": 18
+  "국내": 1293,
+  "해외": 255,
+  "정부": 19
  },
  "weekly": {
   "2026-W44": {
@@ -23,71 +23,71 @@
    "정부": 17
   },
   "2026-W46": {
-   "국내": 80,
-   "해외": 11,
-   "정부": 1
+   "국내": 246,
+   "해외": 43,
+   "정부": 2
   }
  },
  "categories": [
   {
-   "name": "국내 · 국내 의료 AI 기업",
-   "count": 297,
-   "prev": 769,
-   "delta": -472
+   "name": "국내 · 국내 정책·규제",
+   "count": 323,
+   "prev": 648,
+   "delta": -325
   },
   {
-   "name": "국내 · 국내 정책·규제",
-   "count": 266,
-   "prev": 648,
-   "delta": -382
+   "name": "국내 · 국내 의료 AI 기업",
+   "count": 315,
+   "prev": 769,
+   "delta": -454
   },
   {
    "name": "국내 · 국내 의료기관",
-   "count": 188,
+   "count": 219,
    "prev": 411,
-   "delta": -223
+   "delta": -192
   },
   {
    "name": "국내 · AI 거버넌스·보안",
-   "count": 143,
+   "count": 164,
    "prev": 324,
-   "delta": -181
+   "delta": -160
   },
   {
    "name": "국내 · 학술·연구·행사",
-   "count": 120,
+   "count": 147,
    "prev": 294,
-   "delta": -174
+   "delta": -147
   },
   {
    "name": "해외 · 해외 의료기관 AI 도입·운영",
-   "count": 111,
+   "count": 129,
    "prev": 285,
-   "delta": -174
+   "delta": -156
   },
   {
    "name": "국내 · 해외 의료기관·정책·규제",
-   "count": 97,
+   "count": 109,
    "prev": 300,
-   "delta": -203
+   "delta": -191
   },
   {
    "name": "해외 · 해외 정책·규제 (미국)",
-   "count": 67,
+   "count": 72,
    "prev": 171,
-   "delta": -104
+   "delta": -99
   },
   {
    "name": "해외 · 해외 연구·학술",
-   "count": 26,
+   "count": 31,
    "prev": 74,
-   "delta": -48
+   "delta": -43
   },
   {
    "name": "해외 · 해외 정책·규제 (유럽·영국)",
-   "count": 19,
+   "count": 23,
    "prev": 57,
-   "delta": -38
+   "delta": -34
   },
   {
    "name": "국내 · 기타 (의료 AI·병원 AI 키워드)",
@@ -97,9 +97,9 @@
   },
   {
    "name": "정부 · 정부 보도자료 (검색)",
-   "count": 11,
+   "count": 12,
    "prev": 22,
-   "delta": -11
+   "delta": -10
   },
   {
    "name": "정부 · 과학기술정보통신부",
@@ -129,97 +129,97 @@
  "keywords": [
   {
    "word": "서울대병원",
-   "count": 47,
+   "count": 59,
    "prev": 143,
    "status": ""
   },
   {
    "word": "식약처",
-   "count": 40,
+   "count": 49,
    "prev": 90,
    "status": ""
   },
   {
-   "word": "FDA",
-   "count": 34,
-   "prev": 86,
-   "status": ""
-  },
-  {
-   "word": "루닛",
-   "count": 31,
-   "prev": 64,
-   "status": ""
-  },
-  {
-   "word": "아산병원",
-   "count": 31,
-   "prev": 70,
-   "status": ""
-  },
-  {
    "word": "학술대회",
-   "count": 30,
+   "count": 39,
    "prev": 76,
    "status": ""
   },
   {
+   "word": "FDA",
+   "count": 35,
+   "prev": 86,
+   "status": ""
+  },
+  {
+   "word": "아산병원",
+   "count": 34,
+   "prev": 70,
+   "status": ""
+  },
+  {
+   "word": "루닛",
+   "count": 33,
+   "prev": 64,
+   "status": ""
+  },
+  {
    "word": "세브란스",
-   "count": 29,
+   "count": 33,
    "prev": 78,
    "status": ""
   },
   {
    "word": "보건복지부",
-   "count": 25,
+   "count": 27,
    "prev": 76,
    "status": ""
   },
   {
-   "word": "심포지엄",
-   "count": 22,
-   "prev": 31,
-   "status": ""
-  },
-  {
-   "word": "분당서울대",
-   "count": 21,
-   "prev": 65,
-   "status": ""
-  },
-  {
    "word": "국회",
-   "count": 20,
+   "count": 25,
    "prev": 37,
    "status": ""
   },
   {
+   "word": "심포지엄",
+   "count": 23,
+   "prev": 31,
+   "status": ""
+  },
+  {
    "word": "세미나",
-   "count": 19,
+   "count": 23,
    "prev": 91,
    "status": ""
   },
   {
+   "word": "분당서울대",
+   "count": 22,
+   "prev": 65,
+   "status": ""
+  },
+  {
    "word": "삼성서울병원",
-   "count": 17,
+   "count": 21,
    "prev": 34,
    "status": ""
   },
   {
    "word": "포럼",
-   "count": 17,
+   "count": 20,
    "prev": 51,
    "status": ""
   },
   {
    "word": "스마트 병원",
-   "count": 15,
+   "count": 16,
    "prev": 30,
    "status": ""
   },
   {
    "word": "메이요",
-   "count": 15,
+   "count": 16,
    "prev": 12,
    "status": ""
   },
@@ -236,19 +236,30 @@
    "status": ""
   },
   {
-   "word": "건보공단",
-   "count": 12,
-   "prev": 22,
+   "word": "신의료기술",
+   "count": 13,
+   "prev": 26,
    "status": ""
   },
   {
-   "word": "신의료기술",
-   "count": 11,
-   "prev": 26,
+   "word": "상급종합병원",
+   "count": 13,
+   "prev": 34,
    "status": ""
   }
  ],
  "issues_domestic": [
+  {
+   "title": "삼성전자, 천장형 엑스레이 'GC85A 핏' 출시",
+   "link": "https://biz.sbs.co.kr/article_hub/20000345031?division=NAVER",
+   "date": "2026-11-09",
+   "category": "국내 의료 AI 기업",
+   "region": "국내",
+   "score": 6,
+   "similar_count": 47,
+   "source": "biz.sbs.co.kr",
+   "importance": 103
+  },
   {
    "title": "갤럭시 버즈로 청력 검사·보정..삼성전자, 식약처 의료기기 허가",
    "link": "https://kpenews.com/View.aspx?No=4296260",
@@ -270,6 +281,28 @@
    "similar_count": 24,
    "source": "edaily.co.kr",
    "importance": 60
+  },
+  {
+   "title": "SK바이오팜, 美 진출 지원 플랫폼 '링스' 입주기업 31개사 선정",
+   "link": "https://www.news1.kr/bio/pharmaceutical-bio/6347724",
+   "date": "2026-11-09",
+   "category": "국내 정책·규제",
+   "region": "국내",
+   "score": 6,
+   "similar_count": 24,
+   "source": "news1.kr",
+   "importance": 57
+  },
+  {
+   "title": "ETRI \"AI 비전문가용 개발도구 '탱고', 산업 현장에 확산\"",
+   "link": "https://www.newsis.com/view/NISX20261109_0003860758",
+   "date": "2026-11-09",
+   "category": "국내 의료기관",
+   "region": "국내",
+   "score": 12,
+   "similar_count": 18,
+   "source": "newsis.com",
+   "importance": 51
   },
   {
    "title": "한미약품, 환자·의료진 연결하는 디지털 비만 솔루션 ‘에피데이’ 출...",
@@ -325,39 +358,6 @@
    "similar_count": 15,
    "source": "newsis.com",
    "importance": 41
-  },
-  {
-   "title": "대구시, 민선9기 첫 예산 12조7051억원 편성…복지·보건 비중 처음 절반...",
-   "link": "https://biz.chosun.com/topics/topics_social/2026/11/05/WDI3OZOIPBCNVMLUZZ676IWEM4/?utm_source=naver&utm_medium=original&utm_campaign=biz",
-   "date": "2026-11-05",
-   "category": "국내 정책·규제",
-   "region": "국내",
-   "score": 6,
-   "similar_count": 14,
-   "source": "biz.chosun.com",
-   "importance": 37
-  },
-  {
-   "title": "증상 비슷해 진단 어렵던 방광질환, '소변검사'만으로 진단 가능성 열려",
-   "link": "https://www.monews.co.kr/news/articleView.html?idxno=415073",
-   "date": "2026-11-03",
-   "category": "국내 의료기관",
-   "region": "국내",
-   "score": 6,
-   "similar_count": 14,
-   "source": "monews.co.kr",
-   "importance": 37
-  },
-  {
-   "title": "\"인프라 구축\"…한미약품, 국내 AI기업들과 협력",
-   "link": "https://www.newsis.com/view/NISX20261102_0003851362",
-   "date": "2026-11-02",
-   "category": "국내 의료 AI 기업",
-   "region": "국내",
-   "score": 9,
-   "similar_count": 13,
-   "source": "newsis.com",
-   "importance": 38
   }
  ],
  "issues_global": [
@@ -459,6 +459,17 @@
    "similar_count": 0,
    "source": "SBU News, Newswise",
    "importance": 2
+  },
+  {
+   "title": "New Pacific AI Governor Capability Updates Healthcare AI Risk Assessments Whenever Laws or Systems Change",
+   "link": "https://news.google.com/rss/articles/CBMiiAJBVV95cUxQeERLMlo2OHZObmVyX0M1Y0I4dkh5QW9YWThzeHJBUnhuMVN5V1pRRENrSWp0THFsWDdseDk0cmdld2c1bi15R2dyRnpUNzVjWDZ4TTNadHdvN0lFZ1NCSGlVWnRmN0ZGSk1XODc5RHh5QVBPLThydXBGZDZ1a3hHVnVSWjY0VHJNQXBraGFmLTdoZWpkcHRBRXdkUU9aRjlBUVEyUkVuSml6UTI0aW5mQmQybzdmQWdwSHpUcEJZX3p2czFrSllQd2V4T0dFRU1USTRhYkJYSmxwbjRBUUlua3A1cXM5TUF5dU1faHJuampVV25DZXNSMWFXa1h5cHVuVHdEbHVLUmo?oc=5",
+   "date": "2026-11-09",
+   "category": "해외 의료기관 AI 도입·운영",
+   "region": "해외",
+   "score": 2,
+   "similar_count": 0,
+   "source": "GlobeNewswire, The Manila Times",
+   "importance": 2
   }
  ],
  "policy_announcements": [
@@ -519,6 +530,17 @@
   }
  ],
  "government_other": [
+  {
+   "title": "보훈부, AI·로봇 등 첨단기술로 보훈복지시설 국가유공자 정신건강·안전 지원한다",
+   "link": "https://news.google.com/rss/articles/CBMidkFVX3lxTFBlaHUwNm1pWjE0OHkyMDlURXVkZUY0RTFZUldsWEY2MVY3UXd6dTFweHRsOWQ3cGFKRlVJY0hoaVI5NXhIY2M1UjVzNzk5by1QRjA2Z2lEZ0kzdFdNaTRwalNpLXQteGRZdUJ1V29PTGgtX3FmOUE?oc=5",
+   "date": "2026-11-09",
+   "category": "정부 보도자료 (검색)",
+   "region": "정부",
+   "score": 0,
+   "similar_count": 0,
+   "source": "정부 보도자료 (검색)",
+   "importance": 0
+  },
   {
    "title": "김종구 농식품부 차관, 전남광주통합특별시 및 강진군 고병원성 AI 등 방역실태 현장 점검",
    "link": "https://news.google.com/rss/articles/CBMi7wFBVV95cUxON0plczhOeGpwUTlYS25Xd1ZJU1hEeTRBcTd4bHNOdnVXbEt2Vl9tRDlfVEgxNDVYaGpYcTJuVlR4V3dyZ3JrTzhQOFBod0xmdzZsUjVIdVZZODNMN3FsT0FjaFkwdVBsVnBDV3VacGpNWnBDSE1HNllraVJGR3BDakxlNXRmUUYxZEFHX2t0dmJ5cWRud25hRnJQeUNpSzNIc2IzVWJmNV96TUw5SnVnUWx4TGxLeDRjX1V2cmdlVTFnVlM2TThnaFBJX3Z5SFpRLWQwSzJCRjNURkx5QzVVM1dIVFRISU1tb2kxXzVtcw?oc=5",
@@ -665,6 +687,17 @@
  ],
  "important_domestic": [
   {
+   "title": "삼성전자, 천장형 엑스레이 'GC85A 핏' 출시",
+   "link": "https://biz.sbs.co.kr/article_hub/20000345031?division=NAVER",
+   "date": "2026-11-09",
+   "category": "국내 의료 AI 기업",
+   "region": "국내",
+   "score": 6,
+   "similar_count": 47,
+   "source": "biz.sbs.co.kr",
+   "importance": 103
+  },
+  {
    "title": "MEDI:GATE NEWS 서울아산병원 김준기 교수팀, 소변 분석 방광질환 분류 AI 기술 개발",
    "link": "https://medigatenews.com/news/1323134563",
    "date": "2026-11-06",
@@ -673,6 +706,17 @@
    "score": 99,
    "similar_count": 0,
    "source": "medigatenews.com",
+   "importance": 102
+  },
+  {
+   "title": "[AI픽] 식약처, 의약품 심사에 AI 도입…내달 민원인용 기능 공개 | 연합뉴스",
+   "link": "https://www.yna.co.kr/view/AKR20261106175100017",
+   "date": "2026-11-09",
+   "category": "국내 정책·규제",
+   "region": "국내",
+   "score": 99,
+   "similar_count": 0,
+   "source": "yna.co.kr",
    "importance": 102
   },
   {
@@ -696,6 +740,28 @@
    "similar_count": 24,
    "source": "edaily.co.kr",
    "importance": 60
+  },
+  {
+   "title": "SK바이오팜, 美 진출 지원 플랫폼 '링스' 입주기업 31개사 선정",
+   "link": "https://www.news1.kr/bio/pharmaceutical-bio/6347724",
+   "date": "2026-11-09",
+   "category": "국내 정책·규제",
+   "region": "국내",
+   "score": 6,
+   "similar_count": 24,
+   "source": "news1.kr",
+   "importance": 57
+  },
+  {
+   "title": "ETRI \"AI 비전문가용 개발도구 '탱고', 산업 현장에 확산\"",
+   "link": "https://www.newsis.com/view/NISX20261109_0003860758",
+   "date": "2026-11-09",
+   "category": "국내 의료기관",
+   "region": "국내",
+   "score": 12,
+   "similar_count": 18,
+   "source": "newsis.com",
+   "importance": 51
   },
   {
    "title": "세계 의약품 규제기관 수장 서울에 모인다…AI·차세대 규제 논의",
@@ -819,6 +885,17 @@
    "importance": 34
   },
   {
+   "title": "제주도, 내년 예산 첫 8조원 편성…AI·에너지 전환·민생경제 중점",
+   "link": "https://www.newsis.com/view/NISX20261109_0003860167",
+   "date": "2026-11-09",
+   "category": "국내 정책·규제",
+   "region": "국내",
+   "score": 9,
+   "similar_count": 11,
+   "source": "newsis.com",
+   "importance": 34
+  },
+  {
    "title": "\"우주인이 쓰는 의료AI\"…스카이랩스·보령 '맞손'",
    "link": "https://www.newsis.com/view/NISX20261103_0003852038",
    "date": "2026-11-03",
@@ -828,61 +905,6 @@
    "similar_count": 10,
    "source": "newsis.com",
    "importance": 33
-  },
-  {
-   "title": "SK바이오팜, 'AI 특화 파운데이션 모델' 성과 공개",
-   "link": "https://www.newsis.com/view/NISX20261106_0003857464",
-   "date": "2026-11-06",
-   "category": "국내 의료 AI 기업",
-   "region": "국내",
-   "score": 11,
-   "similar_count": 9,
-   "source": "newsis.com",
-   "importance": 32
-  },
-  {
-   "title": "로엔서지컬 자메닉스, 대전 첫 도입…지역 비뇨기의원으로 확산",
-   "link": "https://www.news1.kr/bio/healthcare/6339657",
-   "date": "2026-11-02",
-   "category": "국내 의료기관",
-   "region": "국내",
-   "score": 14,
-   "similar_count": 7,
-   "source": "news1.kr",
-   "importance": 31
-  },
-  {
-   "title": "대구대 의료재활학과, 한국재활복지공학회 논문경진대회 최우수·우수상...",
-   "link": "https://www.seoul.co.kr/news/society/education-news/2026/11/04/20261104500352?wlog_tag3=naver",
-   "date": "2026-11-04",
-   "category": "학술·연구·행사",
-   "region": "국내",
-   "score": 12,
-   "similar_count": 7,
-   "source": "seoul.co.kr",
-   "importance": 29
-  },
-  {
-   "title": "25년째 ‘차세대 성장동력’인 바이오…“투자·데이터·규제 따로 움직...",
-   "link": "https://www.medigatenews.com/news/871038603",
-   "date": "2026-11-06",
-   "category": "국내 정책·규제",
-   "region": "국내",
-   "score": 8,
-   "similar_count": 9,
-   "source": "medigatenews.com",
-   "importance": 29
-  },
-  {
-   "title": "원주, 첨단의료복합단지 유치 재시동…의료기술 거점 추진",
-   "link": "https://www.yna.co.kr/view/AKR20261105147200062?input=1195m",
-   "date": "2026-11-05",
-   "category": "국내 정책·규제",
-   "region": "국내",
-   "score": 6,
-   "similar_count": 10,
-   "source": "yna.co.kr",
-   "importance": 29
   }
  ],
  "important_global": [
@@ -906,6 +928,17 @@
    "score": 5,
    "similar_count": 0,
    "source": "MedCity News",
+   "importance": 8
+  },
+  {
+   "title": "Doximity expands clinical AI footprint to more than 190 health systems",
+   "link": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxNam9IaEE1Y0pueEpOR0dYUUcta21MM09DTWFGNDRBc0FtRUxWdUxsQ2VEaUNtYm9teDJOVTJVSEVuU09PaThlTVNlNEUzZWFuaUJ3YmlJdHVnVnZEa3NfWVVfc19EZk5pdXNTVnRtYVhoU2Q4bXBLY1kwTUdvbzZjU3pZdElZRmZ5Nm1SUW5Kb09zYnVqVlhDc2g4ZmxMcGdSNS1XY3M3SWhsbFIyV2tQLU9rYnZhdk1zOXMw?oc=5",
+   "date": "2026-11-09",
+   "category": "해외 의료기관 AI 도입·운영",
+   "region": "해외",
+   "score": 5,
+   "similar_count": 0,
+   "source": "Fierce Healthcare",
    "importance": 8
   },
   {
@@ -1039,20 +1072,44 @@
    "similar_count": 0,
    "source": "Healthcare Dive",
    "importance": 6
-  },
-  {
-   "title": "ResNet-GA: genetic algorithm-driven optimization of ResNet for automated dental caries detection in medical imaging",
-   "link": "https://news.google.com/rss/articles/CBMiX0FVX3lxTE01Rk56dkVSZV94cGROM2JWNHFGeWgzNkZMY2IyQ1Z2cW5wbFo2eXF1WHVGV0Jfd1RfRHBjc3h1dXZTanMzMW8xa0gyMkVoOE5pYmZIZmRDODNjRVYwZEhz?oc=5",
-   "date": "2026-11-04",
-   "category": "해외 연구·학술",
-   "region": "해외",
-   "score": 3,
-   "similar_count": 0,
-   "source": "Nature",
-   "importance": 6
   }
  ],
  "top_by_category": {
+  "국내 · 국내 의료 AI 기업": [
+   {
+    "title": "삼성전자, 천장형 엑스레이 'GC85A 핏' 출시",
+    "link": "https://biz.sbs.co.kr/article_hub/20000345031?division=NAVER",
+    "date": "2026-11-09",
+    "category": "국내 의료 AI 기업",
+    "region": "국내",
+    "score": 6,
+    "similar_count": 47,
+    "source": "biz.sbs.co.kr",
+    "importance": 103
+   },
+   {
+    "title": "루닛, 477억원 규모 전환사채 발행… 고금리 차입 부담 낮춘다",
+    "link": "https://it.chosun.com/news/articleView.html?idxno=3000000000278",
+    "date": "2026-11-04",
+    "category": "국내 의료 AI 기업",
+    "region": "국내",
+    "score": 9,
+    "similar_count": 15,
+    "source": "it.chosun.com",
+    "importance": 42
+   },
+   {
+    "title": "\"인프라 구축\"…한미약품, 국내 AI기업들과 협력",
+    "link": "https://www.newsis.com/view/NISX20261102_0003851362",
+    "date": "2026-11-02",
+    "category": "국내 의료 AI 기업",
+    "region": "국내",
+    "score": 9,
+    "similar_count": 13,
+    "source": "newsis.com",
+    "importance": 38
+   }
+  ],
   "국내 · 국내 의료기관": [
    {
     "title": "MEDI:GATE NEWS 서울아산병원 김준기 교수팀, 소변 분석 방광질환 분류 AI 기술 개발",
@@ -1066,6 +1123,17 @@
     "importance": 102
    },
    {
+    "title": "ETRI \"AI 비전문가용 개발도구 '탱고', 산업 현장에 확산\"",
+    "link": "https://www.newsis.com/view/NISX20261109_0003860758",
+    "date": "2026-11-09",
+    "category": "국내 의료기관",
+    "region": "국내",
+    "score": 12,
+    "similar_count": 18,
+    "source": "newsis.com",
+    "importance": 51
+   },
+   {
     "title": "증상 비슷해 진단 어렵던 방광질환, '소변검사'만으로 진단 가능성 열려",
     "link": "https://www.monews.co.kr/news/articleView.html?idxno=415073",
     "date": "2026-11-03",
@@ -1075,20 +1143,20 @@
     "similar_count": 14,
     "source": "monews.co.kr",
     "importance": 37
-   },
-   {
-    "title": "로엔서지컬 자메닉스, 대전 첫 도입…지역 비뇨기의원으로 확산",
-    "link": "https://www.news1.kr/bio/healthcare/6339657",
-    "date": "2026-11-02",
-    "category": "국내 의료기관",
-    "region": "국내",
-    "score": 14,
-    "similar_count": 7,
-    "source": "news1.kr",
-    "importance": 31
    }
   ],
   "국내 · 국내 정책·규제": [
+   {
+    "title": "[AI픽] 식약처, 의약품 심사에 AI 도입…내달 민원인용 기능 공개 | 연합뉴스",
+    "link": "https://www.yna.co.kr/view/AKR20261106175100017",
+    "date": "2026-11-09",
+    "category": "국내 정책·규제",
+    "region": "국내",
+    "score": 99,
+    "similar_count": 0,
+    "source": "yna.co.kr",
+    "importance": 102
+   },
    {
     "title": "갤럭시 버즈로 청력 검사·보정..삼성전자, 식약처 의료기기 허가",
     "link": "https://kpenews.com/View.aspx?No=4296260",
@@ -1110,17 +1178,6 @@
     "similar_count": 24,
     "source": "edaily.co.kr",
     "importance": 60
-   },
-   {
-    "title": "대구시, 민선9기 첫 예산 12조7051억원 편성…복지·보건 비중 처음 절반...",
-    "link": "https://biz.chosun.com/topics/topics_social/2026/11/05/WDI3OZOIPBCNVMLUZZ676IWEM4/?utm_source=naver&utm_medium=original&utm_campaign=biz",
-    "date": "2026-11-05",
-    "category": "국내 정책·규제",
-    "region": "국내",
-    "score": 6,
-    "similar_count": 14,
-    "source": "biz.chosun.com",
-    "importance": 37
    }
   ],
   "국내 · 해외 의료기관·정책·규제": [
@@ -1158,41 +1215,6 @@
     "importance": 36
    }
   ],
-  "국내 · 국내 의료 AI 기업": [
-   {
-    "title": "루닛, 477억원 규모 전환사채 발행… 고금리 차입 부담 낮춘다",
-    "link": "https://it.chosun.com/news/articleView.html?idxno=3000000000278",
-    "date": "2026-11-04",
-    "category": "국내 의료 AI 기업",
-    "region": "국내",
-    "score": 9,
-    "similar_count": 15,
-    "source": "it.chosun.com",
-    "importance": 42
-   },
-   {
-    "title": "\"인프라 구축\"…한미약품, 국내 AI기업들과 협력",
-    "link": "https://www.newsis.com/view/NISX20261102_0003851362",
-    "date": "2026-11-02",
-    "category": "국내 의료 AI 기업",
-    "region": "국내",
-    "score": 9,
-    "similar_count": 13,
-    "source": "newsis.com",
-    "importance": 38
-   },
-   {
-    "title": "에이아이트릭스, 홍콩 정부 전략기업 선정…아시아 진출 확대",
-    "link": "https://www.news1.kr/bio/healthcare/6345895",
-    "date": "2026-11-06",
-    "category": "국내 의료 AI 기업",
-    "region": "국내",
-    "score": 13,
-    "similar_count": 10,
-    "source": "news1.kr",
-    "importance": 36
-   }
-  ],
   "국내 · AI 거버넌스·보안": [
    {
     "title": "\"AI 그냥 쓰는 시대 끝났다\"…SKT, 회사 일하는 방식 싹 바꾼다",
@@ -1206,6 +1228,17 @@
     "importance": 41
    },
    {
+    "title": "국무회의 가는 경찰청장…후보자 \"참석 필요, 수사 독립성 훼손 없다\"",
+    "link": "https://news.jtbc.co.kr/article/NB12327163?influxDiv=NAVER",
+    "date": "2026-11-09",
+    "category": "AI 거버넌스·보안",
+    "region": "국내",
+    "score": 4,
+    "similar_count": 8,
+    "source": "news.jtbc.co.kr",
+    "importance": 23
+   },
+   {
     "title": "432개팀 경쟁 뚫은 스타트업...차량 보안·AI 의료금융 기업 G밸리 대상",
     "link": "https://www.fnnews.com/news/202611051456171374",
     "date": "2026-11-05",
@@ -1215,17 +1248,6 @@
     "similar_count": 3,
     "source": "fnnews.com",
     "importance": 20
-   },
-   {
-    "title": "해운대백병원, 'HiPex 2026 해운대' 2년 연속 개최",
-    "link": "http://www.docdocdoc.co.kr/news/articleView.html?idxno=3044205",
-    "date": "2026-11-02",
-    "category": "AI 거버넌스·보안",
-    "region": "국내",
-    "score": 8,
-    "similar_count": 4,
-    "source": "docdocdoc.co.kr",
-    "importance": 19
    }
   ],
   "국내 · 학술·연구·행사": [
@@ -1276,6 +1298,17 @@
     "importance": 9
    },
    {
+    "title": "Doximity expands clinical AI footprint to more than 190 health systems",
+    "link": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxNam9IaEE1Y0pueEpOR0dYUUcta21MM09DTWFGNDRBc0FtRUxWdUxsQ2VEaUNtYm9teDJOVTJVSEVuU09PaThlTVNlNEUzZWFuaUJ3YmlJdHVnVnZEa3NfWVVfc19EZk5pdXNTVnRtYVhoU2Q4bXBLY1kwTUdvbzZjU3pZdElZRmZ5Nm1SUW5Kb09zYnVqVlhDc2g4ZmxMcGdSNS1XY3M3SWhsbFIyV2tQLU9rYnZhdk1zOXMw?oc=5",
+    "date": "2026-11-09",
+    "category": "해외 의료기관 AI 도입·운영",
+    "region": "해외",
+    "score": 5,
+    "similar_count": 0,
+    "source": "Fierce Healthcare",
+    "importance": 8
+   },
+   {
     "title": "AI-Native Firms and Big Law Will Follow Medical Centers’ Model",
     "link": "https://news.google.com/rss/articles/CBMiygFBVV95cUxOeEFOVmVuR0g2cnJodFZGaVBQRWR5V2REV2RHMm1FTnI1dUQ2YU9oZnViSHVSdjBuZzAtbGpOa0xLZ0t1b08yejBZUWgyXy1uTXFBaVNmWFJidUxFUVhLUWxmbDZYdTh3a3dzeUhPd2VJUkZldG50MG56RjZQSy1ZQzRRNTVXRllQcHVqV3RwLUhYNHROMVg4TEc0dTB1UE5xNXZETjFHcHExVGNEdGJ5TE1MR2MyM0NnWGxWclBEanhKOHFkYVAzVlF3?oc=5",
     "date": "2026-11-02",
@@ -1285,17 +1318,6 @@
     "similar_count": 0,
     "source": "Bloomberg Law News",
     "importance": 7
-   },
-   {
-    "title": "Te Whatu Ora explores AI for surgery prep, radiology referral",
-    "link": "https://news.google.com/rss/articles/CBMinwFBVV95cUxOSTRDY3RBckNsdzNPZmc5dUFVU1A0eEozLUVHVDdiQmx1MUpaSGlyV3ZoS2JDbkFxWFk4RE1rREVyOG5idjBLc09ueHd5Y2hwV2ptZkoxY2U0WVRSMFR0WVExRy1WVnUxT0VDaS1ORFdSclFNUEhBbkh3WlpGcDZveTFfODdrbTdYOWJhX2RreFBxcThidWJhMzRDLUs5NGs?oc=5",
-    "date": "2026-11-06",
-    "category": "해외 의료기관 AI 도입·운영",
-    "region": "해외",
-    "score": 3,
-    "similar_count": 0,
-    "source": "Healthcare IT News",
-    "importance": 6
    }
   ],
   "해외 · 해외 정책·규제 (미국)": [
