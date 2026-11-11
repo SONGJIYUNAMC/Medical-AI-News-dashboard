@@ -1,12 +1,13 @@
 {
-  "generated_at": "2026-11-11T08:13:19.325645+09:00",
+  "generated_at": "2026-11-12T08:21:41.001266+09:00",
   "window_hours": 168,
-  "count": 7,
-  "filtered_out": 303,
+  "count": 10,
+  "filtered_out": 301,
   "category_order": [
     "국가데이터처",
     "정부 보도자료 (검색)",
-    "보건복지부"
+    "보건복지부",
+    "과학기술정보통신부"
   ],
   "errors": [],
   "items": [
@@ -14,20 +15,70 @@
       "title": "국민을 위한 특별한 성과로 데이터·통계 혁신을 이끈다",
       "link": "https://mods.go.kr/board.es?mid=a10301150000&act=view&bid=246&list_no=447785",
       "summary": "국가데이터처(처장 안형준)는 지난 4월에 이어, 지역균형 발전 및 국민 안전을 위한 통계·데이터서비스 혁신 등의 특별한 성과를 창출한 직원을 선정하여 11월 2일(월) 포상금 수여식을 실시하였다. 「특별성과 포상금 제도」는 탁월한 성과를 거둔 직원에게 파격적인 보상을 제공해 공직사회 경쟁력을 높이고 대국민 서비스를 개선하고자 도입되었다. 국민‧직원평가단 심사와 민간 전문가 등으로 구성된 특별성과 심사위원회에서는 생성형 인공지능(AI) 기반 국가통계포털(KOSIS) 검색‧활용 서비스 구현 등 특별성과가 있는 7개팀(16명)을 선정하고",
-      "pubDate": "2026-11-11T08:13:10.839786+09:00",
+      "pubDate": "2026-11-12T08:21:32.792398+09:00",
       "agency": "국가데이터처",
       "kind": "가이드라인·기준",
       "via": "rss",
       "official": true
     },
     {
-      "title": "AI 발전 속도에 발맞춰 보건의료데이터 안전 활용법 교육한다",
-      "link": "https://news.google.com/rss/articles/CBMiiwFBVV95cUxQTVR0NTdSZmRSOEt1TVVaTEVnaGlmWkZ0UHM0YmxKREU4Z3pvemg1c3VLYkpVTDZGRGFKRElnQm1scGRndktNT1F0Nld4ZWFGQTlHejd2Z05nNWM3d3lzZDRReUozck1RZWVvWEhlQUF0djRLWEpqVEJKM1JYaEpkMVNkR3lYcjU0Y244?oc=5",
-      "summary": "AI 발전 속도에 발맞춰 보건의료데이터 안전 활용법 교육한다 대한민국 정책브리핑",
-      "pubDate": "2026-11-10T22:38:13+09:00",
+      "title": "'공공의료 AI 고속도로' 첫 개통…AI 활용, 병원 간 진료 협력",
+      "link": "https://news.google.com/rss/articles/CBMiigFBVV95cUxPT0RjUHNwazF0cGtyRE9tQmdxMGdQRzBWTVVaMzU4VGJFd1pHWVJ6Z1ZSaWE0alJ6elh4QnFxQnJxSHZzQ1ZDMFF1RDNTT2hSVUlWdU1Xc3JJZmdOSFh5WUJuWXdKTkREb2wtWGpTMkVSbkgtWlNBM1Z3VHA0MnFsZEF6N0xtajNXSUE?oc=5",
+      "summary": "'공공의료 AI 고속도로' 첫 개통…AI 활용, 병원 간 진료 협력 대한민국 정책브리핑",
+      "pubDate": "2026-11-12T04:12:22+09:00",
       "agency": "정부 보도자료 (검색)",
       "kind": "지원사업·정책",
       "via": "gnews",
+      "official": true
+    },
+    {
+      "title": "‘공공의료 AI 고속도로’ 첫 개통,강원 지역 공공병원 의료 AI로 본격 연결",
+      "link": "https://www.mohw.go.kr/board.es?mid=a10503000000&bid=0027&list_no=1492511&act=view",
+      "summary": "‘공공의료 AI 고속도로’ 첫 개통,강원 지역 공공병원 의료 AI로 본격 연결 - 병원 간 환자 의뢰에 AI 활용, 10분 걸리던 의뢰서 초안 작성 1분으로 단축 - - EMR 연동형 AI(AI-integrated EMR) 구현 통해 사용자 편의성 증진 -- 올해 시범실증 거쳐 내년 35개 공공병원 연결, ’29년 전국 72개 공공병원 전면 확대 - 보건복지부(장관 정은경)는 11월 11일(수) 오후 2시 강원대학교병원(춘천)과 영월의료원(영월)을 온라인으로 실시간 연결하여 병원 간 전원부터 수술 및 퇴원, 지역 회송과정에서 인공지",
+      "pubDate": "2026-11-11T14:05:00+09:00",
+      "agency": "보건복지부",
+      "kind": "기타 발표",
+      "via": "rss",
+      "official": true
+    },
+    {
+      "title": "정부·정보통신서비스 제공자·전문가 등 모여 온라인 유통 자살유발정보 차단 방안 논의",
+      "link": "https://www.mohw.go.kr/board.es?mid=a10503000000&bid=0027&list_no=1492512&act=view",
+      "summary": "정부·정보통신서비스 제공자·전문가 등 모여 온라인 유통 자살유발정보 차단 방안 논의 - 보건복지부·한국생명희망존중재단, 온라인 자살유발정보 대응강화 포럼 개최 -- 자살예방법 개정에 따른 민관 협력체계 강화 및 AI 기반 온라인 자살유발정보 모니터링 활성화 논의 - 보건복지부(장관 정은경)는 11월 11일(수) 14시 보코서울강남호텔에서 「온라인 자살유발정보 대응강화 포럼」을 개최해 11월 12일부터 시행되는 개정 「자살예방 및 생명존중문화 조성을 위한 법률」(이하 「자살예방법」)의 주요 내용을 공유하고, 온라인에서 유통되는 자살유",
+      "pubDate": "2026-11-11T14:05:00+09:00",
+      "agency": "보건복지부",
+      "kind": "법령·입법",
+      "via": "rss",
+      "official": true
+    },
+    {
+      "title": "영월의료원, 의료 AI로 진료 부담 덜고 '분만·소아' 등 필수의료 공백 해소",
+      "link": "https://news.google.com/rss/articles/CBMi7wFBVV95cUxPS3RSTU1ROFVVRHFuNmE5amU1bnNfNVR1NzljZ2ZBWnZNdm9iM3pqQlRYU1dkRUVTMHhleHZhUGEycm9Jd2t1TEJvS2xhbldhaFdYUHUxUng1YWp5TmhPSjVxZHZlMjNBM0w0czFVR0piYklkRjN5SzNJSXprZlJVb2pHeWI5aGtQckJBTDVGcU9fTmRSbW1PenMwV21UaWRIVDR6b1UwN0gxOVhYS01wYlhNOUYxQUVTMGl5STIxT1BQRkwzQVdnZTdXS3lKTUJram91WGlCSTA3Q3ktaVhsZVdEV3I5SlhFUFA3Z1pOaw?oc=5",
+      "summary": "영월의료원, 의료 AI로 진료 부담 덜고 '분만·소아' 등 필수의료 공백 해소 대한민국 정책브리핑",
+      "pubDate": "2026-11-11T10:26:56+09:00",
+      "agency": "정부 보도자료 (검색)",
+      "kind": "지원사업·정책",
+      "via": "gnews",
+      "official": true
+    },
+    {
+      "title": "영월의료원, 의료 AI로 진료 부담 덜고 &#x27;분만·소아&#x27; 등 필수의료 공백 해소",
+      "link": "https://www.mohw.go.kr/board.es?mid=a10503000000&bid=0027&list_no=1492509&act=view",
+      "summary": "영월의료원, 의료 AI로 진료 부담 덜고 '분만·소아' 등 필수의료 공백 해소 - 보건의료정책실장, 지역·필수·공공의료 AI 현장 간담회 개최 -- 심정지·폐혈증 예측, 영상판독 등 의료 AI 4종 활용 사례 점검 - 보건복지부(장관 정은경)는 11월 11일(수) 오전 10시 30분 강원도 영월의료원(원장 서영준)을 방문하여 의료 인공지능(AI) 활용 현황을 점검하고, 현장 의료진 및 AI 기업 관계자들과 함께 간담회를 개최했다고 밝혔다. 영월의료원은 패혈증 조기 감지 및 영상 판독 보조 등 4종의 의료 AI를 도입해 진료의 정확도",
+      "pubDate": "2026-11-11T10:26:00+09:00",
+      "agency": "보건복지부",
+      "kind": "지원사업·정책",
+      "via": "rss",
+      "official": true
+    },
+    {
+      "title": "세계적 인공지능바이오 강국 도약을 위한 소버린 바이오 전략 모색",
+      "link": "https://www.msit.go.kr/bbs/view.do?sCode=user&mId=307&mPid=208&bbsSeqNo=94&nttSeqNo=3187946",
+      "summary": "담당부서: 첨단바이오기술과",
+      "pubDate": "2026-11-11T00:00:00+09:00",
+      "agency": "과학기술정보통신부",
+      "kind": "지원사업·정책",
+      "via": "api",
       "official": true
     },
     {
@@ -41,18 +92,8 @@
       "official": true
     },
     {
-      "title": "정신건강 목적 생성형 AI 이용 가이드라인",
-      "link": "https://news.google.com/rss/articles/CBMiZEFVX3lxTE05b0pCS2dsZDFvZDEyRE04X2JLMEFGVktuU3gwRXFOX0tPR05uckdMeVRrb1FKbnJIM0NVWkZ4MWVWNGVXTm92WVF5ZUdUbDNIUVh2UjVaT3pBWGtlUmRvaXpHeDE?oc=5",
-      "summary": "정신건강 목적 생성형 AI 이용 가이드라인 대한민국 정책브리핑",
-      "pubDate": "2026-11-07T18:40:54+09:00",
-      "agency": "정부 보도자료 (검색)",
-      "kind": "가이드라인·기준",
-      "via": "gnews",
-      "official": true
-    },
-    {
       "title": "내 건강은 또래와 비교하면 몇 점?…AI 건강도우미 챗봇이 답했다",
-      "link": "https://news.google.com/rss/articles/CBMiakFVX3lxTE04X1ByRU95eVE5SUg1dTZPTlo5N0dqWERrWjRZaE04NkxnQVV2SzU2UGhMUWp6ZUkyMDFFazh6ZlkwRVJHanJOVGJoZmJnTHR1RW42TF8tdElwckhubnZlTjU4dWxYeFhiZUE?oc=5",
+      "link": "https://news.google.com/rss/articles/CBMihwFBVV95cUxNclQzWWkxa3dja3VfS29QWGpsODgwQmthZGYwREswaFdhM2JZalMzSl8yVkJ3dW5tSDdCNXRoQW14REwxbTdlLXpBZHJNX3gyNTJ0V3NaVWtaZnlCSEU5MEZQTXdJR1FncHlNdk9RMnlfZHRqdzgwYjNlZ1E3S2xwNEpTSkJHMUE?oc=5",
       "summary": "내 건강은 또래와 비교하면 몇 점?…AI 건강도우미 챗봇이 답했다 대한민국 정책브리핑",
       "pubDate": "2026-11-06T14:39:31+09:00",
       "agency": "정부 보도자료 (검색)",
@@ -68,16 +109,6 @@
       "agency": "보건복지부",
       "kind": "가이드라인·기준",
       "via": "rss",
-      "official": true
-    },
-    {
-      "title": "'모두의 토론회'에서 살펴본 'AI 시대, 내 개인정보'",
-      "link": "https://news.google.com/rss/articles/CBMiakFVX3lxTFBpNGlSVUR0Tzl5U2xUcll5NTJHc0huSkd2ZkVsWHdUakplS2d4MXJfS282Vk5YUkFCTmtCRXBjS2FzZXBEVlp2UlkwNkZiaHhNXzVYM1UyNHQ0cFBVY0Q1SDdPR2F3YUhKZHc?oc=5",
-      "summary": "'모두의 토론회'에서 살펴본 'AI 시대, 내 개인정보' 대한민국 정책브리핑",
-      "pubDate": "2026-11-04T18:56:08+09:00",
-      "agency": "정부 보도자료 (검색)",
-      "kind": "지원사업·정책",
-      "via": "gnews",
       "official": true
     }
   ]
