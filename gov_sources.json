@@ -29,15 +29,24 @@
     },
     {
       "agency": "보건복지부",
+      "board": "보도자료(목록 주소)",
+      "url": "https://www.mohw.go.kr/rss/board.es?mid=a10503010100&bid=0027",
+      "health_context": true,
+      "fallback_site": "mohw.go.kr"
+    },
+    {
+      "agency": "보건복지부",
       "board": "공지사항",
       "url": "https://www.mohw.go.kr/rss/board.es?mid=a10501010000&bid=0003&cg_code=C01&info",
-      "health_context": true
+      "health_context": true,
+      "fallback_site": "mohw.go.kr"
     },
     {
       "agency": "보건복지부",
       "board": "훈령·예규·고시·지침",
       "url": "https://www.mohw.go.kr/rss/board.es?mid=a10409020000&update=&cg_code=&bid=0026",
-      "health_context": true
+      "health_context": true,
+      "fallback_site": "mohw.go.kr"
     },
     {
       "agency": "식품의약품안전처",
@@ -95,6 +104,18 @@
     {
       "agency": "정부 보도자료 (검색)",
       "q": "site:korea.kr 의료데이터 가명정보"
+    },
+    {
+      "agency": "보건복지부",
+      "q": "site:mohw.go.kr 의료 인공지능"
+    },
+    {
+      "agency": "보건복지부",
+      "q": "site:mohw.go.kr 디지털 헬스케어"
+    },
+    {
+      "agency": "보건복지부",
+      "q": "site:mohw.go.kr 보건의료 데이터"
     }
   ],
   "require_ai": [
@@ -106,7 +127,23 @@
     "LLM",
     "언어\\s?모델",
     "디지털의료",
-    "스마트\\s?병원"
+    "스마트\\s?병원",
+    "디지털\\s?헬스(케어)?",
+    "보건의료\\s?데이터",
+    "의료\\s?데이터",
+    "마이\\s?데이터",
+    "빅데이터",
+    "데이터\\s?(활용|개방|플랫폼|표준화|중심병원)",
+    "알고리즘",
+    "소프트웨어\\s?의료기기|SaMD",
+    "디지털\\s?치료(기기|제)?",
+    "정밀\\s?의료",
+    "의료기기\\s?(소프트웨어|허가|규제)",
+    "전자의무기록|EMR",
+    "첨단\\s?의료기기",
+    "혁신의료기기",
+    "국가\\s?바이오\\s?빅데이터",
+    "AI\\s?기본법|인공지능\\s?기본법"
   ],
   "require_health": [
     "병원",
