@@ -1,15 +1,15 @@
 {
  "month": "2026-11",
- "generated_at": "2026-11-14T08:12:43.373425+09:00",
+ "generated_at": "2026-11-15T08:05:58.652476+09:00",
  "prev_month": "2026-10",
- "collected_days": 14,
+ "collected_days": 15,
  "first_day": "2026-11-01",
- "last_day": "2026-11-14",
- "total": 2479,
+ "last_day": "2026-11-15",
+ "total": 2534,
  "prev_total": 4285,
  "by_region": {
-  "국내": 2041,
-  "해외": 407,
+  "국내": 2078,
+  "해외": 425,
   "정부": 31
  },
  "weekly": {
@@ -23,65 +23,65 @@
    "정부": 17
   },
   "2026-W46": {
-   "국내": 994,
-   "해외": 195,
+   "국내": 1031,
+   "해외": 213,
    "정부": 14
   }
  },
  "categories": [
   {
    "name": "국내 · 국내 정책·규제",
-   "count": 542,
+   "count": 546,
    "prev": 648,
-   "delta": -106
+   "delta": -102
   },
   {
    "name": "국내 · 국내 의료 AI 기업",
-   "count": 505,
+   "count": 514,
    "prev": 769,
-   "delta": -264
+   "delta": -255
   },
   {
    "name": "국내 · 국내 의료기관",
-   "count": 343,
+   "count": 346,
    "prev": 411,
-   "delta": -68
+   "delta": -65
   },
   {
    "name": "국내 · AI 거버넌스·보안",
-   "count": 230,
+   "count": 238,
    "prev": 324,
-   "delta": -94
+   "delta": -86
   },
   {
    "name": "국내 · 학술·연구·행사",
-   "count": 213,
+   "count": 217,
    "prev": 294,
-   "delta": -81
+   "delta": -77
   },
   {
    "name": "해외 · 해외 의료기관 AI 도입·운영",
-   "count": 198,
+   "count": 211,
    "prev": 285,
-   "delta": -87
+   "delta": -74
   },
   {
    "name": "국내 · 해외 의료기관·정책·규제",
-   "count": 190,
+   "count": 199,
    "prev": 300,
-   "delta": -110
+   "delta": -101
   },
   {
    "name": "해외 · 해외 정책·규제 (미국)",
-   "count": 124,
+   "count": 128,
    "prev": 171,
-   "delta": -47
+   "delta": -43
   },
   {
    "name": "해외 · 해외 연구·학술",
-   "count": 48,
+   "count": 49,
    "prev": 74,
-   "delta": -26
+   "delta": -25
   },
   {
    "name": "해외 · 해외 정책·규제 (유럽·영국)",
@@ -141,32 +141,32 @@
  "keywords": [
   {
    "word": "서울대병원",
-   "count": 98,
+   "count": 99,
    "prev": 143,
    "status": ""
   },
   {
    "word": "식약처",
-   "count": 84,
+   "count": 85,
    "prev": 90,
    "status": ""
   },
   {
    "word": "루닛",
-   "count": 62,
+   "count": 65,
    "prev": 64,
+   "status": ""
+  },
+  {
+   "word": "FDA",
+   "count": 59,
+   "prev": 86,
    "status": ""
   },
   {
    "word": "학술대회",
    "count": 58,
    "prev": 76,
-   "status": ""
-  },
-  {
-   "word": "FDA",
-   "count": 57,
-   "prev": 86,
    "status": ""
   },
   {
@@ -177,13 +177,13 @@
   },
   {
    "word": "세브란스",
-   "count": 52,
+   "count": 53,
    "prev": 78,
    "status": ""
   },
   {
    "word": "아산병원",
-   "count": 50,
+   "count": 51,
    "prev": 70,
    "status": ""
   },
@@ -194,21 +194,21 @@
    "status": ""
   },
   {
-   "word": "분당서울대",
-   "count": 37,
-   "prev": 65,
-   "status": ""
-  },
-  {
    "word": "세미나",
-   "count": 37,
+   "count": 38,
    "prev": 91,
    "status": ""
   },
   {
    "word": "삼성서울병원",
-   "count": 36,
+   "count": 37,
    "prev": 34,
+   "status": ""
+  },
+  {
+   "word": "분당서울대",
+   "count": 37,
+   "prev": 65,
    "status": ""
   },
   {
@@ -218,16 +218,16 @@
    "status": ""
   },
   {
-   "word": "심포지엄",
-   "count": 27,
-   "prev": 31,
-   "status": ""
-  },
-  {
    "word": "메이요",
-   "count": 26,
+   "count": 29,
    "prev": 12,
    "status": "급증"
+  },
+  {
+   "word": "심포지엄",
+   "count": 28,
+   "prev": 31,
+   "status": ""
   },
   {
    "word": "구글",
@@ -254,9 +254,9 @@
    "status": ""
   },
   {
-   "word": "서울성모병원",
+   "word": "오픈AI",
    "count": 21,
-   "prev": 26,
+   "prev": 17,
    "status": ""
   }
  ],
@@ -1608,6 +1608,17 @@
     "importance": 3
    },
    {
+    "title": "Nelson Advisors: This Week in European HealthTech, MedTech and Health AI: 13th November 2026",
+    "link": "https://news.google.com/rss/articles/CBMizAFBVV95cUxQS2k3TnNNbzdIQXN3dTFiT0NnNm8tYjhtckdPZ0haMmNPN2twWl8yTTNTaWdQemtDNlhaZW1fUnlWZU5xbVB1bmNHTzZhWnl0bDdWMnVmNVowdnVnRTdTTERQZ1gtU3Q3M0FyT0NkUmtBUzRCcS1KdzgtWU1fWnEtVjJHQ0JqUG1NNXlPZjFYYlZ5a2dLNFQ1NzNHLXlyZFh6al9saHF3Vy1SX0drUnpLSHRqb3NDdFdickFfUmVBaXJXbzZUWjZySDlHTnQ?oc=5",
+    "date": "2026-11-13",
+    "category": "해외 정책·규제 (유럽·영국)",
+    "region": "해외",
+    "score": 3,
+    "similar_count": 0,
+    "source": "https://www.healthcare.digital/",
+    "importance": 3
+   },
+   {
     "title": "Nelson Advisors: This Week in European HealthTech, MedTech and Health AI: 6th November 2026",
     "link": "https://news.google.com/rss/articles/CBMiywFBVV95cUxOc2pYSHNEa29uRnBSWHRNQTlvVzFsbFVfQ1NXNGx2Q0kxTHVQVzl5bE1fb1hMYWFoWVR3TDlVNWRnQk4wZ3hGYzJNd1E3VjhkWHQ1M0RualVPZ1JXRDF6d2NFUUk5MHpxTHlKWnpEWUNTd1M4Z0hXWkVyLXNnOW9lbm5tVWZaLXZUczRQUFluZXJSNVpFLXlQVzBWNGNjTEdtSG4yaWVFdWg3MWNLOW5LVTc3YWV6UGIxbmdveVAtRm9aMjgwcmMtbDcwUQ?oc=5",
     "date": "2026-11-07",
@@ -1616,17 +1627,6 @@
     "score": 2,
     "similar_count": 0,
     "source": "https://www.healthcare.digital/",
-    "importance": 2
-   },
-   {
-    "title": "More AI, more care, but no new health laws in EU’s 2027 plans",
-    "link": "https://news.google.com/rss/articles/CBMimAFBVV95cUxPQS1tLUl4SzAxN3YwYzAwQk9FRjNyWDY4YmFZRHBIVWNKdWhOVFZmTmx0NWlsQlEzTXhPc3lzb295U3ZSTWZfTWlWN0poYnUtNTJ6TkNWQ0hXajZ3Z1ZfeDhoemlZRFNFRlZJOUl5cF85WXZmUHlfaWVzZFFZWmtsR1FaMnV5MHp1bVJ0REgxR2xOZ2dvaWN5RQ?oc=5",
-    "date": "2026-11-06",
-    "category": "해외 정책·규제 (유럽·영국)",
-    "region": "해외",
-    "score": 2,
-    "similar_count": 0,
-    "source": "EU Perspectives",
     "importance": 2
    }
   ]
