@@ -1,16 +1,16 @@
 {
  "month": "2026-11",
- "generated_at": "2026-11-15T08:05:58.652476+09:00",
+ "generated_at": "2026-11-16T08:34:31.449378+09:00",
  "prev_month": "2026-10",
- "collected_days": 15,
+ "collected_days": 16,
  "first_day": "2026-11-01",
- "last_day": "2026-11-15",
- "total": 2534,
+ "last_day": "2026-11-16",
+ "total": 2659,
  "prev_total": 4285,
  "by_region": {
-  "국내": 2078,
-  "해외": 425,
-  "정부": 31
+  "국내": 2188,
+  "해외": 436,
+  "정부": 35
  },
  "weekly": {
   "2026-W44": {
@@ -26,50 +26,55 @@
    "국내": 1031,
    "해외": 213,
    "정부": 14
+  },
+  "2026-W47": {
+   "국내": 110,
+   "해외": 11,
+   "정부": 4
   }
  },
  "categories": [
   {
    "name": "국내 · 국내 정책·규제",
-   "count": 546,
+   "count": 574,
    "prev": 648,
-   "delta": -102
-  },
-  {
-   "name": "국내 · 국내 의료 AI 기업",
-   "count": 514,
-   "prev": 769,
-   "delta": -255
-  },
-  {
-   "name": "국내 · 국내 의료기관",
-   "count": 346,
-   "prev": 411,
-   "delta": -65
-  },
-  {
-   "name": "국내 · AI 거버넌스·보안",
-   "count": 238,
-   "prev": 324,
-   "delta": -86
-  },
-  {
-   "name": "국내 · 학술·연구·행사",
-   "count": 217,
-   "prev": 294,
-   "delta": -77
-  },
-  {
-   "name": "해외 · 해외 의료기관 AI 도입·운영",
-   "count": 211,
-   "prev": 285,
    "delta": -74
   },
   {
+   "name": "국내 · 국내 의료 AI 기업",
+   "count": 537,
+   "prev": 769,
+   "delta": -232
+  },
+  {
+   "name": "국내 · 국내 의료기관",
+   "count": 364,
+   "prev": 411,
+   "delta": -47
+  },
+  {
+   "name": "국내 · AI 거버넌스·보안",
+   "count": 255,
+   "prev": 324,
+   "delta": -69
+  },
+  {
+   "name": "국내 · 학술·연구·행사",
+   "count": 225,
+   "prev": 294,
+   "delta": -69
+  },
+  {
+   "name": "해외 · 해외 의료기관 AI 도입·운영",
+   "count": 219,
+   "prev": 285,
+   "delta": -66
+  },
+  {
    "name": "국내 · 해외 의료기관·정책·규제",
-   "count": 199,
+   "count": 215,
    "prev": 300,
-   "delta": -101
+   "delta": -85
   },
   {
    "name": "해외 · 해외 정책·규제 (미국)",
@@ -79,15 +84,15 @@
   },
   {
    "name": "해외 · 해외 연구·학술",
-   "count": 49,
+   "count": 50,
    "prev": 74,
-   "delta": -25
+   "delta": -24
   },
   {
    "name": "해외 · 해외 정책·규제 (유럽·영국)",
-   "count": 36,
+   "count": 38,
    "prev": 57,
-   "delta": -21
+   "delta": -19
   },
   {
    "name": "국내 · 기타 (의료 AI·병원 AI 키워드)",
@@ -97,9 +102,9 @@
   },
   {
    "name": "정부 · 정부 보도자료 (검색)",
-   "count": 15,
+   "count": 17,
    "prev": 22,
-   "delta": -7
+   "delta": -5
   },
   {
    "name": "정부 · 과학기술정보통신부",
@@ -115,15 +120,15 @@
   },
   {
    "name": "정부 · 식품의약품안전처",
-   "count": 2,
+   "count": 3,
    "prev": 3,
-   "delta": -1
+   "delta": 0
   },
   {
    "name": "정부 · 국가데이터처",
-   "count": 1,
+   "count": 2,
    "prev": 0,
-   "delta": 1
+   "delta": 2
   },
   {
    "name": "국내 · 정부 발표",
@@ -141,20 +146,26 @@
  "keywords": [
   {
    "word": "서울대병원",
-   "count": 99,
+   "count": 102,
    "prev": 143,
    "status": ""
   },
   {
    "word": "식약처",
-   "count": 85,
+   "count": 88,
    "prev": 90,
    "status": ""
   },
   {
    "word": "루닛",
-   "count": 65,
+   "count": 66,
    "prev": 64,
+   "status": ""
+  },
+  {
+   "word": "학술대회",
+   "count": 59,
+   "prev": 76,
    "status": ""
   },
   {
@@ -164,62 +175,56 @@
    "status": ""
   },
   {
-   "word": "학술대회",
-   "count": 58,
-   "prev": 76,
-   "status": ""
-  },
-  {
    "word": "보건복지부",
-   "count": 56,
+   "count": 57,
    "prev": 76,
    "status": ""
   },
   {
    "word": "세브란스",
-   "count": 53,
+   "count": 56,
    "prev": 78,
    "status": ""
   },
   {
    "word": "아산병원",
-   "count": 51,
+   "count": 53,
    "prev": 70,
    "status": ""
   },
   {
    "word": "국회",
-   "count": 42,
+   "count": 43,
    "prev": 37,
    "status": ""
   },
   {
-   "word": "세미나",
-   "count": 38,
-   "prev": 91,
-   "status": ""
-  },
-  {
    "word": "삼성서울병원",
-   "count": 37,
+   "count": 41,
    "prev": 34,
    "status": ""
   },
   {
+   "word": "세미나",
+   "count": 40,
+   "prev": 91,
+   "status": ""
+  },
+  {
    "word": "분당서울대",
-   "count": 37,
+   "count": 38,
    "prev": 65,
    "status": ""
   },
   {
    "word": "포럼",
-   "count": 30,
+   "count": 33,
    "prev": 51,
    "status": ""
   },
   {
    "word": "메이요",
-   "count": 29,
+   "count": 31,
    "prev": 12,
    "status": "급증"
   },
@@ -236,6 +241,12 @@
    "status": ""
   },
   {
+   "word": "신의료기술",
+   "count": 24,
+   "prev": 26,
+   "status": ""
+  },
+  {
    "word": "코어라인",
    "count": 24,
    "prev": 20,
@@ -248,15 +259,9 @@
    "status": ""
   },
   {
-   "word": "스마트 병원",
+   "word": "NHS",
    "count": 24,
-   "prev": 30,
-   "status": ""
-  },
-  {
-   "word": "오픈AI",
-   "count": 21,
-   "prev": 17,
+   "prev": 18,
    "status": ""
   }
  ],
@@ -486,6 +491,17 @@
  ],
  "policy_announcements": [
   {
+   "title": "국민을 위한 특별한 성과로 데이터·통계 혁신을 이끈다",
+   "link": "https://mods.go.kr/board.es?mid=a10301150000&act=view&bid=246&list_no=447785",
+   "date": "2026-11-16",
+   "category": "국가데이터처",
+   "region": "정부",
+   "score": 0,
+   "similar_count": 0,
+   "source": "국가데이터처",
+   "importance": 0
+  },
+  {
    "title": "AI 기반 의료데이터 표준화로 기관 간 정보 연계·활용 확대",
    "link": "https://www.mohw.go.kr/board.es?mid=a10503000000&bid=0027&list_no=1492533&act=view",
    "date": "2026-11-13",
@@ -576,6 +592,17 @@
  ],
  "government_other": [
   {
+   "title": "[보도참고] 식약처, 혁신의료기기 정책 포럼 2026 개최",
+   "link": "https://www.mfds.go.kr/brd/m_99/view.do?seq=50496",
+   "date": "2026-11-16",
+   "category": "식품의약품안전처",
+   "region": "정부",
+   "score": 0,
+   "similar_count": 0,
+   "source": "식품의약품안전처",
+   "importance": 0
+  },
+  {
    "title": "복지서비스, 현장에서 상담부터 신청까지…AI로 더 똑똑해진 ‘모바일 행복이음’",
    "link": "https://www.mohw.go.kr/board.es?mid=a10503000000&bid=0027&list_no=1492523&act=view",
    "date": "2026-11-12",
@@ -620,6 +647,17 @@
    "importance": 0
   },
   {
+   "title": "'공공의료 AI 고속도로' 첫 개통…AI 활용, 병원 간 진료 협력",
+   "link": "https://news.google.com/rss/articles/CBMiigFBVV95cUxPT0RjUHNwazF0cGtyRE9tQmdxMGdQRzBWTVVaMzU4VGJFd1pHWVJ6Z1ZSaWE0alJ6elh4QnFxQnJxSHZzQ1ZDMFF1RDNTT2hSVUlWdU1Xc3JJZmdOSFh5WUJuWXdKTkREb2wtWGpTMkVSbkgtWlNBM1Z3VHA0MnFsZEF6N0xtajNXSUE?oc=5",
+   "date": "2026-11-11",
+   "category": "정부 보도자료 (검색)",
+   "region": "정부",
+   "score": 0,
+   "similar_count": 0,
+   "source": "정부 보도자료 (검색)",
+   "importance": 0
+  },
+  {
    "title": "‘공공의료 AI 고속도로’ 첫 개통,강원 지역 공공병원 의료 AI로 본격 연결",
    "link": "https://www.mohw.go.kr/board.es?mid=a10503000000&bid=0027&list_no=1492511&act=view",
    "date": "2026-11-11",
@@ -629,6 +667,17 @@
    "similar_count": 1,
    "source": "보건복지부",
    "importance": 2
+  },
+  {
+   "title": "영월의료원, 의료 AI로 진료 부담 덜고 '분만·소아' 등 필수의료 공백 해소",
+   "link": "https://news.google.com/rss/articles/CBMi7wFBVV95cUxPS3RSTU1ROFVVRHFuNmE5amU1bnNfNVR1NzljZ2ZBWnZNdm9iM3pqQlRYU1dkRUVTMHhleHZhUGEycm9Jd2t1TEJvS2xhbldhaFdYUHUxUng1YWp5TmhPSjVxZHZlMjNBM0w0czFVR0piYklkRjN5SzNJSXprZlJVb2pHeWI5aGtQckJBTDVGcU9fTmRSbW1PenMwV21UaWRIVDR6b1UwN0gxOVhYS01wYlhNOUYxQUVTMGl5STIxT1BQRkwzQVdnZTdXS3lKTUJram91WGlCSTA3Q3ktaVhsZVdEV3I5SlhFUFA3Z1pOaw?oc=5",
+   "date": "2026-11-11",
+   "category": "정부 보도자료 (검색)",
+   "region": "정부",
+   "score": 0,
+   "similar_count": 0,
+   "source": "정부 보도자료 (검색)",
+   "importance": 0
   },
   {
    "title": "영월의료원, 의료 AI로 진료 부담 덜고 &#x27;분만·소아&#x27; 등 필수의료 공백 해소",
