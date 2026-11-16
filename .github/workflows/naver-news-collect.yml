@@ -2,7 +2,7 @@ name: naver-news-collect
 
 on:
   schedule:
-    - cron: "0 23 * * *"   # UTC 23:00 = KST 08:00 매일 (깃허브 사정으로 수십 분 늦게 시작될 수 있음)
+    - cron: "0 22 * * *"   # UTC 22:00 = KST 07:00 매일 (깃허브 사정으로 수십 분 늦게 시작될 수 있음)
   workflow_dispatch:
 
 permissions:
