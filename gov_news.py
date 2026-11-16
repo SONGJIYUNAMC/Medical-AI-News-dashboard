@@ -71,6 +71,104 @@ def is_official(url: str) -> bool:
     return h == "korea.kr" or h.endswith(".korea.kr") or h == "go.kr" or h.endswith(".go.kr")
 
 
+def json_after(html, key):
+    """HTML 안에 박혀 있는 "key": [ ... ] 형태의 JSON 배열을 괄호 짝을 세며 뽑아낸다."""
+    for m in re.finditer(r'[\'"]?' + re.escape(key) + r'[\'"]?\s*[:=]\s*\[', html):
+        i = html.index("[", m.end() - 1)
+        depth, instr, esc = 0, False, False
+        for j in range(i, min(len(html), i + 4_000_000)):
+            c = html[j]
+            if esc:
+                esc = False
+                continue
+            if instr:
+                if c == "\\":
+                    esc = True
+                elif c == '"':
+                    instr = False
+                continue
+            if c == '"':
+                instr = True
+            elif c == "[":
+                depth += 1
+            elif c == "]":
+                depth -= 1
+                if depth == 0:
+                    try:
+                        return json.loads(html[i:j + 1])
+                    except Exception:
+                        break
+    return None
+
+
+def board_rows(html, board):
+    """게시판 목록 파싱: ① 페이지에 들어 있는 JSON 배열 ② 안 되면 링크·날짜 패턴으로 직접 추출."""
+    f = board.get("fields", {})
+    k_id, k_ti, k_dt, k_bd = f.get("id", "num"), f.get("title", "title"), f.get("date", "write_dt"), f.get("body", "cont")
+    rows = []
+    data = json_after(html, board.get("json_key", "brdList"))
+    if isinstance(data, list):
+        for d in data:
+            if not isinstance(d, dict):
+                continue
+            ti = strip(str(d.get(k_ti) or ""))
+            if not ti:
+                continue
+            rows.append({"id": str(d.get(k_id) or ""), "title": ti,
+                         "date": str(d.get(k_dt) or "")[:10], "body": strip(str(d.get(k_bd) or ""))[:300]})
+        if rows:
+            return rows
+    for m in re.finditer(r'<a[^>]+href="([^"]*?(?:num|seq|bltnNo|idx|nttId)=(\d+)[^"]*)"[^>]*>(.{0,300}?)</a>', html, re.S | re.I):
+        ti = strip(m.group(3))
+        if len(ti) < 6:
+            continue
+        near = html[m.end():m.end() + 500]
+        dm = re.search(r"(20\d\d)[-./\s]+(\d{1,2})[-./\s]+(\d{1,2})", near) or re.search(r"(20\d\d)[-./\s]+(\d{1,2})[-./\s]+(\d{1,2})", ti)
+        rows.append({"id": m.group(2), "href": unescape(m.group(1)), "title": ti,
+                     "date": f"{dm[1]}-{int(dm[2]):02d}-{int(dm[3]):02d}" if dm else "", "body": ""})
+    return rows
+
+
+def board_link(board, row, session, state):
+    """상세 페이지 주소 확인(없거나 열리지 않으면 목록 주소 사용)."""
+    if row.get("href"):
+        return requests.compat.urljoin(board["url"], row["href"])
+    tpls = board.get("detail_url") or []
+    if isinstance(tpls, str):
+        tpls = [tpls]
+    if state.get("tpl"):
+        return state["tpl"].format(id=row["id"])
+    if not row.get("id") or state.get("checks", 0) >= 5:
+        return board["url"]
+    for t in tpls:
+        u = t.format(id=row["id"])
+        try:
+            state["checks"] = state.get("checks", 0) + 1
+            r = session.get(u, headers=UA, timeout=20)
+            if r.ok and (row["title"][:10] in r.text or row["title"][:10] in unescape(r.text)):
+                state["tpl"] = t
+                return u
+        except Exception:
+            pass
+    return board["url"]
+
+
+def fetch_board(board, cutoff, session):
+    r = session.get(board["url"], headers={**UA, "Accept": "text/html,application/xhtml+xml,*/*;q=0.8"}, timeout=30)
+    r.raise_for_status()
+    rows = board_rows(r.text, board)
+    if not rows:
+        raise RuntimeError("게시판 목록을 읽지 못했습니다 - 주소·구조 확인 필요")
+    out, state = [], {}
+    for row in rows[: int(board.get("max_items", 40))]:
+        d = parse_date(row["date"]) if row.get("date") else None
+        if d is None or d < cutoff:
+            continue
+        out.append({"title": row["title"], "link": board_link(board, row, session, state),
+                    "summary": row.get("body", ""), "pubDate": d})
+    return out
+
+
 def kind_of(text, kinds):
     for name, words in kinds.items():
         if any(w in text for w in words):
@@ -169,7 +267,26 @@ def main():
                 errors.append({"query": f"{label} (공공데이터포털 API)", "error": clean_err(e)[:120]})
                 print(f"[WARN] {label}: {clean_err(e)}", file=sys.stderr)
 
-        # 2) RSS + 3) Google News 검색
+        # 2) 게시판(HTML) 직접 수집 — RSS 가 없는 기관
+        for bd in cfg.get("boards", []):
+            label = bd["agency"] + (" " + bd["board"] if bd.get("board") else "")
+            try:
+                got = fetch_board(bd, cutoff, s)
+                for a in got:
+                    add(a, bd["agency"], bd.get("health_context", False), "board")
+            except Exception as e:
+                errors.append({"query": f"{label} ({bd['url']})", "error": clean_err(e)[:120] + (" → 사이트 검색으로 대체" if bd.get("fallback_site") else "")})
+                print(f"[WARN] {label}: {clean_err(e)}", file=sys.stderr)
+                if bd.get("fallback_site"):
+                    for q in (f"site:{bd['fallback_site']} 인공지능", f"site:{bd['fallback_site']} AI"):
+                        try:
+                            for a in parse_items(get_xml(gnews_url(q), s)):
+                                add(a, bd["agency"], bd.get("health_context", False), "gnews")
+                        except Exception:
+                            pass
+            time.sleep(0.5)
+
+        # 3) RSS + 4) Google News 검색
         jobs = [(f["agency"] + (" " + f["board"] if f.get("board") else ""), f["url"], f.get("health_context", False), "rss", f.get("fallback_site"), f["agency"]) for f in cfg["feeds"]]
         for g in cfg["gnews_queries"]:
             jobs.append((g["agency"], gnews_url(g["q"]), False, "gnews", None, g["agency"]))

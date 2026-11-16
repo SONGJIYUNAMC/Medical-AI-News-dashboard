@@ -116,6 +116,14 @@
     {
       "agency": "보건복지부",
       "q": "site:mohw.go.kr 보건의료 데이터"
+    },
+    {
+      "agency": "국가인공지능전략위원회",
+      "q": "site:aikorea.go.kr 인공지능"
+    },
+    {
+      "agency": "국가인공지능전략위원회",
+      "q": "국가AI전략위원회 발표"
     }
   ],
   "require_ai": [
@@ -220,5 +228,27 @@
     "가명",
     "데이터\\s?(법|보호|안심)",
     "국가인공지능"
+  ],
+  "boards": [
+    {
+      "agency": "국가인공지능전략위원회",
+      "board": "위원회 소식",
+      "url": "https://www.aikorea.go.kr/web/board/brdList.do?menu_cd=000012",
+      "json_key": "brdList",
+      "fields": {
+        "id": "num",
+        "title": "title",
+        "date": "write_dt",
+        "body": "cont"
+      },
+      "detail_url": [
+        "https://www.aikorea.go.kr/web/board/brdDetail.do?menu_cd=000012&num={id}",
+        "https://www.aikorea.go.kr/web/board/brdView.do?menu_cd=000012&num={id}",
+        "https://www.aikorea.go.kr/web/board/brdList.do?menu_cd=000012&num={id}&mode=view"
+      ],
+      "max_items": 40,
+      "health_context": true,
+      "fallback_site": "aikorea.go.kr"
+    }
   ]
 }
