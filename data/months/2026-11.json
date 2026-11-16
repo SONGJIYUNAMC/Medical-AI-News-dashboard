@@ -1,15 +1,15 @@
 {
  "month": "2026-11",
- "generated_at": "2026-11-16T08:34:31.449378+09:00",
+ "generated_at": "2026-11-16T11:22:09.133648+09:00",
  "prev_month": "2026-10",
  "collected_days": 16,
  "first_day": "2026-11-01",
  "last_day": "2026-11-16",
- "total": 2659,
+ "total": 2718,
  "prev_total": 4285,
  "by_region": {
-  "국내": 2188,
-  "해외": 436,
+  "국내": 2242,
+  "해외": 441,
   "정부": 35
  },
  "weekly": {
@@ -28,65 +28,65 @@
    "정부": 14
   },
   "2026-W47": {
-   "국내": 110,
-   "해외": 11,
+   "국내": 164,
+   "해외": 16,
    "정부": 4
   }
  },
  "categories": [
   {
    "name": "국내 · 국내 정책·규제",
-   "count": 574,
+   "count": 585,
    "prev": 648,
-   "delta": -74
+   "delta": -63
   },
   {
    "name": "국내 · 국내 의료 AI 기업",
-   "count": 537,
+   "count": 546,
    "prev": 769,
-   "delta": -232
+   "delta": -223
   },
   {
    "name": "국내 · 국내 의료기관",
-   "count": 364,
+   "count": 374,
    "prev": 411,
-   "delta": -47
+   "delta": -37
   },
   {
    "name": "국내 · AI 거버넌스·보안",
-   "count": 255,
+   "count": 263,
    "prev": 324,
-   "delta": -69
+   "delta": -61
   },
   {
    "name": "국내 · 학술·연구·행사",
-   "count": 225,
+   "count": 233,
    "prev": 294,
-   "delta": -69
-  },
-  {
-   "name": "해외 · 해외 의료기관 AI 도입·운영",
-   "count": 219,
-   "prev": 285,
-   "delta": -66
+   "delta": -61
   },
   {
    "name": "국내 · 해외 의료기관·정책·규제",
-   "count": 215,
+   "count": 223,
    "prev": 300,
-   "delta": -85
+   "delta": -77
+  },
+  {
+   "name": "해외 · 해외 의료기관 AI 도입·운영",
+   "count": 220,
+   "prev": 285,
+   "delta": -65
   },
   {
    "name": "해외 · 해외 정책·규제 (미국)",
-   "count": 128,
+   "count": 129,
    "prev": 171,
-   "delta": -43
+   "delta": -42
   },
   {
    "name": "해외 · 해외 연구·학술",
-   "count": 50,
+   "count": 53,
    "prev": 74,
-   "delta": -24
+   "delta": -21
   },
   {
    "name": "해외 · 해외 정책·규제 (유럽·영국)",
@@ -146,13 +146,13 @@
  "keywords": [
   {
    "word": "서울대병원",
-   "count": 102,
+   "count": 103,
    "prev": 143,
    "status": ""
   },
   {
    "word": "식약처",
-   "count": 88,
+   "count": 93,
    "prev": 90,
    "status": ""
   },
@@ -164,26 +164,26 @@
   },
   {
    "word": "학술대회",
-   "count": 59,
+   "count": 61,
    "prev": 76,
    "status": ""
   },
   {
    "word": "FDA",
-   "count": 59,
+   "count": 60,
    "prev": 86,
+   "status": ""
+  },
+  {
+   "word": "세브란스",
+   "count": 58,
+   "prev": 78,
    "status": ""
   },
   {
    "word": "보건복지부",
    "count": 57,
    "prev": 76,
-   "status": ""
-  },
-  {
-   "word": "세브란스",
-   "count": 56,
-   "prev": 78,
    "status": ""
   },
   {
@@ -194,31 +194,31 @@
   },
   {
    "word": "국회",
-   "count": 43,
+   "count": 44,
    "prev": 37,
    "status": ""
   },
   {
    "word": "삼성서울병원",
-   "count": 41,
+   "count": 42,
    "prev": 34,
    "status": ""
   },
   {
    "word": "세미나",
-   "count": 40,
+   "count": 41,
    "prev": 91,
    "status": ""
   },
   {
    "word": "분당서울대",
-   "count": 38,
+   "count": 39,
    "prev": 65,
    "status": ""
   },
   {
    "word": "포럼",
-   "count": 33,
+   "count": 36,
    "prev": 51,
    "status": ""
   },
@@ -230,14 +230,26 @@
   },
   {
    "word": "심포지엄",
-   "count": 28,
+   "count": 29,
    "prev": 31,
    "status": ""
   },
   {
    "word": "구글",
-   "count": 25,
+   "count": 27,
    "prev": 45,
+   "status": ""
+  },
+  {
+   "word": "NHS",
+   "count": 25,
+   "prev": 18,
+   "status": ""
+  },
+  {
+   "word": "스마트 병원",
+   "count": 25,
+   "prev": 30,
    "status": ""
   },
   {
@@ -250,18 +262,6 @@
    "word": "코어라인",
    "count": 24,
    "prev": 20,
-   "status": ""
-  },
-  {
-   "word": "상급종합병원",
-   "count": 24,
-   "prev": 34,
-   "status": ""
-  },
-  {
-   "word": "NHS",
-   "count": 24,
-   "prev": 18,
    "status": ""
   }
  ],
