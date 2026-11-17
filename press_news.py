@@ -57,6 +57,87 @@ def from_site(item, sites):
     return False
 
 
+def txt_of(r):
+    """한글이 깨지지 않도록 디코딩."""
+    if r.encoding and r.encoding.lower() not in ("iso-8859-1", "ascii"):
+        return r.text
+    for enc in ("utf-8", "euc-kr", "cp949"):
+        try:
+            return r.content.decode(enc)
+        except Exception:
+            continue
+    return r.text
+
+
+def tag(el):
+    return el.tag.split("}")[-1].lower()
+
+
+def find1(node, names):
+    for ch in node:
+        if tag(ch) in names:
+            return ch
+    return None
+
+
+def to_dt(val):
+    """RSS(RFC822)·ISO·'YYYY-MM-DD HH:MM:SS' 등 날짜 표기를 KST 로 변환."""
+    val = (val or "").strip()
+    if not val:
+        return None
+    try:
+        return parsedate_to_datetime(val).astimezone(KST)
+    except Exception:
+        pass
+    v = val.replace("Z", "+00:00").replace("/", "-")
+    for fmt in (None, "%Y-%m-%d %H:%M:%S", "%Y-%m-%d %H:%M", "%Y-%m-%d", "%Y%m%d%H%M%S", "%Y%m%d"):
+        try:
+            d = datetime.fromisoformat(v) if fmt is None else datetime.strptime(v, fmt)
+            return (d if d.tzinfo else d.replace(tzinfo=KST)).astimezone(KST)
+        except Exception:
+            continue
+    return None
+
+
+def fetch_feed(url, session):
+    """신문사 RSS/Atom(또는 JSON) 피드에서 기사 목록을 읽는다."""
+    r = session.get(url, headers={**UA, "Accept": "application/rss+xml, application/xml, text/xml, application/json;q=0.9, */*;q=0.8"}, timeout=30)
+    r.raise_for_status()
+    body = txt_of(r).lstrip("\ufeff \r\n\t")
+    out = []
+    if body[:1] in ("{", "["):                      # JSON 형태 피드
+        data = json.loads(body)
+        rows = data if isinstance(data, list) else next(
+            (v for v in (data or {}).values() if isinstance(v, list) and v and isinstance(v[0], dict)), [])
+        for d in rows:
+            ti = unescape(str(d.get("title") or d.get("subject") or "")).strip()
+            ln = str(d.get("link") or d.get("url") or d.get("articleUrl") or "")
+            dt = to_dt(str(d.get("pubDate") or d.get("date") or d.get("publishedAt") or d.get("service_day") or ""))
+            if ti and ln and dt:
+                out.append({"title": ti, "link": ln, "pubDate": dt,
+                            "summary": re.sub(r"<[^>]+>", " ", unescape(str(d.get("description") or d.get("summary") or "")))[:300]})
+        return out
+    root = ET.fromstring(body.encode("utf-8"))
+    for node in root.iter():
+        if tag(node) not in ("item", "entry"):
+            continue
+        t_el, l_el = find1(node, {"title"}), find1(node, {"link"})
+        ti = unescape((t_el.text or "").strip()) if t_el is not None else ""
+        ln = ""
+        if l_el is not None:
+            ln = (l_el.get("href") or l_el.text or "").strip()
+        if not ln:
+            g = find1(node, {"guid", "id"})
+            ln = (g.text or "").strip() if g is not None and (g.text or "").startswith("http") else ""
+        d_el = find1(node, {"pubdate", "published", "updated", "date", "dc:date"})
+        dt = to_dt(d_el.text if d_el is not None else "")
+        s_el = find1(node, {"description", "summary", "content"})
+        sm = re.sub(r"<[^>]+>", " ", unescape((s_el.text or ""))) if s_el is not None and s_el.text else ""
+        if ti and ln and dt:
+            out.append({"title": ti, "link": ln, "pubDate": dt, "summary": re.sub(r"\s+", " ", sm).strip()[:300]})
+    return out
+
+
 def fetch(query, window, session):
     url = (f"https://news.google.com/rss/search?q={quote(query + f' when:{window}')}"
            f"&hl=ko&gl=KR&ceid=KR:ko")
@@ -93,16 +174,50 @@ def main():
 
     cfg = json.loads(Path(args.config).read_text(encoding="utf-8"))
     hours = args.hours or int(cfg.get("hours", 48))
-    window, excl = cfg.get("window", "2d"), rx(cfg.get("exclude", []))
+    # 제외어는 정규식이 아니라 그대로의 낱말로 본다([인사] 같은 표기가 문자열 집합으로 해석되지 않도록)
+    window, excl = cfg.get("window", "2d"), [re.compile(re.escape(w), re.I) for w in cfg.get("exclude", [])]
     kws = cfg.get("keywords", [])
     cutoff = datetime.now(KST) - timedelta(hours=hours)
 
     results, errors, dropped = [], [], 0
     with requests.Session() as s:
         for paper in cfg["papers"]:
-            name, sites = paper["name"], paper["sites"]
-            got = []
-            for group in cfg["keyword_groups"]:
+            name, sites = paper["name"], paper.get("sites", [])
+            got, feed_ok = [], False
+            for url in paper.get("feeds", []):          # ① 신문사 RSS
+                try:
+                    items = fetch_feed(url, s)
+                    feed_ok = True
+                    for a in items:
+                        if a["pubDate"] < cutoff:
+                            continue
+                        text = a["title"] + " " + a.get("summary", "")
+                        hits = [k for k in kws if k in text]
+                        if not hits:
+                            dropped += 1
+                            continue
+                        if any(p.search(text) for p in excl):
+                            dropped += 1
+                            continue
+                        if any(r["link"] == a["link"] for r in got) or \
+                           next((r for r in got if similar(r["title"], a["title"]) >= 0.65), None):
+                            continue
+                        got.append({**a, "source": name, "source_url": a["link"], "queries": hits[:6]})
+                except Exception as e:
+                    errors.append({"query": f"{name} RSS {url.split('/')[-1]}", "error": str(e)[:150]})
+                    print(f"[WARN] {name} {url}: {e}", file=sys.stderr)
+                time.sleep(0.4)
+            if feed_ok and got:
+                got.sort(key=lambda a: a["pubDate"], reverse=True)
+                for a in got[: int(cfg.get("max_per_paper", 40))]:
+                    results.append({"title": a["title"], "link": a["link"], "originallink": a["link"],
+                                    "summary": a.get("summary", ""), "pubDate": a["pubDate"].isoformat(),
+                                    "category": name, "press": name, "source": name,
+                                    "queries": a["queries"], "source_type": "major",
+                                    "score": min(len(a["queries"]), 5) + 3})
+                print(f"{name}: {len(got)}건 (RSS)")
+                continue
+            for group in cfg["keyword_groups"]:         # ② RSS 가 없거나 실패하면 Google News site: 검색
                 q = "(" + " OR ".join(f'"{k}"' if " " in k else k for k in group) + ") " + \
                     " OR ".join(f"site:{d}" for d in sites)
                 try:

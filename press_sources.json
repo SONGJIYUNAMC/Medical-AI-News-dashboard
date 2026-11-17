@@ -12,14 +12,30 @@
     {
       "name": "중앙일보",
       "sites": [
-        "joongang.co.kr",
-        "jtbc.co.kr"
+        "joongang.co.kr"
+      ]
+    },
+    {
+      "name": "JTBC",
+      "sites": [
+        "jtbc.co.kr",
+        "news-ex.jtbc.co.kr"
+      ],
+      "feeds": [
+        "https://news-ex.jtbc.co.kr/v1/get/rss/issue",
+        "https://news-ex.jtbc.co.kr/v1/get/rss/newsflesh",
+        "https://news-ex.jtbc.co.kr/v1/get/rss/section/society",
+        "https://news-ex.jtbc.co.kr/v1/get/rss/section/politics"
       ]
     },
     {
       "name": "동아일보",
       "sites": [
         "donga.com"
+      ],
+      "feeds": [
+        "https://rss.donga.com/total.xml",
+        "https://rss.donga.com/science.xml"
       ]
     },
     {
@@ -32,6 +48,10 @@
       "name": "경향신문",
       "sites": [
         "khan.co.kr"
+      ],
+      "feeds": [
+        "https://www.khan.co.kr/rss/rssdata/total_news.xml",
+        "https://www.khan.co.kr/rss/rssdata/science_news.xml"
       ]
     },
     {
@@ -85,18 +105,18 @@
   ],
   "exclude": [
     "부고",
-    "인사말",
-    "[인사]",
+    "인사 발령",
     "오늘의 운세",
-    "날씨",
+    "오늘의 날씨",
     "프로야구",
-    "축구",
-    "배우",
+    "프로축구",
     "아이돌",
-    "드라마",
+    "드라마 리뷰",
     "영화 리뷰",
-    "주가 전망",
     "코스피 마감",
-    "부동산 시세"
-  ]
+    "코스닥 마감",
+    "부동산 시세",
+    "로또"
+  ],
+  "note": "feeds 가 있는 신문사는 신문사 RSS 로 수집하고, 실패하거나 feeds 가 없으면 Google News site: 검색으로 수집"
 }
