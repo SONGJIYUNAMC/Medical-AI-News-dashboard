@@ -178,6 +178,14 @@ def fetch(query, window, session):
                "pubDate": pub.astimezone(KST)}
 
 
+def kw_hits(title, strong, weak):
+    """제목에서 키워드를 찾는다. AI·인공지능(weak)만 걸린 기사는 의료·정부 키워드(strong)가 함께 있어야 수집."""
+    s_hit = [k for k in strong if k in title]
+    if not s_hit:
+        return []
+    return s_hit + [k for k in weak if k in title]
+
+
 def main():
     ap = argparse.ArgumentParser()
     ap.add_argument("--config", default="press_sources.json")
@@ -189,7 +197,8 @@ def main():
     hours = args.hours or int(cfg.get("hours", 48))
     # 제외어는 정규식이 아니라 그대로의 낱말로 본다([인사] 같은 표기가 문자열 집합으로 해석되지 않도록)
     window, excl = cfg.get("window", "2d"), [re.compile(re.escape(w), re.I) for w in cfg.get("exclude", [])]
-    kws = cfg.get("keywords", [])
+    strong = cfg.get("keywords_strong") or cfg.get("keywords", [])
+    weak = cfg.get("keywords_weak", [])
     cutoff = datetime.now(KST) - timedelta(hours=hours)
 
     results, errors, dropped = [], [], 0
@@ -204,7 +213,7 @@ def main():
                     for a in items:
                         if a["pubDate"] < cutoff:
                             continue
-                        hits = [k for k in kws if k in a["title"]]   # 본문에 스쳐 지나가는 언급은 제외, 제목 기준
+                        hits = kw_hits(a["title"], strong, weak)   # 제목 기준, AI 단독 기사는 제외
                         if not hits:
                             dropped += 1
                             continue
@@ -251,7 +260,7 @@ def main():
                             if a["source"] == name and hit["source"] != name:   # 같은 기사면 자매지보다 본지 우선
                                 hit.update({k: a[k] for k in ("title", "link", "source", "source_url", "pubDate")})
                             continue
-                        hits = [k for k in kws if k in a["title"]]
+                        hits = kw_hits(a["title"], strong, weak)
                         if not hits:
                             dropped += 1
                             continue
