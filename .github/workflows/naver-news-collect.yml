@@ -30,6 +30,9 @@ jobs:
         env:
           DATA_GO_KR_KEY: ${{ secrets.DATA_GO_KR_KEY }}
         run: python gov_news.py --config gov_sources.json --out data/gov_news.json
+      - name: Collect 주요 일간지 (조선·중앙·동아·한겨레·경향·한국)
+        continue-on-error: true
+        run: python press_news.py --config press_sources.json --out data/press_news.json
       - name: 주간 누적 저장 (data/weeks)
         run: python archive.py
       - name: 월간 집계 (data/months)
@@ -41,6 +44,7 @@ jobs:
           git add data/news.json
           [ -f data/global_news.json ] && git add data/global_news.json || true
           [ -f data/gov_news.json ] && git add data/gov_news.json || true
+          [ -f data/press_news.json ] && git add data/press_news.json || true
           git add data/weeks
           git add data/months || true
           git diff --staged --quiet || git commit -m "chore: update news data"

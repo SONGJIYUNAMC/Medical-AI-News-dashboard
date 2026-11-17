@@ -191,7 +191,7 @@
 <script>
 const REL = /의료|병원|헬스|환자|진료|임상|의사|간호|보건|의약|바이오|건강|health|hospital|clinic|medical|patient/i;
 const AI_T = /(^|[^A-Za-z])AI(?![A-Za-z])|인공지능|딥러닝|머신러닝|생성형|LLM|언어\s?모델|챗\s?GPT|파운데이션\s?모델|디지털의료기기/i;
-const state = { items: [], order: [], hotOpen: window.innerWidth >= 700, period: "", day: "전체", weeksLoaded: [], manifest: null, region: "국내", cat: "전체", q: "", rel: false, aiT: false, impOnly: false, sort: "imp", today: true, home: false, cats: false, wkTop2: false, wkGl: false, mergeCo: true, todayDay: "", nlWeek: "", nlItems: [], nlLoaded: "" };
+const state = { items: [], order: [], hotOpen: window.innerWidth >= 700, period: "", day: "전체", weeksLoaded: [], manifest: null, region: "국내", cat: "전체", q: "", rel: false, aiT: false, impOnly: false, sort: "imp", today: true, home: false, cats: false, wkTop2: false, wkReg: "국내", mergeCo: true, todayDay: "", nlWeek: "", nlItems: [], nlLoaded: "" };
 function setView(v) { state.today = v === "today"; state.home = v === "weekly"; state.cats = v === "cats"; }
 const $ = id => document.getElementById(id);
 
@@ -254,12 +254,14 @@ const POLICY_AGENCY = /복지부|식약처|식품의약품안전|심평원|건�
 const GOV_TERM = /거버넌스|환자안전|환각|드리프트|이상사례|사후\s?모니터링|도입\s?심의|개발자\s?책임|책임\s?(소재|논란|공방)|AI\s?책임|법적\s?책임|편향|랜섬웨어|개인정보\s?유출|해킹/;
 const HOSP_NAME = /서울아산|아산병원|서울대병원|서울대학교병원|분당서울대|삼성서울|세브란스|서울성모|상급종합|스마트\s?(병원|병동)|앰비언트|[가-힣]{2,6}(대|의료원)?병원/;
 // 카테고리 표시 순서(화면 전체 공통): 학술·연구·행사는 항상 맨 아래
-const CAT_ORDER = ["국내 정책·규제", "국내 의료기관", "정부 발표", "국내 의료 AI 기업", "AI 거버넌스·보안", "해외", "학술·연구·행사"];
+const PRESS_CATS = ["조선일보", "중앙일보", "동아일보", "한겨레", "경향신문", "한국일보"];
+const CAT_ORDER = ["국내 정책·규제", "국내 의료기관", "정부 발표", "국내 의료 AI 기업", "AI 거버넌스·보안", "해외", ...PRESS_CATS, "학술·연구·행사"];
 const catRank = c => { const i = CAT_ORDER.indexOf(c); return i >= 0 ? i : CAT_ORDER.length - 1.5; };   // 목록에 없는 이름은 학술 바로 앞
 const sortCats = names => names.slice().sort((a, b) => catRank(a) - catRank(b));
 const DOM_CATS = ["국내 정책·규제", "국내 의료기관", "국내 의료 AI 기업", "AI 거버넌스·보안", "학술·연구·행사", "정부 발표", "해외"];
 function autoCat(it) {
   const c = it.category || "기타", t = it.title || "", txt = t + " " + (it.summary || "");
+  if (it.press || it.region === "일간지") return it.category || "주요 일간지";
   if (it.gov || it.region === "정부") return "정부 발표";
   if (it.region === "해외" || it.global || /^해외/.test(c)) return "해외";
   if (c === "국내 정책·규제" && COMPANY_NEWS.test(t) && !POLICY_DOC.test(t)) return "국내 의료 AI 기업";
@@ -269,7 +271,7 @@ function autoCat(it) {
 function catOf(it) {
   const o = state.ov.cat[ovKey(it)]; if (o) return o;
   const c = autoCat(it);
-  if (c === "해외" || it.gov) return c;
+  if (c === "해외" || it.gov || it.press) return c;
   const L = learn();   // 내가 카테고리를 옮긴 기사들에서 학습한 규칙
   for (const r of L.rules) if (it.title && it.title.toLowerCase().includes(r.t)) return r.c;
   return c;
@@ -372,7 +374,8 @@ function filtered() {
   return merged;
 }
 
-const regionOf = it => (it.global ? "해외" : "국내");   // 정부 발표는 국내 뉴스의 한 카테고리("정부 발표")
+const regionOf = it => (it.press ? "주요 일간지" : it.global ? "해외" : "국내");   // 정부 발표는 국내 뉴스의 한 카테고리("정부 발표")
+const REGIONS = ["국내", "해외", "주요 일간지"];
 const todayKST = () => new Date(Date.now() + 9 * 3600 * 1000).toISOString().slice(0, 10);
 const DOW = ds => new Date(ds + "T00:00:00Z").getUTCDay();                 // 0=일, 1=월 … 6=토
 const addDays = (ds, n) => { const d = new Date(ds + "T00:00:00Z"); d.setUTCDate(d.getUTCDate() + n); return d.toISOString().slice(0, 10); };
@@ -400,7 +403,7 @@ const RECRUIT = /채용|인재\s?영입|직원\s?모집|수시\s?모집|인턴\s
 // 정부 발표 탭: 언론 기사(검색 결과)는 제외하고 기관 직접 발표만(이전에 저장된 데이터 보정)
 const keepItem = it => !RECRUIT.test(it.title) && !(it.region === "국내" && !it.manual && /^기타/.test(it.category || "")) &&
   !(it.region === "정부" && it.via === "gnews" && it.agency === "국가인공지능전략위원회" && !it.official);
-const REGION_LABEL = { "국내": "국내 뉴스", "해외": "해외 뉴스 (Google News)" };
+const REGION_LABEL = { "국내": "국내 뉴스", "해외": "해외 뉴스 (Google News)", "주요 일간지": "주요 일간지" };
 
 // 수집일 기본값: 국내·해외는 오늘(없으면 최근 수집일), 정부 발표는 전체
 function applyDefaultDay() {
@@ -437,7 +440,7 @@ function renderTabs() {
   hb.append(hbtn, wbtn, cbtn);
   const rbox = $("regions");
   rbox.replaceChildren();
-  ["국내", "해외"].forEach(r => {
+  REGIONS.forEach(r => {
     const n = state.items.filter(it => regionOf(it) === r).length;
     const b = el("button", { className: "tab" + (r === state.region ? " active" : ""), type: "button" },
                  [el("span", { textContent: REGION_LABEL[r] }), el("span", { className: "n", textContent: n.toLocaleString() })]);
@@ -656,12 +659,12 @@ function nlCheck(it) {
   return el("label", { className: "nl" }, [box, el("span", { textContent: " 뉴스레터 후보" })]);
 }
 function catOptions(region) {
-  if (region === "해외") return [];
+  if (region === "해외" || region === "주요 일간지") return [];
   return [...new Set([...DOM_CATS, ...state.items.filter(i => regionOf(i) === "국내").map(autoCat)])];
 }
 function catSelect(it) {
   const opts = catOptions(regionOf(it));
-  if (!opts.length) return el("span", { className: "why", textContent: "구분: 해외" });
+  if (!opts.length) return el("span", { className: "why", textContent: "구분: " + regionOf(it) });
   const k = ovKey(it), cs = el("select", { ariaLabel: "카테고리" });
   [...new Set([...opts, catOf(it)])].forEach(c => cs.append(el("option", { value: c, textContent: "카테고리: " + c })));
   cs.value = catOf(it);
@@ -721,7 +724,7 @@ function mergeCompany(arr) {   // 같은 날·같은 기업 기사는 가장 주
 const better = (a, b) => (impOf(b).sc - impOf(a).sc) || (srcRank(a) - srcRank(b)) || ((b.similar_count || 0) - (a.similar_count || 0)) || (a.pubDate < b.pubDate ? 1 : -1);
 function regionChips() {
   const bar = el("div", { className: "chips" });
-  ["국내", "해외"].forEach(r => {
+  REGIONS.forEach(r => {
     const b = el("button", { type: "button", className: "tab" + (r === state.region ? " active" : ""), textContent: r });
     b.onclick = () => { state.region = r; state.cat = "전체"; render(); };
     bar.append(b);
@@ -756,7 +759,7 @@ function newsCard(it, pk, pinnable, dayChip) {
     ...(it._co ? [el("span", { className: "chip score", title: it._co.srcs.join(", "), textContent: `${it._co.name} 관련 ${it._co.n}건 더` })] : []),
     ...(it.manual ? [el("span", { className: "chip", textContent: "직접 등록" })] : []),
     ...(it.source_type === "major" ? [el("span", { className: "chip", textContent: "주요 일간지" })] : it.source_type === "medical" ? [el("span", { className: "chip", textContent: "의료 전문지" })] : []),
-    el("span", { textContent: it.gov ? it.agency : it.global ? (it.sources || []).join(", ") : host(it.originallink || it.link) + (it.similar_count ? " 외 " + it.similar_count + "곳 보도" : "") }),
+    el("span", { textContent: it.gov ? it.agency : it.press ? (it.source || it.category) : it.global ? (it.sources || []).join(", ") : host(it.originallink || it.link) + (it.similar_count ? " 외 " + it.similar_count + "곳 보도" : "") }),
     el("span", { textContent: fmtDate(it.pubDate) }),
   ];
   const pin = el("button", { type: "button", className: "tab", textContent: pinned ? "대표 고정 해제" : "대표로 고정" });
@@ -777,7 +780,7 @@ function newsCard(it, pk, pinnable, dayChip) {
 }
 function copyCandidates(items, label) {
   const lines = [`[${label || periodText(weeksFor(state.period))} 의료 AI 동향 — 뉴스레터 후보]`, ""];
-  items.forEach((it, i) => lines.push(`${i + 1}. ${it.title} (${it.gov ? it.agency : host(it.originallink || it.link)})`, `   ${it.originallink || it.link}`, ...(it.summary ? [`   ${it.summary.slice(0, 160)}`] : []), ""));
+  items.forEach((it, i) => lines.push(`${i + 1}. ${it.title} (${it.gov ? it.agency : it.press ? (it.source || it.category) : host(it.originallink || it.link)})`, `   ${it.originallink || it.link}`, ...(it.summary ? [`   ${it.summary.slice(0, 160)}`] : []), ""));
   const txt = lines.join("\n");
   (navigator.clipboard ? navigator.clipboard.writeText(txt) : Promise.reject()).then(() => alert("뉴스레터 후보 목록을 복사했습니다."), () => prompt("아래 내용을 복사하세요", txt));
 }
@@ -821,16 +824,16 @@ function csvSave(filename, header, rows) {
 const CSV_HEAD = ["구분", "선정일", "카테고리", "제목", "출처", "링크", "발행일", "중요도", "뉴스레터 후보", "요약"];
 function csvRow(it, day) {
   const lv = impOf(it).lv;
-  return [regionOf(it), day, catOf(it), it.title, it.gov ? it.agency : it.global ? (it.sources || []).join("/") : host(it.originallink || it.link),
+  return [regionOf(it), day, catOf(it), it.title, it.gov ? it.agency : it.press ? (it.source || it.category) : it.global ? (it.sources || []).join("/") : host(it.originallink || it.link),
     it.originallink || it.link, (it.pubDate || "").slice(0, 10), lv === 3 ? "상" : lv === 2 ? "중" : "", state.ov.nl[ovKey(it)] ? "Y" : "", it.summary || ""];
 }
 // ---------- 주간 확정(스냅샷) ----------
 const snapWeek = () => state.nlWeek || "";
 const snapOf = w => (w && state.snap[w] && state.snap[w].rows && state.snap[w].rows.length ? state.snap[w] : null);
-function snapRowsFor(week) {   // 이 주에 올린 기사 전부(국내+해외)를 표 한 줄씩으로
+function snapRowsFor(week) {   // 이 주에 올린 기사 전부(국내+해외+주요 일간지)를 표 한 줄씩으로
   const rows = [];
-  ["국내", "해외"].forEach(region => {
-    const by = weeklyBy(region === "해외");
+  REGIONS.forEach(region => {
+    const by = weeklyBy(region);
     orderedCats([...by.keys()]).forEach(c => by.get(c).forEach(x => rows.push(csvRow(x.it, x.day))));
   });
   return rows;
@@ -914,7 +917,7 @@ function newsletterXlsx(w, rows) {
 function csvBtn(label, fn) { const b = el("button", { type: "button", className: "tab", textContent: label }); b.onclick = fn; return b; }
 const isWk = it => { const k = ovKey(it); return !!(state.ov.wk || {})[k] || !!state.ov.nl[k]; };   // 뉴스레터 후보는 자동으로 주간 등록
 function weeklyBy(gl) {   // 선택한 주간(화~다음 월) 중 '주간 대시보드에 올리기'를 누른 기사만 모음
-  const by = new Map(), region = (gl === undefined ? state.wkGl : gl) ? "해외" : "국내";
+  const by = new Map(), region = (gl === undefined ? state.wkReg : gl) || "국내";
   (state.nlItems || []).forEach(it => {
     if (!isWk(it) || regionOf(it) !== region) return;
     const c = catOf(it); if (!by.has(c)) by.set(c, []);
@@ -941,7 +944,7 @@ function renderToday(list) {
     const pk = dayPicksFor(day, state.region), rows = [];
     orderedCats([...pk.keys()]).forEach(c => pk.get(c).top.forEach(it => rows.push(csvRow(it, it.first_seen || day))));
     if (!rows.length) { alert("내려받을 선정 기사가 없습니다."); return; }
-    csvSave(`daily_${day}_${state.region === "해외" ? "GL" : "KR"}.csv`, CSV_HEAD, rows);
+    csvSave(`daily_${day}_${({ "해외": "GL", "주요 일간지": "PR" }[state.region]) || "KR"}.csv`, CSV_HEAD, rows);
   });
   list.append(el("div", { className: "wkhead" }, [el("h2", { textContent: "오늘의 주요 뉴스" }), dsel, regionChips(), dayCsv, more]));
   list.append(el("div", { className: "why wide", textContent: "수집한 뉴스 중 카테고리별 중요도·관련도가 높은 2건입니다. 중요도 변경·뉴스레터 후보 체크는 모든 사용자에게 반영되고, [편집] → [주간 대시보드에 올리기]를 누른 기사만 주간 대시보드에 모입니다." }));
@@ -962,16 +965,16 @@ function renderWeekly(list) {
   more.onclick = () => { setView("cats"); applyDefaultDay(); clearSearch(); render(); window.scrollTo(0, 0); };
   const tg = el("select", { ariaLabel: "표시 방식" }, [el("option", { value: "0", textContent: "일별 선정 기사 모두" }), el("option", { value: "1", textContent: "카테고리별 중요도 상위 2건만" })]);
   tg.value = state.wkTop2 ? "1" : "0"; tg.onchange = () => { state.wkTop2 = tg.value === "1"; render(); };
-  const wchips = el("div", { className: "chips" }, [["kr", "국내"], ["gl", "해외"]].map(([v, t]) => {
-    const x = el("button", { type: "button", className: "tab" + ((state.wkGl ? "gl" : "kr") === v ? " active" : ""), textContent: t });
-    x.onclick = () => { state.wkGl = v === "gl"; render(); }; return x; }));
+  const wchips = el("div", { className: "chips" }, [["국내", "국내"], ["해외", "해외"], ["주요 일간지", "주요 일간지"]].map(([v, t]) => {
+    const x = el("button", { type: "button", className: "tab" + ((state.wkReg || "국내") === v ? " active" : ""), textContent: t });
+    x.onclick = () => { state.wkReg = v; render(); }; return x; }));
   const nws = nlWeeks();
   if (!nws.includes(state.nlWeek)) state.nlWeek = nws[0] || "";
   const nsel = el("select", { ariaLabel: "주간 선택" }, nws.map(id => el("option", { value: id, textContent: nlLabel(id) + (id === nws[0] ? " (이번 주)" : "") })));
   nsel.value = state.nlWeek;
   nsel.onchange = () => { state.nlWeek = nsel.value; render(); };
   const wkName = () => state.nlWeek || "week";
-  const rg = () => (state.wkGl ? "GL" : "KR");
+  const rg = () => ({ "해외": "GL", "주요 일간지": "PR" }[state.wkReg] || "KR");
   const wkCsv = csvBtn("주간 CSV 내려받기", () => { const rows = weeklyRows(false); if (!rows.length) { alert("내려받을 선정 기사가 없습니다."); return; } csvSave(`weekly_${wkName()}_${rg()}.csv`, CSV_HEAD, rows); });
   const wkNl = csvBtn("뉴스레터 후보만 CSV", () => { const rows = weeklyRows(true); if (!rows.length) { alert("뉴스레터 후보로 체크된 선정 기사가 없습니다."); return; } csvSave(`newsletter_${wkName()}_${rg()}.csv`, CSV_HEAD, rows); });
   list.append(el("div", { className: "wkhead" }, [el("h2", { textContent: "주간 대시보드" }), nsel, wchips, tg, wkCsv, wkNl, more]));
@@ -1020,7 +1023,7 @@ function renderWeekly(list) {
   list.append(cp);
 
   if (snRows) {   // 확정본: 고정된 내용 그대로 표시
-    const reg = state.wkGl ? "해외" : "국내";
+    const reg = state.wkReg || "국내";
     const by = new Map();
     snRows.filter(r => r[0] === reg).forEach(r => { if (!by.has(r[2])) by.set(r[2], []); by.get(r[2]).push(r); });
     if (!by.size) list.append(el("div", { className: "empty", textContent: "확정본에 이 구분의 기사가 없습니다." }));
@@ -1104,7 +1107,7 @@ function render() {
       ...(it.gov ? [el("span", { className: "chip score", textContent: it.kind })]
         : [el("span", { className: "chip score", textContent: "관련도 " + (it.score ?? 0) })]),
       ...((it.kw && it.kw.length) ? [el("span", { className: "kws", textContent: "키워드: " + it.kw.join(", ") })] : []),
-      el("span", { textContent: it.gov ? it.agency : it.global ? (it.sources || []).join(", ") + " (Google News)" : host(it.originallink || it.link) }),
+      el("span", { textContent: it.gov ? it.agency : it.press ? (it.source || it.category) : it.global ? (it.sources || []).join(", ") + " (Google News)" : host(it.originallink || it.link) }),
       ...(it.source_type === "major" ? [el("span", { className: "chip", textContent: "주요 일간지" })]
         : it.source_type === "medical" ? [el("span", { className: "chip", textContent: "의료 전문지" })]
         : it.source_type === "global_pref" ? [el("span", { className: "chip", textContent: "주요 매체" })] : []),
@@ -1227,7 +1230,7 @@ async function loadNlWeek(id) {
   const items = [];
   res.filter(r => r.status === "fulfilled").forEach(r => (r.value.items || []).filter(keepItem).forEach(it => {
     if (!it.first_seen || nlEnd(it.first_seen) !== id) return;
-    items.push({ ...it, _week: r.value.week, _nw: id, gov: it.region === "정부", global: it.region === "해외" });
+    items.push({ ...it, _week: r.value.week, _nw: id, gov: it.region === "정부", global: it.region === "해외", press: it.region === "일간지" });
   }));
   state.nlItems = items; state.nlLoaded = id;
 }
@@ -1245,11 +1248,11 @@ async function loadPeriod() {
   if (prevWeeks.length) {
     const pr = await Promise.allSettled(prevWeeks.map(w => getJson(`data/weeks/${w}.json`)));
     const pf = pr.filter(r => r.status === "fulfilled").map(r => r.value);
-    if (pf.length) { state.prevItems = []; pf.forEach(f => (f.items || []).filter(keepItem).forEach(it => state.prevItems.push({ ...it, gov: it.region === "정부", global: it.region === "해외" }))); }
+    if (pf.length) { state.prevItems = []; pf.forEach(f => (f.items || []).filter(keepItem).forEach(it => state.prevItems.push({ ...it, gov: it.region === "정부", global: it.region === "해외", press: it.region === "일간지" }))); }
   }
   state.items = []; state.order = [];
   files.forEach(f => {
-    (f.items || []).filter(keepItem).forEach(it => state.items.push({ ...it, _week: f.week, gov: it.region === "정부", global: it.region === "해외" }));
+    (f.items || []).filter(keepItem).forEach(it => state.items.push({ ...it, _week: f.week, gov: it.region === "정부", global: it.region === "해외", press: it.region === "일간지" }));
     (f.category_order || []).forEach(c => { if (!state.order.includes(c)) state.order.push(c); });
   });
   // 월요일 집계에 쓸 직전 토·일 수집분이 다른 주차 파일에 있으면 함께 불러온다
@@ -1263,7 +1266,7 @@ async function loadPeriod() {
         const f = await getJson(`data/weeks/${pw}.json`);
         (f.items || []).filter(keepItem).forEach(it => {
           if (it.first_seen === addDays(monFirst, -1) || it.first_seen === addDays(monFirst, -2)) {
-            state.items.push({ ...it, _week: f.week, gov: it.region === "정부", global: it.region === "해외" });
+            state.items.push({ ...it, _week: f.week, gov: it.region === "정부", global: it.region === "해외", press: it.region === "일간지" });
             state.wkndAdd = true;
           }
         });
@@ -1296,7 +1299,7 @@ function toCsv() {
   const q = v => '"' + String(v ?? "").replace(/"/g, '""') + '"';
   const head = ["수집일", "발행일", "구분", "카테고리", "제목", "출처", "링크", "관련도", "요약"];
   const lines = filtered().map(it => [it.first_seen, (it.pubDate || "").slice(0, 10), regionOf(it), catOf(it), it.title,
-    it.gov ? it.agency : it.global ? (it.sources || []).join("/") : host(it.originallink || it.link),
+    it.gov ? it.agency : it.press ? (it.source || it.category) : it.global ? (it.sources || []).join("/") : host(it.originallink || it.link),
     it.originallink || it.link, it.score ?? "", it.summary].map(q).join(","));
   const blob = new Blob(["\ufeff" + [head.map(q).join(","), ...lines].join("\r\n")], { type: "text/csv;charset=utf-8" });
   const a = el("a", { href: URL.createObjectURL(blob), download: `news_${state.period.replace(":", "-")}_${state.region}.csv` });

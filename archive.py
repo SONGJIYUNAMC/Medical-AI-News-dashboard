@@ -77,6 +77,7 @@ def main():
 
     incoming, order, runinfo = [], [], {}
     kr, gl, gv = load("news.json"), load("global_news.json"), load("gov_news.json")
+    pr = load("press_news.json")
     if kr:
         for it in kr.get("items", []):
             incoming.append({**it, "region": "국내"})
@@ -94,6 +95,12 @@ def main():
                              "score": 0, "queries": [it.get("kind")], "source_type": ""})
         order += gv.get("category_order", [])
         runinfo["정부"] = {"generated_at": gv.get("generated_at"), "errors": [e["query"].split(" (")[0] + " - " + e.get("error", "") for e in gv.get("errors", [])]}
+
+    if pr:
+        for it in pr.get("items", []):
+            incoming.append({**it, "region": "일간지", "originallink": it.get("originallink") or it.get("link")})
+        order += pr.get("category_order", [])
+        runinfo["일간지"] = {"generated_at": pr.get("generated_at"), "errors": [e["query"] for e in pr.get("errors", [])]}
 
     WEEKS.mkdir(parents=True, exist_ok=True)
     path = WEEKS / f"{wk}.json"
