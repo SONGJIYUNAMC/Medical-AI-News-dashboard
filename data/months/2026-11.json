@@ -1,17 +1,17 @@
 {
  "month": "2026-11",
- "generated_at": "2026-11-17T10:49:50.151518+09:00",
+ "generated_at": "2026-11-17T11:02:34.747330+09:00",
  "prev_month": "2026-10",
  "collected_days": 17,
  "first_day": "2026-11-01",
  "last_day": "2026-11-17",
- "total": 3112,
+ "total": 3195,
  "prev_total": 4285,
  "by_region": {
-  "국내": 2421,
+  "국내": 2425,
   "해외": 488,
   "정부": 41,
-  "일간지": 162
+  "일간지": 241
  },
  "weekly": {
   "2026-W44": {
@@ -29,8 +29,8 @@
    "정부": 14
   },
   "2026-W47": {
-   "국내": 343,
-   "일간지": 162,
+   "국내": 347,
+   "일간지": 241,
    "해외": 63,
    "정부": 10
   }
@@ -38,21 +38,21 @@
  "categories": [
   {
    "name": "국내 · 국내 정책·규제",
-   "count": 639,
+   "count": 640,
    "prev": 648,
-   "delta": -9
+   "delta": -8
   },
   {
    "name": "국내 · 국내 의료 AI 기업",
-   "count": 598,
+   "count": 600,
    "prev": 769,
-   "delta": -171
+   "delta": -169
   },
   {
    "name": "국내 · 국내 의료기관",
-   "count": 405,
+   "count": 406,
    "prev": 411,
-   "delta": -6
+   "delta": -5
   },
   {
    "name": "국내 · AI 거버넌스·보안",
@@ -91,46 +91,46 @@
    "delta": -7
   },
   {
+   "name": "일간지 · 한국일보",
+   "count": 45,
+   "prev": 0,
+   "delta": 45
+  },
+  {
+   "name": "일간지 · 동아일보",
+   "count": 43,
+   "prev": 0,
+   "delta": 43
+  },
+  {
+   "name": "일간지 · 한겨레",
+   "count": 43,
+   "prev": 0,
+   "delta": 43
+  },
+  {
    "name": "해외 · 해외 정책·규제 (유럽·영국)",
    "count": 38,
    "prev": 57,
    "delta": -19
   },
   {
-   "name": "일간지 · 한국일보",
-   "count": 25,
+   "name": "일간지 · 중앙일보",
+   "count": 36,
    "prev": 0,
-   "delta": 25
-  },
-  {
-   "name": "일간지 · JTBC",
-   "count": 25,
-   "prev": 0,
-   "delta": 25
-  },
-  {
-   "name": "일간지 · 동아일보",
-   "count": 25,
-   "prev": 0,
-   "delta": 25
-  },
-  {
-   "name": "일간지 · 한겨레",
-   "count": 25,
-   "prev": 0,
-   "delta": 25
+   "delta": 36
   },
   {
    "name": "일간지 · 조선일보",
-   "count": 25,
+   "count": 34,
    "prev": 0,
-   "delta": 25
+   "delta": 34
   },
   {
-   "name": "일간지 · 중앙일보",
-   "count": 24,
+   "name": "일간지 · JTBC",
+   "count": 27,
    "prev": 0,
-   "delta": 24
+   "delta": 27
   },
   {
    "name": "정부 · 정부 보도자료 (검색)",
@@ -202,7 +202,7 @@
   },
   {
    "word": "식약처",
-   "count": 109,
+   "count": 110,
    "prev": 90,
    "status": ""
   },
@@ -214,20 +214,20 @@
   },
   {
    "word": "학술대회",
-   "count": 69,
+   "count": 70,
    "prev": 76,
+   "status": ""
+  },
+  {
+   "word": "세브란스",
+   "count": 66,
+   "prev": 78,
    "status": ""
   },
   {
    "word": "보건복지부",
    "count": 65,
    "prev": 76,
-   "status": ""
-  },
-  {
-   "word": "세브란스",
-   "count": 65,
-   "prev": 78,
    "status": ""
   },
   {
@@ -238,7 +238,7 @@
   },
   {
    "word": "국회",
-   "count": 55,
+   "count": 56,
    "prev": 37,
    "status": ""
   },
@@ -286,7 +286,7 @@
   },
   {
    "word": "구글",
-   "count": 30,
+   "count": 31,
    "prev": 45,
    "status": ""
   },
@@ -334,9 +334,9 @@
    "category": "국내 정책·규제",
    "region": "국내",
    "score": 8,
-   "similar_count": 34,
+   "similar_count": 36,
    "source": "yna.co.kr",
-   "importance": 79
+   "importance": 83
   },
   {
    "title": "울산시 내년 예산안 5조9907억원…올해보다 6.1% 증가",
@@ -1079,9 +1079,9 @@
    "category": "국내 정책·규제",
    "region": "국내",
    "score": 8,
-   "similar_count": 34,
+   "similar_count": 36,
    "source": "yna.co.kr",
-   "importance": 79
+   "importance": 83
   },
   {
    "title": "삼성메디슨, 홍천 제조동 준공…초음파기기 생산능력 2배로",
@@ -1633,6 +1633,41 @@
     "importance": 26
    }
   ],
+  "일간지 · 한국일보": [
+   {
+    "title": "박원규 대구가톨릭대병원 영상의학과지원팀장, 보건복지부 장관 표창",
+    "link": "https://news.google.com/rss/articles/CBMibkFVX3lxTE1iNmY5SVJYVnZ4YnBkNy1ZNmEyZWFYZnMzWnNDLWxIcHRZNUZtSG1SX0dfTTB0UmJGRk9neXNiQ05XS1pfY1c3T0tWa1hMZm1Dc3d4b1hiU1pyczhjX3NYTDlBalBDbzdQVGQ4cE130gFzQVVfeXFMTVFJX0pUOWR4bkc5OUFQa3lvM1VFeVpCNkdGdVZocGxWc01LV0NpNUlyZy1kbE1WQWl1aEFWWmVxV1ktWW52SG1GUTd1dzlRN0JscHJ2WkZ3R2NiNVlRN3RMb1Ntd0hVdjlTMWFCbU9RYWt1SQ?oc=5",
+    "date": "2026-11-17",
+    "category": "한국일보",
+    "region": "일간지",
+    "score": 7,
+    "similar_count": 0,
+    "source": "news.google.com",
+    "importance": 10
+   },
+   {
+    "title": "'음주 운전' 의사 면허 취소 정당… 법원 \"의료인, 높은 윤리의식 요구돼\"",
+    "link": "https://news.google.com/rss/articles/CBMibkFVX3lxTE9FS1JhSS1VYnhEbzhNeHV6b2Z3bnNXYUhTdDRiM2w4Z3Z4akpheHduZGcwRy1UOVkzb2lVTExOZDdud1dHMERjeU9MTm05V3BDa0lXdWswYXJxYjZPeGstU2poU1JOTm9YTHF5UkNn0gFzQVVfeXFMUFBVQmtZdVR2ejVpUHRQcFVJUTlpdjBVLW1lcUlqTjc2Y0VuR1RQWFBvcnJzM0NVcHRlSi1TVU9PSFppUWg5cm1aWjhKNHZ5cU9rTEE3blR6SXN2dzB6cGdmeElkR0o3OFhtYmZnMmw4ZlVxSQ?oc=5",
+    "date": "2026-11-16",
+    "category": "한국일보",
+    "region": "일간지",
+    "score": 5,
+    "similar_count": 0,
+    "source": "news.google.com",
+    "importance": 8
+   },
+   {
+    "title": "“알레르기 겁나 달걀·땅콩 늦추면 오히려 역효과… 영아 때 꾸준히 먹여 보세요”",
+    "link": "https://news.google.com/rss/articles/CBMibkFVX3lxTFBrM2t2LXZyQVdWV3JoVlM3Z190OTcyMVVXNXZWbDg4NERwZk9DMElZRHAxOWpJaE9HaTdaZWVnU3Y2dFpaaTNaaXF6Y01VV2VZR2pGTjRJY2NqcVhuS0Zrck1TYUNYNjJRendULVp30gFzQVVfeXFMUDFJOWxwVHlmZUJlemNwLUswcFNXZTg2aUs5U0MtbFBJbmRwWUUzNWRtWDItVURLN3pKLWNVcmU1NVJHUFlmSHJzQ1FFT2lDNWNucnEzZTBwT3JVdFpwanpxM2dvVUR6SVpscHdYMjlFUlNfOA?oc=5",
+    "date": "2026-11-17",
+    "category": "한국일보",
+    "region": "일간지",
+    "score": 4,
+    "similar_count": 0,
+    "source": "news.google.com",
+    "importance": 7
+   }
+  ],
   "해외 · 해외 의료기관 AI 도입·운영": [
    {
     "title": "Mayo Clinic Platform launches AI-driven clinical decision support tool",
@@ -1665,41 +1700,6 @@
     "score": 4,
     "similar_count": 0,
     "source": "Bloomberg Law News",
-    "importance": 7
-   }
-  ],
-  "일간지 · 한국일보": [
-   {
-    "title": "박원규 대구가톨릭대병원 영상의학과지원팀장, 보건복지부 장관 표창",
-    "link": "https://news.google.com/rss/articles/CBMibkFVX3lxTE1iNmY5SVJYVnZ4YnBkNy1ZNmEyZWFYZnMzWnNDLWxIcHRZNUZtSG1SX0dfTTB0UmJGRk9neXNiQ05XS1pfY1c3T0tWa1hMZm1Dc3d4b1hiU1pyczhjX3NYTDlBalBDbzdQVGQ4cE130gFzQVVfeXFMTVFJX0pUOWR4bkc5OUFQa3lvM1VFeVpCNkdGdVZocGxWc01LV0NpNUlyZy1kbE1WQWl1aEFWWmVxV1ktWW52SG1GUTd1dzlRN0JscHJ2WkZ3R2NiNVlRN3RMb1Ntd0hVdjlTMWFCbU9RYWt1SQ?oc=5",
-    "date": "2026-11-17",
-    "category": "한국일보",
-    "region": "일간지",
-    "score": 6,
-    "similar_count": 0,
-    "source": "news.google.com",
-    "importance": 9
-   },
-   {
-    "title": "“알레르기 겁나 달걀·땅콩 늦추면 오히려 역효과… 영아 때 꾸준히 먹여 보세요”",
-    "link": "https://news.google.com/rss/articles/CBMibkFVX3lxTFBrM2t2LXZyQVdWV3JoVlM3Z190OTcyMVVXNXZWbDg4NERwZk9DMElZRHAxOWpJaE9HaTdaZWVnU3Y2dFpaaTNaaXF6Y01VV2VZR2pGTjRJY2NqcVhuS0Zrck1TYUNYNjJRendULVp30gFzQVVfeXFMUDFJOWxwVHlmZUJlemNwLUswcFNXZTg2aUs5U0MtbFBJbmRwWUUzNWRtWDItVURLN3pKLWNVcmU1NVJHUFlmSHJzQ1FFT2lDNWNucnEzZTBwT3JVdFpwanpxM2dvVUR6SVpscHdYMjlFUlNfOA?oc=5",
-    "date": "2026-11-17",
-    "category": "한국일보",
-    "region": "일간지",
-    "score": 4,
-    "similar_count": 0,
-    "source": "news.google.com",
-    "importance": 7
-   },
-   {
-    "title": "임현주, '육아휴직 후 퇴사' 오해 바로잡아… \"예정 기간 남기고 마무리\"",
-    "link": "https://news.google.com/rss/articles/CBMibkFVX3lxTE42LWczZ1E5WnEydGtBVnhFMjg2UFV6MU9aSjFZRmZoeXZBY1RWc2xKT0RUQUExcFlCeWFlTi1YVnhTOHh3NGtDUGlxYXNWYk1KQmtTcjhfRUlwSXFiNU96ekJ2cENwUWNHSFlZVk1R0gFzQVVfeXFMTTdELTQyYjQxcE9YRFg1RlVFLVR5WUhvSlpGLW4tb1ptR2NZVjNKU3dRV0pELUY0cldDMkFLZHFmMVFKM0ZtZjlJdlF6LVJnSVN6dGs2cnVaczNGNEstSWF0MzdYejRrc0Vzd2RIWDV4MzhtMA?oc=5",
-    "date": "2026-11-17",
-    "category": "한국일보",
-    "region": "일간지",
-    "score": 4,
-    "similar_count": 0,
-    "source": "news.google.com",
     "importance": 7
    }
   ],
@@ -1773,6 +1773,76 @@
     "importance": 7
    }
   ],
+  "일간지 · 동아일보": [
+   {
+    "title": "의식 잃은 운전자…나들이 가던 해운대백병원 간호사가 살렸다",
+    "link": "https://www.donga.com/news/Society/article/all/20261117/135037939/1",
+    "date": "2026-11-17",
+    "category": "동아일보",
+    "region": "일간지",
+    "score": 5,
+    "similar_count": 0,
+    "source": "donga.com",
+    "importance": 8
+   },
+   {
+    "title": "의료급여 9000억 구멍…복지 확대에 병원·약국도 ‘속앓이’",
+    "link": "https://news.google.com/rss/articles/CBMidkFVX3lxTE1XZWg5VWVRWmV2RzFROV9BRVY4d0x4QnRBNWJuVXBXVk00OEk5Zzd1SmtSM2lPOGNZQmwxM29Way00SUJTeE9KcVlBY2ZFeTB2ZVhjMWFSSUNzZW8wVTZDZk1KdGZ1aXpscERhUFRZQ0VnYnVMU1HSAWZBVV95cUxNd2NoOFdTMml5OGhxbzhvQ0hsdG5oWHNGdmcyVkE1TjRidUE2czNvUDhOS1kxdlJpTDFoYk52eGVzbXhRMnJJQnpBWUc2alJ1X2l3V3Z2Yi1EZnlfQV8wMzN2R2xsQ0E?oc=5",
+    "date": "2026-11-17",
+    "category": "동아일보",
+    "region": "일간지",
+    "score": 5,
+    "similar_count": 0,
+    "source": "news.google.com",
+    "importance": 8
+   },
+   {
+    "title": "“영웅에게도 결점은 있다”… 3년 전 ‘축출’ 당한 올트먼, 젠슨 황 옹호",
+    "link": "https://news.google.com/rss/articles/CBMic0FVX3lxTE45cFNSRnRGMTQtOHVMNEdIS1BHWXM2U01WeHA3U2FoVTA0MFNvdnVqYWt0Sk1VOHpQamNCa0U5Q1I0WEptaHkxWWxTRkFBTTU2cFhCZ2RGS18xSmpkTzZ3bXEwQVd4RWh4ZUdSVEtTV2VsbUnSAWZBVV95cUxNRzN0MHkwNjVneVdXRHBKcnVmblpXSGdVM0tOMElfWlpiMHg2Sk9SaWEta3lwdG44NEdLcmwta3psQ1JKUmVSUnFGRkd0TFhEbkZwZ1hBQlNOUzNWSzJwaUhxa0lNSGc?oc=5",
+    "date": "2026-11-17",
+    "category": "동아일보",
+    "region": "일간지",
+    "score": 4,
+    "similar_count": 0,
+    "source": "news.google.com",
+    "importance": 7
+   }
+  ],
+  "일간지 · 한겨레": [
+   {
+    "title": "[병원소식] “덕분에 70년, 함께 100년”…을지대의료원, 창립 70주년 맞아 학술·문화 행사 잇달아 개최",
+    "link": "https://news.google.com/rss/articles/CBMia0FVX3lxTE9JWk14V3E3aU81RnRyM2RaVDdOanpJNVNIcHptRnZCem1vY1BUVnlfMThFTFZTZ2N3UzFndkpDb3ZweGNFLVQ4OUVFaXk2M0kzMWFsSTNzbzk4Wm5IenhRWldhVl9zSTdGakNN?oc=5",
+    "date": "2026-11-17",
+    "category": "한겨레",
+    "region": "일간지",
+    "score": 5,
+    "similar_count": 0,
+    "source": "news.google.com",
+    "importance": 8
+   },
+   {
+    "title": "‘수도권 원정 진료 그만’ 전남대병원 새병원 2031년 완공",
+    "link": "https://news.google.com/rss/articles/CBMiYEFVX3lxTE5QVVoxcmFuRmVyMmMzQlpjZ2Y3a2RhaVRwZE8teVFDRFA1Mlc2NXFEa3J2Z2NsTTVUcGFRUzRLc3Y2bTNvR0FMNzdzd1NRRHN2S2hJZU1INWxBR2IyUWhtVA?oc=5",
+    "date": "2026-11-17",
+    "category": "한겨레",
+    "region": "일간지",
+    "score": 5,
+    "similar_count": 0,
+    "source": "news.google.com",
+    "importance": 8
+   },
+   {
+    "title": "GS건설 새 주거상품 ‘비욘드 리빙’ 공개…AI, 플랫폼 평면, 기후환경 대응 기술 접목",
+    "link": "https://news.google.com/rss/articles/CBMiaEFVX3lxTE9VSlE2MXFCS0p6UVVxODdLdUFhMDZLM3pWcUxlWVBhYVZkell3WUlMMkJXZGJQS0RWdjJBUVFmd1JSUnlpX1lpR2o0NVByVDIzUWlrTWc2MGJKQy1tRk1jdXU0d2JKZkJp?oc=5",
+    "date": "2026-11-17",
+    "category": "한겨레",
+    "region": "일간지",
+    "score": 4,
+    "similar_count": 0,
+    "source": "news.google.com",
+    "importance": 7
+   }
+  ],
   "일간지 · 경향신문": [
    {
     "title": "[속보] 한성숙 “수능 스마트기기 휴대 원천차단, 안경·시계 전수점검도…부정행위 ‘사회악’ 규정”",
@@ -1808,23 +1878,12 @@
     "importance": 8
    }
   ],
-  "일간지 · 동아일보": [
+  "일간지 · 중앙일보": [
    {
-    "title": "의료급여 9000억 구멍…복지 확대에 병원·약국도 ‘속앓이’",
-    "link": "https://news.google.com/rss/articles/CBMidkFVX3lxTE1XZWg5VWVRWmV2RzFROV9BRVY4d0x4QnRBNWJuVXBXVk00OEk5Zzd1SmtSM2lPOGNZQmwxM29Way00SUJTeE9KcVlBY2ZFeTB2ZVhjMWFSSUNzZW8wVTZDZk1KdGZ1aXpscERhUFRZQ0VnYnVMU1HSAWZBVV95cUxNd2NoOFdTMml5OGhxbzhvQ0hsdG5oWHNGdmcyVkE1TjRidUE2czNvUDhOS1kxdlJpTDFoYk52eGVzbXhRMnJJQnpBWUc2alJ1X2l3V3Z2Yi1EZnlfQV8wMzN2R2xsQ0E?oc=5",
+    "title": "AI가 만든 ‘가짜 참고문헌’ 논문에 버젓이…국내외 잇단 철회",
+    "link": "https://news.google.com/rss/articles/CBMiVkFVX3lxTE9Bd0RfN0Jvak9MdzJvd3BuU1VoUXc4UDhFWWcxeW9BOWpGWnd2SlV6eU5icnZScXJsbmNfMjl1X1hKR2RWXy1BbXpNeFBlbjBZR1JJNmpB?oc=5",
     "date": "2026-11-17",
-    "category": "동아일보",
-    "region": "일간지",
-    "score": 5,
-    "similar_count": 0,
-    "source": "news.google.com",
-    "importance": 8
-   },
-   {
-    "title": "“영웅에게도 결점은 있다”… 3년 전 ‘축출’ 당한 올트먼, 젠슨 황 옹호",
-    "link": "https://news.google.com/rss/articles/CBMic0FVX3lxTE45cFNSRnRGMTQtOHVMNEdIS1BHWXM2U01WeHA3U2FoVTA0MFNvdnVqYWt0Sk1VOHpQamNCa0U5Q1I0WEptaHkxWWxTRkFBTTU2cFhCZ2RGS18xSmpkTzZ3bXEwQVd4RWh4ZUdSVEtTV2VsbUnSAWZBVV95cUxNRzN0MHkwNjVneVdXRHBKcnVmblpXSGdVM0tOMElfWlpiMHg2Sk9SaWEta3lwdG44NEdLcmwta3psQ1JKUmVSUnFGRkd0TFhEbkZwZ1hBQlNOUzNWSzJwaUhxa0lNSGc?oc=5",
-    "date": "2026-11-17",
-    "category": "동아일보",
+    "category": "중앙일보",
     "region": "일간지",
     "score": 4,
     "similar_count": 0,
@@ -1832,34 +1891,10 @@
     "importance": 7
    },
    {
-    "title": "이게 겨우 97KB? 3D 해저 유영 데모 화제",
-    "link": "https://news.google.com/rss/articles/CBMiREFVX3lxTFB2dzZjTnRhZTFmbGV4UjcwdndRVnJOS3A0SEN5VVVlLXpRZk5fbXp4cnhCVm9XWC0wNXVoSW9fTU1uNThB?oc=5",
+    "title": "동국대 WISE캠퍼스, ‘AI 전공 교과목 개발자 협의체’ 운영",
+    "link": "https://news.google.com/rss/articles/CBMiVkFVX3lxTE9qSG0zVzdSdWhyNHI0cmtDY2hfb29BX1QyTWZ1T1NwUF9wUFFHWVNGZ2FJVENlMHlSdGh4M0w4WkdoVHZnSVZKOWM1UVZ4TkF4eUNMS053?oc=5",
     "date": "2026-11-17",
-    "category": "동아일보",
-    "region": "일간지",
-    "score": 4,
-    "similar_count": 0,
-    "source": "news.google.com",
-    "importance": 7
-   }
-  ],
-  "일간지 · 한겨레": [
-   {
-    "title": "‘수도권 원정 진료 그만’ 전남대병원 새병원 2031년 완공",
-    "link": "https://news.google.com/rss/articles/CBMiYEFVX3lxTE5QVVoxcmFuRmVyMmMzQlpjZ2Y3a2RhaVRwZE8teVFDRFA1Mlc2NXFEa3J2Z2NsTTVUcGFRUzRLc3Y2bTNvR0FMNzdzd1NRRHN2S2hJZU1INWxBR2IyUWhtVA?oc=5",
-    "date": "2026-11-17",
-    "category": "한겨레",
-    "region": "일간지",
-    "score": 5,
-    "similar_count": 0,
-    "source": "news.google.com",
-    "importance": 8
-   },
-   {
-    "title": "수능 관리 명목으로 간부는 330만원…감독 교사는 17만원",
-    "link": "https://news.google.com/rss/articles/CBMiYEFVX3lxTFBNcUFYaUxmNHdxalRUU0F5Y1l6S3hTZDV5alpSSDZEaHE4eWk0cHNoTnRkZVI1YVhraEoxTHNOSFNXUVZsSVRDNFJtNTZ4dlFQNktVMVZZUGNaa1dsSkd3Ug?oc=5",
-    "date": "2026-11-17",
-    "category": "한겨레",
+    "category": "중앙일보",
     "region": "일간지",
     "score": 4,
     "similar_count": 0,
@@ -1867,10 +1902,10 @@
     "importance": 7
    },
    {
-    "title": "전두환 비자금 의혹 사건, 서울중수청이 맡는다",
-    "link": "https://news.google.com/rss/articles/CBMickFVX3lxTE5pV214OXRJVXpVdXg1bTZ3cG5kQzBUb0VYcG9CMnVJYm9BaUxkMVNVc3Q5Uk40SFpHYWk1N0pFRmF3VThtbkRUbmxXcUtlWXV2N084LWF5Y0dzWTV2ZWFmbE1HSmE1TVQ5bkRud2wzYmdpQQ?oc=5",
+    "title": "치매 부모와 살던 40대, 자택서 숨져…실종 모친은 모텔서 발견",
+    "link": "https://news.google.com/rss/articles/CBMiVkFVX3lxTE1scmRlQWR2V1Nmcm5IbnJDeWV1Q3NIajdwT3U4dlgtME1SODVRdW1OOFRwR0Q0Ty1wZ1FBQ0xmTlk3WGZJV09zR1ZJck8yWFFJZDlFQ1p3?oc=5",
     "date": "2026-11-17",
-    "category": "한겨레",
+    "category": "중앙일보",
     "region": "일간지",
     "score": 4,
     "similar_count": 0,
@@ -1879,6 +1914,17 @@
    }
   ],
   "일간지 · 조선일보": [
+   {
+    "title": "AI코딩 극찬하던 골드만삭스가 돌연 AI 빗장 건 이유는",
+    "link": "https://news.google.com/rss/articles/CBMigwFBVV95cUxOYS1GbWU1NTRIZHd4dDdEQ09tSWV0enJpbWhfcU1BbnVDQ1pVRWdPYlNGTVBZdHdoZDNNMjZxTERuaktGWDlaRzlfaldpeGk5dWtGdktOTzgzMktTNlBud2hnZGFuVXZQWm1IbmlNX3UzdTBzeTZTdzVIMHNVeVpwanhuMA?oc=5",
+    "date": "2026-11-17",
+    "category": "조선일보",
+    "region": "일간지",
+    "score": 4,
+    "similar_count": 0,
+    "source": "news.google.com",
+    "importance": 7
+   },
    {
     "title": "바이젠셀, 희귀 혈액암 치료제 식약처 신속 심사 대상 지정",
     "link": "https://news.google.com/rss/articles/CBMihwFBVV95cUxNMHJRbzZDV3JabHlWZFItc25QdjliRkJEeGF0bXlLeTRTakYyU0ZEZEFKV3lCdU03S0RDOEh6SFJULWNBTWVad1JIRGtTVmFJSk1lLTc1Y1VSVW1nWDRXTGVaOW5Cc0dQR013QzYxZ094aVJ3N0dsR2hMUzU1Q2kyY0ZJZEtPLU3SAZsBQVVfeXFMTTNtM1hicnBPR1UwazRaNlMxOW9HVXFWRWxocDZTVkJ4UnhRMVoyNGM4VnlSeWdLLVVDM3liRXBYVnJpVjdEYTZxZVBERldLRDNYd2hJU2VweDcyc3h0cVktQ3RZRTctRXZNaXd2NWdEVEhkbURnZ2pGbFlTX0ZEMDBSZEtMNVpSZmFqYUhDV0xZRDY4RXcxNmhXMFU?oc=5",
@@ -1895,52 +1941,6 @@
     "link": "https://news.google.com/rss/articles/CBMigAFBVV95cUxNS3R5R1NjT19zc1VKeTdWMnRmOHhmXzM0WG1SSE12cjNBNjZoSEI1bzBqVVB2cVU3SlR1eDhtRjFwTmE5LTNaNzItV1Z2dHdpNkNMbUV1U0FncjhqdWhnZnFMcDlpd3dBUDZ5SjhzemEyMDlkQUJ0bHRzWE1sZWQ1MQ?oc=5",
     "date": "2026-11-17",
     "category": "조선일보",
-    "region": "일간지",
-    "score": 4,
-    "similar_count": 0,
-    "source": "news.google.com",
-    "importance": 7
-   },
-   {
-    "title": "AWS, 개발 프로세스별로 업무 전담하는 AI 에이전트 ‘키로 봇’ 출시",
-    "link": "https://news.google.com/rss/articles/CBMiggFBVV95cUxQdlc5YzA0MmdlQlRGcnR1VjhiUWpQcTdmWGRtYl9PMnNZRTdJMTlZU1BiNjBNbGFGekIwQnZScmpHUElWQVFCa0pHc1BQclEtQjdValA1UVRvTk55NTFocW9SYnNEQ2ZQNGNxLU5KTjcxRHBPVHFNazB5S2pLZEtVWHR30gGWAUFVX3lxTE9nRzNUWTY4Z1VrNjFNNVNwd1l3VG9Fa19DM3A0dnJDa29uTHR5OExMRmxPbG5DaU9Obm9mLTNNRW5tZEJPejJ0bkdMXzk4OVlORWxlOWJ4aWNlWWZfaUwxV2d2bVJlRUlfZ3FubjFPek9rX2FHOTBTclB0dXVBY2dMclVKUm8yRXdRZHM3NHc3Z21oQThvdw?oc=5",
-    "date": "2026-11-17",
-    "category": "조선일보",
-    "region": "일간지",
-    "score": 4,
-    "similar_count": 0,
-    "source": "news.google.com",
-    "importance": 7
-   }
-  ],
-  "일간지 · 중앙일보": [
-   {
-    "title": "치매 부모와 살던 40대, 자택서 숨져…실종 모친은 모텔서 발견",
-    "link": "https://news.google.com/rss/articles/CBMiVkFVX3lxTE1scmRlQWR2V1Nmcm5IbnJDeWV1Q3NIajdwT3U4dlgtME1SODVRdW1OOFRwR0Q0Ty1wZ1FBQ0xmTlk3WGZJV09zR1ZJck8yWFFJZDlFQ1p3?oc=5",
-    "date": "2026-11-17",
-    "category": "중앙일보",
-    "region": "일간지",
-    "score": 4,
-    "similar_count": 0,
-    "source": "news.google.com",
-    "importance": 7
-   },
-   {
-    "title": "젠슨 황 퇴진에도 AI 메모리 수요는 ‘건재’…中 규제 강화는 韓 반도체에 호재",
-    "link": "https://news.google.com/rss/articles/CBMiVkFVX3lxTE42WnNYc2xSdWFxTkJMZ042aHRjU1VxQ3o3S042RGZ4bnhGLWRhc2FsMVhtVWEzXzlzZDFDQzcwTDBLUUxBR3JQTGV1TVlJS21Qc1F1aXZB?oc=5",
-    "date": "2026-11-17",
-    "category": "중앙일보",
-    "region": "일간지",
-    "score": 4,
-    "similar_count": 0,
-    "source": "news.google.com",
-    "importance": 7
-   },
-   {
-    "title": "장동혁, 한동훈 장인상 조문…韓 “바쁘신데” 張 “당연히 와야”",
-    "link": "https://news.google.com/rss/articles/CBMiVkFVX3lxTE1YWGNGWnk5eHBIVS03dVF2WHpocmpqcmdkaUxjazIzSnlCSmtqMmNXaEZQRDl1cldKWEJjbFFEcFFaU3k5QlFmdklzRWhCY2p3bkZTVDRR?oc=5",
-    "date": "2026-11-17",
-    "category": "중앙일보",
     "region": "일간지",
     "score": 4,
     "similar_count": 0,
