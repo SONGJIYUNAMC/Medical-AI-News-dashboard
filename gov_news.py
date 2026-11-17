@@ -71,13 +71,37 @@ def is_official(url: str) -> bool:
     return h == "korea.kr" or h.endswith(".korea.kr") or h == "go.kr" or h.endswith(".go.kr")
 
 
-def json_after(html, key):
+def jloads(txt):
+    """게시판 본문에 줄바꿈·탭이 그대로 들어 있는 경우가 많아 strict=False 로 읽는다."""
+    return json.loads(txt, strict=False)
+
+
+def pick_list(obj, key):
+    """JSON 문서에서 게시글 목록(사전들의 배열)을 찾는다."""
+    if isinstance(obj, list):
+        return obj if any(isinstance(x, dict) for x in obj) else None
+    if not isinstance(obj, dict):
+        return None
+    if isinstance(obj.get(key), list):
+        return obj[key]
+    for v in obj.values():
+        if isinstance(v, list) and v and isinstance(v[0], dict):
+            return v
+    for v in obj.values():                      # 한 단계 더 들어가서 찾기
+        if isinstance(v, dict):
+            got = pick_list(v, key)
+            if got:
+                return got
+    return None
+
+
+def json_after(text, key):
     """HTML 안에 박혀 있는 "key": [ ... ] 형태의 JSON 배열을 괄호 짝을 세며 뽑아낸다."""
-    for m in re.finditer(r'[\'"]?' + re.escape(key) + r'[\'"]?\s*[:=]\s*\[', html):
-        i = html.index("[", m.end() - 1)
+    for m in re.finditer(r'[\'"]?' + re.escape(key) + r'[\'"]?\s*[:=]\s*\[', text):
+        i = text.index("[", m.end() - 1)
         depth, instr, esc = 0, False, False
-        for j in range(i, min(len(html), i + 4_000_000)):
-            c = html[j]
+        for j in range(i, min(len(text), i + 4_000_000)):
+            c = text[j]
             if esc:
                 esc = False
                 continue
@@ -95,43 +119,89 @@ def json_after(html, key):
                 depth -= 1
                 if depth == 0:
                     try:
-                        return json.loads(html[i:j + 1])
+                        return jloads(text[i:j + 1])
                     except Exception:
                         break
     return None
 
 
-def board_rows(html, board):
-    """게시판 목록 파싱: ① 페이지에 들어 있는 JSON 배열 ② 안 되면 링크·날짜 패턴으로 직접 추출."""
-    f = board.get("fields", {})
-    k_id, k_ti, k_dt, k_bd = f.get("id", "num"), f.get("title", "title"), f.get("date", "write_dt"), f.get("body", "cont")
-    rows = []
-    data = json_after(html, board.get("json_key", "brdList"))
-    if isinstance(data, list):
-        for d in data:
-            if not isinstance(d, dict):
-                continue
-            ti = strip(str(d.get(k_ti) or ""))
-            if not ti:
-                continue
-            rows.append({"id": str(d.get(k_id) or ""), "title": ti,
-                         "date": str(d.get(k_dt) or "")[:10], "body": strip(str(d.get(k_bd) or ""))[:300]})
+def row_from_dict(d, f):
+    k_id, k_ti = f.get("id", "num"), f.get("title", "title")
+    k_dt, k_bd = f.get("date", "write_dt"), f.get("body", "cont")
+    ti = strip(str(d.get(k_ti) or ""))
+    if not ti:
+        for alt in ("title", "subject", "sj", "nttSj", "bbsTtl"):
+            ti = strip(str(d.get(alt) or ""))
+            if ti:
+                break
+    if not ti:
+        return None
+    dt = str(d.get(k_dt) or "")
+    if not dt:
+        for alt in ("write_dt", "reg_dt", "regDate", "frstRegistPnttm", "ntcDt", "date"):
+            if d.get(alt):
+                dt = str(d[alt])
+                break
+    rid = d.get(k_id)
+    if rid in (None, ""):
+        for alt in ("num", "seq", "nttId", "bbsId", "id", "idx"):
+            if d.get(alt) not in (None, ""):
+                rid = d[alt]
+                break
+    link = d.get("link") or d.get("url") or ""
+    return {"id": str(rid or ""), "title": ti, "date": dt[:10].replace(".", "-").replace("/", "-"),
+            "body": strip(str(d.get(k_bd) or ""))[:300], "href": link if isinstance(link, str) else ""}
+
+
+def board_rows(text, board):
+    """게시판 목록 파싱: ① JSON 응답 ② 페이지에 박힌 JSON 배열 ③ 링크·날짜 패턴 ④ 표/목록 행 단위."""
+    f, key = board.get("fields", {}), board.get("json_key", "brdList")
+    head = text.lstrip()[:1]
+    if head in ("{", "["):                      # ① 응답 전체가 JSON
+        try:
+            got = pick_list(jloads(text), key)
+            rows = [r for r in (row_from_dict(d, f) for d in got or [] if isinstance(d, dict)) if r]
+            if rows:
+                return rows
+        except Exception:
+            pass
+    got = json_after(text, key)                 # ② HTML 안에 박힌 JSON
+    if isinstance(got, list):
+        rows = [r for r in (row_from_dict(d, f) for d in got if isinstance(d, dict)) if r]
         if rows:
             return rows
-    for m in re.finditer(r'<a[^>]+href="([^"]*?(?:num|seq|bltnNo|idx|nttId)=(\d+)[^"]*)"[^>]*>(.{0,300}?)</a>', html, re.S | re.I):
+    rows = []                                   # ③ 글번호가 들어 있는 링크
+    for m in re.finditer(r'<a[^>]+href="([^"]*?(?:num|seq|bltnNo|idx|nttId)=(\d+)[^"]*)"[^>]*>(.{0,300}?)</a>', text, re.S | re.I):
         ti = strip(m.group(3))
         if len(ti) < 6:
             continue
-        near = html[m.end():m.end() + 500]
+        near = text[m.end():m.end() + 500]
         dm = re.search(r"(20\d\d)[-./\s]+(\d{1,2})[-./\s]+(\d{1,2})", near) or re.search(r"(20\d\d)[-./\s]+(\d{1,2})[-./\s]+(\d{1,2})", ti)
         rows.append({"id": m.group(2), "href": unescape(m.group(1)), "title": ti,
                      "date": f"{dm[1]}-{int(dm[2]):02d}-{int(dm[3]):02d}" if dm else "", "body": ""})
+    if rows:
+        return rows
+    for blk in re.findall(r"<(?:tr|li)\b.*?</(?:tr|li)>", text, re.S | re.I):   # ④ 표·목록 행 (javascript 링크 포함)
+        dm = re.search(r"(20\d\d)[-./]\s?(\d{1,2})[-./]\s?(\d{1,2})", blk)
+        if not dm:
+            continue
+        am = re.search(r"<a\b[^>]*>(.*?)</a>", blk, re.S | re.I)
+        ti = strip(am.group(1)) if am else ""
+        if len(ti) < 6:
+            cells = [strip(c) for c in re.findall(r"<t[dh]\b.*?</t[dh]>", blk, re.S | re.I)]
+            ti = max(cells, key=len) if cells else strip(blk)
+        if len(ti) < 6:
+            continue
+        idm = re.search(r"(?:num|seq|nttId|idx|bltnNo)[=:'\"\s(]+(\d+)", blk) or re.search(r"\((\d{2,})[,)]", blk)
+        hm = re.search(r'href="(?!#|javascript)([^"]+)"', blk, re.I)
+        rows.append({"id": idm.group(1) if idm else "", "href": unescape(hm.group(1)) if hm else "",
+                     "title": ti, "date": f"{dm[1]}-{int(dm[2]):02d}-{int(dm[3]):02d}", "body": ""})
     return rows
 
 
 def board_link(board, row, session, state):
     """상세 페이지 주소 확인(없거나 열리지 않으면 목록 주소 사용)."""
-    if row.get("href"):
+    if row.get("href") and not row["href"].startswith(("#", "javascript")):
         return requests.compat.urljoin(board["url"], row["href"])
     tpls = board.get("detail_url") or []
     if isinstance(tpls, str):
@@ -140,12 +210,14 @@ def board_link(board, row, session, state):
         return state["tpl"].format(id=row["id"])
     if not row.get("id") or state.get("checks", 0) >= 5:
         return board["url"]
+    core = re.sub(r"^\(?['\u2019]?\d{2}[.\s]*\d{1,2}[.\s]*\d{1,2}\)?\s*", "", row["title"])   # 제목 앞 ('26. 11. 13) 같은 날짜 표기 제거
+    needle = re.sub(r"\W+", "", core)[:12]
     for t in tpls:
         u = t.format(id=row["id"])
         try:
             state["checks"] = state.get("checks", 0) + 1
             r = session.get(u, headers=UA, timeout=20)
-            if r.ok and (row["title"][:10] in r.text or row["title"][:10] in unescape(r.text)):
+            if r.ok and needle and needle in re.sub(r"\W+", "", unescape(board_text(r))):
                 state["tpl"] = t
                 return u
         except Exception:
@@ -153,20 +225,43 @@ def board_link(board, row, session, state):
     return board["url"]
 
 
+def board_text(r):
+    """한글이 깨지지 않도록 본문을 디코딩한다."""
+    txt = r.text
+    if "\ufffd" in txt[:3000] or (r.encoding or "").lower() in ("iso-8859-1", "ascii"):
+        for enc in ("utf-8", "euc-kr", "cp949"):
+            try:
+                return r.content.decode(enc)
+            except Exception:
+                continue
+    return txt
+
+
 def fetch_board(board, cutoff, session):
-    r = session.get(board["url"], headers={**UA, "Accept": "text/html,application/xhtml+xml,*/*;q=0.8"}, timeout=30)
-    r.raise_for_status()
-    rows = board_rows(r.text, board)
-    if not rows:
-        raise RuntimeError("게시판 목록을 읽지 못했습니다 - 주소·구조 확인 필요")
-    out, state = [], {}
-    for row in rows[: int(board.get("max_items", 40))]:
-        d = parse_date(row["date"]) if row.get("date") else None
-        if d is None or d < cutoff:
+    base = "{0.scheme}://{0.netloc}/".format(requests.compat.urlparse(board["url"]))
+    tries = [{**UA, "Accept": "application/json, text/javascript, text/html;q=0.9, */*;q=0.8",
+              "Accept-Language": "ko-KR,ko;q=0.9,en;q=0.8", "Referer": base, "X-Requested-With": "XMLHttpRequest"},
+             {**UA, "Accept": "text/html,application/xhtml+xml,*/*;q=0.8", "Accept-Language": "ko-KR,ko;q=0.9", "Referer": base}]
+    last = None
+    for h in tries:
+        try:
+            r = session.get(board["url"], headers=h, timeout=30)
+        except Exception as e:
+            last = ("요청 실패", clean_err(e), "", 0)
             continue
-        out.append({"title": row["title"], "link": board_link(board, row, session, state),
-                    "summary": row.get("body", ""), "pubDate": d})
-    return out
+        txt = board_text(r) if r.ok else ""
+        rows = board_rows(txt, board) if txt else []
+        if rows:
+            out, state = [], {}
+            for row in rows[: int(board.get("max_items", 40))]:
+                d = parse_date(row["date"]) if row.get("date") else None
+                if d is None or d < cutoff:
+                    continue
+                out.append({"title": row["title"], "link": board_link(board, row, session, state),
+                            "summary": row.get("body", ""), "pubDate": d})
+            return out
+        last = (f"HTTP {r.status_code}", r.headers.get("Content-Type", "?"), re.sub(r"\s+", " ", txt[:100]), len(txt))
+    raise RuntimeError("게시판 목록을 읽지 못했습니다 [{0} / {1} / {3}자 / 시작: {2}]".format(*(last or ("?", "?", "", 0))))
 
 
 def kind_of(text, kinds):
