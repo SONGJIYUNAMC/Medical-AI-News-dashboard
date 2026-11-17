@@ -101,8 +101,20 @@ def to_dt(val):
 
 def fetch_feed(url, session):
     """신문사 RSS/Atom(또는 JSON) 피드에서 기사 목록을 읽는다."""
-    r = session.get(url, headers={**UA, "Accept": "application/rss+xml, application/xml, text/xml, application/json;q=0.9, */*;q=0.8"}, timeout=30)
-    r.raise_for_status()
+    h = {"User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0 Safari/537.36",
+         "Accept": "application/rss+xml, application/xml, text/xml, application/json;q=0.9, */*;q=0.8",
+         "Accept-Language": "ko-KR,ko;q=0.9", "Connection": "close"}
+    last = None
+    for attempt in range(3):                        # 일부 신문사 서버가 첫 요청을 끊는 경우가 있어 재시도
+        try:
+            r = session.get(url, headers=h, timeout=30)
+            r.raise_for_status()
+            break
+        except Exception as e:
+            last = e
+            time.sleep(1.5 * (attempt + 1))
+    else:
+        raise last
     body = txt_of(r).lstrip("\ufeff \r\n\t")
     out = []
     if body[:1] in ("{", "["):                      # JSON 형태 피드
@@ -191,12 +203,11 @@ def main():
                     for a in items:
                         if a["pubDate"] < cutoff:
                             continue
-                        text = a["title"] + " " + a.get("summary", "")
-                        hits = [k for k in kws if k in text]
+                        hits = [k for k in kws if k in a["title"]]   # 본문에 스쳐 지나가는 언급은 제외, 제목 기준
                         if not hits:
                             dropped += 1
                             continue
-                        if any(p.search(text) for p in excl):
+                        if any(p.search(a["title"]) for p in excl):
                             dropped += 1
                             continue
                         if any(r["link"] == a["link"] for r in got) or \
@@ -238,7 +249,11 @@ def main():
                             if a["source"] == name and hit["source"] != name:   # 같은 기사면 자매지보다 본지 우선
                                 hit.update({k: a[k] for k in ("title", "link", "source", "source_url", "pubDate")})
                             continue
-                        a["queries"] = [k for k in kws if k in a["title"]] or [group[0]]
+                        hits = [k for k in kws if k in a["title"]]
+                        if not hits:
+                            dropped += 1
+                            continue
+                        a["queries"] = hits[:6]
                         got.append(a)
                 except Exception as e:
                     errors.append({"query": f"{name} ({'/'.join(group[:2])}…)", "error": str(e)[:150]})
