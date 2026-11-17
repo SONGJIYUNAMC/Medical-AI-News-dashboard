@@ -10,7 +10,9 @@
       ],
       "feeds": [
         "https://www.chosun.com/arc/outboundfeeds/rss/?outputType=xml",
+        "https://www.chosun.com/arc/outboundfeeds/rss/category/politics/?outputType=xml",
         "https://www.chosun.com/arc/outboundfeeds/rss/category/national/?outputType=xml",
+        "https://www.chosun.com/arc/outboundfeeds/rss/category/culture-life/?outputType=xml",
         "https://biz.chosun.com/arc/outboundfeeds/rss/?outputType=xml"
       ]
     },
