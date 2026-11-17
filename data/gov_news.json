@@ -1,20 +1,16 @@
 {
-  "generated_at": "2026-11-17T08:50:58.025146+09:00",
+  "generated_at": "2026-11-17T10:49:07.719988+09:00",
   "window_hours": 168,
-  "count": 20,
-  "filtered_out": 395,
+  "count": 23,
+  "filtered_out": 384,
   "category_order": [
     "식품의약품안전처",
     "정부 보도자료 (검색)",
     "보건복지부",
+    "국가인공지능전략위원회",
     "과학기술정보통신부"
   ],
-  "errors": [
-    {
-      "query": "국가인공지능전략위원회 위원회 소식 (https://www.aikorea.go.kr/web/board/brdList.do?menu_cd=000012)",
-      "error": "게시판 목록을 읽지 못했습니다 - 주소·구조 확인 필요 → 사이트 검색으로 대체"
-    }
-  ],
+  "errors": [],
   "items": [
     {
       "title": "[보도참고자료] 식약처, AI 기반 바이오의약품 품질관리 최신 동향 워크숍 개최",
@@ -107,6 +103,16 @@
       "official": true
     },
     {
+      "title": "('26. 11. 13) 국가AI전략위, 엔비디아 최고경영진 변화에 따른 긴급 점검회의 개최",
+      "link": "https://www.aikorea.go.kr/web/board/brdDetail.do?menu_cd=000012&num=1130",
+      "summary": "국가AI전략위, 엔비디아 최고경영진 변화에 따른 긴급 점검회의 개최 - 국내 AI 산업 및 GPU 공급망에 미칠 영향 점검, 민·관 공동 대응방안 논의 - 엔비디아와 기존 협력의 안정적 지속 및 글로벌 AI 산업 환경 변화에 선제적 대응 ▲ 국가인공지능전략위원회 하정우 부위원장이 긴급 점검회의를 주재하고 있다. ▲ 국가인공지능전략위원회 하정우 부위원장이 긴급 점검회의 자료를 살펴보고 있다. ▲ 하정우 부위원장이 긴급 점검회의를 개최하고 대응 방안을 논의 중이다. 국가인공지능전략위원회(위원장 대통령, 이하 ‘위원회’)는 11월 13일",
+      "pubDate": "2026-11-13T00:00:00+09:00",
+      "agency": "국가인공지능전략위원회",
+      "kind": "지원사업·정책",
+      "via": "board",
+      "official": true
+    },
+    {
       "title": "복지서비스, 현장에서 상담부터 신청까지…AI로 더 똑똑해진 ‘모바일 행복이음’",
       "link": "https://www.mohw.go.kr/board.es?mid=a10503000000&bid=0027&list_no=1492523&act=view",
       "summary": "복지서비스, 현장에서 상담부터 신청까지…AI로 더 똑똑해진 ‘모바일 행복이음’ - 복지 공무원용 ‘모바일 행복이음’, 기능 대폭 개선하여 11.13.(금) 개통 - - AI 기반 업무지원 통한 행정 효율화로 복지서비스 신속 제공 - 【관련 국정과제】 77-2. 복지사각지대 해소를 위한 AI 기반 위기가구 발굴 및 지원 확대 보건복지부(장관 정은경)는 11월 13일(금)부터 지방정부 복지 담당 공무원의 현장 업무를 지원하는 ‘모바일 행복이음’ 시스템의 기능을 개선하여 서비스를 제공한다고 밝혔다. 이번 개선을 통해 기존의 사전 서류 출",
@@ -154,6 +160,26 @@
       "agency": "과학기술정보통신부",
       "kind": "지원사업·정책",
       "via": "api",
+      "official": true
+    },
+    {
+      "title": "('26. 11. 12) 국가인공지능전략위원회 『국가 사이버복원력 강화 TF』 출범",
+      "link": "https://www.aikorea.go.kr/web/board/brdDetail.do?menu_cd=000012&num=1126",
+      "summary": "@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;700&display=swap'); .kr-press, .kr-press * { font-family: 'Noto Sans KR', 'Noto Sans CJK KR', sans-serif; } .kr-press b, .kr-press strong { font-weight: 700; } 국가인공지능전략위원회 『국가 사이버복원력 강화 TF』 출범 - AI發 해킹 일상화 시대, AI 기반 예방·대응 역량",
+      "pubDate": "2026-11-12T00:00:00+09:00",
+      "agency": "국가인공지능전략위원회",
+      "kind": "지원사업·정책",
+      "via": "board",
+      "official": true
+    },
+    {
+      "title": "('26. 11. 12) 인공지능 시대의 사회적 쟁점, 국민과 함께 해법 찾는다",
+      "link": "https://www.aikorea.go.kr/web/board/brdDetail.do?menu_cd=000012&num=1125",
+      "summary": "@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;700&display=swap'); .kr-press, .kr-press * { font-family: 'Noto Sans KR', 'Noto Sans CJK KR', sans-serif; } .kr-press b, .kr-press strong { font-weight: 700; } 인공지능 시대의 사회적 쟁점, 국민과 함께 해법 찾는다 - 국가 인공지능 전략위·과기정통부, 11월 12일 ｢인공지",
+      "pubDate": "2026-11-12T00:00:00+09:00",
+      "agency": "국가인공지능전략위원회",
+      "kind": "지원사업·정책",
+      "via": "board",
       "official": true
     },
     {

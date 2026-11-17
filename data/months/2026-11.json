@@ -1,16 +1,17 @@
 {
  "month": "2026-11",
- "generated_at": "2026-11-17T08:50:58.919709+09:00",
+ "generated_at": "2026-11-17T10:49:50.151518+09:00",
  "prev_month": "2026-10",
  "collected_days": 17,
  "first_day": "2026-11-01",
  "last_day": "2026-11-17",
- "total": 2893,
+ "total": 3112,
  "prev_total": 4285,
  "by_region": {
-  "국내": 2369,
-  "해외": 484,
-  "정부": 40
+  "국내": 2421,
+  "해외": 488,
+  "정부": 41,
+  "일간지": 162
  },
  "weekly": {
   "2026-W44": {
@@ -28,59 +29,60 @@
    "정부": 14
   },
   "2026-W47": {
-   "국내": 291,
-   "해외": 59,
-   "정부": 9
+   "국내": 343,
+   "일간지": 162,
+   "해외": 63,
+   "정부": 10
   }
  },
  "categories": [
   {
    "name": "국내 · 국내 정책·규제",
-   "count": 628,
+   "count": 639,
    "prev": 648,
-   "delta": -20
+   "delta": -9
   },
   {
    "name": "국내 · 국내 의료 AI 기업",
-   "count": 578,
+   "count": 598,
    "prev": 769,
-   "delta": -191
+   "delta": -171
   },
   {
    "name": "국내 · 국내 의료기관",
-   "count": 397,
+   "count": 405,
    "prev": 411,
-   "delta": -14
+   "delta": -6
   },
   {
    "name": "국내 · AI 거버넌스·보안",
-   "count": 273,
+   "count": 275,
    "prev": 324,
-   "delta": -51
-  },
-  {
-   "name": "국내 · 학술·연구·행사",
-   "count": 245,
-   "prev": 294,
    "delta": -49
   },
   {
+   "name": "국내 · 학술·연구·행사",
+   "count": 252,
+   "prev": 294,
+   "delta": -42
+  },
+  {
    "name": "해외 · 해외 의료기관 AI 도입·운영",
-   "count": 238,
+   "count": 241,
    "prev": 285,
-   "delta": -47
+   "delta": -44
   },
   {
    "name": "국내 · 해외 의료기관·정책·규제",
-   "count": 230,
+   "count": 234,
    "prev": 300,
-   "delta": -70
+   "delta": -66
   },
   {
    "name": "해외 · 해외 정책·규제 (미국)",
-   "count": 140,
+   "count": 141,
    "prev": 171,
-   "delta": -31
+   "delta": -30
   },
   {
    "name": "해외 · 해외 연구·학술",
@@ -95,6 +97,42 @@
    "delta": -19
   },
   {
+   "name": "일간지 · 한국일보",
+   "count": 25,
+   "prev": 0,
+   "delta": 25
+  },
+  {
+   "name": "일간지 · JTBC",
+   "count": 25,
+   "prev": 0,
+   "delta": 25
+  },
+  {
+   "name": "일간지 · 동아일보",
+   "count": 25,
+   "prev": 0,
+   "delta": 25
+  },
+  {
+   "name": "일간지 · 한겨레",
+   "count": 25,
+   "prev": 0,
+   "delta": 25
+  },
+  {
+   "name": "일간지 · 조선일보",
+   "count": 25,
+   "prev": 0,
+   "delta": 25
+  },
+  {
+   "name": "일간지 · 중앙일보",
+   "count": 24,
+   "prev": 0,
+   "delta": 24
+  },
+  {
    "name": "정부 · 정부 보도자료 (검색)",
    "count": 19,
    "prev": 22,
@@ -107,16 +145,22 @@
    "delta": -886
   },
   {
-   "name": "정부 · 보건복지부",
-   "count": 7,
-   "prev": 12,
-   "delta": -5
+   "name": "일간지 · 경향신문",
+   "count": 13,
+   "prev": 0,
+   "delta": 13
   },
   {
    "name": "정부 · 과학기술정보통신부",
    "count": 7,
    "prev": 2,
    "delta": 5
+  },
+  {
+   "name": "정부 · 보건복지부",
+   "count": 6,
+   "prev": 12,
+   "delta": -6
   },
   {
    "name": "정부 · 식품의약품안전처",
@@ -129,6 +173,12 @@
    "count": 2,
    "prev": 0,
    "delta": 2
+  },
+  {
+   "name": "정부 · 국가인공지능전략위원회",
+   "count": 2,
+   "prev": 10,
+   "delta": -8
   },
   {
    "name": "국내 · 정부 발표",
@@ -152,7 +202,7 @@
   },
   {
    "word": "식약처",
-   "count": 106,
+   "count": 109,
    "prev": 90,
    "status": ""
   },
@@ -164,8 +214,20 @@
   },
   {
    "word": "학술대회",
-   "count": 67,
+   "count": 69,
    "prev": 76,
+   "status": ""
+  },
+  {
+   "word": "보건복지부",
+   "count": 65,
+   "prev": 76,
+   "status": ""
+  },
+  {
+   "word": "세브란스",
+   "count": 65,
+   "prev": 78,
    "status": ""
   },
   {
@@ -175,38 +237,26 @@
    "status": ""
   },
   {
-   "word": "세브란스",
-   "count": 63,
-   "prev": 78,
-   "status": ""
-  },
-  {
-   "word": "보건복지부",
-   "count": 62,
-   "prev": 76,
-   "status": ""
-  },
-  {
-   "word": "아산병원",
-   "count": 53,
-   "prev": 70,
-   "status": ""
-  },
-  {
    "word": "국회",
-   "count": 49,
+   "count": 55,
    "prev": 37,
    "status": ""
   },
   {
+   "word": "아산병원",
+   "count": 54,
+   "prev": 70,
+   "status": ""
+  },
+  {
    "word": "삼성서울병원",
-   "count": 48,
+   "count": 50,
    "prev": 34,
    "status": ""
   },
   {
    "word": "세미나",
-   "count": 43,
+   "count": 44,
    "prev": 91,
    "status": ""
   },
@@ -223,20 +273,20 @@
    "status": ""
   },
   {
+   "word": "심포지엄",
+   "count": 33,
+   "prev": 31,
+   "status": ""
+  },
+  {
    "word": "메이요",
    "count": 33,
    "prev": 12,
    "status": "급증"
   },
   {
-   "word": "심포지엄",
-   "count": 31,
-   "prev": 31,
-   "status": ""
-  },
-  {
    "word": "구글",
-   "count": 28,
+   "count": 30,
    "prev": 45,
    "status": ""
   },
@@ -253,15 +303,15 @@
    "status": ""
   },
   {
-   "word": "상급종합병원",
+   "word": "오픈AI",
    "count": 25,
-   "prev": 34,
+   "prev": 17,
    "status": ""
   },
   {
-   "word": "NHS",
+   "word": "서울성모병원",
    "count": 25,
-   "prev": 18,
+   "prev": 26,
    "status": ""
   }
  ],
@@ -276,6 +326,17 @@
    "similar_count": 47,
    "source": "biz.sbs.co.kr",
    "importance": 103
+  },
+  {
+   "title": "SK이노, 에너지·사회문제 해결 AI스타트업 3곳 선정",
+   "link": "https://www.yna.co.kr/view/AKR20261117027000003?input=1195m",
+   "date": "2026-11-17",
+   "category": "국내 정책·규제",
+   "region": "국내",
+   "score": 8,
+   "similar_count": 34,
+   "source": "yna.co.kr",
+   "importance": 79
   },
   {
    "title": "울산시 내년 예산안 5조9907억원…올해보다 6.1% 증가",
@@ -363,17 +424,6 @@
    "score": 5,
    "similar_count": 21,
    "source": "newsis.com",
-   "importance": 50
-  },
-  {
-   "title": "루닛, 3분기 EBITDA 손실 77% 줄었다… 14개 분기 만에 최저",
-   "link": "https://it.chosun.com/news/articleView.html?idxno=3000000000882",
-   "date": "2026-11-12",
-   "category": "국내 의료 AI 기업",
-   "region": "국내",
-   "score": 9,
-   "similar_count": 19,
-   "source": "it.chosun.com",
    "importance": 50
   }
  ],
@@ -625,17 +675,6 @@
    "importance": 2
   },
   {
-   "title": "인구 대전환 시대 &#x27;변화와 공존’ 해법 찾다",
-   "link": "https://www.mohw.go.kr/board.es?mid=a10503000000&bid=0027&list_no=1492558&act=view",
-   "date": "2026-11-16",
-   "category": "보건복지부",
-   "region": "정부",
-   "score": 0,
-   "similar_count": 0,
-   "source": "보건복지부",
-   "importance": 0
-  },
-  {
    "title": "[보도참고] 식약처, 혁신의료기기 정책 포럼 2026 개최",
    "link": "https://www.mfds.go.kr/brd/m_99/view.do?seq=50496",
    "date": "2026-11-16",
@@ -655,6 +694,17 @@
    "score": 0,
    "similar_count": 0,
    "source": "정부 보도자료 (검색)",
+   "importance": 0
+  },
+  {
+   "title": "('26. 11. 13) 국가AI전략위, 엔비디아 최고경영진 변화에 따른 긴급 점검회의 개최",
+   "link": "https://www.aikorea.go.kr/web/board/brdDetail.do?menu_cd=000012&num=1130",
+   "date": "2026-11-13",
+   "category": "국가인공지능전략위원회",
+   "region": "정부",
+   "score": 0,
+   "similar_count": 0,
+   "source": "국가인공지능전략위원회",
    "importance": 0
   },
   {
@@ -689,6 +739,17 @@
    "similar_count": 0,
    "source": "과학기술정보통신부",
    "importance": 0
+  },
+  {
+   "title": "('26. 11. 12) 국가인공지능전략위원회 『국가 사이버복원력 강화 TF』 출범",
+   "link": "https://www.aikorea.go.kr/web/board/brdDetail.do?menu_cd=000012&num=1126",
+   "date": "2026-11-12",
+   "category": "국가인공지능전략위원회",
+   "region": "정부",
+   "score": 0,
+   "similar_count": 2,
+   "source": "국가인공지능전략위원회",
+   "importance": 4
   },
   {
    "title": "우리 동네 보건소에서도 대학병원급 AI 진료, 전국에 AI 진료지원 도구 보급한다",
@@ -909,17 +970,6 @@
    "similar_count": 0,
    "source": "정부 보도자료 (검색)",
    "importance": 0
-  },
-  {
-   "title": "국민 누구나 24시간 이용하는 ‘AI 건강도우미 챗봇’ 운영 시작",
-   "link": "https://news.google.com/rss/articles/CBMidkFVX3lxTFBiN25lV2g0dUxBNWlMLVpMbnVIcVhIS2JRbFN5NnVqSU94ZG84djd4azJHWUVRMEFja1F5RG9oeE5sUFpQLXV6TWFPVmFsOXJWcmw1Q0FoMXA2cHBVMXdNNkhRRkFkbElXaW56WlNfSHVVQi00Rnc?oc=5",
-   "date": "2026-10-28",
-   "category": "정부 보도자료 (검색)",
-   "region": "정부",
-   "score": 0,
-   "similar_count": 1,
-   "source": "정부 보도자료 (검색)",
-   "importance": 2
   }
  ],
  "important_domestic": [
@@ -1021,6 +1071,17 @@
    "similar_count": 0,
    "source": "medifonews.com",
    "importance": 99
+  },
+  {
+   "title": "SK이노, 에너지·사회문제 해결 AI스타트업 3곳 선정",
+   "link": "https://www.yna.co.kr/view/AKR20261117027000003?input=1195m",
+   "date": "2026-11-17",
+   "category": "국내 정책·규제",
+   "region": "국내",
+   "score": 8,
+   "similar_count": 34,
+   "source": "yna.co.kr",
+   "importance": 79
   },
   {
    "title": "삼성메디슨, 홍천 제조동 준공…초음파기기 생산능력 2배로",
@@ -1130,17 +1191,6 @@
    "score": 9,
    "similar_count": 19,
    "source": "it.chosun.com",
-   "importance": 50
-  },
-  {
-   "title": "[오늘의 주요일정]보건복지부(11월11일 수요일)",
-   "link": "https://www.newsis.com/view/NISX20261110_0003862487",
-   "date": "2026-11-11",
-   "category": "국내 정책·규제",
-   "region": "국내",
-   "score": 5,
-   "similar_count": 21,
-   "source": "newsis.com",
    "importance": 50
   }
  ],
@@ -1618,6 +1668,76 @@
     "importance": 7
    }
   ],
+  "일간지 · 한국일보": [
+   {
+    "title": "박원규 대구가톨릭대병원 영상의학과지원팀장, 보건복지부 장관 표창",
+    "link": "https://news.google.com/rss/articles/CBMibkFVX3lxTE1iNmY5SVJYVnZ4YnBkNy1ZNmEyZWFYZnMzWnNDLWxIcHRZNUZtSG1SX0dfTTB0UmJGRk9neXNiQ05XS1pfY1c3T0tWa1hMZm1Dc3d4b1hiU1pyczhjX3NYTDlBalBDbzdQVGQ4cE130gFzQVVfeXFMTVFJX0pUOWR4bkc5OUFQa3lvM1VFeVpCNkdGdVZocGxWc01LV0NpNUlyZy1kbE1WQWl1aEFWWmVxV1ktWW52SG1GUTd1dzlRN0JscHJ2WkZ3R2NiNVlRN3RMb1Ntd0hVdjlTMWFCbU9RYWt1SQ?oc=5",
+    "date": "2026-11-17",
+    "category": "한국일보",
+    "region": "일간지",
+    "score": 6,
+    "similar_count": 0,
+    "source": "news.google.com",
+    "importance": 9
+   },
+   {
+    "title": "“알레르기 겁나 달걀·땅콩 늦추면 오히려 역효과… 영아 때 꾸준히 먹여 보세요”",
+    "link": "https://news.google.com/rss/articles/CBMibkFVX3lxTFBrM2t2LXZyQVdWV3JoVlM3Z190OTcyMVVXNXZWbDg4NERwZk9DMElZRHAxOWpJaE9HaTdaZWVnU3Y2dFpaaTNaaXF6Y01VV2VZR2pGTjRJY2NqcVhuS0Zrck1TYUNYNjJRendULVp30gFzQVVfeXFMUDFJOWxwVHlmZUJlemNwLUswcFNXZTg2aUs5U0MtbFBJbmRwWUUzNWRtWDItVURLN3pKLWNVcmU1NVJHUFlmSHJzQ1FFT2lDNWNucnEzZTBwT3JVdFpwanpxM2dvVUR6SVpscHdYMjlFUlNfOA?oc=5",
+    "date": "2026-11-17",
+    "category": "한국일보",
+    "region": "일간지",
+    "score": 4,
+    "similar_count": 0,
+    "source": "news.google.com",
+    "importance": 7
+   },
+   {
+    "title": "임현주, '육아휴직 후 퇴사' 오해 바로잡아… \"예정 기간 남기고 마무리\"",
+    "link": "https://news.google.com/rss/articles/CBMibkFVX3lxTE42LWczZ1E5WnEydGtBVnhFMjg2UFV6MU9aSjFZRmZoeXZBY1RWc2xKT0RUQUExcFlCeWFlTi1YVnhTOHh3NGtDUGlxYXNWYk1KQmtTcjhfRUlwSXFiNU96ekJ2cENwUWNHSFlZVk1R0gFzQVVfeXFMTTdELTQyYjQxcE9YRFg1RlVFLVR5WUhvSlpGLW4tb1ptR2NZVjNKU3dRV0pELUY0cldDMkFLZHFmMVFKM0ZtZjlJdlF6LVJnSVN6dGs2cnVaczNGNEstSWF0MzdYejRrc0Vzd2RIWDV4MzhtMA?oc=5",
+    "date": "2026-11-17",
+    "category": "한국일보",
+    "region": "일간지",
+    "score": 4,
+    "similar_count": 0,
+    "source": "news.google.com",
+    "importance": 7
+   }
+  ],
+  "일간지 · JTBC": [
+   {
+    "title": "\"의사가 음주운전 저지른 적 없길 기대하는 건 당연\"…법원, 무면허 음주운전 의사 면허취소 정당",
+    "link": "https://news.jtbc.co.kr/article/NB12328335",
+    "date": "2026-11-16",
+    "category": "JTBC",
+    "region": "일간지",
+    "score": 6,
+    "similar_count": 0,
+    "source": "news.jtbc.co.kr",
+    "importance": 9
+   },
+   {
+    "title": "[단독]청와대, AI 악용 부정행위 비상대책 TF 가동…수능일까지 '비상근무 체제' 돌입",
+    "link": "https://news.jtbc.co.kr/article/NB12328417",
+    "date": "2026-11-17",
+    "category": "JTBC",
+    "region": "일간지",
+    "score": 5,
+    "similar_count": 0,
+    "source": "news.jtbc.co.kr",
+    "importance": 8
+   },
+   {
+    "title": "김민석, 최교진 답변에 \"우려 자아내는 장면…질문 오해한 듯\"",
+    "link": "https://news.jtbc.co.kr/article/NB12328408",
+    "date": "2026-11-17",
+    "category": "JTBC",
+    "region": "일간지",
+    "score": 5,
+    "similar_count": 0,
+    "source": "news.jtbc.co.kr",
+    "importance": 8
+   }
+  ],
   "해외 · 해외 정책·규제 (미국)": [
    {
     "title": "The Big Challenge for AI in Healthcare Comes After Approval",
@@ -1650,6 +1770,181 @@
     "score": 4,
     "similar_count": 0,
     "source": "MedCity News",
+    "importance": 7
+   }
+  ],
+  "일간지 · 경향신문": [
+   {
+    "title": "[속보] 한성숙 “수능 스마트기기 휴대 원천차단, 안경·시계 전수점검도…부정행위 ‘사회악’ 규정”",
+    "link": "https://www.khan.co.kr/article/202611171039001/?utm_source=khan_rss&utm_medium=rss&utm_campaign=total_news",
+    "date": "2026-11-17",
+    "category": "경향신문",
+    "region": "일간지",
+    "score": 5,
+    "similar_count": 0,
+    "source": "khan.co.kr",
+    "importance": 8
+   },
+   {
+    "title": "화천군, 2년 만에 출산 장려금 지원 재개···아이 1명당 최대 300만 원 지급",
+    "link": "https://www.khan.co.kr/article/202611171028001/?utm_source=khan_rss&utm_medium=rss&utm_campaign=total_news",
+    "date": "2026-11-17",
+    "category": "경향신문",
+    "region": "일간지",
+    "score": 5,
+    "similar_count": 0,
+    "source": "khan.co.kr",
+    "importance": 8
+   },
+   {
+    "title": "고금리에 빗장 걸어 잠근 30대 그룹, 타법인 투자 줄였어도 AI엔 예외···1조 넘게 썼다",
+    "link": "https://www.khan.co.kr/article/202611171016001/?utm_source=khan_rss&utm_medium=rss&utm_campaign=total_news",
+    "date": "2026-11-17",
+    "category": "경향신문",
+    "region": "일간지",
+    "score": 5,
+    "similar_count": 0,
+    "source": "khan.co.kr",
+    "importance": 8
+   }
+  ],
+  "일간지 · 동아일보": [
+   {
+    "title": "의료급여 9000억 구멍…복지 확대에 병원·약국도 ‘속앓이’",
+    "link": "https://news.google.com/rss/articles/CBMidkFVX3lxTE1XZWg5VWVRWmV2RzFROV9BRVY4d0x4QnRBNWJuVXBXVk00OEk5Zzd1SmtSM2lPOGNZQmwxM29Way00SUJTeE9KcVlBY2ZFeTB2ZVhjMWFSSUNzZW8wVTZDZk1KdGZ1aXpscERhUFRZQ0VnYnVMU1HSAWZBVV95cUxNd2NoOFdTMml5OGhxbzhvQ0hsdG5oWHNGdmcyVkE1TjRidUE2czNvUDhOS1kxdlJpTDFoYk52eGVzbXhRMnJJQnpBWUc2alJ1X2l3V3Z2Yi1EZnlfQV8wMzN2R2xsQ0E?oc=5",
+    "date": "2026-11-17",
+    "category": "동아일보",
+    "region": "일간지",
+    "score": 5,
+    "similar_count": 0,
+    "source": "news.google.com",
+    "importance": 8
+   },
+   {
+    "title": "“영웅에게도 결점은 있다”… 3년 전 ‘축출’ 당한 올트먼, 젠슨 황 옹호",
+    "link": "https://news.google.com/rss/articles/CBMic0FVX3lxTE45cFNSRnRGMTQtOHVMNEdIS1BHWXM2U01WeHA3U2FoVTA0MFNvdnVqYWt0Sk1VOHpQamNCa0U5Q1I0WEptaHkxWWxTRkFBTTU2cFhCZ2RGS18xSmpkTzZ3bXEwQVd4RWh4ZUdSVEtTV2VsbUnSAWZBVV95cUxNRzN0MHkwNjVneVdXRHBKcnVmblpXSGdVM0tOMElfWlpiMHg2Sk9SaWEta3lwdG44NEdLcmwta3psQ1JKUmVSUnFGRkd0TFhEbkZwZ1hBQlNOUzNWSzJwaUhxa0lNSGc?oc=5",
+    "date": "2026-11-17",
+    "category": "동아일보",
+    "region": "일간지",
+    "score": 4,
+    "similar_count": 0,
+    "source": "news.google.com",
+    "importance": 7
+   },
+   {
+    "title": "이게 겨우 97KB? 3D 해저 유영 데모 화제",
+    "link": "https://news.google.com/rss/articles/CBMiREFVX3lxTFB2dzZjTnRhZTFmbGV4UjcwdndRVnJOS3A0SEN5VVVlLXpRZk5fbXp4cnhCVm9XWC0wNXVoSW9fTU1uNThB?oc=5",
+    "date": "2026-11-17",
+    "category": "동아일보",
+    "region": "일간지",
+    "score": 4,
+    "similar_count": 0,
+    "source": "news.google.com",
+    "importance": 7
+   }
+  ],
+  "일간지 · 한겨레": [
+   {
+    "title": "‘수도권 원정 진료 그만’ 전남대병원 새병원 2031년 완공",
+    "link": "https://news.google.com/rss/articles/CBMiYEFVX3lxTE5QVVoxcmFuRmVyMmMzQlpjZ2Y3a2RhaVRwZE8teVFDRFA1Mlc2NXFEa3J2Z2NsTTVUcGFRUzRLc3Y2bTNvR0FMNzdzd1NRRHN2S2hJZU1INWxBR2IyUWhtVA?oc=5",
+    "date": "2026-11-17",
+    "category": "한겨레",
+    "region": "일간지",
+    "score": 5,
+    "similar_count": 0,
+    "source": "news.google.com",
+    "importance": 8
+   },
+   {
+    "title": "수능 관리 명목으로 간부는 330만원…감독 교사는 17만원",
+    "link": "https://news.google.com/rss/articles/CBMiYEFVX3lxTFBNcUFYaUxmNHdxalRUU0F5Y1l6S3hTZDV5alpSSDZEaHE4eWk0cHNoTnRkZVI1YVhraEoxTHNOSFNXUVZsSVRDNFJtNTZ4dlFQNktVMVZZUGNaa1dsSkd3Ug?oc=5",
+    "date": "2026-11-17",
+    "category": "한겨레",
+    "region": "일간지",
+    "score": 4,
+    "similar_count": 0,
+    "source": "news.google.com",
+    "importance": 7
+   },
+   {
+    "title": "전두환 비자금 의혹 사건, 서울중수청이 맡는다",
+    "link": "https://news.google.com/rss/articles/CBMickFVX3lxTE5pV214OXRJVXpVdXg1bTZ3cG5kQzBUb0VYcG9CMnVJYm9BaUxkMVNVc3Q5Uk40SFpHYWk1N0pFRmF3VThtbkRUbmxXcUtlWXV2N084LWF5Y0dzWTV2ZWFmbE1HSmE1TVQ5bkRud2wzYmdpQQ?oc=5",
+    "date": "2026-11-17",
+    "category": "한겨레",
+    "region": "일간지",
+    "score": 4,
+    "similar_count": 0,
+    "source": "news.google.com",
+    "importance": 7
+   }
+  ],
+  "일간지 · 조선일보": [
+   {
+    "title": "바이젠셀, 희귀 혈액암 치료제 식약처 신속 심사 대상 지정",
+    "link": "https://news.google.com/rss/articles/CBMihwFBVV95cUxNMHJRbzZDV3JabHlWZFItc25QdjliRkJEeGF0bXlLeTRTakYyU0ZEZEFKV3lCdU03S0RDOEh6SFJULWNBTWVad1JIRGtTVmFJSk1lLTc1Y1VSVW1nWDRXTGVaOW5Cc0dQR013QzYxZ094aVJ3N0dsR2hMUzU1Q2kyY0ZJZEtPLU3SAZsBQVVfeXFMTTNtM1hicnBPR1UwazRaNlMxOW9HVXFWRWxocDZTVkJ4UnhRMVoyNGM4VnlSeWdLLVVDM3liRXBYVnJpVjdEYTZxZVBERldLRDNYd2hJU2VweDcyc3h0cVktQ3RZRTctRXZNaXd2NWdEVEhkbURnZ2pGbFlTX0ZEMDBSZEtMNVpSZmFqYUhDV0xZRDY4RXcxNmhXMFU?oc=5",
+    "date": "2026-11-17",
+    "category": "조선일보",
+    "region": "일간지",
+    "score": 4,
+    "similar_count": 0,
+    "source": "news.google.com",
+    "importance": 7
+   },
+   {
+    "title": "속보서비스",
+    "link": "https://news.google.com/rss/articles/CBMigAFBVV95cUxNS3R5R1NjT19zc1VKeTdWMnRmOHhmXzM0WG1SSE12cjNBNjZoSEI1bzBqVVB2cVU3SlR1eDhtRjFwTmE5LTNaNzItV1Z2dHdpNkNMbUV1U0FncjhqdWhnZnFMcDlpd3dBUDZ5SjhzemEyMDlkQUJ0bHRzWE1sZWQ1MQ?oc=5",
+    "date": "2026-11-17",
+    "category": "조선일보",
+    "region": "일간지",
+    "score": 4,
+    "similar_count": 0,
+    "source": "news.google.com",
+    "importance": 7
+   },
+   {
+    "title": "AWS, 개발 프로세스별로 업무 전담하는 AI 에이전트 ‘키로 봇’ 출시",
+    "link": "https://news.google.com/rss/articles/CBMiggFBVV95cUxQdlc5YzA0MmdlQlRGcnR1VjhiUWpQcTdmWGRtYl9PMnNZRTdJMTlZU1BiNjBNbGFGekIwQnZScmpHUElWQVFCa0pHc1BQclEtQjdValA1UVRvTk55NTFocW9SYnNEQ2ZQNGNxLU5KTjcxRHBPVHFNazB5S2pLZEtVWHR30gGWAUFVX3lxTE9nRzNUWTY4Z1VrNjFNNVNwd1l3VG9Fa19DM3A0dnJDa29uTHR5OExMRmxPbG5DaU9Obm9mLTNNRW5tZEJPejJ0bkdMXzk4OVlORWxlOWJ4aWNlWWZfaUwxV2d2bVJlRUlfZ3FubjFPek9rX2FHOTBTclB0dXVBY2dMclVKUm8yRXdRZHM3NHc3Z21oQThvdw?oc=5",
+    "date": "2026-11-17",
+    "category": "조선일보",
+    "region": "일간지",
+    "score": 4,
+    "similar_count": 0,
+    "source": "news.google.com",
+    "importance": 7
+   }
+  ],
+  "일간지 · 중앙일보": [
+   {
+    "title": "치매 부모와 살던 40대, 자택서 숨져…실종 모친은 모텔서 발견",
+    "link": "https://news.google.com/rss/articles/CBMiVkFVX3lxTE1scmRlQWR2V1Nmcm5IbnJDeWV1Q3NIajdwT3U4dlgtME1SODVRdW1OOFRwR0Q0Ty1wZ1FBQ0xmTlk3WGZJV09zR1ZJck8yWFFJZDlFQ1p3?oc=5",
+    "date": "2026-11-17",
+    "category": "중앙일보",
+    "region": "일간지",
+    "score": 4,
+    "similar_count": 0,
+    "source": "news.google.com",
+    "importance": 7
+   },
+   {
+    "title": "젠슨 황 퇴진에도 AI 메모리 수요는 ‘건재’…中 규제 강화는 韓 반도체에 호재",
+    "link": "https://news.google.com/rss/articles/CBMiVkFVX3lxTE42WnNYc2xSdWFxTkJMZ042aHRjU1VxQ3o3S042RGZ4bnhGLWRhc2FsMVhtVWEzXzlzZDFDQzcwTDBLUUxBR3JQTGV1TVlJS21Qc1F1aXZB?oc=5",
+    "date": "2026-11-17",
+    "category": "중앙일보",
+    "region": "일간지",
+    "score": 4,
+    "similar_count": 0,
+    "source": "news.google.com",
+    "importance": 7
+   },
+   {
+    "title": "장동혁, 한동훈 장인상 조문…韓 “바쁘신데” 張 “당연히 와야”",
+    "link": "https://news.google.com/rss/articles/CBMiVkFVX3lxTE1YWGNGWnk5eHBIVS03dVF2WHpocmpqcmdkaUxjazIzSnlCSmtqMmNXaEZQRDl1cldKWEJjbFFEcFFaU3k5QlFmdklzRWhCY2p3bkZTVDRR?oc=5",
+    "date": "2026-11-17",
+    "category": "중앙일보",
+    "region": "일간지",
+    "score": 4,
+    "similar_count": 0,
+    "source": "news.google.com",
     "importance": 7
    }
   ],

@@ -1,15 +1,20 @@
 {
-  "generated_at": "2026-11-17T08:50:05.474044+09:00",
+  "generated_at": "2026-11-17T10:48:10.398488+09:00",
   "window_hours": 48,
-  "count": 52,
-  "filtered_out": 271,
+  "count": 56,
+  "filtered_out": 256,
   "category_order": [
     "해외 정책·규제 (미국)",
     "해외 정책·규제 (유럽·영국)",
     "해외 의료기관 AI 도입·운영",
     "해외 연구·학술"
   ],
-  "errors": [],
+  "errors": [
+    {
+      "query": "CMS artificial intelligence health [US]",
+      "error": "HTTP 429"
+    }
+  ],
   "items": [
     {
       "title": "Safety and Regulation Must Lead the Way in Healthcare AI Innovation",
@@ -30,6 +35,22 @@
       "score": 5
     },
     {
+      "title": "hellocare.ai Named to the 2026 CB Insights’ 50 Most Promising Digital Health Startups",
+      "link": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxPVDJaRlhEQWk0YjBYNC1WQ0kwVjdQV2dtOE9mdmkybzItZnlBSDZjd0xlWVpENUlORDUxQTJCSHhxa19BZDhmdTRxeWgzamhWNER1MVBrQnFsODlmLVU1X0JTbnAzckN1QVR1UTRna2lTeFV4eFNsYkZzZ0EtR3JsNi0xUG8wTmpYMTBFbzZHSTZxLW1zdFo4ejNaT0hzYjZPclhDc1F0S1kwMlNtaUg2cFJZR0tGTHIteHhF?oc=5",
+      "source": "Fierce Healthcare",
+      "source_url": "https://www.fiercehealthcare.com",
+      "pubDate": "2026-11-17T07:15:00+09:00",
+      "category": "해외 의료기관 AI 도입·운영",
+      "queries": [
+        "Mayo Clinic AI"
+      ],
+      "sources": [
+        "Fierce Healthcare"
+      ],
+      "preferred": true,
+      "score": 3
+    },
+    {
       "title": "Apple and OpenEvidence Launch 200,000-Person Conversational Health AI Study and App at HLTH 2026 in Las Vegas",
       "link": "https://news.google.com/rss/articles/CBMi3gFBVV95cUxNY2k3TFhxeU1mdGtzSGVIOXJ4aVNhdVFXdEZoOUVDVHBBNjZScVdwNHM3VnYyRW96SUs5ZWVLa2NCYUMwcXllUjQ0Tm5McEh1ZVRkekRnYVBlbTdZMGh5TVBIc2RiU3JCS3RxbDBMSkJ4V2N6Z3F1OXMtOUNtOEhKTFNhSWdlLTJtRFdyNHZMY04wbjJ5aGdZY0ZVVk1jOXAwRVhmR1hscldKVWR1SUFkVDZYd3pFMlRhQlFTcXV6bk1DMzQ4UFo3a1lNOUZFUWdaTzd3Mk9XblhJVlZRUGc?oc=5",
       "source": "Nevada Globe",
@@ -45,6 +66,22 @@
         "Nevada Globe"
       ],
       "preferred": false,
+      "score": 3
+    },
+    {
+      "title": "HLTH 2026: AI raises healthcare costs before savings emerge",
+      "link": "https://news.google.com/rss/articles/CBMie0FVX3lxTFA2VlpFM2tMVmE2aWU1LTZTT3FoZzNkY2RoaERXRVlFWklBYktFQS1wWjFyV0FOU0dvSTFuWk01RlQtNWdjemxESnpSaHNXb0NWR0RXQ0p5ajM3VlhLeDQtWGVSb0VIbTZQTDN0Nzk5S3FWOTI2b1lZSnFBVQ?oc=5",
+      "source": "Modern Healthcare",
+      "source_url": "https://www.modernhealthcare.com",
+      "pubDate": "2026-11-17T04:48:22+09:00",
+      "category": "해외 정책·규제 (미국)",
+      "queries": [
+        "CMS artificial intelligence health"
+      ],
+      "sources": [
+        "Modern Healthcare"
+      ],
+      "preferred": true,
       "score": 3
     },
     {
@@ -280,6 +317,38 @@
       "score": 1
     },
     {
+      "title": "Health System News Putting Patients at the Centre of AI Implementation",
+      "link": "https://news.google.com/rss/articles/CBMiggFBVV95cUxNV3lrVFIwTzluWE9sYklVUl9SMk53TEoyby1vV2gwLTZvUUZHWGV0QVdISnJSQXpDcXV3VnE1WnpraE1hZmhtS2tSUlZ0cHJGcldvRVNZVENjTlNmYTZFc2NQeUROdjFPczluNHpONEFnQkNiU1QzaFhPLTlTVW9Tb2xR?oc=5",
+      "source": "Ontario Hospital Association",
+      "source_url": "https://www.oha.com",
+      "pubDate": "2026-11-17T06:37:17+09:00",
+      "category": "해외 의료기관 AI 도입·운영",
+      "queries": [
+        "health system ambient AI scribe"
+      ],
+      "sources": [
+        "Ontario Hospital Association"
+      ],
+      "preferred": false,
+      "score": 1
+    },
+    {
+      "title": "AI Isn’t Paying Off Yet for Healthcare Providers",
+      "link": "https://news.google.com/rss/articles/CBMisAFBVV95cUxNWmhIRk9JNzlHb1Jma0VjM19iRGJ3d2hBRGFHblBEUzM5cTIyVTRXODRlWV9HZDRBVks2d2V0Q0tiMkVSazcyVjZjempISkgtUm8wY2tqcTNLMkJyVzVJS3JEeE9rZVJiaHJCZnF1WHNuSmY5cmpwQ29yUjJuVWJ5SFdITjYzaXo2ZllZQTZTRkdtRkN6SXVxVWNwaFNOY2V6b1lqWU9OWS1aRmtpWldHWg?oc=5",
+      "source": "Bain",
+      "source_url": "https://www.bain.com",
+      "pubDate": "2026-11-17T05:14:54+09:00",
+      "category": "해외 의료기관 AI 도입·운영",
+      "queries": [
+        "health system AI governance"
+      ],
+      "sources": [
+        "Bain"
+      ],
+      "preferred": false,
+      "score": 1
+    },
+    {
       "title": "At 65, He Wants an AI Heart Test After Mayo Researchers Flag Hearts Reading More Than 16 Years Older. Medicare Covers One Screening EKG. The AI Reading Is Extra, and the Bill Could Be His",
       "link": "https://news.google.com/rss/articles/CBMingJBVV95cUxONUdBM2d5bnZ2M1pMeUhwMzdMR3UtTC1YVFZaUDllMlZPdEIwNXdFMDRjZUVnZkFWTGdUUVhOUWZ5a3I5bGxaQTZTd0toYzNKdUpmYmZfdFRfdGRER2hqNXZDNnVEZUlNV0RQaFNyUkVuaW9vMWtaSlExblVoMWw5VERiWTVQd3JNZDB0Y3EzWEhIc01ocFZWNXI5N3FyYk0tUjJWUDdmY01UVzFPdUtMYnZQcUFycElqRDR2OTRSdDJDbExRRV9zNGM5NFhQaEtmUXJGenREb09GQmtSNk50NC1ndDFXcnJYcndnc0hOX19mOWRPc2ZBMFJmaHZFcEVib2ZfSm5pZU1kRTJTTjFPYjRtY0xzSmJPMzJ2N0dn?oc=5",
       "source": "24/7 Wall St.",
@@ -323,22 +392,6 @@
       ],
       "sources": [
         "Bioengineer.org"
-      ],
-      "preferred": false,
-      "score": 1
-    },
-    {
-      "title": "AI Isn’t Paying Off Yet for Healthcare Providers",
-      "link": "https://news.google.com/rss/articles/CBMisAFBVV95cUxNWmhIRk9JNzlHb1Jma0VjM19iRGJ3d2hBRGFHblBEUzM5cTIyVTRXODRlWV9HZDRBVks2d2V0Q0tiMkVSazcyVjZjempISkgtUm8wY2tqcTNLMkJyVzVJS3JEeE9rZVJiaHJCZnF1WHNuSmY5cmpwQ29yUjJuVWJ5SFdITjYzaXo2ZllZQTZTRkdtRkN6SXVxVWNwaFNOY2V6b1lqWU9OWS1aRmtpWldHWg?oc=5",
-      "source": "Bain",
-      "source_url": "https://www.bain.com",
-      "pubDate": "2026-11-17T04:18:45+09:00",
-      "category": "해외 의료기관 AI 도입·운영",
-      "queries": [
-        "health system AI governance"
-      ],
-      "sources": [
-        "Bain"
       ],
       "preferred": false,
       "score": 1
@@ -584,6 +637,22 @@
       "score": 1
     },
     {
+      "title": "SPMC makes history as first Mindanao gov’t hospital to adopt clinical AI",
+      "link": "https://news.google.com/rss/articles/CBMipwFBVV95cUxPRGRncEE1TXJ3aGJTRDBlVGRKVGk4Wk9qYlZRN2g1UzRseXMyM2pRZ1BlNU40MF9sdGNrVzctaGhrMUtMam9QWmVFZGRsdVpQeVhKVFQ3QlVFbi1VcHlMeEZCaHlrUDBMa09VY19QQjFnNzdxN3F6dEt1VVR5LXhub1FsTy1zR1gxZ2NuU05JRV9SNzZXUVN5Y0dNa0N3U1RzaHBuNWZVTdIBtAFBVV95cUxQSXc1cGtucUJnaV95bTZXVE5hdnNqdVdEVFdCWjBMZ1NuMm1hYXdzZWxVeV9GSVpwcHpqZU96S0pNSmdib2RYTzdiOHZQWWpwdGJEZnJjS2dNbmFNd0ZnUFBWMUlOdWRiSExtTk14WEZ4V2dxejFPVkhQTkp2ODJ4NzQ4VnUxQzBpUm9Zb1dVTTNfV09DQzN0X1l4WVZxaDBkeVVrRkstTmRqZzI1UXozRG14Tng?oc=5",
+      "source": "SunStar Publishing Inc.",
+      "source_url": "https://www.sunstar.com.ph",
+      "pubDate": "2026-11-16T22:15:17+09:00",
+      "category": "해외 의료기관 AI 도입·운영",
+      "queries": [
+        "health system AI governance"
+      ],
+      "sources": [
+        "SunStar Publishing Inc."
+      ],
+      "preferred": false,
+      "score": 1
+    },
+    {
       "title": "Scale AI Launches Five AI Agents for Hospital Operations",
       "link": "https://news.google.com/rss/articles/CBMihAFBVV95cUxNX1Z0S0RDX2M5eGhKQWk1aGtQWm04TEd1eVJDa3o1UnJqaWRXZnFwQllKdi1KT2owRTNPVWZtQTJFUGhPMlNlQUl3aWlDbzMzUGJWUFhFWnoxejN1ZG84cnJUTUQ4bnhUZkxBRHd0dWRVZUNYU2F1dUducUw3cDJqM18tT1A?oc=5",
       "source": "Unite.AI",
@@ -595,22 +664,6 @@
       ],
       "sources": [
         "Unite.AI"
-      ],
-      "preferred": false,
-      "score": 1
-    },
-    {
-      "title": "Wiley, Abridge Partner to Bring Clinical Evidence to AI Assistant",
-      "link": "https://news.google.com/rss/articles/CBMigAFBVV95cUxQemMwOVFVVlJLcTlWMXdYZXNRUUtjZ0xEOVZHMFNtLWZ6VUtGUktUbDQ4SWVhYU03dllMYWx5MHo5M2I5NUVZd012RDRvLXBoaUdJTE1XaElRa0hTRkpHVGFQb0JNZzZySHhuY0V2Ny1ZMTdRdGtEdEJucFZrZlF6dQ?oc=5",
-      "source": "Mirage News",
-      "source_url": "https://www.miragenews.com",
-      "pubDate": "2026-11-16T22:10:00+09:00",
-      "category": "해외 의료기관 AI 도입·운영",
-      "queries": [
-        "health system AI governance"
-      ],
-      "sources": [
-        "Mirage News"
       ],
       "preferred": false,
       "score": 1
@@ -675,6 +728,22 @@
       ],
       "sources": [
         "FoneArena.com"
+      ],
+      "preferred": false,
+      "score": 1
+    },
+    {
+      "title": "Philippine News Agency. . The Southern Philippines Medical Center in Davao City is set to become the first government hospital in Mindanao to adopt the UpToDate Expert AI clinical tool through a partnership with Wolters Kluwer, finalized through an agreem",
+      "link": "https://news.google.com/rss/articles/CBMi1gFBVV95cUxOcV9WNkw4OVlEMUVLVVkwMGU1M1JiOENsSXFTcGJuTFdoZnhFX1pQcTMzRm9xWThKWVVSUlMzSUVuREVmSEFZekxtTnlmRzBzY3B0dUhaWlg4YmxGdXVXTEpzM1lFc1o5RkNqN0Fac0Q2WVJLVlQzempXOGVoS3F5ZkplZUJaZ0plb0N1STd2eE80MmpsMHZjUTRldTFZeVVjekRYSGFJQ2QtUHJQcVR5dlA3NFhtZHpZZ0NOdVkzdnZOb2JZaHNFN19GaTBLdW1BdG93QkZn?oc=5",
+      "source": "Facebook",
+      "source_url": "https://www.facebook.com",
+      "pubDate": "2026-11-16T17:03:15+09:00",
+      "category": "해외 의료기관 AI 도입·운영",
+      "queries": [
+        "health system AI governance"
+      ],
+      "sources": [
+        "Facebook"
       ],
       "preferred": false,
       "score": 1
