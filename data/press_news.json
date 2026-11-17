@@ -1,8 +1,8 @@
 {
-  "generated_at": "2026-11-17T11:02:33.083284+09:00",
+  "generated_at": "2026-11-18T08:29:56.856655+09:00",
   "window_hours": 24,
-  "count": 143,
-  "filtered_out": 487,
+  "count": 25,
+  "filtered_out": 1115,
   "category_order": [
     "조선일보",
     "중앙일보",
@@ -12,12 +12,7 @@
     "경향신문",
     "한국일보"
   ],
-  "errors": [
-    {
-      "query": "조선일보 (의료/병원…)",
-      "error": "HTTP 429"
-    }
-  ],
+  "errors": [],
   "items": [
     {
       "title": "박원규 대구가톨릭대병원 영상의학과지원팀장, 보건복지부 장관 표창",
@@ -38,43 +33,77 @@
       "score": 7
     },
     {
-      "title": "의식 잃은 운전자…나들이 가던 해운대백병원 간호사가 살렸다",
-      "link": "https://www.donga.com/news/Society/article/all/20261117/135037939/1",
-      "originallink": "https://www.donga.com/news/Society/article/all/20261117/135037939/1",
-      "summary": "가족과 나들이를 가던 부산의 한 대학병원 간호사가 도로에서 의식을 잃은 운전자를 발견하고 심폐소생술을 실시해 생명을 구한 사실이 알려졌다.17일 인제대학교 해운대백병원에 따르면 수술실 소속 최지연 간호사는 지난 15일 오전 11시께 대구의 한 도로에서 의식을 잃은 운전자를 발견하고 구조에 나섰다.당시 가족과 동물원으로 향하던 최 간호사는 앞차가 신호를 위반한 채 계속 움직이는 모습을 목격했다. 한 시민이 달려와 운전석 문을 열고 차량을 멈춰 세우자 최 간호사는 곧바로 차에서 내려 운전자의 상태를 확인했다.운전자가 의식을 잃은 것을 ",
-      "pubDate": "2026-11-17T10:52:39+09:00",
-      "category": "동아일보",
-      "press": "동아일보",
-      "source": "동아일보",
-      "queries": [
-        "간호사",
-        "병원"
-      ],
-      "source_type": "major",
-      "score": 5
-    },
-    {
-      "title": "[병원소식] “덕분에 70년, 함께 100년”…을지대의료원, 창립 70주년 맞아 학술·문화 행사 잇달아 개최",
-      "link": "https://news.google.com/rss/articles/CBMia0FVX3lxTE9JWk14V3E3aU81RnRyM2RaVDdOanpJNVNIcHptRnZCem1vY1BUVnlfMThFTFZTZ2N3UzFndkpDb3ZweGNFLVQ4OUVFaXk2M0kzMWFsSTNzbzk4Wm5IenhRWldhVl9zSTdGakNN?oc=5",
-      "originallink": "https://news.google.com/rss/articles/CBMia0FVX3lxTE9JWk14V3E3aU81RnRyM2RaVDdOanpJNVNIcHptRnZCem1vY1BUVnlfMThFTFZTZ2N3UzFndkpDb3ZweGNFLVQ4OUVFaXk2M0kzMWFsSTNzbzk4Wm5IenhRWldhVl9zSTdGakNN?oc=5",
+      "title": "인하대병원 ‘아이온’ 시술, 대만 암센터 의료진이 배우러 왔다",
+      "link": "https://news.google.com/rss/articles/CBMiX0FVX3lxTE9NM1NrV3dQRDdIcEtmc2Q2OExzX0Z4RkRTemdEd0NKckVPc3VxWXUxQTFLMmtCR0lmODNWZkx3OHJxV0h5MG5IalhDX0FFWFJSRWdiYWhKSTJxWElGNEpv0gFfQVVfeXFMT00zU2tXd1BEN0hwS2ZzZDY4THNfRnhGRFN6Z0R3Q0pyRU9zdXFZdTFBMUsya0JHSWY4M1ZmTHc4cnFXSHkwbkhqWENfQUVYUlJFZ2JhaEpJMnFYSUY0Sm8?oc=5",
+      "originallink": "https://news.google.com/rss/articles/CBMiX0FVX3lxTE9NM1NrV3dQRDdIcEtmc2Q2OExzX0Z4RkRTemdEd0NKckVPc3VxWXUxQTFLMmtCR0lmODNWZkx3OHJxV0h5MG5IalhDX0FFWFJSRWdiYWhKSTJxWElGNEpv0gFfQVVfeXFMT00zU2tXd1BEN0hwS2ZzZDY4THNfRnhGRFN6Z0R3Q0pyRU9zdXFZdTFBMUsya0JHSWY4M1ZmTHc4cnFXSHkwbkhqWENfQUVYUlJFZ2JhaEpJMnFYSUY0Sm8?oc=5",
       "summary": "",
-      "pubDate": "2026-11-17T10:51:00+09:00",
-      "category": "한겨레",
-      "press": "한겨레",
-      "source": "한겨레",
+      "pubDate": "2026-11-17T16:59:00+09:00",
+      "category": "경향신문",
+      "press": "경향신문",
+      "source": "경향신문",
       "queries": [
         "의료",
+        "의료진",
         "병원"
+      ],
+      "source_type": "major",
+      "score": 6
+    },
+    {
+      "title": "광명새움병원, AI 환자 모니터링 시스템 ‘씽크’ 도입…수술 후 환자 관리 강화",
+      "link": "https://news.google.com/rss/articles/CBMiXkFVX3lxTE1zeUQ1aks5UjlINW9yRkJ2Sl80UGVEWXBzRlA2NmxreWxqaWhzMFVMblJhQmdwaW9KbElFVGw3SFdRSlI3QmZ6VWUwZzRVbU5oMWx3RWJQV0Q3NVkwSEHSAWNBVV95cUxOQkVLQm1zNl9lOHFvYkgxZzdBUEYzTV9QdEtrandna0tDVXc1b0NfbV9aWlVQNjBXSWczZWxZLTdNSkRvT0xQZDZ2Rm1neFQwRzZoRUtiTmJ3NHNtaDhtYl9JM0E?oc=5",
+      "originallink": "https://news.google.com/rss/articles/CBMiXkFVX3lxTE1zeUQ1aks5UjlINW9yRkJ2Sl80UGVEWXBzRlA2NmxreWxqaWhzMFVMblJhQmdwaW9KbElFVGw3SFdRSlI3QmZ6VWUwZzRVbU5oMWx3RWJQV0Q3NVkwSEHSAWNBVV95cUxOQkVLQm1zNl9lOHFvYkgxZzdBUEYzTV9QdEtrandna0tDVXc1b0NfbV9aWlVQNjBXSWczZWxZLTdNSkRvT0xQZDZ2Rm1neFQwRzZoRUtiTmJ3NHNtaDhtYl9JM0E?oc=5",
+      "summary": "",
+      "pubDate": "2026-11-17T11:17:00+09:00",
+      "category": "경향신문",
+      "press": "경향신문",
+      "source": "스포츠경향",
+      "queries": [
+        "병원",
+        "환자",
+        "AI"
+      ],
+      "source_type": "major",
+      "score": 6
+    },
+    {
+      "title": "\"앗! 정신병원 냄새가\"… '무단 이탈 환자' 안전히 돌려보낸 간호대생",
+      "link": "https://news.google.com/rss/articles/CBMibkFVX3lxTFAzSVpYOEFjdW5Rd3ZIM1ZJNXNaMkJWeWVxOVVZbTE1Y041TTRkbVBxLURGQ0xvQzJkVTNHYTFsUC1tbnp4Qmh0a3hIb0o5dUZqLTlrYkkxRDhRVmhFV3p6ODNLbXVxbVRmVnFCMlFn0gFzQVVfeXFMUHBtNDhiblVFQlRPUzRhYTNiZlhveUtWUlBqajRvUGFIU2J3RXVHNGc2VmNsOEtBa0VoMEFWM016cUJETjRMUlQxUjR6UkVRM193a191eWRveDZxVDdIeXVxZEE1WkVielhJcnFNNnFMRFk3UQ?oc=5",
+      "originallink": "https://news.google.com/rss/articles/CBMibkFVX3lxTFAzSVpYOEFjdW5Rd3ZIM1ZJNXNaMkJWeWVxOVVZbTE1Y041TTRkbVBxLURGQ0xvQzJkVTNHYTFsUC1tbnp4Qmh0a3hIb0o5dUZqLTlrYkkxRDhRVmhFV3p6ODNLbXVxbVRmVnFCMlFn0gFzQVVfeXFMUHBtNDhiblVFQlRPUzRhYTNiZlhveUtWUlBqajRvUGFIU2J3RXVHNGc2VmNsOEtBa0VoMEFWM016cUJETjRMUlQxUjR6UkVRM193a191eWRveDZxVDdIeXVxZEE1WkVielhJcnFNNnFMRFk3UQ?oc=5",
+      "summary": "",
+      "pubDate": "2026-11-17T15:17:00+09:00",
+      "category": "한국일보",
+      "press": "한국일보",
+      "source": "한국일보",
+      "queries": [
+        "병원",
+        "환자"
       ],
       "source_type": "major",
       "score": 5
     },
     {
-      "title": "\"AI로 의대 합격\" 글에 허탈…국회 \"응시제한 10년 추진\"",
-      "link": "https://news.jtbc.co.kr/article/NB12328391",
-      "originallink": "https://news.jtbc.co.kr/article/NB12328391",
-      "summary": "[앵커] 초소형 카메라와 AI 스마트폰으로 수능을 봐 수도권 의대에 합격했다. 온라인 커뮤니티에 올라온 글인데, 수험생들은 노력의 가치마저 무너뜨리는 일이라며 허탈감을 쏟아내고 있습니다. 국회는 뒤늦게 대책 마련에",
-      "pubDate": "2026-11-17T08:28:51+09:00",
+      "title": "'2026 HD현대아너상'에 150만 명 무료 진료 성가복지병원",
+      "link": "https://news.google.com/rss/articles/CBMibkFVX3lxTE5Va0l1UWViYzZqSXpqR0JOSll3S0duRi00TWhfbWlpekpxQl96aWRWSUVmaXgxeEJQLTg3NTdSYko5ZXBwdExPVXFwNk1VaG1WX1QyMG9fNjk1OW12YTJSYlc2ZG9lUDZqclJadXdB0gFzQVVfeXFMTno5NUJuTkxSRHFsZVJwdHJBeW13N0dxX2tRWXVyMGNOSTdpY0hmSVMzemJUTWdIc3BRdy1WUnl6ZmxSa3NKNF9QdHQ4WlVRa0s1U1ZXQjVBb2ExSnVOdkp4TmphX0JkaklYVHR2eUZOOUhUMA?oc=5",
+      "originallink": "https://news.google.com/rss/articles/CBMibkFVX3lxTE5Va0l1UWViYzZqSXpqR0JOSll3S0duRi00TWhfbWlpekpxQl96aWRWSUVmaXgxeEJQLTg3NTdSYko5ZXBwdExPVXFwNk1VaG1WX1QyMG9fNjk1OW12YTJSYlc2ZG9lUDZqclJadXdB0gFzQVVfeXFMTno5NUJuTkxSRHFsZVJwdHJBeW13N0dxX2tRWXVyMGNOSTdpY0hmSVMzemJUTWdIc3BRdy1WUnl6ZmxSa3NKNF9QdHQ4WlVRa0s1U1ZXQjVBb2ExSnVOdkp4TmphX0JkaklYVHR2eUZOOUhUMA?oc=5",
+      "summary": "",
+      "pubDate": "2026-11-17T14:57:00+09:00",
+      "category": "한국일보",
+      "press": "한국일보",
+      "source": "한국일보",
+      "queries": [
+        "병원",
+        "진료"
+      ],
+      "source_type": "major",
+      "score": 5
+    },
+    {
+      "title": "\"AI 써서 의대 합격\" \"욕심 버리고 9급 붙어\"…잇따른 자백 글 '화들짝'",
+      "link": "https://news.jtbc.co.kr/article/NB12328447",
+      "originallink": "https://news.jtbc.co.kr/article/NB12328447",
+      "summary": "세무사 시험 수석 합격자의 AI 부정행위로 파문이 일고 있는 가운데, 온라인상에서 공무원 시험과 수능에서도 비슷한 방법을 써 합격했다는 일종의 자백 글이 잇따르고 있습니다. 경찰은 AI 부정행위 전담팀을 꾸리고 온라",
+      "pubDate": "2026-11-17T13:56:40+09:00",
       "category": "JTBC",
       "press": "JTBC",
       "source": "JTBC",
@@ -86,183 +115,258 @@
       "score": 5
     },
     {
-      "title": "‘수도권 원정 진료 그만’ 전남대병원 새병원 2031년 완공",
-      "link": "https://news.google.com/rss/articles/CBMiYEFVX3lxTE5QVVoxcmFuRmVyMmMzQlpjZ2Y3a2RhaVRwZE8teVFDRFA1Mlc2NXFEa3J2Z2NsTTVUcGFRUzRLc3Y2bTNvR0FMNzdzd1NRRHN2S2hJZU1INWxBR2IyUWhtVA?oc=5",
-      "originallink": "https://news.google.com/rss/articles/CBMiYEFVX3lxTE5QVVoxcmFuRmVyMmMzQlpjZ2Y3a2RhaVRwZE8teVFDRFA1Mlc2NXFEa3J2Z2NsTTVUcGFRUzRLc3Y2bTNvR0FMNzdzd1NRRHN2S2hJZU1INWxBR2IyUWhtVA?oc=5",
+      "title": "HD현대아너상에 성가복지병원, HD현대1%나눔상에 의사 김인권",
+      "link": "https://news.google.com/rss/articles/CBMiVkFVX3lxTE9VTDBlT1RIeTB6c0h0aHNKXzZlTG0xSDEzYjhHSENJd293SlRCZEl2OEtMOXVkT1pDSlBoSHFiU1pQNzFGRDg2a0ZkVW9ma2p4bWxXdzN3?oc=5",
+      "originallink": "https://news.google.com/rss/articles/CBMiVkFVX3lxTE9VTDBlT1RIeTB6c0h0aHNKXzZlTG0xSDEzYjhHSENJd293SlRCZEl2OEtMOXVkT1pDSlBoSHFiU1pQNzFGRDg2a0ZkVW9ma2p4bWxXdzN3?oc=5",
       "summary": "",
-      "pubDate": "2026-11-17T02:31:00+09:00",
-      "category": "한겨레",
-      "press": "한겨레",
-      "source": "한겨레",
+      "pubDate": "2026-11-17T11:30:00+09:00",
+      "category": "중앙일보",
+      "press": "중앙일보",
+      "source": "중앙일보",
       "queries": [
-        "병원",
-        "진료"
+        "의사",
+        "병원"
       ],
       "source_type": "major",
       "score": 5
     },
     {
-      "title": "'음주 운전' 의사 면허 취소 정당… 법원 \"의료인, 높은 윤리의식 요구돼\"",
-      "link": "https://news.google.com/rss/articles/CBMibkFVX3lxTE9FS1JhSS1VYnhEbzhNeHV6b2Z3bnNXYUhTdDRiM2w4Z3Z4akpheHduZGcwRy1UOVkzb2lVTExOZDdud1dHMERjeU9MTm05V3BDa0lXdWswYXJxYjZPeGstU2poU1JOTm9YTHF5UkNn0gFzQVVfeXFMUFBVQmtZdVR2ejVpUHRQcFVJUTlpdjBVLW1lcUlqTjc2Y0VuR1RQWFBvcnJzM0NVcHRlSi1TVU9PSFppUWg5cm1aWjhKNHZ5cU9rTEE3blR6SXN2dzB6cGdmeElkR0o3OFhtYmZnMmw4ZlVxSQ?oc=5",
-      "originallink": "https://news.google.com/rss/articles/CBMibkFVX3lxTE9FS1JhSS1VYnhEbzhNeHV6b2Z3bnNXYUhTdDRiM2w4Z3Z4akpheHduZGcwRy1UOVkzb2lVTExOZDdud1dHMERjeU9MTm05V3BDa0lXdWswYXJxYjZPeGstU2poU1JOTm9YTHF5UkNn0gFzQVVfeXFMUFBVQmtZdVR2ejVpUHRQcFVJUTlpdjBVLW1lcUlqTjc2Y0VuR1RQWFBvcnJzM0NVcHRlSi1TVU9PSFppUWg5cm1aWjhKNHZ5cU9rTEE3blR6SXN2dzB6cGdmeElkR0o3OFhtYmZnMmw4ZlVxSQ?oc=5",
+      "title": "[병원소식] “덕분에 70년, 함께 100년”…을지대의료원, 창립 70주년 맞아 학술·문화 행사 잇달아 개최",
+      "link": "https://news.google.com/rss/articles/CBMia0FVX3lxTE9JWk14V3E3aU81RnRyM2RaVDdOanpJNVNIcHptRnZCem1vY1BUVnlfMThFTFZTZ2N3UzFndkpDb3ZweGNFLVQ4OUVFaXk2M0kzMWFsSTNzbzk4Wm5IenhRWldhVl9zSTdGakNN?oc=5",
+      "originallink": "https://news.google.com/rss/articles/CBMia0FVX3lxTE9JWk14V3E3aU81RnRyM2RaVDdOanpJNVNIcHptRnZCem1vY1BUVnlfMThFTFZTZ2N3UzFndkpDb3ZweGNFLVQ4OUVFaXk2M0kzMWFsSTNzbzk4Wm5IenhRWldhVl9zSTdGakNN?oc=5",
       "summary": "",
-      "pubDate": "2026-11-16T15:49:00+09:00",
+      "pubDate": "2026-11-17T10:52:00+09:00",
+      "category": "한겨레",
+      "press": "한겨레",
+      "source": "한겨레",
+      "queries": [
+        "의료",
+        "병원"
+      ],
+      "source_type": "major",
+      "score": 5
+    },
+    {
+      "title": "40년 넘게 한센인 진료 김인권씨, ‘HD현대1%나눔상’ 수상자 선정",
+      "link": "https://www.donga.com/news/People/article/all/20261118/135042567/2",
+      "originallink": "https://www.donga.com/news/People/article/all/20261118/135042567/2",
+      "summary": "HD현대의 사회공헌재단인 HD현대1%나눔재단이 올해 HD현대1%나눔상 수상자로 40여 년간 한센인과 소아마비 환자를 진료해 온 김인권 서울예스병원 병원장(사진)을 선정했다고 17일 밝혔다. HD현대아너상 수상자로는 어려운 이웃을 36년간 무상 진료해 온 성가복지병원이 선정됐다. 정형외과 의사인 김 원장은 1980년 국립소록도병원에서 공중보건의로 일하기 시작하면서 한센인 치료를 처음 시작했다. 이후 1983년부터 36년 동안 여수애양병원에 재직하며 형편이 어려운 한센인과 소아마비 환자를 돌봐 왔다. 2019년부터 지금의 병원을 꾸려 ",
+      "pubDate": "2026-11-18T04:30:00+09:00",
+      "category": "동아일보",
+      "press": "동아일보",
+      "source": "동아일보",
+      "queries": [
+        "진료"
+      ],
+      "source_type": "major",
+      "score": 4
+    },
+    {
+      "title": "네오엔텍, ‘희소의료기기’ 뇌혈관용 스텐트 세계 첫선",
+      "link": "https://news.google.com/rss/articles/CBMibkFVX3lxTE1uckxrNURXMHhJRkZpS2QxYi0wUXFCcHhFU1Rad09iVHR3RnZtQnV1WlFlUGM5N3luNHNiQzMyRlhzeExUOWdVRU1iakFDMElCejNMNDZLS3BfaHRrOXNWakRVa1BZMThhZ1k2ZTNn?oc=5",
+      "originallink": "https://news.google.com/rss/articles/CBMibkFVX3lxTE1uckxrNURXMHhJRkZpS2QxYi0wUXFCcHhFU1Rad09iVHR3RnZtQnV1WlFlUGM5N3luNHNiQzMyRlhzeExUOWdVRU1iakFDMElCejNMNDZLS3BfaHRrOXNWakRVa1BZMThhZ1k2ZTNn?oc=5",
+      "summary": "",
+      "pubDate": "2026-11-18T03:30:00+09:00",
       "category": "한국일보",
       "press": "한국일보",
       "source": "한국일보",
       "queries": [
-        "의료",
-        "의사"
-      ],
-      "source_type": "major",
-      "score": 5
-    },
-    {
-      "title": "GS건설 새 주거상품 ‘비욘드 리빙’ 공개…AI, 플랫폼 평면, 기후환경 대응 기술 접목",
-      "link": "https://news.google.com/rss/articles/CBMiaEFVX3lxTE9VSlE2MXFCS0p6UVVxODdLdUFhMDZLM3pWcUxlWVBhYVZkell3WUlMMkJXZGJQS0RWdjJBUVFmd1JSUnlpX1lpR2o0NVByVDIzUWlrTWc2MGJKQy1tRk1jdXU0d2JKZkJp?oc=5",
-      "originallink": "https://news.google.com/rss/articles/CBMiaEFVX3lxTE9VSlE2MXFCS0p6UVVxODdLdUFhMDZLM3pWcUxlWVBhYVZkell3WUlMMkJXZGJQS0RWdjJBUVFmd1JSUnlpX1lpR2o0NVByVDIzUWlrTWc2MGJKQy1tRk1jdXU0d2JKZkJp?oc=5",
-      "summary": "",
-      "pubDate": "2026-11-17T10:59:00+09:00",
-      "category": "한겨레",
-      "press": "한겨레",
-      "source": "한겨레",
-      "queries": [
-        "AI"
+        "의료"
       ],
       "source_type": "major",
       "score": 4
     },
     {
-      "title": "AI가 만든 ‘가짜 참고문헌’ 논문에 버젓이…국내외 잇단 철회",
-      "link": "https://news.google.com/rss/articles/CBMiVkFVX3lxTE9Bd0RfN0Jvak9MdzJvd3BuU1VoUXc4UDhFWWcxeW9BOWpGWnd2SlV6eU5icnZScXJsbmNfMjl1X1hKR2RWXy1BbXpNeFBlbjBZR1JJNmpB?oc=5",
-      "originallink": "https://news.google.com/rss/articles/CBMiVkFVX3lxTE9Bd0RfN0Jvak9MdzJvd3BuU1VoUXc4UDhFWWcxeW9BOWpGWnd2SlV6eU5icnZScXJsbmNfMjl1X1hKR2RWXy1BbXpNeFBlbjBZR1JJNmpB?oc=5",
+      "title": "젠슨 황 “이사회 원하면 엔비디아 CEO 복귀 의사 있다”",
+      "link": "https://biz.chosun.com/international/international_economy/2026/11/18/7MH25QH2YJHZBOMMRRWCVRVG3Y/",
+      "originallink": "https://biz.chosun.com/international/international_economy/2026/11/18/7MH25QH2YJHZBOMMRRWCVRVG3Y/",
       "summary": "",
-      "pubDate": "2026-11-17T10:57:23+09:00",
-      "category": "중앙일보",
-      "press": "중앙일보",
-      "source": "중앙일보",
-      "queries": [
-        "AI"
-      ],
-      "source_type": "major",
-      "score": 4
-    },
-    {
-      "title": "AI코딩 극찬하던 골드만삭스가 돌연 AI 빗장 건 이유는",
-      "link": "https://news.google.com/rss/articles/CBMigwFBVV95cUxOYS1GbWU1NTRIZHd4dDdEQ09tSWV0enJpbWhfcU1BbnVDQ1pVRWdPYlNGTVBZdHdoZDNNMjZxTERuaktGWDlaRzlfaldpeGk5dWtGdktOTzgzMktTNlBud2hnZGFuVXZQWm1IbmlNX3UzdTBzeTZTdzVIMHNVeVpwanhuMA?oc=5",
-      "originallink": "https://news.google.com/rss/articles/CBMigwFBVV95cUxOYS1GbWU1NTRIZHd4dDdEQ09tSWV0enJpbWhfcU1BbnVDQ1pVRWdPYlNGTVBZdHdoZDNNMjZxTERuaktGWDlaRzlfaldpeGk5dWtGdktOTzgzMktTNlBud2hnZGFuVXZQWm1IbmlNX3UzdTBzeTZTdzVIMHNVeVpwanhuMA?oc=5",
-      "summary": "",
-      "pubDate": "2026-11-17T10:55:53+09:00",
+      "pubDate": "2026-11-18T01:30:18+09:00",
       "category": "조선일보",
       "press": "조선일보",
       "source": "조선일보",
       "queries": [
-        "AI"
+        "의사"
       ],
       "source_type": "major",
       "score": 4
     },
     {
-      "title": "동국대 WISE캠퍼스, ‘AI 전공 교과목 개발자 협의체’ 운영",
-      "link": "https://news.google.com/rss/articles/CBMiVkFVX3lxTE9qSG0zVzdSdWhyNHI0cmtDY2hfb29BX1QyTWZ1T1NwUF9wUFFHWVNGZ2FJVENlMHlSdGh4M0w4WkdoVHZnSVZKOWM1UVZ4TkF4eUNMS053?oc=5",
-      "originallink": "https://news.google.com/rss/articles/CBMiVkFVX3lxTE9qSG0zVzdSdWhyNHI0cmtDY2hfb29BX1QyTWZ1T1NwUF9wUFFHWVNGZ2FJVENlMHlSdGh4M0w4WkdoVHZnSVZKOWM1UVZ4TkF4eUNMS053?oc=5",
+      "title": "한성숙 총리가 ‘의사봉’ 조작기소 특검법 의결",
+      "link": "https://www.chosun.com/politics/politics_general/2026/11/18/X7BWDTJSTRDMTMMRU7ZX3ONESI/",
+      "originallink": "https://www.chosun.com/politics/politics_general/2026/11/18/X7BWDTJSTRDMTMMRU7ZX3ONESI/",
       "summary": "",
-      "pubDate": "2026-11-17T10:55:00+09:00",
+      "pubDate": "2026-11-18T00:55:00+09:00",
+      "category": "조선일보",
+      "press": "조선일보",
+      "source": "조선일보",
+      "queries": [
+        "의사"
+      ],
+      "source_type": "major",
+      "score": 4
+    },
+    {
+      "title": "“2030 늙어서 돌연사” 심장 의사 경악한 ‘마라톤 습관’",
+      "link": "https://news.google.com/rss/articles/CBMiVkFVX3lxTE5UZHRZYnJEWkhyWk9la1VHQkR0aW1kaWUta3k4OFdsUVFzbkRkWU1NZk84NFFfOVpjVTMzZXhDamRLMElQR0NMcTZFRjJYTlFVQ3NvLXFR?oc=5",
+      "originallink": "https://news.google.com/rss/articles/CBMiVkFVX3lxTE5UZHRZYnJEWkhyWk9la1VHQkR0aW1kaWUta3k4OFdsUVFzbkRkWU1NZk84NFFfOVpjVTMzZXhDamRLMElQR0NMcTZFRjJYTlFVQ3NvLXFR?oc=5",
+      "summary": "",
+      "pubDate": "2026-11-17T20:26:23+09:00",
       "category": "중앙일보",
       "press": "중앙일보",
       "source": "중앙일보",
       "queries": [
-        "AI"
+        "의사"
       ],
       "source_type": "major",
       "score": 4
     },
     {
-      "title": "AWS, 개발 프로세스별로 업무 전담하는 AI 에이전트 ‘키로 봇’ 출시",
-      "link": "https://news.google.com/rss/articles/CBMiggFBVV95cUxQdlc5YzA0MmdlQlRGcnR1VjhiUWpQcTdmWGRtYl9PMnNZRTdJMTlZU1BiNjBNbGFGekIwQnZScmpHUElWQVFCa0pHc1BQclEtQjdValA1UVRvTk55NTFocW9SYnNEQ2ZQNGNxLU5KTjcxRHBPVHFNazB5S2pLZEtVWHR30gGWAUFVX3lxTE9nRzNUWTY4Z1VrNjFNNVNwd1l3VG9Fa19DM3A0dnJDa29uTHR5OExMRmxPbG5DaU9Obm9mLTNNRW5tZEJPejJ0bkdMXzk4OVlORWxlOWJ4aWNlWWZfaUwxV2d2bVJlRUlfZ3FubjFPek9rX2FHOTBTclB0dXVBY2dMclVKUm8yRXdRZHM3NHc3Z21oQThvdw?oc=5",
-      "originallink": "https://news.google.com/rss/articles/CBMiggFBVV95cUxQdlc5YzA0MmdlQlRGcnR1VjhiUWpQcTdmWGRtYl9PMnNZRTdJMTlZU1BiNjBNbGFGekIwQnZScmpHUElWQVFCa0pHc1BQclEtQjdValA1UVRvTk55NTFocW9SYnNEQ2ZQNGNxLU5KTjcxRHBPVHFNazB5S2pLZEtVWHR30gGWAUFVX3lxTE9nRzNUWTY4Z1VrNjFNNVNwd1l3VG9Fa19DM3A0dnJDa29uTHR5OExMRmxPbG5DaU9Obm9mLTNNRW5tZEJPejJ0bkdMXzk4OVlORWxlOWJ4aWNlWWZfaUwxV2d2bVJlRUlfZ3FubjFPek9rX2FHOTBTclB0dXVBY2dMclVKUm8yRXdRZHM3NHc3Z21oQThvdw?oc=5",
-      "summary": "",
-      "pubDate": "2026-11-17T10:29:00+09:00",
-      "category": "조선일보",
-      "press": "조선일보",
-      "source": "Chosunbiz",
-      "queries": [
-        "AI"
-      ],
-      "source_type": "major",
-      "score": 4
-    },
-    {
-      "title": "[단독]청와대, AI 악용 부정행위 비상대책 TF 가동…수능일까지 '비상근무 체제' 돌입",
-      "link": "https://news.jtbc.co.kr/article/NB12328417",
-      "originallink": "https://news.jtbc.co.kr/article/NB12328417",
-      "summary": "대학수학능력시험(수능·19일)을 앞두고 인공지능(AI)을 활용한 시험 부정행위에 대한 우려가 고조되는 것과 관련해, 청와대가 '비상대책 TF' 가동에 들어간 것으로 확인됐습니다. 임광현 대통령 비서실장은 수능의 공",
-      "pubDate": "2026-11-17T10:26:11+09:00",
+      "title": "\"수능날 10.5초\" 재난문자 끄면?…수험생 필수 유의사항",
+      "link": "https://news.jtbc.co.kr/article/NB12328521",
+      "originallink": "https://news.jtbc.co.kr/article/NB12328521",
+      "summary": "[앵커] 모레 수능 시험장에서 수험생은 어떤 절차들을 거치게 되는지, 더 자세히 설명드리겠습니다. 혹시 까다로운 절차를 마주하더라도 수험생분들이 쏟아온 노력을 지키는 과정이라 생각하고 집중력을 흐트리지 않으셨으면",
+      "pubDate": "2026-11-17T19:31:15+09:00",
       "category": "JTBC",
       "press": "JTBC",
       "source": "JTBC",
       "queries": [
-        "AI"
+        "의사"
       ],
       "source_type": "major",
       "score": 4
     },
     {
-      "title": "\"AI로 필요한 프로그램 직접 만든다\"…한국앤컴퍼니, 사내 해커톤 개최",
-      "link": "https://news.google.com/rss/articles/CBMihgFBVV95cUxPZTBUSGY3cWpUMFBCR1JxSHhqM1dlWjg5ZmhOekpVYmwzSkY3ekw4bG52QVRCOFpydmVrZzJrR0l1TWxsV3hpZGdHLTZjRDEwVVltc1VxVUJQY2cxejRvc2hTV3lFZWlUZEwxTVd2MVJwZE5RWllISER1NDBzdUV2YmRxd3JNUQ?oc=5",
-      "originallink": "https://news.google.com/rss/articles/CBMihgFBVV95cUxPZTBUSGY3cWpUMFBCR1JxSHhqM1dlWjg5ZmhOekpVYmwzSkY3ekw4bG52QVRCOFpydmVrZzJrR0l1TWxsV3hpZGdHLTZjRDEwVVltc1VxVUJQY2cxejRvc2hTV3lFZWlUZEwxTVd2MVJwZE5RWllISER1NDBzdUV2YmRxd3JNUQ?oc=5",
+      "title": "미라클헬스케어, 독일 의료기기전 ‘메디카 2026’ 참가",
+      "link": "https://news.google.com/rss/articles/CBMiVkFVX3lxTFAwMkZMWHFvdG1BZlR6Ry1XWUNKbnlrVm9ZZlFjRmtUVUpUUUwwWExPanFVRVdpaW9tVFZuSFlSTlRZZ0dFSkpsVE1BaUZmcUhnemtqQTVn?oc=5",
+      "originallink": "https://news.google.com/rss/articles/CBMiVkFVX3lxTFAwMkZMWHFvdG1BZlR6Ry1XWUNKbnlrVm9ZZlFjRmtUVUpUUUwwWExPanFVRVdpaW9tVFZuSFlSTlRZZ0dFSkpsVE1BaUZmcUhnemtqQTVn?oc=5",
       "summary": "",
-      "pubDate": "2026-11-17T10:21:00+09:00",
-      "category": "조선일보",
-      "press": "조선일보",
-      "source": "디지틀조선TV",
-      "queries": [
-        "AI"
-      ],
-      "source_type": "major",
-      "score": 4
-    },
-    {
-      "title": "젠슨 황 퇴진에도 AI 메모리 수요는 ‘건재’…中 규제 강화는 韓 반도체에 호재",
-      "link": "https://news.google.com/rss/articles/CBMiVkFVX3lxTE42WnNYc2xSdWFxTkJMZ042aHRjU1VxQ3o3S042RGZ4bnhGLWRhc2FsMVhtVWEzXzlzZDFDQzcwTDBLUUxBR3JQTGV1TVlJS21Qc1F1aXZB?oc=5",
-      "originallink": "https://news.google.com/rss/articles/CBMiVkFVX3lxTE42WnNYc2xSdWFxTkJMZ042aHRjU1VxQ3o3S042RGZ4bnhGLWRhc2FsMVhtVWEzXzlzZDFDQzcwTDBLUUxBR3JQTGV1TVlJS21Qc1F1aXZB?oc=5",
-      "summary": "",
-      "pubDate": "2026-11-17T10:16:18+09:00",
+      "pubDate": "2026-11-17T19:04:00+09:00",
       "category": "중앙일보",
       "press": "중앙일보",
       "source": "중앙일보",
       "queries": [
-        "AI"
+        "의료"
       ],
       "source_type": "major",
       "score": 4
     },
     {
-      "title": "고금리에 빗장 걸어 잠근 30대 그룹, 타법인 투자 줄였어도 AI엔 예외···1조 넘게 썼다",
-      "link": "https://www.khan.co.kr/article/202611171016001/?utm_source=khan_rss&utm_medium=rss&utm_campaign=total_news",
-      "originallink": "https://www.khan.co.kr/article/202611171016001/?utm_source=khan_rss&utm_medium=rss&utm_campaign=total_news",
-      "summary": "올 상반기 출자액 중 AI 비중 27.4% ‘최고’LG 누적 1위…업스테이지에 투자 절반 쏠려서울 강남역 일대. 조태형 기자국내 30대 그룹 계열사가 다른 회사 법인 지분투자는 줄이면서도 인공지능(AI) 분야 투자는 확대한 것으로 나타났다. 최근 2년 반 동안 1조원 넘게 쏟아부었다.17일 기업분석연구소 리더스인덱스가 매출 상위 500대 기업 중 반기보고서···",
-      "pubDate": "2026-11-17T10:16:00+09:00",
+      "title": "‘사무장병원 잡을 칼, 누가 쥐나’... 수사권 놓고 맞붙은 건보 대 의협",
+      "link": "https://news.google.com/rss/articles/CBMic0FVX3lxTE92TWlxRC1yVEtDVlEyTE15V2Q5Wk9pMHN0YXVVSHBrd1JZNnJ6ZGx0ZjBYQkpMQkh2eXdDbS00STduMDRhX3ZZZHhCRkhoSkpwTkhSLVp3VGc1dzEtSjB6VkIyYkRvRUpuUjNsRkJjaVhPM0HSAXNBVV95cUxPdk1pcUQtclRLQ1ZRMkxNeVdkOVpPaTBzdGF1VUhwa3dSWTZyemRsdGYwWEJKTEJIdnl3Q20tNEk3bjA0YV92WWR4QkZIaEpKcE5IUi1ad1RnNXcxLUowelZCMmJEb0VKblIzbEZCY2lYTzNB?oc=5",
+      "originallink": "https://news.google.com/rss/articles/CBMic0FVX3lxTE92TWlxRC1yVEtDVlEyTE15V2Q5Wk9pMHN0YXVVSHBrd1JZNnJ6ZGx0ZjBYQkpMQkh2eXdDbS00STduMDRhX3ZZZHhCRkhoSkpwTkhSLVp3VGc1dzEtSjB6VkIyYkRvRUpuUjNsRkJjaVhPM0HSAXNBVV95cUxPdk1pcUQtclRLQ1ZRMkxNeVdkOVpPaTBzdGF1VUhwa3dSWTZyemRsdGYwWEJKTEJIdnl3Q20tNEk3bjA0YV92WWR4QkZIaEpKcE5IUi1ad1RnNXcxLUowelZCMmJEb0VKblIzbEZCY2lYTzNB?oc=5",
+      "summary": "",
+      "pubDate": "2026-11-17T18:48:00+09:00",
+      "category": "한국일보",
+      "press": "한국일보",
+      "source": "한국일보",
+      "queries": [
+        "병원"
+      ],
+      "source_type": "major",
+      "score": 4
+    },
+    {
+      "title": "\"안 걸리면 의대, 걸리면 군대\"… 유승민도 '수능 연기' 촉구",
+      "link": "https://news.google.com/rss/articles/CBMibkFVX3lxTE8wcWhGeWF0UGNFbnlwcWVxYXptUnpJaUdiTTdldHRmNXJoeFBfaHIwcGUtaXd6QkRZRzdNM2x2U2VPc0YzNVNXeFNqRlZxSXNvLXM4bHlDRWJadm9rVDgyTlhQWTN3emRESzd1U2N30gFzQVVfeXFMTlFtd3BPMUJjVFg0VG02cGt0OEEyd3hHcE1jZUpaSllkTXpZZVRIeTRmVHlGREpPcEExY3EtTGVKU0gwSEljX2IycnljcFk4ODZYZHh6YWI5dmZNNDRDY0k0dXJCV1pndmVGLUZJdE41Q19YYw?oc=5",
+      "originallink": "https://news.google.com/rss/articles/CBMibkFVX3lxTE8wcWhGeWF0UGNFbnlwcWVxYXptUnpJaUdiTTdldHRmNXJoeFBfaHIwcGUtaXd6QkRZRzdNM2x2U2VPc0YzNVNXeFNqRlZxSXNvLXM4bHlDRWJadm9rVDgyTlhQWTN3emRESzd1U2N30gFzQVVfeXFMTlFtd3BPMUJjVFg0VG02cGt0OEEyd3hHcE1jZUpaSllkTXpZZVRIeTRmVHlGREpPcEExY3EtTGVKU0gwSEljX2IycnljcFk4ODZYZHh6YWI5dmZNNDRDY0k0dXJCV1pndmVGLUZJdE41Q19YYw?oc=5",
+      "summary": "",
+      "pubDate": "2026-11-17T17:40:00+09:00",
+      "category": "한국일보",
+      "press": "한국일보",
+      "source": "한국일보",
+      "queries": [
+        "의대"
+      ],
+      "source_type": "major",
+      "score": 4
+    },
+    {
+      "title": "라이프 | 건강·의학",
+      "link": "https://news.google.com/rss/articles/CBMiVkFVX3lxTE1RYVlMMXNTNS1ZSEFJTE9DNHhOcU9fU0xwb0xyX2hISC03dDllUlprbVJDV2E0cXFsTnh1SUVkdHRVLWZVR1RxRl9aMy12bHEySHhOcHJR?oc=5",
+      "originallink": "https://news.google.com/rss/articles/CBMiVkFVX3lxTE1RYVlMMXNTNS1ZSEFJTE9DNHhOcU9fU0xwb0xyX2hISC03dDllUlprbVJDV2E0cXFsTnh1SUVkdHRVLWZVR1RxRl9aMy12bHEySHhOcHJR?oc=5",
+      "summary": "",
+      "pubDate": "2026-11-17T17:18:22+09:00",
       "category": "경향신문",
       "press": "경향신문",
       "source": "경향신문",
       "queries": [
-        "AI"
+        "의학"
       ],
       "source_type": "major",
       "score": 4
     },
     {
-      "title": "“절대 티 안나요” “전공시험 때 성공”…AI안경 대여 문의해보니",
-      "link": "https://news.google.com/rss/articles/CBMickFVX3lxTE9Zbm5QVjVBRjdOSnJ0NkpkNDNTUVNfbkRyc0ZQMFdVbmVvN2hNSi1KN2xZVFlXZkxvUnNBNlB1WTVmXzdGbjJWNTQ2R05aOFdBSWlpdHgxcWZFMG9fODFlQS1LSU9yUENlX21NZHBnYzVGZw?oc=5",
-      "originallink": "https://news.google.com/rss/articles/CBMickFVX3lxTE9Zbm5QVjVBRjdOSnJ0NkpkNDNTUVNfbkRyc0ZQMFdVbmVvN2hNSi1KN2xZVFlXZkxvUnNBNlB1WTVmXzdGbjJWNTQ2R05aOFdBSWlpdHgxcWZFMG9fODFlQS1LSU9yUENlX21NZHBnYzVGZw?oc=5",
+      "title": "대구한의대, 슬로베니아 국립대 정규과정서 한국 침구학 교육",
+      "link": "https://news.google.com/rss/articles/CBMibkFVX3lxTE9PMUhQOTF1RzhkNUFoV1JKb0p0aUhFZ3FzeV8yemxveGF1VTdWOVNpSHlOYjJyV29yTG42OURseGtOWUVJUGdMMnV6azBCSEZ2TnVVaTdmVm9BcFRvTFBNS3h2Q2tlQWhRcTZNS3ln0gFzQVVfeXFMTWpicExUakdqWk9LS2NHZkVQTm5oZERueHJFVnJvRzBoZDhFR2lSMVR2S2R6NzBTVUJzQWMzTkU4YnNvbzYzRDZad2cwMG9EbVhxa0dOSFBiVmV3b1VtWlI2ekJxajl1Mkl0ZmZscFNOVEFZUQ?oc=5",
+      "originallink": "https://news.google.com/rss/articles/CBMibkFVX3lxTE9PMUhQOTF1RzhkNUFoV1JKb0p0aUhFZ3FzeV8yemxveGF1VTdWOVNpSHlOYjJyV29yTG42OURseGtOWUVJUGdMMnV6azBCSEZ2TnVVaTdmVm9BcFRvTFBNS3h2Q2tlQWhRcTZNS3ln0gFzQVVfeXFMTWpicExUakdqWk9LS2NHZkVQTm5oZERueHJFVnJvRzBoZDhFR2lSMVR2S2R6NzBTVUJzQWMzTkU4YnNvbzYzRDZad2cwMG9EbVhxa0dOSFBiVmV3b1VtWlI2ekJxajl1Mkl0ZmZscFNOVEFZUQ?oc=5",
       "summary": "",
-      "pubDate": "2026-11-17T10:13:00+09:00",
+      "pubDate": "2026-11-17T15:50:00+09:00",
+      "category": "한국일보",
+      "press": "한국일보",
+      "source": "한국일보",
+      "queries": [
+        "의대"
+      ],
+      "source_type": "major",
+      "score": 4
+    },
+    {
+      "title": "쓰러진 운전자 CPR로 살려낸 간호사···소방은 CPR로 심정지 상태 6개월 아기 구해",
+      "link": "https://news.google.com/rss/articles/CBMiX0FVX3lxTE45cVY3SW85TjFQOFpER2FkeVhMOW5JODRHbHA4WEctOXZydHJTcV9Ec0Rqc3ROOWpzOTlZUm1sdjhpY09ZeGJialZCajVtang5QjJOOHVWZFZPM2hnaFdz0gFfQVVfeXFMTjlxVjdJbzlOMVA4WkRHYWR5WEw5bkk4NEdscDhYRy05dnJ0clNxX0RzRGpzdE45anM5OVlSbWx2OGljT1l4YmJqVkJqNW1qeDlCMk44dVZkVk8zaGdoV3M?oc=5",
+      "originallink": "https://news.google.com/rss/articles/CBMiX0FVX3lxTE45cVY3SW85TjFQOFpER2FkeVhMOW5JODRHbHA4WEctOXZydHJTcV9Ec0Rqc3ROOWpzOTlZUm1sdjhpY09ZeGJialZCajVtang5QjJOOHVWZFZPM2hnaFdz0gFfQVVfeXFMTjlxVjdJbzlOMVA4WkRHYWR5WEw5bkk4NEdscDhYRy05dnJ0clNxX0RzRGpzdE45anM5OVlSbWx2OGljT1l4YmJqVkJqNW1qeDlCMk44dVZkVk8zaGdoV3M?oc=5",
+      "summary": "",
+      "pubDate": "2026-11-17T14:43:00+09:00",
+      "category": "경향신문",
+      "press": "경향신문",
+      "source": "경향신문",
+      "queries": [
+        "간호사"
+      ],
+      "source_type": "major",
+      "score": 4
+    },
+    {
+      "title": "40여년 한센인 돌본 김인권 서울예스병원장, HD현대1%나눔상 수상",
+      "link": "https://news.google.com/rss/articles/CBMickFVX3lxTE1odG14Rmg2TV9uUUYyRWRYLXI3VW5UVGVNMXphYy1MNjlFU0hBZmxNVHpqVElWZnJjLUZLeEJyUGNULTRvQ29CN1R0MHh6VWM3SmFJN004NGVzUG9ES1lnckZMMzcxd0Q5VDAyZ3JrdmdZUQ?oc=5",
+      "originallink": "https://news.google.com/rss/articles/CBMickFVX3lxTE1odG14Rmg2TV9uUUYyRWRYLXI3VW5UVGVNMXphYy1MNjlFU0hBZmxNVHpqVElWZnJjLUZLeEJyUGNULTRvQ29CN1R0MHh6VWM3SmFJN004NGVzUG9ES1lnckZMMzcxd0Q5VDAyZ3JrdmdZUQ?oc=5",
+      "summary": "",
+      "pubDate": "2026-11-17T14:39:00+09:00",
       "category": "한겨레",
       "press": "한겨레",
       "source": "한겨레",
       "queries": [
-        "AI"
+        "병원"
+      ],
+      "source_type": "major",
+      "score": 4
+    },
+    {
+      "title": "\"이거 정신병동 냄새인데\"…무단 이탈 환자 알아본 간호대생",
+      "link": "https://news.jtbc.co.kr/article/NB12328429",
+      "originallink": "https://news.jtbc.co.kr/article/NB12328429",
+      "summary": "정신병원 폐쇄병동을 무단으로 이탈한 20대 환자가 간호학과 대학생의 기지와 신속한 신고로 발견돼 병원에 재입원했습니다. 오늘(17일) 인천 삼산경찰서에 따르면 부평구 정신병원에서 입원 치료를 받던 A씨는 지난 14",
+      "pubDate": "2026-11-17T11:11:20+09:00",
+      "category": "JTBC",
+      "press": "JTBC",
+      "source": "JTBC",
+      "queries": [
+        "환자"
+      ],
+      "source_type": "major",
+      "score": 4
+    },
+    {
+      "title": "환자 900여 명 정보, 제약사 영업에… 퇴사한 약국까지 무단 접속",
+      "link": "https://news.google.com/rss/articles/CBMibkFVX3lxTE1pQU1qRzk3dkhPRDhnZkVLVU9ld3YycDg3dVZnU3Bsd3hLYlk4V0hJT1VIVm80U2pXZ3pEVmp6Y202NVFBYWR1ZWpWQ19jU0RMTEtKYXdWOFBmaEY5UE9aX3JHQU5wOWZ6RVVkNFF30gFzQVVfeXFMTWNWZWhuMEVGaW9GRDdEeTBBcmdUOEVXLWpQSDduSkp6dktwdTJuT2ZaMndVZjZwU1FMT2V4cFNsWlR6cXYzYTZLOE1HdXA5T05BLTZjSm04T1dGYUoyalpaNGhUNWxNQUJDbTNRQzhIU3FVaw?oc=5",
+      "originallink": "https://news.google.com/rss/articles/CBMibkFVX3lxTE1pQU1qRzk3dkhPRDhnZkVLVU9ld3YycDg3dVZnU3Bsd3hLYlk4V0hJT1VIVm80U2pXZ3pEVmp6Y202NVFBYWR1ZWpWQ19jU0RMTEtKYXdWOFBmaEY5UE9aX3JHQU5wOWZ6RVVkNFF30gFzQVVfeXFMTWNWZWhuMEVGaW9GRDdEeTBBcmdUOEVXLWpQSDduSkp6dktwdTJuT2ZaMndVZjZwU1FMT2V4cFNsWlR6cXYzYTZLOE1HdXA5T05BLTZjSm04T1dGYUoyalpaNGhUNWxNQUJDbTNRQzhIU3FVaw?oc=5",
+      "summary": "",
+      "pubDate": "2026-11-17T11:11:00+09:00",
+      "category": "한국일보",
+      "press": "한국일보",
+      "source": "한국일보",
+      "queries": [
+        "환자"
       ],
       "source_type": "major",
       "score": 4
@@ -272,372 +376,12 @@
       "link": "https://news.google.com/rss/articles/CBMiaEFVX3lxTE5CTU5NQUVzNlhsbUE1U0NudG5BOTdPX0pybWtGUmVTMzJPbTBRZFg1ekNQazViT09YMV8xS3JuQ2VqRkh6ZURUOUdlYTRPaWhyNGtmYUFaS3dtMXVPZWNsOHZWdzVYdjhx?oc=5",
       "originallink": "https://news.google.com/rss/articles/CBMiaEFVX3lxTE5CTU5NQUVzNlhsbUE1U0NudG5BOTdPX0pybWtGUmVTMzJPbTBRZFg1ekNQazViT09YMV8xS3JuQ2VqRkh6ZURUOUdlYTRPaWhyNGtmYUFaS3dtMXVPZWNsOHZWdzVYdjhx?oc=5",
       "summary": "",
-      "pubDate": "2026-11-17T10:10:00+09:00",
+      "pubDate": "2026-11-17T10:09:00+09:00",
       "category": "한겨레",
       "press": "한겨레",
       "source": "한겨레",
       "queries": [
         "환자"
-      ],
-      "source_type": "major",
-      "score": 4
-    },
-    {
-      "title": "AI가 취약점 찾고 공격까지…구글 \"사람 없는 자율형 해킹 현실화\"",
-      "link": "https://news.google.com/rss/articles/CBMigwFBVV95cUxNc0hRT1JBQTVMVlh4R3pwbS1LSDJ5OHMtWGVIR3ltY2hFcXBZdloyam5DSUdzanZ3bWhOaGdfblFjTTFCU2t1NGJVS1h4cmJ4aERaYS03S2hIR3RMVXZMVi12OTNNV0tjLU5TNC1aZHdiWS14YUpYVjgzWVNwc2NqaURWQQ?oc=5",
-      "originallink": "https://news.google.com/rss/articles/CBMigwFBVV95cUxNc0hRT1JBQTVMVlh4R3pwbS1LSDJ5OHMtWGVIR3ltY2hFcXBZdloyam5DSUdzanZ3bWhOaGdfblFjTTFCU2t1NGJVS1h4cmJ4aERaYS03S2hIR3RMVXZMVi12OTNNV0tjLU5TNC1aZHdiWS14YUpYVjgzWVNwc2NqaURWQQ?oc=5",
-      "summary": "",
-      "pubDate": "2026-11-17T10:07:00+09:00",
-      "category": "조선일보",
-      "press": "조선일보",
-      "source": "조선일보",
-      "queries": [
-        "AI"
-      ],
-      "source_type": "major",
-      "score": 4
-    },
-    {
-      "title": "AI 커닝 세무사 수석, 경찰 출석…\"제가 한 일 숨기지 않겠다\"",
-      "link": "https://news.google.com/rss/articles/CBMia0FVX3lxTFBKRGV4b3U2RWtvdDF6NlZ3c0RYMHpyNUxrV2NWZmM1Z3dwa0VQMzBTd0xCaEhkSDRkdXpZYXpjUVFwaWlGamMwVEZILVlIWjhfODlYd2lGQjRVNGM3RU1LMUk1RHVfVm1RZ3Vz?oc=5",
-      "originallink": "https://news.google.com/rss/articles/CBMia0FVX3lxTFBKRGV4b3U2RWtvdDF6NlZ3c0RYMHpyNUxrV2NWZmM1Z3dwa0VQMzBTd0xCaEhkSDRkdXpZYXpjUVFwaWlGamMwVEZILVlIWjhfODlYd2lGQjRVNGM3RU1LMUk1RHVfVm1RZ3Vz?oc=5",
-      "summary": "",
-      "pubDate": "2026-11-17T10:05:00+09:00",
-      "category": "조선일보",
-      "press": "조선일보",
-      "source": "주간조선",
-      "queries": [
-        "AI"
-      ],
-      "source_type": "major",
-      "score": 4
-    },
-    {
-      "title": "AI가 집 안 환경 맞추고, 공간 자유자재로… GS건설, 미래형 ‘자이’ 공개",
-      "link": "https://news.google.com/rss/articles/CBMimAFBVV95cUxNSERhOEFkdXAyb1EtRmFkUno4ejBaUWJPOXdPUFNRdG9Jb2tpS2NJMHlUdDJKSlEzWDFZWXR5RmNjNGtVM09tZ0p4T2NsWldCOHltdE5nYi1oOTJoRTJQTTJ6c0kxTkVqVm1DeUs3c3RxUms0MVF2eGs0Rmg3YUtZSjNkSVVYZGhLR25VeTI2SEVlem14cV8yVw?oc=5",
-      "originallink": "https://news.google.com/rss/articles/CBMimAFBVV95cUxNSERhOEFkdXAyb1EtRmFkUno4ejBaUWJPOXdPUFNRdG9Jb2tpS2NJMHlUdDJKSlEzWDFZWXR5RmNjNGtVM09tZ0p4T2NsWldCOHltdE5nYi1oOTJoRTJQTTJ6c0kxTkVqVm1DeUs3c3RxUms0MVF2eGs0Rmg3YUtZSjNkSVVYZGhLR25VeTI2SEVlem14cV8yVw?oc=5",
-      "summary": "",
-      "pubDate": "2026-11-17T10:03:50+09:00",
-      "category": "조선일보",
-      "press": "조선일보",
-      "source": "Chosunbiz",
-      "queries": [
-        "AI"
-      ],
-      "source_type": "major",
-      "score": 4
-    },
-    {
-      "title": "IMF총재 “세계경제, AI ‘외발’로 지탱…1조 달러 ‘순환금융’ 뇌관”",
-      "link": "https://www.donga.com/news/Inter/article/all/20261117/135037370/1",
-      "originallink": "https://www.donga.com/news/Inter/article/all/20261117/135037370/1",
-      "summary": "세계 경제가 인공지능(AI)이라는 ‘외발’로 지탱되고 있으며, AI 투자가 흔들릴 경우 글로벌 금융 시장 위축으로 이어질 수 있다고 국제통화기금(IMF) 수장이 경고했다.크리스탈리나 게오르기에바 IMF 총재는 16일(현지 시간) 필리핀 동남아시아국가연합(ASEAN) 정상회의를 계기로 미 경제 매체 CNBC와 가진 인터뷰에서 “세계 경제가 AI라는 한쪽 다리로 서 있다”며 “이 다리가 흔들리면 금융 안정에 문제가 생길 수 있다”고 밝혔다.그는 “투자 심리가 급격히 위축되고 AI 분야에서 자금이 이탈하면 경제 성장세가 둔화할 수 있다”",
-      "pubDate": "2026-11-17T10:03:31+09:00",
-      "category": "동아일보",
-      "press": "동아일보",
-      "source": "동아일보",
-      "queries": [
-        "AI"
-      ],
-      "source_type": "major",
-      "score": 4
-    },
-    {
-      "title": "GS건설, ‘자이’ 미래 비전 발표... ‘AI 홈’ 내년 하반기 분양 단지부터 적용",
-      "link": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxNb0VpQkNwME5GOW91NFdYejR2dWtFUnB0cFduVmNROW9aMnpvdlczZUEydUh1TTdId0t2TW1uYVQ0NUsxdERnM1M5UWpsdllWczZoOHZJMXhMNXBsYV92UTlMUWNYMjFvemRCX1pIN1VVaWFHOG9Qa2FxOG1PcF9haDZGZHc3LV9B?oc=5",
-      "originallink": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxNb0VpQkNwME5GOW91NFdYejR2dWtFUnB0cFduVmNROW9aMnpvdlczZUEydUh1TTdId0t2TW1uYVQ0NUsxdERnM1M5UWpsdllWczZoOHZJMXhMNXBsYV92UTlMUWNYMjFvemRCX1pIN1VVaWFHOG9Qa2FxOG1PcF9haDZGZHc3LV9B?oc=5",
-      "summary": "",
-      "pubDate": "2026-11-17T10:03:19+09:00",
-      "category": "조선일보",
-      "press": "조선일보",
-      "source": "조선일보",
-      "queries": [
-        "AI"
-      ],
-      "source_type": "major",
-      "score": 4
-    },
-    {
-      "title": "AI에 뚫린 시험장, 정직함이 ‘약점’이 되는 사회",
-      "link": "https://news.google.com/rss/articles/CBMif0FVX3lxTE1mUEZGUlMxbUUyVHY4end1NmJXWkF1c3NkV0oyODdxTHBnOWNtbm5ZcnU0S0lDbmIxUXhpZDdzM0lfMW5nNDBnUnY2X3FpMTg2dDNFN01mREVBV1FYNG9TYnlNanhFeFlXQnMtSUp4WTJ3a2JFYlRpeVdsSTI5Ykk?oc=5",
-      "originallink": "https://news.google.com/rss/articles/CBMif0FVX3lxTE1mUEZGUlMxbUUyVHY4end1NmJXWkF1c3NkV0oyODdxTHBnOWNtbm5ZcnU0S0lDbmIxUXhpZDdzM0lfMW5nNDBnUnY2X3FpMTg2dDNFN01mREVBV1FYNG9TYnlNanhFeFlXQnMtSUp4WTJ3a2JFYlRpeVdsSTI5Ykk?oc=5",
-      "summary": "",
-      "pubDate": "2026-11-17T10:03:00+09:00",
-      "category": "조선일보",
-      "press": "조선일보",
-      "source": "헬스조선",
-      "queries": [
-        "AI"
-      ],
-      "source_type": "major",
-      "score": 4
-    },
-    {
-      "title": "SK이노, 에너지·사회 문제 해결하는 AI스타트업 키운다",
-      "link": "https://news.google.com/rss/articles/CBMihAFBVV95cUxPLUZ1ZloySHBlcnRURkQ4dGhKTzJXbGZ3aTBxUlZtdXNDVTNWZWFWck9pZ3hLbzZNREFPWXZMSEY5WUVENkVHeWxIOEVoUmhJMVVsRWxmZnMyWlBPeUxEeG12WkRRWVhRbEJpRXFjR0ZKY3VOZ05HOEdnQm1fcUZOYmg4bnjSAZgBQVVfeXFMTXBxYmhxVlJGd0VMZU9HTjlkWEdkSF9ZX3A3ZmJYZExGOEQ3UTI4WWhjcHlBSUZpY2JhRGV4NVdHRGIwVlRwZDdZUHA2Rkx3N3RubC1vbmZ6WlNqb2d2SWd0VUM3N1h1a1ZFSVB6WWdoLUx5TzUxYzRZVTVjREhONFdiV1otcU9kYUxfUHFCT21PeXNzUVRTTjQ?oc=5",
-      "originallink": "https://news.google.com/rss/articles/CBMihAFBVV95cUxPLUZ1ZloySHBlcnRURkQ4dGhKTzJXbGZ3aTBxUlZtdXNDVTNWZWFWck9pZ3hLbzZNREFPWXZMSEY5WUVENkVHeWxIOEVoUmhJMVVsRWxmZnMyWlBPeUxEeG12WkRRWVhRbEJpRXFjR0ZKY3VOZ05HOEdnQm1fcUZOYmg4bnjSAZgBQVVfeXFMTXBxYmhxVlJGd0VMZU9HTjlkWEdkSF9ZX3A3ZmJYZExGOEQ3UTI4WWhjcHlBSUZpY2JhRGV4NVdHRGIwVlRwZDdZUHA2Rkx3N3RubC1vbmZ6WlNqb2d2SWd0VUM3N1h1a1ZFSVB6WWdoLUx5TzUxYzRZVTVjREhONFdiV1otcU9kYUxfUHFCT21PeXNzUVRTTjQ?oc=5",
-      "summary": "",
-      "pubDate": "2026-11-17T10:02:00+09:00",
-      "category": "조선일보",
-      "press": "조선일보",
-      "source": "Chosunbiz",
-      "queries": [
-        "AI"
-      ],
-      "source_type": "major",
-      "score": 4
-    },
-    {
-      "title": "장성규, 수능 앞두고 AI 부정행위 사태에 소신발언 \"땀 흘려 노력한 친구들만\"[핫피플]",
-      "link": "https://news.google.com/rss/articles/CBMijwFBVV95cUxOMXl6VDZuemN2UlJMMWZCVU1teTBibEZSdjVsTlZzbTJFRDg0d2FNZmxUVm1KenZ0NHByMExqOUh2RnFoaEgzZ0YtS2hhY0RwZ29yYWNVeW94eXdGWW9GS0xWX3RBVnMtdjlncldDU09kak95NVFSRjdnOUJvdkJCOTZhalU1d2gzeWRPaEtkWQ?oc=5",
-      "originallink": "https://news.google.com/rss/articles/CBMijwFBVV95cUxOMXl6VDZuemN2UlJMMWZCVU1teTBibEZSdjVsTlZzbTJFRDg0d2FNZmxUVm1KenZ0NHByMExqOUh2RnFoaEgzZ0YtS2hhY0RwZ29yYWNVeW94eXdGWW9GS0xWX3RBVnMtdjlncldDU09kak95NVFSRjdnOUJvdkJCOTZhalU1d2gzeWRPaEtkWQ?oc=5",
-      "summary": "",
-      "pubDate": "2026-11-17T10:02:00+09:00",
-      "category": "조선일보",
-      "press": "조선일보",
-      "source": "조선일보",
-      "queries": [
-        "AI"
-      ],
-      "source_type": "major",
-      "score": 4
-    },
-    {
-      "title": "[개장] 코스피, 美 AI주 급락에 장중 5천선 붕괴",
-      "link": "https://news.google.com/rss/articles/CBMicEFVX3lxTE9WY0x6bl9LR29ZU3RRc0VQTjg3QWFFMndoaTlneDgzZ3BKYjZUeFV1cDF0a1g0TFZwTmtFUlpvandNbHl6OWdjT1lGcXpoR3VxQXh4enRTaHpJTUE4THNwdmE3T0NNMVlFUDJQdDNRWHrSAXRBVV95cUxNOEg4NG4wT3dNcHRMWGNfdHdWdFZYOTlYTWdXLTNhV0U0alhMajJ3aTE0cVhhdkRiM0VuZ0NxLU1VTTNmMGhSRXFlZ3dGSTRhLUI4VGNOSVFOOTkyMV9pNHhQLUUzTFFzUWZ4ajNDdWIxT215bw?oc=5",
-      "originallink": "https://news.google.com/rss/articles/CBMicEFVX3lxTE9WY0x6bl9LR29ZU3RRc0VQTjg3QWFFMndoaTlneDgzZ3BKYjZUeFV1cDF0a1g0TFZwTmtFUlpvandNbHl6OWdjT1lGcXpoR3VxQXh4enRTaHpJTUE4THNwdmE3T0NNMVlFUDJQdDNRWHrSAXRBVV95cUxNOEg4NG4wT3dNcHRMWGNfdHdWdFZYOTlYTWdXLTNhV0U0alhMajJ3aTE0cVhhdkRiM0VuZ0NxLU1VTTNmMGhSRXFlZ3dGSTRhLUI4VGNOSVFOOTkyMV9pNHhQLUUzTFFzUWZ4ajNDdWIxT215bw?oc=5",
-      "summary": "",
-      "pubDate": "2026-11-17T10:01:43+09:00",
-      "category": "조선일보",
-      "press": "조선일보",
-      "source": "IT조선",
-      "queries": [
-        "AI"
-      ],
-      "source_type": "major",
-      "score": 4
-    },
-    {
-      "title": "해외 2년·국내 6개월 전 AI 커닝 경고…교육부는 ‘뒷북’",
-      "link": "https://www.donga.com/news/Society/article/all/20261117/135037340/1",
-      "originallink": "https://www.donga.com/news/Society/article/all/20261117/135037340/1",
-      "summary": "해외에서는 2년 전, 국내에서는 6개월 전부터 인공지능(AI)을 이용한 시험 부정행위가 확인됐지만 교육부의 대응은 뒤늦었다는 비판이 나온다. 구체적인 대학수학능력시험(수능) 단속 대책을 지난달 말에야 발표한 데 이어 수능을 이틀 앞두고 부랴부랴 추가 대응에 나섰다.17일 교육계에 따르면 AI를 이용한 대학입시 부정행위 적발 사례는 2024년 6월 튀르키예에서 나왔다. 당시 현지 대입시험 응시자가 초소형 카메라와 AI를 활용해 부정행위를 시도한 혐의로 체포됐다.이 사건은 AI 안경을 이용한 부정행위가 아니었다. 초소형 카메라로 시험문",
-      "pubDate": "2026-11-17T10:01:17+09:00",
-      "category": "동아일보",
-      "press": "동아일보",
-      "source": "동아일보",
-      "queries": [
-        "AI"
-      ],
-      "source_type": "major",
-      "score": 4
-    },
-    {
-      "title": "삼성전자, 초중교 교실 찾아가는 AI 수업에 ‘갤럭시 XR’ 도입",
-      "link": "https://news.google.com/rss/articles/CBMiggFBVV95cUxQZlUwX243dC1DeVpwU0ppWElDdmFPcjFIZ0NvajFQc2ZkS0o4RzV6UUtveWVmX1QzQXBJNDR6OVN3QlN1cEtKam1vcVVHdzBMTlZmN0pIYkFnVERGcGNhRzNmRlptbXBHb01OUkxJNllpX184eUlBczloaGhycTR6QmZ30gGWAUFVX3lxTFBZYlRFWmJ3azM0cUNWZno3R2ZXWS1ZUDkydUxtOS1fR09xX3FIekQtRDFKcktYWG5hVkwwN20zSG9ET2pzSUFpTS1vZnMyZDNRMlU0NDFUNWRVTEVaenlGcV9JcTRQNVBUSmpMZVM5aXkxODd1T2JVbkpCUFpjaEJiUkdzdzFfdHpyOGNydmFQVHlMRE1IUQ?oc=5",
-      "originallink": "https://news.google.com/rss/articles/CBMiggFBVV95cUxQZlUwX243dC1DeVpwU0ppWElDdmFPcjFIZ0NvajFQc2ZkS0o4RzV6UUtveWVmX1QzQXBJNDR6OVN3QlN1cEtKam1vcVVHdzBMTlZmN0pIYkFnVERGcGNhRzNmRlptbXBHb01OUkxJNllpX184eUlBczloaGhycTR6QmZ30gGWAUFVX3lxTFBZYlRFWmJ3azM0cUNWZno3R2ZXWS1ZUDkydUxtOS1fR09xX3FIekQtRDFKcktYWG5hVkwwN20zSG9ET2pzSUFpTS1vZnMyZDNRMlU0NDFUNWRVTEVaenlGcV9JcTRQNVBUSmpMZVM5aXkxODd1T2JVbkpCUFpjaEJiUkdzdzFfdHpyOGNydmFQVHlMRE1IUQ?oc=5",
-      "summary": "",
-      "pubDate": "2026-11-17T10:01:00+09:00",
-      "category": "조선일보",
-      "press": "조선일보",
-      "source": "Chosunbiz",
-      "queries": [
-        "AI"
-      ],
-      "source_type": "major",
-      "score": 4
-    },
-    {
-      "title": "포항 선린병원 앞 도로서 폭 1m 크기 포트 홀…운전자 불편",
-      "link": "https://www.donga.com/news/Society/article/all/20261117/135037266/1",
-      "originallink": "https://www.donga.com/news/Society/article/all/20261117/135037266/1",
-      "summary": "16일 오후 1시30분쯤 경북 포항시 북구 선린병원 앞 4차로 도로 중 한 개 차로에서 폭 1m, 깊이 50㎝ 크기의 포토 홀이 발생해 운전자들이 불편을 겪었다.신고를 받은 포항시는 포트 홀이 발생한 도로 아래 매설된 상수도 및 하수 관로 등에 대한 점검을 마친 후 이날 오후 7시쯤 복구 작업을 마쳤다.현재 포트홀로 인한 상수관로 등의 파손 ㅣ피해는 없는 것으로 전해졌다.포항시 관계자는 “시민들의 안전을 위해 임시 포장을 했고 비가 그치면 포장 작업을 할 계획”이라고 밝혔다.(뉴스1)",
-      "pubDate": "2026-11-17T09:54:00+09:00",
-      "category": "동아일보",
-      "press": "동아일보",
-      "source": "동아일보",
-      "queries": [
-        "병원"
-      ],
-      "source_type": "major",
-      "score": 4
-    },
-    {
-      "title": "엠로, 전력 인프라 기업에 AI 에이전트 공급…“구매 업무 시간 50% 단축”",
-      "link": "https://news.google.com/rss/articles/CBMiggFBVV95cUxQcUZacnNibTZCN2w0SG5PUXFnLWJ6NkJHX0RpdWdoYTkxLUxWVGotVmFBZ0xuUlFxUkxUMzE5bGlpMjl5dnVnNGdSa1p5MDBHSldrNVE4QW4wWWJlZmVDcjUxRWZyMVd3ek5uZE55UG5PMDUtb3RmSDJ5T192Zk9SRjhn0gGWAUFVX3lxTE0yUkk0WmphajJIZVd1LXF5YkhOOHk3WFJ3clFDU0lCODYzT3Y0cmtGYlhXQVNWTXFXU2pZbWF2QnZaalZlZW12Zm9uN2ZZVGtxd2x4Q3l6NjNUSFlzUWZCTHlfN0haWUNWZDlkRGpwQmVDakhxM1RIRHFFSnlMS1VQSWZYR3hhVWNJWEVZUzY0UXNyZHRudw?oc=5",
-      "originallink": "https://news.google.com/rss/articles/CBMiggFBVV95cUxQcUZacnNibTZCN2w0SG5PUXFnLWJ6NkJHX0RpdWdoYTkxLUxWVGotVmFBZ0xuUlFxUkxUMzE5bGlpMjl5dnVnNGdSa1p5MDBHSldrNVE4QW4wWWJlZmVDcjUxRWZyMVd3ek5uZE55UG5PMDUtb3RmSDJ5T192Zk9SRjhn0gGWAUFVX3lxTE0yUkk0WmphajJIZVd1LXF5YkhOOHk3WFJ3clFDU0lCODYzT3Y0cmtGYlhXQVNWTXFXU2pZbWF2QnZaalZlZW12Zm9uN2ZZVGtxd2x4Q3l6NjNUSFlzUWZCTHlfN0haWUNWZDlkRGpwQmVDakhxM1RIRHFFSnlMS1VQSWZYR3hhVWNJWEVZUzY0UXNyZHRudw?oc=5",
-      "summary": "",
-      "pubDate": "2026-11-17T09:52:00+09:00",
-      "category": "조선일보",
-      "press": "조선일보",
-      "source": "Chosunbiz",
-      "queries": [
-        "AI"
-      ],
-      "source_type": "major",
-      "score": 4
-    },
-    {
-      "title": "30대 그룹, 올 상반기 지분투자 27% AI에 집중",
-      "link": "https://news.google.com/rss/articles/CBMijwFBVV95cUxOZUkwa1ZTRVlma2FEak03ZXNVNXNwWW91cEhCMVlSSlhhX3RGNVdYZ1YyMHJQbklrdjlfYmF5TWhfU2FIdWxVMjQ2bXBVZmJ6MXBObDNYdWdlWUwyT2MwZ25RUGFLb2xiUk1aMkkxeUR3dVZMaDJiSnZVandFX1FEc19nUzZFUnJDZEdYMzhvdw?oc=5",
-      "originallink": "https://news.google.com/rss/articles/CBMijwFBVV95cUxOZUkwa1ZTRVlma2FEak03ZXNVNXNwWW91cEhCMVlSSlhhX3RGNVdYZ1YyMHJQbklrdjlfYmF5TWhfU2FIdWxVMjQ2bXBVZmJ6MXBObDNYdWdlWUwyT2MwZ25RUGFLb2xiUk1aMkkxeUR3dVZMaDJiSnZVandFX1FEc19nUzZFUnJDZEdYMzhvdw?oc=5",
-      "summary": "",
-      "pubDate": "2026-11-17T09:52:00+09:00",
-      "category": "조선일보",
-      "press": "조선일보",
-      "source": "조선일보",
-      "queries": [
-        "AI"
-      ],
-      "source_type": "major",
-      "score": 4
-    },
-    {
-      "title": "공연 속 독립운동가 되어볼까… AI로 만나는 체험전시 ‘독립여정’",
-      "link": "https://www.khan.co.kr/article/202611170952001/?utm_source=khan_rss&utm_medium=rss&utm_campaign=total_news",
-      "originallink": "https://www.khan.co.kr/article/202611170952001/?utm_source=khan_rss&utm_medium=rss&utm_campaign=total_news",
-      "summary": "체험전시를 통해 관객은 독립운동가가 되어 5단계 여정을 통해 이야기를 경험하고 몰입할 수 있다.창작가무극 과 연계한 AI 체험전시 ‘독립여정’이 오는 21일까지 서울 중구 국립극장 해오름극장 3층 로비에서 열린다.이번 전시는 백범 김구 탄생 150주년과 서울예술단 창단 40주년을 기념해 마련됐다. 공연 관람에 그치지 않고 관객이 작품 속 ···",
-      "pubDate": "2026-11-17T09:52:00+09:00",
-      "category": "경향신문",
-      "press": "경향신문",
-      "source": "경향신문",
-      "queries": [
-        "AI"
-      ],
-      "source_type": "major",
-      "score": 4
-    },
-    {
-      "title": "부산 치과계 ‘국립치의학연구원 부산 유치’ 한목소리",
-      "link": "https://news.google.com/rss/articles/CBMicEFVX3lxTE9aZWQ2ZlhHemFiako1N3hXZlIwZUhNTFZnZlhTYll2ZDZWV0RHMjhfelZzVy0zb2lPUEFlYjYyRlpJcjJOalV1WFdkN2hTR2VNdDZSdHJiVUxGT3dwX0szam00YmdlUXM3bXdJWmd6LUo?oc=5",
-      "originallink": "https://news.google.com/rss/articles/CBMicEFVX3lxTE9aZWQ2ZlhHemFiako1N3hXZlIwZUhNTFZnZlhTYll2ZDZWV0RHMjhfelZzVy0zb2lPUEFlYjYyRlpJcjJOalV1WFdkN2hTR2VNdDZSdHJiVUxGT3dwX0szam00YmdlUXM3bXdJWmd6LUo?oc=5",
-      "summary": "",
-      "pubDate": "2026-11-17T09:51:00+09:00",
-      "category": "조선일보",
-      "press": "조선일보",
-      "source": "헬스조선",
-      "queries": [
-        "의학"
-      ],
-      "source_type": "major",
-      "score": 4
-    },
-    {
-      "title": "다쏘시스템, 아리스글로벌 인수 완료…통합 AI 플랫폼으로 바이오 사업 확대",
-      "link": "https://news.google.com/rss/articles/CBMiggFBVV95cUxNTXBEanBuRDltc1BEZ01uQV9xSURveDZSYXJtS1ZhY3FZNllXVHBTR1FWMU1FZFJoN3dtU00yWkFRTkhKbDFERVpxcm1pMDctSzkwWjRnWVdCQ0hCVmphSzJ4NFkzQjdINWZCOEFOczhFeDVkbERRallvYWstZG5mZW93?oc=5",
-      "originallink": "https://news.google.com/rss/articles/CBMiggFBVV95cUxNTXBEanBuRDltc1BEZ01uQV9xSURveDZSYXJtS1ZhY3FZNllXVHBTR1FWMU1FZFJoN3dtU00yWkFRTkhKbDFERVpxcm1pMDctSzkwWjRnWVdCQ0hCVmphSzJ4NFkzQjdINWZCOEFOczhFeDVkbERRallvYWstZG5mZW93?oc=5",
-      "summary": "",
-      "pubDate": "2026-11-17T09:50:00+09:00",
-      "category": "조선일보",
-      "press": "조선일보",
-      "source": "Chosunbiz",
-      "queries": [
-        "AI"
-      ],
-      "source_type": "major",
-      "score": 4
-    },
-    {
-      "title": "한국, 미 주도 AI 공급망 보호 ‘샌프란시스코 선언’에 서명",
-      "link": "https://news.google.com/rss/articles/CBMiggFBVV95cUxPdndyeTBTOEpzcXJnQV9KUlVHX194a0w0b0hWTTU0SWdtNng5T09FNW5GYU5JTkgyTDZXOEJYeUtjOFllTjZJdkpxTkpoZnZJZ1ctYzNMSi1YOGxMYThYaXNtTVIzVWs4RlpUSkdUVWNINXF4SmlPaGtVM3RfNXJFWU13?oc=5",
-      "originallink": "https://news.google.com/rss/articles/CBMiggFBVV95cUxPdndyeTBTOEpzcXJnQV9KUlVHX194a0w0b0hWTTU0SWdtNng5T09FNW5GYU5JTkgyTDZXOEJYeUtjOFllTjZJdkpxTkpoZnZJZ1ctYzNMSi1YOGxMYThYaXNtTVIzVWs4RlpUSkdUVWNINXF4SmlPaGtVM3RfNXJFWU13?oc=5",
-      "summary": "",
-      "pubDate": "2026-11-17T09:49:00+09:00",
-      "category": "한겨레",
-      "press": "한겨레",
-      "source": "한겨레",
-      "queries": [
-        "AI"
-      ],
-      "source_type": "major",
-      "score": 4
-    },
-    {
-      "title": "中 AI 해킹 능력도 통제한다…알리바바·텐센트 등 해킹 기능 제한｜Global Money Club",
-      "link": "https://news.google.com/rss/articles/CBMiW0FVX3lxTE54ZXNpcllKNUhPLWtoTDNCb0hIUW52ZGU1U3Y4aWMyNUtNek9Zd0p0TzhNdVplSHl6T3BkbEt0R2NqaHFvTnBRdnh1Ml9pN05FTVlWUDBCQWwwbTA?oc=5",
-      "originallink": "https://news.google.com/rss/articles/CBMiW0FVX3lxTE54ZXNpcllKNUhPLWtoTDNCb0hIUW52ZGU1U3Y4aWMyNUtNek9Zd0p0TzhNdVplSHl6T3BkbEt0R2NqaHFvTnBRdnh1Ml9pN05FTVlWUDBCQWwwbTA?oc=5",
-      "summary": "",
-      "pubDate": "2026-11-17T09:46:04+09:00",
-      "category": "중앙일보",
-      "press": "중앙일보",
-      "source": "중앙일보",
-      "queries": [
-        "AI"
-      ],
-      "source_type": "major",
-      "score": 4
-    },
-    {
-      "title": "‘AI 커닝’ 세무사 수석 합격자 경찰 출석…“잘못 책임지겠다”",
-      "link": "https://news.google.com/rss/articles/CBMickFVX3lxTFBuZnRlRVpmMHFpSDVwRnBVdVhGZ2stNHNUdGJ5ZHg0cFhCWFQ1QW5Wa0ZCdDA0ZHBZaEFrSDI3X1VNNy1uX09uMy1haEV2MWZ5Y3d5bW4zM09OMVNrenlJRlQxN2FPdlZnRm9xcDJoLVcwUQ?oc=5",
-      "originallink": "https://news.google.com/rss/articles/CBMickFVX3lxTFBuZnRlRVpmMHFpSDVwRnBVdVhGZ2stNHNUdGJ5ZHg0cFhCWFQ1QW5Wa0ZCdDA0ZHBZaEFrSDI3X1VNNy1uX09uMy1haEV2MWZ5Y3d5bW4zM09OMVNrenlJRlQxN2FPdlZnRm9xcDJoLVcwUQ?oc=5",
-      "summary": "",
-      "pubDate": "2026-11-17T09:46:00+09:00",
-      "category": "한겨레",
-      "press": "한겨레",
-      "source": "한겨레",
-      "queries": [
-        "AI"
-      ],
-      "source_type": "major",
-      "score": 4
-    },
-    {
-      "title": "[인터뷰] \"아산을 제2의 실리콘밸리로\"…삼성 투자·AI로 미래산업 선도",
-      "link": "https://news.jtbc.co.kr/article/NB12328382",
-      "originallink": "https://news.jtbc.co.kr/article/NB12328382",
-      "summary": "■ 방송 : JTBC 아침& / 진행 : 정재우 ■ 저작권은 JTBC 뉴스에 있습니다. 인용보도 시 출처를 밝혀주시기 바랍니다. ※ 아래 텍스트는 실제 내용과 차이가 있을 수 있습니다. 정확한 내용은 영상을 통해 확",
-      "pubDate": "2026-11-17T09:43:49+09:00",
-      "category": "JTBC",
-      "press": "JTBC",
-      "source": "JTBC",
-      "queries": [
-        "AI"
-      ],
-      "source_type": "major",
-      "score": 4
-    },
-    {
-      "title": "軍도 ‘AI 안경’ 반입 금지…의심 안경테, X-ray 통과해야",
-      "link": "https://news.google.com/rss/articles/CBMiVkFVX3lxTFBYaEtuU1dQazBfalZjZy1qdlFLUnVHdUROVFU5R3poejBfMktUMHJmNlVhczdKMG5xRFQ0cEp6bkN5RXlFLTNrYVY1WWxRLWlYWklTY0R3?oc=5",
-      "originallink": "https://news.google.com/rss/articles/CBMiVkFVX3lxTFBYaEtuU1dQazBfalZjZy1qdlFLUnVHdUROVFU5R3poejBfMktUMHJmNlVhczdKMG5xRFQ0cEp6bkN5RXlFLTNrYVY1WWxRLWlYWklTY0R3?oc=5",
-      "summary": "",
-      "pubDate": "2026-11-17T09:43:23+09:00",
-      "category": "중앙일보",
-      "press": "중앙일보",
-      "source": "중앙일보",
-      "queries": [
-        "AI"
-      ],
-      "source_type": "major",
-      "score": 4
-    },
-    {
-      "title": "\"삼수를 했던 자로서\"…장성규, D-2 수능 AI 부정행위 우려 목소리 동참",
-      "link": "https://news.google.com/rss/articles/CBMilAFBVV95cUxOT1JEbXE1UW5QbTJvSXMzM2R5Mzhxa2FWckZ5WnJ6Y0ZhVWQ0WlJuOUNNZ1g5ZGV3aF9QRUNmQW94R0pMM0xONTRRbnVJX0pYNWhZbExxcWgwUEZNcnBqUkVJbDVYZGN4RkhCVW1lU0VXWGREYnNaclllMWdKdGxOQ2tZaE9wcVMtdzhycDB5b3lKXzRX?oc=5",
-      "originallink": "https://news.google.com/rss/articles/CBMilAFBVV95cUxOT1JEbXE1UW5QbTJvSXMzM2R5Mzhxa2FWckZ5WnJ6Y0ZhVWQ0WlJuOUNNZ1g5ZGV3aF9QRUNmQW94R0pMM0xONTRRbnVJX0pYNWhZbExxcWgwUEZNcnBqUkVJbDVYZGN4RkhCVW1lU0VXWGREYnNaclllMWdKdGxOQ2tZaE9wcVMtdzhycDB5b3lKXzRX?oc=5",
-      "summary": "",
-      "pubDate": "2026-11-17T09:43:00+09:00",
-      "category": "조선일보",
-      "press": "조선일보",
-      "source": "조선일보",
-      "queries": [
-        "AI"
-      ],
-      "source_type": "major",
-      "score": 4
-    },
-    {
-      "title": "김민석 \"AI 부정행위 10년 제재 강화…최교진 답변, 우려 자아내\"",
-      "link": "https://news.google.com/rss/articles/CBMihgFBVV95cUxOOV9pWVFUeU9YZFBqQUJaNnpPZHVwMHd3QzloVWoxSnk3X3dudTlBRVNWT0g5SmR6OVA3TEpFYmc0WEhRZHhFUGR0MkJrV09wSFh5WUxvS2hmdTFNdUNyMy1tRC04NzN2OGloQ2lkSlVWWkhINng1YW5SRzZkSUVSSnoyUnNFQQ?oc=5",
-      "originallink": "https://news.google.com/rss/articles/CBMihgFBVV95cUxOOV9pWVFUeU9YZFBqQUJaNnpPZHVwMHd3QzloVWoxSnk3X3dudTlBRVNWT0g5SmR6OVA3TEpFYmc0WEhRZHhFUGR0MkJrV09wSFh5WUxvS2hmdTFNdUNyMy1tRC04NzN2OGloQ2lkSlVWWkhINng1YW5SRzZkSUVSSnoyUnNFQQ?oc=5",
-      "summary": "",
-      "pubDate": "2026-11-17T09:43:00+09:00",
-      "category": "조선일보",
-      "press": "조선일보",
-      "source": "조선일보",
-      "queries": [
-        "AI"
       ],
       "source_type": "major",
       "score": 4
@@ -653,1521 +397,6 @@
       "source": "중앙일보",
       "queries": [
         "의사"
-      ],
-      "source_type": "major",
-      "score": 4
-    },
-    {
-      "title": "‘AI 커닝’ 세무사 수석 경찰 출석…“수험생 분들께 죄송”",
-      "link": "https://www.donga.com/news/Society/article/all/20261117/135037069/2",
-      "originallink": "https://www.donga.com/news/Society/article/all/20261117/135037069/2",
-      "summary": "인공지능(AI)을 이용해 부정행위를 저질렀다고 자수한 제63회 세무사 자격시험 수석 합격자 한원석 씨가 17일 경찰에 출석했다.한 씨는 이날 오전 9시경 서울경찰청 광역수사단에 출석했다. 경찰은 한 씨를 피의자 신분으로 전환할 예정이다. 검은색 패딩 차림으로 마스크를 쓴 채 모습을 드러낸 한 씨는 ‘자수를 결심하게 된 계기가 뭔가’라는 질문에 “죄송합니다”라고 답했다. 이어 ‘부정행위는 혼자 계획하고 실행하신 건가’라는 물음에는 “시험을 준비해 오신 수험생 분들과 관계자분들께 진심으로 죄송하다”며 “제가 한 일을 숨기지 않고 수사 ",
-      "pubDate": "2026-11-17T09:42:00+09:00",
-      "category": "동아일보",
-      "press": "동아일보",
-      "source": "동아일보",
-      "queries": [
-        "AI"
-      ],
-      "source_type": "major",
-      "score": 4
-    },
-    {
-      "title": "영상치의학회 송년학술대회 특강 2편 선사한다",
-      "link": "https://news.google.com/rss/articles/CBMicEFVX3lxTE12eVBXYjBtbWdCbnV1T3NnZGN0cjk5ZVMxdm1hWlIxYnVuZGE5dmVLVTBjUnJYUDVkLVNwejA0US1iV0pCeHpkMHFuQnhXeldZYVJNRU9LTXRPU0IxVzBXV1ZfcnNQT2dEWFNCRXdYS3U?oc=5",
-      "originallink": "https://news.google.com/rss/articles/CBMicEFVX3lxTE12eVBXYjBtbWdCbnV1T3NnZGN0cjk5ZVMxdm1hWlIxYnVuZGE5dmVLVTBjUnJYUDVkLVNwejA0US1iV0pCeHpkMHFuQnhXeldZYVJNRU9LTXRPU0IxVzBXV1ZfcnNQT2dEWFNCRXdYS3U?oc=5",
-      "summary": "",
-      "pubDate": "2026-11-17T09:41:00+09:00",
-      "category": "조선일보",
-      "press": "조선일보",
-      "source": "헬스조선",
-      "queries": [
-        "의학"
-      ],
-      "source_type": "major",
-      "score": 4
-    },
-    {
-      "title": "인공지능 생성 얼굴을 가려내는 6가지 기준",
-      "link": "https://news.google.com/rss/articles/CBMickFVX3lxTFB2VUYyNVVsTktYVkI3ZWthM0QtQTg3OS1OOW9xTVBsb0ozb0Nla2RSUzV5UXdQVF8za0JaV0JYOUp4LXhPZnI2Z0xNRnNlcHp0VDY0YU95N3NNczVOREZCM2IyWUhqVGRUU05COVRkMjNtdw?oc=5",
-      "originallink": "https://news.google.com/rss/articles/CBMickFVX3lxTFB2VUYyNVVsTktYVkI3ZWthM0QtQTg3OS1OOW9xTVBsb0ozb0Nla2RSUzV5UXdQVF8za0JaV0JYOUp4LXhPZnI2Z0xNRnNlcHp0VDY0YU95N3NNczVOREZCM2IyWUhqVGRUU05COVRkMjNtdw?oc=5",
-      "summary": "",
-      "pubDate": "2026-11-17T09:39:00+09:00",
-      "category": "한겨레",
-      "press": "한겨레",
-      "source": "한겨레",
-      "queries": [
-        "인공지능"
-      ],
-      "source_type": "major",
-      "score": 4
-    },
-    {
-      "title": "수능 AI 커닝, 와이파이 막아도 가능…통신 차단 땐 주변 피해",
-      "link": "https://news.google.com/rss/articles/CBMiakFVX3lxTE5GRXF2MTljSHAySUQ4MU9oRUNtZEFCRG54REFSb0lQcklzRGctS1pHVkp5ck1GbHJtVGJaVkRqa0hqeG1ESjFXN240RmluQmlwYld0eVVWYkpWQm5tSDNiYW9SVlpTRzk0UHc?oc=5",
-      "originallink": "https://news.google.com/rss/articles/CBMiakFVX3lxTE5GRXF2MTljSHAySUQ4MU9oRUNtZEFCRG54REFSb0lQcklzRGctS1pHVkp5ck1GbHJtVGJaVkRqa0hqeG1ESjFXN240RmluQmlwYld0eVVWYkpWQm5tSDNiYW9SVlpTRzk0UHc?oc=5",
-      "summary": "",
-      "pubDate": "2026-11-17T09:35:00+09:00",
-      "category": "한겨레",
-      "press": "한겨레",
-      "source": "한겨레",
-      "queries": [
-        "AI"
-      ],
-      "source_type": "major",
-      "score": 4
-    },
-    {
-      "title": "AI 커닝 장비 구매처까지 SNS 확산…정부, 정보 차단 나선다",
-      "link": "https://news.google.com/rss/articles/CBMiVkFVX3lxTE5iRmpFMVhFLXhjdU92UFFYckRteTFiVU5RS29USmxQQ2N1b0hXcUIzbG1uZkxwVFNBQUVPZ193MlZuWDBzN2MtVFBaUnFCS0Z3cGhZYzRR?oc=5",
-      "originallink": "https://news.google.com/rss/articles/CBMiVkFVX3lxTE5iRmpFMVhFLXhjdU92UFFYckRteTFiVU5RS29USmxQQ2N1b0hXcUIzbG1uZkxwVFNBQUVPZ193MlZuWDBzN2MtVFBaUnFCS0Z3cGhZYzRR?oc=5",
-      "summary": "",
-      "pubDate": "2026-11-17T09:31:58+09:00",
-      "category": "중앙일보",
-      "press": "중앙일보",
-      "source": "중앙일보",
-      "queries": [
-        "AI"
-      ],
-      "source_type": "major",
-      "score": 4
-    },
-    {
-      "title": "CJ대한통운, AI 물류 기술 브랜드 ‘테시브’ 출시",
-      "link": "https://news.google.com/rss/articles/CBMihAFBVV95cUxNMHFzT01GaWZSMXdUd2hVMnJFbWlGS2p5R2h4NjZ6dGhnWC10QUVjRkNnajhvWTJZbk5sTE1QQnNjNklPckhiRDktNTdyWnZRamp6QXp3R0dHYWRGaUowUkRWY1ZJTFR6dkN3bFZ4NjdzOWRHd1VMeGdKRkZBVlNOYW5WYXHSAZgBQVVfeXFMUHc4dlBBa2xGVnNLNXlvTGRqcS0wZkFKbDFnamY4QWxZLUF5MGlxdVZYUjVOekdzZXdKTGs2ejlIWjhFZ29SNmcxdXdaNzZ6OGhxTWRJR0xiOWFZUmptTzBqV05yYnBFRGViU0JCRlhwYXBfejNuVzJMa1c1dTZjamJ3ZDMyc0pvMmxJM05SR01KRHpTZ2paaTI?oc=5",
-      "originallink": "https://news.google.com/rss/articles/CBMihAFBVV95cUxNMHFzT01GaWZSMXdUd2hVMnJFbWlGS2p5R2h4NjZ6dGhnWC10QUVjRkNnajhvWTJZbk5sTE1QQnNjNklPckhiRDktNTdyWnZRamp6QXp3R0dHYWRGaUowUkRWY1ZJTFR6dkN3bFZ4NjdzOWRHd1VMeGdKRkZBVlNOYW5WYXHSAZgBQVVfeXFMUHc4dlBBa2xGVnNLNXlvTGRqcS0wZkFKbDFnamY4QWxZLUF5MGlxdVZYUjVOekdzZXdKTGs2ejlIWjhFZ29SNmcxdXdaNzZ6OGhxTWRJR0xiOWFZUmptTzBqV05yYnBFRGViU0JCRlhwYXBfejNuVzJMa1c1dTZjamJ3ZDMyc0pvMmxJM05SR01KRHpTZ2paaTI?oc=5",
-      "summary": "",
-      "pubDate": "2026-11-17T09:31:00+09:00",
-      "category": "조선일보",
-      "press": "조선일보",
-      "source": "Chosunbiz",
-      "queries": [
-        "AI"
-      ],
-      "source_type": "major",
-      "score": 4
-    },
-    {
-      "title": "어도비, 크리에이티브 클라우드에 AI 에이전트 확대",
-      "link": "https://news.google.com/rss/articles/CBMiggFBVV95cUxNcEl6ZWVJamVDNzZnVm5XVjNYWFh0ZlFQa1lkV3hBeGJJZGczN0wxazJRRENrc1plOEV5Q28tLVY0QTEwckJPXzF4VWdWaVJJQnN4VFMtaEE1SGFCM245ZmlRT29mUTMyb2NWTkZDTk9EMDZzX0swaVVuVmxldF94Z3Nn0gGWAUFVX3lxTE1yWU5JRGluUG9zZXNBelU2MnYwR19JSG45UXZBMWRCVFE3ZWU5T01Idjk4bGJyUTZEMEtTRmJxX3AzZk41Q1dXdXYzaDk1ei1PcVZobzBIRzdzMW5rVHdaNmVkcmE3UjhIcHFjNTg0WUtpUHBqOV8tV0VOZUo3MXhvdVN1aHg0OUNWaWJZRlJRNnRCbzBnUQ?oc=5",
-      "originallink": "https://news.google.com/rss/articles/CBMiggFBVV95cUxNcEl6ZWVJamVDNzZnVm5XVjNYWFh0ZlFQa1lkV3hBeGJJZGczN0wxazJRRENrc1plOEV5Q28tLVY0QTEwckJPXzF4VWdWaVJJQnN4VFMtaEE1SGFCM245ZmlRT29mUTMyb2NWTkZDTk9EMDZzX0swaVVuVmxldF94Z3Nn0gGWAUFVX3lxTE1yWU5JRGluUG9zZXNBelU2MnYwR19JSG45UXZBMWRCVFE3ZWU5T01Idjk4bGJyUTZEMEtTRmJxX3AzZk41Q1dXdXYzaDk1ei1PcVZobzBIRzdzMW5rVHdaNmVkcmE3UjhIcHFjNTg0WUtpUHBqOV8tV0VOZUo3MXhvdVN1aHg0OUNWaWJZRlJRNnRCbzBnUQ?oc=5",
-      "summary": "",
-      "pubDate": "2026-11-17T09:29:00+09:00",
-      "category": "조선일보",
-      "press": "조선일보",
-      "source": "Chosunbiz",
-      "queries": [
-        "AI"
-      ],
-      "source_type": "major",
-      "score": 4
-    },
-    {
-      "title": "[속보] ‘AI 커닝’ 세무사 수석, 경찰 출석… “잘못 책임지겠다”",
-      "link": "https://news.google.com/rss/articles/CBMiigFBVV95cUxOLVc2RHk0UGM4VDhZbkpCR3BTa3F2emY3QklBLTZhOFdsTWtuY1J0ZUFHX2RCbWFNc2VqNlBMdF8wWFlFcGRNakdTVDhqWGN1M3BPU1Jad09DZmNOVHkxY1JkWHVaczhCUDNUeTBOazJad2tOTzFmZGlod1lrV2U1b2gtMk9NWDRuc1HSAZ4BQVVfeXFMTlF1UGVaR2QtTEFfMnFUaE9pRFRmclQyOTFjY0pSbGxCMV9zWC1FM3F0eTc0WDBqX283V2ZGanhWUHA1T3ZnOXd1OS1WaVVkdFlSQmJqblozal9saXllcUdpUDAxNXliQXlRR3NSZ25rRmRyQ0VlVjd6QXFqRGNlOTl2c3pwOW1jM05CSU1vVHN3TU5OYS1kbjlnMlBST0E?oc=5",
-      "originallink": "https://news.google.com/rss/articles/CBMiigFBVV95cUxOLVc2RHk0UGM4VDhZbkpCR3BTa3F2emY3QklBLTZhOFdsTWtuY1J0ZUFHX2RCbWFNc2VqNlBMdF8wWFlFcGRNakdTVDhqWGN1M3BPU1Jad09DZmNOVHkxY1JkWHVaczhCUDNUeTBOazJad2tOTzFmZGlod1lrV2U1b2gtMk9NWDRuc1HSAZ4BQVVfeXFMTlF1UGVaR2QtTEFfMnFUaE9pRFRmclQyOTFjY0pSbGxCMV9zWC1FM3F0eTc0WDBqX283V2ZGanhWUHA1T3ZnOXd1OS1WaVVkdFlSQmJqblozal9saXllcUdpUDAxNXliQXlRR3NSZ25rRmRyQ0VlVjd6QXFqRGNlOTl2c3pwOW1jM05CSU1vVHN3TU5OYS1kbjlnMlBST0E?oc=5",
-      "summary": "",
-      "pubDate": "2026-11-17T09:25:00+09:00",
-      "category": "조선일보",
-      "press": "조선일보",
-      "source": "Chosunbiz",
-      "queries": [
-        "AI"
-      ],
-      "source_type": "major",
-      "score": 4
-    },
-    {
-      "title": "[영상] 'AI커닝 자수' 세무사 수석 경찰 출석 \"수험생께 죄송\"",
-      "link": "https://news.jtbc.co.kr/article/NB12328406",
-      "originallink": "https://news.jtbc.co.kr/article/NB12328406",
-      "summary": "[세무사 시험 부정행위자 한모 씨 / 서울경찰청 광역수사단 출석] 시험을 준비해 오신 수험생 분들과 관계자 분들께 진심으로 죄송합니다. AI를 이용해 세무사 시험에서 부정행위를 저질렀다고 자수한 수석 합격자 한모",
-      "pubDate": "2026-11-17T09:21:58+09:00",
-      "category": "JTBC",
-      "press": "JTBC",
-      "source": "JTBC",
-      "queries": [
-        "AI"
-      ],
-      "source_type": "major",
-      "score": 4
-    },
-    {
-      "title": "[속보]‘AI 부정행위’ 세무사시험 수석, 경찰 출석···‘자수 계기’ 묻자 “죄송합니다”",
-      "link": "https://www.khan.co.kr/article/202611170921001/?utm_source=khan_rss&utm_medium=rss&utm_campaign=total_news",
-      "originallink": "https://www.khan.co.kr/article/202611170921001/?utm_source=khan_rss&utm_medium=rss&utm_campaign=total_news",
-      "summary": "세무사시험에서 인공지능(AI)을 이용해 부정행위를 저지른 수석 합격자 A씨가 17일 서울 마포구 서울경찰청 광역수사단 공공범죄수사대에 피의자 신분으로 출석하고 있다. 연합뉴스인공지능(AI)을 이용해 부정행위를 했다고 경찰에 자수한 올해 세무사시험 수석 합격자 A씨가 17일 조사를 받기 위해 경찰에 출석했다.A씨는 이날 오전 서울 마포구에 있는 서울경찰청 광···",
-      "pubDate": "2026-11-17T09:21:00+09:00",
-      "category": "경향신문",
-      "press": "경향신문",
-      "source": "경향신문",
-      "queries": [
-        "AI"
-      ],
-      "source_type": "major",
-      "score": 4
-    },
-    {
-      "title": "[속보] ‘AI커닝 자수’ 세무사 수석 경찰 출석…피의자 전환",
-      "link": "https://news.google.com/rss/articles/CBMiVkFVX3lxTFBLTXd4cmNhRk9nQmFTcWtqeWZfTkVTblJpX2RHQnA2TF93VURscjY5ZmI5aEhBNENBdlU1X2NNRkNBcmM5c3dyWUd3RmdxX1N2S2o2MEl3?oc=5",
-      "originallink": "https://news.google.com/rss/articles/CBMiVkFVX3lxTFBLTXd4cmNhRk9nQmFTcWtqeWZfTkVTblJpX2RHQnA2TF93VURscjY5ZmI5aEhBNENBdlU1X2NNRkNBcmM5c3dyWUd3RmdxX1N2S2o2MEl3?oc=5",
-      "summary": "",
-      "pubDate": "2026-11-17T09:19:44+09:00",
-      "category": "중앙일보",
-      "press": "중앙일보",
-      "source": "중앙일보",
-      "queries": [
-        "AI"
-      ],
-      "source_type": "major",
-      "score": 4
-    },
-    {
-      "title": "‘AI 부정행위’ 세무사 수석 합격자 경찰 출석...“수험생에 죄송”",
-      "link": "https://news.google.com/rss/articles/CBMikAFBVV95cUxQRGNxa2kzMlZ2bExvNmFLNFhURVY1MUIwemh3UTJXQlhEdFJLNnRPblJzR0FURDFMMllSbTgwVERNdmpfY1RhbUROd2tKQ1lPUnVBMjBVZWlrb2M5MWNCWHNQbTJJbDNBMGFlTTVMcFJ6bEF2bzNmVTc5ejFSbVRFbEtLR1IxVUdGdXdlOHJmR1U?oc=5",
-      "originallink": "https://news.google.com/rss/articles/CBMikAFBVV95cUxQRGNxa2kzMlZ2bExvNmFLNFhURVY1MUIwemh3UTJXQlhEdFJLNnRPblJzR0FURDFMMllSbTgwVERNdmpfY1RhbUROd2tKQ1lPUnVBMjBVZWlrb2M5MWNCWHNQbTJJbDNBMGFlTTVMcFJ6bEF2bzNmVTc5ejFSbVRFbEtLR1IxVUdGdXdlOHJmR1U?oc=5",
-      "summary": "",
-      "pubDate": "2026-11-17T09:19:00+09:00",
-      "category": "조선일보",
-      "press": "조선일보",
-      "source": "조선일보",
-      "queries": [
-        "AI"
-      ],
-      "source_type": "major",
-      "score": 4
-    },
-    {
-      "title": "‘인생 한방’ 노린 AI 커닝…시험 공화국 한계 드러났다",
-      "link": "https://news.google.com/rss/articles/CBMiVkFVX3lxTE5GVGZFQ3l6NDg0OXFTMFg0Z2pJMVdvbkp6bllpNU1fODZqNUZlWG5WeFA2cGIzbzdael9LdjZ3UU5oVDRNMmZ1OXE4ZXZ5bzNBX0pTQnhB?oc=5",
-      "originallink": "https://news.google.com/rss/articles/CBMiVkFVX3lxTE5GVGZFQ3l6NDg0OXFTMFg0Z2pJMVdvbkp6bllpNU1fODZqNUZlWG5WeFA2cGIzbzdael9LdjZ3UU5oVDRNMmZ1OXE4ZXZ5bzNBX0pTQnhB?oc=5",
-      "summary": "",
-      "pubDate": "2026-11-17T09:17:05+09:00",
-      "category": "중앙일보",
-      "press": "중앙일보",
-      "source": "중앙일보",
-      "queries": [
-        "AI"
-      ],
-      "source_type": "major",
-      "score": 4
-    },
-    {
-      "title": "김민석 “수능 AI 부정행위에 단호히 대응…잠재적 범죄자 취급은 경계”",
-      "link": "https://news.google.com/rss/articles/CBMiVkFVX3lxTE5OLUNvQl9nd1ZWbFVHWDh3WkVQWnBOTHM2XzZIUXNuZnBoc1lVaC1xZEF5amdFMkdJTG5oQ1d2QmRtelFuMlNqU1dPTDMtTEUyUGF4T2Rn?oc=5",
-      "originallink": "https://news.google.com/rss/articles/CBMiVkFVX3lxTE5OLUNvQl9nd1ZWbFVHWDh3WkVQWnBOTHM2XzZIUXNuZnBoc1lVaC1xZEF5amdFMkdJTG5oQ1d2QmRtelFuMlNqU1dPTDMtTEUyUGF4T2Rn?oc=5",
-      "summary": "",
-      "pubDate": "2026-11-17T09:17:04+09:00",
-      "category": "중앙일보",
-      "press": "중앙일보",
-      "source": "중앙일보",
-      "queries": [
-        "AI"
-      ],
-      "source_type": "major",
-      "score": 4
-    },
-    {
-      "title": "'AI 커닝' 세무사 수석, 경찰 출석… 부정행위 자백 후 첫 조사",
-      "link": "https://news.google.com/rss/articles/CBMic0FVX3lxTE5ZYmZLTUFjSFRwWEdKend4bUdUaXh2VnVLZngzYXcyMGdfUVpTWGNDLWVKUk5KRlpqbXRVcGNBMm9CSjdIM0czSHhFTHlhSlktSDd0LWhhYVVneG5KZWZuZ3QyLXZhaEdpcGI3NTJQdzJiTmPSAXNBVV95cUxOWWJmS01BY0hUcFhHSnp3eG1HVGl4dlZ1S2Z4M2F3MjBnX1FaU1hjQy1lSlJOSkZaam10VXBjQTJvQko3SDNHM0h4RUx5YUpZLUg3dC1oYWFVZ3huSmVmbmd0Mi12YWhHaXBiNzUyUHcyYk5j?oc=5",
-      "originallink": "https://news.google.com/rss/articles/CBMic0FVX3lxTE5ZYmZLTUFjSFRwWEdKend4bUdUaXh2VnVLZngzYXcyMGdfUVpTWGNDLWVKUk5KRlpqbXRVcGNBMm9CSjdIM0czSHhFTHlhSlktSDd0LWhhYVVneG5KZWZuZ3QyLXZhaEdpcGI3NTJQdzJiTmPSAXNBVV95cUxOWWJmS01BY0hUcFhHSnp3eG1HVGl4dlZ1S2Z4M2F3MjBnX1FaU1hjQy1lSlJOSkZaam10VXBjQTJvQko3SDNHM0h4RUx5YUpZLUg3dC1oYWFVZ3huSmVmbmd0Mi12YWhHaXBiNzUyUHcyYk5j?oc=5",
-      "summary": "",
-      "pubDate": "2026-11-17T09:17:00+09:00",
-      "category": "한국일보",
-      "press": "한국일보",
-      "source": "한국일보",
-      "queries": [
-        "AI"
-      ],
-      "source_type": "major",
-      "score": 4
-    },
-    {
-      "title": "억만장자 성범죄자 엡스타인 또 타살 의혹…법의학자 “목 졸렸을 가능성”",
-      "link": "https://news.google.com/rss/articles/CBMiVkFVX3lxTE9vbnhPcENFZ0dRWEd2eEdTb3pCeUNtcmhNVk45Q0JJTm1lV29CSGJ1a3VPSHFLUlBfMVBuRjlIUDlKWFVGczZSaTA3aEhfcG1qdmZFYWZn?oc=5",
-      "originallink": "https://news.google.com/rss/articles/CBMiVkFVX3lxTE9vbnhPcENFZ0dRWEd2eEdTb3pCeUNtcmhNVk45Q0JJTm1lV29CSGJ1a3VPSHFLUlBfMVBuRjlIUDlKWFVGczZSaTA3aEhfcG1qdmZFYWZn?oc=5",
-      "summary": "",
-      "pubDate": "2026-11-17T08:56:47+09:00",
-      "category": "중앙일보",
-      "press": "중앙일보",
-      "source": "중앙일보",
-      "queries": [
-        "의학"
-      ],
-      "source_type": "major",
-      "score": 4
-    },
-    {
-      "title": "올트먼 오픈AI CEO “젠슨황은 내 영웅…영웅에게도 결점 있어”",
-      "link": "https://news.google.com/rss/articles/CBMiVkFVX3lxTE1LN2RYYXJiZ0c0Rlg5T2V6Wm5WZ0xmd2tXenNwX1hzME5uQll5cm9RWWJQc0cwTkZmeXFXWXlpLVFreE5fbVFmYnpzXzRmRHhRTkQ1Z01B?oc=5",
-      "originallink": "https://news.google.com/rss/articles/CBMiVkFVX3lxTE1LN2RYYXJiZ0c0Rlg5T2V6Wm5WZ0xmd2tXenNwX1hzME5uQll5cm9RWWJQc0cwTkZmeXFXWXlpLVFreE5fbVFmYnpzXzRmRHhRTkQ1Z01B?oc=5",
-      "summary": "",
-      "pubDate": "2026-11-17T08:37:17+09:00",
-      "category": "중앙일보",
-      "press": "중앙일보",
-      "source": "중앙일보",
-      "queries": [
-        "AI"
-      ],
-      "source_type": "major",
-      "score": 4
-    },
-    {
-      "title": "AI 커닝에 금융권 채용 비상…안경 전수검사에 필기시험 방식까지 바꿨다",
-      "link": "https://news.google.com/rss/articles/CBMijgFBVV95cUxONXhTTGtmTDN3YnA3MTBILUNud2cydnZsbUpSc0hpaDhnTkJHRGVzNm5RdWhuTXEtM194Uzl0dFZfZ3lienVsNEFnMkFWYWJNS2JpM01hYmlNTVBGMkxCcDRUUVV1Q200OHg3bUtqMHVlRzZ4YVdIRFYzOXZTMWpJcS0yVVJDQ25VczlRaS1R?oc=5",
-      "originallink": "https://news.google.com/rss/articles/CBMijgFBVV95cUxONXhTTGtmTDN3YnA3MTBILUNud2cydnZsbUpSc0hpaDhnTkJHRGVzNm5RdWhuTXEtM194Uzl0dFZfZ3lienVsNEFnMkFWYWJNS2JpM01hYmlNTVBGMkxCcDRUUVV1Q200OHg3bUtqMHVlRzZ4YVdIRFYzOXZTMWpJcS0yVVJDQ25VczlRaS1R?oc=5",
-      "summary": "",
-      "pubDate": "2026-11-17T08:33:00+09:00",
-      "category": "조선일보",
-      "press": "조선일보",
-      "source": "조선일보",
-      "queries": [
-        "AI"
-      ],
-      "source_type": "major",
-      "score": 4
-    },
-    {
-      "title": "수십 년 된 부정행위 수법…AI 만나 부정행위 '날개'",
-      "link": "https://news.jtbc.co.kr/article/NB12328390",
-      "originallink": "https://news.jtbc.co.kr/article/NB12328390",
-      "summary": "[앵커] 지금껏 AI 부정행위 대책은 주로 스마트 안경에 초점이 맞춰져 왔습니다. 하지만 이번 세무사 시험의 부정행위 도구는 초소형 카메라로 밝혀졌습니다. 부정행위를 하는 입장에선, 눈에 띄는 안경보다 초소형 카메",
-      "pubDate": "2026-11-17T08:32:39+09:00",
-      "category": "JTBC",
-      "press": "JTBC",
-      "source": "JTBC",
-      "queries": [
-        "AI"
-      ],
-      "source_type": "major",
-      "score": 4
-    },
-    {
-      "title": "시험 중엔 AI가 답변 거부… 中의 ‘커닝 방어막’",
-      "link": "https://news.google.com/rss/articles/CBMingFBVV95cUxPTkRlWjg4ejQ0M3JpalJ6Rkl0UkVzN1pOZl9EVGdlMU5lVHJLOTdRYkdzaVBJd2JOTm5VS2U2S2dDMFh3Q1R0NmRUNUw1UHlCYkxFTzBWUFhBQkFRWXdlbnVyQklaWkNFVUNKZ1hHZ3N3N2xQdVFsMnJ5ZDg2SUFjaHhTNjYzSWZRTXdrRXdfOHFaNmJrTV9GdzA3OW9hQQ?oc=5",
-      "originallink": "https://news.google.com/rss/articles/CBMingFBVV95cUxPTkRlWjg4ejQ0M3JpalJ6Rkl0UkVzN1pOZl9EVGdlMU5lVHJLOTdRYkdzaVBJd2JOTm5VS2U2S2dDMFh3Q1R0NmRUNUw1UHlCYkxFTzBWUFhBQkFRWXdlbnVyQklaWkNFVUNKZ1hHZ3N3N2xQdVFsMnJ5ZDg2SUFjaHhTNjYzSWZRTXdrRXdfOHFaNmJrTV9GdzA3OW9hQQ?oc=5",
-      "summary": "",
-      "pubDate": "2026-11-17T08:21:00+09:00",
-      "category": "조선일보",
-      "press": "조선일보",
-      "source": "조선일보",
-      "queries": [
-        "AI"
-      ],
-      "source_type": "major",
-      "score": 4
-    },
-    {
-      "title": "[AI기자의 News Briefing] 11월17일 오늘의 주요 뉴스를 전해 드립니다.",
-      "link": "https://news.google.com/rss/articles/CBMiakFVX3lxTE1hUWo0QWhBR2pfMFdQRG5lV29mMlljQnE0YU54SUd2OXhMVnkxbFhUNW4xVVFGelBjTkpkbHpmWmJRMDhLME9tWEk4d0dyR0F4N1lUcE1kZjU5ZVZsdl95ajZ5WDVHUXAycEE?oc=5",
-      "originallink": "https://news.google.com/rss/articles/CBMiakFVX3lxTE1hUWo0QWhBR2pfMFdQRG5lV29mMlljQnE0YU54SUd2OXhMVnkxbFhUNW4xVVFGelBjTkpkbHpmWmJRMDhLME9tWEk4d0dyR0F4N1lUcE1kZjU5ZVZsdl95ajZ5WDVHUXAycEE?oc=5",
-      "summary": "",
-      "pubDate": "2026-11-17T07:34:22+09:00",
-      "category": "중앙일보",
-      "press": "중앙일보",
-      "source": "중앙일보",
-      "queries": [
-        "AI"
-      ],
-      "source_type": "major",
-      "score": 4
-    },
-    {
-      "title": "AI가 식당에 전화 걸고 결제까지…AI 에이전트의 위험성과 미래 [트랜D]",
-      "link": "https://news.google.com/rss/articles/CBMiVkFVX3lxTE5TNllOOWNnaEphTllDUHNSbk1BOG03RjdEb1liY0dKc2FrR1d1d01vVXVCdFRDVVB6XzJybFdfMTBmUlhkVlBvdGZXWnhKV3FCN3M2UDRR?oc=5",
-      "originallink": "https://news.google.com/rss/articles/CBMiVkFVX3lxTE5TNllOOWNnaEphTllDUHNSbk1BOG03RjdEb1liY0dKc2FrR1d1d01vVXVCdFRDVVB6XzJybFdfMTBmUlhkVlBvdGZXWnhKV3FCN3M2UDRR?oc=5",
-      "summary": "",
-      "pubDate": "2026-11-17T07:00:00+09:00",
-      "category": "중앙일보",
-      "press": "중앙일보",
-      "source": "중앙일보",
-      "queries": [
-        "AI"
-      ],
-      "source_type": "major",
-      "score": 4
-    },
-    {
-      "title": "딥시크·화웨이의 ‘중국 AI 굴기’…‘탈엔비디아’는 아직 난제",
-      "link": "https://news.google.com/rss/articles/CBMibEFVX3lxTFBBd3ZnMEcxYVlMZUNBZUVVVmRPQkdJTDdYQUdCdDU5ZnFpYzZGeXBXUEYxb2hINVdmUEliMUktNXBaeHBsN1d4SkpORi16RGxwRHhWZ0w3UnMtVVR3dXA2ems4ZW0ya1dzVTN1UA?oc=5",
-      "originallink": "https://news.google.com/rss/articles/CBMibEFVX3lxTFBBd3ZnMEcxYVlMZUNBZUVVVmRPQkdJTDdYQUdCdDU5ZnFpYzZGeXBXUEYxb2hINVdmUEliMUktNXBaeHBsN1d4SkpORi16RGxwRHhWZ0w3UnMtVVR3dXA2ems4ZW0ya1dzVTN1UA?oc=5",
-      "summary": "",
-      "pubDate": "2026-11-17T06:30:00+09:00",
-      "category": "한겨레",
-      "press": "한겨레",
-      "source": "한겨레",
-      "queries": [
-        "AI"
-      ],
-      "source_type": "major",
-      "score": 4
-    },
-    {
-      "title": "“평소 쓰는 뿔테 안경인데 ‘AI 커닝’ 오해받을까 걱정”…수능 앞둔 수험생·학부모 불안 커져",
-      "link": "https://www.khan.co.kr/article/202611170600091/?utm_source=khan_rss&utm_medium=rss&utm_campaign=total_news",
-      "originallink": "https://www.khan.co.kr/article/202611170600091/?utm_source=khan_rss&utm_medium=rss&utm_campaign=total_news",
-      "summary": "교육부가 2027학년도 대학수학능력시험(수능)에 스마트안경뿐 아니라 초소형카메라를 활용한 부정행위도 있을 수 있다고 보고 추가 대책을 마련 중이라고 밝힌 16일 서울 시내의 한 카메라 매장에서 판매 중인 초소형 카메라 모습. 연합뉴스인공지능(AI)을 이용한 시험 부정행위가 잇따르며 오는 19일 대학수학능력시험(수능)을 앞둔 수험생과 학부모들의 불안이 커지고···",
-      "pubDate": "2026-11-17T06:00:09+09:00",
-      "category": "경향신문",
-      "press": "경향신문",
-      "source": "경향신문",
-      "queries": [
-        "AI"
-      ],
-      "source_type": "major",
-      "score": 4
-    },
-    {
-      "title": "‘AI 커닝’ 해법은 아날로그 회귀?…“실제 능력 확인하려면 다시 대면평가로”",
-      "link": "https://www.khan.co.kr/article/202611170600081/?utm_source=khan_rss&utm_medium=rss&utm_campaign=total_news",
-      "originallink": "https://www.khan.co.kr/article/202611170600081/?utm_source=khan_rss&utm_medium=rss&utm_campaign=total_news",
-      "summary": "지난달 28일 서울 여의도 FKI타워에서 열린 충청권 일자리·주거 원스톱 박람회에서 참석자들이 심층면접 순서를 기다리고 있다. 연합뉴스세무사 시험 수석 합격자가 인공지능(AI)을 이용한 부정행위를 인정하면서, 채용 현장에선 AI 부정행위로 고득점을 얻거나 자격증을 취득한 수험생을 식별하기 위한 대책 마련에 부심하고 있다.보안업계에서는 시험지에 AI의 답변을···",
-      "pubDate": "2026-11-17T06:00:08+09:00",
-      "category": "경향신문",
-      "press": "경향신문",
-      "source": "경향신문",
-      "queries": [
-        "AI"
-      ],
-      "source_type": "major",
-      "score": 4
-    },
-    {
-      "title": "지역에서 길러 붙잡는다…KAI 트랙 20년 ‘탄탄한 인재 사다리’ 광주는 이제 출발",
-      "link": "https://www.khan.co.kr/article/202611170600041/?utm_source=khan_rss&utm_medium=rss&utm_campaign=total_news",
-      "originallink": "https://www.khan.co.kr/article/202611170600041/?utm_source=khan_rss&utm_medium=rss&utm_campaign=total_news",
-      "summary": "지난 7월7일 전남전남광주 광산구 전남광주 군 공항 인근에서 반도체 클러스터 부지 점검이 펼쳐지고 있다. 연합뉴스비수도권에서 대학을 나온 청년이 일자리를 찾아 수도권으로 떠나는 것은 오래된 공식이다. 전공을 살릴 만한 기업과 연구소가 대부분 수도권에 몰려 있어서다. 전남광주에 들어설 반도체 공장이 이 공식을 바꿀 수 있을까.적어도 지역 청년에게는 기회가 될···",
-      "pubDate": "2026-11-17T06:00:04+09:00",
-      "category": "경향신문",
-      "press": "경향신문",
-      "source": "경향신문",
-      "queries": [
-        "AI"
-      ],
-      "source_type": "major",
-      "score": 4
-    },
-    {
-      "title": "[2026 소비자가 뽑은 올해의 브랜드대상] AI 맞춤형 아이케어 솔루션",
-      "link": "https://news.google.com/rss/articles/CBMiVkFVX3lxTE1WWDgxbEVQUEhhQ2lyT01xMVRsX2xCTnMzZnM2Y2szdll3cTRFUi0xRnNIR2JJUnJ5Zkw3V1dFcWlsLV8yOVFTOC1aYXhXYXBxMWoybXV3?oc=5",
-      "originallink": "https://news.google.com/rss/articles/CBMiVkFVX3lxTE1WWDgxbEVQUEhhQ2lyT01xMVRsX2xCTnMzZnM2Y2szdll3cTRFUi0xRnNIR2JJUnJ5Zkw3V1dFcWlsLV8yOVFTOC1aYXhXYXBxMWoybXV3?oc=5",
-      "summary": "",
-      "pubDate": "2026-11-17T05:31:00+09:00",
-      "category": "중앙일보",
-      "press": "중앙일보",
-      "source": "중앙일보",
-      "queries": [
-        "AI"
-      ],
-      "source_type": "major",
-      "score": 4
-    },
-    {
-      "title": "[2026 소비자가 뽑은 올해의 브랜드대상] 생활 편의 높이는 초개인화 AI 주거 플랫폼",
-      "link": "https://news.google.com/rss/articles/CBMiVkFVX3lxTE9VWGd4U0haTmVRSnVQOEZlVDM4dGJwSUxqSVFsSlZGaXhvTFh2UkdReTFVMEN1WGJRdHUwcUpzcnZyY2hVSkI2ZEZGLW84alVhOWFZVHJ3?oc=5",
-      "originallink": "https://news.google.com/rss/articles/CBMiVkFVX3lxTE9VWGd4U0haTmVRSnVQOEZlVDM4dGJwSUxqSVFsSlZGaXhvTFh2UkdReTFVMEN1WGJRdHUwcUpzcnZyY2hVSkI2ZEZGLW84alVhOWFZVHJ3?oc=5",
-      "summary": "",
-      "pubDate": "2026-11-17T05:30:00+09:00",
-      "category": "중앙일보",
-      "press": "중앙일보",
-      "source": "중앙일보",
-      "queries": [
-        "AI"
-      ],
-      "source_type": "major",
-      "score": 4
-    },
-    {
-      "title": "美, 中 ‘AI반도체 원격접근 ’ 차단…동남아 수출 땐 사전허가 받아야",
-      "link": "https://news.google.com/rss/articles/CBMiVkFVX3lxTE96dVNwbDN4OE5FYUdzdnU5eXRtLUE4allGSjQ5ZF9MTmFvNEhlTU9sNEJ2VkdlMFlOZFAxVFFwWE51M3pxSnFsRmZsaENrTTFNZDZGeGFB?oc=5",
-      "originallink": "https://news.google.com/rss/articles/CBMiVkFVX3lxTE96dVNwbDN4OE5FYUdzdnU5eXRtLUE4allGSjQ5ZF9MTmFvNEhlTU9sNEJ2VkdlMFlOZFAxVFFwWE51M3pxSnFsRmZsaENrTTFNZDZGeGFB?oc=5",
-      "summary": "",
-      "pubDate": "2026-11-17T05:25:19+09:00",
-      "category": "중앙일보",
-      "press": "중앙일보",
-      "source": "중앙일보",
-      "queries": [
-        "AI"
-      ],
-      "source_type": "major",
-      "score": 4
-    },
-    {
-      "title": "숨은 돈도 찾아줬다…“모든 앱 먹는다” 메타발 AI 비서 전쟁",
-      "link": "https://news.google.com/rss/articles/CBMiVkFVX3lxTFBJbzBwUXJiTEpOR1RRODVLT29Hd000azZYQ2FVU0NTNWJReXY0MEJTbHdaNmVfM3J1ODhPNTkyWFFpTUstT0tBMGZjU0p0VVo2c2lEX1NR?oc=5",
-      "originallink": "https://news.google.com/rss/articles/CBMiVkFVX3lxTFBJbzBwUXJiTEpOR1RRODVLT29Hd000azZYQ2FVU0NTNWJReXY0MEJTbHdaNmVfM3J1ODhPNTkyWFFpTUstT0tBMGZjU0p0VVo2c2lEX1NR?oc=5",
-      "summary": "",
-      "pubDate": "2026-11-17T05:04:20+09:00",
-      "category": "중앙일보",
-      "press": "중앙일보",
-      "source": "중앙일보",
-      "queries": [
-        "AI"
-      ],
-      "source_type": "major",
-      "score": 4
-    },
-    {
-      "title": "“AI 커닝” 2년 전 예언했다…‘공신’ 유튜브 중단했던 이유",
-      "link": "https://news.google.com/rss/articles/CBMiVkFVX3lxTE5ReGFIaFRYcUs3UGVXRTcxMkd0ZUJrOVVmbE5WWHJWa2pBZVZ4eU4wbmtSVTkzaG5wbC1DdGZlX2pBRHlkaHR1cUZrb3hMSGlOMkc3dnhB?oc=5",
-      "originallink": "https://news.google.com/rss/articles/CBMiVkFVX3lxTE5ReGFIaFRYcUs3UGVXRTcxMkd0ZUJrOVVmbE5WWHJWa2pBZVZ4eU4wbmtSVTkzaG5wbC1DdGZlX2pBRHlkaHR1cUZrb3hMSGlOMkc3dnhB?oc=5",
-      "summary": "",
-      "pubDate": "2026-11-17T05:00:01+09:00",
-      "category": "중앙일보",
-      "press": "중앙일보",
-      "source": "중앙일보",
-      "queries": [
-        "AI"
-      ],
-      "source_type": "major",
-      "score": 4
-    },
-    {
-      "title": "[단독] 물 마시러 가면 영상 멈춘다…삼성의 CES 야심작 ‘AI TV’",
-      "link": "https://news.google.com/rss/articles/CBMiVkFVX3lxTE1aYW1kVTl4XzJyamZzWXNCRXNQSHVULXN5Q29LdnVWUWN4THFQczQzWTlSaEhZTWJnWEw0cF9ENkNmZGNJS3diQVdjWmdpQmpkUW9UVUZn?oc=5",
-      "originallink": "https://news.google.com/rss/articles/CBMiVkFVX3lxTE1aYW1kVTl4XzJyamZzWXNCRXNQSHVULXN5Q29LdnVWUWN4THFQczQzWTlSaEhZTWJnWEw0cF9ENkNmZGNJS3diQVdjWmdpQmpkUW9UVUZn?oc=5",
-      "summary": "",
-      "pubDate": "2026-11-17T05:00:01+09:00",
-      "category": "중앙일보",
-      "press": "중앙일보",
-      "source": "중앙일보",
-      "queries": [
-        "AI"
-      ],
-      "source_type": "major",
-      "score": 4
-    },
-    {
-      "title": "AI안경도 이어폰도 없었다…세무사 수석이 본 ‘비밀 화면’",
-      "link": "https://news.google.com/rss/articles/CBMiVkFVX3lxTE5Vb3g5aG94d2ZmMTF3cjhjQmdwM0hHUlhRN1YtUDhiUnlUam03ZGIzVndNaW1HRTdNekFlZVFpbWNWZkhQM1hnbnhYTE4wUHUzdDZDRG9R?oc=5",
-      "originallink": "https://news.google.com/rss/articles/CBMiVkFVX3lxTE5Vb3g5aG94d2ZmMTF3cjhjQmdwM0hHUlhRN1YtUDhiUnlUam03ZGIzVndNaW1HRTdNekFlZVFpbWNWZkhQM1hnbnhYTE4wUHUzdDZDRG9R?oc=5",
-      "summary": "",
-      "pubDate": "2026-11-17T05:00:00+09:00",
-      "category": "중앙일보",
-      "press": "중앙일보",
-      "source": "중앙일보",
-      "queries": [
-        "AI"
-      ],
-      "source_type": "major",
-      "score": 4
-    },
-    {
-      "title": "“난 욕심 안 부리고 적당선 합격”…너도나도 ‘AI 커닝’ 자백글",
-      "link": "https://news.google.com/rss/articles/CBMiVkFVX3lxTE9QLThEZjdoTk5xTVZnc1NPaHEwQ1M3NjhtRElDMkF0MkFhbXFzN2xmUF8temZGd3c1MWdVQjc0NGhUY090SEZEbGlGLTNFNk5lc0ZUUjd3?oc=5",
-      "originallink": "https://news.google.com/rss/articles/CBMiVkFVX3lxTE9QLThEZjdoTk5xTVZnc1NPaHEwQ1M3NjhtRElDMkF0MkFhbXFzN2xmUF8temZGd3c1MWdVQjc0NGhUY090SEZEbGlGLTNFNk5lc0ZUUjd3?oc=5",
-      "summary": "",
-      "pubDate": "2026-11-17T05:00:00+09:00",
-      "category": "중앙일보",
-      "press": "중앙일보",
-      "source": "중앙일보",
-      "queries": [
-        "AI"
-      ],
-      "source_type": "major",
-      "score": 4
-    },
-    {
-      "title": "수능 ‘AI 커닝’ 발등의 불, 와이파이부터 끊는다",
-      "link": "https://www.donga.com/news/Society/article/all/20261117/135035812/2",
-      "originallink": "https://www.donga.com/news/Society/article/all/20261117/135035812/2",
-      "summary": "정부가 올해 대학수학능력시험(수능)에서 인공지능(AI) 등 첨단 기술을 이용한 부정행위를 막기 위해 모든 시험장의 공공 와이파이를 차단하는 방안을 추진하기로 했다. 또 부정행위가 적발되면 향후 수능 응시 자격을 영구 박탈하는 것을 비롯해 기술자격시험, 행정고시 등 각종 국가 시험의 응시 자격을 제한하는 방안을 검토하고 있다. 하지만 올 들어 입시 현장에서 AI가 탑재된 스마트안경이나 초소형 이어폰 등을 이용한 커닝이 수차례 적발됐는데도 지금까지 손놓고 있다가 수능을 불과 사흘 앞두고 허둥지둥 대책 마련에 나섰다는 비판이 쏟아지고 있",
-      "pubDate": "2026-11-17T04:30:00+09:00",
-      "category": "동아일보",
-      "press": "동아일보",
-      "source": "동아일보",
-      "queries": [
-        "AI"
-      ],
-      "source_type": "major",
-      "score": 4
-    },
-    {
-      "title": "“AI가 원하던 일 뺏을까 불안”… 취준생 절반 이상, 다른 길 찾는다",
-      "link": "https://www.donga.com/news/Society/article/all/20261117/135035360/2",
-      "originallink": "https://www.donga.com/news/Society/article/all/20261117/135035360/2",
-      "summary": "대학을 졸업한 뒤 소프트웨어 개발자로 취직하려던 장모 씨(30)는 최근 다른 직무도 알아봐야 할지 고민하고 있다. 한 기업에서 인턴 과정을 거치면서 ‘인공지능(AI)에 일을 시켜놓고 가만히 지켜보고 있는다’는 말이 나올 정도로 AI 활용 능력을 중시하는 현장을 목격했기 때문이다. 현직 개발자들은 AI에 작업을 맡기면서 직접 코드를 짜는 일이 줄었다는 얘기도 했다. 장 씨는 “직접 프로그램의 구조를 설계하고, 내가 짠 코드가 의도대로 작동하는 과정이 즐거워 소프트웨어 개발직을 희망했다”며 “하지만 직무가 내가 바라던 모습과 점점 거리",
-      "pubDate": "2026-11-17T04:30:00+09:00",
-      "category": "동아일보",
-      "press": "동아일보",
-      "source": "동아일보",
-      "queries": [
-        "AI"
-      ],
-      "source_type": "major",
-      "score": 4
-    },
-    {
-      "title": "“러트닉 가족회사, 中관련 AI기업과 거래… 이해충돌 의혹”",
-      "link": "https://www.donga.com/news/Inter/article/all/20261117/135035605/2",
-      "originallink": "https://www.donga.com/news/Inter/article/all/20261117/135035605/2",
-      "summary": "하워드 러트닉 미국 상무부 장관(사진)이 엔비디아 반도체의 대(對)중국 수출규제 완화 조치와 관련된 이해충돌 의혹을 받고 있다고 뉴욕타임스(NYT)가 15일 전했다. 러트닉 장관이 소유 및 경영했던 금융회사가 중국에 연산 자원을 제공하는 동남아시아 데이터센터 기업들과 거래 관계를 맺었다는 것이다. 이른바 ‘젠슨 황 스캔들’을 통해 대중 수출 규제에 소극적인 움직임을 보였던 정황이 드러난 러트닉 장관을 둘러싼 논란이 더욱 커질 것이란 관측이 나온다. 이날 NYT는 러트닉 장관이 CEO를 지냈고, 현재는 그의 아들들이 경영 중인 금융회",
-      "pubDate": "2026-11-17T04:30:00+09:00",
-      "category": "동아일보",
-      "press": "동아일보",
-      "source": "동아일보",
-      "queries": [
-        "AI"
-      ],
-      "source_type": "major",
-      "score": 4
-    },
-    {
-      "title": "美, 韓-日 등과 中견제 ‘AI 공급망 협정’ 체결",
-      "link": "https://www.donga.com/news/Inter/article/all/20261117/135035603/2",
-      "originallink": "https://www.donga.com/news/Inter/article/all/20261117/135035603/2",
-      "summary": "미국이 중국의 인공지능(AI) 관련 영향력에 대응하기 위해 한국, 일본, 영국, 독일 등 주요 동맹국들과 핵심 공급망 보호 협정을 체결했다고 영국 파이낸셜타임스(FT)가 15일(현지 시간) 전했다. 18, 19일 중국 선전 아시아태평양경제협력체(APEC) 정상회의를 계기로 열릴 미중 정상회담 핵심 의제로 미국의 반도체 수출 규제와 중국의 희토류 수출 통제가 거론되는 가운데, 미국이 AI 공급망 협력을 통해 중국을 압박하려는 의도로 해석된다. FT에 따르면 이번 협정의 공식 명칭은 ‘지속적 번영을 위한 안전 기반에 관한 샌프란시스코 ",
-      "pubDate": "2026-11-17T04:30:00+09:00",
-      "category": "동아일보",
-      "press": "동아일보",
-      "source": "동아일보",
-      "queries": [
-        "AI"
-      ],
-      "source_type": "major",
-      "score": 4
-    },
-    {
-      "title": "“AI커닝 100% 잡겠나” 묻자, 교육장관 “전 못해”",
-      "link": "https://www.donga.com/news/Politics/article/all/20261117/135035861/2",
-      "originallink": "https://www.donga.com/news/Politics/article/all/20261117/135035861/2",
-      "summary": "국회 교육위원회가 16일 연 ‘인공지능(AI) 부정행위’ 사태 긴급 현안 질의에선 여야가 한목소리로 사흘 앞으로 다가온 2027학년도 대학수학능력시험(수능)에 대한 우려를 쏟아냈다. 국민의힘은 이날 최교진 교육부 장관을 상대로 “AI 활용 부정행위를 100% 적발할 자신이 있느냐”고 추궁했다. 최 장관이 “전 못할 것 같다”고 답하자 국민의힘은 “이재명 정부의 수준이 그것밖에 안 되나”라고 재차 물었다. 이에 최 장관은 “제 나이가 있어서 그런지”라며 “저 개인은 그걸 하기가 어렵다는 것”이라고 해명했다. 이 과정에서 최 장관은 배",
-      "pubDate": "2026-11-17T04:30:00+09:00",
-      "category": "동아일보",
-      "press": "동아일보",
-      "source": "동아일보",
-      "queries": [
-        "AI"
-      ],
-      "source_type": "major",
-      "score": 4
-    },
-    {
-      "title": "“안경 보여주세요” “시선 떼지 마세요” 기업 채용도 AI 차단 고심",
-      "link": "https://www.donga.com/news/Economy/article/all/20261117/135035823/2",
-      "originallink": "https://www.donga.com/news/Economy/article/all/20261117/135035823/2",
-      "summary": "국내 주요 대기업과 금융권도 스마트안경과 인공지능(AI)을 활용한 부정행위에 비상이 걸렸다. 채용시험 감독을 강화하고, 부정행위가 통하지 않는 심층 면접을 추가하는 등 치열한 ‘창과 방패’의 싸움이 이어지는 것이다. 그럼에도 갈수록 정교해지는 부정 행위를 원천 차단할 뚜렷한 해법은 없어 채용 방식에 근본적인 변화가 필요하다는 지적도 나온다. ● 안경 반사각 검사, 시선 5초 이탈하면 경고16일 한국거래소에 따르면 올해 상반기 신입직원 채용시험에서 스마트안경을 이용한 부정행위 시도가 적발됐다. 거래소는 해당 응시자의 필기시험을 무효로",
-      "pubDate": "2026-11-17T04:30:00+09:00",
-      "category": "동아일보",
-      "press": "동아일보",
-      "source": "동아일보",
-      "queries": [
-        "AI"
-      ],
-      "source_type": "major",
-      "score": 4
-    },
-    {
-      "title": "“성적이 성공 척도 된 韓, AI커닝에 뒤흔들려”",
-      "link": "https://www.donga.com/news/Inter/article/all/20261117/135035818/2",
-      "originallink": "https://www.donga.com/news/Inter/article/all/20261117/135035818/2",
-      "summary": "한국 세무사 자격시험 수석 합격자의 인공지능(AI) 부정행위로 인한 파장에 대해 주요 외신들도 주목하고 있다. 영국 파이낸셜타임스(FT)와 로이터통신 등은 한 번의 시험으로 신분이 결정되는 경쟁적인 입시 환경 속에서 AI 기술 발전으로 이 같은 파열음이 발생하고 있다고 진단했다. FT는 16일(현지 시간) ‘AI 부정행위로 한국이 발칵 뒤집혔다’는 제목의 기사에서 세무사 수석 사건을 상세히 다뤘다. 특히 이번 사건이 대학수학능력시험을 며칠 앞두고 터져 더 큰 사회적 논란이 되고 있다고 짚었다. FT는 “학업 성적이 전통적으로 성공의",
-      "pubDate": "2026-11-17T04:30:00+09:00",
-      "category": "동아일보",
-      "press": "동아일보",
-      "source": "동아일보",
-      "queries": [
-        "AI"
-      ],
-      "source_type": "major",
-      "score": 4
-    },
-    {
-      "title": "양종철 전북대병원장, 제19대 전북병원회장 취임",
-      "link": "https://www.donga.com/news/Society/article/all/20261116/135034606/2",
-      "originallink": "https://www.donga.com/news/Society/article/all/20261116/135034606/2",
-      "summary": "전북대병원은 양종철 병원장(사진)이 제19대 전북병원회 회장으로 취임했다고 16일 밝혔다. 1979년 창립한 전북병원회는 대한병원협회 전북지회로, 도내 158개 병원이 회원으로 참여하고 있다. 회원 병원 간 교류를 넓히고 지역의료 현안에 공동으로 대응해 왔다. 양 회장은 취임사에서 “지역의료의 어려움이 깊어지는 시기에 막중한 책임감을 느낀다”며 “회원 병원의 기대에 부응하고, 도민의 건강과 생명을 지키는 공동의 책무를 성실히 수행하겠다”고 말했다. 양 회장은 전북병원회의 3대 추진 방향으로 △전문성과 수월성을 바탕으로 한 지역 완결",
-      "pubDate": "2026-11-17T04:30:00+09:00",
-      "category": "동아일보",
-      "press": "동아일보",
-      "source": "동아일보",
-      "queries": [
-        "병원"
-      ],
-      "source_type": "major",
-      "score": 4
-    },
-    {
-      "title": "'AI 커닝' 세무사 수석 합격자 처벌 실형도 가능?… 법원 판례 봤더니",
-      "link": "https://news.google.com/rss/articles/CBMic0FVX3lxTE5NNFBNZExuR01MejNvM2FpMTBUWWpzZTZzcWkxR1AtT0JFZi1obGNKNnd1c3NjTmx6UEQzQmpySlNhZUMtc1Vyb1FqRjFSakhzYUNsUUlnbTBfQzF3d2dqM011eDBUU2UxSF9YUnpuckhEYnPSAXNBVV95cUxOTTRQTWRMbkdNTHozbzNhaTEwVFlqc2U2c3FpMUdQLU9CRWYtaGxjSjZ3dXNzY05selBEM0JqckpTYWVDLXNVcm9RakYxUmpIc2FDbFFJZ20wX0Mxd3dnajNNdXgwVFNlMUhfWFJ6bnJIRGJz?oc=5",
-      "originallink": "https://news.google.com/rss/articles/CBMic0FVX3lxTE5NNFBNZExuR01MejNvM2FpMTBUWWpzZTZzcWkxR1AtT0JFZi1obGNKNnd1c3NjTmx6UEQzQmpySlNhZUMtc1Vyb1FqRjFSakhzYUNsUUlnbTBfQzF3d2dqM011eDBUU2UxSF9YUnpuckhEYnPSAXNBVV95cUxOTTRQTWRMbkdNTHozbzNhaTEwVFlqc2U2c3FpMUdQLU9CRWYtaGxjSjZ3dXNzY05selBEM0JqckpTYWVDLXNVcm9RakYxUmpIc2FDbFFJZ20wX0Mxd3dnajNNdXgwVFNlMUhfWFJ6bnJIRGJz?oc=5",
-      "summary": "",
-      "pubDate": "2026-11-17T04:30:00+09:00",
-      "category": "한국일보",
-      "press": "한국일보",
-      "source": "한국일보",
-      "queries": [
-        "AI"
-      ],
-      "source_type": "major",
-      "score": 4
-    },
-    {
-      "title": "7월에 'AI 부정' 대책 논의했는데도... 9월 예산안엔 관련 항목 '0원', 왜?",
-      "link": "https://news.google.com/rss/articles/CBMibkFVX3lxTE9jSE92bEJObWdubC1qaUg4SmpYSjRqU3hJZEVDRGxHa2RTbVJkV2dPeDhNd0FXREExWDM0VVdoZE1pS2FFd3hZQ3p6ZktpV19aMmp3OWNtbng0bHIwUlc0Z0d5S0RTQlVBS292Snhn0gFzQVVfeXFMUEN1UnBlTEwxMXlvU195X3JsLUhObUpkT2RsYVJDcW9XeFdiRlJMaE1FUXZ2aGtaZWNjOExCMEYtR3YxYmtQbmtjMWN5Sjk5c1B5a1Btd1o1ajMxdnlzNElwWXV0MlpxS2lBRWprVk9vSVJWUQ?oc=5",
-      "originallink": "https://news.google.com/rss/articles/CBMibkFVX3lxTE9jSE92bEJObWdubC1qaUg4SmpYSjRqU3hJZEVDRGxHa2RTbVJkV2dPeDhNd0FXREExWDM0VVdoZE1pS2FFd3hZQ3p6ZktpV19aMmp3OWNtbng0bHIwUlc0Z0d5S0RTQlVBS292Snhn0gFzQVVfeXFMUEN1UnBlTEwxMXlvU195X3JsLUhObUpkT2RsYVJDcW9XeFdiRlJMaE1FUXZ2aGtaZWNjOExCMEYtR3YxYmtQbmtjMWN5Sjk5c1B5a1Btd1o1ajMxdnlzNElwWXV0MlpxS2lBRWprVk9vSVJWUQ?oc=5",
-      "summary": "",
-      "pubDate": "2026-11-17T04:30:00+09:00",
-      "category": "한국일보",
-      "press": "한국일보",
-      "source": "한국일보",
-      "queries": [
-        "AI"
-      ],
-      "source_type": "major",
-      "score": 4
-    },
-    {
-      "title": "수능 AI커닝 대책 \"매 교시 안경 검사\"뿐 [오늘의 1면 사진]",
-      "link": "https://news.google.com/rss/articles/CBMibkFVX3lxTE44eTNibGYxaHFUVEVJV0E1UlhFMG9ZTHJqUUhxS29IcHFQWFNRRnQ0RV9aMGtGREM2U2k5b0h4MUV3WGp4SVhSSHJJZEc1bjJnelRZa0xtSkJFVDhkRGdFY2N2NnUweFFJaWhDazV30gFzQVVfeXFMT0wxVndUMjJrbTZLcHNJQ1g3ejZQRXFzZEJhZXY0b3FreWZFOTMtczdmQzlDdVF5d0phdVI2dGsycEZBbktORE94MkN5MXNHMG1Qd0ttTndzemw2cXBvZHFNeXVXVWtvV3I5TE9DY0w1MWVmMA?oc=5",
-      "originallink": "https://news.google.com/rss/articles/CBMibkFVX3lxTE44eTNibGYxaHFUVEVJV0E1UlhFMG9ZTHJqUUhxS29IcHFQWFNRRnQ0RV9aMGtGREM2U2k5b0h4MUV3WGp4SVhSSHJJZEc1bjJnelRZa0xtSkJFVDhkRGdFY2N2NnUweFFJaWhDazV30gFzQVVfeXFMT0wxVndUMjJrbTZLcHNJQ1g3ejZQRXFzZEJhZXY0b3FreWZFOTMtczdmQzlDdVF5d0phdVI2dGsycEZBbktORE94MkN5MXNHMG1Qd0ttTndzemw2cXBvZHFNeXVXVWtvV3I5TE9DY0w1MWVmMA?oc=5",
-      "summary": "",
-      "pubDate": "2026-11-17T04:30:00+09:00",
-      "category": "한국일보",
-      "press": "한국일보",
-      "source": "한국일보",
-      "queries": [
-        "AI"
-      ],
-      "source_type": "major",
-      "score": 4
-    },
-    {
-      "title": "[단독] 젠슨 황 떠난 엔비디아…신생 AI 클라우드 ‘돈줄’ 마르나｜Global Money Club",
-      "link": "https://news.google.com/rss/articles/CBMiW0FVX3lxTFBGdEFRR2dZWkFJd3B4alUtYmtuWWI5TmFUeDZacVFzZlkxVWVMcnlzNnRLWGxZaWl3NlFoQmhuSmVtSmt5STN5bFFrOW5FampCb1kyWFVyUTBRTWM?oc=5",
-      "originallink": "https://news.google.com/rss/articles/CBMiW0FVX3lxTFBGdEFRR2dZWkFJd3B4alUtYmtuWWI5TmFUeDZacVFzZlkxVWVMcnlzNnRLWGxZaWl3NlFoQmhuSmVtSmt5STN5bFFrOW5FampCb1kyWFVyUTBRTWM?oc=5",
-      "summary": "",
-      "pubDate": "2026-11-17T04:11:52+09:00",
-      "category": "중앙일보",
-      "press": "중앙일보",
-      "source": "중앙일보",
-      "queries": [
-        "AI"
-      ],
-      "source_type": "major",
-      "score": 4
-    },
-    {
-      "title": "美, 제3국 통한 첨단 AI칩 원격 이용 규제…中 우회 접근 차단",
-      "link": "https://www.donga.com/news/Inter/article/all/20261117/135036241/1",
-      "originallink": "https://www.donga.com/news/Inter/article/all/20261117/135036241/1",
-      "summary": "미국 상무부 산업안보국(BIS)이 16일(현지시간) 첨단 인공지능(AI) 반도체와 서버에 대한 원격 접근을 규제하기 위한 잠정 최종 규칙(IFR)을 발표했다. 이는 미국 재무부와 국가안전보장회의(NSC) 지시에 따라 작성됐다.BIS는 이날 홈페이지에 게재한 보도자료에서 “이번 규칙은 제3국 데이터센터를 이용한 원격 컴퓨팅 방식으로 미국의 민감한 기술에 대한 기존 접근 제한 조치를 우회하지 못하도록 하기 위해 마련됐다”고 밝혔다.이어 “미국은 첨단 컴퓨팅과 AI 기술 분야에서 세계적인 선도국으로서 정당한 상업적 목적을 위한 미국 기술",
-      "pubDate": "2026-11-17T03:18:39+09:00",
-      "category": "동아일보",
-      "press": "동아일보",
-      "source": "동아일보",
-      "queries": [
-        "AI"
-      ],
-      "source_type": "major",
-      "score": 4
-    },
-    {
-      "title": "‘AI 낙관론자’ 워시 연준 의장, 대규모 실직·경기 둔화 시나리오도 검토｜Global Money Club",
-      "link": "https://news.google.com/rss/articles/CBMiW0FVX3lxTE9faEVNZGhaZzRrLXNSbWVtYnpmREtfMjJfV25GczByQ2Via2ZMWk1jdGtBN19UZGVOeFNwc0VyS0tPVzlTeldPSXUyd0VmWXNfOXp3c0E1Q01paVk?oc=5",
-      "originallink": "https://news.google.com/rss/articles/CBMiW0FVX3lxTE9faEVNZGhaZzRrLXNSbWVtYnpmREtfMjJfV25GczByQ2Via2ZMWk1jdGtBN19UZGVOeFNwc0VyS0tPVzlTeldPSXUyd0VmWXNfOXp3c0E1Q01paVk?oc=5",
-      "summary": "",
-      "pubDate": "2026-11-17T02:57:52+09:00",
-      "category": "중앙일보",
-      "press": "중앙일보",
-      "source": "중앙일보",
-      "queries": [
-        "AI"
-      ],
-      "source_type": "major",
-      "score": 4
-    },
-    {
-      "title": "“시험이 인생 결정하는 한국 뒤흔들어”…외신도 ‘AI 커닝’ 주목",
-      "link": "https://news.google.com/rss/articles/CBMiggFBVV95cUxPVTBReXRXRFlGWWhQem42dkdtS2NXeVBQUXhaVlZHcFk1TXp0bE83ZnFxOGcyOWppTG5mMlBxdVotaW4xQW54YXhSbWZZRUc2ZFhZbU1ITWdwckR0ZmppejRZcG9OOG4tTkw3YXBzRjBVcXJocXBPRTFEQ1hfdjA4eUVB?oc=5",
-      "originallink": "https://news.google.com/rss/articles/CBMiggFBVV95cUxPVTBReXRXRFlGWWhQem42dkdtS2NXeVBQUXhaVlZHcFk1TXp0bE83ZnFxOGcyOWppTG5mMlBxdVotaW4xQW54YXhSbWZZRUc2ZFhZbU1ITWdwckR0ZmppejRZcG9OOG4tTkw3YXBzRjBVcXJocXBPRTFEQ1hfdjA4eUVB?oc=5",
-      "summary": "",
-      "pubDate": "2026-11-17T02:30:00+09:00",
-      "category": "한겨레",
-      "press": "한겨레",
-      "source": "한겨레",
-      "queries": [
-        "AI"
-      ],
-      "source_type": "major",
-      "score": 4
-    },
-    {
-      "title": "“차 살 때 AI에 물어보니까”…현대차그룹, 홈페이지도 AI 맞춤형으로",
-      "link": "https://news.google.com/rss/articles/CBMiakFVX3lxTE00WXVhNG5BTGNKdlJvaXBtVHVhTXB5V0J2a19xUEh5ekxkNTdSY0pjRzRfMmItVnM2NkNxc0t0LW01MjJJdnlzTjR1SVRzQ0FwblpjVi1UQm5ocllBWlUwOGlFVmVIeWUyYVE?oc=5",
-      "originallink": "https://news.google.com/rss/articles/CBMiakFVX3lxTE00WXVhNG5BTGNKdlJvaXBtVHVhTXB5V0J2a19xUEh5ekxkNTdSY0pjRzRfMmItVnM2NkNxc0t0LW01MjJJdnlzTjR1SVRzQ0FwblpjVi1UQm5ocllBWlUwOGlFVmVIeWUyYVE?oc=5",
-      "summary": "",
-      "pubDate": "2026-11-17T02:29:00+09:00",
-      "category": "한겨레",
-      "press": "한겨레",
-      "source": "한겨레",
-      "queries": [
-        "AI"
-      ],
-      "source_type": "major",
-      "score": 4
-    },
-    {
-      "title": "“수능 잘 봐도 AI 커닝 못 이겨”…수험생들 불신·분노",
-      "link": "https://news.google.com/rss/articles/CBMickFVX3lxTE1PY3JpOGFlSjVDWlhUV2pVUjRoblBqcTZKVzEyNWN6cmtJYXIyVU5Oc1l3ejBJQ3BOd21jSV9sd1hLb0FSRURNakwxSzhRN1FIUnJOQXpvbzNjRy1kQ2ppTW5raTRucnZELWlsUE9RbE9BQQ?oc=5",
-      "originallink": "https://news.google.com/rss/articles/CBMickFVX3lxTE1PY3JpOGFlSjVDWlhUV2pVUjRoblBqcTZKVzEyNWN6cmtJYXIyVU5Oc1l3ejBJQ3BOd21jSV9sd1hLb0FSRURNakwxSzhRN1FIUnJOQXpvbzNjRy1kQ2ppTW5raTRucnZELWlsUE9RbE9BQQ?oc=5",
-      "summary": "",
-      "pubDate": "2026-11-17T02:20:00+09:00",
-      "category": "한겨레",
-      "press": "한겨레",
-      "source": "한겨레",
-      "queries": [
-        "AI"
-      ],
-      "source_type": "major",
-      "score": 4
-    },
-    {
-      "title": "[사설] 수능 수험생 불안 최소화할 ‘AI 부정’ 대책 마련을",
-      "link": "https://news.google.com/rss/articles/CBMiakFVX3lxTE1WS3B4T3cwdG00T0tLLU9HeWVDTTZuZVZkd1lvZ1NPTVJ4dTBrZGxMZFQ2ckRRSEQwclpMNjNCYVI1b05lNXU1QnR4U3NTVXg3dk5qV2xnSlk2UFl5X2NEQnlONkhmTEM3aFE?oc=5",
-      "originallink": "https://news.google.com/rss/articles/CBMiakFVX3lxTE1WS3B4T3cwdG00T0tLLU9HeWVDTTZuZVZkd1lvZ1NPTVJ4dTBrZGxMZFQ2ckRRSEQwclpMNjNCYVI1b05lNXU1QnR4U3NTVXg3dk5qV2xnSlk2UFl5X2NEQnlONkhmTEM3aFE?oc=5",
-      "summary": "",
-      "pubDate": "2026-11-17T02:19:00+09:00",
-      "category": "한겨레",
-      "press": "한겨레",
-      "source": "한겨레",
-      "queries": [
-        "AI"
-      ],
-      "source_type": "major",
-      "score": 4
-    },
-    {
-      "title": "‘AI 안경’ 비상 걸린 시험장…한국거래소 시험서도 부정행위 적발",
-      "link": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTE9Ddnp5LV96RFFROEFmTFUwQ0x6b0UxME9VTFhkUlctQ0xSN1I2VnZjclpkWUdlLVlDVjRwY0QyOEtWRXZjYms3cmxxcTlobUU4ZDhRSjJMVHBwSU5BeEtNeS1WMmFKWU0?oc=5",
-      "originallink": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTE9Ddnp5LV96RFFROEFmTFUwQ0x6b0UxME9VTFhkUlctQ0xSN1I2VnZjclpkWUdlLVlDVjRwY0QyOEtWRXZjYms3cmxxcTlobUU4ZDhRSjJMVHBwSU5BeEtNeS1WMmFKWU0?oc=5",
-      "summary": "",
-      "pubDate": "2026-11-17T02:18:00+09:00",
-      "category": "한겨레",
-      "press": "한겨레",
-      "source": "한겨레",
-      "queries": [
-        "AI"
-      ],
-      "source_type": "major",
-      "score": 4
-    },
-    {
-      "title": "AI 부정행위 진화하는데…시험 감독관은 ‘일당제 외부 인력’",
-      "link": "https://news.google.com/rss/articles/CBMiZEFVX3lxTE10eW0wakF0OVV5N1NyRTQ1LXpvNk1odExyeV9odDNBbWpPY2RJRnZubE9QRm9aOXY4YUtfNTZXYnBHNE9PcEFQRlZTUjZlbGxkNTQwWG5SM2Z5eGhzbmRueUxUOXI?oc=5",
-      "originallink": "https://news.google.com/rss/articles/CBMiZEFVX3lxTE10eW0wakF0OVV5N1NyRTQ1LXpvNk1odExyeV9odDNBbWpPY2RJRnZubE9QRm9aOXY4YUtfNTZXYnBHNE9PcEFQRlZTUjZlbGxkNTQwWG5SM2Z5eGhzbmRueUxUOXI?oc=5",
-      "summary": "",
-      "pubDate": "2026-11-17T02:17:00+09:00",
-      "category": "한겨레",
-      "press": "한겨레",
-      "source": "한겨레",
-      "queries": [
-        "AI"
-      ],
-      "source_type": "major",
-      "score": 4
-    },
-    {
-      "title": "AI가 낮춘 범죄의 문턱 [유레카]",
-      "link": "https://news.google.com/rss/articles/CBMiZkFVX3lxTE1vRXZncWlVN0ctMmxaMlRkM0k2YjVjS183WUdLMmN6U3NPeWFaNUxrVHpDY1RUdk9zbVpwRzAxQTgxMTgxWTd3MFlSVWh1cmZsOV9JRldCeF9sOTYyX3NYSWpMUHY0UQ?oc=5",
-      "originallink": "https://news.google.com/rss/articles/CBMiZkFVX3lxTE1vRXZncWlVN0ctMmxaMlRkM0k2YjVjS183WUdLMmN6U3NPeWFaNUxrVHpDY1RUdk9zbVpwRzAxQTgxMTgxWTd3MFlSVWh1cmZsOV9JRldCeF9sOTYyX3NYSWpMUHY0UQ?oc=5",
-      "summary": "",
-      "pubDate": "2026-11-17T02:16:00+09:00",
-      "category": "한겨레",
-      "press": "한겨레",
-      "source": "한겨레",
-      "queries": [
-        "AI"
-      ],
-      "source_type": "major",
-      "score": 4
-    },
-    {
-      "title": "‘AI 학습’ 저작물 무단 이용…창작자 보호책 시급하다 [왜냐면]",
-      "link": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTFAzNUNOMnJaTnhIRW9XdTlaZkxzSE9mRWhjMFBuX2ctSHNKcGtxTVQ5YVFLUDVwYWxONUlpNTVLTmYzek5ScHFjbVBjc2JjX1E1N2FvU0YyaEpvdHpKR1pGeHNDbGtGRXc?oc=5",
-      "originallink": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTFAzNUNOMnJaTnhIRW9XdTlaZkxzSE9mRWhjMFBuX2ctSHNKcGtxTVQ5YVFLUDVwYWxONUlpNTVLTmYzek5ScHFjbVBjc2JjX1E1N2FvU0YyaEpvdHpKR1pGeHNDbGtGRXc?oc=5",
-      "summary": "",
-      "pubDate": "2026-11-17T02:16:00+09:00",
-      "category": "한겨레",
-      "press": "한겨레",
-      "source": "한겨레",
-      "queries": [
-        "AI"
-      ],
-      "source_type": "major",
-      "score": 4
-    },
-    {
-      "title": "AI 커닝 ‘100% 잡아낼 자신’ 묻자…교육장관 “제 나이가 있어서”",
-      "link": "https://news.google.com/rss/articles/CBMiakFVX3lxTFBWcmNxQ3RFNUplUFpMN0JkX090ZHc0b3UyT0EwUjloc3dTejhxa1JrM1JNYWZieUg0TkgyeUVabHBQU2NTSE5xMEo0d0NZS0pOY3h4VGdDWi1rUVU4S2xPNFhmb3N0aXNJeGc?oc=5",
-      "originallink": "https://news.google.com/rss/articles/CBMiakFVX3lxTFBWcmNxQ3RFNUplUFpMN0JkX090ZHc0b3UyT0EwUjloc3dTejhxa1JrM1JNYWZieUg0TkgyeUVabHBQU2NTSE5xMEo0d0NZS0pOY3h4VGdDWi1rUVU4S2xPNFhmb3N0aXNJeGc?oc=5",
-      "summary": "",
-      "pubDate": "2026-11-17T02:14:00+09:00",
-      "category": "한겨레",
-      "press": "한겨레",
-      "source": "한겨레",
-      "queries": [
-        "AI"
-      ],
-      "source_type": "major",
-      "score": 4
-    },
-    {
-      "title": "‘AI커닝’에 외신 “경쟁 치열한 한국, 국가시험 신뢰 흔들”",
-      "link": "https://news.google.com/rss/articles/CBMiVkFVX3lxTE03VzdueDczU0haTkR1c0VhZHhLLUVOZzlvY3lKQXhWdzc2dkVrazdDa0VmOGszb3pjUzVxNHFwaGgwYTRFZ1I3ZGttcTRLUTlzTHVnVUdn?oc=5",
-      "originallink": "https://news.google.com/rss/articles/CBMiVkFVX3lxTE03VzdueDczU0haTkR1c0VhZHhLLUVOZzlvY3lKQXhWdzc2dkVrazdDa0VmOGszb3pjUzVxNHFwaGgwYTRFZ1I3ZGttcTRLUTlzTHVnVUdn?oc=5",
-      "summary": "",
-      "pubDate": "2026-11-17T01:57:57+09:00",
-      "category": "중앙일보",
-      "press": "중앙일보",
-      "source": "중앙일보",
-      "queries": [
-        "AI"
-      ],
-      "source_type": "major",
-      "score": 4
-    },
-    {
-      "title": "[인터뷰] “젠슨 황 퇴진, 미·중 AI 발전 모두 늦출 수도”",
-      "link": "https://news.google.com/rss/articles/CBMib0FVX3lxTFBuSVA2SGhZNUF2WEJxazdDSHlOOEhlY2ZacHB5Y1Y2blh0YlYyX1lIdGNNSTY2UUpIWXlhaUI1cW1QVjhraWZ3a0hqRzF2TzZrMWxFUXdmaS1wMGc0cjdFSWVmcHhpU09ibVhYcS1EUQ?oc=5",
-      "originallink": "https://news.google.com/rss/articles/CBMib0FVX3lxTFBuSVA2SGhZNUF2WEJxazdDSHlOOEhlY2ZacHB5Y1Y2blh0YlYyX1lIdGNNSTY2UUpIWXlhaUI1cW1QVjhraWZ3a0hqRzF2TzZrMWxFUXdmaS1wMGc0cjdFSWVmcHhpU09ibVhYcS1EUQ?oc=5",
-      "summary": "",
-      "pubDate": "2026-11-17T01:28:00+09:00",
-      "category": "한겨레",
-      "press": "한겨레",
-      "source": "한겨레",
-      "queries": [
-        "AI"
-      ],
-      "source_type": "major",
-      "score": 4
-    },
-    {
-      "title": "스마트폰 수거도 안 한 산업인력공단…‘AI 커닝’ 합격자 고소하기로",
-      "link": "https://news.google.com/rss/articles/CBMiZEFVX3lxTE5vcnVmZlR4cWhZcUJKV0NpbWJTSnpfMFpzdEVWWk8zMWNTRXpOZEFnLUlZUXlzVUk1RVpXYU4yUkx6OE5PUGN5RkZVSkxZWG9IWUhMd0Y2NGctQTl4X2g1cklzVUw?oc=5",
-      "originallink": "https://news.google.com/rss/articles/CBMiZEFVX3lxTE5vcnVmZlR4cWhZcUJKV0NpbWJTSnpfMFpzdEVWWk8zMWNTRXpOZEFnLUlZUXlzVUk1RVpXYU4yUkx6OE5PUGN5RkZVSkxZWG9IWUhMd0Y2NGctQTl4X2g1cklzVUw?oc=5",
-      "summary": "",
-      "pubDate": "2026-11-17T00:58:00+09:00",
-      "category": "한겨레",
-      "press": "한겨레",
-      "source": "한겨레",
-      "queries": [
-        "AI"
-      ],
-      "source_type": "major",
-      "score": 4
-    },
-    {
-      "title": "SKT-효성重 손잡고 AI 데이터센터 만든다",
-      "link": "https://www.donga.com/news/Economy/article/all/20261116/135034772/2",
-      "originallink": "https://www.donga.com/news/Economy/article/all/20261116/135034772/2",
-      "summary": "SK텔레콤이 효성중공업과 손잡고 기가와트(GW)급 인공지능(AI) 데이터센터 구축을 위한 차세대 전력 기술 개발에 나선다. SK텔레콤은 16일 서울 중구 SKT타워에서 효성중공업과 AI 데이터센터 구축을 위한 전략적 업무협약(MOU)을 체결했다고 밝혔다. 두 회사는 SK텔레콤의 AI 데이터센터 개발 운영 역량과 효성중공업의 전력 설비 제조 기술을 결합해 해당 분야 경쟁력을 높일 계획이다. 양사는 우선 초고압 전기를 받아 데이터센터에서 사용할 수 있도록 전압을 낮춰 공급하는 345kV(킬로볼트) 변전소 핵심 설비 확보에 나서기로 했다",
-      "pubDate": "2026-11-17T00:30:00+09:00",
-      "category": "동아일보",
-      "press": "동아일보",
-      "source": "동아일보",
-      "queries": [
-        "AI"
-      ],
-      "source_type": "major",
-      "score": 4
-    },
-    {
-      "title": "세무사 수석합격자, 'AI 부정행위' 수법 적은 경위서 제출",
-      "link": "https://news.jtbc.co.kr/article/NB12328372",
-      "originallink": "https://news.jtbc.co.kr/article/NB12328372",
-      "summary": "인공지능을 이용한 세무사 시험 부정행위를 자백한 한모 씨 측이 '부정행위 경위서'를 관계기관에 제출했다고 밝혔습니다. 제출 기관은 세무사 시험을 소관·시행하는 국세청과 한국산업인력공단을 포함해 앞서 부정행위 사실을",
-      "pubDate": "2026-11-16T22:40:16+09:00",
-      "category": "JTBC",
-      "press": "JTBC",
-      "source": "JTBC",
-      "queries": [
-        "AI"
-      ],
-      "source_type": "major",
-      "score": 4
-    },
-    {
-      "title": "'AI 부정행위' 파문",
-      "link": "https://news.google.com/rss/articles/CBMibkFVX3lxTE5wa3VxU0NTdHBVRGFIV19zWWJ2LXByQUlmNVZBakJoMDc0ZElmZndPRlhZR3VVcUktNWFNNnlKenVvOGR3NXpYb0xXSHBNTEtkSXR1Ym96bDJ2OE1wVVFjaTRLWXEyMFFVYTlPcG5n?oc=5",
-      "originallink": "https://news.google.com/rss/articles/CBMibkFVX3lxTE5wa3VxU0NTdHBVRGFIV19zWWJ2LXByQUlmNVZBakJoMDc0ZElmZndPRlhZR3VVcUktNWFNNnlKenVvOGR3NXpYb0xXSHBNTEtkSXR1Ym96bDJ2OE1wVVFjaTRLWXEyMFFVYTlPcG5n?oc=5",
-      "summary": "",
-      "pubDate": "2026-11-16T20:51:17+09:00",
-      "category": "한국일보",
-      "press": "한국일보",
-      "source": "한국일보",
-      "queries": [
-        "AI"
-      ],
-      "source_type": "major",
-      "score": 4
-    },
-    {
-      "title": "이 대통령 \"한·아세안 AI 동행·문화창조산업 이니셔티브 제안\"",
-      "link": "https://news.google.com/rss/articles/CBMibkFVX3lxTFBoQVFkS1JDNkp3TzJNczJYSWZsc3J0WlZXVGtBcGZieVVjbGZYQWQ4QnhPeUt3dUZXcEFXZGt2R0FGQVQ4TGJCaGdab2tVRlNjLWhaYkNWLVh2MjVUU3hIdkRNcXBzVWw4c3hUSE9R0gFzQVVfeXFMUE5jODYtX0JfN3hLNGtTSHBkYUFxbEpKMU8yQjFMS3loQVFRbGxMYmRKTmJKaVFqSHpDQjZoZzI4V3NOTnZTemtfNl9HS1JIXzBGYlNaNVRsTWd2N3oyR0ZjU2F6ZXhQWHFleno1bWNCT3NlWQ?oc=5",
-      "originallink": "https://news.google.com/rss/articles/CBMibkFVX3lxTFBoQVFkS1JDNkp3TzJNczJYSWZsc3J0WlZXVGtBcGZieVVjbGZYQWQ4QnhPeUt3dUZXcEFXZGt2R0FGQVQ4TGJCaGdab2tVRlNjLWhaYkNWLVh2MjVUU3hIdkRNcXBzVWw4c3hUSE9R0gFzQVVfeXFMUE5jODYtX0JfN3hLNGtTSHBkYUFxbEpKMU8yQjFMS3loQVFRbGxMYmRKTmJKaVFqSHpDQjZoZzI4V3NOTnZTemtfNl9HS1JIXzBGYlNaNVRsTWd2N3oyR0ZjU2F6ZXhQWHFleno1bWNCT3NlWQ?oc=5",
-      "summary": "",
-      "pubDate": "2026-11-16T20:30:00+09:00",
-      "category": "한국일보",
-      "press": "한국일보",
-      "source": "한국일보",
-      "queries": [
-        "AI"
-      ],
-      "source_type": "major",
-      "score": 4
-    },
-    {
-      "title": "‘최초접촉’ 빠진 일차의료 혁신, 무엇을 바꾸겠다는 것인가 [왜냐면]",
-      "link": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTE9kalJ2dFZ2ZVN3ZzNBMFUzR01yaHFIRFRwN3VTVnZERmVwRkRfcFVXTnFWODZ5LV9ubDJpRy1ZUkUtbzNVX0tZaEM4SWpRNllFaElLSDFBTFdOR1ZROTVROWMwa3FBM2c?oc=5",
-      "originallink": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTE9kalJ2dFZ2ZVN3ZzNBMFUzR01yaHFIRFRwN3VTVnZERmVwRkRfcFVXTnFWODZ5LV9ubDJpRy1ZUkUtbzNVX0tZaEM4SWpRNllFaElLSDFBTFdOR1ZROTVROWMwa3FBM2c?oc=5",
-      "summary": "",
-      "pubDate": "2026-11-16T20:12:00+09:00",
-      "category": "한겨레",
-      "press": "한겨레",
-      "source": "한겨레",
-      "queries": [
-        "의료"
-      ],
-      "source_type": "major",
-      "score": 4
-    },
-    {
-      "title": "국민대 AI디자인학과 학생들, 세계적 스포츠 광고제 ‘Clio Sports Awards 2026’서 금상 및 동상 수상",
-      "link": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTFBITmxFemRxN1BiNGtmQU5iQ3VmbWZmd21tbFdTNHlSTktaMWVwLXdSS2lkRG9oSktwdU9sNUpzQlM5YmFsUmhVRWFydE9CVHNZa0xoNzZaMUVFM2t3N1duMnppMzJvNEk?oc=5",
-      "originallink": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTFBITmxFemRxN1BiNGtmQU5iQ3VmbWZmd21tbFdTNHlSTktaMWVwLXdSS2lkRG9oSktwdU9sNUpzQlM5YmFsUmhVRWFydE9CVHNZa0xoNzZaMUVFM2t3N1duMnppMzJvNEk?oc=5",
-      "summary": "",
-      "pubDate": "2026-11-16T19:43:00+09:00",
-      "category": "한겨레",
-      "press": "한겨레",
-      "source": "한겨레",
-      "queries": [
-        "AI"
-      ],
-      "source_type": "major",
-      "score": 4
-    },
-    {
-      "title": "\"난 욕심 없이 AI로 9급 합격\"… 온라인서 줄 잇는 '커닝 자백', 사실? 장난?",
-      "link": "https://news.google.com/rss/articles/CBMibkFVX3lxTE1wb0NsWE9RZmdMb1NzNHVIcHBfbF84VUFrdURLQW1nYUNYLTFRMUpkcTFUX0VycGtrem4zQTZwTTJ1cl9WcDBXZFZIbkJaalNVNkZyd2J3ODZYSE1lUUpHTWlibHQwU2VhRnFrU3J30gFzQVVfeXFMT2JCTDQxVmRRdnRUX1Y0cFBxa0RHc080ZC1URGVKYS1oTkE2cEthbE1aakluTExwdktzUlpVZWFfVk92d21HdXVwbFYtQkNDWllERGg3dGFwYk93Uk5vbk1vcXpjRHdkbkZsNi1BeHFrb2VTUQ?oc=5",
-      "originallink": "https://news.google.com/rss/articles/CBMibkFVX3lxTE1wb0NsWE9RZmdMb1NzNHVIcHBfbF84VUFrdURLQW1nYUNYLTFRMUpkcTFUX0VycGtrem4zQTZwTTJ1cl9WcDBXZFZIbkJaalNVNkZyd2J3ODZYSE1lUUpHTWlibHQwU2VhRnFrU3J30gFzQVVfeXFMT2JCTDQxVmRRdnRUX1Y0cFBxa0RHc080ZC1URGVKYS1oTkE2cEthbE1aakluTExwdktzUlpVZWFfVk92d21HdXVwbFYtQkNDWllERGg3dGFwYk93Uk5vbk1vcXpjRHdkbkZsNi1BeHFrb2VTUQ?oc=5",
-      "summary": "",
-      "pubDate": "2026-11-16T19:09:00+09:00",
-      "category": "한국일보",
-      "press": "한국일보",
-      "source": "한국일보",
-      "queries": [
-        "AI"
-      ],
-      "source_type": "major",
-      "score": 4
-    },
-    {
-      "title": "'커닝해 의대 갔다' 이게 진짜면…\"인생 바쳤는데\" 분노 허탈",
-      "link": "https://news.jtbc.co.kr/article/NB12328301",
-      "originallink": "https://news.jtbc.co.kr/article/NB12328301",
-      "summary": "[앵커] 이런 혼란에서 가장 중요한 당사자는 다름 아닌 수험생들입니다. 당장 사흘 뒤 시험장에 앉아 수능 시험을 치러야 합니다. 그런데 AI 부정행위 가능성이 거론되고, 과거 수능에서 그런 방식으로 의대에 진학했다",
-      "pubDate": "2026-11-16T18:56:24+09:00",
-      "category": "JTBC",
-      "press": "JTBC",
-      "source": "JTBC",
-      "queries": [
-        "의대"
-      ],
-      "source_type": "major",
-      "score": 4
-    },
-    {
-      "title": "[단독] 수능날 'AI 안경' 잡겠다더니…매뉴얼엔 '감독관끼리 판단'",
-      "link": "https://news.jtbc.co.kr/article/NB12328303",
-      "originallink": "https://news.jtbc.co.kr/article/NB12328303",
-      "summary": "[앵커] 교육부는 오늘 AI 안경 부정행위를 막겠다며 시연회도 열었습니다. 그런데 저희가 입수한 현장 대응 매뉴얼에는 초소형 카메라 같은 다른 전자기기에 대한 대응책이 담기지 않았습니다. 큰 문제로 떠오른 세무사",
-      "pubDate": "2026-11-16T18:54:21+09:00",
-      "category": "JTBC",
-      "press": "JTBC",
-      "source": "JTBC",
-      "queries": [
-        "AI"
-      ],
-      "source_type": "major",
-      "score": 4
-    },
-    {
-      "title": "\"한국 사회 뒤흔든 스캔들\"… 외신도 '세무사 시험 AI 커닝 사태' 주목",
-      "link": "https://news.google.com/rss/articles/CBMibkFVX3lxTE5VNE9lYWs1T1NRSm5VeHFjcDFrMTJVY0VZTG13MTAxQVQtWS1JeEpxaUFZbWRMOEZ4RmtkcTdxdmxFMTBlV0RrZ2N6bDItMnRVa2FySG42aUp4VW8yeDNiZm50TE5HNlVyS25zQnZB?oc=5",
-      "originallink": "https://news.google.com/rss/articles/CBMibkFVX3lxTE5VNE9lYWs1T1NRSm5VeHFjcDFrMTJVY0VZTG13MTAxQVQtWS1JeEpxaUFZbWRMOEZ4RmtkcTdxdmxFMTBlV0RrZ2N6bDItMnRVa2FySG42aUp4VW8yeDNiZm50TE5HNlVyS25zQnZB?oc=5",
-      "summary": "",
-      "pubDate": "2026-11-16T18:10:00+09:00",
-      "category": "한국일보",
-      "press": "한국일보",
-      "source": "한국일보",
-      "queries": [
-        "AI"
-      ],
-      "source_type": "major",
-      "score": 4
-    },
-    {
-      "title": "[맞수토론] 'AI 커닝' 혼란...수능 사흘 앞 초비상, 연기 필요성은",
-      "link": "https://news.jtbc.co.kr/article/NB12328289",
-      "originallink": "https://news.jtbc.co.kr/article/NB12328289",
-      "summary": "■ 방송 : JTBC 이가혁 라이브 / 진행 : 이가혁 ■ 저작권은 JTBC 뉴스에 있습니다. 인용보도 시 출처를 밝혀주시기 바랍니다. ※ 아래 텍스트는 실제 내용과 차이가 있을 수 있습니다. 정확한 내용은 영상을",
-      "pubDate": "2026-11-16T17:47:40+09:00",
-      "category": "JTBC",
-      "press": "JTBC",
-      "source": "JTBC",
-      "queries": [
-        "AI"
-      ],
-      "source_type": "major",
-      "score": 4
-    },
-    {
-      "title": "“미세 행동 데이터로 마케팅 판도 바꾼다”…마젠트, 팁스 발판 삼아 에이전트 AI 개발 가속 [ICT이노베이션스퀘어확산사업]",
-      "link": "https://www.donga.com/news/It/article/all/20261116/135034295/1",
-      "originallink": "https://www.donga.com/news/It/article/all/20261116/135034295/1",
-      "summary": "[IT동아 x 스파크랩] 동남권 ICT 이노베이션 스퀘어 확산사업은 과학기술정보통신부와 정보통신산업진흥원이 주최하고 부산정보산업진흥원이 주관하며, 부산·울산·경남 지역의 디지털 인재 양성과 지역 특화 산업의 디지털 전환, 창업 생태계 조성을 목표로 하고 있습니다. 이 사업에서 스파크랩이 육성하고 있는 스타트업을 IT동아가 소개합니다.마케팅 인공지능(AI) 소프트웨어 기업 ㈜마젠트(Magent)가 중소벤처기업부 ‘2026년 팁스(TIPS) R&D’ 과제에 최종 선정됐다. 마젠트는 이를 발판으로 마젠트는 최대 8억 원을 지원받아 사용자",
-      "pubDate": "2026-11-16T17:41:10+09:00",
-      "category": "동아일보",
-      "press": "동아일보",
-      "source": "동아일보",
-      "queries": [
-        "AI"
-      ],
-      "source_type": "major",
-      "score": 4
-    },
-    {
-      "title": "젠슨 황 사퇴 충격에 '20만 전자' 붕괴…증권가 'AI 빅위크' 촉각",
-      "link": "https://news.google.com/rss/articles/CBMibkFVX3lxTE40ajkxSnFCejJsQ0swbHF4T2drdHhRRmhyMnRSeHZMejRJTHRDR2p4UVdRd0dWOEEyV21fM2c0THNyeVZHZHlkU2xwcjUwWHFnME04bkxiNWpqU1l6NHAzNEN6M1kzYkl4T0ZpWkNB0gFzQVVfeXFMTWl1THIycmh2WGZZdXgzWl9uWG5DblpvWkNNTGtRdHRZeGpJOTZhSGZmYmRPR21ITW4wLVFKdUswSE41ZWpPRUk1bE9hdi1UajA0R2k3YmZWdlc2Q0VzeHRzRXhrVmFZWTdMWlFKeDVCcEtYZw?oc=5",
-      "originallink": "https://news.google.com/rss/articles/CBMibkFVX3lxTE40ajkxSnFCejJsQ0swbHF4T2drdHhRRmhyMnRSeHZMejRJTHRDR2p4UVdRd0dWOEEyV21fM2c0THNyeVZHZHlkU2xwcjUwWHFnME04bkxiNWpqU1l6NHAzNEN6M1kzYkl4T0ZpWkNB0gFzQVVfeXFMTWl1THIycmh2WGZZdXgzWl9uWG5DblpvWkNNTGtRdHRZeGpJOTZhSGZmYmRPR21ITW4wLVFKdUswSE41ZWpPRUk1bE9hdi1UajA0R2k3YmZWdlc2Q0VzeHRzRXhrVmFZWTdMWlFKeDVCcEtYZw?oc=5",
-      "summary": "",
-      "pubDate": "2026-11-16T17:35:00+09:00",
-      "category": "한국일보",
-      "press": "한국일보",
-      "source": "한국일보",
-      "queries": [
-        "AI"
-      ],
-      "source_type": "major",
-      "score": 4
-    },
-    {
-      "title": "\"의사가 음주운전 저지른 적 없길 기대하는 건 당연\"…법원, 무면허 음주운전 의사 면허취소 정당",
-      "link": "https://news.jtbc.co.kr/article/NB12328335",
-      "originallink": "https://news.jtbc.co.kr/article/NB12328335",
-      "summary": "음주운전처럼 의료행위와 무관한 범죄로 금고 이상의 형을 받은 의사의 면허를 취소하도록 한 의료법 조항이 헌법에 어긋나지 않는다는 법원 판단이 나왔습니다. 서울행정법원 행정12부는 지난 12일 의사 A씨가 보건복지부",
-      "pubDate": "2026-11-16T17:29:57+09:00",
-      "category": "JTBC",
-      "press": "JTBC",
-      "source": "JTBC",
-      "queries": [
-        "의사"
-      ],
-      "source_type": "major",
-      "score": 4
-    },
-    {
-      "title": "'리트 만점자'도 AI 사용 의혹?… 현직 강사 \"지문 읽었다면 안 고를 답 골라\"",
-      "link": "https://news.google.com/rss/articles/CBMibkFVX3lxTFB1QUt4YkxlOEFlSzZXVVVKOURYTFhiZG5Bak1WZ0RQc3c2X1Rua0lsUlBYbTNWRjhXYlpuemh3SlJ3dm1KQWp5T1JLSVpmUTg0MEVwZlF6Smw4bnhJQzhpNTBRY1ZzQnUwbjB0YnB30gFzQVVfeXFMUDYzbXVram1zY0c3bnZHNGhROG9LcGdGMHBDM2stUDl1VmhaNTRSVHI1Szl2enFOMWU2YWRnbmx0NEJPZGJGR01kby1PcmhBdFFXd01BRDlCdkpOaTRhdGlsN281YW9MdUJyRm1xSmdHTWx5WQ?oc=5",
-      "originallink": "https://news.google.com/rss/articles/CBMibkFVX3lxTFB1QUt4YkxlOEFlSzZXVVVKOURYTFhiZG5Bak1WZ0RQc3c2X1Rua0lsUlBYbTNWRjhXYlpuemh3SlJ3dm1KQWp5T1JLSVpmUTg0MEVwZlF6Smw4bnhJQzhpNTBRY1ZzQnUwbjB0YnB30gFzQVVfeXFMUDYzbXVram1zY0c3bnZHNGhROG9LcGdGMHBDM2stUDl1VmhaNTRSVHI1Szl2enFOMWU2YWRnbmx0NEJPZGJGR01kby1PcmhBdFFXd01BRDlCdkpOaTRhdGlsN281YW9MdUJyRm1xSmdHTWx5WQ?oc=5",
-      "summary": "",
-      "pubDate": "2026-11-16T17:10:00+09:00",
-      "category": "한국일보",
-      "press": "한국일보",
-      "source": "한국일보",
-      "queries": [
-        "AI"
-      ],
-      "source_type": "major",
-      "score": 4
-    },
-    {
-      "title": "대중 'AI 수출 규제' 구멍 만든 美상무…\"아들은 그 틈에 이득 취해\"",
-      "link": "https://news.google.com/rss/articles/CBMibkFVX3lxTFBrTGdXUUJYSmZhMi1vdEpSZTA2N01vRldVQXRqMnc4T0dZRWRmTXNPSm04V0Nna1NjN1FLSUVOSzJmR19rZFhFdHpDbW5nSW16ZzVPX202VHAwWmZSc29ZV2c3ckV1cXcwSk1mYzd30gFzQVVfeXFMUHVnSVRGVnZyVDBTM2JnZC1rMWZLcUUxcHhleGRQSXR3QnFqR2RBZkRkTGNVSnlrdmN5eGRURl9ZSGoydmt2X0NBdGY2YzRNVWNVdlIxaXZaek1fYTUzZG1fTUFRSjZnRW5PaWtzZ0JzLTZTWQ?oc=5",
-      "originallink": "https://news.google.com/rss/articles/CBMibkFVX3lxTFBrTGdXUUJYSmZhMi1vdEpSZTA2N01vRldVQXRqMnc4T0dZRWRmTXNPSm04V0Nna1NjN1FLSUVOSzJmR19rZFhFdHpDbW5nSW16ZzVPX202VHAwWmZSc29ZV2c3ckV1cXcwSk1mYzd30gFzQVVfeXFMUHVnSVRGVnZyVDBTM2JnZC1rMWZLcUUxcHhleGRQSXR3QnFqR2RBZkRkTGNVSnlrdmN5eGRURl9ZSGoydmt2X0NBdGY2YzRNVWNVdlIxaXZaek1fYTUzZG1fTUFRSjZnRW5PaWtzZ0JzLTZTWQ?oc=5",
-      "summary": "",
-      "pubDate": "2026-11-16T16:53:00+09:00",
-      "category": "한국일보",
-      "press": "한국일보",
-      "source": "한국일보",
-      "queries": [
-        "AI"
-      ],
-      "source_type": "major",
-      "score": 4
-    },
-    {
-      "title": "‘삼성전자 AI 안경’, 1차 사전 예약 완판…부정행위 우려 괜찮을까?",
-      "link": "https://www.donga.com/news/It/article/all/20261116/135033383/1",
-      "originallink": "https://www.donga.com/news/It/article/all/20261116/135033383/1",
-      "summary": "삼성전자가 구글, 젠틀몬스터와 함께 개발한 인공지능(AI) 안경 ‘인텔리전트 아이웨어’가 사전 예약 단계에서 품절됐다. 2027학년도 대학수학능력시험(수능)까지 사흘 앞둔 상황에서 국가자격시험에서 초소형 카메라와 AI를 활용한 부정행위가 드러나면서 업계 관심도 높아지는 모양새다.삼성전자에 따르면 인텔리전트 아이웨어는 지난 12일 젠틀몬스터 공식 온라인 채널을 통해 사전 판매를 시작했다. 16일 현재 공식 온라인몰에는 16종이 모두 품절 상태다. 예약 판매 수량은 공개되지 않았으며, 판매 재개 시점도 알려지지 않았다. 젠틀몬스터는 공",
-      "pubDate": "2026-11-16T16:47:26+09:00",
-      "category": "동아일보",
-      "press": "동아일보",
-      "source": "동아일보",
-      "queries": [
-        "AI"
-      ],
-      "source_type": "major",
-      "score": 4
-    },
-    {
-      "title": "교육 장관 \"100% 적발? 전 못 잡을 것 같다\"… 'AI 커닝' 대책 홍수 속 '혼란'",
-      "link": "https://news.google.com/rss/articles/CBMic0FVX3lxTFBsOVc1bkpOLWNwd3dZbzkzNEFqNk5UTUp6VHM4ZzA3SWJXSmRJRnUxZ3h1ODlaMVhEWjNqNEhPVzBJcXIzUFBhVDBaeVNZYUNXQV9nUmpYeXFSR3FNdEt2djdzTlppa1FaQW16ZDFya0drZW_SAXNBVV95cUxQbDlXNW5KTi1jcHd3WW85MzRBajZOVE1KelRzOGcwN0liV0pkSUZ1MWd4dTg5WjFYRFozajRIT1cwSXFyM1BQYVQwWnlTWWFDV0FfZ1JqWHlxUkdxTXRLdnY3c05aaWtRWkFtemQxcmtHa2Vv?oc=5",
-      "originallink": "https://news.google.com/rss/articles/CBMic0FVX3lxTFBsOVc1bkpOLWNwd3dZbzkzNEFqNk5UTUp6VHM4ZzA3SWJXSmRJRnUxZ3h1ODlaMVhEWjNqNEhPVzBJcXIzUFBhVDBaeVNZYUNXQV9nUmpYeXFSR3FNdEt2djdzTlppa1FaQW16ZDFya0drZW_SAXNBVV95cUxQbDlXNW5KTi1jcHd3WW85MzRBajZOVE1KelRzOGcwN0liV0pkSUZ1MWd4dTg5WjFYRFozajRIT1cwSXFyM1BQYVQwWnlTWWFDV0FfZ1JqWHlxUkdxTXRLdnY3c05aaWtRWkFtemQxcmtHa2Vv?oc=5",
-      "summary": "",
-      "pubDate": "2026-11-16T16:43:00+09:00",
-      "category": "한국일보",
-      "press": "한국일보",
-      "source": "한국일보",
-      "queries": [
-        "AI"
-      ],
-      "source_type": "major",
-      "score": 4
-    },
-    {
-      "title": "대경대, K-Bio 항노화 전문가 키운다...의료·바이오·뷰티 융합한 석사과정",
-      "link": "https://news.google.com/rss/articles/CBMibkFVX3lxTE1fS05Kejk1eXplN25aU0JlLTN1YVdxRTg1NjZlazQtaGFnal9NaGhXZEo1SWs3d0dBUEM5VnVnR3pEaC1ZUDR3UVF2S0ZXZUpRcDVYY0dZQ3gtYjNTaS1rN3hlWmdhN2dXUXJTeE1n0gFzQVVfeXFMTVVOblJKN0RWcktYTE8wejhPWEV0RVdLQXVJMVNQUEFVSG5EWWZibThMZVA0a3RURWFpWWdDaHl2OW4xZVpraVlWcEdOY1hXTk5zZnBDMHpKSlg2MUdoRWh0b0NEZTJMUDU5eGhzMWVzdXdUYw?oc=5",
-      "originallink": "https://news.google.com/rss/articles/CBMibkFVX3lxTE1fS05Kejk1eXplN25aU0JlLTN1YVdxRTg1NjZlazQtaGFnal9NaGhXZEo1SWs3d0dBUEM5VnVnR3pEaC1ZUDR3UVF2S0ZXZUpRcDVYY0dZQ3gtYjNTaS1rN3hlWmdhN2dXUXJTeE1n0gFzQVVfeXFMTVVOblJKN0RWcktYTE8wejhPWEV0RVdLQXVJMVNQUEFVSG5EWWZibThMZVA0a3RURWFpWWdDaHl2OW4xZVpraVlWcEdOY1hXTk5zZnBDMHpKSlg2MUdoRWh0b0NEZTJMUDU5eGhzMWVzdXdUYw?oc=5",
-      "summary": "",
-      "pubDate": "2026-11-16T16:40:00+09:00",
-      "category": "한국일보",
-      "press": "한국일보",
-      "source": "한국일보",
-      "queries": [
-        "의료"
-      ],
-      "source_type": "major",
-      "score": 4
-    },
-    {
-      "title": "AI 콘텐츠 제작부터 전시까지…실전형 AI 창작자 육성하는 뉴콘텐츠아카데미",
-      "link": "https://www.donga.com/news/Economy/article/all/20261116/135032300/1",
-      "originallink": "https://www.donga.com/news/Economy/article/all/20261116/135032300/1",
-      "summary": "인공지능(AI)은 애니메이션·게임 등 콘텐츠 제작 과정을 어떻게 효율화하고 어떤 결과물을 제공할 수 있을까? 이에 대한 답을 제시하는 행사가 지난 12~14일 서울 강남구 코엑스에서 열렸다. 문화체육관광부가 주최하고 한국콘텐츠진흥원이 주관하는 ‘AI 콘텐츠 페스티벌’이다.이번 페스티벌은 AI 기술로 만든 콘텐츠를 전시하고, 기업 간 교류를 통해 우수 콘텐츠와 기술의 사업화를 지원하기 위해 마련됐다. AI를 활용해 제작한 영상, 음악, 게임 등 다양한 콘텐츠를 선보였다. 관람객은 각 부스에서 콘텐츠를 체험하고 제작팀과 소통하며 AI가",
-      "pubDate": "2026-11-16T16:39:00+09:00",
-      "category": "동아일보",
-      "press": "동아일보",
-      "source": "동아일보",
-      "queries": [
-        "AI"
-      ],
-      "source_type": "major",
-      "score": 4
-    },
-    {
-      "title": "서부발전, 서산·태안 공공의료에 7년간 67억 원 지원",
-      "link": "https://news.google.com/rss/articles/CBMibkFVX3lxTE8yVExIbUxMYm1neDN2YmpyYTlXZVkxeWlnYmE2ckQzZ3dsZTRyLVJEMmdxUk43YUtQd2lEd2RXc0dyWGd1bjBRWmlDVFFvdE9ncDJqUXNMSnJaRmdmMEd3U1lCT005ZnZiX2pRZkh30gFzQVVfeXFMUG9yWWs0c2pDSGNhSmFMYmpJbHJVVzJMQTBjMEJ5N19IeExQMEZqNUJMZ0UyMlNURGQ2LVJGMVliQ3BHUnRON1I3YmFkNExuX3pzWk9DTWJsTTV6YWVkbWN1b2NKV0MwYXRKV1hra2JJRnVLNA?oc=5",
-      "originallink": "https://news.google.com/rss/articles/CBMibkFVX3lxTE8yVExIbUxMYm1neDN2YmpyYTlXZVkxeWlnYmE2ckQzZ3dsZTRyLVJEMmdxUk43YUtQd2lEd2RXc0dyWGd1bjBRWmlDVFFvdE9ncDJqUXNMSnJaRmdmMEd3U1lCT005ZnZiX2pRZkh30gFzQVVfeXFMUG9yWWs0c2pDSGNhSmFMYmpJbHJVVzJMQTBjMEJ5N19IeExQMEZqNUJMZ0UyMlNURGQ2LVJGMVliQ3BHUnRON1I3YmFkNExuX3pzWk9DTWJsTTV6YWVkbWN1b2NKV0MwYXRKV1hra2JJRnVLNA?oc=5",
-      "summary": "",
-      "pubDate": "2026-11-16T16:29:00+09:00",
-      "category": "한국일보",
-      "press": "한국일보",
-      "source": "한국일보",
-      "queries": [
-        "의료"
-      ],
-      "source_type": "major",
-      "score": 4
-    },
-    {
-      "title": "정부, 'AI 수석 논란'에 \"최근 3~5년 세무사 합격자 성적 특이사항 재점검\"",
-      "link": "https://news.jtbc.co.kr/article/NB12328295",
-      "originallink": "https://news.jtbc.co.kr/article/NB12328295",
-      "summary": "세무사 시험 수석 합격자인 A씨가 AI를 활용했다고 자진 신고한 가운데 정부가 최근 3~5년간 세무사 시험 최종합격자의 점수를 재점검하기로 했습니다. 오늘(16일) 재정경제부는 국세청 및 한국산업인력공단과 함께 '",
-      "pubDate": "2026-11-16T16:25:08+09:00",
-      "category": "JTBC",
-      "press": "JTBC",
-      "source": "JTBC",
-      "queries": [
-        "AI"
-      ],
-      "source_type": "major",
-      "score": 4
-    },
-    {
-      "title": "\"비싼 돈 주고 굳이 세무사 써야 하나\"…AI 수석 합격에 전문성 '흔들'",
-      "link": "https://news.jtbc.co.kr/article/NB12328292",
-      "originallink": "https://news.jtbc.co.kr/article/NB12328292",
-      "summary": "세무사 시험 수석 합격자가 AI와 전자기기를 이용한 부정행위를 인정하면서 시험의 공정성 논란이 불거졌습니다. 이런 가운데 AI가 전문직의 가치마저 바꾸고 있다는 목소리가 나오고 있습니다. 1차 객관식 시험은 물론 2",
-      "pubDate": "2026-11-16T16:20:44+09:00",
-      "category": "JTBC",
-      "press": "JTBC",
-      "source": "JTBC",
-      "queries": [
-        "AI"
-      ],
-      "source_type": "major",
-      "score": 4
-    },
-    {
-      "title": "금속탐지기·신호차단기·CCTV…中·인도, 입시 AI 컨닝 차단 총력",
-      "link": "https://www.donga.com/news/Inter/article/all/20261116/135032381/1",
-      "originallink": "https://www.donga.com/news/Inter/article/all/20261116/135032381/1",
-      "summary": "인구가 많고, 대학입시 경쟁이 치열한 중국과 인도도 금속탐지기, 무선통신 차단 장비 등을 동원하며 입시에서 인공지능(AI) 컨닝을 막기 위한 대응책 마련에 부심하고 있다.중국 교육부는 올 6월 대학 입학시험인 가오카오(高考)를 앞두고 스마트안경을 이용한 부정행위를 막기 위한 특별검사를 의무화했다. 이에 따라 광둥성은 모든 수험생을 대상으로 2번의 금속탐지기 검사와 지능형 보안검색대 통과 등 총 3단계의 보안검색을 진행했다. 특히 안경을 쓴 수험생은 폐쇄회로(CC)TV 앞에서 안경을 벗고, 감독관의 추가 검사를 받도록 했다. 후베이성",
-      "pubDate": "2026-11-16T16:20:00+09:00",
-      "category": "동아일보",
-      "press": "동아일보",
-      "source": "동아일보",
-      "queries": [
-        "AI"
-      ],
-      "source_type": "major",
-      "score": 4
-    },
-    {
-      "title": "'AI 커닝' 또 있나…정부, 5년치 세무사 합격자 '특이 점수' 들여다본다",
-      "link": "https://news.google.com/rss/articles/CBMibkFVX3lxTFBqcnJaX0Q2RXJxelR1bFRfekltbmZ6T09jY01XN1NScGRvd3JSblg0OG9vVnBjaGZ4dFRWUVhUUHFITFlDNDVLdGxrcXhjWHphcXZsR0hsS1NIOHc1SUtvOTZXTXhoVEVnSVU2eUpB0gFzQVVfeXFMT21SWUNqRUQ5a09xajNQNnJnYnBGSlRFNElGVGdIUFA2Zk41c1F1ZENKVFlNZHBMeXNoZU4zeVdmaEJzdGY0MzJ6MlMzdDk4VjRscVE5SkFZazExWHVObkR3RS1OeFlkY21jbkdRT0F4cGdCTQ?oc=5",
-      "originallink": "https://news.google.com/rss/articles/CBMibkFVX3lxTFBqcnJaX0Q2RXJxelR1bFRfekltbmZ6T09jY01XN1NScGRvd3JSblg0OG9vVnBjaGZ4dFRWUVhUUHFITFlDNDVLdGxrcXhjWHphcXZsR0hsS1NIOHc1SUtvOTZXTXhoVEVnSVU2eUpB0gFzQVVfeXFMT21SWUNqRUQ5a09xajNQNnJnYnBGSlRFNElGVGdIUFA2Zk41c1F1ZENKVFlNZHBMeXNoZU4zeVdmaEJzdGY0MzJ6MlMzdDk4VjRscVE5SkFZazExWHVObkR3RS1OeFlkY21jbkdRT0F4cGdCTQ?oc=5",
-      "summary": "",
-      "pubDate": "2026-11-16T15:59:00+09:00",
-      "category": "한국일보",
-      "press": "한국일보",
-      "source": "한국일보",
-      "queries": [
-        "AI"
-      ],
-      "source_type": "major",
-      "score": 4
-    },
-    {
-      "title": "AI로 수능 부정행위 땐 10년 응시 제한…민주당, 법 개정 추진",
-      "link": "https://news.jtbc.co.kr/article/NB12328281",
-      "originallink": "https://news.jtbc.co.kr/article/NB12328281",
-      "summary": "국회 교육위원회 소속 더불어민주당 의원들이 인공지능(AI)을 활용한 수능 부정행위에 대해 응시자격을 10년 이상 제한하거나 원천 박탈할 수 있게 법을 개정하겠다고 예고했습니다. 민주당 교육위원들은 오늘(16일) 국",
-      "pubDate": "2026-11-16T15:55:24+09:00",
-      "category": "JTBC",
-      "press": "JTBC",
-      "source": "JTBC",
-      "queries": [
-        "AI"
-      ],
-      "source_type": "major",
-      "score": 4
-    },
-    {
-      "title": "\"문제 토씨 하나 안 틀렸다\"…대학 편입도 AI 커닝 의혹",
-      "link": "https://news.jtbc.co.kr/article/NB12328278",
-      "originallink": "https://news.jtbc.co.kr/article/NB12328278",
-      "summary": "세무사 시험 수석 합격자의 AI 부정행위 자백으로 인한 파장이 커지고 있습니다. 이번엔 서울 주요 대학 편입시험에서 유사한 부정행위가 있었던 것 아니냐는 의혹이 제기됐습니다. 편입시험 합격자로 알려진 수험생들이 한",
-      "pubDate": "2026-11-16T15:47:52+09:00",
-      "category": "JTBC",
-      "press": "JTBC",
-      "source": "JTBC",
-      "queries": [
-        "AI"
-      ],
-      "source_type": "major",
-      "score": 4
-    },
-    {
-      "title": "'스타강사' 정승제·조정식, AI 부정행위 우려… 수능 앞두고 한목소리",
-      "link": "https://news.google.com/rss/articles/CBMibkFVX3lxTE9XNGJScklaVk5UbnBOZ3lfaW1ndWNXbUQ4NWVCc0N0NjlCMnZWRGEzVkdKNGpIWTBKQmpTQkVkZ3FGRHJkdWlrOG4xWE5YTG9ZUzdkSldsUVYzemowNE9oREtpRzBHWkt6bnhTeTJn0gFzQVVfeXFMTzJueFpNUzAycldSOU8tZGVPNG9YOUdBeXVpdmppMjRKemtxcXVjU0trODdIMWtRWEVMZUMxMXdJSFhldkVFMHliMzIzb1lCdkdIYWRuOWxYTHdlcnB1UGlhR1ItdDZ3ZWRZVmxtR1NUbDJyTQ?oc=5",
-      "originallink": "https://news.google.com/rss/articles/CBMibkFVX3lxTE9XNGJScklaVk5UbnBOZ3lfaW1ndWNXbUQ4NWVCc0N0NjlCMnZWRGEzVkdKNGpIWTBKQmpTQkVkZ3FGRHJkdWlrOG4xWE5YTG9ZUzdkSldsUVYzemowNE9oREtpRzBHWkt6bnhTeTJn0gFzQVVfeXFMTzJueFpNUzAycldSOU8tZGVPNG9YOUdBeXVpdmppMjRKemtxcXVjU0trODdIMWtRWEVMZUMxMXdJSFhldkVFMHliMzIzb1lCdkdIYWRuOWxYTHdlcnB1UGlhR1ItdDZ3ZWRZVmxtR1NUbDJyTQ?oc=5",
-      "summary": "",
-      "pubDate": "2026-11-16T15:24:00+09:00",
-      "category": "한국일보",
-      "press": "한국일보",
-      "source": "한국일보",
-      "queries": [
-        "AI"
-      ],
-      "source_type": "major",
-      "score": 4
-    },
-    {
-      "title": "\"AI 안경 품절이라는데\" \"수능 연기해야\"... 수험생들 우려 '봇물'",
-      "link": "https://news.google.com/rss/articles/CBMibkFVX3lxTE00OVV6ZXR0cl9sMDNnU3hJMTZ6M1FNcktfdi1Tci1UUmNuUEE2YmQtQy1tZEswSUVvdGY5X0s3Mlhrc2V5Ull6MzdpZWJJRG9Da1FuMmhLWEVIaDJ6LWxVNUJWallOUmR0dWs0dHh30gFzQVVfeXFMTmJrd3A4OEVHRk1GeGliUGU2bE8weTNwUzhMZS10cjJPOHJTSjZvWjJXLWJTOWk2NlkwQUdqamotWC1BSUFWQU5rSFlCNnRMQVRwQjBzeTNSWFNOUmloZHRVbzFfNFBRc3pzeGsyVU83NDQyTQ?oc=5",
-      "originallink": "https://news.google.com/rss/articles/CBMibkFVX3lxTE00OVV6ZXR0cl9sMDNnU3hJMTZ6M1FNcktfdi1Tci1UUmNuUEE2YmQtQy1tZEswSUVvdGY5X0s3Mlhrc2V5Ull6MzdpZWJJRG9Da1FuMmhLWEVIaDJ6LWxVNUJWallOUmR0dWs0dHh30gFzQVVfeXFMTmJrd3A4OEVHRk1GeGliUGU2bE8weTNwUzhMZS10cjJPOHJTSjZvWjJXLWJTOWk2NlkwQUdqamotWC1BSUFWQU5rSFlCNnRMQVRwQjBzeTNSWFNOUmloZHRVbzFfNFBRc3pzeGsyVU83NDQyTQ?oc=5",
-      "summary": "",
-      "pubDate": "2026-11-16T15:15:00+09:00",
-      "category": "한국일보",
-      "press": "한국일보",
-      "source": "한국일보",
-      "queries": [
-        "AI"
-      ],
-      "source_type": "major",
-      "score": 4
-    },
-    {
-      "title": "선전 APEC 주간 본격화…中, AI·자유무역 앞세워 협력 주도권 모색",
-      "link": "https://news.google.com/rss/articles/CBMibkFVX3lxTFBEWkFBLUlJV3ptWWg3dkI5UEdxZWR5cWZ1Q0hxSkFycHRBa2JERjNlN0JNRktZTUdYYUxFb1hTTnRhcGZoTXNzbC16elhITW5qQ0daemRYX0hYWHJ2QWc5R3gzOVZrQzlDVXA0VGh30gFzQVVfeXFMT2M5MkpYSWplN2xVTVNDOGRnXzRia3dXSnlzVHBMekRHUFJkaVJsZF80dDdOT3Q2b2tVTWgtaUY2N1hRUGlHdFN0andNWDhPMHRNNUN6NURyMW1zMHdEcnM0TExvNXFFMHhmRlFyWlQ5Yy1DNA?oc=5",
-      "originallink": "https://news.google.com/rss/articles/CBMibkFVX3lxTFBEWkFBLUlJV3ptWWg3dkI5UEdxZWR5cWZ1Q0hxSkFycHRBa2JERjNlN0JNRktZTUdYYUxFb1hTTnRhcGZoTXNzbC16elhITW5qQ0daemRYX0hYWHJ2QWc5R3gzOVZrQzlDVXA0VGh30gFzQVVfeXFMT2M5MkpYSWplN2xVTVNDOGRnXzRia3dXSnlzVHBMekRHUFJkaVJsZF80dDdOT3Q2b2tVTWgtaUY2N1hRUGlHdFN0andNWDhPMHRNNUN6NURyMW1zMHdEcnM0TExvNXFFMHhmRlFyWlQ5Yy1DNA?oc=5",
-      "summary": "",
-      "pubDate": "2026-11-16T15:12:00+09:00",
-      "category": "한국일보",
-      "press": "한국일보",
-      "source": "한국일보",
-      "queries": [
-        "AI"
-      ],
-      "source_type": "major",
-      "score": 4
-    },
-    {
-      "title": "육안으론 못 잡는 ‘AI 안경’ 커닝…탐지 기술도 진화",
-      "link": "https://www.donga.com/news/It/article/all/20261116/135031624/2",
-      "originallink": "https://www.donga.com/news/It/article/all/20261116/135031624/2",
-      "summary": "AI 안경 부정행위가 국가자격시험·내신·대학 논술로 번지자 안경 검증과 행동 분석 같은 탐지 기술이 잇따라 나오고 있다.",
-      "pubDate": "2026-11-16T15:06:08+09:00",
-      "category": "동아일보",
-      "press": "동아일보",
-      "source": "동아일보",
-      "queries": [
-        "AI"
-      ],
-      "source_type": "major",
-      "score": 4
-    },
-    {
-      "title": "정부, AI 부정행위 ‘세무사 수석’ 시험 무효·5년 응시자격 정지",
-      "link": "https://news.google.com/rss/articles/CBMidEFVX3lxTE5xUUZsekxubE51NExoWU0yLUxVUFhqYkc5OTBrcXpkaDhxdVRTNnBsQmc5NUJpRzgtWnZOU1pJd1V2VjNHcU5SbTluWndxTkR3emZUTFRqSmJpampvRmVqRG5uUTVkSm9Ia1ZfM1BaQmpybFVP?oc=5",
-      "originallink": "https://news.google.com/rss/articles/CBMidEFVX3lxTE5xUUZsekxubE51NExoWU0yLUxVUFhqYkc5OTBrcXpkaDhxdVRTNnBsQmc5NUJpRzgtWnZOU1pJd1V2VjNHcU5SbTluWndxTkR3emZUTFRqSmJpampvRmVqRG5uUTVkSm9Ia1ZfM1BaQmpybFVP?oc=5",
-      "summary": "",
-      "pubDate": "2026-11-16T15:01:00+09:00",
-      "category": "한겨레",
-      "press": "한겨레",
-      "source": "한겨레",
-      "queries": [
-        "AI"
-      ],
-      "source_type": "major",
-      "score": 4
-    },
-    {
-      "title": "롯데면세점, 연말 앞두고 1억여 원 기부… 취약계층 의료·난방 지원",
-      "link": "https://news.google.com/rss/articles/CBMic0FVX3lxTE5OT1ItRmdCal94dXhWcU52Y09PWEhHSklTMElUdTVtQlk0MTRpS3NicXQ1ZWVfZURfUEN0TGFyN1RRMmFBWkR6WWJMN1RMakUtNTZrek1Lalp3TWF4QXpfZmF5MW10cG5rY2ZrRzlwdl80MkXSAXNBVV95cUxOTk9SLUZnQmpfeHV4VnFOdmNPT1hIR0pJUzBJVHU1bUJZNDE0aUtzYnF0NWVlX2VEX1BDdExhcjdUUTJhQVpEelliTDdUTGpFLTU2a3pNS2pad01heEF6X2ZheTFtdHBua2Nma0c5cHZfNDJF?oc=5",
-      "originallink": "https://news.google.com/rss/articles/CBMic0FVX3lxTE5OT1ItRmdCal94dXhWcU52Y09PWEhHSklTMElUdTVtQlk0MTRpS3NicXQ1ZWVfZURfUEN0TGFyN1RRMmFBWkR6WWJMN1RMakUtNTZrek1Lalp3TWF4QXpfZmF5MW10cG5rY2ZrRzlwdl80MkXSAXNBVV95cUxOTk9SLUZnQmpfeHV4VnFOdmNPT1hIR0pJUzBJVHU1bUJZNDE0aUtzYnF0NWVlX2VEX1BDdExhcjdUUTJhQVpEelliTDdUTGpFLTU2a3pNS2pad01heEF6X2ZheTFtdHBua2Nma0c5cHZfNDJF?oc=5",
-      "summary": "",
-      "pubDate": "2026-11-16T14:31:00+09:00",
-      "category": "한국일보",
-      "press": "한국일보",
-      "source": "한국일보",
-      "queries": [
-        "의료"
-      ],
-      "source_type": "major",
-      "score": 4
-    },
-    {
-      "title": "韓美日 등 9개국, 中 AI 견제할 '공급망 보호 목록' 작성 합의",
-      "link": "https://news.google.com/rss/articles/CBMibkFVX3lxTFA1dU9XQ0N2dUxkVkM3alEtRHc5RkJXbFYwX2hDc05jdV9QSzVWNTQwSjJIVVdWV1MyZmcwczIxWE0xcGJNbFR1RllrbmI3UHEtVXJlZ3p1UzFjeW5BQUFieFBma0NOMHJMSjdaNmlB0gFzQVVfeXFMTUpieFB1S2RSQU12djl5QXoxYjVRUFVSWjBGb3JRZ1daSTV1UUVVWl8xMklEZ2FLRmpIM1JHRmQ0UldYU1lSX2JYMkJDOXVYUU1maWg3M0FZcnlLczJkNmh3cFp3eld1azVlbmQ2U2NxcW1CSQ?oc=5",
-      "originallink": "https://news.google.com/rss/articles/CBMibkFVX3lxTFA1dU9XQ0N2dUxkVkM3alEtRHc5RkJXbFYwX2hDc05jdV9QSzVWNTQwSjJIVVdWV1MyZmcwczIxWE0xcGJNbFR1RllrbmI3UHEtVXJlZ3p1UzFjeW5BQUFieFBma0NOMHJMSjdaNmlB0gFzQVVfeXFMTUpieFB1S2RSQU12djl5QXoxYjVRUFVSWjBGb3JRZ1daSTV1UUVVWl8xMklEZ2FLRmpIM1JHRmQ0UldYU1lSX2JYMkJDOXVYUU1maWg3M0FZcnlLczJkNmh3cFp3eld1azVlbmQ2U2NxcW1CSQ?oc=5",
-      "summary": "",
-      "pubDate": "2026-11-16T14:13:00+09:00",
-      "category": "한국일보",
-      "press": "한국일보",
-      "source": "한국일보",
-      "queries": [
-        "AI"
-      ],
-      "source_type": "major",
-      "score": 4
-    },
-    {
-      "title": "송도 1공구 핵심 사업 줄줄이 좌초…의료 인프라 악화 우려",
-      "link": "https://news.google.com/rss/articles/CBMibkFVX3lxTE1hcHhLZHo0MGVONDc3ZzhYa3dEenM5T0RzMHlUTEhKNVdxekN2T3dNSHdzOTdHY20xb1J6a2phaDNTQmF3UTdQVFQ1LTYzVTR2UXhFSExaUnd2MDRsb1FOZlJ6amRSY1JvRTJDRjdR0gFzQVVfeXFMTTYwWTVWMmdmdWkwRUlZei1yYUlSRFV3NXNwaGx0TE0ybmF1WU5MWHdOdmdQTWNiTFg1NndGZFhOWXpPbTI5bGlNRXpKbEZzV3phMndYSTBrZndQSmN5Y3JodVBvM0ZwVnpHLTZWREdoRVFLYw?oc=5",
-      "originallink": "https://news.google.com/rss/articles/CBMibkFVX3lxTE1hcHhLZHo0MGVONDc3ZzhYa3dEenM5T0RzMHlUTEhKNVdxekN2T3dNSHdzOTdHY20xb1J6a2phaDNTQmF3UTdQVFQ1LTYzVTR2UXhFSExaUnd2MDRsb1FOZlJ6amRSY1JvRTJDRjdR0gFzQVVfeXFMTTYwWTVWMmdmdWkwRUlZei1yYUlSRFV3NXNwaGx0TE0ybmF1WU5MWHdOdmdQTWNiTFg1NndGZFhOWXpPbTI5bGlNRXpKbEZzV3phMndYSTBrZndQSmN5Y3JodVBvM0ZwVnpHLTZWREdoRVFLYw?oc=5",
-      "summary": "",
-      "pubDate": "2026-11-16T14:07:00+09:00",
-      "category": "한국일보",
-      "press": "한국일보",
-      "source": "한국일보",
-      "queries": [
-        "의료"
-      ],
-      "source_type": "major",
-      "score": 4
-    },
-    {
-      "title": "‘AI 안경’만 보다가 카메라·휴대전화에 뚫렸다",
-      "link": "https://www.donga.com/news/Society/article/all/20261116/135031731/1",
-      "originallink": "https://www.donga.com/news/Society/article/all/20261116/135031731/1",
-      "summary": "제63회 세무사 시험 수석 합격자가 인공지능(AI)과 전자기기를 이용한 부정행위를 시인한 가운데, 시험을 시행한 한국산업인력공단의 대응이 도마에 올랐다.특히 지난 5월 토익시험에서 AI 스마트안경을 이용한 부정행위가 잇따라 적발된 이후 대응이 스마트안경 식별에 쏠리면서, 기존 촬영기기와 휴대전화 관리에는 빈틈이 생긴 것 아니냐는 지적이 나온다.16일 고용노동부 산하 산업인력공단 등에 따르면 공단은 세무사시험 수석 합격자 한원석(34)씨의 시험을 무효 처리하고 5년간 응시를 제한하기로 했다. 또 업무방해 혐의로 경찰에 고발하기로 했다",
-      "pubDate": "2026-11-16T14:04:44+09:00",
-      "category": "동아일보",
-      "press": "동아일보",
-      "source": "동아일보",
-      "queries": [
-        "AI"
-      ],
-      "source_type": "major",
-      "score": 4
-    },
-    {
-      "title": "'AI 부정행위' 세무사 자수서에 '새로운 수법' 등장… 경찰, 공범 여부 캔다",
-      "link": "https://news.google.com/rss/articles/CBMibkFVX3lxTE1icmxnT3h3X1otWWVVSy1MT3pYRzJGYzk1Ymt2TUs0dzF1S2ZhUktLV3ZDVVFLY2ZxMXJvS1pOcGlRNm9kN0NWRC1SLVBFMXFRQWt4X3ZrTU15aUloQzBXb1U4cjVfV192SHV4NFdR0gFzQVVfeXFMUE5ZQzVxRHB3a2ZzWVpsdWJ6aTB1VmhYRFdJOHhJcmRkWURBbUJ5V2ZseTRHV1g4aEphd3B1RW5kWVlTN1ctdjZLWUZOQ1BvZmYzN05fU2dyMjVvcUFSSndPU0UxRWVRUFRFUTUwSXBCc0gycw?oc=5",
-      "originallink": "https://news.google.com/rss/articles/CBMibkFVX3lxTE1icmxnT3h3X1otWWVVSy1MT3pYRzJGYzk1Ymt2TUs0dzF1S2ZhUktLV3ZDVVFLY2ZxMXJvS1pOcGlRNm9kN0NWRC1SLVBFMXFRQWt4X3ZrTU15aUloQzBXb1U4cjVfV192SHV4NFdR0gFzQVVfeXFMUE5ZQzVxRHB3a2ZzWVpsdWJ6aTB1VmhYRFdJOHhJcmRkWURBbUJ5V2ZseTRHV1g4aEphd3B1RW5kWVlTN1ctdjZLWUZOQ1BvZmYzN05fU2dyMjVvcUFSSndPU0UxRWVRUFRFUTUwSXBCc0gycw?oc=5",
-      "summary": "",
-      "pubDate": "2026-11-16T14:04:00+09:00",
-      "category": "한국일보",
-      "press": "한국일보",
-      "source": "한국일보",
-      "queries": [
-        "AI"
-      ],
-      "source_type": "major",
-      "score": 4
-    },
-    {
-      "title": "’젠슨 황 불륜’이 인텔까지 '불똥'?... AI 잘돼도 걱정, 안돼도 걱정",
-      "link": "https://news.google.com/rss/articles/CBMibkFVX3lxTFBIU3d5LThObTFKRnM4Qi1xYU91OWI2YWpnRXByYW0zQmRQYXB1NEpqOE9MYlBxcGdyVnhyMXVLU0pmaU5LSVZMSG1FSW13T0ctckFGYVpQbEF6dkQwZVU3dG9OOWxEXzFmcUw5bFRn0gFzQVVfeXFMUHJzTGVVRUZjVlJVZWIwZk1HLTRsS0daMndTeUJvalRxbktIRHRaZDM3dUlncFhjT250b1k0RG9aRjhReHlKOUZiLVZxbHJTVlpmMzJ0NUZDNk1wUGw1Umx6UHYtRDk2YjVKdFMwX2t2VUlHZw?oc=5",
-      "originallink": "https://news.google.com/rss/articles/CBMibkFVX3lxTFBIU3d5LThObTFKRnM4Qi1xYU91OWI2YWpnRXByYW0zQmRQYXB1NEpqOE9MYlBxcGdyVnhyMXVLU0pmaU5LSVZMSG1FSW13T0ctckFGYVpQbEF6dkQwZVU3dG9OOWxEXzFmcUw5bFRn0gFzQVVfeXFMUHJzTGVVRUZjVlJVZWIwZk1HLTRsS0daMndTeUJvalRxbktIRHRaZDM3dUlncFhjT250b1k0RG9aRjhReHlKOUZiLVZxbHJTVlpmMzJ0NUZDNk1wUGw1Umx6UHYtRDk2YjVKdFMwX2t2VUlHZw?oc=5",
-      "summary": "",
-      "pubDate": "2026-11-16T14:00:00+09:00",
-      "category": "한국일보",
-      "press": "한국일보",
-      "source": "한국일보",
-      "queries": [
-        "AI"
-      ],
-      "source_type": "major",
-      "score": 4
-    },
-    {
-      "title": "세무사 시험서 필수인데…정답 알려주는 'AI 계산기'까지 나왔다",
-      "link": "https://news.jtbc.co.kr/article/NB12328255",
-      "originallink": "https://news.jtbc.co.kr/article/NB12328255",
-      "summary": "평범한 계산기처럼 보이지만 뒷면 카메라로 문제를 촬영하면 단 5초 만에 정답은 물론 구체적인 풀이 과정까지 알려주는 AI 계산기가 등장했습니다. 제미나이와 딥시크, 챗GPT 등 다양한 AI 모델을 탑재한 이 제품은",
-      "pubDate": "2026-11-16T13:21:59+09:00",
-      "category": "JTBC",
-      "press": "JTBC",
-      "source": "JTBC",
-      "queries": [
-        "AI"
-      ],
-      "source_type": "major",
-      "score": 4
-    },
-    {
-      "title": "경찰, 세무사시험 부정행위 증거물 확보…‘AI안경, 쌀알 이어폰’은 없어",
-      "link": "https://news.google.com/rss/articles/CBMickFVX3lxTE5jcGxLbzI2d05LQkpMcHB5REM0V0hrR25tSzllMEZZVFdTVVBMVkJYV2tJenU0UnY5OU42N2JYRWE2RHByOUM0MDQyMlF4OHdURlBpSUgwZUdQWEk2MWN5eDk1N2lfTjBEbDlGRzVKeFh2UQ?oc=5",
-      "originallink": "https://news.google.com/rss/articles/CBMickFVX3lxTE5jcGxLbzI2d05LQkpMcHB5REM0V0hrR25tSzllMEZZVFdTVVBMVkJYV2tJenU0UnY5OU42N2JYRWE2RHByOUM0MDQyMlF4OHdURlBpSUgwZUdQWEk2MWN5eDk1N2lfTjBEbDlGRzVKeFh2UQ?oc=5",
-      "summary": "",
-      "pubDate": "2026-11-16T12:44:00+09:00",
-      "category": "한겨레",
-      "press": "한겨레",
-      "source": "한겨레",
-      "queries": [
-        "AI"
-      ],
-      "source_type": "major",
-      "score": 4
-    },
-    {
-      "title": "세무사회 \"AI 없는 실무수습 평가로 부정 합격자 걸러내겠다\"",
-      "link": "https://news.jtbc.co.kr/article/NB12328247",
-      "originallink": "https://news.jtbc.co.kr/article/NB12328247",
-      "summary": "한국세무사회가 생성형 AI를 활용한 부정행위로 세무사 시험에 합격한 이들을 걸러내기 위해 수습 세무사 평가 체계를 강화합니다. AI를 사용할 수 없는 환경에서 교육생들의 실무 능력을 직접 검증해 부정 합격자가 세무사",
-      "pubDate": "2026-11-16T11:55:06+09:00",
-      "category": "JTBC",
-      "press": "JTBC",
-      "source": "JTBC",
-      "queries": [
-        "AI"
       ],
       "source_type": "major",
       "score": 4
