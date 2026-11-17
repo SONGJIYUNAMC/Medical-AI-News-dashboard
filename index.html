@@ -41,8 +41,10 @@
   .field label.cap { display: block; font-size: 12px; color: var(--muted); margin-bottom: 3px; }
   .side select, .side input[type=search] { width: 100%; padding: 8px 10px; border: 1px solid var(--line); border-radius: 8px;
            background: var(--card); color: var(--text); font-family: inherit; font-size: 14px; }
-  .dsel { display: grid; grid-template-columns: 1.3fr 1fr 1fr; gap: 4px; }
-  .dsel select { padding: 8px 4px; }
+  .dsel { display: grid; grid-template-columns: 1fr auto; gap: 4px; }
+  .dsel input[type=date] { padding: 7px 8px; border: 1px solid var(--line); border-radius: 8px; font: inherit; color: inherit; background: var(--card); }
+  .dsel .tab { padding: 6px 10px; }
+  .dinp { padding: 7px 10px; border: 1px solid var(--line); border-radius: 8px; font: inherit; color: inherit; background: var(--card); }
   label.toggle { font-size: 13px; color: var(--text); display: flex; gap: 8px; align-items: flex-start; cursor: pointer; margin: 8px 8px 0; line-height: 1.4; }
   label.toggle input { margin-top: 2px; }
   .side .csv { margin: 14px 8px 0; width: calc(100% - 16px); border-radius: 8px; text-align: center; }
@@ -157,7 +159,7 @@
     <div class="navlist" id="tabs"></div>
     <h4>필터</h4>
     <div class="field"><label class="cap">수집일</label>
-      <span class="dsel" id="dayWrap"><select id="dy" aria-label="연"></select><select id="dm" aria-label="월"></select><select id="dd" aria-label="일"></select></span></div>
+      <span class="dsel" id="dayWrap"><input type="date" id="dpick" aria-label="수집일"><button type="button" class="tab" id="dall">전체</button></span></div>
     <div class="field"><label class="cap">기간</label><select id="period" aria-label="기간"></select></div>
     <div class="field"><label class="cap">정렬</label>
       <select id="sort" aria-label="정렬"><option value="imp">중요도순</option><option value="score">관련도순</option><option value="date">최신순</option></select></div>
@@ -191,7 +193,7 @@
 <script>
 const REL = /의료|병원|헬스|환자|진료|임상|의사|간호|보건|의약|바이오|건강|health|hospital|clinic|medical|patient/i;
 const AI_T = /(^|[^A-Za-z])AI(?![A-Za-z])|인공지능|딥러닝|머신러닝|생성형|LLM|언어\s?모델|챗\s?GPT|파운데이션\s?모델|디지털의료기기/i;
-const state = { items: [], order: [], hotOpen: window.innerWidth >= 700, period: "", day: "전체", weeksLoaded: [], manifest: null, region: "국내", cat: "전체", q: "", rel: false, aiT: false, impOnly: false, sort: "imp", today: true, home: false, cats: false, wkTop2: false, wkReg: "국내", mergeCo: true, todayDay: "", pressOpen: "", nlWeek: "", nlItems: [], nlLoaded: "" };
+const state = { items: [], order: [], hotOpen: window.innerWidth >= 700, period: "", day: "전체", weeksLoaded: [], manifest: null, region: "국내", cat: "전체", q: "", rel: false, aiT: false, impOnly: false, sort: "imp", today: true, home: false, cats: false, wkTop2: false, wkReg: "국내", mergeCo: true, todayDay: "", nlWeek: "", nlItems: [], nlLoaded: "" };
 function setView(v) { state.today = v === "today"; state.home = v === "weekly"; state.cats = v === "cats"; }
 const $ = id => document.getElementById(id);
 
@@ -407,29 +409,22 @@ const REGION_LABEL = { "국내": "국내 뉴스", "해외": "해외 뉴스 (Goog
 
 // 수집일 기본값: 국내·해외는 오늘(없으면 최근 수집일), 정부 발표는 전체
 function applyDefaultDay() {
-  state.day = (state.region === "정부" || state.region === "주요 일간지") ? "전체" : (state.defDay || "전체");
+  state.day = state.region === "정부" ? "전체" : (state.defDay || "전체");
   setDaySelects(state.day);
 }
 
-// 수집일 선택: 연·월·일 따로. 연만/연+월만 골라도 해당 범위로 필터(앞부분 일치)
-(function buildDaySelects() {
-  const cy = new Date().getFullYear(), last = Math.max(cy + 1, 2027);
-  const fill = (id, label, vals, fmt) => $(id).replaceChildren(el("option", { value: "", textContent: label }),
-    ...vals.map(v => el("option", { value: String(v).padStart(2, "0").replace(/^0(\d\d\d)$/, "$1"), textContent: fmt(v) })));
-  fill("dy", "연도", Array.from({ length: last - 2025 }, (_, i) => 2026 + i), v => v + "년");
-  fill("dm", "월", Array.from({ length: 12 }, (_, i) => i + 1), v => v + "월");
-  fill("dd", "일", Array.from({ length: 31 }, (_, i) => i + 1), v => v + "일");
-})();
+// 수집일 선택: 달력에서 날짜를 고른다(비우면 전체)
 function getDay() {
-  const y = $("dy").value, m = $("dm").value, d = $("dd").value;
-  if (!y) return "전체";
-  if (!m) return y;
-  return d ? `${y}-${m}-${d}` : `${y}-${m}`;
+  const v = $("dpick").value;
+  return /^\d{4}-\d\d-\d\d$/.test(v) ? v : "전체";
 }
 function setDaySelects(day) {
-  const [y = "", m = "", d = ""] = day === "전체" ? [] : day.split("-");
-  $("dy").value = y; $("dm").value = y ? m : ""; $("dd").value = y && m ? d : "";
-  $("dm").disabled = !y; $("dd").disabled = !(y && m);
+  $("dpick").value = /^\d{4}-\d\d-\d\d$/.test(day) ? day : "";
+}
+function setDayRange() {   // 달력에서 고를 수 있는 범위를 수집된 날짜로 제한
+  const ds = state.items.map(i => i.first_seen).filter(Boolean).sort();
+  if (!ds.length) return;
+  $("dpick").min = ds[0]; $("dpick").max = ds[ds.length - 1];
 }
 
 function renderTabs() {
@@ -932,50 +927,14 @@ function weeklyRows(candOnly) {
   return rows;
 }
 
-function pressWeekItems(id) {   // 주요 일간지: 선택한 주(화~다음 월) 기사 전부
-  const from = addDays(id, -6);
-  return state.items.filter(it => regionOf(it) === "주요 일간지" && it.first_seen && it.first_seen >= from && it.first_seen <= id);
-}
-function renderPressWeek(list) {
-  const nws = nlWeeks();
-  if (!nws.includes(state.nlWeek)) state.nlWeek = nws[0] || "";
-  const wk = state.nlWeek;
-  const nsel = el("select", { ariaLabel: "주간 선택" }, nws.map(id => el("option", { value: id, textContent: nlLabel(id) + (id === nws[0] ? " (이번 주)" : "") })));
-  nsel.value = wk; nsel.onchange = () => { state.nlWeek = nsel.value; render(); };
-  const more = el("button", { type: "button", className: "tab primary", textContent: "다른 뉴스 보기 →" });
-  more.onclick = () => { setView("cats"); applyDefaultDay(); clearSearch(); render(); window.scrollTo(0, 0); };
-  const rows0 = mergeCompany(pressWeekItems(wk)).sort(better);
-  const csv = csvBtn("주간 CSV 내려받기", () => {
-    if (!rows0.length) { alert("내려받을 기사가 없습니다."); return; }
-    csvSave(`press_${wk}.csv`, CSV_HEAD, rows0.map(it => csvRow(it, it.first_seen)));
-  });
-  list.append(el("div", { className: "wkhead" }, [el("h2", { textContent: "주요 일간지" }), nsel, regionChips(), csv, more]));
-  list.append(el("div", { className: "why wide", textContent: `조선·중앙·동아·한겨레·경향·한국일보에서 의료·병원·AI·보건복지부·식약처·국가AI전략위·과기정통부·주요 병원 키워드가 들어간 기사입니다. 날짜별이 아니라 주간(${nlLabel(wk)}) 단위로 모아 보여줍니다.` }));
-  if (!rows0.length) { list.append(el("div", { className: "empty", textContent: "이 주간에 수집된 기사가 없습니다." })); list.append(learnBox()); return; }
-  const by = new Map();
-  rows0.forEach(it => { const c = catOf(it); if (!by.has(c)) by.set(c, []); by.get(c).push(it); });
-  orderedCats([...by.keys()]).forEach(c => {
-    const arr = by.get(c), open = state.pressOpen === c, shown = open ? arr : arr.slice(0, 6);
-    const sec = el("section", { className: "wksec" }, [
-      el("div", { className: "hch" }, [el("b", { textContent: c }), el("em", { textContent: nlLabel(wk) + " " + arr.length + "건" + (open || arr.length <= 6 ? "" : " 중 상위 6건") })]),
-      el("div", { className: "wkgrid" }, shown.map(it => newsCard(it, "", true, it.first_seen)))]);
-    if (arr.length > 6) {
-      const b = el("button", { type: "button", className: "tab", textContent: open ? "접기" : `${c} 기사 ${arr.length}건 모두 보기` });
-      b.onclick = () => { state.pressOpen = open ? "" : c; render(); };
-      sec.append(el("div", { className: "editrow" }, [b]));
-    }
-    list.append(sec);
-  });
-  list.append(learnBox());
-}
-
 function renderToday(list) {
-  if (state.region === "주요 일간지") return renderPressWeek(list);
   const days = dayList();
   if (!days.includes(state.todayDay)) state.todayDay = dayDefault(days);
   const day = state.todayDay;
-  const dsel = el("select", { ariaLabel: "날짜 선택" }, days.map(d => el("option", { value: d, textContent: md(d) + (dayGroup(d).length > 1 ? " (주말 포함)" : "") + (d === todayKST() ? " (오늘)" : "") })));
-  dsel.value = day; dsel.onchange = () => { state.todayDay = dsel.value; render(); };
+  const dsel = el("input", { type: "date", className: "dinp", ariaLabel: "날짜 선택", value: day,
+    min: days[days.length - 1] || "", max: days[0] || "" });
+  dsel.onchange = () => { if (dsel.value) { state.todayDay = dsel.value; render(); } };
+  const dnote = el("span", { className: "why", textContent: md(day) + (dayGroup(day).length > 1 ? " · 토·일 포함" : "") + (day === todayKST() ? " · 오늘" : "") });
   const more = el("button", { type: "button", className: "tab primary", textContent: "다른 뉴스 보기 →" });
   more.onclick = () => { setView("cats"); applyDefaultDay(); clearSearch(); render(); window.scrollTo(0, 0); };
   const dayCsv = csvBtn("일간 CSV 내려받기", () => {
@@ -984,7 +943,7 @@ function renderToday(list) {
     if (!rows.length) { alert("내려받을 선정 기사가 없습니다."); return; }
     csvSave(`daily_${day}_${({ "해외": "GL", "주요 일간지": "PR" }[state.region]) || "KR"}.csv`, CSV_HEAD, rows);
   });
-  list.append(el("div", { className: "wkhead" }, [el("h2", { textContent: "오늘의 주요 뉴스" }), dsel, regionChips(), dayCsv, more]));
+  list.append(el("div", { className: "wkhead" }, [el("h2", { textContent: "오늘의 주요 뉴스" }), dsel, dnote, regionChips(), dayCsv, more]));
   list.append(el("div", { className: "why wide", textContent: "수집한 뉴스 중 카테고리별 중요도·관련도가 높은 2건입니다. 중요도 변경·뉴스레터 후보 체크는 모든 사용자에게 반영되고, [편집] → [주간 대시보드에 올리기]를 누른 기사만 주간 대시보드에 모입니다." }));
   list.append(addLinkBox());
   const picks = dayPicksFor(day, state.region);
@@ -1312,6 +1271,7 @@ async function loadPeriod() {
     }
   }
   const days = [...new Set(state.items.map(i => i.first_seen).filter(Boolean))].sort().reverse();
+  setDayRange();
   const today = todayKST();
   state.defDay = days.includes(today) ? today : (state.period === "n:1" && days.length ? days[0] : "전체");
   if (state.keepDay) { state.day = state.keepDay; state.keepDay = null; setDaySelects(state.day); } else applyDefaultDay();
@@ -1371,10 +1331,8 @@ try { _stored = localStorage.getItem("ctlCollapsed"); } catch (e) {}
 setFold(_stored === null ? window.innerWidth < 900 : _stored === "1", false);
 
 $("period").addEventListener("change", e => { state.period = e.target.value; clearSearch(); loadPeriod(); });
-["dy", "dm", "dd"].forEach(id => $(id).addEventListener("change", () => {
-  if (!$("dy").value) { $("dm").value = ""; $("dd").value = ""; }
-  if (!$("dm").value) $("dd").value = "";
-  setDaySelects(getDay());
+$("dall").addEventListener("click", () => { $("dpick").value = ""; state.day = "전체"; render(); });
+$("dpick").addEventListener("change", () => {
   state.day = getDay();
   // 고른 날짜가 지금 불러온 주 밖이면 그 주를 자동으로 불러옴
   if (/^\d{4}-\d\d-\d\d$/.test(state.day) && state.manifest) {
@@ -1384,7 +1342,7 @@ $("period").addEventListener("change", e => { state.period = e.target.value; cle
     }
   }
   render();
-}));
+});
 $("csv").addEventListener("click", toCsv);
 $("ovExp").addEventListener("click", ovExport);
 $("ghBtn").addEventListener("click", () => {
