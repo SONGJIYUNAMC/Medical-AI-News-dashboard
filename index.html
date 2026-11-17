@@ -191,7 +191,7 @@
 <script>
 const REL = /의료|병원|헬스|환자|진료|임상|의사|간호|보건|의약|바이오|건강|health|hospital|clinic|medical|patient/i;
 const AI_T = /(^|[^A-Za-z])AI(?![A-Za-z])|인공지능|딥러닝|머신러닝|생성형|LLM|언어\s?모델|챗\s?GPT|파운데이션\s?모델|디지털의료기기/i;
-const state = { items: [], order: [], hotOpen: window.innerWidth >= 700, period: "", day: "전체", weeksLoaded: [], manifest: null, region: "국내", cat: "전체", q: "", rel: false, aiT: false, impOnly: false, sort: "imp", today: true, home: false, cats: false, wkTop2: false, wkReg: "국내", mergeCo: true, todayDay: "", nlWeek: "", nlItems: [], nlLoaded: "" };
+const state = { items: [], order: [], hotOpen: window.innerWidth >= 700, period: "", day: "전체", weeksLoaded: [], manifest: null, region: "국내", cat: "전체", q: "", rel: false, aiT: false, impOnly: false, sort: "imp", today: true, home: false, cats: false, wkTop2: false, wkReg: "국내", mergeCo: true, todayDay: "", pressOpen: "", nlWeek: "", nlItems: [], nlLoaded: "" };
 function setView(v) { state.today = v === "today"; state.home = v === "weekly"; state.cats = v === "cats"; }
 const $ = id => document.getElementById(id);
 
@@ -407,7 +407,7 @@ const REGION_LABEL = { "국내": "국내 뉴스", "해외": "해외 뉴스 (Goog
 
 // 수집일 기본값: 국내·해외는 오늘(없으면 최근 수집일), 정부 발표는 전체
 function applyDefaultDay() {
-  state.day = state.region === "정부" ? "전체" : (state.defDay || "전체");
+  state.day = (state.region === "정부" || state.region === "주요 일간지") ? "전체" : (state.defDay || "전체");
   setDaySelects(state.day);
 }
 
@@ -932,7 +932,45 @@ function weeklyRows(candOnly) {
   return rows;
 }
 
+function pressWeekItems(id) {   // 주요 일간지: 선택한 주(화~다음 월) 기사 전부
+  const from = addDays(id, -6);
+  return state.items.filter(it => regionOf(it) === "주요 일간지" && it.first_seen && it.first_seen >= from && it.first_seen <= id);
+}
+function renderPressWeek(list) {
+  const nws = nlWeeks();
+  if (!nws.includes(state.nlWeek)) state.nlWeek = nws[0] || "";
+  const wk = state.nlWeek;
+  const nsel = el("select", { ariaLabel: "주간 선택" }, nws.map(id => el("option", { value: id, textContent: nlLabel(id) + (id === nws[0] ? " (이번 주)" : "") })));
+  nsel.value = wk; nsel.onchange = () => { state.nlWeek = nsel.value; render(); };
+  const more = el("button", { type: "button", className: "tab primary", textContent: "다른 뉴스 보기 →" });
+  more.onclick = () => { setView("cats"); applyDefaultDay(); clearSearch(); render(); window.scrollTo(0, 0); };
+  const rows0 = mergeCompany(pressWeekItems(wk)).sort(better);
+  const csv = csvBtn("주간 CSV 내려받기", () => {
+    if (!rows0.length) { alert("내려받을 기사가 없습니다."); return; }
+    csvSave(`press_${wk}.csv`, CSV_HEAD, rows0.map(it => csvRow(it, it.first_seen)));
+  });
+  list.append(el("div", { className: "wkhead" }, [el("h2", { textContent: "주요 일간지" }), nsel, regionChips(), csv, more]));
+  list.append(el("div", { className: "why wide", textContent: `조선·중앙·동아·한겨레·경향·한국일보에서 의료·병원·AI·보건복지부·식약처·국가AI전략위·과기정통부·주요 병원 키워드가 들어간 기사입니다. 날짜별이 아니라 주간(${nlLabel(wk)}) 단위로 모아 보여줍니다.` }));
+  if (!rows0.length) { list.append(el("div", { className: "empty", textContent: "이 주간에 수집된 기사가 없습니다." })); list.append(learnBox()); return; }
+  const by = new Map();
+  rows0.forEach(it => { const c = catOf(it); if (!by.has(c)) by.set(c, []); by.get(c).push(it); });
+  orderedCats([...by.keys()]).forEach(c => {
+    const arr = by.get(c), open = state.pressOpen === c, shown = open ? arr : arr.slice(0, 6);
+    const sec = el("section", { className: "wksec" }, [
+      el("div", { className: "hch" }, [el("b", { textContent: c }), el("em", { textContent: nlLabel(wk) + " " + arr.length + "건" + (open || arr.length <= 6 ? "" : " 중 상위 6건") })]),
+      el("div", { className: "wkgrid" }, shown.map(it => newsCard(it, "", true, it.first_seen)))]);
+    if (arr.length > 6) {
+      const b = el("button", { type: "button", className: "tab", textContent: open ? "접기" : `${c} 기사 ${arr.length}건 모두 보기` });
+      b.onclick = () => { state.pressOpen = open ? "" : c; render(); };
+      sec.append(el("div", { className: "editrow" }, [b]));
+    }
+    list.append(sec);
+  });
+  list.append(learnBox());
+}
+
 function renderToday(list) {
+  if (state.region === "주요 일간지") return renderPressWeek(list);
   const days = dayList();
   if (!days.includes(state.todayDay)) state.todayDay = dayDefault(days);
   const day = state.todayDay;
