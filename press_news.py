@@ -154,10 +154,10 @@ def fetch_feed(url, session):
 def fetch(query, window, session):
     url = (f"https://news.google.com/rss/search?q={quote(query + f' when:{window}')}"
            f"&hl=ko&gl=KR&ceid=KR:ko")
-    for attempt in range(3):
+    for attempt in range(4):
         r = session.get(url, headers=UA, timeout=30)
-        if r.status_code >= 500 or r.status_code == 429:
-            time.sleep(2 * (attempt + 1))
+        if r.status_code >= 500 or r.status_code == 429:   # 구글 뉴스 과다요청 제한: 점점 길게 쉬고 재시도
+            time.sleep(4 * (attempt + 1))
             continue
         r.raise_for_status()
         break
@@ -260,7 +260,7 @@ def main():
                 except Exception as e:
                     errors.append({"query": f"{name} ({'/'.join(group[:2])}…)", "error": str(e)[:150]})
                     print(f"[WARN] {name} {group[:2]}: {e}", file=sys.stderr)
-                time.sleep(0.6)
+                time.sleep(1.5)
             got.sort(key=lambda a: a["pubDate"], reverse=True)
             for a in got[: int(cfg.get("max_per_paper", 40))]:
                 results.append({"title": a["title"], "link": a["link"], "originallink": a["link"],
