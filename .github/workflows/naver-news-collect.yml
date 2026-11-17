@@ -2,7 +2,8 @@ name: naver-news-collect
 
 on:
   schedule:
-    - cron: "0 22 * * *"   # UTC 22:00 = KST 07:00 매일 (깃허브 사정으로 수십 분 늦게 시작될 수 있음)
+    - cron: "11 21 * * *"   # UTC 21:11 = KST 06:11 매일. 깃허브 예약 실행은 20~60분 늦게 시작되므로
+                            # 정시(0분)와 혼잡한 시간대를 피해 앞당겨 둔다 → 보통 06:30~07:10 KST 완료
   workflow_dispatch:
 
 permissions:
