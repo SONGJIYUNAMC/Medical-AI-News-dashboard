@@ -103,7 +103,8 @@ def fetch_feed(url, session):
     """신문사 RSS/Atom(또는 JSON) 피드에서 기사 목록을 읽는다."""
     h = {"User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0 Safari/537.36",
          "Accept": "application/rss+xml, application/xml, text/xml, application/json;q=0.9, */*;q=0.8",
-         "Accept-Language": "ko-KR,ko;q=0.9", "Connection": "close"}
+         "Accept-Language": "ko-KR,ko;q=0.9", "Referer": "https://www.donga.com/"
+         if "donga" in url else "/".join(url.split("/")[:3]) + "/"}
     last = None
     for attempt in range(3):                        # 일부 신문사 서버가 첫 요청을 끊는 경우가 있어 재시도
         try:
@@ -215,7 +216,8 @@ def main():
                             continue
                         got.append({**a, "source": name, "source_url": a["link"], "queries": hits[:6]})
                 except Exception as e:
-                    errors.append({"query": f"{name} RSS {url.split('/')[-1]}", "error": str(e)[:150]})
+                    errors.append({"query": f"{name} RSS {url.split('/')[-1]}",
+                                   "error": str(e)[:120] + " → 구글 뉴스 검색으로 대체"})
                     print(f"[WARN] {name} {url}: {e}", file=sys.stderr)
                 time.sleep(0.4)
             if feed_ok and got:
