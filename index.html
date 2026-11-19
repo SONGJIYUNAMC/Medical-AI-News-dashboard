@@ -44,6 +44,8 @@
   .dsel { display: grid; grid-template-columns: 1fr auto; gap: 4px; }
   .dsel input[type=date] { padding: 7px 8px; border: 1px solid var(--line); border-radius: 8px; font: inherit; color: inherit; background: var(--card); }
   .dsel .tab { padding: 6px 10px; }
+  .colist { margin: 6px 0 2px; padding: 6px 10px; border-left: 2px solid var(--line); background: var(--bg); border-radius: 6px; }
+  .colist .candrow { padding: 3px 0; }
   .dinp { padding: 7px 10px; border: 1px solid var(--line); border-radius: 8px; font: inherit; color: inherit; background: var(--card); }
   label.toggle { font-size: 13px; color: var(--text); display: flex; gap: 8px; align-items: flex-start; cursor: pointer; margin: 8px 8px 0; line-height: 1.4; }
   label.toggle input { margin-top: 2px; }
@@ -678,11 +680,16 @@ const srcRank = it => it.source_type === "major" ? 0 : it.source_type === "globa
 const COMPANIES = ["루닛", "뷰노", "딥노이드", "제이엘케이", "코어라인소프트", "코어라인", "에이아이트릭스", "뉴로핏", "이지케어텍", "비트컴퓨터",
   "메디컬아이피", "퍼즐에이아이", "웨이센", "프로메디우스", "딥바이오", "셀바스", "노을", "클라리파이", "휴런", "스카이랩스", "메디웨일", "뷰웍스",
   "제노스코", "티엔에이치", "에임메드", "라이프시맨틱스", "네이버", "카카오", "삼성전자", "삼성SDS", "삼성메디슨", "LG전자", "LG CNS", "SK텔레콤", "KT",
-  "엔비디아", "구글", "오픈AI", "마이크로소프트", "아마존", "애플", "메타", "지멘스", "GE헬스케어", "필립스", "인피니트헬스케어", "레이", "디알젬"];
+  "엔비디아", "구글", "오픈AI", "마이크로소프트", "아마존", "애플", "지멘스", "GE헬스케어", "필립스", "인피니트헬스케어", "디알젬"];
+// 기업이 아니어도 같은 사안을 여러 매체가 쓰는 주제는 함께 묶는다
+const TOPIC_KEYS = [["심평원", ["심평원", "건강보험심사평가원"]], ["진료비", ["진료비", "진료수가", "의료수가"]],
+  ["건보공단", ["건보공단", "국민건강보험공단"]], ["건강보험", ["건강보험료", "건보 재정", "건강보험 재정"]],
+  ["실손보험", ["실손보험", "실손의료보험"]], ["비대면 진료", ["비대면 진료", "원격진료"]], ["의대 정원", ["의대 정원", "의대정원"]]];
 const ORG_STOP = ["정부", "국회", "식약처", "복지부", "보건복지부", "과기정통부", "질병관리청", "심평원", "건보공단", "의협", "병협", "간협", "교육부", "산업부", "공정위", "서울시", "경기도"];
 function companyOf(it) {
   const t = it.title || "";
   for (const c of COMPANIES) if (t.includes(c)) return c;
+  for (const [name, pats] of TOPIC_KEYS) if (pats.some(x => t.includes(x))) return name;
   const m = t.match(/^([가-힣A-Za-z0-9][가-힣A-Za-z0-9·&.]{1,11}),\s/);
   if (m && !ORG_STOP.includes(m[1]) && !/(병원|대학|학회|협회|연구원|진흥원|공단|청|처)$/.test(m[1])) return m[1];
   return "";
@@ -690,7 +697,14 @@ function companyOf(it) {
 const MAJOR_ORDER = ["ytn.co.kr", "yna.co.kr", "yonhapnewstv.co.kr", "kbs.co.kr", "mbc.co.kr", "imbc.com", "sbs.co.kr", "jtbc.co.kr", "mbn.co.kr",
   "chosun.com", "joongang.co.kr", "donga.com", "hani.co.kr", "khan.co.kr", "kmib.co.kr", "segye.com", "mk.co.kr", "hankookilbo.com", "munhwa.com",
   "seoul.co.kr", "newsis.com", "news1.kr", "hankyung.com", "sedaily.com", "edaily.co.kr", "mt.co.kr", "fnnews.com", "asiae.co.kr", "heraldcorp.com"];
+const PRESS_RANK = { "연합뉴스": 1, "KBS": 3, "MBC": 4, "SBS": 6, "JTBC": 7, "조선일보": 9, "중앙일보": 10, "동아일보": 11,
+  "한겨레": 12, "경향신문": 13, "한국일보": 17 };
 function srcOrder(it) {
+  if (it.press || it.region === "일간지") {   // 신문사 구분 기사: 매체 이름으로 순위
+    const nm = it.source || it.category || "";
+    for (const k in PRESS_RANK) if (nm.includes(k)) return PRESS_RANK[k];
+    return 30;
+  }
   const h = (host(it.originallink || it.link) || "").toLowerCase();
   const i = MAJOR_ORDER.findIndex(d => h === d || h.endsWith("." + d));
   if (i >= 0) return i;
@@ -710,11 +724,23 @@ function mergeCompany(arr) {   // 같은 날·같은 기업 기사는 가장 주
   g.forEach((arr2, k) => {
     arr2.sort((a, b) => srcOrder(a) - srcOrder(b) || (impOf(b).sc - impOf(a).sc) || (a.pubDate < b.pubDate ? 1 : -1));
     const rep0 = arr2[0];
-    if (arr2.length > 1) rep0._co = { name: k.split("|")[0], n: arr2.length - 1,
-      srcs: [...new Set(arr2.slice(1).map(o => host(o.originallink || o.link)))].slice(0, 8) };
+    if (arr2.length > 1) rep0._co = { name: k.split("|")[0], n: arr2.length - 1, items: arr2.slice(1),
+      srcs: [...new Set(arr2.slice(1).map(o => srcName(o)))].slice(0, 8) };
     out.push(rep0);
   });
   return out;
+}
+const srcName = it => (it.gov ? it.agency : it.press ? (it.source || it.category) : it.global ? (it.sources || []).join(", ") : host(it.originallink || it.link)) || "";
+function coBox(it) {   // "묶인 기사 보기": 같은 사안으로 합쳐진 나머지 기사 목록
+  if (!it._co) return null;
+  const box = el("div", { className: "colist" },
+    it._co.items.map(o => el("div", { className: "candrow" }, [
+      el("a", { href: safeUrl(o.originallink || o.link), target: "_blank", rel: "noopener noreferrer", textContent: o.title }),
+      el("span", { className: "why", textContent: srcName(o) + " · " + fmtDate(o.pubDate) })])));
+  box.style.display = "none";
+  const b = el("button", { type: "button", className: "tab mini", textContent: `묶인 기사 ${it._co.n}건 보기` });
+  b.onclick = () => { const on = box.style.display === "none"; box.style.display = on ? "" : "none"; b.textContent = on ? "묶인 기사 접기" : `묶인 기사 ${it._co.n}건 보기`; };
+  return el("div", {}, [el("div", { className: "editrow" }, [b]), box]);
 }
 const better = (a, b) => (impOf(b).sc - impOf(a).sc) || (srcRank(a) - srcRank(b)) || ((b.similar_count || 0) - (a.similar_count || 0)) || (a.pubDate < b.pubDate ? 1 : -1);
 function regionChips() {
@@ -751,7 +777,7 @@ function newsCard(it, pk, pinnable, dayChip) {
     ...(im.lv ? [el("span", { className: "chip imp" + im.lv, textContent: "중요도 " + (im.lv === 3 ? "상" : "중") })] : []),
     ...(dayChip ? [el("span", { className: "chip score", textContent: "선정 " + md(dayChip) })] : []),
     ...(pinnable && isWk(it) ? [el("span", { className: "chip imp3", textContent: "주간 등록됨" })] : []),
-    ...(it._co ? [el("span", { className: "chip score", title: it._co.srcs.join(", "), textContent: `${it._co.name} 관련 ${it._co.n}건 더` })] : []),
+    ...(it._co ? [el("span", { className: "chip score", title: it._co.srcs.join(", "), textContent: `${it._co.name} 관련 ${it._co.n}건` })] : []),
     ...(it.manual ? [el("span", { className: "chip", textContent: "직접 등록" })] : []),
     ...(it.source_type === "major" ? [el("span", { className: "chip", textContent: "주요 일간지" })] : it.source_type === "medical" ? [el("span", { className: "chip", textContent: "의료 전문지" })] : []),
     el("span", { textContent: it.gov ? it.agency : it.press ? (it.source || it.category) : it.global ? (it.sources || []).join(", ") : host(it.originallink || it.link) + (it.similar_count ? " 외 " + it.similar_count + "곳 보도" : "") }),
@@ -766,6 +792,7 @@ function newsCard(it, pk, pinnable, dayChip) {
   return el("div", { className: "wkcard" + (state.ov.nl[ovKey(it)] ? " nl-on" : "") }, [
     el("h3", {}, [a]), (it.summary ? el("p", { textContent: it.summary }) : ""),
     el("div", { className: "foot" }, meta),
+    ...(it._co ? [coBox(it)] : []),
     ...(pinned ? [el("div", { className: "why", textContent: "직접 고정한 대표 기사" })] : (im.why.length ? [el("div", { className: "why", textContent: "판단 근거: " + im.why.join(" · ") })] : [])),
     el("div", { className: "editrow" }, [impSelect(it), nlCheck(it), ...(pinnable ? [] : [wkBtn(it)])]),
     ...(pinnable ? [el("details", { className: "editbox" }, [el("summary", { textContent: "편집" }),
@@ -1097,7 +1124,7 @@ function render() {
       ...(im.lv ? [el("span", { className: "chip imp" + im.lv, title: "중요도 점수 " + im.sc.toFixed(1) + " · " + im.why.join(", "),
         textContent: (im.lv === 3 ? "중요도 상" : "중요도 중") })] : [el("span", { className: "chip", textContent: "중요도 없음" })]),
       el("span", { className: "chip", textContent: catOf(it) }),
-      ...(it._co ? [el("span", { className: "chip score", title: it._co.srcs.join(", "), textContent: `${it._co.name} 관련 ${it._co.n}건 더` })] : []),
+      ...(it._co ? [el("span", { className: "chip score", title: it._co.srcs.join(", "), textContent: `${it._co.name} 관련 ${it._co.n}건` })] : []),
       el("span", { textContent: fmtDate(it.pubDate) }),
     ]);
     const detail = el("div", { className: "foot" }, [
@@ -1118,7 +1145,7 @@ function render() {
     tgl.onclick = () => { const on = more.style.display === "none"; more.style.display = on ? "" : "none"; tgl.textContent = on ? "닫기" : "편집"; };
     head.append(tgl);
     list.append(el("article", { className: (it.similar_count ? "hi" : "") + (state.ov.nl[ovKey(it)] ? " nl-on" : "") },
-      [el("h2", {}, [a]), (it.summary ? el("p", { textContent: it.summary }) : ""), head, more]));
+      [el("h2", {}, [a]), (it.summary ? el("p", { textContent: it.summary }) : ""), head, ...(it._co ? [coBox(it)] : []), more]));
   });
 }
 
