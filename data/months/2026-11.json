@@ -1,17 +1,17 @@
 {
  "month": "2026-11",
- "generated_at": "2026-11-19T08:31:36.870812+09:00",
+ "generated_at": "2026-11-19T11:32:49.974483+09:00",
  "prev_month": "2026-10",
  "collected_days": 19,
  "first_day": "2026-11-01",
  "last_day": "2026-11-19",
- "total": 3640,
+ "total": 3695,
  "prev_total": 4285,
  "by_region": {
-  "국내": 2756,
-  "해외": 549,
+  "국내": 2801,
+  "해외": 555,
   "정부": 46,
-  "일간지": 289
+  "일간지": 293
  },
  "weekly": {
   "2026-W44": {
@@ -29,54 +29,54 @@
    "정부": 14
   },
   "2026-W47": {
-   "국내": 678,
-   "일간지": 289,
-   "해외": 124,
+   "국내": 723,
+   "일간지": 293,
+   "해외": 130,
    "정부": 15
   }
  },
  "categories": [
   {
    "name": "국내 · 국내 정책·규제",
-   "count": 743,
+   "count": 748,
    "prev": 648,
-   "delta": 95
+   "delta": 100
   },
   {
    "name": "국내 · 국내 의료 AI 기업",
-   "count": 688,
+   "count": 700,
    "prev": 769,
-   "delta": -81
+   "delta": -69
   },
   {
    "name": "국내 · 국내 의료기관",
-   "count": 454,
+   "count": 469,
    "prev": 411,
-   "delta": 43
+   "delta": 58
   },
   {
    "name": "국내 · AI 거버넌스·보안",
-   "count": 301,
+   "count": 305,
    "prev": 324,
-   "delta": -23
+   "delta": -19
   },
   {
    "name": "국내 · 학술·연구·행사",
-   "count": 280,
+   "count": 284,
    "prev": 294,
-   "delta": -14
+   "delta": -10
   },
   {
    "name": "국내 · 해외 의료기관·정책·규제",
-   "count": 272,
+   "count": 277,
    "prev": 300,
-   "delta": -28
+   "delta": -23
   },
   {
    "name": "해외 · 해외 의료기관 AI 도입·운영",
-   "count": 269,
+   "count": 271,
    "prev": 285,
-   "delta": -16
+   "delta": -14
   },
   {
    "name": "해외 · 해외 정책·규제 (미국)",
@@ -86,9 +86,9 @@
   },
   {
    "name": "해외 · 해외 연구·학술",
-   "count": 76,
+   "count": 78,
    "prev": 74,
-   "delta": 2
+   "delta": 4
   },
   {
    "name": "일간지 · 한국일보",
@@ -98,9 +98,15 @@
   },
   {
    "name": "일간지 · 동아일보",
-   "count": 49,
+   "count": 51,
    "prev": 0,
-   "delta": 49
+   "delta": 51
+  },
+  {
+   "name": "일간지 · 중앙일보",
+   "count": 45,
+   "prev": 0,
+   "delta": 45
   },
   {
    "name": "일간지 · 한겨레",
@@ -109,22 +115,16 @@
    "delta": 45
   },
   {
-   "name": "일간지 · 중앙일보",
-   "count": 44,
-   "prev": 0,
-   "delta": 44
-  },
-  {
    "name": "해외 · 해외 정책·규제 (유럽·영국)",
-   "count": 42,
+   "count": 44,
    "prev": 57,
-   "delta": -15
+   "delta": -13
   },
   {
    "name": "일간지 · 조선일보",
-   "count": 42,
+   "count": 43,
    "prev": 0,
-   "delta": 42
+   "delta": 43
   },
   {
    "name": "일간지 · JTBC",
@@ -196,31 +196,31 @@
  "keywords": [
   {
    "word": "서울대병원",
-   "count": 127,
+   "count": 129,
    "prev": 143,
    "status": ""
   },
   {
    "word": "식약처",
-   "count": 125,
+   "count": 127,
    "prev": 90,
    "status": ""
   },
   {
-   "word": "학술대회",
-   "count": 79,
-   "prev": 76,
-   "status": ""
-  },
-  {
    "word": "루닛",
-   "count": 78,
+   "count": 79,
    "prev": 64,
    "status": ""
   },
   {
    "word": "보건복지부",
-   "count": 78,
+   "count": 79,
+   "prev": 76,
+   "status": ""
+  },
+  {
+   "word": "학술대회",
+   "count": 79,
    "prev": 76,
    "status": ""
   },
@@ -232,14 +232,20 @@
   },
   {
    "word": "세브란스",
-   "count": 72,
+   "count": 74,
    "prev": 78,
    "status": ""
   },
   {
    "word": "삼성서울병원",
-   "count": 63,
+   "count": 68,
    "prev": 34,
+   "status": "급증"
+  },
+  {
+   "word": "아산병원",
+   "count": 64,
+   "prev": 70,
    "status": ""
   },
   {
@@ -249,39 +255,33 @@
    "status": ""
   },
   {
-   "word": "아산병원",
-   "count": 59,
-   "prev": 70,
-   "status": ""
-  },
-  {
    "word": "포럼",
-   "count": 49,
+   "count": 51,
    "prev": 51,
    "status": ""
   },
   {
    "word": "세미나",
-   "count": 47,
+   "count": 48,
    "prev": 91,
    "status": ""
   },
   {
    "word": "분당서울대",
-   "count": 45,
+   "count": 46,
    "prev": 65,
+   "status": ""
+  },
+  {
+   "word": "신의료기술",
+   "count": 37,
+   "prev": 26,
    "status": ""
   },
   {
    "word": "심포지엄",
    "count": 37,
    "prev": 31,
-   "status": ""
-  },
-  {
-   "word": "신의료기술",
-   "count": 36,
-   "prev": 26,
    "status": ""
   },
   {
@@ -292,7 +292,7 @@
   },
   {
    "word": "구글",
-   "count": 34,
+   "count": 35,
    "prev": 45,
    "status": ""
   },
@@ -304,14 +304,14 @@
   },
   {
    "word": "스마트 병원",
-   "count": 30,
+   "count": 29,
    "prev": 30,
    "status": ""
   },
   {
-   "word": "과기정통부",
-   "count": 26,
-   "prev": 17,
+   "word": "서울성모병원",
+   "count": 28,
+   "prev": 26,
    "status": ""
   }
  ],
@@ -1051,6 +1051,17 @@
    "importance": 102
   },
   {
+   "title": "신의료기술평가 에이아이트릭스·뷰노 ‘곤혹’",
+   "link": "https://dailymedi.com/news/news_view.php?wr_id=942557",
+   "date": "2026-11-19",
+   "category": "국내 의료 AI 기업",
+   "region": "국내",
+   "score": 99,
+   "similar_count": 0,
+   "source": "dailymedi.com",
+   "importance": 102
+  },
+  {
    "title": "규제과학센터 새 출발…\"이젠 식의약규제과학원\"",
    "link": "https://www.newsis.com/view/NISX20261117_0003872147",
    "date": "2026-11-17",
@@ -1192,17 +1203,6 @@
    "similar_count": 23,
    "source": "munhwa.com",
    "importance": 52
-  },
-  {
-   "title": "ETRI \"AI 비전문가용 개발도구 '탱고', 산업 현장에 확산\"",
-   "link": "https://www.newsis.com/view/NISX20261109_0003860758",
-   "date": "2026-11-09",
-   "category": "국내 의료기관",
-   "region": "국내",
-   "score": 12,
-   "similar_count": 18,
-   "source": "newsis.com",
-   "importance": 51
   }
  ],
  "important_global": [
@@ -1226,6 +1226,17 @@
    "score": 6,
    "similar_count": 0,
    "source": "Fierce Healthcare, Healthcare Dive, TechTarget",
+   "importance": 9
+  },
+  {
+   "title": "The proposed reform of the Medical Device Regulation and its implications for AI-enabled medical devices in the EU",
+   "link": "https://news.google.com/rss/articles/CBMiX0FVX3lxTE5wZmVKUThyVGdvcm1LNjd4Y0oyTm9wQ29ZTElLdGhXSENfMGQyUWxRTjNhWDNHV1B5VmNJNlZRcVFaeXpzMkJPQlhXYkZlSzdZV1ZEcVpyX241XzZIQldn?oc=5",
+   "date": "2026-11-18",
+   "category": "해외 정책·규제 (유럽·영국)",
+   "region": "해외",
+   "score": 6,
+   "similar_count": 0,
+   "source": "Nature",
    "importance": 9
   },
   {
@@ -1350,17 +1361,6 @@
    "importance": 7
   },
   {
-   "title": "The proposed reform of the Medical Device Regulation and its implications for AI-enabled medical devices in the EU",
-   "link": "https://news.google.com/rss/articles/CBMiX0FVX3lxTE5wZmVKUThyVGdvcm1LNjd4Y0oyTm9wQ29ZTElLdGhXSENfMGQyUWxRTjNhWDNHV1B5VmNJNlZRcVFaeXpzMkJPQlhXYkZlSzdZV1ZEcVpyX241XzZIQldn?oc=5",
-   "date": "2026-11-18",
-   "category": "해외 정책·규제 (유럽·영국)",
-   "region": "해외",
-   "score": 4,
-   "similar_count": 0,
-   "source": "Nature",
-   "importance": 7
-  },
-  {
    "title": "What to know about the new AI roadmap from CMS, and news from HLTH",
    "link": "https://news.google.com/rss/articles/CBMiigFBVV95cUxPd0k5NmNFQ2V5Y2RzM0g1bVluQXU5QUlqTENUVlBLZE1wMGs3eUlGYXVhQnJmUUVpcGhVOVRLUTZhZTRGVC16LUZsN2VaUW5kM001VGM3V1hOMXRZNTBmVGdJMlJIa2ROU2VmYUJBU3NyMDNTal9Cc0dVTUZWMnA1ZlRpMkJzdGRwZnc?oc=5",
    "date": "2026-11-18",
@@ -1456,6 +1456,17 @@
     "importance": 103
    },
    {
+    "title": "신의료기술평가 에이아이트릭스·뷰노 ‘곤혹’",
+    "link": "https://dailymedi.com/news/news_view.php?wr_id=942557",
+    "date": "2026-11-19",
+    "category": "국내 의료 AI 기업",
+    "region": "국내",
+    "score": 99,
+    "similar_count": 0,
+    "source": "dailymedi.com",
+    "importance": 102
+   },
+   {
     "title": "‘나락가는 젠슨황?’ 이번엔 사내 불륜 의혹…NYT, 유부녀 임원과 호텔...",
     "link": "https://www.munhwa.com/article/11630719?ref=naver",
     "date": "2026-11-12",
@@ -1465,17 +1476,6 @@
     "similar_count": 23,
     "source": "munhwa.com",
     "importance": 52
-   },
-   {
-    "title": "루닛, 3분기 EBITDA 손실 77% 줄었다… 14개 분기 만에 최저",
-    "link": "https://it.chosun.com/news/articleView.html?idxno=3000000000882",
-    "date": "2026-11-12",
-    "category": "국내 의료 AI 기업",
-    "region": "국내",
-    "score": 9,
-    "similar_count": 19,
-    "source": "it.chosun.com",
-    "importance": 50
    }
   ],
   "국내 · 정부 발표": [
@@ -1714,6 +1714,41 @@
     "importance": 7
    }
   ],
+  "해외 · 해외 정책·규제 (유럽·영국)": [
+   {
+    "title": "The proposed reform of the Medical Device Regulation and its implications for AI-enabled medical devices in the EU",
+    "link": "https://news.google.com/rss/articles/CBMiX0FVX3lxTE5wZmVKUThyVGdvcm1LNjd4Y0oyTm9wQ29ZTElLdGhXSENfMGQyUWxRTjNhWDNHV1B5VmNJNlZRcVFaeXpzMkJPQlhXYkZlSzdZV1ZEcVpyX241XzZIQldn?oc=5",
+    "date": "2026-11-18",
+    "category": "해외 정책·규제 (유럽·영국)",
+    "region": "해외",
+    "score": 6,
+    "similar_count": 0,
+    "source": "Nature",
+    "importance": 9
+   },
+   {
+    "title": "Nelson Advisors: European Lower Mid Market Healthcare Technology, MedTech and Health AI Predictions for 2027",
+    "link": "https://news.google.com/rss/articles/CBMi1wFBVV95cUxQTTBNNUJvTDJIZl9OdFJRbHdXWllhTFpPZkRNSDZReTJYeWdEZEJuM1FDczdTaFJmTl9kZEQ1d29CS3FsTmk2Y3NBOUVkQkVMeXRzV3dfQ3dEdmRXRm84djNHWFJ4Ym9LRzVfajBjeTZBdVMtZWp2ZS1rMnprQ3E3VzFoX1R4cHdYbVExV25vOVdIUzdVZGNBVGQ5bU5VTWYwaUV3cEh4cm9LcUZkY29zanM2T3lTdE5fWlhfQnJGWFRFd0h0c0VTRXlJMXQtOGx3bGtFc19GTQ?oc=5",
+    "date": "2026-11-02",
+    "category": "해외 정책·규제 (유럽·영국)",
+    "region": "해외",
+    "score": 3,
+    "similar_count": 0,
+    "source": "healthcare.digital",
+    "importance": 3
+   },
+   {
+    "title": "Nelson Advisors: This Week in European HealthTech, MedTech and Health AI: 13th November 2026",
+    "link": "https://news.google.com/rss/articles/CBMizAFBVV95cUxQS2k3TnNNbzdIQXN3dTFiT0NnNm8tYjhtckdPZ0haMmNPN2twWl8yTTNTaWdQemtDNlhaZW1fUnlWZU5xbVB1bmNHTzZhWnl0bDdWMnVmNVowdnVnRTdTTERQZ1gtU3Q3M0FyT0NkUmtBUzRCcS1KdzgtWU1fWnEtVjJHQ0JqUG1NNXlPZjFYYlZ5a2dLNFQ1NzNHLXlyZFh6al9saHF3Vy1SX0drUnpLSHRqb3NDdFdickFfUmVBaXJXbzZUWjZySDlHTnQ?oc=5",
+    "date": "2026-11-13",
+    "category": "해외 정책·규제 (유럽·영국)",
+    "region": "해외",
+    "score": 3,
+    "similar_count": 0,
+    "source": "https://www.healthcare.digital/",
+    "importance": 3
+   }
+  ],
   "일간지 · 경향신문": [
    {
     "title": "인하대병원 ‘아이온’ 시술, 대만 암센터 의료진이 배우러 왔다",
@@ -1821,6 +1856,17 @@
   ],
   "일간지 · 동아일보": [
    {
+    "title": "AI로 병원 진단서 위조해 50일 병가 쓴 사회복무요원 덜미",
+    "link": "https://www.donga.com/news/Society/article/all/20261119/135052389/1",
+    "date": "2026-11-19",
+    "category": "동아일보",
+    "region": "일간지",
+    "score": 5,
+    "similar_count": 0,
+    "source": "donga.com",
+    "importance": 8
+   },
+   {
     "title": "[전문의 칼럼]의료인 55% 폭언-폭행 경험… 안전한 정신과 진료 환경 구축을",
     "link": "https://www.donga.com/news/It/article/all/20261119/135049964/2",
     "date": "2026-11-19",
@@ -1841,17 +1887,6 @@
     "similar_count": 0,
     "source": "donga.com",
     "importance": 8
-   },
-   {
-    "title": "의료급여 9000억 구멍…복지 확대에 병원·약국도 ‘속앓이’",
-    "link": "https://news.google.com/rss/articles/CBMidkFVX3lxTE1XZWg5VWVRWmV2RzFROV9BRVY4d0x4QnRBNWJuVXBXVk00OEk5Zzd1SmtSM2lPOGNZQmwxM29Way00SUJTeE9KcVlBY2ZFeTB2ZVhjMWFSSUNzZW8wVTZDZk1KdGZ1aXpscERhUFRZQ0VnYnVMU1HSAWZBVV95cUxNd2NoOFdTMml5OGhxbzhvQ0hsdG5oWHNGdmcyVkE1TjRidUE2czNvUDhOS1kxdlJpTDFoYk52eGVzbXhRMnJJQnpBWUc2alJ1X2l3V3Z2Yi1EZnlfQV8wMzN2R2xsQ0E?oc=5",
-    "date": "2026-11-17",
-    "category": "동아일보",
-    "region": "일간지",
-    "score": 5,
-    "similar_count": 0,
-    "source": "news.google.com",
-    "importance": 8
    }
   ],
   "일간지 · 조선일보": [
@@ -1867,8 +1902,8 @@
     "importance": 8
    },
    {
-    "title": "연준 의사록 보니… “금리 더 올려야” 거의 한목소리, 12월 ‘빅스텝’도 거론",
-    "link": "https://www.chosun.com/economy/int_economy/2026/11/19/ATDONM6O55ABXC3YG44T2JYU4Y/",
+    "title": "“챗GPT야, 병원 진단서 만들어줘” 복무 이탈한 사회복무요원 집유",
+    "link": "https://www.chosun.com/national/regional/2026/11/19/7FMV2IPDF5GCHNUI5ZT5KXYLZM/",
     "date": "2026-11-19",
     "category": "조선일보",
     "region": "일간지",
@@ -1878,14 +1913,14 @@
     "importance": 7
    },
    {
-    "title": "‘딥카스’ 의존도 높은 뷰노…복지부 평가 결과 지연에 314억 증자 발목",
-    "link": "https://biz.chosun.com/science-chosun/bio/2026/11/19/J6CSMHRIGRDMRPRWPUFRZMD3EQ/",
+    "title": "연준 의사록 보니… “금리 더 올려야” 거의 한목소리, 12월 ‘빅스텝’도 거론",
+    "link": "https://www.chosun.com/economy/int_economy/2026/11/19/ATDONM6O55ABXC3YG44T2JYU4Y/",
     "date": "2026-11-19",
     "category": "조선일보",
     "region": "일간지",
     "score": 4,
     "similar_count": 0,
-    "source": "biz.chosun.com",
+    "source": "chosun.com",
     "importance": 7
    }
   ],
@@ -1902,8 +1937,8 @@
     "importance": 8
    },
    {
-    "title": "전 대치동 강사 치과 의사 “초소형 장비 숨길데 너무 많아”",
-    "link": "https://news.google.com/rss/articles/CBMiVkFVX3lxTFBtSFpLYzlKemhiYWdCckh2eEEyanhUWGR6N0NXb19LSFJNUFdDZ2xzNlM5TkpWNVE5eVhySWp5VFo3VlhBa29PYVJiRy1Zc1I5RHlpd2JR?oc=5",
+    "title": "‘스시자로’ 후폭풍 차단…식약처 “온라인 되팔이 엄벌”",
+    "link": "https://news.google.com/rss/articles/CBMiVkFVX3lxTE1XVDRrVUp1SWIweHhPRHBaaU0zYmxMLVVBaV9tYjVKRU5VVVhxWjZVZnFJUXVPOXJMQi04NFdheVhmdjRaR1N3RXdkS1JMNDhIZUk2V0NR?oc=5",
     "date": "2026-11-19",
     "category": "중앙일보",
     "region": "일간지",
@@ -1913,8 +1948,8 @@
     "importance": 7
    },
    {
-    "title": "‘국정농단 21년형’ 최서원 병원비 호소한 정유라…“이번 주까지 전액 납부”",
-    "link": "https://news.google.com/rss/articles/CBMiVkFVX3lxTFA2aGtiRlZFUXA3MEZER2pkMEthUFpNMGx3dkVYQXJUWXdDa1JLWWJIV3ZrMk50VkhDSnFGNElFU2Z6LTV5cHBUOWcwUWlqYTVGXzBzaUNB?oc=5",
+    "title": "전 대치동 강사 치과 의사 “초소형 장비 숨길데 너무 많아”",
+    "link": "https://news.google.com/rss/articles/CBMiVkFVX3lxTFBtSFpLYzlKemhiYWdCckh2eEEyanhUWGR6N0NXb19LSFJNUFdDZ2xzNlM5TkpWNVE5eVhySWp5VFo3VlhBa29PYVJiRy1Zc1I5RHlpd2JR?oc=5",
     "date": "2026-11-19",
     "category": "중앙일보",
     "region": "일간지",
@@ -1957,41 +1992,6 @@
     "similar_count": 0,
     "source": "news.google.com",
     "importance": 7
-   }
-  ],
-  "해외 · 해외 정책·규제 (유럽·영국)": [
-   {
-    "title": "The proposed reform of the Medical Device Regulation and its implications for AI-enabled medical devices in the EU",
-    "link": "https://news.google.com/rss/articles/CBMiX0FVX3lxTE5wZmVKUThyVGdvcm1LNjd4Y0oyTm9wQ29ZTElLdGhXSENfMGQyUWxRTjNhWDNHV1B5VmNJNlZRcVFaeXpzMkJPQlhXYkZlSzdZV1ZEcVpyX241XzZIQldn?oc=5",
-    "date": "2026-11-18",
-    "category": "해외 정책·규제 (유럽·영국)",
-    "region": "해외",
-    "score": 4,
-    "similar_count": 0,
-    "source": "Nature",
-    "importance": 7
-   },
-   {
-    "title": "Nelson Advisors: European Lower Mid Market Healthcare Technology, MedTech and Health AI Predictions for 2027",
-    "link": "https://news.google.com/rss/articles/CBMi1wFBVV95cUxQTTBNNUJvTDJIZl9OdFJRbHdXWllhTFpPZkRNSDZReTJYeWdEZEJuM1FDczdTaFJmTl9kZEQ1d29CS3FsTmk2Y3NBOUVkQkVMeXRzV3dfQ3dEdmRXRm84djNHWFJ4Ym9LRzVfajBjeTZBdVMtZWp2ZS1rMnprQ3E3VzFoX1R4cHdYbVExV25vOVdIUzdVZGNBVGQ5bU5VTWYwaUV3cEh4cm9LcUZkY29zanM2T3lTdE5fWlhfQnJGWFRFd0h0c0VTRXlJMXQtOGx3bGtFc19GTQ?oc=5",
-    "date": "2026-11-02",
-    "category": "해외 정책·규제 (유럽·영국)",
-    "region": "해외",
-    "score": 3,
-    "similar_count": 0,
-    "source": "healthcare.digital",
-    "importance": 3
-   },
-   {
-    "title": "Nelson Advisors: This Week in European HealthTech, MedTech and Health AI: 13th November 2026",
-    "link": "https://news.google.com/rss/articles/CBMizAFBVV95cUxQS2k3TnNNbzdIQXN3dTFiT0NnNm8tYjhtckdPZ0haMmNPN2twWl8yTTNTaWdQemtDNlhaZW1fUnlWZU5xbVB1bmNHTzZhWnl0bDdWMnVmNVowdnVnRTdTTERQZ1gtU3Q3M0FyT0NkUmtBUzRCcS1KdzgtWU1fWnEtVjJHQ0JqUG1NNXlPZjFYYlZ5a2dLNFQ1NzNHLXlyZFh6al9saHF3Vy1SX0drUnpLSHRqb3NDdFdickFfUmVBaXJXbzZUWjZySDlHTnQ?oc=5",
-    "date": "2026-11-13",
-    "category": "해외 정책·규제 (유럽·영국)",
-    "region": "해외",
-    "score": 3,
-    "similar_count": 0,
-    "source": "https://www.healthcare.digital/",
-    "importance": 3
    }
   ],
   "해외 · 해외 연구·학술": [
