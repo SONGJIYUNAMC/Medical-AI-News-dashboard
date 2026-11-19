@@ -1,17 +1,17 @@
 {
  "month": "2026-11",
- "generated_at": "2026-11-19T11:32:49.974483+09:00",
+ "generated_at": "2026-11-20T08:38:09.158452+09:00",
  "prev_month": "2026-10",
- "collected_days": 19,
+ "collected_days": 20,
  "first_day": "2026-11-01",
- "last_day": "2026-11-19",
- "total": 3695,
+ "last_day": "2026-11-20",
+ "total": 3882,
  "prev_total": 4285,
  "by_region": {
-  "국내": 2801,
-  "해외": 555,
-  "정부": 46,
-  "일간지": 293
+  "국내": 2937,
+  "해외": 583,
+  "정부": 47,
+  "일간지": 315
  },
  "weekly": {
   "2026-W44": {
@@ -29,120 +29,120 @@
    "정부": 14
   },
   "2026-W47": {
-   "국내": 723,
-   "일간지": 293,
-   "해외": 130,
-   "정부": 15
+   "국내": 859,
+   "일간지": 315,
+   "해외": 158,
+   "정부": 16
   }
  },
  "categories": [
   {
    "name": "국내 · 국내 정책·규제",
-   "count": 748,
+   "count": 793,
    "prev": 648,
-   "delta": 100
+   "delta": 145
   },
   {
    "name": "국내 · 국내 의료 AI 기업",
-   "count": 700,
+   "count": 713,
    "prev": 769,
-   "delta": -69
+   "delta": -56
   },
   {
    "name": "국내 · 국내 의료기관",
-   "count": 469,
+   "count": 495,
    "prev": 411,
-   "delta": 58
+   "delta": 84
   },
   {
    "name": "국내 · AI 거버넌스·보안",
-   "count": 305,
+   "count": 329,
    "prev": 324,
-   "delta": -19
+   "delta": 5
   },
   {
    "name": "국내 · 학술·연구·행사",
-   "count": 284,
+   "count": 298,
    "prev": 294,
-   "delta": -10
-  },
-  {
-   "name": "국내 · 해외 의료기관·정책·규제",
-   "count": 277,
-   "prev": 300,
-   "delta": -23
-  },
-  {
-   "name": "해외 · 해외 의료기관 AI 도입·운영",
-   "count": 271,
-   "prev": 285,
-   "delta": -14
-  },
-  {
-   "name": "해외 · 해외 정책·규제 (미국)",
-   "count": 161,
-   "prev": 171,
-   "delta": -10
-  },
-  {
-   "name": "해외 · 해외 연구·학술",
-   "count": 78,
-   "prev": 74,
    "delta": 4
   },
   {
+   "name": "국내 · 해외 의료기관·정책·규제",
+   "count": 291,
+   "prev": 300,
+   "delta": -9
+  },
+  {
+   "name": "해외 · 해외 의료기관 AI 도입·운영",
+   "count": 282,
+   "prev": 285,
+   "delta": -3
+  },
+  {
+   "name": "해외 · 해외 정책·규제 (미국)",
+   "count": 168,
+   "prev": 171,
+   "delta": -3
+  },
+  {
+   "name": "해외 · 해외 연구·학술",
+   "count": 83,
+   "prev": 74,
+   "delta": 9
+  },
+  {
    "name": "일간지 · 한국일보",
-   "count": 55,
+   "count": 56,
    "prev": 0,
-   "delta": 55
+   "delta": 56
   },
   {
    "name": "일간지 · 동아일보",
-   "count": 51,
+   "count": 52,
    "prev": 0,
-   "delta": 51
-  },
-  {
-   "name": "일간지 · 중앙일보",
-   "count": 45,
-   "prev": 0,
-   "delta": 45
+   "delta": 52
   },
   {
    "name": "일간지 · 한겨레",
-   "count": 45,
+   "count": 50,
    "prev": 0,
-   "delta": 45
+   "delta": 50
   },
   {
    "name": "해외 · 해외 정책·규제 (유럽·영국)",
-   "count": 44,
+   "count": 49,
    "prev": 57,
-   "delta": -13
+   "delta": -8
+  },
+  {
+   "name": "일간지 · 중앙일보",
+   "count": 49,
+   "prev": 0,
+   "delta": 49
   },
   {
    "name": "일간지 · 조선일보",
-   "count": 43,
+   "count": 46,
    "prev": 0,
-   "delta": 43
+   "delta": 46
   },
   {
    "name": "일간지 · JTBC",
-   "count": 31,
+   "count": 33,
    "prev": 0,
-   "delta": 31
+   "delta": 33
   },
   {
    "name": "일간지 · 경향신문",
-   "count": 23,
+   "count": 29,
    "prev": 0,
-   "delta": 23
+   "delta": 29
   },
   {
    "name": "정부 · 정부 보도자료 (검색)",
-   "count": 21,
+   "count": 22,
    "prev": 22,
-   "delta": -1
+   "delta": 0
   },
   {
    "name": "국내 · 기타 (의료 AI·병원 AI 키워드)",
@@ -196,26 +196,32 @@
  "keywords": [
   {
    "word": "서울대병원",
-   "count": 129,
+   "count": 134,
    "prev": 143,
    "status": ""
   },
   {
    "word": "식약처",
-   "count": 127,
+   "count": 133,
    "prev": 90,
    "status": ""
   },
   {
    "word": "루닛",
-   "count": 79,
+   "count": 82,
    "prev": 64,
    "status": ""
   },
   {
    "word": "보건복지부",
-   "count": 79,
+   "count": 80,
    "prev": 76,
+   "status": ""
+  },
+  {
+   "word": "FDA",
+   "count": 80,
+   "prev": 86,
    "status": ""
   },
   {
@@ -225,52 +231,58 @@
    "status": ""
   },
   {
-   "word": "FDA",
-   "count": 76,
-   "prev": 86,
-   "status": ""
-  },
-  {
    "word": "세브란스",
-   "count": 74,
+   "count": 76,
    "prev": 78,
    "status": ""
   },
   {
    "word": "삼성서울병원",
-   "count": 68,
+   "count": 74,
    "prev": 34,
    "status": "급증"
   },
   {
    "word": "아산병원",
-   "count": 64,
+   "count": 69,
    "prev": 70,
    "status": ""
   },
   {
    "word": "국회",
-   "count": 61,
+   "count": 63,
    "prev": 37,
    "status": ""
   },
   {
    "word": "포럼",
-   "count": 51,
+   "count": 61,
    "prev": 51,
    "status": ""
   },
   {
    "word": "세미나",
-   "count": 48,
+   "count": 50,
    "prev": 91,
    "status": ""
   },
   {
    "word": "분당서울대",
-   "count": 46,
+   "count": 48,
    "prev": 65,
    "status": ""
+  },
+  {
+   "word": "심포지엄",
+   "count": 40,
+   "prev": 31,
+   "status": ""
+  },
+  {
+   "word": "메이요",
+   "count": 38,
+   "prev": 12,
+   "status": "급증"
   },
   {
    "word": "신의료기술",
@@ -279,39 +291,27 @@
    "status": ""
   },
   {
-   "word": "심포지엄",
-   "count": 37,
-   "prev": 31,
-   "status": ""
-  },
-  {
-   "word": "메이요",
-   "count": 36,
-   "prev": 12,
-   "status": "급증"
-  },
-  {
    "word": "구글",
-   "count": 35,
+   "count": 36,
    "prev": 45,
    "status": ""
   },
   {
    "word": "오픈AI",
-   "count": 31,
+   "count": 32,
    "prev": 17,
    "status": ""
   },
   {
    "word": "스마트 병원",
-   "count": 29,
+   "count": 31,
    "prev": 30,
    "status": ""
   },
   {
-   "word": "서울성모병원",
-   "count": 28,
-   "prev": 26,
+   "word": "심평원",
+   "count": 31,
+   "prev": 30,
    "status": ""
   }
  ],
@@ -653,6 +653,17 @@
  ],
  "government_other": [
   {
+   "title": "AI가 바꾸는 바이오 미래, 대한민국이 기술 주권 확보를 하는 날까지",
+   "link": "https://news.google.com/rss/articles/CBMiakFVX3lxTE4yVm1taFRKcDRRTEk5WnlpeDBvMU9rMFBmSVJ2ZUVYNHpLS3k0ZkJaYlRxajFtaUVrMV9VUzFVbEVNWGdKU01rTnZybDV1dFF0QWE1RXhkSk1XeWYzNnFwQVd4aE41N2lMMmc?oc=5",
+   "date": "2026-11-19",
+   "category": "정부 보도자료 (검색)",
+   "region": "정부",
+   "score": 0,
+   "similar_count": 0,
+   "source": "정부 보도자료 (검색)",
+   "importance": 0
+  },
+  {
    "title": "디지털의료기기·디지털융합의약품 현장 중심 정책간담회 개최",
    "link": "https://news.google.com/rss/articles/CBMidkFVX3lxTE9LSU1ZVkEyc284ZG5CaGMtUWRUajV6WFpCUUtvbXZybU8zRlVaTzZqNl9EejZZLVprNlVJRWJnSkNMN3E3TGRzMTF6Z2hKWnJKQWVzUnZ2NWUtODV3VUJILWFUNXVUWENKYjNVT3ZLbGlpRF9hRWc?oc=5",
    "date": "2026-11-18",
@@ -963,17 +974,6 @@
   {
    "title": "국민인공지능서비스혁신추진단, 전문임기제공무원 2차 공개 모집",
    "link": "https://www.msit.go.kr/bbs/view.do?sCode=user&mId=307&mPid=208&bbsSeqNo=94&nttSeqNo=3187920",
-   "date": "2026-11-03",
-   "category": "과학기술정보통신부",
-   "region": "정부",
-   "score": 0,
-   "similar_count": 0,
-   "source": "과학기술정보통신부",
-   "importance": 0
-  },
-  {
-   "title": "“연결을 넘어, 인공지능 만드는 새로운 가치” 「2026 대한민국 지능형 사물인터넷 주간(2026 AIoT Week Korea)」 개막",
-   "link": "https://www.msit.go.kr/bbs/view.do?sCode=user&mId=307&mPid=208&bbsSeqNo=94&nttSeqNo=3187914",
    "date": "2026-11-03",
    "category": "과학기술정보통신부",
    "region": "정부",
@@ -1361,14 +1361,14 @@
    "importance": 7
   },
   {
-   "title": "What to know about the new AI roadmap from CMS, and news from HLTH",
-   "link": "https://news.google.com/rss/articles/CBMiigFBVV95cUxPd0k5NmNFQ2V5Y2RzM0g1bVluQXU5QUlqTENUVlBLZE1wMGs3eUlGYXVhQnJmUUVpcGhVOVRLUTZhZTRGVC16LUZsN2VaUW5kM001VGM3V1hOMXRZNTBmVGdJMlJIa2ROU2VmYUJBU3NyMDNTal9Cc0dVTUZWMnA1ZlRpMkJzdGRwZnc?oc=5",
-   "date": "2026-11-18",
-   "category": "해외 정책·규제 (미국)",
+   "title": "HLTH 2026: Elsevier upgrades ClinicalKey AI with full patient EHR context",
+   "link": "https://news.google.com/rss/articles/CBMisgFBVV95cUxOdTVMWDVXRTQxbzRXdVpobFBKVGxQWmhrLUlWUVVVRFpvMWZOTUtLbDdIVDZUbTU3bUphbC1VbFRjU0FqajVOY2xzS0Zlamt1WlRpbU1iVGdLQ2E3SFcxZVlLZGJrcms2d004YXU0WUY3ZndaMlVZVVR5YTRfWjBpUGtGZGJlRkpUSjdqMTRUZGNxM3UtVkZtYXA1N0VvSVN6TlV6ZHhaSmo5NkhUWlpDZnp3?oc=5",
+   "date": "2026-11-20",
+   "category": "해외 의료기관 AI 도입·운영",
    "region": "해외",
    "score": 4,
    "similar_count": 0,
-   "source": "STAT",
+   "source": "Fierce Healthcare",
    "importance": 7
   }
  ],
@@ -1644,6 +1644,41 @@
     "importance": 29
    }
   ],
+  "일간지 · 한겨레": [
+   {
+    "title": "서재필의학상에 이승규 서울아산병원 교수",
+    "link": "https://news.google.com/rss/articles/CBMiZkFVX3lxTE14bllybC1EVnk1MVdQMzhPR2lOckcyQnBRVzVLY19iODFvdndlYjZCZG15NjE4dk4zOHQ4RGMzYUpFNExlRVRtU002aFNrbnlIWHZTVXJiZ3FUTlZMd2pCMzIxSy1DUQ?oc=5",
+    "date": "2026-11-19",
+    "category": "한겨레",
+    "region": "일간지",
+    "score": 7,
+    "similar_count": 0,
+    "source": "news.google.com",
+    "importance": 10
+   },
+   {
+    "title": "심평원, AI 활용 진료비 심사체계 개편…“올해 도수치료 ‘풍선효과’ 후속대책 마련”",
+    "link": "https://news.google.com/rss/articles/CBMiZkFVX3lxTFBlcXhwTFZkWmxNS3U0OWI5NFluc3dvVDdLN25DdVFSQU1Gc1pGQzNGSS1RNGZHbHV2NkZRNWpaYUQxT0diUmlZQ3Nkb1NmUVlvb2c1NWRIekVQenl0RHZWSHNITWd3UQ?oc=5",
+    "date": "2026-11-19",
+    "category": "한겨레",
+    "region": "일간지",
+    "score": 6,
+    "similar_count": 0,
+    "source": "news.google.com",
+    "importance": 9
+   },
+   {
+    "title": "박찬종 전 의원 별세…세브란스병원에 주검 기증",
+    "link": "https://news.google.com/rss/articles/CBMiakFVX3lxTE53Ym9hSWFfbzBjYzUyZFRuWHpkUEJRODRIT1NMQmkydWszSUdFY1p2c2ozdDJjWHg4U2UyQ3B4REd2SkNsNXdoZ3JjRjRUbkFXVE1SeWpqRi1EVVlOVWpQU252eWVNQUR3Qmc?oc=5",
+    "date": "2026-11-19",
+    "category": "한겨레",
+    "region": "일간지",
+    "score": 5,
+    "similar_count": 0,
+    "source": "news.google.com",
+    "importance": 8
+   }
+  ],
   "일간지 · 한국일보": [
    {
     "title": "박원규 대구가톨릭대병원 영상의학과지원팀장, 보건복지부 장관 표창",
@@ -1714,6 +1749,41 @@
     "importance": 7
    }
   ],
+  "일간지 · 조선일보": [
+   {
+    "title": "심평원 “AI 도입해 진료비 과잉 청구만 집중 심사”",
+    "link": "https://www.chosun.com/national/welfare-medical/2026/11/19/75JK53X6AFDNZDLSIX4VTSOY6I/",
+    "date": "2026-11-19",
+    "category": "조선일보",
+    "region": "일간지",
+    "score": 6,
+    "similar_count": 0,
+    "source": "chosun.com",
+    "importance": 9
+   },
+   {
+    "title": "[스타트UP] AI로 반려동물 진단 돕는 ‘메타디엑스’…동물병원 숨은 비용까지 조준",
+    "link": "https://biz.chosun.com/industry/business-venture/2026/11/20/4NIBDIP7XRARFAF6XXULZLZ63Q/",
+    "date": "2026-11-20",
+    "category": "조선일보",
+    "region": "일간지",
+    "score": 5,
+    "similar_count": 0,
+    "source": "biz.chosun.com",
+    "importance": 8
+   },
+   {
+    "title": "의료 관광객 200만명 시대… 호텔 안에 아예 병원까지 들였다",
+    "link": "https://www.chosun.com/national/national_general/2026/11/19/VNBWUK52Y5AQHFF6QCQW65L2AA/",
+    "date": "2026-11-19",
+    "category": "조선일보",
+    "region": "일간지",
+    "score": 5,
+    "similar_count": 0,
+    "source": "chosun.com",
+    "importance": 8
+   }
+  ],
   "해외 · 해외 정책·규제 (유럽·영국)": [
    {
     "title": "The proposed reform of the Medical Device Regulation and its implications for AI-enabled medical devices in the EU",
@@ -1773,9 +1843,9 @@
     "importance": 9
    },
    {
-    "title": "양산시, 오전 7~9시 진료 ‘새벽별어린이병원’ 추진",
-    "link": "https://news.google.com/rss/articles/CBMiX0FVX3lxTE9JY01xNkZPV01Oa3dqei1peEoxbnkyMmVPRUlWY21PR3Y1ZENhcjVGWnJseUNoTWU2ajVfaUhDNEJCUDBUTnp6Z2RxeGJFOUJWT29INTVCR0t4QndLR1hV0gFfQVVfeXFMT0ljTXE2Rk9XTU5rd2p6LWl4SjFueTIyZU9FSVZjbU9HdjVkQ2FyNUZacmx5Q2hNZTZqNV9pSEM0QkJQMFROenpnZHF4YkU5QlZPb0g1NUJHS3hCd0tHWFU?oc=5",
-    "date": "2026-11-18",
+    "title": "‘추적 60분’ 환자 장사 2부작 – 공장이 된 병원, 미용 주사 천국의 비밀",
+    "link": "https://news.google.com/rss/articles/CBMiXkFVX3lxTE52WHVNM0ppbUFKOUJSZUs2SzZITFMtUmNwOW5QTzQ0TzI4R0x5UTRUWTVTMHc0SWg3MkM5NENFLWh6QXlWamFpUkxaSnh2LTdWbV9iLUNHTTNvYkgtWWfSAWNBVV95cUxQdEFETFBCeUUwbFdvYUo1Tlk5blhZX09Udl9NWWxaQWFtWUUzVVFSeWJnajRDQ2JqbW91MW1kdEJkVFRVVTJwMFB6V2Z1TTFDYUxONHNWSUZjbF9kUVFpUDY0em8?oc=5",
+    "date": "2026-11-19",
     "category": "경향신문",
     "region": "일간지",
     "score": 5,
@@ -1854,6 +1924,41 @@
     "importance": 8
    }
   ],
+  "일간지 · 중앙일보": [
+   {
+    "title": "“3분만에 돈까지 벌어줬다” 한국 의대 출신이 만든 ‘AI비서’",
+    "link": "https://news.google.com/rss/articles/CBMiVkFVX3lxTFBCeldBN2ZXeU5sYzdGR0RFaW90eTdTRGdlQXZTNTlSQkVVejNYRVVOUHhkMWp0dmJFZ2NWeVltdmd3ZDBDVkVFbEt1V2VGMlJhUERLOEln?oc=5",
+    "date": "2026-11-20",
+    "category": "중앙일보",
+    "region": "일간지",
+    "score": 5,
+    "similar_count": 0,
+    "source": "news.google.com",
+    "importance": 8
+   },
+   {
+    "title": "[Biz & Now] 대성그룹 “AI 탐구로 바이오·의료산업 혁신”",
+    "link": "https://news.google.com/rss/articles/CBMiVkFVX3lxTE0xUUhvSUEyWFZTM0JyLU9jVFlWTHhyMzBHem5DbXBxaDBWS0RiZUhrclNBNEtoTURWS2tHTXhNRWFnNnA4U2RvdmJkZ29rT2lKTGdVeVdR?oc=5",
+    "date": "2026-11-20",
+    "category": "중앙일보",
+    "region": "일간지",
+    "score": 5,
+    "similar_count": 0,
+    "source": "news.google.com",
+    "importance": 8
+   },
+   {
+    "title": "HD현대아너상에 성가복지병원, HD현대1%나눔상에 의사 김인권",
+    "link": "https://news.google.com/rss/articles/CBMiVkFVX3lxTE9VTDBlT1RIeTB6c0h0aHNKXzZlTG0xSDEzYjhHSENJd293SlRCZEl2OEtMOXVkT1pDSlBoSHFiU1pQNzFGRDg2a0ZkVW9ma2p4bWxXdzN3?oc=5",
+    "date": "2026-11-17",
+    "category": "중앙일보",
+    "region": "일간지",
+    "score": 5,
+    "similar_count": 0,
+    "source": "news.google.com",
+    "importance": 8
+   }
+  ],
   "일간지 · 동아일보": [
    {
     "title": "AI로 병원 진단서 위조해 50일 병가 쓴 사회복무요원 덜미",
@@ -1887,111 +1992,6 @@
     "similar_count": 0,
     "source": "donga.com",
     "importance": 8
-   }
-  ],
-  "일간지 · 조선일보": [
-   {
-    "title": "의료 관광객 200만명 시대… 호텔 안에 아예 병원까지 들였다",
-    "link": "https://www.chosun.com/national/national_general/2026/11/19/VNBWUK52Y5AQHFF6QCQW65L2AA/",
-    "date": "2026-11-19",
-    "category": "조선일보",
-    "region": "일간지",
-    "score": 5,
-    "similar_count": 0,
-    "source": "chosun.com",
-    "importance": 8
-   },
-   {
-    "title": "“챗GPT야, 병원 진단서 만들어줘” 복무 이탈한 사회복무요원 집유",
-    "link": "https://www.chosun.com/national/regional/2026/11/19/7FMV2IPDF5GCHNUI5ZT5KXYLZM/",
-    "date": "2026-11-19",
-    "category": "조선일보",
-    "region": "일간지",
-    "score": 4,
-    "similar_count": 0,
-    "source": "chosun.com",
-    "importance": 7
-   },
-   {
-    "title": "연준 의사록 보니… “금리 더 올려야” 거의 한목소리, 12월 ‘빅스텝’도 거론",
-    "link": "https://www.chosun.com/economy/int_economy/2026/11/19/ATDONM6O55ABXC3YG44T2JYU4Y/",
-    "date": "2026-11-19",
-    "category": "조선일보",
-    "region": "일간지",
-    "score": 4,
-    "similar_count": 0,
-    "source": "chosun.com",
-    "importance": 7
-   }
-  ],
-  "일간지 · 중앙일보": [
-   {
-    "title": "HD현대아너상에 성가복지병원, HD현대1%나눔상에 의사 김인권",
-    "link": "https://news.google.com/rss/articles/CBMiVkFVX3lxTE9VTDBlT1RIeTB6c0h0aHNKXzZlTG0xSDEzYjhHSENJd293SlRCZEl2OEtMOXVkT1pDSlBoSHFiU1pQNzFGRDg2a0ZkVW9ma2p4bWxXdzN3?oc=5",
-    "date": "2026-11-17",
-    "category": "중앙일보",
-    "region": "일간지",
-    "score": 5,
-    "similar_count": 0,
-    "source": "news.google.com",
-    "importance": 8
-   },
-   {
-    "title": "‘스시자로’ 후폭풍 차단…식약처 “온라인 되팔이 엄벌”",
-    "link": "https://news.google.com/rss/articles/CBMiVkFVX3lxTE1XVDRrVUp1SWIweHhPRHBaaU0zYmxMLVVBaV9tYjVKRU5VVVhxWjZVZnFJUXVPOXJMQi04NFdheVhmdjRaR1N3RXdkS1JMNDhIZUk2V0NR?oc=5",
-    "date": "2026-11-19",
-    "category": "중앙일보",
-    "region": "일간지",
-    "score": 4,
-    "similar_count": 0,
-    "source": "news.google.com",
-    "importance": 7
-   },
-   {
-    "title": "전 대치동 강사 치과 의사 “초소형 장비 숨길데 너무 많아”",
-    "link": "https://news.google.com/rss/articles/CBMiVkFVX3lxTFBtSFpLYzlKemhiYWdCckh2eEEyanhUWGR6N0NXb19LSFJNUFdDZ2xzNlM5TkpWNVE5eVhySWp5VFo3VlhBa29PYVJiRy1Zc1I5RHlpd2JR?oc=5",
-    "date": "2026-11-19",
-    "category": "중앙일보",
-    "region": "일간지",
-    "score": 4,
-    "similar_count": 0,
-    "source": "news.google.com",
-    "importance": 7
-   }
-  ],
-  "일간지 · 한겨레": [
-   {
-    "title": "[병원소식] “덕분에 70년, 함께 100년”…을지대의료원, 창립 70주년 맞아 학술·문화 행사 잇달아 개최",
-    "link": "https://news.google.com/rss/articles/CBMia0FVX3lxTE9JWk14V3E3aU81RnRyM2RaVDdOanpJNVNIcHptRnZCem1vY1BUVnlfMThFTFZTZ2N3UzFndkpDb3ZweGNFLVQ4OUVFaXk2M0kzMWFsSTNzbzk4Wm5IenhRWldhVl9zSTdGakNN?oc=5",
-    "date": "2026-11-17",
-    "category": "한겨레",
-    "region": "일간지",
-    "score": 5,
-    "similar_count": 0,
-    "source": "news.google.com",
-    "importance": 8
-   },
-   {
-    "title": "‘수도권 원정 진료 그만’ 전남대병원 새병원 2031년 완공",
-    "link": "https://news.google.com/rss/articles/CBMiYEFVX3lxTE5QVVoxcmFuRmVyMmMzQlpjZ2Y3a2RhaVRwZE8teVFDRFA1Mlc2NXFEa3J2Z2NsTTVUcGFRUzRLc3Y2bTNvR0FMNzdzd1NRRHN2S2hJZU1INWxBR2IyUWhtVA?oc=5",
-    "date": "2026-11-17",
-    "category": "한겨레",
-    "region": "일간지",
-    "score": 5,
-    "similar_count": 0,
-    "source": "news.google.com",
-    "importance": 8
-   },
-   {
-    "title": "비전케어 ‘빛을 잇는 사람들’ 사진전…의료봉사 400회 기념",
-    "link": "https://news.google.com/rss/articles/CBMiY0FVX3lxTFBDblBOdEJiSzNpZ2pEMWthQlhJTmFZSlRPTkdyVEQ4N2RNem1hYWY0OFJKbFdFT1RpR2wyQVRXcWZLMHp0OG5QN1RWTEtJQ3h1YVFuNEtwVVQ3NlNCTkdfbnZwYw?oc=5",
-    "date": "2026-11-18",
-    "category": "한겨레",
-    "region": "일간지",
-    "score": 4,
-    "similar_count": 0,
-    "source": "news.google.com",
-    "importance": 7
    }
   ],
   "해외 · 해외 연구·학술": [
