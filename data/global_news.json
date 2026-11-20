@@ -1,8 +1,8 @@
 {
-  "generated_at": "2026-11-20T10:56:08.226997+09:00",
+  "generated_at": "2026-11-20T11:16:39.012710+09:00",
   "window_hours": 48,
-  "count": 53,
-  "filtered_out": 381,
+  "count": 59,
+  "filtered_out": 401,
   "category_order": [
     "해외 정책·규제 (미국)",
     "해외 정책·규제 (유럽·영국)",
@@ -48,23 +48,6 @@
       "score": 4
     },
     {
-      "title": "Epic defends competitive practices; promises AI access to records",
-      "link": "https://news.google.com/rss/articles/CBMipAFBVV95cUxQNTAtOFBwY2c1REVDVnhjSWVYdWRRYS0zLXJPMkpNX3JjUmdXRHRmU2FLT3Bzc2dNRVZLcGY2TWNObGFidkEybEE3ekJsUEg3TXBIMkVXUDRCTWN4RGxPam5ta1JsYWlnLUxhZFEtemp1NUJfR01DcXNmVjBXRnAyVkFrRTh1eVVwOWc3R1EtVXVLUmgzYlBBQlpuazlGdzQ1dVZPcg?oc=5",
-      "source": "STAT",
-      "source_url": "https://www.statnews.com",
-      "pubDate": "2026-11-19T23:25:09+09:00",
-      "category": "해외 정책·규제 (미국)",
-      "queries": [
-        "FDA artificial intelligence guidance medical",
-        "HHS artificial intelligence health care policy"
-      ],
-      "sources": [
-        "STAT"
-      ],
-      "preferred": true,
-      "score": 4
-    },
-    {
       "title": "Knit Health CEO on the AI startup building healthcare’s connective tissue",
       "link": "https://news.google.com/rss/articles/CBMipAFBVV95cUxPWmJYelRCRkNaVVZLYVNXU0FpZU14dW12UXhkbE1lWWxReVY4cTk0cmdXTkN2OVlPVzhJcHBsRW50T2VMZEw0U1p0VnFrQWJ3eHVmSmptYjRTVm1seDZlWDdYMzBkcHVfeW1rN3h2OFpNLVNEVDA2Y3JrRWxqQnI1WEtzNHcwNlFTVTZkMGFJVWc4QTIxX0g1a2tIUW9OY2lUalhaNQ?oc=5",
       "source": "Healthcare Dive",
@@ -76,6 +59,22 @@
       ],
       "sources": [
         "Healthcare Dive"
+      ],
+      "preferred": true,
+      "score": 3
+    },
+    {
+      "title": "Epic defends competitive practices; promises AI access to records",
+      "link": "https://news.google.com/rss/articles/CBMipAFBVV95cUxQNTAtOFBwY2c1REVDVnhjSWVYdWRRYS0zLXJPMkpNX3JjUmdXRHRmU2FLT3Bzc2dNRVZLcGY2TWNObGFidkEybEE3ekJsUEg3TXBIMkVXUDRCTWN4RGxPam5ta1JsYWlnLUxhZFEtemp1NUJfR01DcXNmVjBXRnAyVkFrRTh1eVVwOWc3R1EtVXVLUmgzYlBBQlpuazlGdzQ1dVZPcg?oc=5",
+      "source": "STAT",
+      "source_url": "https://www.statnews.com",
+      "pubDate": "2026-11-19T23:25:09+09:00",
+      "category": "해외 정책·규제 (미국)",
+      "queries": [
+        "FDA artificial intelligence guidance medical"
+      ],
+      "sources": [
+        "STAT"
       ],
       "preferred": true,
       "score": 3
@@ -110,6 +109,24 @@
         "Healthcare IT News"
       ],
       "preferred": true,
+      "score": 3
+    },
+    {
+      "title": "FDA clears GE HealthCare on-device AI for X-ray feeding tube placement",
+      "link": "https://news.google.com/rss/articles/CBMinwFBVV95cUxQbW1oTWsxdTJ4ODRyanItMV83czhITFNmOS05VzY1V0VBMXpjNW5LUUpRQmNSNEVFUEFVaEdjc3d4NmxpMkpPU3FVVkM1dXNvcDZUV1poS3J2YnZGOXJLbUdELWVSdm80LTNUUVJwV0tWaUlFNDJrbGU1dERlUzlEWnhtQU56OU9UOVZHTTN6WC1NNkFyT0VreVMya08xUDg?oc=5",
+      "source": "MassDevice",
+      "source_url": "https://www.massdevice.com",
+      "pubDate": "2026-11-19T01:09:56+09:00",
+      "category": "해외 정책·규제 (미국)",
+      "queries": [
+        "FDA AI-enabled medical devices",
+        "FDA artificial intelligence guidance medical"
+      ],
+      "sources": [
+        "MassDevice",
+        "Zenopa"
+      ],
+      "preferred": false,
       "score": 3
     },
     {
@@ -251,23 +268,6 @@
       "score": 2
     },
     {
-      "title": "FDA clears GE HealthCare on-device AI for X-ray feeding tube placement",
-      "link": "https://news.google.com/rss/articles/CBMinwFBVV95cUxQbW1oTWsxdTJ4ODRyanItMV83czhITFNmOS05VzY1V0VBMXpjNW5LUUpRQmNSNEVFUEFVaEdjc3d4NmxpMkpPU3FVVkM1dXNvcDZUV1poS3J2YnZGOXJLbUdELWVSdm80LTNUUVJwV0tWaUlFNDJrbGU1dERlUzlEWnhtQU56OU9UOVZHTTN6WC1NNkFyT0VreVMya08xUDg?oc=5",
-      "source": "MassDevice",
-      "source_url": "https://www.massdevice.com",
-      "pubDate": "2026-11-19T01:09:56+09:00",
-      "category": "해외 정책·규제 (미국)",
-      "queries": [
-        "FDA AI-enabled medical devices",
-        "FDA artificial intelligence guidance medical"
-      ],
-      "sources": [
-        "MassDevice"
-      ],
-      "preferred": false,
-      "score": 2
-    },
-    {
       "title": "Why a slowdown on AI could cost patients their lives",
       "link": "https://news.google.com/rss/articles/CBMilAFBVV95cUxQSDRnLW9ZMUFNZ1JJZWdKd1BDV1R5Q2lNeXBKNE9qTjJfNlc5V0tiUE8zRE5nQi1UM0FWckVIb3RMeGluRE00aWF3cEJaSTRsVmo3cldzb3hlR0FMRlBNbTdNOUNSdmZkTFN5RE5KMF92akJ0YkhjSExmM3ZNM3l2ZkRCUjhrTktTTzNIX3RVSGFkb2Vv?oc=5",
       "source": "Medical Economics",
@@ -280,23 +280,6 @@
       ],
       "sources": [
         "Medical Economics"
-      ],
-      "preferred": false,
-      "score": 2
-    },
-    {
-      "title": "Healthcare Employees Sharing Patient Data with AI Tools Viewed as Major Emerging Risk",
-      "link": "https://news.google.com/rss/articles/CBMilgFBVV95cUxNOHdrX0taUnMwSzRSTmYzZV9LUkVJb1I1LTRaMk1wVVpwOVVtYjQ1LUFDVDZBRVlFN0x1b0F4VnAzTGF1UHVJREp0dXBiT3JaQU1naFhNbmNhcVFXdy1pd3dGbktndHJjOS1WaVRNRTJmVWwtdUdOVHNNRFVaYlQyUE51UkotQ3VfNDRIbHd4T3R3R2x6OWc?oc=5",
-      "source": "The HIPAA Journal",
-      "source_url": "https://www.hipaajournal.com",
-      "pubDate": "2026-11-18T22:29:36+09:00",
-      "category": "해외 정책·규제 (미국)",
-      "queries": [
-        "HHS artificial intelligence health care policy",
-        "health system AI governance"
-      ],
-      "sources": [
-        "The HIPAA Journal"
       ],
       "preferred": false,
       "score": 2
@@ -848,6 +831,70 @@
       "score": 1
     },
     {
+      "title": "Apple launches Health AI Usage Study to explore how people use AI for health",
+      "link": "https://news.google.com/rss/articles/CBMic0FVX3lxTE4ySjhFUXJzOXB3X0szUk9mZjNaTGpZNFduREdLWWpidkgwY3JhRlZ4R0dWdFZxYTJWQ01CRFlXVTdTR25RUjFHVlpTUUQ4MFBJWjZzZlpPWmotSXprMlRjWkFwRUc4RW5jZE9Wbi1rNm5fdG8?oc=5",
+      "source": "NoypiGeeks",
+      "source_url": "https://www.noypigeeks.com",
+      "pubDate": "2026-11-18T22:47:41+09:00",
+      "category": "해외 연구·학술",
+      "queries": [
+        "Nature Medicine artificial intelligence"
+      ],
+      "sources": [
+        "NoypiGeeks"
+      ],
+      "preferred": false,
+      "score": 1
+    },
+    {
+      "title": "Healthcare Employees Sharing Patient Data with AI Tools Viewed as Major Emerging Risk",
+      "link": "https://news.google.com/rss/articles/CBMilgFBVV95cUxNOHdrX0taUnMwSzRSTmYzZV9LUkVJb1I1LTRaMk1wVVpwOVVtYjQ1LUFDVDZBRVlFN0x1b0F4VnAzTGF1UHVJREp0dXBiT3JaQU1naFhNbmNhcVFXdy1pd3dGbktndHJjOS1WaVRNRTJmVWwtdUdOVHNNRFVaYlQyUE51UkotQ3VfNDRIbHd4T3R3R2x6OWc?oc=5",
+      "source": "The HIPAA Journal",
+      "source_url": "https://www.hipaajournal.com",
+      "pubDate": "2026-11-18T22:29:36+09:00",
+      "category": "해외 의료기관 AI 도입·운영",
+      "queries": [
+        "health system AI governance"
+      ],
+      "sources": [
+        "The HIPAA Journal"
+      ],
+      "preferred": false,
+      "score": 1
+    },
+    {
+      "title": "Johns Hopkins' Ritu Agarwal wants hospitals to measure a baseline before scaling AI",
+      "link": "https://news.google.com/rss/articles/CBMizAFBVV95cUxQdmUxUm5JT2pjV2FQaDdISzNsZ3RRM1pSbFRXM3FXZFdhVXFUcElndDB6WVRDd3AwTUxTNzVWLVh2UWt6cnI4YWVDczdfS2xhektIazJxa2Z5T0dRUVhzTzJXZkxRSEtnTVVNSWZYcXQwTDBLa0VMdWlsa1hBY3ZzWmtzdzZBei03RE4xdjh5SV9fWDhXeUFhX05Qd21memtvV0lKdHYwdTFxZURxeC1fSjNwNGI1ZTQzZUhxYnVpcUtiSlRCNEtSeFZNQWw?oc=5",
+      "source": "MarketScale",
+      "source_url": "https://www.marketscale.com",
+      "pubDate": "2026-11-18T20:11:00+09:00",
+      "category": "해외 의료기관 AI 도입·운영",
+      "queries": [
+        "health system AI governance"
+      ],
+      "sources": [
+        "MarketScale"
+      ],
+      "preferred": false,
+      "score": 1
+    },
+    {
+      "title": "How Apollo Hospitals is bringing AI closer to the clinical frontline",
+      "link": "https://news.google.com/rss/articles/CBMiyAFBVV95cUxOWnp6TUlMZURGd1pzUElYYmVIYWFiUW04dUtNY2dtZEVNMTItSnktVWVScnRwN0VCeXRySDh0d3NtZ2VLOHdaTXVWMEZGeEVBUUU1VF81SVd6V1VnY3RKWWhidHBkeUVacEtCanlMUXBMZHM0Tm8tbVNxT3RMMnY5STJmNm12RFRacjMwTHpoeExEUThGb3dmZlZlcDZEOThrMURmX0w1cVVmMUR5X0JTQV94MXB3WU8wOUpLSFhPM2owaUhqZWJoZg?oc=5",
+      "source": "Livemint",
+      "source_url": "https://www.livemint.com",
+      "pubDate": "2026-11-18T20:06:06+09:00",
+      "category": "해외 의료기관 AI 도입·운영",
+      "queries": [
+        "health system AI governance"
+      ],
+      "sources": [
+        "Livemint"
+      ],
+      "preferred": false,
+      "score": 1
+    },
+    {
       "title": "IKS Health - AI and Human Care Enablement",
       "link": "https://news.google.com/rss/articles/CBMiREFVX3lxTE9FZnBRNXo3anlwQjRYNExVRFM4M2xtZWQwWFk5dDFpdUN6c3dqdFhJYlpXLXp2RnZ4ZEY4US00elFURmcx?oc=5",
       "source": "yespress.io",
@@ -875,6 +922,54 @@
       ],
       "sources": [
         "Bioengineer.org"
+      ],
+      "preferred": false,
+      "score": 1
+    },
+    {
+      "title": "Apollo, Microsoft deploy AI agent to strengthen patient safety reviews",
+      "link": "https://news.google.com/rss/articles/CBMi0wFBVV95cUxNWHpsSERDSElrU0dtZnB2T2ZYMkRoaGY1Q0drTl9QcHR4MkVTdmM3TTEzUnVSekpvdE1mcy0wM0VZZEJSQ18wU0dGUV9pMzFWcVBqckJUVUpMNkZEOXdrMnBqUUFtY3ZwcjBLSXV5RWZDM2lzZWY1QUJoeVZzakplc3lROGNsclZJZTQzd3RkWFlVOV9JanBOOTZLd0YtVGtzRF9NWEhrekpJaGE5di1qdjZBQ2ZLTnFLMGZuTUIwT09kYUROWlo0YzVvcXRkaW1xUGdn0gHTAUFVX3lxTE1YemxIRENISWtTR21mcHZPZlgyRGhoZjVDR2tOX1BwdHgyRVN2YzdNMTNSdVJ6Sm90TWZzLTAzRVlkQlJDXzBTR0ZRX2kzMVZxUGpyQlRVSkw2RkQ5d2sycGpRQW1jdnByMEtJdXlFZkMzaXNlZjVBQmh5VnNqSmVzeVE4Y2xyVkllNDN3dGRYWVU5X0lqcE45Nkt3Ri1Ua3NEX01YSGt6SkloYTl2LWp2NkFDZktOcUswZm5NQjBPT2RhRE5aWjRjNW9xdGRpbXFQZ2c?oc=5",
+      "source": "The Hindu",
+      "source_url": "https://www.thehindu.com",
+      "pubDate": "2026-11-18T19:11:42+09:00",
+      "category": "해외 의료기관 AI 도입·운영",
+      "queries": [
+        "health system AI governance"
+      ],
+      "sources": [
+        "The Hindu"
+      ],
+      "preferred": false,
+      "score": 1
+    },
+    {
+      "title": "Smarter healthcare, unequal outcomes? The risks of AI in southern Africa",
+      "link": "https://news.google.com/rss/articles/CBMilwFBVV95cUxPeU5NQ2RpbDdNOFVoYW1ZYkhFMDJURDBCaHZMV3FyMmxJNzZxbmFGSHgwSFp3WVNqVlRKR25ZbjBnaWZtZ1Z5WW9oVUZfc3BaWXN1VERTdE9XbnRhQVhaY1ZVUzZUcjJtN085aVRDNVNsbWlidDFzaWhCUElIbHJaNGdKbkhyZXQ0djNSR3VTQVJiajQ3NXI0?oc=5",
+      "source": "Stuff South Africa",
+      "source_url": "https://stuff.co.za",
+      "pubDate": "2026-11-18T16:13:54+09:00",
+      "category": "해외 정책·규제 (유럽·영국)",
+      "queries": [
+        "European Health Data Space AI"
+      ],
+      "sources": [
+        "Stuff South Africa"
+      ],
+      "preferred": false,
+      "score": 1
+    },
+    {
+      "title": "Apple Partners with OpenEvidence for AI-Based Health Q&A Service",
+      "link": "https://news.google.com/rss/articles/CBMiQkFVX3lxTE1PMmJQci1JVmt1RDRGMGUwdGg1Mk9pU2hvMmRaNXdhSXpDaG1ZTkxOWWNfdjNsVGtWSlk4dnRkZXFkZ9IBQkFVX3lxTE1PMmJQci1JVmt1RDRGMGUwdGg1Mk9pU2hvMmRaNXdhSXpDaG1ZTkxOWWNfdjNsVGtWSlk4dnRkZXFkZw?oc=5",
+      "source": "VOI.ID",
+      "source_url": "https://voi.id",
+      "pubDate": "2026-11-18T11:52:39+09:00",
+      "category": "해외 연구·학술",
+      "queries": [
+        "Nature Medicine artificial intelligence"
+      ],
+      "sources": [
+        "VOI.ID"
       ],
       "preferred": false,
       "score": 1
