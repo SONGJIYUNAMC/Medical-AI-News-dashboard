@@ -1,17 +1,17 @@
 {
  "month": "2026-11",
- "generated_at": "2026-11-20T08:38:09.158452+09:00",
+ "generated_at": "2026-11-20T10:57:27.120850+09:00",
  "prev_month": "2026-10",
  "collected_days": 20,
  "first_day": "2026-11-01",
  "last_day": "2026-11-20",
- "total": 3882,
+ "total": 3926,
  "prev_total": 4285,
  "by_region": {
-  "국내": 2937,
-  "해외": 583,
+  "국내": 2975,
+  "해외": 585,
   "정부": 47,
-  "일간지": 315
+  "일간지": 319
  },
  "weekly": {
   "2026-W44": {
@@ -29,54 +29,54 @@
    "정부": 14
   },
   "2026-W47": {
-   "국내": 859,
-   "일간지": 315,
-   "해외": 158,
+   "국내": 897,
+   "일간지": 319,
+   "해외": 160,
    "정부": 16
   }
  },
  "categories": [
   {
    "name": "국내 · 국내 정책·규제",
-   "count": 793,
+   "count": 800,
    "prev": 648,
-   "delta": 145
+   "delta": 152
   },
   {
    "name": "국내 · 국내 의료 AI 기업",
-   "count": 713,
+   "count": 729,
    "prev": 769,
-   "delta": -56
+   "delta": -40
   },
   {
    "name": "국내 · 국내 의료기관",
-   "count": 495,
+   "count": 501,
    "prev": 411,
-   "delta": 84
+   "delta": 90
   },
   {
    "name": "국내 · AI 거버넌스·보안",
-   "count": 329,
+   "count": 332,
    "prev": 324,
-   "delta": 5
+   "delta": 8
   },
   {
    "name": "국내 · 학술·연구·행사",
-   "count": 298,
+   "count": 299,
    "prev": 294,
-   "delta": 4
+   "delta": 5
   },
   {
    "name": "국내 · 해외 의료기관·정책·규제",
-   "count": 291,
+   "count": 296,
    "prev": 300,
-   "delta": -9
+   "delta": -4
   },
   {
    "name": "해외 · 해외 의료기관 AI 도입·운영",
-   "count": 282,
+   "count": 283,
    "prev": 285,
-   "delta": -3
+   "delta": -2
   },
   {
    "name": "해외 · 해외 정책·규제 (미국)",
@@ -86,9 +86,9 @@
   },
   {
    "name": "해외 · 해외 연구·학술",
-   "count": 83,
+   "count": 84,
    "prev": 74,
-   "delta": 9
+   "delta": 10
   },
   {
    "name": "일간지 · 한국일보",
@@ -98,9 +98,9 @@
   },
   {
    "name": "일간지 · 동아일보",
-   "count": 52,
+   "count": 55,
    "prev": 0,
-   "delta": 52
+   "delta": 55
   },
   {
    "name": "일간지 · 한겨레",
@@ -122,9 +122,9 @@
   },
   {
    "name": "일간지 · 조선일보",
-   "count": 46,
+   "count": 47,
    "prev": 0,
-   "delta": 46
+   "delta": 47
   },
   {
    "name": "일간지 · JTBC",
@@ -196,7 +196,7 @@
  "keywords": [
   {
    "word": "서울대병원",
-   "count": 134,
+   "count": 136,
    "prev": 143,
    "status": ""
   },
@@ -214,25 +214,25 @@
   },
   {
    "word": "보건복지부",
-   "count": 80,
+   "count": 82,
    "prev": 76,
    "status": ""
   },
   {
    "word": "FDA",
-   "count": 80,
+   "count": 81,
    "prev": 86,
    "status": ""
   },
   {
    "word": "학술대회",
-   "count": 79,
+   "count": 80,
    "prev": 76,
    "status": ""
   },
   {
    "word": "세브란스",
-   "count": 76,
+   "count": 77,
    "prev": 78,
    "status": ""
   },
@@ -244,7 +244,7 @@
   },
   {
    "word": "아산병원",
-   "count": 69,
+   "count": 70,
    "prev": 70,
    "status": ""
   },
@@ -262,7 +262,7 @@
   },
   {
    "word": "세미나",
-   "count": 50,
+   "count": 51,
    "prev": 91,
    "status": ""
   },
@@ -279,16 +279,16 @@
    "status": ""
   },
   {
+   "word": "신의료기술",
+   "count": 38,
+   "prev": 26,
+   "status": ""
+  },
+  {
    "word": "메이요",
    "count": 38,
    "prev": 12,
    "status": "급증"
-  },
-  {
-   "word": "신의료기술",
-   "count": 37,
-   "prev": 26,
-   "status": ""
   },
   {
    "word": "구글",
@@ -304,13 +304,13 @@
   },
   {
    "word": "스마트 병원",
-   "count": 31,
+   "count": 32,
    "prev": 30,
    "status": ""
   },
   {
    "word": "심평원",
-   "count": 31,
+   "count": 32,
    "prev": 30,
    "status": ""
   }
@@ -1762,8 +1762,8 @@
     "importance": 9
    },
    {
-    "title": "[스타트UP] AI로 반려동물 진단 돕는 ‘메타디엑스’…동물병원 숨은 비용까지 조준",
-    "link": "https://biz.chosun.com/industry/business-venture/2026/11/20/4NIBDIP7XRARFAF6XXULZLZ63Q/",
+    "title": "“암 환자 할머니 병원 가는데”… 골목길 주차에 막힌 구급차",
+    "link": "https://biz.chosun.com/topics/topics_social/2026/11/20/QZ2QNKJPNJCVNGMCVAGST7IAZQ/",
     "date": "2026-11-20",
     "category": "조선일보",
     "region": "일간지",
@@ -1773,14 +1773,14 @@
     "importance": 8
    },
    {
-    "title": "의료 관광객 200만명 시대… 호텔 안에 아예 병원까지 들였다",
-    "link": "https://www.chosun.com/national/national_general/2026/11/19/VNBWUK52Y5AQHFF6QCQW65L2AA/",
-    "date": "2026-11-19",
+    "title": "[스타트UP] AI로 반려동물 진단 돕는 ‘메타디엑스’…동물병원 숨은 비용까지 조준",
+    "link": "https://biz.chosun.com/industry/business-venture/2026/11/20/4NIBDIP7XRARFAF6XXULZLZ63Q/",
+    "date": "2026-11-20",
     "category": "조선일보",
     "region": "일간지",
     "score": 5,
     "similar_count": 0,
-    "source": "chosun.com",
+    "source": "biz.chosun.com",
     "importance": 8
    }
   ],
