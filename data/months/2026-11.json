@@ -1,17 +1,17 @@
 {
  "month": "2026-11",
- "generated_at": "2026-11-20T11:17:56.099770+09:00",
+ "generated_at": "2026-11-20T11:41:01.113668+09:00",
  "prev_month": "2026-10",
  "collected_days": 20,
  "first_day": "2026-11-01",
  "last_day": "2026-11-20",
- "total": 3929,
+ "total": 3936,
  "prev_total": 4285,
  "by_region": {
-  "국내": 2977,
-  "해외": 586,
+  "국내": 2982,
+  "해외": 587,
   "정부": 47,
-  "일간지": 319
+  "일간지": 320
  },
  "weekly": {
   "2026-W44": {
@@ -29,30 +29,30 @@
    "정부": 14
   },
   "2026-W47": {
-   "국내": 899,
-   "일간지": 319,
-   "해외": 161,
+   "국내": 904,
+   "일간지": 320,
+   "해외": 162,
    "정부": 16
   }
  },
  "categories": [
   {
    "name": "국내 · 국내 정책·규제",
-   "count": 801,
+   "count": 802,
    "prev": 648,
-   "delta": 153
+   "delta": 154
   },
   {
    "name": "국내 · 국내 의료 AI 기업",
-   "count": 728,
+   "count": 729,
    "prev": 769,
-   "delta": -41
+   "delta": -40
   },
   {
    "name": "국내 · 국내 의료기관",
-   "count": 501,
+   "count": 503,
    "prev": 411,
-   "delta": 90
+   "delta": 92
   },
   {
    "name": "국내 · AI 거버넌스·보안",
@@ -62,9 +62,9 @@
   },
   {
    "name": "국내 · 학술·연구·행사",
-   "count": 300,
+   "count": 301,
    "prev": 294,
-   "delta": 6
+   "delta": 7
   },
   {
    "name": "국내 · 해외 의료기관·정책·규제",
@@ -80,9 +80,9 @@
   },
   {
    "name": "해외 · 해외 정책·규제 (미국)",
-   "count": 168,
+   "count": 169,
    "prev": 171,
-   "delta": -3
+   "delta": -2
   },
   {
    "name": "해외 · 해외 연구·학술",
@@ -109,16 +109,16 @@
    "delta": 50
   },
   {
+   "name": "일간지 · 중앙일보",
+   "count": 50,
+   "prev": 0,
+   "delta": 50
+  },
+  {
    "name": "해외 · 해외 정책·규제 (유럽·영국)",
    "count": 49,
    "prev": 57,
    "delta": -8
-  },
-  {
-   "name": "일간지 · 중앙일보",
-   "count": 49,
-   "prev": 0,
-   "delta": 49
   },
   {
    "name": "일간지 · 조선일보",
@@ -196,7 +196,7 @@
  "keywords": [
   {
    "word": "서울대병원",
-   "count": 136,
+   "count": 138,
    "prev": 143,
    "status": ""
   },
@@ -220,7 +220,7 @@
   },
   {
    "word": "FDA",
-   "count": 81,
+   "count": 82,
    "prev": 86,
    "status": ""
   },
@@ -238,7 +238,7 @@
   },
   {
    "word": "삼성서울병원",
-   "count": 74,
+   "count": 75,
    "prev": 34,
    "status": "급증"
   },
@@ -268,7 +268,7 @@
   },
   {
    "word": "분당서울대",
-   "count": 48,
+   "count": 49,
    "prev": 65,
    "status": ""
   },
@@ -297,12 +297,6 @@
    "status": ""
   },
   {
-   "word": "오픈AI",
-   "count": 32,
-   "prev": 17,
-   "status": ""
-  },
-  {
    "word": "스마트 병원",
    "count": 32,
    "prev": 30,
@@ -312,6 +306,12 @@
    "word": "심평원",
    "count": 32,
    "prev": 30,
+   "status": ""
+  },
+  {
+   "word": "오픈AI",
+   "count": 31,
+   "prev": 17,
    "status": ""
   }
  ],
@@ -1926,6 +1926,17 @@
   ],
   "일간지 · 중앙일보": [
    {
+    "title": "숭실대·서울대병원 연구팀, 파킨슨병 뇌세포 변화 담은 유전자 발현 지도 구축",
+    "link": "https://news.google.com/rss/articles/CBMiVkFVX3lxTE83dHlzN3JyYTI0c25DX1k1aTM1U3FteFoyMW5oS0ZBcFdqUGVJS2ZzejFORVdhZktMLVlKVnV3dEx1T2l2alNwUVBRWFZpRl9JXzYycGh3?oc=5",
+    "date": "2026-11-20",
+    "category": "중앙일보",
+    "region": "일간지",
+    "score": 5,
+    "similar_count": 0,
+    "source": "news.google.com",
+    "importance": 8
+   },
+   {
     "title": "“3분만에 돈까지 벌어줬다” 한국 의대 출신이 만든 ‘AI비서’",
     "link": "https://news.google.com/rss/articles/CBMiVkFVX3lxTFBCeldBN2ZXeU5sYzdGR0RFaW90eTdTRGdlQXZTNTlSQkVVejNYRVVOUHhkMWp0dmJFZ2NWeVltdmd3ZDBDVkVFbEt1V2VGMlJhUERLOEln?oc=5",
     "date": "2026-11-20",
@@ -1940,17 +1951,6 @@
     "title": "[Biz & Now] 대성그룹 “AI 탐구로 바이오·의료산업 혁신”",
     "link": "https://news.google.com/rss/articles/CBMiVkFVX3lxTE0xUUhvSUEyWFZTM0JyLU9jVFlWTHhyMzBHem5DbXBxaDBWS0RiZUhrclNBNEtoTURWS2tHTXhNRWFnNnA4U2RvdmJkZ29rT2lKTGdVeVdR?oc=5",
     "date": "2026-11-20",
-    "category": "중앙일보",
-    "region": "일간지",
-    "score": 5,
-    "similar_count": 0,
-    "source": "news.google.com",
-    "importance": 8
-   },
-   {
-    "title": "HD현대아너상에 성가복지병원, HD현대1%나눔상에 의사 김인권",
-    "link": "https://news.google.com/rss/articles/CBMiVkFVX3lxTE9VTDBlT1RIeTB6c0h0aHNKXzZlTG0xSDEzYjhHSENJd293SlRCZEl2OEtMOXVkT1pDSlBoSHFiU1pQNzFGRDg2a0ZkVW9ma2p4bWxXdzN3?oc=5",
-    "date": "2026-11-17",
     "category": "중앙일보",
     "region": "일간지",
     "score": 5,
