@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-21T11:09:51.971953+09:00",
+  "generated_at": "2026-11-21T11:52:36.997599+09:00",
   "window_hours": 168,
   "count": 16,
   "filtered_out": 427,
@@ -9,7 +9,12 @@
     "보건복지부",
     "식품의약품안전처"
   ],
-  "errors": [],
+  "errors": [
+    {
+      "query": "과학기술정보통신부 보도설명 (https://www.msit.go.kr/user/rss/rss.do?bbsSeqNo=86)",
+      "error": "('Connection aborted.', RemoteDisconnected('Remote end closed connection without response'))"
+    }
+  ],
   "items": [
     {
       "title": "우리 동네 보건소에서도 대학병원급 AI 진료, 전국에 AI 진료지원 도구 보급한다",
