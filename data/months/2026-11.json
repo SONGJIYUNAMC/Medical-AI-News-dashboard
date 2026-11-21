@@ -1,17 +1,17 @@
 {
  "month": "2026-11",
- "generated_at": "2026-11-21T10:45:51.314843+09:00",
+ "generated_at": "2026-11-21T11:10:24.872100+09:00",
  "prev_month": "2026-10",
  "collected_days": 21,
  "first_day": "2026-11-01",
  "last_day": "2026-11-21",
- "total": 4088,
+ "total": 4092,
  "prev_total": 4285,
  "by_region": {
-  "국내": 3092,
-  "해외": 605,
+  "국내": 3093,
+  "해외": 607,
   "정부": 49,
-  "일간지": 342
+  "일간지": 343
  },
  "weekly": {
   "2026-W44": {
@@ -29,30 +29,30 @@
    "정부": 14
   },
   "2026-W47": {
-   "국내": 1014,
-   "일간지": 342,
-   "해외": 180,
+   "국내": 1015,
+   "일간지": 343,
+   "해외": 182,
    "정부": 18
   }
  },
  "categories": [
   {
    "name": "국내 · 국내 정책·규제",
-   "count": 832,
+   "count": 831,
    "prev": 648,
-   "delta": 184
+   "delta": 183
   },
   {
    "name": "국내 · 국내 의료 AI 기업",
-   "count": 755,
+   "count": 756,
    "prev": 769,
-   "delta": -14
+   "delta": -13
   },
   {
    "name": "국내 · 국내 의료기관",
-   "count": 520,
+   "count": 521,
    "prev": 411,
-   "delta": 109
+   "delta": 110
   },
   {
    "name": "국내 · AI 거버넌스·보안",
@@ -74,9 +74,9 @@
   },
   {
    "name": "해외 · 해외 의료기관 AI 도입·운영",
-   "count": 292,
+   "count": 294,
    "prev": 285,
-   "delta": 7
+   "delta": 9
   },
   {
    "name": "해외 · 해외 정책·규제 (미국)",
@@ -104,9 +104,9 @@
   },
   {
    "name": "일간지 · 조선일보",
-   "count": 55,
+   "count": 56,
    "prev": 0,
-   "delta": 55
+   "delta": 56
   },
   {
    "name": "일간지 · 한겨레",
@@ -208,7 +208,7 @@
   },
   {
    "word": "보건복지부",
-   "count": 86,
+   "count": 87,
    "prev": 76,
    "status": ""
   },
@@ -280,7 +280,7 @@
   },
   {
    "word": "메이요",
-   "count": 39,
+   "count": 40,
    "prev": 12,
    "status": "급증"
   },
@@ -1819,6 +1819,41 @@
     "importance": 7
    }
   ],
+  "일간지 · 동아일보": [
+   {
+    "title": "진료실서 의사에 흉기 휘두른 50대 여성, 살인미수 혐의 구속기소",
+    "link": "https://www.donga.com/news/Society/article/all/20261121/135064516/1",
+    "date": "2026-11-21",
+    "category": "동아일보",
+    "region": "일간지",
+    "score": 6,
+    "similar_count": 0,
+    "source": "donga.com",
+    "importance": 9
+   },
+   {
+    "title": "AI로 병원 진단서 위조해 50일 병가 쓴 사회복무요원 덜미",
+    "link": "https://www.donga.com/news/Society/article/all/20261119/135052389/1",
+    "date": "2026-11-19",
+    "category": "동아일보",
+    "region": "일간지",
+    "score": 5,
+    "similar_count": 0,
+    "source": "donga.com",
+    "importance": 8
+   },
+   {
+    "title": "[전문의 칼럼]의료인 55% 폭언-폭행 경험… 안전한 정신과 진료 환경 구축을",
+    "link": "https://www.donga.com/news/It/article/all/20261119/135049964/2",
+    "date": "2026-11-19",
+    "category": "동아일보",
+    "region": "일간지",
+    "score": 5,
+    "similar_count": 0,
+    "source": "donga.com",
+    "importance": 8
+   }
+  ],
   "해외 · 해외 정책·규제 (유럽·영국)": [
    {
     "title": "The proposed reform of the Medical Device Regulation and its implications for AI-enabled medical devices in the EU",
@@ -1921,41 +1956,6 @@
     "score": 5,
     "similar_count": 0,
     "source": "news.jtbc.co.kr",
-    "importance": 8
-   }
-  ],
-  "일간지 · 동아일보": [
-   {
-    "title": "진료실서 의사에 흉기 휘두른 50대 여성, 살인미수 혐의 구속기소",
-    "link": "https://www.donga.com/news/Society/article/all/20261121/135064516/1",
-    "date": "2026-11-21",
-    "category": "동아일보",
-    "region": "일간지",
-    "score": 5,
-    "similar_count": 0,
-    "source": "donga.com",
-    "importance": 8
-   },
-   {
-    "title": "AI로 병원 진단서 위조해 50일 병가 쓴 사회복무요원 덜미",
-    "link": "https://www.donga.com/news/Society/article/all/20261119/135052389/1",
-    "date": "2026-11-19",
-    "category": "동아일보",
-    "region": "일간지",
-    "score": 5,
-    "similar_count": 0,
-    "source": "donga.com",
-    "importance": 8
-   },
-   {
-    "title": "[전문의 칼럼]의료인 55% 폭언-폭행 경험… 안전한 정신과 진료 환경 구축을",
-    "link": "https://www.donga.com/news/It/article/all/20261119/135049964/2",
-    "date": "2026-11-19",
-    "category": "동아일보",
-    "region": "일간지",
-    "score": 5,
-    "similar_count": 0,
-    "source": "donga.com",
     "importance": 8
    }
   ],

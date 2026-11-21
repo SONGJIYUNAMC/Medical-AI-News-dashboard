@@ -1,8 +1,8 @@
 {
-  "generated_at": "2026-11-21T10:44:36.078393+09:00",
+  "generated_at": "2026-11-21T11:09:16.922680+09:00",
   "window_hours": 48,
-  "count": 40,
-  "filtered_out": 423,
+  "count": 41,
+  "filtered_out": 449,
   "category_order": [
     "해외 정책·규제 (미국)",
     "해외 정책·규제 (유럽·영국)",
@@ -43,6 +43,23 @@
       ],
       "sources": [
         "Fierce Healthcare"
+      ],
+      "preferred": true,
+      "score": 4
+    },
+    {
+      "title": "Epic defends competitive practices; promises AI access to records",
+      "link": "https://news.google.com/rss/articles/CBMipAFBVV95cUxQNTAtOFBwY2c1REVDVnhjSWVYdWRRYS0zLXJPMkpNX3JjUmdXRHRmU2FLT3Bzc2dNRVZLcGY2TWNObGFidkEybEE3ekJsUEg3TXBIMkVXUDRCTWN4RGxPam5ta1JsYWlnLUxhZFEtemp1NUJfR01DcXNmVjBXRnAyVkFrRTh1eVVwOWc3R1EtVXVLUmgzYlBBQlpuazlGdzQ1dVZPcg?oc=5",
+      "source": "STAT",
+      "source_url": "https://www.statnews.com",
+      "pubDate": "2026-11-19T23:25:09+09:00",
+      "category": "해외 정책·규제 (미국)",
+      "queries": [
+        "FDA artificial intelligence guidance medical",
+        "HHS artificial intelligence health care policy"
+      ],
+      "sources": [
+        "STAT"
       ],
       "preferred": true,
       "score": 4
@@ -93,22 +110,6 @@
       ],
       "sources": [
         "Healthcare Dive"
-      ],
-      "preferred": true,
-      "score": 3
-    },
-    {
-      "title": "Epic defends competitive practices; promises AI access to records",
-      "link": "https://news.google.com/rss/articles/CBMipAFBVV95cUxQNTAtOFBwY2c1REVDVnhjSWVYdWRRYS0zLXJPMkpNX3JjUmdXRHRmU2FLT3Bzc2dNRVZLcGY2TWNObGFidkEybEE3ekJsUEg3TXBIMkVXUDRCTWN4RGxPam5ta1JsYWlnLUxhZFEtemp1NUJfR01DcXNmVjBXRnAyVkFrRTh1eVVwOWc3R1EtVXVLUmgzYlBBQlpuazlGdzQ1dVZPcg?oc=5",
-      "source": "STAT",
-      "source_url": "https://www.statnews.com",
-      "pubDate": "2026-11-19T23:25:09+09:00",
-      "category": "해외 정책·규제 (미국)",
-      "queries": [
-        "FDA artificial intelligence guidance medical"
-      ],
-      "sources": [
-        "STAT"
       ],
       "preferred": true,
       "score": 3
@@ -208,6 +209,38 @@
       ],
       "sources": [
         "Wisevoter"
+      ],
+      "preferred": false,
+      "score": 1
+    },
+    {
+      "title": "AI Medical Scribing Market Poised for Strong Growth, Reaching US$ 32.5 Billion by 2035",
+      "link": "https://news.google.com/rss/articles/CBMia0FVX3lxTE5KWXBsMFNZR3ozSmM3dTlsYlVxRHB5NWJScUFldzNkYWVWTEptQ3p6X1h3M2lmVlZFTXpLYXpselh5VGw1Szk1NTFVeDlDMEdDVDROeGJybTh6Tzdwd0dsX0Nsa2tOSmgwb1JB?oc=5",
+      "source": "Market.us Media",
+      "source_url": "https://media.market.us",
+      "pubDate": "2026-11-21T09:22:30+09:00",
+      "category": "해외 의료기관 AI 도입·운영",
+      "queries": [
+        "health system ambient AI scribe"
+      ],
+      "sources": [
+        "Market.us Media"
+      ],
+      "preferred": false,
+      "score": 1
+    },
+    {
+      "title": "Mayo Clinic CEO-Elect outlines AI advancements, $10 billion investment and vision for future of healthcare",
+      "link": "https://news.google.com/rss/articles/CBMi_gFBVV95cUxQV2V0R1VwVzM0R3BGVWt4R1RKYkQxTVVra2ptd2ZZZHM1eVNsdWFieFh0S3lWTlNjc2hIVEdaRXZOb3EyZWpOamZZbU5KOHVwdWF4a2p3c2NCY1hmSzdEdWYyWndtcmtHVjJyX3ZTVktfUm5lZjZCNVhjS1RCVGFXYzE3UVlWUkl1dDZNOGdXRGxRaV95ZG5XUURqc09mQThLN0VfWkgyNXBxYjl3SHJ5WjZOU2lBY01OV2NRN0d1bktzN1IwVjRTOXVSWkN5TzljWmtYamticzFGUzY4Wi1qS29mcWN5b2pFNW13emsxWmVCS19kdDg2ZHhCUFJ1UQ?oc=5",
+      "source": "KIMT",
+      "source_url": "https://www.kimt.com",
+      "pubDate": "2026-11-21T08:35:00+09:00",
+      "category": "해외 의료기관 AI 도입·운영",
+      "queries": [
+        "Mayo Clinic AI"
+      ],
+      "sources": [
+        "KIMT"
       ],
       "preferred": false,
       "score": 1
@@ -640,22 +673,6 @@
       ],
       "sources": [
         "JD Supra"
-      ],
-      "preferred": false,
-      "score": 1
-    },
-    {
-      "title": "AI Sports Medicine Research Grows Rapidly, Lags Clinical Validation",
-      "link": "https://news.google.com/rss/articles/CBMilgFBVV95cUxOek9aMDNveXNoR3FfdEhSbnZIbTNtd05zTHZxdkd6TFctLVVLR3FyZEFWTFQ0YlBESjcyalp6NHpqQmU2NVFDeUthdGY3bjBUQV9MTTUxQ0V3R3NOVHVtWGt0NDVYVGxDNWhVVnlSWmxoQXljaFFneFZPdFdRZnZ6eWZ2WXNWMkpLQ3h2bi1KVVRtaFdDVXc?oc=5",
-      "source": "Bioengineer.org",
-      "source_url": "https://bioengineer.org",
-      "pubDate": "2026-11-19T11:06:31+09:00",
-      "category": "해외 연구·학술",
-      "queries": [
-        "randomized trial AI clinical decision support"
-      ],
-      "sources": [
-        "Bioengineer.org"
       ],
       "preferred": false,
       "score": 1

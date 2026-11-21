@@ -1,10 +1,10 @@
 {
-  "generated_at": "2026-11-21T10:44:06.783664+09:00",
+  "generated_at": "2026-11-21T11:08:48.661424+09:00",
   "window_hours": 26,
   "count": 162,
-  "filtered_out": 867,
+  "filtered_out": 840,
   "filtered_off_topic": 119,
-  "merged_similar": 56,
+  "merged_similar": 55,
   "category_order": [
     "국내 정책·규제",
     "국내 의료기관",
@@ -111,6 +111,25 @@
       "score": 12,
       "query": "의료 AI 수가",
       "source_type": "other",
+      "similar_count": 0,
+      "similar_sources": []
+    },
+    {
+      "title": "진단만 하는 AI 넘어섰다…자율 의료 AI 에이전트, 검사·처방·입원 결...",
+      "summary": "의료 AI가 개별 진료 업무를 넘어 연속적인 진료 과정을 수행할 수 있다는 초기 근거가 제시됐지만, 실제 환자를 대상으로 한 성능과 안전성 검증은 향후 과제로 남았다. 독일 하이델베르크대학병원과...",
+      "link": "https://www.medigatenews.com/news/1569490689",
+      "originallink": "https://www.medigatenews.com/news/1569490689",
+      "pubDate": "2026-11-21T11:00:00+09:00",
+      "queries": [
+        "의료 AI 환자안전",
+        "의료 AI 논문",
+        "의료 AI",
+        "병원 AI"
+      ],
+      "category": "국내 의료기관",
+      "score": 11,
+      "query": "의료 AI 환자안전",
+      "source_type": "medical",
       "similar_count": 0,
       "similar_sources": []
     },
@@ -664,23 +683,20 @@
       ]
     },
     {
-      "title": "의료·생명과학 AI 악용 위험 막으려면…연구진, 다층적 보안체계 구축...",
-      "summary": "독일 마인츠대학교병원이 주도한 국제 공동연구팀은 생성형 AI를 이용한 생물학적 서열 설계의 위험성을 분석하고, 데이터와 AI 모델, 실제 생물학적 물질의 생산 과정을 모두 관리하는 다층적 보안체계를 제안했다....",
-      "link": "https://www.mdtoday.co.kr/news/articleView.html?idxno=626497",
-      "originallink": "https://www.mdtoday.co.kr/news/articleView.html?idxno=626497",
-      "pubDate": "2026-11-20T08:48:00+09:00",
+      "title": "농협대 ‘AX 농업포럼’…혁신기술 도입해 농업현장 생산성 높인다",
+      "summary": "해결하려는 기업들의 사례발표가 이어졌다. 이미 농업현장에서 화제를 불러 모았던 AI 선별기는 농산물... 보건의료행정학과 교수, 노주환 협동조합경영학회 이사, 우상훈 고양 벽제농협 조합장이 주제발표를 진행했다.",
+      "link": "https://n.news.naver.com/mnews/article/662/0000109001?sid=102",
+      "originallink": "https://www.nongmin.com/article/20261120500651",
+      "pubDate": "2026-11-21T11:00:00+09:00",
       "queries": [
-        "병원 생성형 AI",
         "의료 AI 기업",
         "의료 AI 보안",
-        "의료 AI 논문",
-        "의료 AI",
-        "병원 AI"
+        "의료 AI"
       ],
-      "category": "AI 거버넌스·보안",
-      "score": 8,
-      "query": "병원 생성형 AI",
-      "source_type": "medical",
+      "category": "학술·연구·행사",
+      "score": 7,
+      "query": "의료 AI 기업",
+      "source_type": "other",
       "similar_count": 0,
       "similar_sources": []
     },
@@ -1168,6 +1184,25 @@
       ]
     },
     {
+      "title": "완벽하게 순종적인 ‘애인 봇’?…그녀도 한 명의 ‘노라’였다",
+      "summary": "수익 모델이 아쉬워지면 분명히 오픈AI도 구글(제미나이)도 온리팬스 뺨치는 친밀성에 기반을 둔 감정 노동... 연세대 생물학과를 졸업하고 23년 넘게 기자로 일하면서 과학기술·보건의료·환경 분야를 취재했다. SF를...",
+      "link": "https://n.news.naver.com/mnews/article/353/0000057308?sid=110",
+      "originallink": "https://www.joongang.co.kr/article/25480580",
+      "pubDate": "2026-11-21T00:02:00+09:00",
+      "queries": [
+        "구글 의료 AI",
+        "의료 AI"
+      ],
+      "category": "해외 의료기관·정책·규제",
+      "score": 6,
+      "query": "구글 의료 AI",
+      "source_type": "major",
+      "similar_count": 1,
+      "similar_sources": [
+        "joongang.co.kr"
+      ]
+    },
+    {
       "title": "모르페우스, 브라질 의료기기 허가 확보…AI 플랫폼 개발도 막바지",
       "summary": "의료영상 전문기업 모르페우스가 지난해부터 지연됐던 브라질 의료기기 허가를 확보하면서 현지 업체들과의 공급 계약 협상에 속도를 낸다. 기존 3D 안면 분석 기술을 활용한 인공지능(AI) 플랫폼도 개발 마무리 단계에...",
       "link": "https://www.newsway.co.kr/news/view?ud=2026112012273740846",
@@ -1441,23 +1476,6 @@
       "category": "해외 의료기관·정책·규제",
       "score": 5,
       "query": "의료 AI 기업",
-      "source_type": "major",
-      "similar_count": 0,
-      "similar_sources": []
-    },
-    {
-      "title": "완벽하게 순종적인 ‘애인 봇’?…그녀도 한 명의 ‘노라’였다",
-      "summary": "수익 모델이 아쉬워지면 분명히 오픈AI도 구글(제미나이)도 온리팬스 뺨치는 친밀성에 기반을 둔 감정 노동... 연세대 생물학과를 졸업하고 23년 넘게 기자로 일하면서 과학기술·보건의료·환경 분야를 취재했다. SF를...",
-      "link": "https://n.news.naver.com/mnews/article/353/0000057308?sid=110",
-      "originallink": "https://www.joongang.co.kr/article/25480580",
-      "pubDate": "2026-11-21T00:02:00+09:00",
-      "queries": [
-        "구글 의료 AI",
-        "의료 AI"
-      ],
-      "category": "해외 의료기관·정책·규제",
-      "score": 5,
-      "query": "구글 의료 AI",
       "source_type": "major",
       "similar_count": 0,
       "similar_sources": []
@@ -1862,6 +1880,23 @@
       "similar_sources": []
     },
     {
+      "title": "\"미국만 바라보다 뒤통수 맞을라\"…2027년 돈의 흐름 '확' 달라진다[주末...",
+      "summary": "최 연구원은 \"IXJ는 미국·유럽·아시아의 경쟁력 있는 대표 헬스케어 기업들이 포함된 ETF\"라며 \"미국 의료산업의 정책 불확실성 완화 및 동맹국과의 관계 개선 시 수혜가 기대되며 유럽과 아시아 기업 중에서는 AI 및...",
+      "link": "https://n.news.naver.com/mnews/article/277/0005845835?sid=101",
+      "originallink": "https://view.asiae.co.kr/article/2026111915440982173",
+      "pubDate": "2026-11-20T23:21:00+09:00",
+      "queries": [
+        "의료 AI 기업",
+        "의료 AI"
+      ],
+      "category": "해외 의료기관·정책·규제",
+      "score": 4,
+      "query": "의료 AI 기업",
+      "source_type": "major",
+      "similar_count": 0,
+      "similar_sources": []
+    },
+    {
       "title": "한덕수 파기환송, 조선일보 \"12·3계엄은 내란, 정략적 공방 끝낼 때\"",
       "summary": "보건복지부가 국립대병원에 국제수가 부과 자제를 요청한 데 대해서는 \"자제 요청 수준에 그쳐선 안 된다\"며... 지식 콘텐츠 스타트업 언더스코어가 생성형AI를 활용해 국내 주요 언론사 기사들을 이슈별로 비교한 뒤...",
       "link": "https://n.news.naver.com/mnews/article/006/0000138863?sid=102",
@@ -2042,7 +2077,7 @@
       "score": 4,
       "query": "의료 AI 지원사업",
       "source_type": "major",
-      "similar_count": 11,
+      "similar_count": 10,
       "similar_sources": [
         "autodaily.co.kr",
         "biz.heraldcorp.com",
@@ -2175,23 +2210,6 @@
       "similar_sources": []
     },
     {
-      "title": "요통 환자, 복부 근육량 정상인과 차이 없어…근육·지방 비율은 낮아",
-      "summary": "미국 스탠퍼드대학교 연구팀은 인공지능(AI)을 활용해 복부 컴퓨터단층촬영(CT) 영상과 전자의무기록을... 그러나 기존 연구는 대상자 수가 적어 일반화에 한계가 있었다. 연구팀은 미국 단일 의료기관에서 확보한 환자...",
-      "link": "https://www.mdtoday.co.kr/news/articleView.html?idxno=626491",
-      "originallink": "https://www.mdtoday.co.kr/news/articleView.html?idxno=626491",
-      "pubDate": "2026-11-20T08:44:00+09:00",
-      "queries": [
-        "의료 AI 수가",
-        "의료 AI"
-      ],
-      "category": "해외 의료기관·정책·규제",
-      "score": 4,
-      "query": "의료 AI 수가",
-      "source_type": "medical",
-      "similar_count": 0,
-      "similar_sources": []
-    },
-    {
       "title": "[의정 브리프]서남권 3조 투자공사 설립·방산기술 보호법 개정 추진",
       "summary": "◇의료인 국가시험도 AI 부정행위 대응 강화 국회 보건복지위원장인 이만희 국민의힘 의원이 생성형... 이 의원은 “국민의 생명과 건강을 책임지는 보건의료인에게는 무엇보다 높은 수준의 윤리 의식과 책임감이...",
       "link": "https://n.news.naver.com/mnews/article/030/0003488093?sid=100",
@@ -2278,23 +2296,6 @@
         "병원 AI"
       ],
       "category": "국내 의료 AI 기업",
-      "score": 3,
-      "query": "의료 AI 기업",
-      "source_type": "major",
-      "similar_count": 0,
-      "similar_sources": []
-    },
-    {
-      "title": "\"서학개미야, 엔비디아만 담고 안심하지마!\"…2027년 키워드는[주末머니...",
-      "summary": "최 연구원은 \"IXJ는 미국·유럽·아시아의 경쟁력 있는 대표 헬스케어 기업들이 포함된 ETF\"라며 \"미국 의료산업의 정책 불확실성 완화 및 동맹국과의 관계 개선 시 수혜가 기대되며 유럽과 아시아 기업 중에서는 AI 및...",
-      "link": "https://n.news.naver.com/mnews/article/277/0005845835?sid=101",
-      "originallink": "https://view.asiae.co.kr/article/2026111915440982173",
-      "pubDate": "2026-11-20T23:21:00+09:00",
-      "queries": [
-        "의료 AI 기업",
-        "의료 AI"
-      ],
-      "category": "해외 의료기관·정책·규제",
       "score": 3,
       "query": "의료 AI 기업",
       "source_type": "major",
@@ -2439,26 +2440,6 @@
       "source_type": "major",
       "similar_count": 0,
       "similar_sources": []
-    },
-    {
-      "title": "보건의료노조, 새 위원장 맞는다…송금희 후보 위원장 당선",
-      "summary": "개선 ▲올바른 의료개혁 ▲산별 노사 관계 발전 ▲산별노조 혁신과 발전 ▲사회적 연대와 노조 책임... 선택\"이라며 \"급변하는 의료환경과 AI 전환 속에서 현장의 인력문제를 포함한 노동시간 단축과 공공의료...",
-      "link": "http://www.docdocdoc.co.kr/news/articleView.html?idxno=3044732",
-      "originallink": "http://www.docdocdoc.co.kr/news/articleView.html?idxno=3044732",
-      "pubDate": "2026-11-20T10:36:00+09:00",
-      "queries": [
-        "의료 AI 책임",
-        "의료 AI"
-      ],
-      "category": "AI 거버넌스·보안",
-      "score": 3,
-      "query": "의료 AI 책임",
-      "source_type": "medical",
-      "similar_count": 2,
-      "similar_sources": [
-        "labortoday.co.kr",
-        "rapportian.com"
-      ]
     },
     {
       "title": "노연홍 제약협 \"윤리경영, 신뢰 뒷받침 핵심 경영 기반\"",
@@ -2721,6 +2702,25 @@
       "similar_sources": []
     },
     {
+      "title": "보건의료노조, 새 위원장 맞는다…송금희 후보 위원장 당선",
+      "summary": "개선 ▲올바른 의료개혁 ▲산별 노사 관계 발전 ▲산별노조 혁신과 발전 ▲사회적 연대와 노조 책임... 선택\"이라며 \"급변하는 의료환경과 AI 전환 속에서 현장의 인력문제를 포함한 노동시간 단축과 공공의료...",
+      "link": "http://www.docdocdoc.co.kr/news/articleView.html?idxno=3044732",
+      "originallink": "http://www.docdocdoc.co.kr/news/articleView.html?idxno=3044732",
+      "pubDate": "2026-11-20T10:36:00+09:00",
+      "queries": [
+        "의료 AI 책임",
+        "의료 AI"
+      ],
+      "category": "AI 거버넌스·보안",
+      "score": 2,
+      "query": "의료 AI 책임",
+      "source_type": "medical",
+      "similar_count": 1,
+      "similar_sources": [
+        "labortoday.co.kr"
+      ]
+    },
+    {
       "title": "[제약+] 대웅제약 ‘펙수클루’, 의인성 궤양 완치율 90% 달성 外",
       "summary": "이번 지분투자는 일본 탈모 치료 시장의 성장 잠재력과 현지 의료 네트워크의 확장성에 주목한... 이번 한국관에는 디지털 치료부터 인공지능(AI) 진단, 만성질환 관리까지 다양한 분야의 디지털헬스케어 기업...",
       "link": "https://dealsite.co.kr/articles/173200",
@@ -2786,6 +2786,23 @@
       ],
       "category": "국내 의료 AI 기업",
       "score": 2,
+      "query": "의료 AI 기업",
+      "source_type": "other",
+      "similar_count": 0,
+      "similar_sources": []
+    },
+    {
+      "title": "아자뉴스바이트 20261121",
+      "summary": "정부는 AI 기업과 협력해 부정행위 탐지·차단 기술을 개발하고, 시험장 감독체계와 관리 기준, 처벌... 국경없는의사회(MSF)는 20일 \"의료적으로 취약한 난민들이 진료를 받을 수 있는 경로가 사라졌다\"며, \"특히 난민...",
+      "link": "http://kor.theasian.asia/archives/422402",
+      "originallink": "http://kor.theasian.asia/archives/422402",
+      "pubDate": "2026-11-21T10:50:00+09:00",
+      "queries": [
+        "의료 AI 기업",
+        "의료 AI"
+      ],
+      "category": "국내 의료 AI 기업",
+      "score": 1,
       "query": "의료 AI 기업",
       "source_type": "other",
       "similar_count": 0,
@@ -2907,23 +2924,6 @@
       "score": 1,
       "query": "의료 AI 지원사업",
       "source_type": "other",
-      "similar_count": 0,
-      "similar_sources": []
-    },
-    {
-      "title": "쓰기만 하면 뇌파 측정…전극 위치 실시간 조절하는 헬멧 개발",
-      "summary": "연구진은 자동 전극 조절 기술이 이러한 변동성을 줄여 뇌파 데이터의 표준화와 AI 분석 모델 개발에 도움이 될 것으로 기대했다. 이승찬 책임연구원은 뇌파가 의료와 헬스케어, 인지과학 분야에서 활용 가능성이 크지만...",
-      "link": "https://www.mdtoday.co.kr/news/articleView.html?idxno=626429",
-      "originallink": "https://www.mdtoday.co.kr/news/articleView.html?idxno=626429",
-      "pubDate": "2026-11-20T09:06:00+09:00",
-      "queries": [
-        "의료 AI 책임",
-        "의료 AI"
-      ],
-      "category": "AI 거버넌스·보안",
-      "score": 1,
-      "query": "의료 AI 책임",
-      "source_type": "medical",
       "similar_count": 0,
       "similar_sources": []
     },
