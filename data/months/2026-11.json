@@ -1,17 +1,17 @@
 {
  "month": "2026-11",
- "generated_at": "2026-11-20T12:13:07.513212+09:00",
+ "generated_at": "2026-11-21T10:45:51.314843+09:00",
  "prev_month": "2026-10",
- "collected_days": 20,
+ "collected_days": 21,
  "first_day": "2026-11-01",
- "last_day": "2026-11-20",
- "total": 3945,
+ "last_day": "2026-11-21",
+ "total": 4088,
  "prev_total": 4285,
  "by_region": {
-  "국내": 2989,
-  "해외": 587,
-  "정부": 47,
-  "일간지": 322
+  "국내": 3092,
+  "해외": 605,
+  "정부": 49,
+  "일간지": 342
  },
  "weekly": {
   "2026-W44": {
@@ -29,84 +29,96 @@
    "정부": 14
   },
   "2026-W47": {
-   "국내": 911,
-   "일간지": 322,
-   "해외": 162,
-   "정부": 16
+   "국내": 1014,
+   "일간지": 342,
+   "해외": 180,
+   "정부": 18
   }
  },
  "categories": [
   {
    "name": "국내 · 국내 정책·규제",
-   "count": 804,
+   "count": 832,
    "prev": 648,
-   "delta": 156
+   "delta": 184
   },
   {
    "name": "국내 · 국내 의료 AI 기업",
-   "count": 731,
+   "count": 755,
    "prev": 769,
-   "delta": -38
+   "delta": -14
   },
   {
    "name": "국내 · 국내 의료기관",
-   "count": 504,
+   "count": 520,
    "prev": 411,
-   "delta": 93
+   "delta": 109
   },
   {
    "name": "국내 · AI 거버넌스·보안",
-   "count": 333,
+   "count": 349,
    "prev": 324,
-   "delta": 9
+   "delta": 25
   },
   {
    "name": "국내 · 학술·연구·행사",
-   "count": 301,
+   "count": 309,
    "prev": 294,
-   "delta": 7
+   "delta": 15
   },
   {
    "name": "국내 · 해외 의료기관·정책·규제",
-   "count": 298,
+   "count": 309,
    "prev": 300,
-   "delta": -2
+   "delta": 9
   },
   {
    "name": "해외 · 해외 의료기관 AI 도입·운영",
-   "count": 284,
+   "count": 292,
    "prev": 285,
-   "delta": -1
+   "delta": 7
   },
   {
    "name": "해외 · 해외 정책·규제 (미국)",
-   "count": 169,
+   "count": 173,
    "prev": 171,
-   "delta": -2
+   "delta": 2
   },
   {
    "name": "해외 · 해외 연구·학술",
-   "count": 84,
+   "count": 89,
    "prev": 74,
-   "delta": 10
+   "delta": 15
   },
   {
    "name": "일간지 · 한국일보",
-   "count": 56,
+   "count": 59,
    "prev": 0,
-   "delta": 56
+   "delta": 59
   },
   {
    "name": "일간지 · 동아일보",
-   "count": 56,
+   "count": 59,
    "prev": 0,
-   "delta": 56
+   "delta": 59
+  },
+  {
+   "name": "일간지 · 조선일보",
+   "count": 55,
+   "prev": 0,
+   "delta": 55
   },
   {
    "name": "일간지 · 한겨레",
-   "count": 50,
+   "count": 53,
    "prev": 0,
-   "delta": 50
+   "delta": 53
+  },
+  {
+   "name": "해외 · 해외 정책·규제 (유럽·영국)",
+   "count": 50,
+   "prev": 57,
+   "delta": -7
   },
   {
    "name": "일간지 · 중앙일보",
@@ -115,34 +127,22 @@
    "delta": 50
   },
   {
-   "name": "해외 · 해외 정책·규제 (유럽·영국)",
-   "count": 49,
-   "prev": 57,
-   "delta": -8
-  },
-  {
-   "name": "일간지 · 조선일보",
-   "count": 48,
-   "prev": 0,
-   "delta": 48
-  },
-  {
    "name": "일간지 · JTBC",
-   "count": 33,
+   "count": 34,
    "prev": 0,
-   "delta": 33
+   "delta": 34
   },
   {
    "name": "일간지 · 경향신문",
-   "count": 29,
+   "count": 32,
    "prev": 0,
-   "delta": 29
+   "delta": 32
   },
   {
    "name": "정부 · 정부 보도자료 (검색)",
-   "count": 22,
+   "count": 23,
    "prev": 22,
-   "delta": 0
+   "delta": 1
   },
   {
    "name": "국내 · 기타 (의료 AI·병원 AI 키워드)",
@@ -169,16 +169,16 @@
    "delta": 3
   },
   {
+   "name": "정부 · 국가인공지능전략위원회",
+   "count": 3,
+   "prev": 10,
+   "delta": -7
+  },
+  {
    "name": "정부 · 국가데이터처",
    "count": 2,
    "prev": 0,
    "delta": 2
-  },
-  {
-   "name": "정부 · 국가인공지능전략위원회",
-   "count": 2,
-   "prev": 10,
-   "delta": -8
   },
   {
    "name": "국내 · 정부 발표",
@@ -196,68 +196,74 @@
  "keywords": [
   {
    "word": "서울대병원",
-   "count": 138,
+   "count": 144,
    "prev": 143,
    "status": ""
   },
   {
    "word": "식약처",
-   "count": 135,
+   "count": 138,
    "prev": 90,
    "status": ""
   },
   {
-   "word": "FDA",
-   "count": 83,
-   "prev": 86,
-   "status": ""
-  },
-  {
-   "word": "루닛",
-   "count": 82,
-   "prev": 64,
-   "status": ""
-  },
-  {
    "word": "보건복지부",
-   "count": 82,
+   "count": 86,
    "prev": 76,
    "status": ""
   },
   {
    "word": "학술대회",
-   "count": 80,
+   "count": 84,
    "prev": 76,
    "status": ""
   },
   {
+   "word": "FDA",
+   "count": 84,
+   "prev": 86,
+   "status": ""
+  },
+  {
+   "word": "루닛",
+   "count": 83,
+   "prev": 64,
+   "status": ""
+  },
+  {
    "word": "세브란스",
-   "count": 77,
+   "count": 80,
    "prev": 78,
    "status": ""
   },
   {
-   "word": "삼성서울병원",
-   "count": 75,
-   "prev": 34,
-   "status": "급증"
-  },
-  {
    "word": "아산병원",
-   "count": 70,
+   "count": 77,
    "prev": 70,
    "status": ""
   },
   {
+   "word": "삼성서울병원",
+   "count": 76,
+   "prev": 34,
+   "status": "급증"
+  },
+  {
    "word": "국회",
-   "count": 63,
+   "count": 68,
    "prev": 37,
    "status": ""
   },
   {
    "word": "포럼",
-   "count": 61,
+   "count": 64,
    "prev": 51,
+   "status": ""
+  },
+  {
+   "word": "분당서울대",
+   "count": 52,
+   "prev": 65,
    "status": ""
   },
   {
@@ -267,15 +273,21 @@
    "status": ""
   },
   {
-   "word": "분당서울대",
-   "count": 49,
-   "prev": 65,
-   "status": ""
-  },
-  {
    "word": "심포지엄",
    "count": 40,
    "prev": 31,
+   "status": ""
+  },
+  {
+   "word": "메이요",
+   "count": 39,
+   "prev": 12,
+   "status": "급증"
+  },
+  {
+   "word": "구글",
+   "count": 38,
+   "prev": 45,
    "status": ""
   },
   {
@@ -285,33 +297,21 @@
    "status": ""
   },
   {
-   "word": "메이요",
-   "count": 38,
-   "prev": 12,
-   "status": "급증"
+   "word": "심평원",
+   "count": 34,
+   "prev": 30,
+   "status": ""
   },
   {
-   "word": "구글",
-   "count": 36,
-   "prev": 45,
+   "word": "오픈AI",
+   "count": 33,
+   "prev": 17,
    "status": ""
   },
   {
    "word": "스마트 병원",
    "count": 33,
    "prev": 30,
-   "status": ""
-  },
-  {
-   "word": "심평원",
-   "count": 32,
-   "prev": 30,
-   "status": ""
-  },
-  {
-   "word": "오픈AI",
-   "count": 31,
-   "prev": 17,
    "status": ""
   }
  ],
@@ -653,6 +653,28 @@
  ],
  "government_other": [
   {
+   "title": "\"AI로 누구도 소외되지 않는 보건체계 구축\", 한국-아세안 보건 협력 연결망 강화",
+   "link": "https://news.google.com/rss/articles/CBMijwFBVV95cUxPOTA0RUE1ZzJUaFNPS0xmNzFLcUEzRjc3YndBbTRGUExJdEVGWnhJQlFVNUZyT0xLOHdTUmdpLTkxZ2NpZElVZ3RYSEdRM0R0YUx6M0x3VnJFV3BnNzZLRk1nY0JEX051WlFFTUF2QkVLeWwwQmFzemdlZ2Z6YjN6TlNHWXZhME5YeWdLYlFwMA?oc=5",
+   "date": "2026-11-21",
+   "category": "정부 보도자료 (검색)",
+   "region": "정부",
+   "score": 0,
+   "similar_count": 0,
+   "source": "정부 보도자료 (검색)",
+   "importance": 0
+  },
+  {
+   "title": "('26. 11. 20) 국가AI전략위, 전남광주서 국산 NPU, 조선 AX, 국가AI컴퓨팅센터 정책현장 방문",
+   "link": "https://www.aikorea.go.kr/web/board/brdDetail.do?menu_cd=000012&num=1154",
+   "date": "2026-11-20",
+   "category": "국가인공지능전략위원회",
+   "region": "정부",
+   "score": 0,
+   "similar_count": 0,
+   "source": "국가인공지능전략위원회",
+   "importance": 0
+  },
+  {
    "title": "AI가 바꾸는 바이오 미래, 대한민국이 기술 주권 확보를 하는 날까지",
    "link": "https://news.google.com/rss/articles/CBMiakFVX3lxTE4yVm1taFRKcDRRTEk5WnlpeDBvMU9rMFBmSVJ2ZUVYNHpLS3k0ZkJaYlRxajFtaUVrMV9VUzFVbEVNWGdKU01rTnZybDV1dFF0QWE1RXhkSk1XeWYzNnFwQVd4aE41N2lMMmc?oc=5",
    "date": "2026-11-19",
@@ -958,28 +980,6 @@
    "score": 0,
    "similar_count": 0,
    "source": "정부 보도자료 (검색)",
-   "importance": 0
-  },
-  {
-   "title": "[보도참고] 식품안전나라 ‘AI 기반 검색’·‘자주 찾는 민원’으로 쉽고 빠르게",
-   "link": "https://www.mfds.go.kr/brd/m_99/view.do?seq=50470",
-   "date": "2026-11-04",
-   "category": "식품의약품안전처",
-   "region": "정부",
-   "score": 0,
-   "similar_count": 0,
-   "source": "식품의약품안전처",
-   "importance": 0
-  },
-  {
-   "title": "국민인공지능서비스혁신추진단, 전문임기제공무원 2차 공개 모집",
-   "link": "https://www.msit.go.kr/bbs/view.do?sCode=user&mId=307&mPid=208&bbsSeqNo=94&nttSeqNo=3187920",
-   "date": "2026-11-03",
-   "category": "과학기술정보통신부",
-   "region": "정부",
-   "score": 0,
-   "similar_count": 0,
-   "source": "과학기술정보통신부",
    "importance": 0
   }
  ],
@@ -1644,6 +1644,111 @@
     "importance": 29
    }
   ],
+  "일간지 · 조선일보": [
+   {
+    "title": "박승일 아산의료원장·이제환 서울아산병원장",
+    "link": "https://www.chosun.com/national/welfare-medical/2026/11/21/55IX6IVYZFEXNJNGVL2XONBBWM/",
+    "date": "2026-11-21",
+    "category": "조선일보",
+    "region": "일간지",
+    "score": 7,
+    "similar_count": 0,
+    "source": "chosun.com",
+    "importance": 10
+   },
+   {
+    "title": "심평원 “AI 도입해 진료비 과잉 청구만 집중 심사”",
+    "link": "https://www.chosun.com/national/welfare-medical/2026/11/19/75JK53X6AFDNZDLSIX4VTSOY6I/",
+    "date": "2026-11-19",
+    "category": "조선일보",
+    "region": "일간지",
+    "score": 6,
+    "similar_count": 0,
+    "source": "chosun.com",
+    "importance": 9
+   },
+   {
+    "title": "“암 환자 할머니 병원 가는데”… 골목길 주차에 막힌 구급차",
+    "link": "https://biz.chosun.com/topics/topics_social/2026/11/20/QZ2QNKJPNJCVNGMCVAGST7IAZQ/",
+    "date": "2026-11-20",
+    "category": "조선일보",
+    "region": "일간지",
+    "score": 5,
+    "similar_count": 0,
+    "source": "biz.chosun.com",
+    "importance": 8
+   }
+  ],
+  "일간지 · 경향신문": [
+   {
+    "title": "아산재단, 박승일 신임 아산의료원장·이제환 서울아산병원장 임명",
+    "link": "https://news.google.com/rss/articles/CBMiX0FVX3lxTFBEZ1g3Z1J2TlhjdzlJcjRfUnRhOWpMMzBVaU9jVzJwZTdSTWZSRnpiRzFsQ0hBdS1ram5CeVR4WGF4akJ5Ny1pNWZhZUVUSjhmRm81MTlSY2NOcWp6LVM40gFfQVVfeXFMUERnWDdnUnZOWGN3OUlyNF9SdGE5akwzMFVpT2NXMnBlN1JNZlJGemJHMWxDSEF1LWtqbkJ5VHhYYXhqQnk3LWk1ZmFlRVRKOGZGbzUxOVJjY05xanotUzg?oc=5",
+    "date": "2026-11-20",
+    "category": "경향신문",
+    "region": "일간지",
+    "score": 7,
+    "similar_count": 0,
+    "source": "news.google.com",
+    "importance": 10
+   },
+   {
+    "title": "인하대병원 ‘아이온’ 시술, 대만 암센터 의료진이 배우러 왔다",
+    "link": "https://news.google.com/rss/articles/CBMiX0FVX3lxTE9NM1NrV3dQRDdIcEtmc2Q2OExzX0Z4RkRTemdEd0NKckVPc3VxWXUxQTFLMmtCR0lmODNWZkx3OHJxV0h5MG5IalhDX0FFWFJSRWdiYWhKSTJxWElGNEpv0gFfQVVfeXFMT00zU2tXd1BEN0hwS2ZzZDY4THNfRnhGRFN6Z0R3Q0pyRU9zdXFZdTFBMUsya0JHSWY4M1ZmTHc4cnFXSHkwbkhqWENfQUVYUlJFZ2JhaEpJMnFYSUY0Sm8?oc=5",
+    "date": "2026-11-17",
+    "category": "경향신문",
+    "region": "일간지",
+    "score": 6,
+    "similar_count": 0,
+    "source": "news.google.com",
+    "importance": 9
+   },
+   {
+    "title": "광명새움병원, AI 환자 모니터링 시스템 ‘씽크’ 도입…수술 후 환자 관리 강화",
+    "link": "https://news.google.com/rss/articles/CBMiXkFVX3lxTE1zeUQ1aks5UjlINW9yRkJ2Sl80UGVEWXBzRlA2NmxreWxqaWhzMFVMblJhQmdwaW9KbElFVGw3SFdRSlI3QmZ6VWUwZzRVbU5oMWx3RWJQV0Q3NVkwSEHSAWNBVV95cUxOQkVLQm1zNl9lOHFvYkgxZzdBUEYzTV9QdEtrandna0tDVXc1b0NfbV9aWlVQNjBXSWczZWxZLTdNSkRvT0xQZDZ2Rm1neFQwRzZoRUtiTmJ3NHNtaDhtYl9JM0E?oc=5",
+    "date": "2026-11-17",
+    "category": "경향신문",
+    "region": "일간지",
+    "score": 6,
+    "similar_count": 0,
+    "source": "news.google.com",
+    "importance": 9
+   }
+  ],
+  "일간지 · 한국일보": [
+   {
+    "title": "아산의료원장에 폐암 권위자 박승일 서울아산병원장 임명",
+    "link": "https://news.google.com/rss/articles/CBMibkFVX3lxTE55Vjc3eVo1UnlhUHllZGdFNlRycEFPQlZDZ25XOVpqNTByUmQ5RHBmeVdJUjZRTVQ5Z3ZxVFhKYmI1R21RNE9QaUZESmxWNW04SnhwdkY2eFNMWnpBMFNVRXNERmQyVzZWcWk4Wi130gFzQVVfeXFMUEQxclBRelZfSVJfTWFEUUFvMDB2TmtNc0djOGk1TFlVQU1fNlROYXRXelhTTEJTb0NyQ0xrQy1ULVpUS0s0cW9qb2QzTjVFWVlXeDdyV1RPZ3VSTGJzVGlqbEpuN3M1SzhNbWlRZHZXbktCbw?oc=5",
+    "date": "2026-11-20",
+    "category": "한국일보",
+    "region": "일간지",
+    "score": 7,
+    "similar_count": 0,
+    "source": "news.google.com",
+    "importance": 10
+   },
+   {
+    "title": "박원규 대구가톨릭대병원 영상의학과지원팀장, 보건복지부 장관 표창",
+    "link": "https://news.google.com/rss/articles/CBMibkFVX3lxTE1iNmY5SVJYVnZ4YnBkNy1ZNmEyZWFYZnMzWnNDLWxIcHRZNUZtSG1SX0dfTTB0UmJGRk9neXNiQ05XS1pfY1c3T0tWa1hMZm1Dc3d4b1hiU1pyczhjX3NYTDlBalBDbzdQVGQ4cE130gFzQVVfeXFMTVFJX0pUOWR4bkc5OUFQa3lvM1VFeVpCNkdGdVZocGxWc01LV0NpNUlyZy1kbE1WQWl1aEFWWmVxV1ktWW52SG1GUTd1dzlRN0JscHJ2WkZ3R2NiNVlRN3RMb1Ntd0hVdjlTMWFCbU9RYWt1SQ?oc=5",
+    "date": "2026-11-17",
+    "category": "한국일보",
+    "region": "일간지",
+    "score": 7,
+    "similar_count": 0,
+    "source": "news.google.com",
+    "importance": 10
+   },
+   {
+    "title": "\"앗! 정신병원 냄새가\"… '무단 이탈 환자' 안전히 돌려보낸 간호대생",
+    "link": "https://news.google.com/rss/articles/CBMibkFVX3lxTFAzSVpYOEFjdW5Rd3ZIM1ZJNXNaMkJWeWVxOVVZbTE1Y041TTRkbVBxLURGQ0xvQzJkVTNHYTFsUC1tbnp4Qmh0a3hIb0o5dUZqLTlrYkkxRDhRVmhFV3p6ODNLbXVxbVRmVnFCMlFn0gFzQVVfeXFMUHBtNDhiblVFQlRPUzRhYTNiZlhveUtWUlBqajRvUGFIU2J3RXVHNGc2VmNsOEtBa0VoMEFWM016cUJETjRMUlQxUjR6UkVRM193a191eWRveDZxVDdIeXVxZEE1WkVielhJcnFNNnFMRFk3UQ?oc=5",
+    "date": "2026-11-17",
+    "category": "한국일보",
+    "region": "일간지",
+    "score": 5,
+    "similar_count": 0,
+    "source": "news.google.com",
+    "importance": 8
+   }
+  ],
   "일간지 · 한겨레": [
    {
     "title": "서재필의학상에 이승규 서울아산병원 교수",
@@ -1672,41 +1777,6 @@
     "link": "https://news.google.com/rss/articles/CBMiakFVX3lxTE53Ym9hSWFfbzBjYzUyZFRuWHpkUEJRODRIT1NMQmkydWszSUdFY1p2c2ozdDJjWHg4U2UyQ3B4REd2SkNsNXdoZ3JjRjRUbkFXVE1SeWpqRi1EVVlOVWpQU252eWVNQUR3Qmc?oc=5",
     "date": "2026-11-19",
     "category": "한겨레",
-    "region": "일간지",
-    "score": 5,
-    "similar_count": 0,
-    "source": "news.google.com",
-    "importance": 8
-   }
-  ],
-  "일간지 · 한국일보": [
-   {
-    "title": "박원규 대구가톨릭대병원 영상의학과지원팀장, 보건복지부 장관 표창",
-    "link": "https://news.google.com/rss/articles/CBMibkFVX3lxTE1iNmY5SVJYVnZ4YnBkNy1ZNmEyZWFYZnMzWnNDLWxIcHRZNUZtSG1SX0dfTTB0UmJGRk9neXNiQ05XS1pfY1c3T0tWa1hMZm1Dc3d4b1hiU1pyczhjX3NYTDlBalBDbzdQVGQ4cE130gFzQVVfeXFMTVFJX0pUOWR4bkc5OUFQa3lvM1VFeVpCNkdGdVZocGxWc01LV0NpNUlyZy1kbE1WQWl1aEFWWmVxV1ktWW52SG1GUTd1dzlRN0JscHJ2WkZ3R2NiNVlRN3RMb1Ntd0hVdjlTMWFCbU9RYWt1SQ?oc=5",
-    "date": "2026-11-17",
-    "category": "한국일보",
-    "region": "일간지",
-    "score": 7,
-    "similar_count": 0,
-    "source": "news.google.com",
-    "importance": 10
-   },
-   {
-    "title": "\"앗! 정신병원 냄새가\"… '무단 이탈 환자' 안전히 돌려보낸 간호대생",
-    "link": "https://news.google.com/rss/articles/CBMibkFVX3lxTFAzSVpYOEFjdW5Rd3ZIM1ZJNXNaMkJWeWVxOVVZbTE1Y041TTRkbVBxLURGQ0xvQzJkVTNHYTFsUC1tbnp4Qmh0a3hIb0o5dUZqLTlrYkkxRDhRVmhFV3p6ODNLbXVxbVRmVnFCMlFn0gFzQVVfeXFMUHBtNDhiblVFQlRPUzRhYTNiZlhveUtWUlBqajRvUGFIU2J3RXVHNGc2VmNsOEtBa0VoMEFWM016cUJETjRMUlQxUjR6UkVRM193a191eWRveDZxVDdIeXVxZEE1WkVielhJcnFNNnFMRFk3UQ?oc=5",
-    "date": "2026-11-17",
-    "category": "한국일보",
-    "region": "일간지",
-    "score": 5,
-    "similar_count": 0,
-    "source": "news.google.com",
-    "importance": 8
-   },
-   {
-    "title": "'2026 HD현대아너상'에 150만 명 무료 진료 성가복지병원",
-    "link": "https://news.google.com/rss/articles/CBMibkFVX3lxTE5Va0l1UWViYzZqSXpqR0JOSll3S0duRi00TWhfbWlpekpxQl96aWRWSUVmaXgxeEJQLTg3NTdSYko5ZXBwdExPVXFwNk1VaG1WX1QyMG9fNjk1OW12YTJSYlc2ZG9lUDZqclJadXdB0gFzQVVfeXFMTno5NUJuTkxSRHFsZVJwdHJBeW13N0dxX2tRWXVyMGNOSTdpY0hmSVMzemJUTWdIc3BRdy1WUnl6ZmxSa3NKNF9QdHQ4WlVRa0s1U1ZXQjVBb2ExSnVOdkp4TmphX0JkaklYVHR2eUZOOUhUMA?oc=5",
-    "date": "2026-11-17",
-    "category": "한국일보",
     "region": "일간지",
     "score": 5,
     "similar_count": 0,
@@ -1749,41 +1819,6 @@
     "importance": 7
    }
   ],
-  "일간지 · 조선일보": [
-   {
-    "title": "심평원 “AI 도입해 진료비 과잉 청구만 집중 심사”",
-    "link": "https://www.chosun.com/national/welfare-medical/2026/11/19/75JK53X6AFDNZDLSIX4VTSOY6I/",
-    "date": "2026-11-19",
-    "category": "조선일보",
-    "region": "일간지",
-    "score": 6,
-    "similar_count": 0,
-    "source": "chosun.com",
-    "importance": 9
-   },
-   {
-    "title": "“암 환자 할머니 병원 가는데”… 골목길 주차에 막힌 구급차",
-    "link": "https://biz.chosun.com/topics/topics_social/2026/11/20/QZ2QNKJPNJCVNGMCVAGST7IAZQ/",
-    "date": "2026-11-20",
-    "category": "조선일보",
-    "region": "일간지",
-    "score": 5,
-    "similar_count": 0,
-    "source": "biz.chosun.com",
-    "importance": 8
-   },
-   {
-    "title": "[스타트UP] AI로 반려동물 진단 돕는 ‘메타디엑스’…동물병원 숨은 비용까지 조준",
-    "link": "https://biz.chosun.com/industry/business-venture/2026/11/20/4NIBDIP7XRARFAF6XXULZLZ63Q/",
-    "date": "2026-11-20",
-    "category": "조선일보",
-    "region": "일간지",
-    "score": 5,
-    "similar_count": 0,
-    "source": "biz.chosun.com",
-    "importance": 8
-   }
-  ],
   "해외 · 해외 정책·규제 (유럽·영국)": [
    {
     "title": "The proposed reform of the Medical Device Regulation and its implications for AI-enabled medical devices in the EU",
@@ -1797,6 +1832,17 @@
     "importance": 9
    },
    {
+    "title": "Nelson Advisors: This Week in European HealthTech, MedTech and Health AI: 20th November 2026",
+    "link": "https://news.google.com/rss/articles/CBMizAFBVV95cUxNZUVNU3Z1bGxyV01fM1pXT1N0bEZlZjdwQkluSDhJYXBwUnFxUmUySGh1d1h1cHRHRGU2bHFTMXpRRmJWUmZyaW1ndXdmQVhSaHdIQlVPWlM3cEZMVlhSdGltX1JzVTVGSEluUDIwSmEzbjJ5RkhRUEt3bUstMDJSaHBtZ1RsTmVHS2lia19GQ3ZiaWJJeXIwYjlXVTB4TkI2WTQyc3FPamlPRmZMNnJGZmZJaVpsYk1IWWFWV1NNODI3bjg3dFk4TjRDbUo?oc=5",
+    "date": "2026-11-20",
+    "category": "해외 정책·규제 (유럽·영국)",
+    "region": "해외",
+    "score": 4,
+    "similar_count": 0,
+    "source": "https://www.healthcare.digital/",
+    "importance": 4
+   },
+   {
     "title": "Nelson Advisors: European Lower Mid Market Healthcare Technology, MedTech and Health AI Predictions for 2027",
     "link": "https://news.google.com/rss/articles/CBMi1wFBVV95cUxQTTBNNUJvTDJIZl9OdFJRbHdXWllhTFpPZkRNSDZReTJYeWdEZEJuM1FDczdTaFJmTl9kZEQ1d29CS3FsTmk2Y3NBOUVkQkVMeXRzV3dfQ3dEdmRXRm84djNHWFJ4Ym9LRzVfajBjeTZBdVMtZWp2ZS1rMnprQ3E3VzFoX1R4cHdYbVExV25vOVdIUzdVZGNBVGQ5bU5VTWYwaUV3cEh4cm9LcUZkY29zanM2T3lTdE5fWlhfQnJGWFRFd0h0c0VTRXlJMXQtOGx3bGtFc19GTQ?oc=5",
     "date": "2026-11-02",
@@ -1806,52 +1852,6 @@
     "similar_count": 0,
     "source": "healthcare.digital",
     "importance": 3
-   },
-   {
-    "title": "Nelson Advisors: This Week in European HealthTech, MedTech and Health AI: 13th November 2026",
-    "link": "https://news.google.com/rss/articles/CBMizAFBVV95cUxQS2k3TnNNbzdIQXN3dTFiT0NnNm8tYjhtckdPZ0haMmNPN2twWl8yTTNTaWdQemtDNlhaZW1fUnlWZU5xbVB1bmNHTzZhWnl0bDdWMnVmNVowdnVnRTdTTERQZ1gtU3Q3M0FyT0NkUmtBUzRCcS1KdzgtWU1fWnEtVjJHQ0JqUG1NNXlPZjFYYlZ5a2dLNFQ1NzNHLXlyZFh6al9saHF3Vy1SX0drUnpLSHRqb3NDdFdickFfUmVBaXJXbzZUWjZySDlHTnQ?oc=5",
-    "date": "2026-11-13",
-    "category": "해외 정책·규제 (유럽·영국)",
-    "region": "해외",
-    "score": 3,
-    "similar_count": 0,
-    "source": "https://www.healthcare.digital/",
-    "importance": 3
-   }
-  ],
-  "일간지 · 경향신문": [
-   {
-    "title": "인하대병원 ‘아이온’ 시술, 대만 암센터 의료진이 배우러 왔다",
-    "link": "https://news.google.com/rss/articles/CBMiX0FVX3lxTE9NM1NrV3dQRDdIcEtmc2Q2OExzX0Z4RkRTemdEd0NKckVPc3VxWXUxQTFLMmtCR0lmODNWZkx3OHJxV0h5MG5IalhDX0FFWFJSRWdiYWhKSTJxWElGNEpv0gFfQVVfeXFMT00zU2tXd1BEN0hwS2ZzZDY4THNfRnhGRFN6Z0R3Q0pyRU9zdXFZdTFBMUsya0JHSWY4M1ZmTHc4cnFXSHkwbkhqWENfQUVYUlJFZ2JhaEpJMnFYSUY0Sm8?oc=5",
-    "date": "2026-11-17",
-    "category": "경향신문",
-    "region": "일간지",
-    "score": 6,
-    "similar_count": 0,
-    "source": "news.google.com",
-    "importance": 9
-   },
-   {
-    "title": "광명새움병원, AI 환자 모니터링 시스템 ‘씽크’ 도입…수술 후 환자 관리 강화",
-    "link": "https://news.google.com/rss/articles/CBMiXkFVX3lxTE1zeUQ1aks5UjlINW9yRkJ2Sl80UGVEWXBzRlA2NmxreWxqaWhzMFVMblJhQmdwaW9KbElFVGw3SFdRSlI3QmZ6VWUwZzRVbU5oMWx3RWJQV0Q3NVkwSEHSAWNBVV95cUxOQkVLQm1zNl9lOHFvYkgxZzdBUEYzTV9QdEtrandna0tDVXc1b0NfbV9aWlVQNjBXSWczZWxZLTdNSkRvT0xQZDZ2Rm1neFQwRzZoRUtiTmJ3NHNtaDhtYl9JM0E?oc=5",
-    "date": "2026-11-17",
-    "category": "경향신문",
-    "region": "일간지",
-    "score": 6,
-    "similar_count": 0,
-    "source": "news.google.com",
-    "importance": 9
-   },
-   {
-    "title": "‘추적 60분’ 환자 장사 2부작 – 공장이 된 병원, 미용 주사 천국의 비밀",
-    "link": "https://news.google.com/rss/articles/CBMiXkFVX3lxTE52WHVNM0ppbUFKOUJSZUs2SzZITFMtUmNwOW5QTzQ0TzI4R0x5UTRUWTVTMHc0SWg3MkM5NENFLWh6QXlWamFpUkxaSnh2LTdWbV9iLUNHTTNvYkgtWWfSAWNBVV95cUxQdEFETFBCeUUwbFdvYUo1Tlk5blhZX09Udl9NWWxaQWFtWUUzVVFSeWJnajRDQ2JqbW91MW1kdEJkVFRVVTJwMFB6V2Z1TTFDYUxONHNWSUZjbF9kUVFpUDY0em8?oc=5",
-    "date": "2026-11-19",
-    "category": "경향신문",
-    "region": "일간지",
-    "score": 5,
-    "similar_count": 0,
-    "source": "news.google.com",
-    "importance": 8
    }
   ],
   "해외 · 해외 정책·규제 (미국)": [
@@ -1924,6 +1924,41 @@
     "importance": 8
    }
   ],
+  "일간지 · 동아일보": [
+   {
+    "title": "진료실서 의사에 흉기 휘두른 50대 여성, 살인미수 혐의 구속기소",
+    "link": "https://www.donga.com/news/Society/article/all/20261121/135064516/1",
+    "date": "2026-11-21",
+    "category": "동아일보",
+    "region": "일간지",
+    "score": 5,
+    "similar_count": 0,
+    "source": "donga.com",
+    "importance": 8
+   },
+   {
+    "title": "AI로 병원 진단서 위조해 50일 병가 쓴 사회복무요원 덜미",
+    "link": "https://www.donga.com/news/Society/article/all/20261119/135052389/1",
+    "date": "2026-11-19",
+    "category": "동아일보",
+    "region": "일간지",
+    "score": 5,
+    "similar_count": 0,
+    "source": "donga.com",
+    "importance": 8
+   },
+   {
+    "title": "[전문의 칼럼]의료인 55% 폭언-폭행 경험… 안전한 정신과 진료 환경 구축을",
+    "link": "https://www.donga.com/news/It/article/all/20261119/135049964/2",
+    "date": "2026-11-19",
+    "category": "동아일보",
+    "region": "일간지",
+    "score": 5,
+    "similar_count": 0,
+    "source": "donga.com",
+    "importance": 8
+   }
+  ],
   "일간지 · 중앙일보": [
    {
     "title": "숭실대·서울대병원 연구팀, 파킨슨병 뇌세포 변화 담은 유전자 발현 지도 구축",
@@ -1956,41 +1991,6 @@
     "score": 5,
     "similar_count": 0,
     "source": "news.google.com",
-    "importance": 8
-   }
-  ],
-  "일간지 · 동아일보": [
-   {
-    "title": "AI로 병원 진단서 위조해 50일 병가 쓴 사회복무요원 덜미",
-    "link": "https://www.donga.com/news/Society/article/all/20261119/135052389/1",
-    "date": "2026-11-19",
-    "category": "동아일보",
-    "region": "일간지",
-    "score": 5,
-    "similar_count": 0,
-    "source": "donga.com",
-    "importance": 8
-   },
-   {
-    "title": "[전문의 칼럼]의료인 55% 폭언-폭행 경험… 안전한 정신과 진료 환경 구축을",
-    "link": "https://www.donga.com/news/It/article/all/20261119/135049964/2",
-    "date": "2026-11-19",
-    "category": "동아일보",
-    "region": "일간지",
-    "score": 5,
-    "similar_count": 0,
-    "source": "donga.com",
-    "importance": 8
-   },
-   {
-    "title": "의식 잃은 운전자…나들이 가던 해운대백병원 간호사가 살렸다",
-    "link": "https://www.donga.com/news/Society/article/all/20261117/135037939/1",
-    "date": "2026-11-17",
-    "category": "동아일보",
-    "region": "일간지",
-    "score": 5,
-    "similar_count": 0,
-    "source": "donga.com",
     "importance": 8
    }
   ],
