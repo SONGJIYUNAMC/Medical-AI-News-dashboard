@@ -1,17 +1,17 @@
 {
  "month": "2026-11",
- "generated_at": "2026-11-22T11:15:21.625539+09:00",
+ "generated_at": "2026-11-23T08:29:41.134727+09:00",
  "prev_month": "2026-10",
- "collected_days": 22,
+ "collected_days": 23,
  "first_day": "2026-11-01",
- "last_day": "2026-11-22",
- "total": 4165,
+ "last_day": "2026-11-23",
+ "total": 4273,
  "prev_total": 4285,
  "by_region": {
-  "국내": 3132,
-  "해외": 627,
-  "정부": 50,
-  "일간지": 356
+  "국내": 3204,
+  "해외": 639,
+  "정부": 55,
+  "일간지": 375
  },
  "weekly": {
   "2026-W44": {
@@ -33,80 +33,98 @@
    "일간지": 356,
    "해외": 202,
    "정부": 19
+  },
+  "2026-W48": {
+   "국내": 72,
+   "일간지": 19,
+   "해외": 12,
+   "정부": 5
   }
  },
  "categories": [
   {
    "name": "국내 · 국내 정책·규제",
-   "count": 840,
+   "count": 863,
    "prev": 648,
-   "delta": 192
+   "delta": 215
   },
   {
    "name": "국내 · 국내 의료 AI 기업",
-   "count": 766,
+   "count": 774,
    "prev": 769,
-   "delta": -3
+   "delta": 5
   },
   {
    "name": "국내 · 국내 의료기관",
-   "count": 529,
+   "count": 543,
    "prev": 411,
-   "delta": 118
+   "delta": 132
   },
   {
    "name": "국내 · AI 거버넌스·보안",
-   "count": 355,
+   "count": 368,
    "prev": 324,
-   "delta": 31
+   "delta": 44
   },
   {
    "name": "국내 · 학술·연구·행사",
-   "count": 313,
+   "count": 321,
    "prev": 294,
-   "delta": 19
+   "delta": 27
   },
   {
    "name": "국내 · 해외 의료기관·정책·규제",
-   "count": 311,
+   "count": 317,
    "prev": 300,
-   "delta": 11
+   "delta": 17
   },
   {
    "name": "해외 · 해외 의료기관 AI 도입·운영",
-   "count": 306,
+   "count": 312,
    "prev": 285,
-   "delta": 21
+   "delta": 27
   },
   {
    "name": "해외 · 해외 정책·규제 (미국)",
-   "count": 175,
+   "count": 177,
    "prev": 171,
-   "delta": 4
+   "delta": 6
   },
   {
    "name": "해외 · 해외 연구·학술",
-   "count": 93,
+   "count": 95,
    "prev": 74,
-   "delta": 19
+   "delta": 21
   },
   {
    "name": "일간지 · 한국일보",
-   "count": 61,
+   "count": 64,
    "prev": 0,
-   "delta": 61
-  },
-  {
-   "name": "일간지 · 동아일보",
-   "count": 61,
-   "prev": 0,
-   "delta": 61
+   "delta": 64
   },
   {
    "name": "일간지 · 조선일보",
-   "count": 60,
+   "count": 63,
    "prev": 0,
-   "delta": 60
+   "delta": 63
+  },
+  {
+   "name": "일간지 · 동아일보",
+   "count": 62,
+   "prev": 0,
+   "delta": 62
+  },
+  {
+   "name": "일간지 · 중앙일보",
+   "count": 61,
+   "prev": 0,
+   "delta": 61
+  },
+  {
+   "name": "해외 · 해외 정책·규제 (유럽·영국)",
+   "count": 54,
+   "prev": 57,
+   "delta": -3
   },
   {
    "name": "일간지 · 한겨레",
@@ -115,34 +133,22 @@
    "delta": 54
   },
   {
-   "name": "해외 · 해외 정책·규제 (유럽·영국)",
-   "count": 52,
-   "prev": 57,
-   "delta": -5
-  },
-  {
-   "name": "일간지 · 중앙일보",
-   "count": 51,
-   "prev": 0,
-   "delta": 51
-  },
-  {
    "name": "일간지 · JTBC",
-   "count": 36,
+   "count": 37,
    "prev": 0,
-   "delta": 36
+   "delta": 37
   },
   {
    "name": "일간지 · 경향신문",
-   "count": 33,
+   "count": 34,
    "prev": 0,
-   "delta": 33
+   "delta": 34
   },
   {
    "name": "정부 · 정부 보도자료 (검색)",
-   "count": 23,
+   "count": 26,
    "prev": 22,
-   "delta": 1
+   "delta": 4
   },
   {
    "name": "국내 · 기타 (의료 AI·병원 AI 키워드)",
@@ -152,9 +158,9 @@
   },
   {
    "name": "정부 · 보건복지부",
-   "count": 8,
+   "count": 9,
    "prev": 12,
-   "delta": -4
+   "delta": -3
   },
   {
    "name": "정부 · 과학기술정보통신부",
@@ -170,9 +176,9 @@
   },
   {
    "name": "정부 · 국가인공지능전략위원회",
-   "count": 3,
+   "count": 4,
    "prev": 10,
-   "delta": -7
+   "delta": -6
   },
   {
    "name": "정부 · 국가데이터처",
@@ -196,80 +202,80 @@
  "keywords": [
   {
    "word": "서울대병원",
-   "count": 145,
+   "count": 147,
    "prev": 143,
    "status": ""
   },
   {
    "word": "식약처",
-   "count": 140,
+   "count": 141,
    "prev": 90,
    "status": ""
   },
   {
    "word": "보건복지부",
-   "count": 89,
+   "count": 91,
+   "prev": 76,
+   "status": ""
+  },
+  {
+   "word": "학술대회",
+   "count": 86,
    "prev": 76,
    "status": ""
   },
   {
    "word": "FDA",
-   "count": 85,
+   "count": 86,
    "prev": 86,
    "status": ""
   },
   {
-   "word": "학술대회",
-   "count": 84,
-   "prev": 76,
-   "status": ""
-  },
-  {
-   "word": "루닛",
-   "count": 83,
-   "prev": 64,
-   "status": ""
-  },
-  {
    "word": "세브란스",
-   "count": 81,
+   "count": 85,
    "prev": 78,
    "status": ""
   },
   {
+   "word": "루닛",
+   "count": 84,
+   "prev": 64,
+   "status": ""
+  },
+  {
    "word": "아산병원",
-   "count": 79,
+   "count": 81,
    "prev": 70,
    "status": ""
   },
   {
    "word": "삼성서울병원",
-   "count": 77,
+   "count": 79,
    "prev": 34,
    "status": "급증"
   },
   {
    "word": "국회",
-   "count": 70,
+   "count": 71,
    "prev": 37,
    "status": ""
   },
   {
    "word": "포럼",
-   "count": 64,
+   "count": 67,
    "prev": 51,
+   "status": ""
+  },
+  {
+   "word": "세미나",
+   "count": 53,
+   "prev": 91,
    "status": ""
   },
   {
    "word": "분당서울대",
    "count": 52,
    "prev": 65,
-   "status": ""
-  },
-  {
-   "word": "세미나",
-   "count": 52,
-   "prev": 91,
    "status": ""
   },
   {
@@ -297,15 +303,15 @@
    "status": ""
   },
   {
+   "word": "오픈AI",
+   "count": 34,
+   "prev": 17,
+   "status": "급증"
+  },
+  {
    "word": "심평원",
    "count": 34,
    "prev": 30,
-   "status": ""
-  },
-  {
-   "word": "오픈AI",
-   "count": 33,
-   "prev": 17,
    "status": ""
   },
   {
@@ -653,6 +659,28 @@
  ],
  "government_other": [
   {
+   "title": "건강검진 수검자 아니라도 국민 누구나 '국가통합바이오빅데이터' 참여 가능해진다",
+   "link": "https://news.google.com/rss/articles/CBMi6wFBVV95cUxQR2kta3RBalhLMVY3Mkdrb3RSQ1ZseHU0d25VNzgyX0w2NWNvalJ2alBGTmVsVE5sdF9BOFVJcFRWY3BLZllwdGpscUo2VDZ6amhKemJVY2pBRGpGS0VPdmR4RHNQcmlsblBSOXBzWXBOeDZhLVMyc25xMWo2a1F3Qzg0MmM2VW5ra0NZSzlieTlybTZud1dFbjA0ZUdGX2JHMkc3OC1qY3Fsdjc0R1NhMkN1YTRrdmtqS1ZIOVl2RFY5VXpfM2Nvb1p3dWhING9HeGl4Nk1kTEhUVndWR1ZjNG45RlY0QkVkQUxz?oc=5",
+   "date": "2026-11-22",
+   "category": "정부 보도자료 (검색)",
+   "region": "정부",
+   "score": 0,
+   "similar_count": 0,
+   "source": "정부 보도자료 (검색)",
+   "importance": 0
+  },
+  {
+   "title": "우리 동네 보건소에서도 대학병원급 AI 진료, 전국에 AI 진료지원 도구 보급한다",
+   "link": "https://news.google.com/rss/articles/CBMiiwFBVV95cUxOWXBTZ0xSLUpiM1dLbzdFY0U4UThLQ3hkVlpxMHUzcTRVc2E3X3BfR2hqMVpGcEM1aDBlNzJ0eXEtcVVCT2lJVDd0S3hSNjFWaVk3SDlFUDJ5cVpkcjJnMUFGR0ExamR4QlJQdU9ndlc1bjNPZ2d1NUtOVHEzak1tZ0dLM2V3NnFMN1RJ?oc=5",
+   "date": "2026-11-21",
+   "category": "정부 보도자료 (검색)",
+   "region": "정부",
+   "score": 0,
+   "similar_count": 0,
+   "source": "정부 보도자료 (검색)",
+   "importance": 0
+  },
+  {
    "title": "\"AI로 누구도 소외되지 않는 보건체계 구축\", 한국-아세안 보건 협력 연결망 강화",
    "link": "https://news.google.com/rss/articles/CBMijwFBVV95cUxPOTA0RUE1ZzJUaFNPS0xmNzFLcUEzRjc3YndBbTRGUExJdEVGWnhJQlFVNUZyT0xLOHdTUmdpLTkxZ2NpZElVZ3RYSEdRM0R0YUx6M0x3VnJFV3BnNzZLRk1nY0JEX051WlFFTUF2QkVLeWwwQmFzemdlZ2Z6YjN6TlNHWXZhME5YeWdLYlFwMA?oc=5",
    "date": "2026-11-21",
@@ -763,6 +791,28 @@
    "importance": 0
   },
   {
+   "title": "('26. 11. 17) 국가AI전략위, 대전서 ‘과학기술 AI·창업·인재’ 현장 소통",
+   "link": "https://www.aikorea.go.kr/web/board/brdDetail.do?menu_cd=000012&num=1141",
+   "date": "2026-11-17",
+   "category": "국가인공지능전략위원회",
+   "region": "정부",
+   "score": 0,
+   "similar_count": 0,
+   "source": "국가인공지능전략위원회",
+   "importance": 0
+  },
+  {
+   "title": "디지털헬스케어법은 의료정보의 특수성을 고려해 안전한 보호장치와 함께 활용을 지원하기 위",
+   "link": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTE5zUEg3aHJWUDRtd3QtZ2JVeFpxcjJHZktGLWRkM0xfWTFFNFdFUVdHbnZiYWVkR2ZVTWk1RGd3UkJNeGVMZzJYU3JYT0o4WU5TOFA0enNPSzRQbTVfcjhWU0t0ZW1JZUE?oc=5",
+   "date": "2026-11-16",
+   "category": "정부 보도자료 (검색)",
+   "region": "정부",
+   "score": 0,
+   "similar_count": 0,
+   "source": "정부 보도자료 (검색)",
+   "importance": 0
+  },
+  {
    "title": "[보도설명자료][11.16.월 경향신문]내 의료정보 동의 없이 AI 연구에 활용 디지털헬스케어법 논란 관련",
    "link": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxPVDloUml0dVc0eUxjNW1EMFRiSUI5U3VkLVEybF9NN3NSYXFpdWR3ZHVLTzg2WFNQcEpGZzNzM2RmOEY2TlRVRU5zU3hFdE82d0ZnMzFzN2s0MWFvdUt0a1VpOXI4cDRucHVzcnZDSHJVMXpDVHc3NVJ2cV9EMEcweXZFLVVmand5?oc=5",
    "date": "2026-11-16",
@@ -772,6 +822,17 @@
    "similar_count": 1,
    "source": "정부 보도자료 (검색)",
    "importance": 2
+  },
+  {
+   "title": "인구 대전환 시대 &#x27;변화와 공존’ 해법 찾다",
+   "link": "https://www.mohw.go.kr/board.es?mid=a10503000000&bid=0027&list_no=1492558&act=view",
+   "date": "2026-11-16",
+   "category": "보건복지부",
+   "region": "정부",
+   "score": 0,
+   "similar_count": 0,
+   "source": "보건복지부",
+   "importance": 0
   },
   {
    "title": "[보도참고] 식약처, 혁신의료기기 정책 포럼 2026 개최",
@@ -920,61 +981,6 @@
    "title": "AI 발전 속도에 발맞춰 보건의료데이터 안전 활용법 교육한다",
    "link": "https://news.google.com/rss/articles/CBMiiwFBVV95cUxQTVR0NTdSZmRSOEt1TVVaTEVnaGlmWkZ0UHM0YmxKREU4Z3pvemg1c3VLYkpVTDZGRGFKRElnQm1scGRndktNT1F0Nld4ZWFGQTlHejd2Z05nNWM3d3lzZDRReUozck1RZWVvWEhlQUF0djRLWEpqVEJKM1JYaEpkMVNkR3lYcjU0Y244?oc=5",
    "date": "2026-11-10",
-   "category": "정부 보도자료 (검색)",
-   "region": "정부",
-   "score": 0,
-   "similar_count": 0,
-   "source": "정부 보도자료 (검색)",
-   "importance": 0
-  },
-  {
-   "title": "보훈부, AI·로봇 등 첨단기술로 보훈복지시설 국가유공자 정신건강·안전 지원한다",
-   "link": "https://news.google.com/rss/articles/CBMidkFVX3lxTFBlaHUwNm1pWjE0OHkyMDlURXVkZUY0RTFZUldsWEY2MVY3UXd6dTFweHRsOWQ3cGFKRlVJY0hoaVI5NXhIY2M1UjVzNzk5by1QRjA2Z2lEZ0kzdFdNaTRwalNpLXQteGRZdUJ1V29PTGgtX3FmOUE?oc=5",
-   "date": "2026-11-09",
-   "category": "정부 보도자료 (검색)",
-   "region": "정부",
-   "score": 0,
-   "similar_count": 0,
-   "source": "정부 보도자료 (검색)",
-   "importance": 0
-  },
-  {
-   "title": "농사엔 AI를 더하고 현장엔 안전을 더합니다",
-   "link": "https://news.google.com/rss/articles/CBMiwgJBVV95cUxNR2JhVUxuaTBud0FSYmNYUVZ0Z0dkNExEOFpHN0Mxa3NHWi12YlJHLUxrQUVLbk0xR2hsWTFSZzJFRlVJR0wtX2xqMGxWd0lLaFhLYWRkQmFCTzBQZlpmQ1d1SFEwaHZzNElNWEZJdWxCZVpnYjA1X2ZtUkNsV0hMZTVJcFhwRy1vVDVYcnNXdHNWTGdOUDRPYjByZEdRc3lnQ055d0o2dEVmcFZHMW0tWmluRFRTXzBSLW5DTFVOMjA2Q19jU1VBbXZaWG44S29BOVc4c0dqMThLVnRJb1dJRHBmWTNlRGo3ZGlTbzZSVlZFOU90ZER6SFlEWlJibzFvc3JfQVNDRjV6V01QZ3FOTTBqajZWb1NjQ09PNFF2emhieHBuYW0xUlViOUdCb0RjckM0WG5qNU5iTVJMQUw1bndn?oc=5",
-   "date": "2026-11-09",
-   "category": "정부 보도자료 (검색)",
-   "region": "정부",
-   "score": 0,
-   "similar_count": 0,
-   "source": "정부 보도자료 (검색)",
-   "importance": 0
-  },
-  {
-   "title": "김종구 농식품부 차관, 전남광주통합특별시 및 강진군 고병원성 AI 등 방역실태 현장 점검",
-   "link": "https://news.google.com/rss/articles/CBMi7wFBVV95cUxON0plczhOeGpwUTlYS25Xd1ZJU1hEeTRBcTd4bHNOdnVXbEt2Vl9tRDlfVEgxNDVYaGpYcTJuVlR4V3dyZ3JrTzhQOFBod0xmdzZsUjVIdVZZODNMN3FsT0FjaFkwdVBsVnBDV3VacGpNWnBDSE1HNllraVJGR3BDakxlNXRmUUYxZEFHX2t0dmJ5cWRud25hRnJQeUNpSzNIc2IzVWJmNV96TUw5SnVnUWx4TGxLeDRjX1V2cmdlVTFnVlM2TThnaFBJX3Z5SFpRLWQwSzJCRjNURkx5QzVVM1dIVFRISU1tb2kxXzVtcw?oc=5",
-   "date": "2026-11-06",
-   "category": "정부 보도자료 (검색)",
-   "region": "정부",
-   "score": 0,
-   "similar_count": 0,
-   "source": "정부 보도자료 (검색)",
-   "importance": 0
-  },
-  {
-   "title": "내 건강은 또래와 비교하면 몇 점?…AI 건강도우미 챗봇이 답했다",
-   "link": "https://news.google.com/rss/articles/CBMihwFBVV95cUxNclQzWWkxa3dja3VfS29QWGpsODgwQmthZGYwREswaFdhM2JZalMzSl8yVkJ3dW5tSDdCNXRoQW14REwxbTdlLXpBZHJNX3gyNTJ0V3NaVWtaZnlCSEU5MEZQTXdJR1FncHlNdk9RMnlfZHRqdzgwYjNlZ1E3S2xwNEpTSkJHMUE?oc=5",
-   "date": "2026-11-06",
-   "category": "정부 보도자료 (검색)",
-   "region": "정부",
-   "score": 0,
-   "similar_count": 0,
-   "source": "정부 보도자료 (검색)",
-   "importance": 0
-  },
-  {
-   "title": "AI 맞춤형 화장품, 매장 규제는 어떻게 달라질까? - 영상 | 멀티미디어",
-   "link": "https://news.google.com/rss/articles/CBMibEFVX3lxTFBWOF9VeGZXWlpwTE5FemJUcVBJVkZ4YjFXMk5GZ2NPN0t2MnpQZS1NNDllQmFPdzhib0tVVGtvSU80cVpBVGkwNUtIcGxHMTNqdnJ2ZXN6WGRNMTU4Ynk2RC1CMWdkcEFodmhDbw?oc=5",
-   "date": "2026-11-05",
    "category": "정부 보도자료 (검색)",
    "region": "정부",
    "score": 0,
@@ -1784,6 +1790,41 @@
     "importance": 8
    }
   ],
+  "일간지 · 중앙일보": [
+   {
+    "title": "아산의료원장에 박승일 서울아산병원장, 서울아산병원장은 이제환",
+    "link": "https://news.google.com/rss/articles/CBMiVkFVX3lxTFBfTjllYWhRTmdiTDJLLVVneDRaZVEyQndZNTl6UUh5UW5vdGxXUzNrSFFBcWdqYjE2djdsaUh4cEViWTQteFkwWElNU1JaTmRaOHNhZE13?oc=5",
+    "date": "2026-11-22",
+    "category": "중앙일보",
+    "region": "일간지",
+    "score": 7,
+    "similar_count": 0,
+    "source": "news.google.com",
+    "importance": 10
+   },
+   {
+    "title": "[Health&] AI 기술로 기록 줄이고 환자와 대화 … ‘따뜻한 지능형 병원’으로",
+    "link": "https://news.google.com/rss/articles/CBMiVkFVX3lxTE12NHpsT0dvYk5RUGhrZVRremZQckNGSWdnRmE0NTVWcjRtcWlkVVlBakJqYjQxcVN3bjlVTl82X1NnNXFQWUFLU3l5NGFSS2VOQ3p0MFRn?oc=5",
+    "date": "2026-11-23",
+    "category": "중앙일보",
+    "region": "일간지",
+    "score": 6,
+    "similar_count": 0,
+    "source": "news.google.com",
+    "importance": 9
+   },
+   {
+    "title": "숭실대·서울대병원 연구팀, 파킨슨병 뇌세포 변화 담은 유전자 발현 지도 구축",
+    "link": "https://news.google.com/rss/articles/CBMiVkFVX3lxTE83dHlzN3JyYTI0c25DX1k1aTM1U3FteFoyMW5oS0ZBcFdqUGVJS2ZzejFORVdhZktMLVlKVnV3dEx1T2l2alNwUVBRWFZpRl9JXzYycGh3?oc=5",
+    "date": "2026-11-20",
+    "category": "중앙일보",
+    "region": "일간지",
+    "score": 5,
+    "similar_count": 0,
+    "source": "news.google.com",
+    "importance": 8
+   }
+  ],
   "해외 · 해외 의료기관 AI 도입·운영": [
    {
     "title": "Mayo Clinic Platform launches AI-driven clinical decision support tool",
@@ -1956,41 +1997,6 @@
     "score": 5,
     "similar_count": 0,
     "source": "news.jtbc.co.kr",
-    "importance": 8
-   }
-  ],
-  "일간지 · 중앙일보": [
-   {
-    "title": "숭실대·서울대병원 연구팀, 파킨슨병 뇌세포 변화 담은 유전자 발현 지도 구축",
-    "link": "https://news.google.com/rss/articles/CBMiVkFVX3lxTE83dHlzN3JyYTI0c25DX1k1aTM1U3FteFoyMW5oS0ZBcFdqUGVJS2ZzejFORVdhZktMLVlKVnV3dEx1T2l2alNwUVBRWFZpRl9JXzYycGh3?oc=5",
-    "date": "2026-11-20",
-    "category": "중앙일보",
-    "region": "일간지",
-    "score": 5,
-    "similar_count": 0,
-    "source": "news.google.com",
-    "importance": 8
-   },
-   {
-    "title": "“3분만에 돈까지 벌어줬다” 한국 의대 출신이 만든 ‘AI비서’",
-    "link": "https://news.google.com/rss/articles/CBMiVkFVX3lxTFBCeldBN2ZXeU5sYzdGR0RFaW90eTdTRGdlQXZTNTlSQkVVejNYRVVOUHhkMWp0dmJFZ2NWeVltdmd3ZDBDVkVFbEt1V2VGMlJhUERLOEln?oc=5",
-    "date": "2026-11-20",
-    "category": "중앙일보",
-    "region": "일간지",
-    "score": 5,
-    "similar_count": 0,
-    "source": "news.google.com",
-    "importance": 8
-   },
-   {
-    "title": "[Biz & Now] 대성그룹 “AI 탐구로 바이오·의료산업 혁신”",
-    "link": "https://news.google.com/rss/articles/CBMiVkFVX3lxTE0xUUhvSUEyWFZTM0JyLU9jVFlWTHhyMzBHem5DbXBxaDBWS0RiZUhrclNBNEtoTURWS2tHTXhNRWFnNnA4U2RvdmJkZ29rT2lKTGdVeVdR?oc=5",
-    "date": "2026-11-20",
-    "category": "중앙일보",
-    "region": "일간지",
-    "score": 5,
-    "similar_count": 0,
-    "source": "news.google.com",
     "importance": 8
    }
   ],
