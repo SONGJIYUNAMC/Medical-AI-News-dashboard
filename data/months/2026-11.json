@@ -1,17 +1,17 @@
 {
  "month": "2026-11",
- "generated_at": "2026-11-22T10:13:00.457674+09:00",
+ "generated_at": "2026-11-22T10:38:14.443119+09:00",
  "prev_month": "2026-10",
  "collected_days": 22,
  "first_day": "2026-11-01",
  "last_day": "2026-11-22",
- "total": 4156,
+ "total": 4162,
  "prev_total": 4285,
  "by_region": {
-  "국내": 3128,
-  "해외": 626,
+  "국내": 3130,
+  "해외": 627,
   "정부": 50,
-  "일간지": 352
+  "일간지": 355
  },
  "weekly": {
   "2026-W44": {
@@ -29,18 +29,18 @@
    "정부": 14
   },
   "2026-W47": {
-   "국내": 1050,
-   "일간지": 352,
-   "해외": 201,
+   "국내": 1052,
+   "일간지": 355,
+   "해외": 202,
    "정부": 19
   }
  },
  "categories": [
   {
    "name": "국내 · 국내 정책·규제",
-   "count": 839,
+   "count": 840,
    "prev": 648,
-   "delta": 191
+   "delta": 192
   },
   {
    "name": "국내 · 국내 의료 AI 기업",
@@ -50,9 +50,9 @@
   },
   {
    "name": "국내 · 국내 의료기관",
-   "count": 528,
+   "count": 529,
    "prev": 411,
-   "delta": 117
+   "delta": 118
   },
   {
    "name": "국내 · AI 거버넌스·보안",
@@ -86,9 +86,9 @@
   },
   {
    "name": "해외 · 해외 연구·학술",
-   "count": 92,
+   "count": 93,
    "prev": 74,
-   "delta": 18
+   "delta": 19
   },
   {
    "name": "일간지 · 한국일보",
@@ -104,9 +104,9 @@
   },
   {
    "name": "일간지 · 조선일보",
-   "count": 57,
+   "count": 60,
    "prev": 0,
-   "delta": 57
+   "delta": 60
   },
   {
    "name": "일간지 · 한겨레",
@@ -208,7 +208,7 @@
   },
   {
    "word": "보건복지부",
-   "count": 88,
+   "count": 89,
    "prev": 76,
    "status": ""
   },
@@ -1657,6 +1657,17 @@
     "importance": 10
    },
    {
+    "title": "정해원 경북대병원 교수, 보건복지부장관 표창 수상",
+    "link": "https://news.google.com/rss/articles/CBMicEFVX3lxTE1SNmZGRkNST0poYmFsdVV5MWFoUEl3b2Q5Rnhuel8yNDZOeDlMcEFyWHBOTEsxdFlXLUY1MWVPTU0tNFBiU20wMGVzOVF5X3ZVRGxoOVVYV20yVVlPbGpDX1NFY3p3TG5Idk42cUJxbDc?oc=5",
+    "date": "2026-11-21",
+    "category": "조선일보",
+    "region": "일간지",
+    "score": 6,
+    "similar_count": 0,
+    "source": "news.google.com",
+    "importance": 9
+   },
+   {
     "title": "심평원 “AI 도입해 진료비 과잉 청구만 집중 심사”",
     "link": "https://www.chosun.com/national/welfare-medical/2026/11/19/75JK53X6AFDNZDLSIX4VTSOY6I/",
     "date": "2026-11-19",
@@ -1666,17 +1677,6 @@
     "similar_count": 0,
     "source": "chosun.com",
     "importance": 9
-   },
-   {
-    "title": "규제 앞둔 대학병원 의료기기 납품사 ‘M&A 도미노’…을지·순천향도 매물로",
-    "link": "https://biz.chosun.com/science-chosun/medicine-health/2026/11/22/FCTEOUGMKFD6BHJW6UR54EFJ5I/",
-    "date": "2026-11-22",
-    "category": "조선일보",
-    "region": "일간지",
-    "score": 5,
-    "similar_count": 0,
-    "source": "biz.chosun.com",
-    "importance": 8
    }
   ],
   "일간지 · 경향신문": [
