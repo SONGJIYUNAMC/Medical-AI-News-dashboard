@@ -1,9 +1,9 @@
 {
-  "generated_at": "2026-11-22T10:36:21.819063+09:00",
+  "generated_at": "2026-11-22T11:13:26.479889+09:00",
   "window_hours": 26,
-  "count": 52,
-  "filtered_out": 179,
-  "filtered_off_topic": 9,
+  "count": 50,
+  "filtered_out": 176,
+  "filtered_off_topic": 10,
   "merged_similar": 2,
   "category_order": [
     "국내 정책·규제",
@@ -75,6 +75,25 @@
       "similar_sources": []
     },
     {
+      "title": "[알립니다] 원주 반도체·AI 산업 융합 세미나",
+      "summary": "이번 세미나는 급변하는 글로벌 산업환경 속에서 원주의 반도체·AI 산업 기반과 경쟁력을 진단하고, 의료기... 기업의 제품 개발로” -좌장 : 박준성 원주미래산업진흥원 디지털산업부장 ■ 주최·주관 : 강원일보...",
+      "link": "https://n.news.naver.com/mnews/article/087/0001232402?sid=102",
+      "originallink": "https://www.kwnews.co.kr/article/20261120500389",
+      "pubDate": "2026-11-22T10:58:00+09:00",
+      "queries": [
+        "디지털의료제품",
+        "의료 AI 기업",
+        "의료 AI 세미나",
+        "의료 AI"
+      ],
+      "category": "학술·연구·행사",
+      "score": 10,
+      "query": "디지털의료제품",
+      "source_type": "other",
+      "similar_count": 0,
+      "similar_sources": []
+    },
+    {
       "title": "약과 AI의 결합…치료 패러다임 바꾸는 디지털융합의약품",
       "summary": "식품의약품안전처는 디지털의료제품법을 제정해 지난해 1월 디지털융합의약품에 관한 법적 체계를 선제적으로 마련했다. 식약처 관계자는 \"디지털 기술의 발전으로 디지털융합의약품에 대한 국내외 기업들의 관심이...",
       "link": "https://n.news.naver.com/mnews/article/001/0016456058?sid=101",
@@ -91,42 +110,6 @@
       "score": 10,
       "query": "디지털의료제품",
       "source_type": "major",
-      "similar_count": 0,
-      "similar_sources": []
-    },
-    {
-      "title": "미국 의료기관 투자 흐름 바뀌나…루닛·바텍·씨젠 수혜 가능성",
-      "summary": "국내 상장사 가운데 병원 의료장비와 진단 분야에서는 루닛, 뷰노, 딥노이드 등 의료 인공지능 기업이 관련 종목으로 거론된다. 의료영상 분석과 진단 보조 솔루션을 병원에 공급하는 사업 구조를 갖고 있어 의료기관의...",
-      "link": "https://www.pinpointnews.co.kr/news/articleView.html?idxno=506552",
-      "originallink": "https://www.pinpointnews.co.kr/news/articleView.html?idxno=506552",
-      "pubDate": "2026-11-21T08:54:00+09:00",
-      "queries": [
-        "루닛",
-        "뷰노",
-        "딥노이드"
-      ],
-      "category": "국내 의료 AI 기업",
-      "score": 10,
-      "query": "루닛",
-      "source_type": "other",
-      "similar_count": 0,
-      "similar_sources": []
-    },
-    {
-      "title": "삼육보건대, 교원 AI 역량강화 워크숍 개최…전공별 AI 특화 교과목 개...",
-      "summary": "반면 학생의 AI 부정 사용을 판별할 역량이 있다는 응답은 14%에 머물렀다.이에 교수들은 생성형 AI 도구 클로드를 활용한 수업설계와 코딩 실습에 참여했다. 이어 의료AI융합과의 병원정보시스템 실무, 치위생과의...",
-      "link": "http://www.withinnews.co.kr/news/view.html?section=1&category=139&item=&no=41058",
-      "originallink": "http://www.withinnews.co.kr/news/view.html?section=1&category=139&item=&no=41058",
-      "pubDate": "2026-11-21T08:40:00+09:00",
-      "queries": [
-        "병원 생성형 AI",
-        "의료 AI",
-        "병원 AI"
-      ],
-      "category": "학술·연구·행사",
-      "score": 10,
-      "query": "병원 생성형 AI",
-      "source_type": "other",
       "similar_count": 0,
       "similar_sources": []
     },
@@ -383,6 +366,22 @@
       "score": 6,
       "query": "의료 AI 기업",
       "source_type": "other",
+      "similar_count": 0,
+      "similar_sources": []
+    },
+    {
+      "title": "“의사가 전공의 시험서 AI안경으로 문제 유출”…아르헨도 부정시험 몸...",
+      "summary": "국가시험에서 인공지능(AI) 기기를 이용한 부정 의혹으로 파장이 커지고 있는 가운데 아르헨티나에서도... 성적에 따라 전문과목과 수련 병원을 선택하게 되는 시험으로 전국에서 1만2646명이 응시했다. 부정행위 의혹은...",
+      "link": "https://n.news.naver.com/mnews/article/016/0002726688?sid=104",
+      "originallink": "https://biz.heraldcorp.com/article/10944994?ref=naver",
+      "pubDate": "2026-11-22T10:50:00+09:00",
+      "queries": [
+        "병원 AI"
+      ],
+      "category": "AI 거버넌스·보안",
+      "score": 5,
+      "query": "병원 AI",
+      "source_type": "major",
       "similar_count": 0,
       "similar_sources": []
     },
@@ -707,26 +706,6 @@
       "similar_sources": []
     },
     {
-      "title": "경기도의회 공공의료 확충과 수출기업 지원 실효성 강화 주문",
-      "summary": "인공지능(AI) 에이전트를 활용한 개발 효율화와 민간 우수 플랫폼 벤치마킹, 해외 바이어의 이용 편의성을... 경기도가 추진하는 공공의료 사업과 수출 지원 정책 모두 사업 추진 과정뿐 아니라 실제 주민과 기업이 체감할...",
-      "link": "https://www.newsclaim.co.kr/news/articleView.html?idxno=3083652",
-      "originallink": "https://www.newsclaim.co.kr/news/articleView.html?idxno=3083652",
-      "pubDate": "2026-11-21T08:38:00+09:00",
-      "queries": [
-        "의료 AI 지원사업",
-        "의료 AI 기업",
-        "의료 AI 책임",
-        "의료 AI",
-        "병원 AI"
-      ],
-      "category": "국내 정책·규제",
-      "score": 3,
-      "query": "의료 AI 지원사업",
-      "source_type": "other",
-      "similar_count": 0,
-      "similar_sources": []
-    },
-    {
       "title": "[정부 주요 일정] 경제·사회부처 주간 일정 (11월 23일 ~ 11월 27일)",
       "summary": "우리 기업의 해외 조달 시장 진출 지원한다. 25일(수) △경제부총리 10:00 비상경제장관회의(서울청사), 16... (서울) △AI 시대, 의료데이터 더 안전하고 쉽게 활용한다 「보건의료데이터 활용 가이드라인」...",
       "link": "https://www.etoday.co.kr/news/view/2651252",
@@ -842,23 +821,6 @@
       "category": "국내 의료 AI 기업",
       "score": 2,
       "query": "의료 AI 기업",
-      "source_type": "other",
-      "similar_count": 0,
-      "similar_sources": []
-    },
-    {
-      "title": "제46회 코엑스 호주유학박람회, 11월 28~29일 개최…대학입학·어학연수...",
-      "summary": "상담 대상 전공은 의대·약대·간호·치대·수의대 등 보건의료계열을 포함해 인공지능(AI), 정보기술(IT), 사이버보안, 공학, 건축, 유아교육, 경영, 회계, 호텔경영 등이다. 최근 호주 정부의 이민 및 비자 정책 변화에 맞춘...",
-      "link": "https://www.woodkorea.co.kr/news/articleView.html?idxno=92727",
-      "originallink": "https://www.woodkorea.co.kr/news/articleView.html?idxno=92727",
-      "pubDate": "2026-11-21T09:00:00+09:00",
-      "queries": [
-        "의료 AI 보안",
-        "의료 AI"
-      ],
-      "category": "AI 거버넌스·보안",
-      "score": 2,
-      "query": "의료 AI 보안",
       "source_type": "other",
       "similar_count": 0,
       "similar_sources": []
