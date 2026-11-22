@@ -1,8 +1,8 @@
 {
-  "generated_at": "2026-11-21T12:14:51.034814+09:00",
+  "generated_at": "2026-11-22T09:42:22.997856+09:00",
   "window_hours": 24,
-  "count": 22,
-  "filtered_out": 962,
+  "count": 9,
+  "filtered_out": 822,
   "category_order": [
     "조선일보",
     "중앙일보",
@@ -15,160 +15,108 @@
   "errors": [],
   "items": [
     {
-      "title": "박승일 아산의료원장·이제환 서울아산병원장",
-      "link": "https://www.chosun.com/national/welfare-medical/2026/11/21/55IX6IVYZFEXNJNGVL2XONBBWM/",
-      "originallink": "https://www.chosun.com/national/welfare-medical/2026/11/21/55IX6IVYZFEXNJNGVL2XONBBWM/",
+      "title": "'가택연금' 보우소나루, 장폐색으로 중환자실 입원… 의료진 \"수술 가능성\"",
+      "link": "https://news.google.com/rss/articles/CBMibkFVX3lxTE5fZlBYaG02UTEzbEtCWVpkSExfQjgwYmRjOUctZjJVSzQtWUhubVY0bkpjVDdCVloyd3RvYXVxZDhUT0VWcnRLdFpyU2FpUG0yYnJWYVdUWnJsLWMzYmt4QjNZT3pGdk03YmgzOVdn0gFzQVVfeXFMTjFPSHlmbG5sbEwwbThEaGtRb1ZOald6aHJGbEktVEg4VXQwa3dqdVJfQ194VG9CVk5fN0ZmMDdFa1hPcloyel9Wei04WDIyWFgwa3Byc0hPZmh1OFdRRy1mQ3MzQXZKellYNldkc2lsOU8xUQ?oc=5",
+      "originallink": "https://news.google.com/rss/articles/CBMibkFVX3lxTE5fZlBYaG02UTEzbEtCWVpkSExfQjgwYmRjOUctZjJVSzQtWUhubVY0bkpjVDdCVloyd3RvYXVxZDhUT0VWcnRLdFpyU2FpUG0yYnJWYVdUWnJsLWMzYmt4QjNZT3pGdk03YmgzOVdn0gFzQVVfeXFMTjFPSHlmbG5sbEwwbThEaGtRb1ZOald6aHJGbEktVEg4VXQwa3dqdVJfQ194VG9CVk5fN0ZmMDdFa1hPcloyel9Wei04WDIyWFgwa3Byc0hPZmh1OFdRRy1mQ3MzQXZKellYNldkc2lsOU8xUQ?oc=5",
       "summary": "",
-      "pubDate": "2026-11-21T00:42:00+09:00",
-      "category": "조선일보",
-      "press": "조선일보",
-      "source": "조선일보",
-      "queries": [
-        "의료",
-        "병원",
-        "서울아산병원",
-        "아산병원"
-      ],
-      "source_type": "major",
-      "score": 7
-    },
-    {
-      "title": "아산재단, 박승일 신임 아산의료원장·이제환 서울아산병원장 임명",
-      "link": "https://news.google.com/rss/articles/CBMiX0FVX3lxTFBEZ1g3Z1J2TlhjdzlJcjRfUnRhOWpMMzBVaU9jVzJwZTdSTWZSRnpiRzFsQ0hBdS1ram5CeVR4WGF4akJ5Ny1pNWZhZUVUSjhmRm81MTlSY2NOcWp6LVM40gFfQVVfeXFMUERnWDdnUnZOWGN3OUlyNF9SdGE5akwzMFVpT2NXMnBlN1JNZlJGemJHMWxDSEF1LWtqbkJ5VHhYYXhqQnk3LWk1ZmFlRVRKOGZGbzUxOVJjY05xanotUzg?oc=5",
-      "originallink": "https://news.google.com/rss/articles/CBMiX0FVX3lxTFBEZ1g3Z1J2TlhjdzlJcjRfUnRhOWpMMzBVaU9jVzJwZTdSTWZSRnpiRzFsQ0hBdS1ram5CeVR4WGF4akJ5Ny1pNWZhZUVUSjhmRm81MTlSY2NOcWp6LVM40gFfQVVfeXFMUERnWDdnUnZOWGN3OUlyNF9SdGE5akwzMFVpT2NXMnBlN1JNZlJGemJHMWxDSEF1LWtqbkJ5VHhYYXhqQnk3LWk1ZmFlRVRKOGZGbzUxOVJjY05xanotUzg?oc=5",
-      "summary": "",
-      "pubDate": "2026-11-20T16:19:00+09:00",
-      "category": "경향신문",
-      "press": "경향신문",
-      "source": "경향신문",
-      "queries": [
-        "의료",
-        "병원",
-        "서울아산병원",
-        "아산병원"
-      ],
-      "source_type": "major",
-      "score": 7
-    },
-    {
-      "title": "아산의료원장에 폐암 권위자 박승일 서울아산병원장 임명",
-      "link": "https://news.google.com/rss/articles/CBMibkFVX3lxTE55Vjc3eVo1UnlhUHllZGdFNlRycEFPQlZDZ25XOVpqNTByUmQ5RHBmeVdJUjZRTVQ5Z3ZxVFhKYmI1R21RNE9QaUZESmxWNW04SnhwdkY2eFNMWnpBMFNVRXNERmQyVzZWcWk4Wi130gFzQVVfeXFMUEQxclBRelZfSVJfTWFEUUFvMDB2TmtNc0djOGk1TFlVQU1fNlROYXRXelhTTEJTb0NyQ0xrQy1ULVpUS0s0cW9qb2QzTjVFWVlXeDdyV1RPZ3VSTGJzVGlqbEpuN3M1SzhNbWlRZHZXbktCbw?oc=5",
-      "originallink": "https://news.google.com/rss/articles/CBMibkFVX3lxTE55Vjc3eVo1UnlhUHllZGdFNlRycEFPQlZDZ25XOVpqNTByUmQ5RHBmeVdJUjZRTVQ5Z3ZxVFhKYmI1R21RNE9QaUZESmxWNW04SnhwdkY2eFNMWnpBMFNVRXNERmQyVzZWcWk4Wi130gFzQVVfeXFMUEQxclBRelZfSVJfTWFEUUFvMDB2TmtNc0djOGk1TFlVQU1fNlROYXRXelhTTEJTb0NyQ0xrQy1ULVpUS0s0cW9qb2QzTjVFWVlXeDdyV1RPZ3VSTGJzVGlqbEpuN3M1SzhNbWlRZHZXbktCbw?oc=5",
-      "summary": "",
-      "pubDate": "2026-11-20T15:05:00+09:00",
+      "pubDate": "2026-11-22T09:24:00+09:00",
       "category": "한국일보",
       "press": "한국일보",
       "source": "한국일보",
       "queries": [
         "의료",
-        "병원",
-        "서울아산병원",
-        "아산병원"
-      ],
-      "source_type": "major",
-      "score": 7
-    },
-    {
-      "title": "신촌세브란스 진료실서 의사에 흉기 휘두른 50대 여성 구속기소",
-      "link": "https://www.donga.com/news/Society/article/all/20261121/135064516/1",
-      "originallink": "https://www.donga.com/news/Society/article/all/20261121/135064516/1",
-      "summary": "서울 서대문구 신촌 세브란스병원에서 정신건강의학과 교수에게 흉기를 휘둘러 다치게 한 50대 여성이 재판에 넘겨졌다.21일 법조계에 따르면 서울서부지방공소청은 이달 19일 50대 여성을 살인미수와 의료법 위반, 업무방해 혐의로 구속 기소했다.이 여성은 이달 4일 오후 4시 35분경 신촌 세브란스병원 진료실에서 정신건강의학과 교수의 얼굴 등에 흉기를 휘둘러 살해하려 한 혐의를 받는다. 진료 중인 의료인에게 상해를 입히고 환자 진료 업무를 방해한 혐의도 있다.피해 교수는 얼굴 등에 약 5cm 길이의 자상을 입고 응급실에서 치료받았다. 생",
-      "pubDate": "2026-11-21T09:11:00+09:00",
-      "category": "동아일보",
-      "press": "동아일보",
-      "source": "동아일보",
-      "queries": [
-        "의사",
-        "진료",
-        "세브란스"
+        "의료진",
+        "환자"
       ],
       "source_type": "major",
       "score": 6
     },
     {
-      "title": "큐로셀 국산 1호 CAR-T ‘림카토’, 12월부터 건보 적용…환자 부담 600만원 수준",
-      "link": "https://www.chosun.com/economy/science/2026/11/21/GA3GEOJTHBQTMMZZGBRDSNDFGA/",
-      "originallink": "https://www.chosun.com/economy/science/2026/11/21/GA3GEOJTHBQTMMZZGBRDSNDFGA/",
-      "summary": "큐로셀은 키메라 항원수용체 T세포(CAR-T·카티) 치료제 ‘림카토(RIMQARTO)’의 건강보험 급여 적용을 위한 약가 협상을 마무리했다고 20일 밝혔다. 림카토는 보건복지부 건강보험정책심의위원회(건정심)에 상정됐으며, 1회 투여당 상한금액은 2억8001만6050원으로 책정됐다. 다음달 1일부터 건강보험 급여가 적용되며, 급여 적용 후 환자 본인 부담금은",
-      "pubDate": "2026-11-21T10:48:13+09:00",
+      "title": "규제 앞둔 대학병원 의료기기 납품사 ‘M&A 도미노’…을지·순천향도 매물로",
+      "link": "https://biz.chosun.com/science-chosun/medicine-health/2026/11/22/FCTEOUGMKFD6BHJW6UR54EFJ5I/",
+      "originallink": "https://biz.chosun.com/science-chosun/medicine-health/2026/11/22/FCTEOUGMKFD6BHJW6UR54EFJ5I/",
+      "summary": "",
+      "pubDate": "2026-11-22T06:22:04+09:00",
       "category": "조선일보",
       "press": "조선일보",
       "source": "조선일보",
       "queries": [
-        "환자"
+        "의료",
+        "병원"
+      ],
+      "source_type": "major",
+      "score": 5
+    },
+    {
+      "title": "신촌세브란스 의사에 '흉기 난동' 50대 여성, 살인미수 혐의 구속 기소",
+      "link": "https://news.google.com/rss/articles/CBMic0FVX3lxTFB1Z3dwalVUTHVXYzNaZll2bVkxTmVqZk0yQkVld3ZBWWNLN3JOTlhTU3RIZlBfLUZEY0xoNW5IbXZvbFhINnduZTF1NVB6bWp3ZEpSZjcwY2hubnZadmZ3T01WRmgtb0ViVFlvdUZUc0szQ1XSAXNBVV95cUxQdWd3cGpVVEx1V2MzWmZZdm1ZMU5lamZNMkJFZXd2QVljSzdyTk5YU1N0SGZQXy1GRGNMaDVuSG12b2xYSDZ3bmUxdTVQem1qd2RKUmY3MGNobm52WnZmd09NVkZoLW9FYlRZb3VGVHNLM0NV?oc=5",
+      "originallink": "https://news.google.com/rss/articles/CBMic0FVX3lxTFB1Z3dwalVUTHVXYzNaZll2bVkxTmVqZk0yQkVld3ZBWWNLN3JOTlhTU3RIZlBfLUZEY0xoNW5IbXZvbFhINnduZTF1NVB6bWp3ZEpSZjcwY2hubnZadmZ3T01WRmgtb0ViVFlvdUZUc0szQ1XSAXNBVV95cUxQdWd3cGpVVEx1V2MzWmZZdm1ZMU5lamZNMkJFZXd2QVljSzdyTk5YU1N0SGZQXy1GRGNMaDVuSG12b2xYSDZ3bmUxdTVQem1qd2RKUmY3MGNobm52WnZmd09NVkZoLW9FYlRZb3VGVHNLM0NV?oc=5",
+      "summary": "",
+      "pubDate": "2026-11-21T12:36:00+09:00",
+      "category": "한국일보",
+      "press": "한국일보",
+      "source": "한국일보",
+      "queries": [
+        "의사",
+        "세브란스"
+      ],
+      "source_type": "major",
+      "score": 5
+    },
+    {
+      "title": "\"코 수술로 인생 망쳐\"…망치 들고 병원에서 난동",
+      "link": "https://news.google.com/rss/articles/CBMiVEFVX3lxTFBRbnNBY0M3aEVqc1hTV0QzdkdZQUNoeElsVU5jTGd4Qm5jOE13eURKbTBGTjlEYmZyQXBjRE83eTBLd0pZYVROWlU4M3MtQVFGTl9Rdg?oc=5",
+      "originallink": "https://news.google.com/rss/articles/CBMiVEFVX3lxTFBRbnNBY0M3aEVqc1hTV0QzdkdZQUNoeElsVU5jTGd4Qm5jOE13eURKbTBGTjlEYmZyQXBjRE83eTBLd0pZYVROWlU4M3MtQVFGTl9Rdg?oc=5",
+      "summary": "",
+      "pubDate": "2026-11-22T07:40:31+09:00",
+      "category": "JTBC",
+      "press": "JTBC",
+      "source": "JTBC",
+      "queries": [
+        "병원"
       ],
       "source_type": "major",
       "score": 4
     },
     {
-      "title": "맹승지, ♥피부과 의사와 연애하더니…남친과 화장품 공구 시작[Oh!쎈 이슈]",
-      "link": "https://biz.chosun.com/entertainment/enter_general/2026/11/21/MQYTQZLDGRRWGMDGMNRDKNBTGQ/",
-      "originallink": "https://biz.chosun.com/entertainment/enter_general/2026/11/21/MQYTQZLDGRRWGMDGMNRDKNBTGQ/",
-      "summary": "개그우먼 맹승지가 피부과 의사 남자친구와 화장품 공동구매에 나섰다. 공개 열애에 이어 결혼 소식까지 전했던 가운데, 이번에는 남자친구와 함께 제품 홍보에 나서 눈길을 끈다.맹승지는 지난 20일 자신의 SNS에 “젊어지는 에센스가 있다? 내일(21일) 부터 24일까지만 공구 합니다! 가격이 언제 인상 될지 미지수라! 많이 쟁여두세요”라는 글을 게재했다.함께",
-      "pubDate": "2026-11-21T08:24:00+09:00",
-      "category": "조선일보",
-      "press": "조선일보",
-      "source": "조선일보",
-      "queries": [
-        "의사"
-      ],
-      "source_type": "major",
-      "score": 4
-    },
-    {
-      "title": "신생아 팔 영구장애 분만사고…의사, 설명의무 위반만 인정",
-      "link": "https://www.donga.com/news/Society/article/all/20261121/135064431/1",
-      "originallink": "https://www.donga.com/news/Society/article/all/20261121/135064431/1",
-      "summary": "유도분만 과정에서 신생아에게 영구적인 오른팔 신경 손상이 발생했지만, 법원이 의료진의 분만 과실은 인정하지 않았다. 다만 유도분만의 위험성과 다른 분만 방법을 산모에게 설명하지 않은 책임은 인정했다.21일 법조계에 따르면 광주지법 민사12단독 이상훈 부장판사는 산모 A씨 등이 산부인과 의사 B씨 등 2명을 상대로 낸 손해배상 소송에서 원고 일부승소를 판결하고, B씨가 A씨에게 위자료 1000만원을 지급하라고 명령했다.A씨는 2014년 7월 유도분만으로 아이를 출산했다. 아이는 출생 직후 오른쪽 팔 신경 손상을 진단받았고 두 차례 수",
-      "pubDate": "2026-11-21T07:53:33+09:00",
+      "title": "양양서 스킨스쿠버 40대 남성 호흡곤란…병원 이송",
+      "link": "https://www.donga.com/news/Society/article/all/20261121/135065080/1",
+      "originallink": "https://www.donga.com/news/Society/article/all/20261121/135065080/1",
+      "summary": "강원 양양군 인구항 인근 해상에서 스킨스쿠버를 하던 40대 남성이 호흡곤란 증세를 보여 병원으로 옮겨졌다.21일 소방당국에 따르면 이날 오전 11시5분께 양양군 현남면 인구리 인구항 인근에서 스킨스쿠버 활동을 하던 A(45·서울)씨가 호흡곤란을 호소한다는 신고가 접수됐다.A씨는 바닷속에서 스킨스쿠버 활동을 마치고 물 밖으로 나오던 중 바닷물을 다량 섭취한 것으로 파악됐다.신고를 받고 출동한 119구급대는 A씨에게 응급처치를 한 뒤 강릉아산병원으로 이송했다.경찰과 소방당국은 정확한 사고 경위 등을 확인하고 있다.[양양=뉴시스]",
+      "pubDate": "2026-11-21T19:29:16+09:00",
       "category": "동아일보",
       "press": "동아일보",
       "source": "동아일보",
       "queries": [
+        "병원"
+      ],
+      "source_type": "major",
+      "score": 4
+    },
+    {
+      "title": "이사회는 왜 젠슨 황 복귀 의사 없다 했나...외신 \"정직성 부족과 거짓말 때문’",
+      "link": "https://news.google.com/rss/articles/CBMiVEFVX3lxTE9ZRGV6RXpDZUJmZ1dIeHdOTUQ0LVhNREdKeExOb21sYzRCVUZFOUVXU0tiQjFac2tvRDU0LXZtTVRGSm5zbENwdVNZeUFERjMwM0lpdg?oc=5",
+      "originallink": "https://news.google.com/rss/articles/CBMiVEFVX3lxTE9ZRGV6RXpDZUJmZ1dIeHdOTUQ0LVhNREdKeExOb21sYzRCVUZFOUVXU0tiQjFac2tvRDU0LXZtTVRGSm5zbENwdVNZeUFERjMwM0lpdg?oc=5",
+      "summary": "",
+      "pubDate": "2026-11-21T16:01:00+09:00",
+      "category": "JTBC",
+      "press": "JTBC",
+      "source": "JTBC",
+      "queries": [
         "의사"
       ],
       "source_type": "major",
       "score": 4
     },
     {
-      "title": "26년 만에 민주유공자법 통과…민주화 운동 희생자·유족 의료비 등 지원",
-      "link": "https://news.google.com/rss/articles/CBMidEFVX3lxTE1LcVVqRjZodl9iWEgwVXpIcUpOUlVRcUw2UXpMbEkyZV9vcHFTaVFzSkJTTGYxcEFuWTY2WmVDVDM3Y3NNX0xVUk9OTkFpQlNQZ21BOTRNSW9XNXdiS3BXOGEycXpnWC1DaW1KU01sbzNnQ2Zo?oc=5",
-      "originallink": "https://news.google.com/rss/articles/CBMidEFVX3lxTE1LcVVqRjZodl9iWEgwVXpIcUpOUlVRcUw2UXpMbEkyZV9vcHFTaVFzSkJTTGYxcEFuWTY2WmVDVDM3Y3NNX0xVUk9OTkFpQlNQZ21BOTRNSW9XNXdiS3BXOGEycXpnWC1DaW1KU01sbzNnQ2Zo?oc=5",
+      "title": "수능 6수 끝 세상 떠난 의대 지망생…“부정행위가 꿈 짓밟아”",
+      "link": "https://news.google.com/rss/articles/CBMiVkFVX3lxTE1EazcxdndCQm54dVRXMHg0alI3VHRRcTFTdlBuNFNBQThJdWI5T09aU0o5NDQ1QnJselFZc2NheEtRNkVlV2xNYUFjaFRfdWotZjR2Wk9B?oc=5",
+      "originallink": "https://news.google.com/rss/articles/CBMiVkFVX3lxTE1EazcxdndCQm54dVRXMHg0alI3VHRRcTFTdlBuNFNBQThJdWI5T09aU0o5NDQ1QnJselFZc2NheEtRNkVlV2xNYUFjaFRfdWotZjR2Wk9B?oc=5",
       "summary": "",
-      "pubDate": "2026-11-21T01:29:00+09:00",
-      "category": "한겨레",
-      "press": "한겨레",
-      "source": "한겨레",
-      "queries": [
-        "의료"
-      ],
-      "source_type": "major",
-      "score": 4
-    },
-    {
-      "title": "10년 만에 ‘국내 감염 추정’ 콜레라 환자 발생…질병청 감염경로 추적 나서",
-      "link": "https://news.google.com/rss/articles/CBMiZkFVX3lxTE1QNWxDVlNwbVRhOVlYYl8xaXpRd2tZM1MwVkd4SVVsOUU4TzIxZk1XODZEaDV2cEN2dm5kV2RkQ013WEw2VGpqaXpxTUlPNzJtVlJ4Uk9BSWdWR2gzMF92T28xZVAzUQ?oc=5",
-      "originallink": "https://news.google.com/rss/articles/CBMiZkFVX3lxTE1QNWxDVlNwbVRhOVlYYl8xaXpRd2tZM1MwVkd4SVVsOUU4TzIxZk1XODZEaDV2cEN2dm5kV2RkQ013WEw2VGpqaXpxTUlPNzJtVlJ4Uk9BSWdWR2gzMF92T28xZVAzUQ?oc=5",
-      "summary": "",
-      "pubDate": "2026-11-21T01:19:00+09:00",
-      "category": "한겨레",
-      "press": "한겨레",
-      "source": "한겨레",
-      "queries": [
-        "환자"
-      ],
-      "source_type": "major",
-      "score": 4
-    },
-    {
-      "title": "SKY 의대 합격선 ’298점‘… 작년보다 최고 10점 올라",
-      "link": "https://www.chosun.com/national/education/2026/11/21/6Z2256ZEQVCGZNBAWGKJVR4QU4/",
-      "originallink": "https://www.chosun.com/national/education/2026/11/21/6Z2256ZEQVCGZNBAWGKJVR4QU4/",
-      "summary": "",
-      "pubDate": "2026-11-21T00:49:00+09:00",
-      "category": "조선일보",
-      "press": "조선일보",
-      "source": "조선일보",
+      "pubDate": "2026-11-21T15:26:07+09:00",
+      "category": "중앙일보",
+      "press": "중앙일보",
+      "source": "중앙일보",
       "queries": [
         "의대"
       ],
@@ -176,179 +124,29 @@
       "score": 4
     },
     {
-      "title": "“지방서 일할 의사 모십니다” 일당 100만원 주고, 은퇴한 70대 채용",
-      "link": "https://www.chosun.com/national/welfare-medical/2026/11/21/EZ4GLLQNURAHVE7R545C3WCMKU/",
-      "originallink": "https://www.chosun.com/national/welfare-medical/2026/11/21/EZ4GLLQNURAHVE7R545C3WCMKU/",
+      "title": "병원도 외면하는 우리, 어디로 가나요",
+      "link": "https://news.google.com/rss/articles/CBMib0FVX3lxTE8zNVcwbzVUb2hBSXpXcDh2RGw1OHVhR2pYNXpzaWMyLVRSbzRBNy1fZ3BxSDRiSDJjVDQxQTh4MVAxczA5YzA2d1JPTFh4RFFNdE1DWnFWaTFvcTRnU0h5SnFpT0NLNFpCTk5WSTNZMA?oc=5",
+      "originallink": "https://news.google.com/rss/articles/CBMib0FVX3lxTE8zNVcwbzVUb2hBSXpXcDh2RGw1OHVhR2pYNXpzaWMyLVRSbzRBNy1fZ3BxSDRiSDJjVDQxQTh4MVAxczA5YzA2d1JPTFh4RFFNdE1DWnFWaTFvcTRnU0h5SnFpT0NLNFpCTk5WSTNZMA?oc=5",
       "summary": "",
-      "pubDate": "2026-11-21T00:46:00+09:00",
-      "category": "조선일보",
-      "press": "조선일보",
-      "source": "조선일보",
-      "queries": [
-        "의사"
-      ],
-      "source_type": "major",
-      "score": 4
-    },
-    {
-      "title": "한국의 의료계가 ‘성역’이라고?",
-      "link": "https://www.chosun.com/national/weekend/2026/11/21/W3KTZ4HUGZBOVPAWLIZP7KNKNM/",
-      "originallink": "https://www.chosun.com/national/weekend/2026/11/21/W3KTZ4HUGZBOVPAWLIZP7KNKNM/",
-      "summary": "",
-      "pubDate": "2026-11-21T00:30:00+09:00",
-      "category": "조선일보",
-      "press": "조선일보",
-      "source": "조선일보",
-      "queries": [
-        "의료"
-      ],
-      "source_type": "major",
-      "score": 4
-    },
-    {
-      "title": "독감 의심환자 4주 연속 증가…입원환자 일주일새 1.5배↑",
-      "link": "https://news.google.com/rss/articles/CBMiZkFVX3lxTFAtRjczbFRzRWY1cWppQVFZZlY0cUpSZjhaSUROZmJRQ0dTRzFRY0VlalFYWThkZGFzNjZpMGpidVdLdGczNDhDd01XNGtMdENWUVRFcjBlTjBfOXc4cEt0ZVhhYTY4UQ?oc=5",
-      "originallink": "https://news.google.com/rss/articles/CBMiZkFVX3lxTFAtRjczbFRzRWY1cWppQVFZZlY0cUpSZjhaSUROZmJRQ0dTRzFRY0VlalFYWThkZGFzNjZpMGpidVdLdGczNDhDd01XNGtMdENWUVRFcjBlTjBfOXc4cEt0ZVhhYTY4UQ?oc=5",
-      "summary": "",
-      "pubDate": "2026-11-21T00:17:00+09:00",
+      "pubDate": "2026-11-21T15:26:00+09:00",
       "category": "한겨레",
       "press": "한겨레",
-      "source": "한겨레",
+      "source": "한겨레21",
       "queries": [
-        "환자"
-      ],
-      "source_type": "major",
-      "score": 4
-    },
-    {
-      "title": "[기고] 장기이식 수술을 앞둔 한 환자의 반성문",
-      "link": "https://news.google.com/rss/articles/CBMiY0FVX3lxTFBDLUl4bU9aanBMOUdZYTNqWlNCMXJvTGhjdTd2QXBZczFidGFZdzJ1SC13bjhMYVBWMkJUZnZzYmtxVlRlTWw1S25sSHRDV283VWltckNBYU9JamxzMFlEZFdRTdIBY0FVX3lxTFBDLUl4bU9aanBMOUdZYTNqWlNCMXJvTGhjdTd2QXBZczFidGFZdzJ1SC13bjhMYVBWMkJUZnZzYmtxVlRlTWw1S25sSHRDV283VWltckNBYU9JamxzMFlEZFdRTQ?oc=5",
-      "originallink": "https://news.google.com/rss/articles/CBMiY0FVX3lxTFBDLUl4bU9aanBMOUdZYTNqWlNCMXJvTGhjdTd2QXBZczFidGFZdzJ1SC13bjhMYVBWMkJUZnZzYmtxVlRlTWw1S25sSHRDV283VWltckNBYU9JamxzMFlEZFdRTdIBY0FVX3lxTFBDLUl4bU9aanBMOUdZYTNqWlNCMXJvTGhjdTd2QXBZczFidGFZdzJ1SC13bjhMYVBWMkJUZnZzYmtxVlRlTWw1S25sSHRDV283VWltckNBYU9JamxzMFlEZFdRTQ?oc=5",
-      "summary": "",
-      "pubDate": "2026-11-20T22:23:00+09:00",
-      "category": "경향신문",
-      "press": "경향신문",
-      "source": "스포츠경향",
-      "queries": [
-        "환자"
-      ],
-      "source_type": "major",
-      "score": 4
-    },
-    {
-      "title": "10년 만에 국내서 콜레라 환자 발생…질병청 “감염 경로 조사중”",
-      "link": "https://news.google.com/rss/articles/CBMiZkFVX3lxTE1QNWxDVlNwbVRhOVlYYl8xaXpRd2tZM1MwVkd4SVVsOUU4TzIxZk1XODZEaDV2cEN2dm5kV2RkQ013WEw2VGpqaXpxTUlPNzJtVlJ4Uk9BSWdWR2gzMF92T28xZVAzUQ?oc=5",
-      "originallink": "https://news.google.com/rss/articles/CBMiZkFVX3lxTE1QNWxDVlNwbVRhOVlYYl8xaXpRd2tZM1MwVkd4SVVsOUU4TzIxZk1XODZEaDV2cEN2dm5kV2RkQ013WEw2VGpqaXpxTUlPNzJtVlJ4Uk9BSWdWR2gzMF92T28xZVAzUQ?oc=5",
-      "summary": "",
-      "pubDate": "2026-11-20T18:23:00+09:00",
-      "category": "한겨레",
-      "press": "한겨레",
-      "source": "한겨레",
-      "queries": [
-        "환자"
+        "병원"
       ],
       "source_type": "major",
       "score": 4
     },
     {
       "title": "해외여행 안 갔는데…창원서 10년 만에 국내 감염 추정 콜레라 환자 발생",
-      "link": "https://news.jtbc.co.kr/article/NB12329100",
-      "originallink": "https://news.jtbc.co.kr/article/NB12329100",
-      "summary": "국내에서 감염된 것으로 추정되는 콜레라 환자가 10년 만에 나와 방역당국이 역학조사에 나섰습니다. 질병관리청은 오늘(20일) 경남 창원에서 확인된 콜레라 환자 1명에게서 어제(19일) 독소형 콜레라균(O1 오가와형",
-      "pubDate": "2026-11-20T17:21:03+09:00",
+      "link": "https://news.google.com/rss/articles/CBMiUkFVX3lxTE0wYkgzYmNtOWhEdWZCSmlETUhfeHRDR2JiQnNfejVPbWozOWxnQUU1T1VoVFBmdWNpTy1KTnQzeFQwOU1RN01BU3R0UkNvMk5iLXc?oc=5",
+      "originallink": "https://news.google.com/rss/articles/CBMiUkFVX3lxTE0wYkgzYmNtOWhEdWZCSmlETUhfeHRDR2JiQnNfejVPbWozOWxnQUU1T1VoVFBmdWNpTy1KTnQzeFQwOU1RN01BU3R0UkNvMk5iLXc?oc=5",
+      "summary": "",
+      "pubDate": "2026-11-21T10:57:26+09:00",
       "category": "JTBC",
       "press": "JTBC",
       "source": "JTBC",
-      "queries": [
-        "환자"
-      ],
-      "source_type": "major",
-      "score": 4
-    },
-    {
-      "title": "국내서 10년 만에 콜레라 환자 나왔다",
-      "link": "https://www.chosun.com/national/welfare-medical/2026/11/20/ACAZ3WHSSNEOVMJ2PLLIJGMZT4/",
-      "originallink": "https://www.chosun.com/national/welfare-medical/2026/11/20/ACAZ3WHSSNEOVMJ2PLLIJGMZT4/",
-      "summary": "",
-      "pubDate": "2026-11-20T16:52:39+09:00",
-      "category": "조선일보",
-      "press": "조선일보",
-      "source": "조선일보",
-      "queries": [
-        "환자"
-      ],
-      "source_type": "major",
-      "score": 4
-    },
-    {
-      "title": "심상치 않은 올겨울 독감…일주일 새 입원환자 45% 급증",
-      "link": "https://www.chosun.com/national/welfare-medical/2026/11/20/YDQ4QQEIKZG4VDKZIZC63FOGFI/",
-      "originallink": "https://www.chosun.com/national/welfare-medical/2026/11/20/YDQ4QQEIKZG4VDKZIZC63FOGFI/",
-      "summary": "",
-      "pubDate": "2026-11-20T16:16:11+09:00",
-      "category": "조선일보",
-      "press": "조선일보",
-      "source": "조선일보",
-      "queries": [
-        "환자"
-      ],
-      "source_type": "major",
-      "score": 4
-    },
-    {
-      "title": "케이메디허브, 독일 의료기기 전시회서 76억 원 규모 수출계약 추진",
-      "link": "https://news.google.com/rss/articles/CBMibkFVX3lxTE5yakFqcFVkRWd5YnNaVnBGc2h3dXlnRUZQek0xcmNnNEhVRmdtczRIMkI5TGhhRGRxNERWUWNJb1p6MnZWaUxoZmRvSDVJMkFPdkNfWnhYaHdYX1JPZXM3M2xsSnM2V2NkeUpSclNn?oc=5",
-      "originallink": "https://news.google.com/rss/articles/CBMibkFVX3lxTE5yakFqcFVkRWd5YnNaVnBGc2h3dXlnRUZQek0xcmNnNEhVRmdtczRIMkI5TGhhRGRxNERWUWNJb1p6MnZWaUxoZmRvSDVJMkFPdkNfWnhYaHdYX1JPZXM3M2xsSnM2V2NkeUpSclNn?oc=5",
-      "summary": "",
-      "pubDate": "2026-11-20T14:50:00+09:00",
-      "category": "한국일보",
-      "press": "한국일보",
-      "source": "한국일보",
-      "queries": [
-        "의료"
-      ],
-      "source_type": "major",
-      "score": 4
-    },
-    {
-      "title": "10년 만에 국내 콜레라 환자 발생…“음식 익혀 먹어야”",
-      "link": "https://www.donga.com/news/Society/article/all/20261120/135060566/1",
-      "originallink": "https://www.donga.com/news/Society/article/all/20261120/135060566/1",
-      "summary": "국내에서 2016년 이후 10년 만에 처음으로 콜레라 환자가 발생하면서 당국이 음식 섭취 등에서 위생관리를 당부했다. 20일 질병관리청에 따르면 6일 경남 창원에서 구토 및 설사 증상으로 응급실에 입원한 환자를 대상으로 검사를 한 결과 19일 새벽 독소형 콜레라균이 최종 확인됐다. 해당 환자는 증상이 소실돼 17일 퇴원했으나 추적 검사 연속 2회 음성 확인 시까지는 격리 관리된다. 이 환자는 최근 2개월 이내 해외여행력이 없어 국내 감염으로 추정되며 당국은 역학조사와 접촉자 모니터링을 실시하고 있다. 해외유입이 아닌 국내 발생 추정",
-      "pubDate": "2026-11-20T14:27:18+09:00",
-      "category": "동아일보",
-      "press": "동아일보",
-      "source": "동아일보",
-      "queries": [
-        "환자"
-      ],
-      "source_type": "major",
-      "score": 4
-    },
-    {
-      "title": "국내 감염 추정 콜레라 환자 10년 만에 발생···감염경로 조사 중",
-      "link": "https://news.google.com/rss/articles/CBMiWkFVX3lxTE5DcU91TldQclVYTzd3OUdLcWl2UVA0WlFfZWs0bTVPUFFWVW02ZFpwSnp0eFBMdllEb2UzLTR2OEN5YUd5OEthVTh2RjdiS2Y3cjRvV1YzS29zZ9IBX0FVX3lxTE5GR3NlZ09hdjJNajNjeTFPa0cxUEE3Ull5cU9ZYVUzSTg1akc2VDRPcjBqcEZIcGRuM1hpQkVtZ25rTGVIWDgzUktpenU1WWEtT2ZIbmFUSUFxa203ZDVZ?oc=5",
-      "originallink": "https://news.google.com/rss/articles/CBMiWkFVX3lxTE5DcU91TldQclVYTzd3OUdLcWl2UVA0WlFfZWs0bTVPUFFWVW02ZFpwSnp0eFBMdllEb2UzLTR2OEN5YUd5OEthVTh2RjdiS2Y3cjRvV1YzS29zZ9IBX0FVX3lxTE5GR3NlZ09hdjJNajNjeTFPa0cxUEE3Ull5cU9ZYVUzSTg1akc2VDRPcjBqcEZIcGRuM1hpQkVtZ25rTGVIWDgzUktpenU1WWEtT2ZIbmFUSUFxa203ZDVZ?oc=5",
-      "summary": "",
-      "pubDate": "2026-11-20T14:24:00+09:00",
-      "category": "경향신문",
-      "press": "경향신문",
-      "source": "경향신문",
-      "queries": [
-        "환자"
-      ],
-      "source_type": "major",
-      "score": 4
-    },
-    {
-      "title": "독감 환자 4주 연속 증가…사망 신고 건수 일주일새 2배 늘어",
-      "link": "https://news.google.com/rss/articles/CBMiZkFVX3lxTFAtRjczbFRzRWY1cWppQVFZZlY0cUpSZjhaSUROZmJRQ0dTRzFRY0VlalFYWThkZGFzNjZpMGpidVdLdGczNDhDd01XNGtMdENWUVRFcjBlTjBfOXc4cEt0ZVhhYTY4UQ?oc=5",
-      "originallink": "https://news.google.com/rss/articles/CBMiZkFVX3lxTFAtRjczbFRzRWY1cWppQVFZZlY0cUpSZjhaSUROZmJRQ0dTRzFRY0VlalFYWThkZGFzNjZpMGpidVdLdGczNDhDd01XNGtMdENWUVRFcjBlTjBfOXc4cEt0ZVhhYTY4UQ?oc=5",
-      "summary": "",
-      "pubDate": "2026-11-20T13:33:00+09:00",
-      "category": "한겨레",
-      "press": "한겨레",
-      "source": "한겨레",
       "queries": [
         "환자"
       ],

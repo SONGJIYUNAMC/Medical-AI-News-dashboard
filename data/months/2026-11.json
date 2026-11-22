@@ -1,17 +1,17 @@
 {
  "month": "2026-11",
- "generated_at": "2026-11-21T12:14:52.978336+09:00",
+ "generated_at": "2026-11-22T09:42:23.715331+09:00",
  "prev_month": "2026-10",
- "collected_days": 21,
+ "collected_days": 22,
  "first_day": "2026-11-01",
- "last_day": "2026-11-21",
- "total": 4096,
+ "last_day": "2026-11-22",
+ "total": 4151,
  "prev_total": 4285,
  "by_region": {
-  "국내": 3097,
-  "해외": 607,
-  "정부": 49,
-  "일간지": 343
+  "국내": 3125,
+  "해외": 625,
+  "정부": 50,
+  "일간지": 351
  },
  "weekly": {
   "2026-W44": {
@@ -29,108 +29,108 @@
    "정부": 14
   },
   "2026-W47": {
-   "국내": 1019,
-   "일간지": 343,
-   "해외": 182,
-   "정부": 18
+   "국내": 1047,
+   "일간지": 351,
+   "해외": 200,
+   "정부": 19
   }
  },
  "categories": [
   {
    "name": "국내 · 국내 정책·규제",
-   "count": 833,
+   "count": 839,
    "prev": 648,
-   "delta": 185
+   "delta": 191
   },
   {
    "name": "국내 · 국내 의료 AI 기업",
-   "count": 758,
+   "count": 765,
    "prev": 769,
-   "delta": -11
+   "delta": -4
   },
   {
    "name": "국내 · 국내 의료기관",
-   "count": 521,
+   "count": 528,
    "prev": 411,
-   "delta": 110
+   "delta": 117
   },
   {
    "name": "국내 · AI 거버넌스·보안",
-   "count": 349,
+   "count": 352,
    "prev": 324,
-   "delta": 25
+   "delta": 28
   },
   {
    "name": "국내 · 학술·연구·행사",
-   "count": 309,
+   "count": 312,
    "prev": 294,
-   "delta": 15
+   "delta": 18
   },
   {
    "name": "국내 · 해외 의료기관·정책·규제",
-   "count": 309,
+   "count": 311,
    "prev": 300,
-   "delta": 9
+   "delta": 11
   },
   {
    "name": "해외 · 해외 의료기관 AI 도입·운영",
-   "count": 294,
+   "count": 306,
    "prev": 285,
-   "delta": 9
+   "delta": 21
   },
   {
    "name": "해외 · 해외 정책·규제 (미국)",
-   "count": 173,
+   "count": 175,
    "prev": 171,
-   "delta": 2
+   "delta": 4
   },
   {
    "name": "해외 · 해외 연구·학술",
-   "count": 89,
+   "count": 92,
    "prev": 74,
-   "delta": 15
+   "delta": 18
   },
   {
    "name": "일간지 · 한국일보",
-   "count": 59,
+   "count": 61,
    "prev": 0,
-   "delta": 59
+   "delta": 61
   },
   {
    "name": "일간지 · 동아일보",
-   "count": 59,
+   "count": 60,
    "prev": 0,
-   "delta": 59
+   "delta": 60
   },
   {
    "name": "일간지 · 조선일보",
-   "count": 56,
+   "count": 57,
    "prev": 0,
-   "delta": 56
+   "delta": 57
   },
   {
    "name": "일간지 · 한겨레",
-   "count": 53,
+   "count": 54,
    "prev": 0,
-   "delta": 53
+   "delta": 54
   },
   {
    "name": "해외 · 해외 정책·규제 (유럽·영국)",
-   "count": 50,
+   "count": 51,
    "prev": 57,
-   "delta": -7
+   "delta": -6
   },
   {
    "name": "일간지 · 중앙일보",
-   "count": 50,
+   "count": 51,
    "prev": 0,
-   "delta": 50
+   "delta": 51
   },
   {
    "name": "일간지 · JTBC",
-   "count": 34,
+   "count": 36,
    "prev": 0,
-   "delta": 34
+   "delta": 36
   },
   {
    "name": "일간지 · 경향신문",
@@ -158,9 +158,9 @@
   },
   {
    "name": "정부 · 과학기술정보통신부",
-   "count": 7,
+   "count": 8,
    "prev": 2,
-   "delta": 5
+   "delta": 6
   },
   {
    "name": "정부 · 식품의약품안전처",
@@ -196,32 +196,32 @@
  "keywords": [
   {
    "word": "서울대병원",
-   "count": 144,
+   "count": 145,
    "prev": 143,
    "status": ""
   },
   {
    "word": "식약처",
-   "count": 138,
+   "count": 140,
    "prev": 90,
    "status": ""
   },
   {
    "word": "보건복지부",
-   "count": 87,
+   "count": 88,
    "prev": 76,
+   "status": ""
+  },
+  {
+   "word": "FDA",
+   "count": 85,
+   "prev": 86,
    "status": ""
   },
   {
    "word": "학술대회",
    "count": 84,
    "prev": 76,
-   "status": ""
-  },
-  {
-   "word": "FDA",
-   "count": 84,
-   "prev": 86,
    "status": ""
   },
   {
@@ -232,25 +232,25 @@
   },
   {
    "word": "세브란스",
-   "count": 80,
+   "count": 81,
    "prev": 78,
    "status": ""
   },
   {
    "word": "아산병원",
-   "count": 77,
+   "count": 79,
    "prev": 70,
    "status": ""
   },
   {
    "word": "삼성서울병원",
-   "count": 76,
+   "count": 77,
    "prev": 34,
    "status": "급증"
   },
   {
    "word": "국회",
-   "count": 69,
+   "count": 70,
    "prev": 37,
    "status": ""
   },
@@ -274,7 +274,7 @@
   },
   {
    "word": "심포지엄",
-   "count": 40,
+   "count": 41,
    "prev": 31,
    "status": ""
   },
@@ -664,6 +664,17 @@
    "importance": 0
   },
   {
+   "title": "우리 사회의 인공지능을 생각하고 토론하는 축제의 장, ｢AI 인사이트 페스티벌 시상식｣ 개최",
+   "link": "https://www.msit.go.kr/bbs/view.do?sCode=user&mId=307&mPid=208&bbsSeqNo=94&nttSeqNo=3187987",
+   "date": "2026-11-21",
+   "category": "과학기술정보통신부",
+   "region": "정부",
+   "score": 0,
+   "similar_count": 0,
+   "source": "과학기술정보통신부",
+   "importance": 0
+  },
+  {
    "title": "('26. 11. 20) 국가AI전략위, 전남광주서 국산 NPU, 조선 AX, 국가AI컴퓨팅센터 정책현장 방문",
    "link": "https://www.aikorea.go.kr/web/board/brdDetail.do?menu_cd=000012&num=1154",
    "date": "2026-11-20",
@@ -964,17 +975,6 @@
    "title": "AI 맞춤형 화장품, 매장 규제는 어떻게 달라질까? - 영상 | 멀티미디어",
    "link": "https://news.google.com/rss/articles/CBMibEFVX3lxTFBWOF9VeGZXWlpwTE5FemJUcVBJVkZ4YjFXMk5GZ2NPN0t2MnpQZS1NNDllQmFPdzhib0tVVGtvSU80cVpBVGkwNUtIcGxHMTNqdnJ2ZXN6WGRNMTU4Ynk2RC1CMWdkcEFodmhDbw?oc=5",
    "date": "2026-11-05",
-   "category": "정부 보도자료 (검색)",
-   "region": "정부",
-   "score": 0,
-   "similar_count": 0,
-   "source": "정부 보도자료 (검색)",
-   "importance": 0
-  },
-  {
-   "title": "'모두의 토론회'에서 살펴본 'AI 시대, 내 개인정보'",
-   "link": "https://news.google.com/rss/articles/CBMihwFBVV95cUxPUmlmeHVEcEJyTEZ1YXhfQzE0TmNWNlg4VnNYTzJuMUswaHFLdi03UDB3ZFVaYzc5NllOTF92Uk52bjBHM0NZR0k1SV9KZFhjZjI4aHNyWnBXMWNWS1hObS1NM3lZM1R4bFZfT2VMVTZTQW80a3IwN2kzOGllQmdaZ0d4OGQ1bTQ?oc=5",
-   "date": "2026-11-04",
    "category": "정부 보도자료 (검색)",
    "region": "정부",
    "score": 0,
@@ -1668,9 +1668,9 @@
     "importance": 9
    },
    {
-    "title": "“암 환자 할머니 병원 가는데”… 골목길 주차에 막힌 구급차",
-    "link": "https://biz.chosun.com/topics/topics_social/2026/11/20/QZ2QNKJPNJCVNGMCVAGST7IAZQ/",
-    "date": "2026-11-20",
+    "title": "규제 앞둔 대학병원 의료기기 납품사 ‘M&A 도미노’…을지·순천향도 매물로",
+    "link": "https://biz.chosun.com/science-chosun/medicine-health/2026/11/22/FCTEOUGMKFD6BHJW6UR54EFJ5I/",
+    "date": "2026-11-22",
     "category": "조선일보",
     "region": "일간지",
     "score": 5,
@@ -1738,15 +1738,15 @@
     "importance": 10
    },
    {
-    "title": "\"앗! 정신병원 냄새가\"… '무단 이탈 환자' 안전히 돌려보낸 간호대생",
-    "link": "https://news.google.com/rss/articles/CBMibkFVX3lxTFAzSVpYOEFjdW5Rd3ZIM1ZJNXNaMkJWeWVxOVVZbTE1Y041TTRkbVBxLURGQ0xvQzJkVTNHYTFsUC1tbnp4Qmh0a3hIb0o5dUZqLTlrYkkxRDhRVmhFV3p6ODNLbXVxbVRmVnFCMlFn0gFzQVVfeXFMUHBtNDhiblVFQlRPUzRhYTNiZlhveUtWUlBqajRvUGFIU2J3RXVHNGc2VmNsOEtBa0VoMEFWM016cUJETjRMUlQxUjR6UkVRM193a191eWRveDZxVDdIeXVxZEE1WkVielhJcnFNNnFMRFk3UQ?oc=5",
-    "date": "2026-11-17",
+    "title": "'가택연금' 보우소나루, 장폐색으로 중환자실 입원… 의료진 \"수술 가능성\"",
+    "link": "https://news.google.com/rss/articles/CBMibkFVX3lxTE5fZlBYaG02UTEzbEtCWVpkSExfQjgwYmRjOUctZjJVSzQtWUhubVY0bkpjVDdCVloyd3RvYXVxZDhUT0VWcnRLdFpyU2FpUG0yYnJWYVdUWnJsLWMzYmt4QjNZT3pGdk03YmgzOVdn0gFzQVVfeXFMTjFPSHlmbG5sbEwwbThEaGtRb1ZOald6aHJGbEktVEg4VXQwa3dqdVJfQ194VG9CVk5fN0ZmMDdFa1hPcloyel9Wei04WDIyWFgwa3Byc0hPZmh1OFdRRy1mQ3MzQXZKellYNldkc2lsOU8xUQ?oc=5",
+    "date": "2026-11-22",
     "category": "한국일보",
     "region": "일간지",
-    "score": 5,
+    "score": 6,
     "similar_count": 0,
     "source": "news.google.com",
-    "importance": 8
+    "importance": 9
    }
   ],
   "일간지 · 한겨레": [
