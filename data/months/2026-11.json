@@ -1,17 +1,17 @@
 {
  "month": "2026-11",
- "generated_at": "2026-11-23T08:29:41.134727+09:00",
+ "generated_at": "2026-11-23T10:10:34.531666+09:00",
  "prev_month": "2026-10",
  "collected_days": 23,
  "first_day": "2026-11-01",
  "last_day": "2026-11-23",
- "total": 4273,
+ "total": 4319,
  "prev_total": 4285,
  "by_region": {
-  "국내": 3204,
-  "해외": 639,
+  "국내": 3239,
+  "해외": 643,
   "정부": 55,
-  "일간지": 375
+  "일간지": 382
  },
  "weekly": {
   "2026-W44": {
@@ -35,54 +35,54 @@
    "정부": 19
   },
   "2026-W48": {
-   "국내": 72,
-   "일간지": 19,
-   "해외": 12,
+   "국내": 107,
+   "일간지": 26,
+   "해외": 16,
    "정부": 5
   }
  },
  "categories": [
   {
    "name": "국내 · 국내 정책·규제",
-   "count": 863,
+   "count": 868,
    "prev": 648,
-   "delta": 215
+   "delta": 220
   },
   {
    "name": "국내 · 국내 의료 AI 기업",
-   "count": 774,
+   "count": 782,
    "prev": 769,
-   "delta": 5
+   "delta": 13
   },
   {
    "name": "국내 · 국내 의료기관",
-   "count": 543,
+   "count": 554,
    "prev": 411,
-   "delta": 132
+   "delta": 143
   },
   {
    "name": "국내 · AI 거버넌스·보안",
-   "count": 368,
+   "count": 371,
    "prev": 324,
-   "delta": 44
+   "delta": 47
   },
   {
    "name": "국내 · 학술·연구·행사",
-   "count": 321,
+   "count": 327,
    "prev": 294,
-   "delta": 27
+   "delta": 33
   },
   {
    "name": "국내 · 해외 의료기관·정책·규제",
-   "count": 317,
+   "count": 319,
    "prev": 300,
-   "delta": 17
+   "delta": 19
   },
   {
    "name": "해외 · 해외 의료기관 AI 도입·운영",
-   "count": 312,
+   "count": 314,
    "prev": 285,
-   "delta": 27
+   "delta": 29
   },
   {
    "name": "해외 · 해외 정책·규제 (미국)",
@@ -92,21 +92,21 @@
   },
   {
    "name": "해외 · 해외 연구·학술",
-   "count": 95,
+   "count": 97,
    "prev": 74,
-   "delta": 21
+   "delta": 23
+  },
+  {
+   "name": "일간지 · 조선일보",
+   "count": 68,
+   "prev": 0,
+   "delta": 68
   },
   {
    "name": "일간지 · 한국일보",
    "count": 64,
    "prev": 0,
    "delta": 64
-  },
-  {
-   "name": "일간지 · 조선일보",
-   "count": 63,
-   "prev": 0,
-   "delta": 63
   },
   {
    "name": "일간지 · 동아일보",
@@ -134,15 +134,15 @@
   },
   {
    "name": "일간지 · JTBC",
-   "count": 37,
+   "count": 38,
    "prev": 0,
-   "delta": 37
+   "delta": 38
   },
   {
    "name": "일간지 · 경향신문",
-   "count": 34,
+   "count": 35,
    "prev": 0,
-   "delta": 34
+   "delta": 35
   },
   {
    "name": "정부 · 정부 보도자료 (검색)",
@@ -202,13 +202,13 @@
  "keywords": [
   {
    "word": "서울대병원",
-   "count": 147,
+   "count": 153,
    "prev": 143,
    "status": ""
   },
   {
    "word": "식약처",
-   "count": 141,
+   "count": 142,
    "prev": 90,
    "status": ""
   },
@@ -220,8 +220,14 @@
   },
   {
    "word": "학술대회",
-   "count": 86,
+   "count": 88,
    "prev": 76,
+   "status": ""
+  },
+  {
+   "word": "루닛",
+   "count": 86,
+   "prev": 64,
    "status": ""
   },
   {
@@ -237,14 +243,8 @@
    "status": ""
   },
   {
-   "word": "루닛",
-   "count": 84,
-   "prev": 64,
-   "status": ""
-  },
-  {
    "word": "아산병원",
-   "count": 81,
+   "count": 84,
    "prev": 70,
    "status": ""
   },
@@ -262,8 +262,14 @@
   },
   {
    "word": "포럼",
-   "count": 67,
+   "count": 69,
    "prev": 51,
+   "status": ""
+  },
+  {
+   "word": "분당서울대",
+   "count": 56,
+   "prev": 65,
    "status": ""
   },
   {
@@ -273,15 +279,15 @@
    "status": ""
   },
   {
-   "word": "분당서울대",
-   "count": 52,
-   "prev": 65,
+   "word": "심포지엄",
+   "count": 43,
+   "prev": 31,
    "status": ""
   },
   {
-   "word": "심포지엄",
-   "count": 41,
-   "prev": 31,
+   "word": "신의료기술",
+   "count": 40,
+   "prev": 26,
    "status": ""
   },
   {
@@ -297,26 +303,20 @@
    "status": ""
   },
   {
-   "word": "신의료기술",
-   "count": 38,
-   "prev": 26,
-   "status": ""
-  },
-  {
    "word": "오픈AI",
    "count": 34,
    "prev": 17,
    "status": "급증"
   },
   {
-   "word": "심평원",
+   "word": "서울성모병원",
    "count": 34,
-   "prev": 30,
+   "prev": 26,
    "status": ""
   },
   {
-   "word": "스마트 병원",
-   "count": 33,
+   "word": "심평원",
+   "count": 34,
    "prev": 30,
    "status": ""
   }
