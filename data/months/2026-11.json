@@ -1,17 +1,17 @@
 {
  "month": "2026-11",
- "generated_at": "2026-11-23T11:47:50.769373+09:00",
+ "generated_at": "2026-11-24T08:50:52.207411+09:00",
  "prev_month": "2026-10",
- "collected_days": 23,
+ "collected_days": 24,
  "first_day": "2026-11-01",
- "last_day": "2026-11-23",
- "total": 4346,
+ "last_day": "2026-11-24",
+ "total": 4558,
  "prev_total": 4285,
  "by_region": {
-  "국내": 3263,
-  "해외": 644,
-  "정부": 55,
-  "일간지": 384
+  "국내": 3407,
+  "해외": 684,
+  "정부": 56,
+  "일간지": 411
  },
  "weekly": {
   "2026-W44": {
@@ -35,114 +35,114 @@
    "정부": 19
   },
   "2026-W48": {
-   "국내": 131,
-   "일간지": 28,
-   "해외": 17,
-   "정부": 5
+   "국내": 275,
+   "일간지": 55,
+   "해외": 57,
+   "정부": 6
   }
  },
  "categories": [
   {
    "name": "국내 · 국내 정책·규제",
-   "count": 874,
+   "count": 912,
    "prev": 648,
-   "delta": 226
+   "delta": 264
   },
   {
    "name": "국내 · 국내 의료 AI 기업",
-   "count": 791,
+   "count": 828,
    "prev": 769,
-   "delta": 22
+   "delta": 59
   },
   {
    "name": "국내 · 국내 의료기관",
-   "count": 556,
+   "count": 572,
    "prev": 411,
-   "delta": 145
+   "delta": 161
   },
   {
    "name": "국내 · AI 거버넌스·보안",
-   "count": 372,
+   "count": 401,
    "prev": 324,
-   "delta": 48
+   "delta": 77
   },
   {
    "name": "국내 · 학술·연구·행사",
-   "count": 330,
+   "count": 343,
    "prev": 294,
-   "delta": 36
-  },
-  {
-   "name": "국내 · 해외 의료기관·정책·규제",
-   "count": 322,
-   "prev": 300,
-   "delta": 22
+   "delta": 49
   },
   {
    "name": "해외 · 해외 의료기관 AI 도입·운영",
-   "count": 315,
+   "count": 336,
    "prev": 285,
-   "delta": 30
+   "delta": 51
+  },
+  {
+   "name": "국내 · 해외 의료기관·정책·규제",
+   "count": 333,
+   "prev": 300,
+   "delta": 33
   },
   {
    "name": "해외 · 해외 정책·규제 (미국)",
-   "count": 177,
+   "count": 185,
    "prev": 171,
-   "delta": 6
+   "delta": 14
   },
   {
    "name": "해외 · 해외 연구·학술",
-   "count": 97,
+   "count": 104,
    "prev": 74,
-   "delta": 23
+   "delta": 30
   },
   {
    "name": "일간지 · 조선일보",
-   "count": 69,
+   "count": 71,
    "prev": 0,
-   "delta": 69
+   "delta": 71
   },
   {
    "name": "일간지 · 한국일보",
-   "count": 64,
+   "count": 70,
    "prev": 0,
-   "delta": 64
+   "delta": 70
   },
   {
    "name": "일간지 · 동아일보",
-   "count": 62,
+   "count": 65,
    "prev": 0,
-   "delta": 62
+   "delta": 65
   },
   {
    "name": "일간지 · 중앙일보",
-   "count": 61,
+   "count": 65,
    "prev": 0,
-   "delta": 61
+   "delta": 65
   },
   {
    "name": "해외 · 해외 정책·규제 (유럽·영국)",
-   "count": 54,
+   "count": 58,
    "prev": 57,
-   "delta": -3
+   "delta": 1
   },
   {
    "name": "일간지 · 한겨레",
-   "count": 54,
+   "count": 57,
    "prev": 0,
-   "delta": 54
-  },
-  {
-   "name": "일간지 · JTBC",
-   "count": 38,
-   "prev": 0,
-   "delta": 38
+   "delta": 57
   },
   {
    "name": "일간지 · 경향신문",
-   "count": 36,
+   "count": 43,
    "prev": 0,
-   "delta": 36
+   "delta": 43
+  },
+  {
+   "name": "일간지 · JTBC",
+   "count": 40,
+   "prev": 0,
+   "delta": 40
   },
   {
    "name": "정부 · 정부 보도자료 (검색)",
@@ -164,9 +164,9 @@
   },
   {
    "name": "정부 · 과학기술정보통신부",
-   "count": 8,
+   "count": 9,
    "prev": 2,
-   "delta": 6
+   "delta": 7
   },
   {
    "name": "정부 · 식품의약품안전처",
@@ -202,86 +202,92 @@
  "keywords": [
   {
    "word": "서울대병원",
-   "count": 154,
+   "count": 156,
    "prev": 143,
    "status": ""
   },
   {
    "word": "식약처",
-   "count": 142,
+   "count": 148,
    "prev": 90,
    "status": ""
   },
   {
    "word": "보건복지부",
-   "count": 91,
+   "count": 95,
    "prev": 76,
    "status": ""
   },
   {
    "word": "학술대회",
-   "count": 89,
+   "count": 92,
    "prev": 76,
    "status": ""
   },
   {
-   "word": "루닛",
-   "count": 86,
-   "prev": 64,
-   "status": ""
-  },
-  {
-   "word": "아산병원",
-   "count": 86,
-   "prev": 70,
-   "status": ""
-  },
-  {
-   "word": "FDA",
-   "count": 86,
-   "prev": 86,
-   "status": ""
-  },
-  {
    "word": "세브란스",
-   "count": 85,
+   "count": 90,
    "prev": 78,
    "status": ""
   },
   {
+   "word": "루닛",
+   "count": 89,
+   "prev": 64,
+   "status": ""
+  },
+  {
+   "word": "FDA",
+   "count": 89,
+   "prev": 86,
+   "status": ""
+  },
+  {
+   "word": "아산병원",
+   "count": 87,
+   "prev": 70,
+   "status": ""
+  },
+  {
    "word": "삼성서울병원",
-   "count": 79,
+   "count": 81,
    "prev": 34,
    "status": "급증"
   },
   {
    "word": "국회",
-   "count": 72,
+   "count": 74,
    "prev": 37,
-   "status": ""
+   "status": "급증"
   },
   {
    "word": "포럼",
-   "count": 70,
+   "count": 74,
    "prev": 51,
    "status": ""
   },
   {
    "word": "분당서울대",
-   "count": 57,
+   "count": 58,
    "prev": 65,
    "status": ""
   },
   {
    "word": "세미나",
-   "count": 53,
+   "count": 54,
    "prev": 91,
    "status": ""
   },
   {
    "word": "심포지엄",
-   "count": 44,
+   "count": 46,
    "prev": 31,
+   "status": ""
+  },
+  {
+   "word": "구글",
+   "count": 41,
+   "prev": 45,
    "status": ""
   },
   {
@@ -297,28 +303,22 @@
    "status": "급증"
   },
   {
-   "word": "구글",
-   "count": 38,
-   "prev": 45,
+   "word": "스마트 병원",
+   "count": 39,
+   "prev": 30,
    "status": ""
   },
   {
    "word": "심평원",
-   "count": 35,
+   "count": 38,
    "prev": 30,
    "status": ""
   },
   {
    "word": "오픈AI",
-   "count": 34,
+   "count": 36,
    "prev": 17,
    "status": "급증"
-  },
-  {
-   "word": "서울성모병원",
-   "count": 33,
-   "prev": 26,
-   "status": ""
   }
  ],
  "issues_domestic": [
@@ -389,6 +389,17 @@
    "importance": 64
   },
   {
+   "title": "시흥시, 내년 예산 194억원 줄여 편성…복지 예산은 551억 증액",
+   "link": "http://www.bizwnews.com/news/articleView.html?idxno=152738",
+   "date": "2026-11-23",
+   "category": "국내 의료기관",
+   "region": "국내",
+   "score": 7,
+   "similar_count": 27,
+   "source": "bizwnews.com",
+   "importance": 61
+  },
+  {
    "title": "한미약품, 퓨리오사AI 등과 맞손…‘에피데이’ 챗봇 국산 AI로 전환",
    "link": "https://www.edaily.co.kr/News/Read?newsId=04139366645641784&mediaCodeNo=257&utm_source=naver&utm_medium=referral&utm_campaign=news_syndication&utm_content=original_article",
    "date": "2026-11-02",
@@ -420,17 +431,6 @@
    "similar_count": 23,
    "source": "munhwa.com",
    "importance": 52
-  },
-  {
-   "title": "대웅제약, 환자 모니터링부터 로봇 재활까지…AI 스마트 병원 선보여",
-   "link": "https://www.donga.com/news/Health/article/all/20261111/135008828/1",
-   "date": "2026-11-11",
-   "category": "국내 의료기관",
-   "region": "국내",
-   "score": 12,
-   "similar_count": 21,
-   "source": "donga.com",
-   "importance": 57
   }
  ],
  "issues_global": [
@@ -658,6 +658,17 @@
   }
  ],
  "government_other": [
+  {
+   "title": "인공지능‧디지털자산 시대, 블록체인으로 신뢰의 미래를 열다",
+   "link": "https://www.msit.go.kr/bbs/view.do?sCode=user&mId=307&mPid=208&bbsSeqNo=94&nttSeqNo=3187992",
+   "date": "2026-11-23",
+   "category": "과학기술정보통신부",
+   "region": "정부",
+   "score": 0,
+   "similar_count": 0,
+   "source": "과학기술정보통신부",
+   "importance": 0
+  },
   {
    "title": "건강검진 수검자 아니라도 국민 누구나 '국가통합바이오빅데이터' 참여 가능해진다",
    "link": "https://news.google.com/rss/articles/CBMi6wFBVV95cUxQR2kta3RBalhLMVY3Mkdrb3RSQ1ZseHU0d25VNzgyX0w2NWNvalJ2alBGTmVsVE5sdF9BOFVJcFRWY3BLZllwdGpscUo2VDZ6amhKemJVY2pBRGpGS0VPdmR4RHNQcmlsblBSOXBzWXBOeDZhLVMyc25xMWo2a1F3Qzg0MmM2VW5ra0NZSzlieTlybTZud1dFbjA0ZUdGX2JHMkc3OC1qY3Fsdjc0R1NhMkN1YTRrdmtqS1ZIOVl2RFY5VXpfM2Nvb1p3dWhING9HeGl4Nk1kTEhUVndWR1ZjNG45RlY0QkVkQUxz?oc=5",
@@ -976,17 +987,6 @@
    "similar_count": 0,
    "source": "과학기술정보통신부",
    "importance": 0
-  },
-  {
-   "title": "AI 발전 속도에 발맞춰 보건의료데이터 안전 활용법 교육한다",
-   "link": "https://news.google.com/rss/articles/CBMiiwFBVV95cUxQTVR0NTdSZmRSOEt1TVVaTEVnaGlmWkZ0UHM0YmxKREU4Z3pvemg1c3VLYkpVTDZGRGFKRElnQm1scGRndktNT1F0Nld4ZWFGQTlHejd2Z05nNWM3d3lzZDRReUozck1RZWVvWEhlQUF0djRLWEpqVEJKM1JYaEpkMVNkR3lYcjU0Y244?oc=5",
-   "date": "2026-11-10",
-   "category": "정부 보도자료 (검색)",
-   "region": "정부",
-   "score": 0,
-   "similar_count": 0,
-   "source": "정부 보도자료 (검색)",
-   "importance": 0
   }
  ],
  "important_domestic": [
@@ -1167,6 +1167,17 @@
    "importance": 64
   },
   {
+   "title": "시흥시, 내년 예산 194억원 줄여 편성…복지 예산은 551억 증액",
+   "link": "http://www.bizwnews.com/news/articleView.html?idxno=152738",
+   "date": "2026-11-23",
+   "category": "국내 의료기관",
+   "region": "국내",
+   "score": 7,
+   "similar_count": 27,
+   "source": "bizwnews.com",
+   "importance": 61
+  },
+  {
    "title": "한미약품, 퓨리오사AI 등과 맞손…‘에피데이’ 챗봇 국산 AI로 전환",
    "link": "https://www.edaily.co.kr/News/Read?newsId=04139366645641784&mediaCodeNo=257&utm_source=naver&utm_medium=referral&utm_campaign=news_syndication&utm_content=original_article",
    "date": "2026-11-02",
@@ -1198,17 +1209,6 @@
    "similar_count": 24,
    "source": "news1.kr",
    "importance": 57
-  },
-  {
-   "title": "‘나락가는 젠슨황?’ 이번엔 사내 불륜 의혹…NYT, 유부녀 임원과 호텔...",
-   "link": "https://www.munhwa.com/article/11630719?ref=naver",
-   "date": "2026-11-12",
-   "category": "국내 의료 AI 기업",
-   "region": "국내",
-   "score": 3,
-   "similar_count": 23,
-   "source": "munhwa.com",
-   "importance": 52
   }
  ],
  "important_global": [
@@ -1403,15 +1403,15 @@
     "importance": 102
    },
    {
-    "title": "대웅제약, 환자 모니터링부터 로봇 재활까지…AI 스마트 병원 선보여",
-    "link": "https://www.donga.com/news/Health/article/all/20261111/135008828/1",
-    "date": "2026-11-11",
+    "title": "시흥시, 내년 예산 194억원 줄여 편성…복지 예산은 551억 증액",
+    "link": "http://www.bizwnews.com/news/articleView.html?idxno=152738",
+    "date": "2026-11-23",
     "category": "국내 의료기관",
     "region": "국내",
-    "score": 12,
-    "similar_count": 21,
-    "source": "donga.com",
-    "importance": 57
+    "score": 7,
+    "similar_count": 27,
+    "source": "bizwnews.com",
+    "importance": 61
    }
   ],
   "국내 · 국내 정책·규제": [
@@ -1473,15 +1473,15 @@
     "importance": 102
    },
    {
-    "title": "‘나락가는 젠슨황?’ 이번엔 사내 불륜 의혹…NYT, 유부녀 임원과 호텔...",
-    "link": "https://www.munhwa.com/article/11630719?ref=naver",
-    "date": "2026-11-12",
+    "title": "\"브라질로 확대\"…뷰노, 현지서 안저영상 AI 출시",
+    "link": "https://www.newsis.com/view/NISX20261123_0003878857",
+    "date": "2026-11-23",
     "category": "국내 의료 AI 기업",
     "region": "국내",
-    "score": 3,
-    "similar_count": 23,
-    "source": "munhwa.com",
-    "importance": 52
+    "score": 13,
+    "similar_count": 19,
+    "source": "newsis.com",
+    "importance": 54
    }
   ],
   "국내 · 정부 발표": [
@@ -1779,15 +1779,15 @@
     "importance": 9
    },
    {
-    "title": "박찬종 전 의원 별세…세브란스병원에 주검 기증",
-    "link": "https://news.google.com/rss/articles/CBMiakFVX3lxTE53Ym9hSWFfbzBjYzUyZFRuWHpkUEJRODRIT1NMQmkydWszSUdFY1p2c2ozdDJjWHg4U2UyQ3B4REd2SkNsNXdoZ3JjRjRUbkFXVE1SeWpqRi1EVVlOVWpQU252eWVNQUR3Qmc?oc=5",
-    "date": "2026-11-19",
+    "title": "‘환자 4명 사망’ 원병원, 보건소 점검은 ‘문제없음’…유족·단체 “진상규명 촉구”",
+    "link": "https://news.google.com/rss/articles/CBMiY0FVX3lxTE82Zjl6QnJNVFFPaG5HWUtBUU9KVklUMkFtbHdiU3hNTkJ6UG5GVWYzOVB0RnlTV2Q5ZThOQk51OXRDTkFrNDZFTnAtSjQ2TlM2THdqdFA1X0pnVkJza0VtUzdEMA?oc=5",
+    "date": "2026-11-23",
     "category": "한겨레",
     "region": "일간지",
-    "score": 5,
+    "score": 6,
     "similar_count": 0,
     "source": "news.google.com",
-    "importance": 8
+    "importance": 9
    }
   ],
   "일간지 · 중앙일보": [
