@@ -15,11 +15,18 @@ on:
 permissions:
   contents: write
 
+# 여러 수집이 동시에 돌면 서로 밀어내며 push 가 실패하므로 한 번에 하나만 실행
+concurrency:
+  group: news-data
+  cancel-in-progress: false
+
 jobs:
   collect:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
       - uses: actions/setup-python@v5
         with:
           python-version: "3.12"
@@ -41,10 +48,13 @@ jobs:
         continue-on-error: true
         run: python press_news.py --config press_sources.json --hours 24 --out data/press_news.json
       - name: 주간 누적 저장 (data/weeks)
+        if: always()
         run: python archive.py
       - name: 월간 집계 (data/months)
+        if: always()
         run: python monthly.py
       - name: Commit result
+        if: always()
         run: |
           git config user.name "github-actions"
           git config user.email "actions@users.noreply.github.com"
@@ -54,5 +64,12 @@ jobs:
           [ -f data/press_news.json ] && git add data/press_news.json || true
           git add data/weeks
           git add data/months || true
-          git diff --staged --quiet || git commit -m "chore: update news data"
-          git push
+          if git diff --staged --quiet; then echo "변경 사항 없음 - 커밋 생략"; exit 0; fi
+          git commit -m "chore: update news data"
+          # 그 사이 저장소가 바뀌었으면(다른 수집·직접 수정) 받아서 다시 올린다
+          for i in 1 2 3 4 5; do
+            git pull --rebase --autostash origin main || true
+            if git push; then echo "푸시 완료"; exit 0; fi
+            echo "푸시 재시도 $i"; sleep $((i * 10))
+          done
+          echo "푸시 실패"; exit 1
