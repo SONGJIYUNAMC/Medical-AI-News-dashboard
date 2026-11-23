@@ -173,6 +173,8 @@
     <button class="tab csv" id="csv" type="button">CSV 내려받기</button>
     <h4>GitHub 연결 (선택)</h4>
     <button class="tab csv" id="ghBtn" type="button">토큰 입력/해제</button>
+    <button class="tab csv" id="runBtn" type="button">지금 수집 실행</button>
+    <label class="toggle"><input type="checkbox" id="autoRun" checked> 오늘 수집이 없으면 자동 실행</label>
     <div class="ghstat" id="ghStat"></div>
     <h4>직접 지정</h4>
     <button class="tab csv" id="ovExp" type="button">내 지정 내보내기 (백업)</button>
@@ -570,6 +572,35 @@ async function ghPush() {
     }
     throw new Error("충돌");
   } catch (e) { ghStatus("GitHub 저장 실패(" + e.message + ") · 토큰 권한 확인. 이 브라우저에는 저장됨"); }
+}
+// 오늘 수집분이 없으면 대시보드를 열 때 수집 워크플로를 대신 실행해 준다(깃허브 예약이 밀릴 때 대비)
+async function runCollect(manual) {
+  if (!ghTok()) { if (manual) alert("사이드바 'GitHub 연결'에서 토큰을 먼저 등록하세요."); return; }
+  ghStatus("수집 실행을 요청하는 중…");
+  const r = await ghApi("/actions/workflows/naver-news-collect.yml/dispatches", { method: "POST", body: JSON.stringify({ ref: "main" }) });
+  if (r.status !== 204) { ghStatus("수집 실행 실패(" + r.status + ") · 토큰의 Actions 권한을 확인하세요"); return; }
+  ghStatus("수집을 시작했습니다 · 끝나면 자동으로 새로고침됩니다 (2~4분)");
+  const base = state.manifestAt || "";
+  let tries = 0;
+  const timer = setInterval(async () => {
+    tries++;
+    try {
+      const m = await getJson("data/weeks/index.json?t=" + Date.now());
+      if (m.generated_at && m.generated_at > base) {
+        clearInterval(timer); ghStatus("수집 완료 · 새로고침합니다"); location.reload(); return;
+      }
+    } catch (e) {}
+    if (tries >= 12) { clearInterval(timer); ghStatus("수집이 오래 걸립니다 · 잠시 뒤 새로고침해 주세요"); }
+  }, 30000);
+}
+async function autoCollectIfStale() {
+  if (!ghTok() || lsGet("autoRun") === "0") return;
+  const today = todayKST();
+  if (state.items.some(i => i.first_seen === today)) return;     // 오늘 수집분이 이미 있음
+  if (lsGet("autoRunDay") === today) return;                     // 오늘 이미 한 번 요청함
+  lsSet("autoRunDay", today);
+  ghStatus("오늘 수집분이 없어 수집을 시작합니다…");
+  runCollect(false);
 }
 async function addByLink(url, region, category, title) {
   if (!/^https?:\/\//i.test(url)) { alert("http:// 또는 https:// 로 시작하는 기사 주소를 입력하세요."); return; }
@@ -1345,6 +1376,7 @@ async function loadPeriod() {
   }
   const days = [...new Set(state.items.map(i => i.first_seen).filter(Boolean))].sort().reverse();
   setDayRange();
+  setTimeout(autoCollectIfStale, 1500);
   const today = todayKST();
   state.defDay = days.includes(today) ? today : (state.period === "n:1" && days.length ? days[0] : "전체");
   if (state.keepDay) { state.day = state.keepDay; state.keepDay = null; setDaySelects(state.day); } else applyDefaultDay();
@@ -1379,6 +1411,7 @@ function toCsv() {
 
 getJson("data/weeks/index.json").then(m => {
   state.manifest = (m.weeks || []).slice().reverse();
+  state.manifestAt = m.generated_at || "";
   if (!state.manifest.length) throw new Error("empty");
   showRunNotices(m.last_run);
   buildPeriods();
@@ -1423,6 +1456,9 @@ $("ghBtn").addEventListener("click", () => {
   const k = (prompt("GitHub 토큰(fine-grained)을 붙여넣으세요. 이 브라우저에만 저장됩니다.") || "").trim();
   if (k) { lsSet("ghToken", k); ghStatus("토큰 등록됨 · 변경 내용이 GitHub에 자동 저장됩니다"); }
 });
+$("runBtn").addEventListener("click", () => runCollect(true));
+try { if (lsGet("autoRun") === "0") $("autoRun").checked = false; } catch (e) {}
+$("autoRun").addEventListener("change", e => lsSet("autoRun", e.target.checked ? "1" : "0"));
 if (ghTok()) ghStatus("GitHub 연결됨");
 fbInit();
 if (!fbDb) getJson("data/overrides.json").catch(() => null).then(o => { ovLoad(o); if (state.items.length) render(); });
