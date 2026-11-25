@@ -1,17 +1,17 @@
 {
  "month": "2026-11",
- "generated_at": "2026-11-24T08:50:52.207411+09:00",
+ "generated_at": "2026-11-25T09:40:42.372725+09:00",
  "prev_month": "2026-10",
- "collected_days": 24,
+ "collected_days": 25,
  "first_day": "2026-11-01",
- "last_day": "2026-11-24",
- "total": 4558,
+ "last_day": "2026-11-25",
+ "total": 4857,
  "prev_total": 4285,
  "by_region": {
-  "국내": 3407,
-  "해외": 684,
-  "정부": 56,
-  "일간지": 411
+  "국내": 3630,
+  "해외": 726,
+  "정부": 58,
+  "일간지": 443
  },
  "weekly": {
   "2026-W44": {
@@ -35,120 +35,120 @@
    "정부": 19
   },
   "2026-W48": {
-   "국내": 275,
-   "일간지": 55,
-   "해외": 57,
-   "정부": 6
+   "국내": 498,
+   "일간지": 87,
+   "해외": 99,
+   "정부": 8
   }
  },
  "categories": [
   {
    "name": "국내 · 국내 정책·규제",
-   "count": 912,
+   "count": 966,
    "prev": 648,
-   "delta": 264
+   "delta": 318
   },
   {
    "name": "국내 · 국내 의료 AI 기업",
-   "count": 828,
+   "count": 902,
    "prev": 769,
-   "delta": 59
+   "delta": 133
   },
   {
    "name": "국내 · 국내 의료기관",
-   "count": 572,
+   "count": 600,
    "prev": 411,
-   "delta": 161
+   "delta": 189
   },
   {
    "name": "국내 · AI 거버넌스·보안",
-   "count": 401,
+   "count": 428,
    "prev": 324,
-   "delta": 77
+   "delta": 104
   },
   {
    "name": "국내 · 학술·연구·행사",
-   "count": 343,
+   "count": 362,
    "prev": 294,
-   "delta": 49
-  },
-  {
-   "name": "해외 · 해외 의료기관 AI 도입·운영",
-   "count": 336,
-   "prev": 285,
-   "delta": 51
+   "delta": 68
   },
   {
    "name": "국내 · 해외 의료기관·정책·규제",
-   "count": 333,
+   "count": 354,
    "prev": 300,
-   "delta": 33
+   "delta": 54
+  },
+  {
+   "name": "해외 · 해외 의료기관 AI 도입·운영",
+   "count": 348,
+   "prev": 285,
+   "delta": 63
   },
   {
    "name": "해외 · 해외 정책·규제 (미국)",
-   "count": 185,
+   "count": 199,
    "prev": 171,
-   "delta": 14
+   "delta": 28
   },
   {
    "name": "해외 · 해외 연구·학술",
-   "count": 104,
+   "count": 108,
    "prev": 74,
-   "delta": 30
+   "delta": 34
   },
   {
    "name": "일간지 · 조선일보",
-   "count": 71,
+   "count": 80,
    "prev": 0,
-   "delta": 71
+   "delta": 80
   },
   {
    "name": "일간지 · 한국일보",
-   "count": 70,
+   "count": 77,
    "prev": 0,
-   "delta": 70
+   "delta": 77
   },
   {
    "name": "일간지 · 동아일보",
-   "count": 65,
+   "count": 73,
    "prev": 0,
-   "delta": 65
-  },
-  {
-   "name": "일간지 · 중앙일보",
-   "count": 65,
-   "prev": 0,
-   "delta": 65
+   "delta": 73
   },
   {
    "name": "해외 · 해외 정책·규제 (유럽·영국)",
-   "count": 58,
+   "count": 70,
    "prev": 57,
-   "delta": 1
+   "delta": 13
+  },
+  {
+   "name": "일간지 · 중앙일보",
+   "count": 68,
+   "prev": 0,
+   "delta": 68
   },
   {
    "name": "일간지 · 한겨레",
-   "count": 57,
+   "count": 60,
    "prev": 0,
-   "delta": 57
+   "delta": 60
   },
   {
    "name": "일간지 · 경향신문",
-   "count": 43,
+   "count": 44,
    "prev": 0,
-   "delta": 43
+   "delta": 44
   },
   {
    "name": "일간지 · JTBC",
-   "count": 40,
+   "count": 41,
    "prev": 0,
-   "delta": 40
+   "delta": 41
   },
   {
    "name": "정부 · 정부 보도자료 (검색)",
-   "count": 26,
+   "count": 27,
    "prev": 22,
-   "delta": 4
+   "delta": 5
   },
   {
    "name": "국내 · 기타 (의료 AI·병원 AI 키워드)",
@@ -176,9 +176,9 @@
   },
   {
    "name": "정부 · 국가인공지능전략위원회",
-   "count": 4,
+   "count": 5,
    "prev": 10,
-   "delta": -6
+   "delta": -5
   },
   {
    "name": "정부 · 국가데이터처",
@@ -202,105 +202,111 @@
  "keywords": [
   {
    "word": "서울대병원",
-   "count": 156,
+   "count": 168,
    "prev": 143,
    "status": ""
   },
   {
    "word": "식약처",
-   "count": 148,
+   "count": 151,
    "prev": 90,
    "status": ""
   },
   {
-   "word": "보건복지부",
-   "count": 95,
-   "prev": 76,
-   "status": ""
-  },
-  {
    "word": "학술대회",
-   "count": 92,
+   "count": 101,
    "prev": 76,
    "status": ""
   },
   {
-   "word": "세브란스",
-   "count": 90,
-   "prev": 78,
+   "word": "보건복지부",
+   "count": 98,
+   "prev": 76,
    "status": ""
   },
   {
    "word": "루닛",
-   "count": 89,
+   "count": 94,
    "prev": 64,
    "status": ""
   },
   {
+   "word": "세브란스",
+   "count": 94,
+   "prev": 78,
+   "status": ""
+  },
+  {
    "word": "FDA",
-   "count": 89,
+   "count": 94,
    "prev": 86,
    "status": ""
   },
   {
    "word": "아산병원",
-   "count": 87,
+   "count": 92,
    "prev": 70,
    "status": ""
   },
   {
    "word": "삼성서울병원",
-   "count": 81,
+   "count": 83,
    "prev": 34,
    "status": "급증"
   },
   {
-   "word": "국회",
-   "count": 74,
-   "prev": 37,
-   "status": "급증"
-  },
-  {
    "word": "포럼",
-   "count": 74,
+   "count": 80,
    "prev": 51,
    "status": ""
   },
   {
+   "word": "국회",
+   "count": 78,
+   "prev": 37,
+   "status": "급증"
+  },
+  {
    "word": "분당서울대",
-   "count": 58,
+   "count": 62,
    "prev": 65,
    "status": ""
   },
   {
    "word": "세미나",
-   "count": 54,
+   "count": 58,
    "prev": 91,
    "status": ""
   },
   {
    "word": "심포지엄",
-   "count": 46,
+   "count": 54,
    "prev": 31,
    "status": ""
   },
   {
-   "word": "구글",
-   "count": 41,
-   "prev": 45,
-   "status": ""
-  },
-  {
    "word": "신의료기술",
-   "count": 40,
+   "count": 45,
    "prev": 26,
    "status": ""
   },
   {
+   "word": "구글",
+   "count": 43,
+   "prev": 45,
+   "status": ""
+  },
+  {
    "word": "메이요",
-   "count": 40,
+   "count": 41,
    "prev": 12,
    "status": "급증"
+  },
+  {
+   "word": "심평원",
+   "count": 40,
+   "prev": 30,
+   "status": ""
   },
   {
    "word": "스마트 병원",
@@ -309,14 +315,8 @@
    "status": ""
   },
   {
-   "word": "심평원",
-   "count": 38,
-   "prev": 30,
-   "status": ""
-  },
-  {
    "word": "오픈AI",
-   "count": 36,
+   "count": 37,
    "prev": 17,
    "status": "급증"
   }
@@ -659,6 +659,17 @@
  ],
  "government_other": [
   {
+   "title": "('26. 11. 24.) 국가AI전략위, 창원지역 방위산업 현장 찾아 AX 가속화 방안 모색",
+   "link": "https://www.aikorea.go.kr/web/board/brdDetail.do?menu_cd=000012&num=1160",
+   "date": "2026-11-24",
+   "category": "국가인공지능전략위원회",
+   "region": "정부",
+   "score": 0,
+   "similar_count": 0,
+   "source": "국가인공지능전략위원회",
+   "importance": 0
+  },
+  {
    "title": "인공지능‧디지털자산 시대, 블록체인으로 신뢰의 미래를 열다",
    "link": "https://www.msit.go.kr/bbs/view.do?sCode=user&mId=307&mPid=208&bbsSeqNo=94&nttSeqNo=3187992",
    "date": "2026-11-23",
@@ -728,6 +739,17 @@
    "title": "AI가 바꾸는 바이오 미래, 대한민국이 기술 주권 확보를 하는 날까지",
    "link": "https://news.google.com/rss/articles/CBMiakFVX3lxTE4yVm1taFRKcDRRTEk5WnlpeDBvMU9rMFBmSVJ2ZUVYNHpLS3k0ZkJaYlRxajFtaUVrMV9VUzFVbEVNWGdKU01rTnZybDV1dFF0QWE1RXhkSk1XeWYzNnFwQVd4aE41N2lMMmc?oc=5",
    "date": "2026-11-19",
+   "category": "정부 보도자료 (검색)",
+   "region": "정부",
+   "score": 0,
+   "similar_count": 0,
+   "source": "정부 보도자료 (검색)",
+   "importance": 0
+  },
+  {
+   "title": "근로복지공단, '인공지능(AI) 윤리준수기관 확인마크' 획득",
+   "link": "https://news.google.com/rss/articles/CBMidEFVX3lxTE5PTWh6VDdMbVlSMG5VY1ZNV0RzSmc1QkZtY2JwRVdwVzdjT2pvTkFVc3hOdDFjeUNwODBmc0VGMVZrWjN6UzZia0ZjbnBvanFnd2dvWGtnSEJmdG5XTzRlOE5CQndGbzM1YzdKZS1pd3RuWFUy?oc=5",
+   "date": "2026-11-18",
    "category": "정부 보도자료 (검색)",
    "region": "정부",
    "score": 0,
@@ -964,28 +986,6 @@
    "score": 0,
    "similar_count": 0,
    "source": "정부 보도자료 (검색)",
-   "importance": 0
-  },
-  {
-   "title": "영월의료원, 의료 AI로 진료 부담 덜고 &#x27;분만·소아&#x27; 등 필수의료 공백 해소",
-   "link": "https://www.mohw.go.kr/board.es?mid=a10503000000&bid=0027&list_no=1492509&act=view",
-   "date": "2026-11-11",
-   "category": "보건복지부",
-   "region": "정부",
-   "score": 0,
-   "similar_count": 1,
-   "source": "보건복지부",
-   "importance": 2
-  },
-  {
-   "title": "세계적 인공지능바이오 강국 도약을 위한 소버린 바이오 전략 모색",
-   "link": "https://www.msit.go.kr/bbs/view.do?sCode=user&mId=307&mPid=208&bbsSeqNo=94&nttSeqNo=3187946",
-   "date": "2026-11-11",
-   "category": "과학기술정보통신부",
-   "region": "정부",
-   "score": 0,
-   "similar_count": 0,
-   "source": "과학기술정보통신부",
    "importance": 0
   }
  ],
@@ -1873,19 +1873,19 @@
     "importance": 9
    },
    {
-    "title": "AI로 병원 진단서 위조해 50일 병가 쓴 사회복무요원 덜미",
-    "link": "https://www.donga.com/news/Society/article/all/20261119/135052389/1",
-    "date": "2026-11-19",
+    "title": "목소리에 숨은 ‘치매 위험’ 신호, AI가 찾아낸다[이진한 의사·기자의 따뜻한 의료기기 이야기]",
+    "link": "https://www.donga.com/news/It/article/all/20261124/135076813/2",
+    "date": "2026-11-25",
     "category": "동아일보",
     "region": "일간지",
-    "score": 5,
+    "score": 6,
     "similar_count": 0,
     "source": "donga.com",
-    "importance": 8
+    "importance": 9
    },
    {
-    "title": "[전문의 칼럼]의료인 55% 폭언-폭행 경험… 안전한 정신과 진료 환경 구축을",
-    "link": "https://www.donga.com/news/It/article/all/20261119/135049964/2",
+    "title": "AI로 병원 진단서 위조해 50일 병가 쓴 사회복무요원 덜미",
+    "link": "https://www.donga.com/news/Society/article/all/20261119/135052389/1",
     "date": "2026-11-19",
     "category": "동아일보",
     "region": "일간지",
