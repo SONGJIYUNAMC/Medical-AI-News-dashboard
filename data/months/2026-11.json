@@ -1,17 +1,17 @@
 {
  "month": "2026-11",
- "generated_at": "2026-11-25T12:03:39.157573+09:00",
+ "generated_at": "2026-11-25T13:17:12.886294+09:00",
  "prev_month": "2026-10",
  "collected_days": 25,
  "first_day": "2026-11-01",
  "last_day": "2026-11-25",
- "total": 4916,
+ "total": 4936,
  "prev_total": 4285,
  "by_region": {
-  "국내": 3672,
-  "해외": 731,
+  "국내": 3678,
+  "해외": 734,
   "정부": 58,
-  "일간지": 455
+  "일간지": 466
  },
  "weekly": {
   "2026-W44": {
@@ -35,30 +35,30 @@
    "정부": 19
   },
   "2026-W48": {
-   "국내": 540,
-   "일간지": 99,
-   "해외": 104,
+   "국내": 546,
+   "일간지": 110,
+   "해외": 107,
    "정부": 8
   }
  },
  "categories": [
   {
    "name": "국내 · 국내 정책·규제",
-   "count": 977,
+   "count": 979,
    "prev": 648,
-   "delta": 329
+   "delta": 331
   },
   {
    "name": "국내 · 국내 의료 AI 기업",
-   "count": 910,
+   "count": 911,
    "prev": 769,
-   "delta": 141
+   "delta": 142
   },
   {
    "name": "국내 · 국내 의료기관",
-   "count": 608,
+   "count": 610,
    "prev": 411,
-   "delta": 197
+   "delta": 199
   },
   {
    "name": "국내 · AI 거버넌스·보안",
@@ -68,9 +68,9 @@
   },
   {
    "name": "국내 · 학술·연구·행사",
-   "count": 368,
+   "count": 369,
    "prev": 294,
-   "delta": 74
+   "delta": 75
   },
   {
    "name": "국내 · 해외 의료기관·정책·규제",
@@ -80,15 +80,15 @@
   },
   {
    "name": "해외 · 해외 의료기관 AI 도입·운영",
-   "count": 350,
+   "count": 351,
    "prev": 285,
-   "delta": 65
+   "delta": 66
   },
   {
    "name": "해외 · 해외 정책·규제 (미국)",
-   "count": 200,
+   "count": 201,
    "prev": 171,
-   "delta": 29
+   "delta": 30
   },
   {
    "name": "해외 · 해외 연구·학술",
@@ -98,9 +98,15 @@
   },
   {
    "name": "일간지 · 조선일보",
-   "count": 85,
+   "count": 86,
    "prev": 0,
-   "delta": 85
+   "delta": 86
+  },
+  {
+   "name": "일간지 · 동아일보",
+   "count": 82,
+   "prev": 0,
+   "delta": 82
   },
   {
    "name": "일간지 · 한국일보",
@@ -109,22 +115,16 @@
    "delta": 79
   },
   {
-   "name": "일간지 · 동아일보",
-   "count": 74,
-   "prev": 0,
-   "delta": 74
-  },
-  {
    "name": "해외 · 해외 정책·규제 (유럽·영국)",
-   "count": 72,
+   "count": 73,
    "prev": 57,
-   "delta": 15
+   "delta": 16
   },
   {
    "name": "일간지 · 중앙일보",
-   "count": 68,
+   "count": 69,
    "prev": 0,
-   "delta": 68
+   "delta": 69
   },
   {
    "name": "일간지 · 한겨레",
@@ -140,9 +140,9 @@
   },
   {
    "name": "일간지 · JTBC",
-   "count": 42,
+   "count": 43,
    "prev": 0,
-   "delta": 42
+   "delta": 43
   },
   {
    "name": "정부 · 정부 보도자료 (검색)",
@@ -202,13 +202,13 @@
  "keywords": [
   {
    "word": "서울대병원",
-   "count": 170,
+   "count": 171,
    "prev": 143,
    "status": ""
   },
   {
    "word": "식약처",
-   "count": 151,
+   "count": 153,
    "prev": 90,
    "status": ""
   },
@@ -226,7 +226,7 @@
   },
   {
    "word": "세브란스",
-   "count": 96,
+   "count": 97,
    "prev": 78,
    "status": ""
   },
@@ -237,15 +237,15 @@
    "status": ""
   },
   {
-   "word": "FDA",
+   "word": "아산병원",
    "count": 94,
-   "prev": 86,
+   "prev": 70,
    "status": ""
   },
   {
-   "word": "아산병원",
-   "count": 93,
-   "prev": 70,
+   "word": "FDA",
+   "count": 94,
+   "prev": 86,
    "status": ""
   },
   {
@@ -1884,15 +1884,15 @@
     "importance": 9
    },
    {
-    "title": "AI로 병원 진단서 위조해 50일 병가 쓴 사회복무요원 덜미",
-    "link": "https://www.donga.com/news/Society/article/all/20261119/135052389/1",
-    "date": "2026-11-19",
+    "title": "심유미 서울대병원 치매뇌은행 연구원, 질병관리청장 표창 수상",
+    "link": "https://news.google.com/rss/articles/CBMidkFVX3lxTE52eTJ5d21PaUhaSmZnNjdlMTVJbGVxWkdPaUltM0U0VWk0SlFWTTViaUJSRW1GUXZlNmpwMEhWTTBsbUN0aVlqcEpMNV92NURDbnlKNVhmcGgzdG5OalpxR2dueWRjTjRCQUFZRFpYWnpQRmNaSEHSAWZBVV95cUxQUkFuaXlFWEZwd01BelIyU0RocXAzUE50bVZ0YTZxV2VHLVhGekhBQjdFTWJvdF9yUVE1TGRfNHY5UGFTT3QtNWVzNWhlSDVMX3BZYVFZNEQ0MEh3WndFdVRzQkltemc?oc=5",
+    "date": "2026-11-24",
     "category": "동아일보",
     "region": "일간지",
-    "score": 5,
+    "score": 6,
     "similar_count": 0,
-    "source": "donga.com",
-    "importance": 8
+    "source": "news.google.com",
+    "importance": 9
    }
   ],
   "해외 · 해외 정책·규제 (유럽·영국)": [
