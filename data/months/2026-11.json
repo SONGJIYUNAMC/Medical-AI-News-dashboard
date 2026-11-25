@@ -1,17 +1,17 @@
 {
  "month": "2026-11",
- "generated_at": "2026-11-25T10:26:48.253134+09:00",
+ "generated_at": "2026-11-25T11:27:01.088451+09:00",
  "prev_month": "2026-10",
  "collected_days": 25,
  "first_day": "2026-11-01",
  "last_day": "2026-11-25",
- "total": 4874,
+ "total": 4901,
  "prev_total": 4285,
  "by_region": {
-  "국내": 3641,
-  "해외": 728,
+  "국내": 3662,
+  "해외": 731,
   "정부": 58,
-  "일간지": 447
+  "일간지": 450
  },
  "weekly": {
   "2026-W44": {
@@ -35,36 +35,36 @@
    "정부": 19
   },
   "2026-W48": {
-   "국내": 509,
-   "일간지": 91,
-   "해외": 101,
+   "국내": 530,
+   "일간지": 94,
+   "해외": 104,
    "정부": 8
   }
  },
  "categories": [
   {
    "name": "국내 · 국내 정책·규제",
-   "count": 969,
+   "count": 977,
    "prev": 648,
-   "delta": 321
+   "delta": 329
   },
   {
    "name": "국내 · 국내 의료 AI 기업",
-   "count": 903,
+   "count": 908,
    "prev": 769,
-   "delta": 134
+   "delta": 139
   },
   {
    "name": "국내 · 국내 의료기관",
-   "count": 603,
+   "count": 605,
    "prev": 411,
-   "delta": 192
+   "delta": 194
   },
   {
    "name": "국내 · AI 거버넌스·보안",
-   "count": 429,
+   "count": 431,
    "prev": 324,
-   "delta": 105
+   "delta": 107
   },
   {
    "name": "국내 · 학술·연구·행사",
@@ -74,21 +74,21 @@
   },
   {
    "name": "국내 · 해외 의료기관·정책·규제",
-   "count": 354,
+   "count": 358,
    "prev": 300,
-   "delta": 54
+   "delta": 58
   },
   {
    "name": "해외 · 해외 의료기관 AI 도입·운영",
-   "count": 349,
+   "count": 350,
    "prev": 285,
-   "delta": 64
+   "delta": 65
   },
   {
    "name": "해외 · 해외 정책·규제 (미국)",
-   "count": 199,
+   "count": 200,
    "prev": 171,
-   "delta": 28
+   "delta": 29
   },
   {
    "name": "해외 · 해외 연구·학술",
@@ -98,9 +98,9 @@
   },
   {
    "name": "일간지 · 조선일보",
-   "count": 81,
+   "count": 82,
    "prev": 0,
-   "delta": 81
+   "delta": 82
   },
   {
    "name": "일간지 · 한국일보",
@@ -110,15 +110,15 @@
   },
   {
    "name": "일간지 · 동아일보",
-   "count": 73,
+   "count": 74,
    "prev": 0,
-   "delta": 73
+   "delta": 74
   },
   {
    "name": "해외 · 해외 정책·규제 (유럽·영국)",
-   "count": 71,
+   "count": 72,
    "prev": 57,
-   "delta": 14
+   "delta": 15
   },
   {
    "name": "일간지 · 중앙일보",
@@ -134,9 +134,9 @@
   },
   {
    "name": "일간지 · 경향신문",
-   "count": 45,
+   "count": 46,
    "prev": 0,
-   "delta": 45
+   "delta": 46
   },
   {
    "name": "일간지 · JTBC",
@@ -202,7 +202,7 @@
  "keywords": [
   {
    "word": "서울대병원",
-   "count": 169,
+   "count": 170,
    "prev": 143,
    "status": ""
   },
@@ -214,7 +214,7 @@
   },
   {
    "word": "학술대회",
-   "count": 101,
+   "count": 100,
    "prev": 76,
    "status": ""
   },
@@ -232,7 +232,7 @@
   },
   {
    "word": "세브란스",
-   "count": 94,
+   "count": 95,
    "prev": 78,
    "status": ""
   },
@@ -244,7 +244,7 @@
   },
   {
    "word": "아산병원",
-   "count": 92,
+   "count": 93,
    "prev": 70,
    "status": ""
   },
@@ -255,16 +255,16 @@
    "status": "급증"
   },
   {
+   "word": "국회",
+   "count": 80,
+   "prev": 37,
+   "status": "급증"
+  },
+  {
    "word": "포럼",
    "count": 80,
    "prev": 51,
    "status": ""
-  },
-  {
-   "word": "국회",
-   "count": 78,
-   "prev": 37,
-   "status": "급증"
   },
   {
    "word": "분당서울대",
@@ -297,16 +297,16 @@
    "status": ""
   },
   {
+   "word": "심평원",
+   "count": 42,
+   "prev": 30,
+   "status": ""
+  },
+  {
    "word": "메이요",
    "count": 41,
    "prev": 12,
    "status": "급증"
-  },
-  {
-   "word": "심평원",
-   "count": 40,
-   "prev": 30,
-   "status": ""
   },
   {
    "word": "스마트 병원",
@@ -1628,6 +1628,17 @@
     "importance": 37
    },
    {
+    "title": "웨이센, AI 내시경 임상 연구 성과 발표… 조기위암 침윤 깊이 예측",
+    "link": "https://health.chosun.com/site/data/html_dir/2026/11/25/2026112501221.html",
+    "date": "2026-11-25",
+    "category": "학술·연구·행사",
+    "region": "국내",
+    "score": 14,
+    "similar_count": 10,
+    "source": "health.chosun.com",
+    "importance": 37
+   },
+   {
     "title": "대구대 의료재활학과, 한국재활복지공학회 논문경진대회 최우수·우수상...",
     "link": "https://www.seoul.co.kr/news/society/education-news/2026/11/04/20261104500352?wlog_tag3=naver",
     "date": "2026-11-04",
@@ -1636,17 +1647,6 @@
     "score": 12,
     "similar_count": 7,
     "source": "seoul.co.kr",
-    "importance": 29
-   },
-   {
-    "title": "\"갤럭시·애플 워치로 심부전 찾는다\"…의료AI 입증",
-    "link": "https://www.newsis.com/view/NISX20261118_0003872604",
-    "date": "2026-11-18",
-    "category": "학술·연구·행사",
-    "region": "국내",
-    "score": 16,
-    "similar_count": 5,
-    "source": "newsis.com",
     "importance": 29
    }
   ],
