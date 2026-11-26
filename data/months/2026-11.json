@@ -1,14 +1,14 @@
 {
  "month": "2026-11",
- "generated_at": "2026-11-26T10:49:05.868788+09:00",
+ "generated_at": "2026-11-26T11:11:50.427937+09:00",
  "prev_month": "2026-10",
  "collected_days": 26,
  "first_day": "2026-11-01",
  "last_day": "2026-11-26",
- "total": 5203,
+ "total": 5209,
  "prev_total": 4285,
  "by_region": {
-  "국내": 3862,
+  "국내": 3868,
   "해외": 775,
   "정부": 60,
   "일간지": 506
@@ -35,7 +35,7 @@
    "정부": 19
   },
   "2026-W48": {
-   "국내": 730,
+   "국내": 736,
    "일간지": 150,
    "해외": 148,
    "정부": 10
@@ -44,15 +44,15 @@
  "categories": [
   {
    "name": "국내 · 국내 정책·규제",
-   "count": 1034,
+   "count": 1035,
    "prev": 648,
-   "delta": 386
+   "delta": 387
   },
   {
    "name": "국내 · 국내 의료 AI 기업",
-   "count": 966,
+   "count": 971,
    "prev": 769,
-   "delta": 197
+   "delta": 202
   },
   {
    "name": "국내 · 국내 의료기관",
@@ -256,7 +256,7 @@
   },
   {
    "word": "국회",
-   "count": 87,
+   "count": 88,
    "prev": 37,
    "status": "급증"
   },
@@ -400,6 +400,17 @@
    "importance": 61
   },
   {
+   "title": "대한항공, 임직원 수면건강 관리…업계 첫 디지털 수면검사 도입",
+   "link": "https://www.yna.co.kr/view/AKR20261126035400003?input=1195m",
+   "date": "2026-11-26",
+   "category": "국내 의료 AI 기업",
+   "region": "국내",
+   "score": 5,
+   "similar_count": 25,
+   "source": "yna.co.kr",
+   "importance": 58
+  },
+  {
    "title": "한미약품, 퓨리오사AI 등과 맞손…‘에피데이’ 챗봇 국산 AI로 전환",
    "link": "https://www.edaily.co.kr/News/Read?newsId=04139366645641784&mediaCodeNo=257&utm_source=naver&utm_medium=referral&utm_campaign=news_syndication&utm_content=original_article",
    "date": "2026-11-02",
@@ -420,17 +431,6 @@
    "similar_count": 24,
    "source": "news1.kr",
    "importance": 57
-  },
-  {
-   "title": "‘나락가는 젠슨황?’ 이번엔 사내 불륜 의혹…NYT, 유부녀 임원과 호텔...",
-   "link": "https://www.munhwa.com/article/11630719?ref=naver",
-   "date": "2026-11-12",
-   "category": "국내 의료 AI 기업",
-   "region": "국내",
-   "score": 3,
-   "similar_count": 23,
-   "source": "munhwa.com",
-   "importance": 52
   }
  ],
  "issues_global": [
@@ -1200,15 +1200,15 @@
    "importance": 60
   },
   {
-   "title": "대웅제약, 환자 모니터링부터 로봇 재활까지…AI 스마트 병원 선보여",
-   "link": "https://www.donga.com/news/Health/article/all/20261111/135008828/1",
-   "date": "2026-11-11",
-   "category": "국내 의료기관",
+   "title": "대한항공, 임직원 수면건강 관리…업계 첫 디지털 수면검사 도입",
+   "link": "https://www.yna.co.kr/view/AKR20261126035400003?input=1195m",
+   "date": "2026-11-26",
+   "category": "국내 의료 AI 기업",
    "region": "국내",
-   "score": 12,
-   "similar_count": 21,
-   "source": "donga.com",
-   "importance": 57
+   "score": 5,
+   "similar_count": 25,
+   "source": "yna.co.kr",
+   "importance": 58
   }
  ],
  "important_global": [
