@@ -1,17 +1,17 @@
 {
  "month": "2026-11",
- "generated_at": "2026-11-26T11:11:50.427937+09:00",
+ "generated_at": "2026-11-26T12:35:44.396677+09:00",
  "prev_month": "2026-10",
  "collected_days": 26,
  "first_day": "2026-11-01",
  "last_day": "2026-11-26",
- "total": 5209,
+ "total": 5250,
  "prev_total": 4285,
  "by_region": {
-  "국내": 3868,
-  "해외": 775,
-  "정부": 60,
-  "일간지": 506
+  "국내": 3901,
+  "해외": 778,
+  "정부": 61,
+  "일간지": 510
  },
  "weekly": {
   "2026-W44": {
@@ -35,54 +35,54 @@
    "정부": 19
   },
   "2026-W48": {
-   "국내": 736,
-   "일간지": 150,
-   "해외": 148,
-   "정부": 10
+   "국내": 769,
+   "일간지": 154,
+   "해외": 151,
+   "정부": 11
   }
  },
  "categories": [
   {
    "name": "국내 · 국내 정책·규제",
-   "count": 1035,
+   "count": 1050,
    "prev": 648,
-   "delta": 387
+   "delta": 402
   },
   {
    "name": "국내 · 국내 의료 AI 기업",
-   "count": 971,
+   "count": 978,
    "prev": 769,
-   "delta": 202
+   "delta": 209
   },
   {
    "name": "국내 · 국내 의료기관",
-   "count": 637,
+   "count": 643,
    "prev": 411,
-   "delta": 226
+   "delta": 232
   },
   {
    "name": "국내 · AI 거버넌스·보안",
-   "count": 459,
+   "count": 463,
    "prev": 324,
-   "delta": 135
+   "delta": 139
   },
   {
    "name": "국내 · 학술·연구·행사",
-   "count": 383,
+   "count": 384,
    "prev": 294,
-   "delta": 89
+   "delta": 90
+  },
+  {
+   "name": "해외 · 해외 의료기관 AI 도입·운영",
+   "count": 367,
+   "prev": 285,
+   "delta": 82
   },
   {
    "name": "국내 · 해외 의료기관·정책·규제",
    "count": 365,
    "prev": 300,
    "delta": 65
-  },
-  {
-   "name": "해외 · 해외 의료기관 AI 도입·운영",
-   "count": 365,
-   "prev": 285,
-   "delta": 80
   },
   {
    "name": "해외 · 해외 정책·규제 (미국)",
@@ -92,21 +92,21 @@
   },
   {
    "name": "해외 · 해외 연구·학술",
-   "count": 111,
+   "count": 112,
    "prev": 74,
-   "delta": 37
+   "delta": 38
   },
   {
    "name": "일간지 · 조선일보",
-   "count": 93,
+   "count": 95,
    "prev": 0,
-   "delta": 93
+   "delta": 95
   },
   {
    "name": "일간지 · 동아일보",
-   "count": 87,
+   "count": 88,
    "prev": 0,
-   "delta": 87
+   "delta": 88
   },
   {
    "name": "일간지 · 한국일보",
@@ -140,9 +140,9 @@
   },
   {
    "name": "일간지 · JTBC",
-   "count": 45,
+   "count": 46,
    "prev": 0,
-   "delta": 45
+   "delta": 46
   },
   {
    "name": "정부 · 정부 보도자료 (검색)",
@@ -158,9 +158,9 @@
   },
   {
    "name": "정부 · 보건복지부",
-   "count": 9,
+   "count": 10,
    "prev": 12,
-   "delta": -3
+   "delta": -2
   },
   {
    "name": "정부 · 과학기술정보통신부",
@@ -202,14 +202,20 @@
  "keywords": [
   {
    "word": "서울대병원",
-   "count": 179,
+   "count": 181,
    "prev": 143,
    "status": ""
   },
   {
    "word": "식약처",
-   "count": 158,
+   "count": 163,
    "prev": 90,
+   "status": ""
+  },
+  {
+   "word": "보건복지부",
+   "count": 103,
+   "prev": 76,
    "status": ""
   },
   {
@@ -219,21 +225,15 @@
    "status": ""
   },
   {
-   "word": "보건복지부",
-   "count": 102,
-   "prev": 76,
+   "word": "세브란스",
+   "count": 101,
+   "prev": 78,
    "status": ""
   },
   {
    "word": "FDA",
    "count": 101,
    "prev": 86,
-   "status": ""
-  },
-  {
-   "word": "세브란스",
-   "count": 99,
-   "prev": 78,
    "status": ""
   },
   {
@@ -256,19 +256,19 @@
   },
   {
    "word": "국회",
-   "count": 88,
+   "count": 89,
    "prev": 37,
    "status": "급증"
   },
   {
    "word": "포럼",
-   "count": 83,
+   "count": 84,
    "prev": 51,
    "status": ""
   },
   {
    "word": "분당서울대",
-   "count": 65,
+   "count": 66,
    "prev": 65,
    "status": ""
   },
@@ -367,6 +367,17 @@
    "importance": 68
   },
   {
+   "title": "대한항공, 임직원 수면건강 관리…업계 첫 디지털 수면검사 도입",
+   "link": "https://www.yna.co.kr/view/AKR20261126035400003?input=1195m",
+   "date": "2026-11-26",
+   "category": "국내 의료 AI 기업",
+   "region": "국내",
+   "score": 5,
+   "similar_count": 30,
+   "source": "yna.co.kr",
+   "importance": 68
+  },
+  {
    "title": "삼성메디슨, 홍천 제조동 준공…초음파기기 생산능력 2배로",
    "link": "http://www.yonhapnewstv.co.kr/news/AKR20261113175213PjN",
    "date": "2026-11-13",
@@ -398,17 +409,6 @@
    "similar_count": 27,
    "source": "bizwnews.com",
    "importance": 61
-  },
-  {
-   "title": "대한항공, 임직원 수면건강 관리…업계 첫 디지털 수면검사 도입",
-   "link": "https://www.yna.co.kr/view/AKR20261126035400003?input=1195m",
-   "date": "2026-11-26",
-   "category": "국내 의료 AI 기업",
-   "region": "국내",
-   "score": 5,
-   "similar_count": 25,
-   "source": "yna.co.kr",
-   "importance": 58
   },
   {
    "title": "한미약품, 퓨리오사AI 등과 맞손…‘에피데이’ 챗봇 국산 AI로 전환",
@@ -546,6 +546,17 @@
   }
  ],
  "policy_announcements": [
+  {
+   "title": "AI 시대, 의료데이터 더 안전하고 쉽게 활용 「보건의료데이터 활용 가이드라인」 전부개정",
+   "link": "https://www.mohw.go.kr/board.es?mid=a10503000000&bid=0027&list_no=1492668&act=view",
+   "date": "2026-11-26",
+   "category": "보건복지부",
+   "region": "정부",
+   "score": 0,
+   "similar_count": 0,
+   "source": "보건복지부",
+   "importance": 0
+  },
   {
    "title": "[보도참고] 식약처, 'AI로 여는 식품위해평가의 새로운 지평' 모색",
    "link": "https://www.mfds.go.kr/brd/m_99/view.do?seq=50503",
@@ -1156,6 +1167,17 @@
    "importance": 68
   },
   {
+   "title": "대한항공, 임직원 수면건강 관리…업계 첫 디지털 수면검사 도입",
+   "link": "https://www.yna.co.kr/view/AKR20261126035400003?input=1195m",
+   "date": "2026-11-26",
+   "category": "국내 의료 AI 기업",
+   "region": "국내",
+   "score": 5,
+   "similar_count": 30,
+   "source": "yna.co.kr",
+   "importance": 68
+  },
+  {
    "title": "갤럭시 버즈로 청력 검사·보정..삼성전자, 식약처 의료기기 허가",
    "link": "https://kpenews.com/View.aspx?No=4296260",
    "date": "2026-11-04",
@@ -1198,17 +1220,6 @@
    "similar_count": 24,
    "source": "edaily.co.kr",
    "importance": 60
-  },
-  {
-   "title": "대한항공, 임직원 수면건강 관리…업계 첫 디지털 수면검사 도입",
-   "link": "https://www.yna.co.kr/view/AKR20261126035400003?input=1195m",
-   "date": "2026-11-26",
-   "category": "국내 의료 AI 기업",
-   "region": "국내",
-   "score": 5,
-   "similar_count": 25,
-   "source": "yna.co.kr",
-   "importance": 58
   }
  ],
  "important_global": [
@@ -1473,15 +1484,15 @@
     "importance": 102
    },
    {
-    "title": "뉴로핏, 美 서틀메디컬과 공급 계약…“북미 의료 AI 시장 확대”",
-    "link": "https://biz.chosun.com/science-chosun/bio/2026/11/25/QLMML3QGRBCOJPJHJCZDVB6Z6A/?utm_source=naver&utm_medium=original&utm_campaign=biz",
-    "date": "2026-11-25",
+    "title": "대한항공, 임직원 수면건강 관리…업계 첫 디지털 수면검사 도입",
+    "link": "https://www.yna.co.kr/view/AKR20261126035400003?input=1195m",
+    "date": "2026-11-26",
     "category": "국내 의료 AI 기업",
     "region": "국내",
-    "score": 16,
-    "similar_count": 21,
-    "source": "biz.chosun.com",
-    "importance": 61
+    "score": 5,
+    "similar_count": 30,
+    "source": "yna.co.kr",
+    "importance": 68
    }
   ],
   "국내 · 정부 발표": [
