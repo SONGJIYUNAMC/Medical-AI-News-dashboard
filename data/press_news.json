@@ -1,8 +1,8 @@
 {
-  "generated_at": "2026-11-25T13:17:11.075455+09:00",
+  "generated_at": "2026-11-26T09:18:20.422366+09:00",
   "window_hours": 24,
-  "count": 46,
-  "filtered_out": 1261,
+  "count": 42,
+  "filtered_out": 1206,
   "category_order": [
     "조선일보",
     "중앙일보",
@@ -12,50 +12,138 @@
     "경향신문",
     "한국일보"
   ],
-  "errors": [
-    {
-      "query": "동아일보 RSS total.xml",
-      "error": "('Connection aborted.', RemoteDisconnected('Remote end closed connection without response')) → 구글 뉴스 검색으로 대체"
-    },
-    {
-      "query": "동아일보 RSS science.xml",
-      "error": "('Connection aborted.', RemoteDisconnected('Remote end closed connection without response')) → 구글 뉴스 검색으로 대체"
-    }
-  ],
+  "errors": [],
   "items": [
     {
-      "title": "목소리에 숨은 ‘치매 위험’ 신호, AI가 찾아낸다[이진한 의사·기자의 따뜻한 의료기기 이야기]",
-      "link": "https://news.google.com/rss/articles/CBMib0FVX3lxTE05YlFLbHRfUm5CX1NCVkZYTGloTE1xMnNJRGZIQjEtOXRQaTRFQkxKOU55TE9YcHlXbGQ2eXpDUjV4UEplMXVNMEZ4eGFVaHNHeWZTaDJXR2VTTHdMblJFaUtwNTExQVc3TVh0c0VfMNIBZkFVX3lxTE9hT0J0emlNN2pOZVBsWl9QOWNMQko2Rm9WVkpsRk16NmNmOU9Od3BBUldvTW5mV0ZqQWN1d3NjdjBWZHJ4Q1hxVW9FVVVXNEhGbl9kTVZCSy1UNUtyaXpoZFNSNDBYdw?oc=5",
-      "originallink": "https://news.google.com/rss/articles/CBMib0FVX3lxTE05YlFLbHRfUm5CX1NCVkZYTGloTE1xMnNJRGZIQjEtOXRQaTRFQkxKOU55TE9YcHlXbGQ2eXpDUjV4UEplMXVNMEZ4eGFVaHNHeWZTaDJXR2VTTHdMblJFaUtwNTExQVc3TVh0c0VfMNIBZkFVX3lxTE9hT0J0emlNN2pOZVBsWl9QOWNMQko2Rm9WVkpsRk16NmNmOU9Od3BBUldvTW5mV0ZqQWN1d3NjdjBWZHJ4Q1hxVW9FVVVXNEhGbl9kTVZCSy1UNUtyaXpoZFNSNDBYdw?oc=5",
+      "title": "보호자 찾다 치료 놓치는 일 없게… 의식 없는 응급환자, 의료진 판단으로 바로 진료",
+      "link": "https://news.google.com/rss/articles/CBMic0FVX3lxTE1TZ1hFYmtiUVp3VnhoU2g1TGgzQ2FMcml1LTJVVFFnWjdlUlZyUXNFTk9VZFFmTnowZ2tYZmc2ODk5SkIxOGZMcExFZncyakY4OEpYeGVVUEQ3VkhNOFVKRWdyaXhhTUNoZnBzMzRjUlozclU?oc=5",
+      "originallink": "https://news.google.com/rss/articles/CBMic0FVX3lxTE1TZ1hFYmtiUVp3VnhoU2g1TGgzQ2FMcml1LTJVVFFnWjdlUlZyUXNFTk9VZFFmTnowZ2tYZmc2ODk5SkIxOGZMcExFZncyakY4OEpYeGVVUEQ3VkhNOFVKRWdyaXhhTUNoZnBzMzRjUlozclU?oc=5",
       "summary": "",
-      "pubDate": "2026-11-25T04:30:00+09:00",
+      "pubDate": "2026-11-25T18:33:00+09:00",
+      "category": "한국일보",
+      "press": "한국일보",
+      "source": "한국일보",
+      "queries": [
+        "의료",
+        "의료진",
+        "진료",
+        "환자"
+      ],
+      "source_type": "major",
+      "score": 7
+    },
+    {
+      "title": "“간호사 1명이 환자 12명 이상 돌봐”···대구가톨릭대의료원 노조 파업",
+      "link": "https://news.google.com/rss/articles/CBMiX0FVX3lxTE9ESllJSXY5bVdYN1dEWmN0QnlFY3Z1RkZucUpHeG04VUxZRE1SNEYwVExOazY3QW1PSGNyNTZoQlhESTUwWkt2Sm9tUm5vOEtYbllHSkNCc05yZ1VjZGs40gFfQVVfeXFMT0RKWUlJdjltV1g3V0RaY3RCeUVjdnVGRm5xSkd4bThVTFlETVI0RjBUTE5rNjdBbU9IY3I1NmhCWERJNTBaS3ZKb21Sbm84S1huWUdKQ0JzTnJnVWNkazg?oc=5",
+      "originallink": "https://news.google.com/rss/articles/CBMiX0FVX3lxTE9ESllJSXY5bVdYN1dEWmN0QnlFY3Z1RkZucUpHeG04VUxZRE1SNEYwVExOazY3QW1PSGNyNTZoQlhESTUwWkt2Sm9tUm5vOEtYbllHSkNCc05yZ1VjZGs40gFfQVVfeXFMT0RKWUlJdjltV1g3V0RaY3RCeUVjdnVGRm5xSkd4bThVTFlETVI0RjBUTE5rNjdBbU9IY3I1NmhCWERJNTBaS3ZKb21Sbm84S1huWUdKQ0JzTnJnVWNkazg?oc=5",
+      "summary": "",
+      "pubDate": "2026-11-25T14:17:00+09:00",
+      "category": "경향신문",
+      "press": "경향신문",
+      "source": "경향신문",
+      "queries": [
+        "의료",
+        "간호사",
+        "환자"
+      ],
+      "source_type": "major",
+      "score": 6
+    },
+    {
+      "title": "내일부터 AI로 만든 ‘가짜 의사’ 광고 금지…위반 땐 영업정지",
+      "link": "https://www.donga.com/news/Society/article/all/20261126/135093316/1",
+      "originallink": "https://www.donga.com/news/Society/article/all/20261126/135093316/1",
+      "summary": "인공지능(AI)으로 만든 가짜 의사나 교수가 식품·의약품 등을 추천하는 것처럼 꾸민 광고가 오는 27일부터 금지된다.식품의약품안전처는 AI 기술을 활용한 가짜 전문가의 제품 추천·보증 광고를 금지하기 위해 관련 법령의 시행규칙을 정비하고 오는 27일부터 제도를 시행한다고 26일 밝혔다.이번 조치는 AI 기술의 발전으로 실제 사람과 구별하기 어려운 가상의 인물이 의사·교수 등 전문가 행세를 하며 제품을 추천하는 광고가 늘어난 데 따른 것이다.소비자가 전문가의 검증이나 추천을 거친 제품으로 잘못 인식해 경제적 피해를 보거나 건강상 위해",
+      "pubDate": "2026-11-26T08:59:28+09:00",
+      "category": "동아일보",
+      "press": "동아일보",
+      "source": "동아일보",
+      "queries": [
+        "의사",
+        "AI"
+      ],
+      "source_type": "major",
+      "score": 5
+    },
+    {
+      "title": "“아이들 근시, 병원에만 맡겨선 안 돼”…정부·학교·의료계 뭉친 싱가포르 [건강한겨레]",
+      "link": "https://news.google.com/rss/articles/CBMia0FVX3lxTE9jVTA5ejdsM0VoLWRlVVd1R3lidW8tcjVBSXBiQmRwSmpZQ1N3ekplamhVZ1l3ZWxZZFdZQVdvTkFXZl92djhtdjlld3dIclZraEJzV1d0bGFWNlNGbmh4bmlPcE45d016Ym1V?oc=5",
+      "originallink": "https://news.google.com/rss/articles/CBMia0FVX3lxTE9jVTA5ejdsM0VoLWRlVVd1R3lidW8tcjVBSXBiQmRwSmpZQ1N3ekplamhVZ1l3ZWxZZFdZQVdvTkFXZl92djhtdjlld3dIclZraEJzV1d0bGFWNlNGbmh4bmlPcE45d016Ym1V?oc=5",
+      "summary": "",
+      "pubDate": "2026-11-26T05:01:00+09:00",
+      "category": "한겨레",
+      "press": "한겨레",
+      "source": "한겨레",
+      "queries": [
+        "의료",
+        "병원"
+      ],
+      "source_type": "major",
+      "score": 5
+    },
+    {
+      "title": "환자 운전 적합성 판단, ‘의사 목소리’도 담아야[기고/이재명]",
+      "link": "https://www.donga.com/news/Society/article/all/20261126/135091248/2",
+      "originallink": "https://www.donga.com/news/Society/article/all/20261126/135091248/2",
+      "summary": "최근 교통사고로 중환자외상외과에 한 택시 기사가 입원했다. 환자는 운전 중 갑자기 의식을 잃었다고 한다. 외상 환자를 진료할 때는 사고 원인을 규명하는 것도 중요하다. 단순한 운전 부주의가 아니라 의식 소실을 유발한 기저질환이 존재할 수 있고, 그 원인을 발견하지 못한다면 같은 사고가 반복될 위험이 있기 때문이다. 검사 결과 환자는 심각한 만성 폐질환을 갖고 있었다. 결핵으로 한쪽 폐의 기능이 크게 손상됐고, 간헐적으로 혈중 산소 농도가 떨어지고 이산화탄소 농도가 상승하는 현상이 반복됐다. 그때마다 환자는 졸음이 쏟아지듯 의식 수준",
+      "pubDate": "2026-11-26T04:30:00+09:00",
+      "category": "동아일보",
+      "press": "동아일보",
+      "source": "동아일보",
+      "queries": [
+        "의사",
+        "환자"
+      ],
+      "source_type": "major",
+      "score": 5
+    },
+    {
+      "title": "인덴트코퍼레이션, AI로 K-의료관광 확대 지원",
+      "link": "https://news.google.com/rss/articles/CBMiXkFVX3lxTFBwbzZFc3l6WVVyUVdSZUxjUnJjN04tM1hTX084SHpCMDVPdHdKZktzQkw4c2JqcHFUUS1XcTU2Z0NvTTZJaEZQVTNobzRYemdGTHZFaVRxMWFrcGIwRnfSAWNBVV95cUxOXzItWjQ4cTNycXM0M0pSbHQwRmdTX2lmYlJmN1d2eF9qcjF2WHBfMzl4bGMzTWY3YndwNmhqazg3V1UyeGFjajJxNFJ5TE4xelc1VW9DN1NaMGJONHUta0hNN1E?oc=5",
+      "originallink": "https://news.google.com/rss/articles/CBMiXkFVX3lxTFBwbzZFc3l6WVVyUVdSZUxjUnJjN04tM1hTX084SHpCMDVPdHdKZktzQkw4c2JqcHFUUS1XcTU2Z0NvTTZJaEZQVTNobzRYemdGTHZFaVRxMWFrcGIwRnfSAWNBVV95cUxOXzItWjQ4cTNycXM0M0pSbHQwRmdTX2lmYlJmN1d2eF9qcjF2WHBfMzl4bGMzTWY3YndwNmhqazg3V1UyeGFjajJxNFJ5TE4xelc1VW9DN1NaMGJONHUta0hNN1E?oc=5",
+      "summary": "",
+      "pubDate": "2026-11-26T02:21:00+09:00",
+      "category": "경향신문",
+      "press": "경향신문",
+      "source": "스포츠경향",
+      "queries": [
+        "의료",
+        "AI"
+      ],
+      "source_type": "major",
+      "score": 5
+    },
+    {
+      "title": "천장엔 이동시설, 의료인력 늘려 24시간 돌보니 병원 입원일 1/3 줄어",
+      "link": "https://news.google.com/rss/articles/CBMiZkFVX3lxTE9MODRKVXhlZFNOSUdnc3VlMTZPMmZrWEVFZWdiVDhuQWt0LWx2QjZJU1BYNTJTc2VVV0F6dklkb1lyakc4YnRVMDEzNlhGeGdyMm82OVhkc3JnUWpLN1g1OVVtWmh2UQ?oc=5",
+      "originallink": "https://news.google.com/rss/articles/CBMiZkFVX3lxTE9MODRKVXhlZFNOSUdnc3VlMTZPMmZrWEVFZWdiVDhuQWt0LWx2QjZJU1BYNTJTc2VVV0F6dklkb1lyakc4YnRVMDEzNlhGeGdyMm82OVhkc3JnUWpLN1g1OVVtWmh2UQ?oc=5",
+      "summary": "",
+      "pubDate": "2026-11-25T17:53:00+09:00",
+      "category": "한겨레",
+      "press": "한겨레",
+      "source": "한겨레",
+      "queries": [
+        "의료",
+        "병원"
+      ],
+      "source_type": "major",
+      "score": 5
+    },
+    {
+      "title": "한승호 이화의료아카데미 원장 “AI 특화 공동훈련센터, 바이오·헬스케어 AX 중심지로”",
+      "link": "https://www.donga.com/news/It/article/all/20261125/135090751/1",
+      "originallink": "https://www.donga.com/news/It/article/all/20261125/135090751/1",
+      "summary": "서울 강서 이대서울병원에 자리 잡은 ‘이화의료아카데미’는 우리나라에서 처음으로 문을 연 병원 기반 의료 교육·연구 전문 기관이다. 이 곳의 중심은 ‘응용 해부학’이다. 해부학은 기원전 1600년 전부터 지금까지 이어져 내려올 정도로 유서 깊은 학문이다. 이 지식을 병원 내 의료 현장에 대입해서 해부 교육과 임상술기 연수, 기관해부견학 등 의료인들의 역량을 높일 방안을 제공하는 것이다.여기에 이화의료아카데미는 데이터·인공지능·가상현실 등 각종 정보통신기술을 활용해서 의료 데이터 기반 정밀의료 기술, 스마트 메디컬 교육 콘텐츠까지 확보",
+      "pubDate": "2026-11-25T17:49:31+09:00",
       "category": "동아일보",
       "press": "동아일보",
       "source": "동아일보",
       "queries": [
         "의료",
-        "의사",
         "AI"
       ],
       "source_type": "major",
-      "score": 6
-    },
-    {
-      "title": "심유미 서울대병원 치매뇌은행 연구원, 질병관리청장 표창 수상",
-      "link": "https://news.google.com/rss/articles/CBMidkFVX3lxTE52eTJ5d21PaUhaSmZnNjdlMTVJbGVxWkdPaUltM0U0VWk0SlFWTTViaUJSRW1GUXZlNmpwMEhWTTBsbUN0aVlqcEpMNV92NURDbnlKNVhmcGgzdG5OalpxR2dueWRjTjRCQUFZRFpYWnpQRmNaSEHSAWZBVV95cUxQUkFuaXlFWEZwd01BelIyU0RocXAzUE50bVZ0YTZxV2VHLVhGekhBQjdFTWJvdF9yUVE1TGRfNHY5UGFTT3QtNWVzNWhlSDVMX3BZYVFZNEQ0MEh3WndFdVRzQkltemc?oc=5",
-      "originallink": "https://news.google.com/rss/articles/CBMidkFVX3lxTE52eTJ5d21PaUhaSmZnNjdlMTVJbGVxWkdPaUltM0U0VWk0SlFWTTViaUJSRW1GUXZlNmpwMEhWTTBsbUN0aVlqcEpMNV92NURDbnlKNVhmcGgzdG5OalpxR2dueWRjTjRCQUFZRFpYWnpQRmNaSEHSAWZBVV95cUxQUkFuaXlFWEZwd01BelIyU0RocXAzUE50bVZ0YTZxV2VHLVhGekhBQjdFTWJvdF9yUVE1TGRfNHY5UGFTT3QtNWVzNWhlSDVMX3BZYVFZNEQ0MEh3WndFdVRzQkltemc?oc=5",
-      "summary": "",
-      "pubDate": "2026-11-24T15:34:00+09:00",
-      "category": "동아일보",
-      "press": "동아일보",
-      "source": "동아일보",
-      "queries": [
-        "병원",
-        "질병관리청",
-        "서울대병원"
-      ],
-      "source_type": "major",
-      "score": 6
+      "score": 5
     },
     {
       "title": "안동병원, 12월부터 ‘치과 야간·일요일 진료’ 확대",
@@ -74,155 +162,101 @@
       "score": 5
     },
     {
-      "title": "지역의사제·반도체 호황에 최상위권 ‘의대 쏠림’ 완화…반도체 지원은 2배",
-      "link": "https://news.google.com/rss/articles/CBMidkFVX3lxTE9CbnBOaHI3cDR4TjJHaG5OS0FuRnpVY2tNTVRiTm9tOUh4ay11dEFtWERzaHk1NXJ6ZHppY0dqQ3RERkhncTVEZUdIVE9TRUxuaUlkaThYVzlkLTBPSlhCQ3VDYzVNLVFUTUxWMEsyUjNxaEJvUEHSAWZBVV95cUxQeGVEZTFmUDNqQlVhMGV0SmRlc0ZNZVFkN1JHQmNXSVh2emNYRGxtQjdQVkpvOFZIUVpHRk5jWWJCbHZxS1BEZWNvVVFvYWJYNldJR3hFLTNHTExiY1ZWX0FPOGVLeVE?oc=5",
-      "originallink": "https://news.google.com/rss/articles/CBMidkFVX3lxTE9CbnBOaHI3cDR4TjJHaG5OS0FuRnpVY2tNTVRiTm9tOUh4ay11dEFtWERzaHk1NXJ6ZHppY0dqQ3RERkhncTVEZUdIVE9TRUxuaUlkaThYVzlkLTBPSlhCQ3VDYzVNLVFUTUxWMEsyUjNxaEJvUEHSAWZBVV95cUxQeGVEZTFmUDNqQlVhMGV0SmRlc0ZNZVFkN1JHQmNXSVh2emNYRGxtQjdQVkpvOFZIUVpHRk5jWWJCbHZxS1BEZWNvVVFvYWJYNldJR3hFLTNHTExiY1ZWX0FPOGVLeVE?oc=5",
-      "summary": "",
-      "pubDate": "2026-11-25T09:10:32+09:00",
-      "category": "동아일보",
-      "press": "동아일보",
-      "source": "동아일보",
-      "queries": [
-        "의사",
-        "의대"
-      ],
-      "source_type": "major",
-      "score": 5
-    },
-    {
-      "title": "6000원대 내려갔던 계란 한 판 다시 7068원···고병원성 AI 확산세에 가격 또 오르나",
-      "link": "https://www.khan.co.kr/article/202611250828001/?utm_source=khan_rss&utm_medium=rss&utm_campaign=total_news",
-      "originallink": "https://www.khan.co.kr/article/202611250828001/?utm_source=khan_rss&utm_medium=rss&utm_campaign=total_news",
-      "summary": "10일 서울의 한 홈플러스에서 시민들이 장을 보고 있다. 연합뉴스계란 산지 가격이 하락할 것으로 전망되는 것과 달리 소비자가격은 1년 전보다 높은 수준을 유지하고 있다. 고병원성 조류인플루엔자(AI) 확산세로 계란 가격이 다시 오를 수 있다는 우려도 나온다.25일 한국농촌경제연구원(KREI)에 따르면 이달 중순 계란 평균 산지 가격은 특란(XL) 10개 기···",
-      "pubDate": "2026-11-25T08:28:00+09:00",
-      "category": "경향신문",
-      "press": "경향신문",
-      "source": "경향신문",
-      "queries": [
-        "병원",
-        "AI"
-      ],
-      "source_type": "major",
-      "score": 5
-    },
-    {
-      "title": "인하대병원, 의료질평가 7년 연속 최상위… 전국 상위 2%",
-      "link": "https://news.google.com/rss/articles/CBMib0FVX3lxTE9reGYtenl1UXF0aHYwMzNsTmpvRko4OE04Y0xWc2N1SWlINllYX09iaTJvMGs1QzlKMlg4Z1QtSjFHX1JldzFmMlFsODJDdkM2eldNRGMyQzNvRUJpUkJhVW9yNDB0WENCemNPeU1USdIBZkFVX3lxTE1rRXd3TDF1cElQSGZkQmRjXzIyUGRPdm1QenFmV3NEODFaOHRncXdUaGhSOFExZDV2S3VQY2JwczR1NTRjMzc0cDhKR3A4eE5jUnNoaFhzUWkySDl5R0VUMnd1ckJpdw?oc=5",
-      "originallink": "https://news.google.com/rss/articles/CBMib0FVX3lxTE9reGYtenl1UXF0aHYwMzNsTmpvRko4OE04Y0xWc2N1SWlINllYX09iaTJvMGs1QzlKMlg4Z1QtSjFHX1JldzFmMlFsODJDdkM2eldNRGMyQzNvRUJpUkJhVW9yNDB0WENCemNPeU1USdIBZkFVX3lxTE1rRXd3TDF1cElQSGZkQmRjXzIyUGRPdm1QenFmV3NEODFaOHRncXdUaGhSOFExZDV2S3VQY2JwczR1NTRjMzc0cDhKR3A4eE5jUnNoaFhzUWkySDl5R0VUMnd1ckJpdw?oc=5",
-      "summary": "",
-      "pubDate": "2026-11-25T04:30:00+09:00",
-      "category": "동아일보",
-      "press": "동아일보",
-      "source": "동아일보",
-      "queries": [
-        "의료",
-        "병원"
-      ],
-      "source_type": "major",
-      "score": 5
-    },
-    {
-      "title": "2년 지난 수액 맞은 환자… 병원은 몰랐다[홍은심 기자와 읽는 메디컬 그라운드]",
-      "link": "https://news.google.com/rss/articles/CBMib0FVX3lxTE4yMmlfdVVkNmFXbjhoZGlybDd6T0JBOGl6bGJHRzNBSXZIcXVqbUdRTUlPczlJU0tLYnZpeGkzN2l6QXY5VTFiZDdDLWJfNzJTc1dacUloOGh2UE1fOUFGQmhsbGd1clY1R3JkZ3hoWdIBZkFVX3lxTFBxUWRmeG5zSk80ZDBpa195UjdGUEh6S2R5MGZ1VTNac1VGMThOcVpNN2tGamlocWEzRXhxa3N4aWQtcmlMSzF3TDRvUEVkcVUwdHJsSjFlUzE1dFJ2bGxpVFV2cGV0Zw?oc=5",
-      "originallink": "https://news.google.com/rss/articles/CBMib0FVX3lxTE4yMmlfdVVkNmFXbjhoZGlybDd6T0JBOGl6bGJHRzNBSXZIcXVqbUdRTUlPczlJU0tLYnZpeGkzN2l6QXY5VTFiZDdDLWJfNzJTc1dacUloOGh2UE1fOUFGQmhsbGd1clY1R3JkZ3hoWdIBZkFVX3lxTFBxUWRmeG5zSk80ZDBpa195UjdGUEh6S2R5MGZ1VTNac1VGMThOcVpNN2tGamlocWEzRXhxa3N4aWQtcmlMSzF3TDRvUEVkcVUwdHJsSjFlUzE1dFJ2bGxpVFV2cGV0Zw?oc=5",
-      "summary": "",
-      "pubDate": "2026-11-25T04:30:00+09:00",
-      "category": "동아일보",
-      "press": "동아일보",
-      "source": "동아일보",
-      "queries": [
-        "병원",
-        "환자"
-      ],
-      "source_type": "major",
-      "score": 5
-    },
-    {
-      "title": "희귀·중증질환자 의료비 본인부담률, 내달부터 10%서 7%로",
-      "link": "https://www.chosun.com/national/welfare-medical/2026/11/25/RRODOEYH6NC7DBNR3TZZUXW3JI/",
-      "originallink": "https://www.chosun.com/national/welfare-medical/2026/11/25/RRODOEYH6NC7DBNR3TZZUXW3JI/",
-      "summary": "",
-      "pubDate": "2026-11-25T00:42:00+09:00",
+      "title": "대형병원 앞 단기임대 '귀한 몸'…가격도 천정부지",
+      "link": "https://www.chosun.com/economy/realty/2026/11/26/GFRGGMZRMRTDEN3DGAYTEZBTGY/",
+      "originallink": "https://www.chosun.com/economy/realty/2026/11/26/GFRGGMZRMRTDEN3DGAYTEZBTGY/",
+      "summary": "[땅집고] 지방에서 올라와 몇 주씩 통원 치료를 받거나 입원한 가족을 돌보는 보호자에게 병원 근처 숙소비는 치료비 못지않은 부담이다. 1주 단위로 머물 수 있는 부동산 단기임대가 현실적인 대안이지만, 대형 병원 반경 2㎞ 안에서 1주 30만원 이하로 구할 수 있는 방은 드물다. 부동산 단기임대 플랫폼 단단홈즈에 등록된 전체 매물 가운데 전국 주요 대",
+      "pubDate": "2026-11-26T08:08:16+09:00",
       "category": "조선일보",
       "press": "조선일보",
       "source": "조선일보",
       "queries": [
-        "의료",
-        "환자"
+        "병원"
       ],
       "source_type": "major",
-      "score": 5
+      "score": 4
     },
     {
-      "title": "생후 8개월 딸 진료에 불만 품고 병원서 난동…30대 벌금 100만 원",
-      "link": "https://news.google.com/rss/articles/CBMidkFVX3lxTFB4dFJmS25QTldkS1J4ZS1KWlFsX2cxN3ByMEVwT2tSWGVmSE5aWm0zVmZFcVNpcGxSME04ZDZjWVVjWkxncXFpeTNNYUlKNTFpQ0tHa1FiOWV2elZBaGZ5YVFLQ3pSZXhmRUpOS09yRmpPdWo5MGfSAWZBVV95cUxQSjB3cHF0Zl9QenFCSkJSTGdVaUQya1NJaUdrbGNQVFJDQzNRTEZSaHN0X25wTElLbW0zNFBsZUpNTHc1bTFNRERxUVZaOWNRS0p5T0pNcnRsQURDQ1Z5Mk0wNkFTaEE?oc=5",
-      "originallink": "https://news.google.com/rss/articles/CBMidkFVX3lxTFB4dFJmS25QTldkS1J4ZS1KWlFsX2cxN3ByMEVwT2tSWGVmSE5aWm0zVmZFcVNpcGxSME04ZDZjWVVjWkxncXFpeTNNYUlKNTFpQ0tHa1FiOWV2elZBaGZ5YVFLQ3pSZXhmRUpOS09yRmpPdWo5MGfSAWZBVV95cUxQSjB3cHF0Zl9QenFCSkJSTGdVaUQya1NJaUdrbGNQVFJDQzNRTEZSaHN0X25wTElLbW0zNFBsZUpNTHc1bTFNRERxUVZaOWNRS0p5T0pNcnRsQURDQ1Z5Mk0wNkFTaEE?oc=5",
-      "summary": "",
-      "pubDate": "2026-11-24T21:14:32+09:00",
-      "category": "동아일보",
-      "press": "동아일보",
-      "source": "동아일보",
-      "queries": [
-        "병원",
-        "진료"
-      ],
-      "source_type": "major",
-      "score": 5
-    },
-    {
-      "title": "사무장 병원 개원해 160억 원 요양·의료급여 가로챈 60대 등 3명 기소",
-      "link": "https://www.chosun.com/national/regional/2026/11/24/KLXCSO5X2BD5DDKGEBTAUKO33U/",
-      "originallink": "https://www.chosun.com/national/regional/2026/11/24/KLXCSO5X2BD5DDKGEBTAUKO33U/",
-      "summary": "",
-      "pubDate": "2026-11-24T17:42:42+09:00",
+      "title": "맹승지, '의사' 남친과 내년 결혼 발표 \"나는 옆에서 고개만 끄덕이는 중\"",
+      "link": "https://biz.chosun.com/entertainment/enter_general/2026/11/26/HE3DAYRWMQYWKYZYHBSTQMZZMU/",
+      "originallink": "https://biz.chosun.com/entertainment/enter_general/2026/11/26/HE3DAYRWMQYWKYZYHBSTQMZZMU/",
+      "summary": "맹승지가 의사로 알려진 남자친구와 오는 2027년 결혼한다. 26일 맹승지는 자신의 인스타그램에 \"얼마 전에 예식장 예약을 했어요. 대문자 J 남친(남자친구)이 뚝딱 정리해준 덕분. 나는 옆에서 고개만 끄덕이는 중. 늘 고마워요\"라는 글과 함께 사진을 공개했다.공개된 사진 속에는 의사로 알려진 남자친구와 다정한 네컷 사진이 담겨있다. 맹승지는 동안 미모를",
+      "pubDate": "2026-11-26T07:52:00+09:00",
       "category": "조선일보",
       "press": "조선일보",
       "source": "조선일보",
       "queries": [
-        "의료",
-        "병원"
+        "의사"
       ],
       "source_type": "major",
-      "score": 5
+      "score": 4
     },
     {
-      "title": "울산 시민 10명 중 1명 지역 의료 '불만'… \"공공보건·종합병원 확충 시급\"",
-      "link": "https://news.google.com/rss/articles/CBMibkFVX3lxTE43bVFDUk5YaUp5Z0VkNGdRTWZQWUZBS2UxTnE2RjJwb1RPcU15eWhZV2lNOTNHOTVYZ210QWlYWGIyZlJSanAwMFJiZU5BZy1uR0dXbmpsaDRSeVZ3N0tCN1JwQjloR0VaaFZvT0NB?oc=5",
-      "originallink": "https://news.google.com/rss/articles/CBMibkFVX3lxTE43bVFDUk5YaUp5Z0VkNGdRTWZQWUZBS2UxTnE2RjJwb1RPcU15eWhZV2lNOTNHOTVYZ210QWlYWGIyZlJSanAwMFJiZU5BZy1uR0dXbmpsaDRSeVZ3N0tCN1JwQjloR0VaaFZvT0NB?oc=5",
+      "title": "11개월 아기 혈관에…12시간 놓을 수액 45분 만에 주사한 인천 종합병원",
+      "link": "https://news.google.com/rss/articles/CBMiY0FVX3lxTE5UNjlHWlRCOGk3UDdPaWNaTnFfNV9kelk0aU1sUDJKQU1ubVVOSURrd1lOT0s0TGtQRzYwbWMxM1JraG10LXdtdkcwT3ZkVXJZS2l0bW5wOEFBZmFkb1RnLWFLNA?oc=5",
+      "originallink": "https://news.google.com/rss/articles/CBMiY0FVX3lxTE5UNjlHWlRCOGk3UDdPaWNaTnFfNV9kelk0aU1sUDJKQU1ubVVOSURrd1lOT0s0TGtQRzYwbWMxM1JraG10LXdtdkcwT3ZkVXJZS2l0bW5wOEFBZmFkb1RnLWFLNA?oc=5",
       "summary": "",
-      "pubDate": "2026-11-24T14:30:00+09:00",
-      "category": "한국일보",
-      "press": "한국일보",
-      "source": "한국일보",
+      "pubDate": "2026-11-26T07:38:00+09:00",
+      "category": "한겨레",
+      "press": "한겨레",
+      "source": "한겨레",
       "queries": [
-        "의료",
         "병원"
       ],
       "source_type": "major",
-      "score": 5
+      "score": 4
     },
     {
-      "title": "희귀·중증난치 환자 136만명, 다음달부터 건보 진료비 부담 7%로 준다",
-      "link": "https://news.google.com/rss/articles/CBMiVkFVX3lxTFB2eUYxN1oyeFZrWm1OamVTX3NOY25rdy1CazJZQWx4ek9KZVN1bUs4bFg1c1RrZVhNYjA0Qkh0dHhkQmJtVEZKNXZDNlBnWkhzYktTUkln?oc=5",
-      "originallink": "https://news.google.com/rss/articles/CBMiVkFVX3lxTFB2eUYxN1oyeFZrWm1OamVTX3NOY25rdy1CazJZQWx4ek9KZVN1bUs4bFg1c1RrZVhNYjA0Qkh0dHhkQmJtVEZKNXZDNlBnWkhzYktTUkln?oc=5",
+      "title": "[국민의 기업] 약물 표적 정밀 전달로 차세대 파지 의료 혁신",
+      "link": "https://news.google.com/rss/articles/CBMiVkFVX3lxTFBYSEFFR1FMeHktSHdNbWw4QXlyYlAxWmZMY0gxLUtPVnpTVFp0R2k1bWZEVDJVRmh5QWVQRkFpTndfVGJEb182bWotczhsSlhsdHNmZUl3?oc=5",
+      "originallink": "https://news.google.com/rss/articles/CBMiVkFVX3lxTFBYSEFFR1FMeHktSHdNbWw4QXlyYlAxWmZMY0gxLUtPVnpTVFp0R2k1bWZEVDJVRmh5QWVQRkFpTndfVGJEb182bWotczhsSlhsdHNmZUl3?oc=5",
       "summary": "",
-      "pubDate": "2026-11-24T13:24:30+09:00",
+      "pubDate": "2026-11-26T05:30:02+09:00",
       "category": "중앙일보",
       "press": "중앙일보",
       "source": "중앙일보",
       "queries": [
-        "진료",
-        "환자"
+        "의료"
       ],
       "source_type": "major",
-      "score": 5
+      "score": 4
     },
     {
-      "title": "희귀·중증난치질환자, 건보 본인부담률 7%로↓…인당 22만원 줄어들 듯",
-      "link": "https://news.google.com/rss/articles/CBMiZkFVX3lxTFB5NW93REs3My1ueUg2blpaSmdjQ2Y5aFo4b251aS1YZy0xV2VyLW1uT0xRa19hX3BudHprUER3TWpjV0lyV0sxNUxmNkg1Vk5RUGFwc290SHdPZWJCWXY1V2ZWdUY3UQ?oc=5",
-      "originallink": "https://news.google.com/rss/articles/CBMiZkFVX3lxTFB5NW93REs3My1ueUg2blpaSmdjQ2Y5aFo4b251aS1YZy0xV2VyLW1uT0xRa19hX3BudHprUER3TWpjV0lyV0sxNUxmNkg1Vk5RUGFwc290SHdPZWJCWXY1V2ZWdUY3UQ?oc=5",
+      "title": "[국민의 기업] 신약·의료기기 개발부터 해외진출까지 … 의료산업 성장 도와",
+      "link": "https://news.google.com/rss/articles/CBMiVkFVX3lxTE5kU0p2WW81TDBTdGNmZnNCazFfMWZReG1sbTV4VUI5eUZIZzllQk1wWFVhYUt4OExaeTRWRkZQQXFLX2VEX3N0LWlaSEF2SUNKVGppcF9B?oc=5",
+      "originallink": "https://news.google.com/rss/articles/CBMiVkFVX3lxTE5kU0p2WW81TDBTdGNmZnNCazFfMWZReG1sbTV4VUI5eUZIZzllQk1wWFVhYUt4OExaeTRWRkZQQXFLX2VEX3N0LWlaSEF2SUNKVGppcF9B?oc=5",
       "summary": "",
-      "pubDate": "2026-11-25T12:46:00+09:00",
+      "pubDate": "2026-11-26T05:30:01+09:00",
+      "category": "중앙일보",
+      "press": "중앙일보",
+      "source": "중앙일보",
+      "queries": [
+        "의료"
+      ],
+      "source_type": "major",
+      "score": 4
+    },
+    {
+      "title": "요양병원 퇴원 후 일상 복귀, 어떤 도움을 받을 수 있을까? [건강한겨레]",
+      "link": "https://news.google.com/rss/articles/CBMia0FVX3lxTE1LVU9YeHVkeW9zOXgtZTBGTElaZ0w4b0U0Ni1RWGZjd25id0UxOHNKTjRHMDhnYlQ0ZG42VFI0am9sZU5sVndqNkpseVdvT3paNHJTLXIyZEpnVUdVbTZUcmtua0Z4U1BDMVIw?oc=5",
+      "originallink": "https://news.google.com/rss/articles/CBMia0FVX3lxTE1LVU9YeHVkeW9zOXgtZTBGTElaZ0w4b0U0Ni1RWGZjd25id0UxOHNKTjRHMDhnYlQ0ZG42VFI0am9sZU5sVndqNkpseVdvT3paNHJTLXIyZEpnVUdVbTZUcmtua0Z4U1BDMVIw?oc=5",
+      "summary": "",
+      "pubDate": "2026-11-26T05:01:00+09:00",
+      "category": "한겨레",
+      "press": "한겨레",
+      "source": "한겨레",
+      "queries": [
+        "병원"
+      ],
+      "source_type": "major",
+      "score": 4
+    },
+    {
+      "title": "제1회 대한민국 환자중심대상에 한국아스트라제네카의 ‘희망샘’ [건강한겨레]",
+      "link": "https://news.google.com/rss/articles/CBMia0FVX3lxTE5MYjJ0QkdXQ09QUkd1NmNUQ2tLaVZkZ3A4dmpZdkU2NzFvNUNyS1ZvTkd4YkVqSVVPcEJna3FrRUxMaWJLT3MyNkE0Z0h2MXozYm1UeDdvSURuMXRyNlQ0NTNucS0yWGhyQlpF?oc=5",
+      "originallink": "https://news.google.com/rss/articles/CBMia0FVX3lxTE5MYjJ0QkdXQ09QUkd1NmNUQ2tLaVZkZ3A4dmpZdkU2NzFvNUNyS1ZvTkd4YkVqSVVPcEJna3FrRUxMaWJLT3MyNkE0Z0h2MXozYm1UeDdvSURuMXRyNlQ0NTNucS0yWGhyQlpF?oc=5",
+      "summary": "",
+      "pubDate": "2026-11-26T05:01:00+09:00",
       "category": "한겨레",
       "press": "한겨레",
       "source": "한겨레",
@@ -233,26 +267,101 @@
       "score": 4
     },
     {
-      "title": "식약처, 3년 내 자료보호·재심사 끝나는 의약품 공개…위고비·마운자로 포함",
-      "link": "https://www.chosun.com/economy/science/2026/11/25/G5RGCM3EGA2WGYRWHE4TEOBRHE/",
-      "originallink": "https://www.chosun.com/economy/science/2026/11/25/G5RGCM3EGA2WGYRWHE4TEOBRHE/",
-      "summary": "식품의약품안전처가 향후 3년 안에 자료보호 또는 재심사 기간이 끝나는 의약품 품목의 특허 정보를 공개한다. 후발 제약사들이 특허 만료 시점과 회피 가능성을 검토해 제네릭·후속 제품 개발 전략을 세우도록 돕기 위한 조치다. 비만 치료제 ‘위고비’와 ‘마운자로’도 포함됐다. 식약처는 2027~2029년 자료보호 또는 재심사 기간이 종료되는 의약품 572개 품목",
-      "pubDate": "2026-11-25T12:08:49+09:00",
-      "category": "조선일보",
-      "press": "조선일보",
-      "source": "조선일보",
+      "title": "[단독] 의사냥이·간호냥이도 있나…국시 과목 만점자 7배 뛰었다",
+      "link": "https://news.google.com/rss/articles/CBMiVkFVX3lxTFBTMWhqTGVMZzFIZUt2WC05aE9XdTVqUjlzSFdUVGpVaFFOR2Z1NGxDNzVhMENyVmN3SWNqQW5oZ0JSdmwzT3AzTXFDeXpDZ2FTLTQ4MEJR?oc=5",
+      "originallink": "https://news.google.com/rss/articles/CBMiVkFVX3lxTFBTMWhqTGVMZzFIZUt2WC05aE9XdTVqUjlzSFdUVGpVaFFOR2Z1NGxDNzVhMENyVmN3SWNqQW5oZ0JSdmwzT3AzTXFDeXpDZ2FTLTQ4MEJR?oc=5",
+      "summary": "",
+      "pubDate": "2026-11-26T05:00:01+09:00",
+      "category": "중앙일보",
+      "press": "중앙일보",
+      "source": "중앙일보",
       "queries": [
-        "식약처"
+        "의사"
       ],
       "source_type": "major",
       "score": 4
     },
     {
-      "title": "[사진]영화로 돌아온 신병 더 무비:군병원에 귀신이 산다",
-      "link": "https://www.chosun.com/entertainments/entertain_photo/2026/11/25/G5TGGNJUMVSWEYRWHEZDAZJTGE/",
-      "originallink": "https://www.chosun.com/entertainments/entertain_photo/2026/11/25/G5TGGNJUMVSWEYRWHEZDAZJTGE/",
-      "summary": "[OSEN=박준형 기자] 25일 서울 용산아이파크몰 내 CGV 용산에서 영화 '신병 더 무비: 군병원에 귀신이 산다' (감독 민진기) 제작보고회가 진행됐다.'신병 더 무비: 군병원에 귀신이 산다'(이하 '신병 더 무비')는 달콤한 휴식을 꿈꾸며 군병원에 입원한 신병즈가, 천국이라 믿었던 군병원의 끔찍한 소문을 마주하며 비밀을 파헤치는 이야기로 오는 30일",
-      "pubDate": "2026-11-25T11:52:00+09:00",
+      "title": "‘고음불가’ 5060, 12주 훈련하고 3옥타브 뚫었다[이진한 의학전문기자의 메디컬 체험]",
+      "link": "https://www.donga.com/news/It/article/all/20261126/135091253/2",
+      "originallink": "https://www.donga.com/news/It/article/all/20261126/135091253/2",
+      "summary": "“노래방만 가면 주눅 들었는데 12주 훈련 끝에 3옥타브 ‘레’까지 올라가네요.” 노래방 구석 자리에서 항상 마이크를 외면하던 중년 남성들이 12주간의 도전 끝에 숨어 있던 목소리를 되찾았다. 학창시절 음악 성적표에 ‘미’만 찍혔던 이들의 오랜 한이 풀리는 순간이었다. 본보 기자와 하태국 포근한맘요양병원 원장(가정의학과 전문의)이 참여한 ‘꽃중년 남성 목소리 고음 프로젝트’의 최종 성적표가 나왔다. 12주 동안의 훈련 과정은 유튜브 ‘톡투건강TV’ 채널에서 자세히 공개된다.● ‘성대 코어’ 강화로 쥐어짜던 고음도 편안해져이번 프로젝",
+      "pubDate": "2026-11-26T04:30:00+09:00",
+      "category": "동아일보",
+      "press": "동아일보",
+      "source": "동아일보",
+      "queries": [
+        "의학"
+      ],
+      "source_type": "major",
+      "score": 4
+    },
+    {
+      "title": "[만화 그리는 의사들]〈432〉마취한 김에 이것도 해 주세요.",
+      "link": "https://www.donga.com/news/It/article/all/20261126/135091255/2",
+      "originallink": "https://www.donga.com/news/It/article/all/20261126/135091255/2",
+      "summary": "",
+      "pubDate": "2026-11-26T04:30:00+09:00",
+      "category": "동아일보",
+      "press": "동아일보",
+      "source": "동아일보",
+      "queries": [
+        "의사"
+      ],
+      "source_type": "major",
+      "score": 4
+    },
+    {
+      "title": "어린이 ‘응급실 뺑뺑이’ 뒤엔, 무너져가는 소아 중환자실 있었다",
+      "link": "https://www.chosun.com/national/welfare-medical/2026/11/26/VO6PGSA545CK3OQLJHYYDYLLG4/",
+      "originallink": "https://www.chosun.com/national/welfare-medical/2026/11/26/VO6PGSA545CK3OQLJHYYDYLLG4/",
+      "summary": "",
+      "pubDate": "2026-11-26T00:45:00+09:00",
+      "category": "조선일보",
+      "press": "조선일보",
+      "source": "조선일보",
+      "queries": [
+        "환자"
+      ],
+      "source_type": "major",
+      "score": 4
+    },
+    {
+      "title": "‘진료과목 피부과’ 간판 보고 갔는데 일반의… 동네 병·의원 ‘전문의 표시 의무화’ 입법 추진",
+      "link": "https://www.chosun.com/national/welfare-medical/2026/11/26/OT2MN2BPQRDMPMLZTJD3HTQTL4/",
+      "originallink": "https://www.chosun.com/national/welfare-medical/2026/11/26/OT2MN2BPQRDMPMLZTJD3HTQTL4/",
+      "summary": "",
+      "pubDate": "2026-11-26T00:45:00+09:00",
+      "category": "조선일보",
+      "press": "조선일보",
+      "source": "조선일보",
+      "queries": [
+        "진료"
+      ],
+      "source_type": "major",
+      "score": 4
+    },
+    {
+      "title": "[Dr.이은봉의 의학 연구 다이제스트] 야근할 때 ‘야식’ 먹으면 우울·불안 증가",
+      "link": "https://www.chosun.com/medical/2026/11/26/6OTUWHIV35FB5LELVF4JIDQQU4/",
+      "originallink": "https://www.chosun.com/medical/2026/11/26/6OTUWHIV35FB5LELVF4JIDQQU4/",
+      "summary": "",
+      "pubDate": "2026-11-26T00:40:00+09:00",
+      "category": "조선일보",
+      "press": "조선일보",
+      "source": "조선일보",
+      "queries": [
+        "의학"
+      ],
+      "source_type": "major",
+      "score": 4
+    },
+    {
+      "title": "피 쏟는 산모 살려라… 자궁출혈 막는 건국대병원 어벤져스",
+      "link": "https://www.chosun.com/medical/2026/11/26/QL5DLFP7XJGYZAXWPFNXW5XMAA/",
+      "originallink": "https://www.chosun.com/medical/2026/11/26/QL5DLFP7XJGYZAXWPFNXW5XMAA/",
+      "summary": "",
+      "pubDate": "2026-11-26T00:40:00+09:00",
       "category": "조선일보",
       "press": "조선일보",
       "source": "조선일보",
@@ -263,14 +372,89 @@
       "score": 4
     },
     {
-      "title": "[사진]김희수, 제대하지 못하고 다시 군병원으로",
-      "link": "https://www.chosun.com/entertainments/entertain_photo/2026/11/25/GFTDEOBZGQ4DEMLCGVTGCYZZME/",
-      "originallink": "https://www.chosun.com/entertainments/entertain_photo/2026/11/25/GFTDEOBZGQ4DEMLCGVTGCYZZME/",
-      "summary": "[OSEN=박준형 기자] 25일 서울 용산아이파크몰 내 CGV 용산에서 영화 '신병 더 무비: 군병원에 귀신이 산다' (감독 민진기) 제작보고회가 진행됐다.'신병 더 무비: 군병원에 귀신이 산다'(이하 '신병 더 무비')는 달콤한 휴식을 꿈꾸며 군병원에 입원한 신병즈가, 천국이라 믿었던 군병원의 끔찍한 소문을 마주하며 비밀을 파헤치는 이야기로 오는 30일",
-      "pubDate": "2026-11-25T11:47:00+09:00",
+      "title": "30년간 의료봉사 강지헌·주수경 부부 ‘아산상’",
+      "link": "https://news.google.com/rss/articles/CBMiVkFVX3lxTFBlUUVlS3ZnT2lOLWp3M1ExVV9COERYRkwyZjlXMV9vSm82clViRXVqaU5HMTVONEVrQ1pYSHljMXY3MFRMNzJ2VE05MzFuQ1Bvc29pY3Zn?oc=5",
+      "originallink": "https://news.google.com/rss/articles/CBMiVkFVX3lxTFBlUUVlS3ZnT2lOLWp3M1ExVV9COERYRkwyZjlXMV9vSm82clViRXVqaU5HMTVONEVrQ1pYSHljMXY3MFRMNzJ2VE05MzFuQ1Bvc29pY3Zn?oc=5",
+      "summary": "",
+      "pubDate": "2026-11-26T00:06:51+09:00",
+      "category": "중앙일보",
+      "press": "중앙일보",
+      "source": "중앙일보",
+      "queries": [
+        "의료"
+      ],
+      "source_type": "major",
+      "score": 4
+    },
+    {
+      "title": "30년간 의료봉사·교육 활동한 강지헌·주수경 부부 ‘아산상’",
+      "link": "https://news.google.com/rss/articles/CBMiX0FVX3lxTE9saURBekNRNUVzaENIWFZNakNsWlV4Y0lTdEpVZW5hZnhOUWJjTWx2SVRvMElxS0ppQjFfYzA3NG9MdmlYaWhBWjB5cnNrbDdNZmptQWZUd0xnbjBoZmZZ0gFfQVVfeXFMT2xpREF6Q1E1RXNoQ0hYVk1qQ2xaVXhjSVN0SlVlbmFmeE5RYmNNbHZJVG8wSXFLSmlCMV9jMDc0b0x2aVhpaEFaMHlyc2tsN01mam1BZlR3TGduMGhmZlk?oc=5",
+      "originallink": "https://news.google.com/rss/articles/CBMiX0FVX3lxTE9saURBekNRNUVzaENIWFZNakNsWlV4Y0lTdEpVZW5hZnhOUWJjTWx2SVRvMElxS0ppQjFfYzA3NG9MdmlYaWhBWjB5cnNrbDdNZmptQWZUd0xnbjBoZmZZ0gFfQVVfeXFMT2xpREF6Q1E1RXNoQ0hYVk1qQ2xaVXhjSVN0SlVlbmFmeE5RYmNNbHZJVG8wSXFLSmlCMV9jMDc0b0x2aVhpaEFaMHlyc2tsN01mam1BZlR3TGduMGhmZlk?oc=5",
+      "summary": "",
+      "pubDate": "2026-11-25T20:12:00+09:00",
+      "category": "경향신문",
+      "press": "경향신문",
+      "source": "경향신문",
+      "queries": [
+        "의료"
+      ],
+      "source_type": "major",
+      "score": 4
+    },
+    {
+      "title": "성유리의 교수 父가 간직해 온 ‘올 수’ 성적표…의대가 목표였다",
+      "link": "https://news.google.com/rss/articles/CBMiVkFVX3lxTE5kQkg3dWluTXViWmFDSGx6QkN0eThTSnhPRWFKTUZ4anVud3huLS1vNDRaNHQ1UnZvYkUzWUU2cFZTR1MtWUt3T1FfcmxuSVJhVEpsTlBR?oc=5",
+      "originallink": "https://news.google.com/rss/articles/CBMiVkFVX3lxTE5kQkg3dWluTXViWmFDSGx6QkN0eThTSnhPRWFKTUZ4anVud3huLS1vNDRaNHQ1UnZvYkUzWUU2cFZTR1MtWUt3T1FfcmxuSVJhVEpsTlBR?oc=5",
+      "summary": "",
+      "pubDate": "2026-11-25T19:33:57+09:00",
+      "category": "중앙일보",
+      "press": "중앙일보",
+      "source": "중앙일보",
+      "queries": [
+        "의대"
+      ],
+      "source_type": "major",
+      "score": 4
+    },
+    {
+      "title": "공보의 사라지자… 보건지소 10곳 중 9곳 ‘주 5일 진료’ 불가",
+      "link": "https://www.chosun.com/national/welfare-medical/2026/11/25/DAPYLRIDQ5AS3JFGJQLISWHBRQ/",
+      "originallink": "https://www.chosun.com/national/welfare-medical/2026/11/25/DAPYLRIDQ5AS3JFGJQLISWHBRQ/",
+      "summary": "",
+      "pubDate": "2026-11-25T16:52:46+09:00",
       "category": "조선일보",
       "press": "조선일보",
       "source": "조선일보",
+      "queries": [
+        "진료"
+      ],
+      "source_type": "major",
+      "score": 4
+    },
+    {
+      "title": "증안펀드 확대할까?…산은 “추가 출자 의사” 확인 공문",
+      "link": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTE55bWx2c182WHA2YXVDd3BCemZpVnpIekNVLW9tN1AxekRWemFxckR3WVNfTlhNLXVPb056SzUxVmdjeHMxUzcyZG9DQnZVYklwVzJ1MzZhUE5fTVRnZk9TeGc0N0hvcVk?oc=5",
+      "originallink": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTE55bWx2c182WHA2YXVDd3BCemZpVnpIekNVLW9tN1AxekRWemFxckR3WVNfTlhNLXVPb056SzUxVmdjeHMxUzcyZG9DQnZVYklwVzJ1MzZhUE5fTVRnZk9TeGc0N0hvcVk?oc=5",
+      "summary": "",
+      "pubDate": "2026-11-25T16:18:00+09:00",
+      "category": "한겨레",
+      "press": "한겨레",
+      "source": "한겨레",
+      "queries": [
+        "의사"
+      ],
+      "source_type": "major",
+      "score": 4
+    },
+    {
+      "title": "삼육서울병원 양거승 원장 부부, 삼육대에 1200만원 기부",
+      "link": "https://news.google.com/rss/articles/CBMiVkFVX3lxTE5mRmN1NzhjX1pOdlVkU1FRQi1KbldJaUFiNWp5dXk0bmZfTFVzSFlGcU44LTI1U3k2Yy0yQTR3TkdXbGpYUGczMFFhUVU2MUVna2lyME5R?oc=5",
+      "originallink": "https://news.google.com/rss/articles/CBMiVkFVX3lxTE5mRmN1NzhjX1pOdlVkU1FRQi1KbldJaUFiNWp5dXk0bmZfTFVzSFlGcU44LTI1U3k2Yy0yQTR3TkdXbGpYUGczMFFhUVU2MUVna2lyME5R?oc=5",
+      "summary": "",
+      "pubDate": "2026-11-25T16:11:55+09:00",
+      "category": "중앙일보",
+      "press": "중앙일보",
+      "source": "중앙일보",
       "queries": [
         "병원"
       ],
@@ -278,16 +462,91 @@
       "score": 4
     },
     {
-      "title": "[사진]신병 더 무비:군병원에 귀신이 산다 \"귀신이다!\"",
-      "link": "https://biz.chosun.com/entertainment/entertainment_photo/2026/11/25/GZSGIZTGGNQWMNJSMM3DENJQMQ/",
-      "originallink": "https://biz.chosun.com/entertainment/entertainment_photo/2026/11/25/GZSGIZTGGNQWMNJSMM3DENJQMQ/",
-      "summary": "25일 서울 용산아이파크몰 내 CGV 용산에서 영화 '신병 더 무비: 군병원에 귀신이 산다' (감독 민진기) 제작보고회가 진행됐다.'신병 더 무비: 군병원에 귀신이 산다'(이하 '신병 더 무비')는 달콤한 휴식을 꿈꾸며 군병원에 입원한 신병즈가, 천국이라 믿었던 군병원의 끔찍한 소문을 마주하며 비밀을 파헤치는 이야기로 오는 30일 개봉된다.출연배우들과 민진",
-      "pubDate": "2026-11-25T11:39:00+09:00",
-      "category": "조선일보",
-      "press": "조선일보",
-      "source": "조선일보",
+      "title": "라이프 | 건강·의학",
+      "link": "https://news.google.com/rss/articles/CBMiVkFVX3lxTE1RYVlMMXNTNS1ZSEFJTE9DNHhOcU9fU0xwb0xyX2hISC03dDllUlprbVJDV2E0cXFsTnh1SUVkdHRVLWZVR1RxRl9aMy12bHEySHhOcHJR?oc=5",
+      "originallink": "https://news.google.com/rss/articles/CBMiVkFVX3lxTE1RYVlMMXNTNS1ZSEFJTE9DNHhOcU9fU0xwb0xyX2hISC03dDllUlprbVJDV2E0cXFsTnh1SUVkdHRVLWZVR1RxRl9aMy12bHEySHhOcHJR?oc=5",
+      "summary": "",
+      "pubDate": "2026-11-25T16:08:56+09:00",
+      "category": "경향신문",
+      "press": "경향신문",
+      "source": "경향신문",
+      "queries": [
+        "의학"
+      ],
+      "source_type": "major",
+      "score": 4
+    },
+    {
+      "title": "단독 기술 넘어 경영·의료·법률 자문까지… 서울대, 기업 컨설팅 기능 키운다",
+      "link": "https://news.google.com/rss/articles/CBMic0FVX3lxTFBINWVqWDVsMlF6Zlc4b0t2RGRmbEZrenNiQkp3cDUtVlhQUVNxdzBpMk9rTnFtSDRyZjBoSXVyS2UtejNsZTFFN2ExYjVrTEw2blRpazlxU1RYeDIyZDdYUE1jT21obVAxdkI2NkhWOFdUUTg?oc=5",
+      "originallink": "https://news.google.com/rss/articles/CBMic0FVX3lxTFBINWVqWDVsMlF6Zlc4b0t2RGRmbEZrenNiQkp3cDUtVlhQUVNxdzBpMk9rTnFtSDRyZjBoSXVyS2UtejNsZTFFN2ExYjVrTEw2blRpazlxU1RYeDIyZDdYUE1jT21obVAxdkI2NkhWOFdUUTg?oc=5",
+      "summary": "",
+      "pubDate": "2026-11-25T16:00:00+09:00",
+      "category": "한국일보",
+      "press": "한국일보",
+      "source": "한국일보",
+      "queries": [
+        "의료"
+      ],
+      "source_type": "major",
+      "score": 4
+    },
+    {
+      "title": "조상호 세종시장 “500병상 종합병원·국립대 유치 지원해 달라”",
+      "link": "https://news.google.com/rss/articles/CBMiaEFVX3lxTFBBU0Q1NW5JclJoR2hXdzNXdm9Fek5hcU5NX2JjblVlR3FTakxmdVZhV0pMQ1JWRXRQTkd6Yk5KdVBIRFdmYkluMF80UFV4V0w2SExGZmo2cl9jRUZ2alBGdmtOVGVhU3RX?oc=5",
+      "originallink": "https://news.google.com/rss/articles/CBMiaEFVX3lxTFBBU0Q1NW5JclJoR2hXdzNXdm9Fek5hcU5NX2JjblVlR3FTakxmdVZhV0pMQ1JWRXRQTkd6Yk5KdVBIRFdmYkluMF80UFV4V0w2SExGZmo2cl9jRUZ2alBGdmtOVGVhU3RX?oc=5",
+      "summary": "",
+      "pubDate": "2026-11-25T15:59:00+09:00",
+      "category": "한겨레",
+      "press": "한겨레",
+      "source": "한겨레",
       "queries": [
         "병원"
+      ],
+      "source_type": "major",
+      "score": 4
+    },
+    {
+      "title": "대한뇌혈관내치료의학회, 실로스타졸·은행잎추출물 병용요법 권고문 발표",
+      "link": "https://news.google.com/rss/articles/CBMiX0FVX3lxTFA1MHkyd1dGUVlNZTFEMUpfR1lSekRhZ3o2ZWZwREJ5ZldiU1I0NlZDRmczOFNyaExCQWxXWVhVZmlYUGFWbEYtcnlDOGdWaGExQnZfNGNsWG5kX0Rrc1hJ0gFfQVVfeXFMUDUweTJ3V0ZRWU1lMUQxSl9HWVJ6RGFnejZlZnBEQnlmV2JTUjQ2VkNGZzM4U3JoTEJBbFdZWFVmaVhQYVZsRi1yeUM4Z1ZoYTFCdl80Y2xYbmRfRGtzWEk?oc=5",
+      "originallink": "https://news.google.com/rss/articles/CBMiX0FVX3lxTFA1MHkyd1dGUVlNZTFEMUpfR1lSekRhZ3o2ZWZwREJ5ZldiU1I0NlZDRmczOFNyaExCQWxXWVhVZmlYUGFWbEYtcnlDOGdWaGExQnZfNGNsWG5kX0Rrc1hJ0gFfQVVfeXFMUDUweTJ3V0ZRWU1lMUQxSl9HWVJ6RGFnejZlZnBEQnlmV2JTUjQ2VkNGZzM4U3JoTEJBbFdZWFVmaVhQYVZsRi1yeUM4Z1ZoYTFCdl80Y2xYbmRfRGtzWEk?oc=5",
+      "summary": "",
+      "pubDate": "2026-11-25T15:10:00+09:00",
+      "category": "경향신문",
+      "press": "경향신문",
+      "source": "경향신문",
+      "queries": [
+        "의학"
+      ],
+      "source_type": "major",
+      "score": 4
+    },
+    {
+      "title": "보호자 없거나 동의 못 받아도 위급환자 응급처치 가능해진다",
+      "link": "https://news.google.com/rss/articles/CBMiZkFVX3lxTE45NTd0ZzZfY2F5blpaVkFLazZrMElQZFhRLVFqajdCWV84SFdWWUZkRm1vX296c0g2T2haanNjYVBsaVhGNVdYU1lOUEwyWjZpWUppX2lCSnpZS0xYQlhoeGlFXzhuUQ?oc=5",
+      "originallink": "https://news.google.com/rss/articles/CBMiZkFVX3lxTE45NTd0ZzZfY2F5blpaVkFLazZrMElQZFhRLVFqajdCWV84SFdWWUZkRm1vX296c0g2T2haanNjYVBsaVhGNVdYU1lOUEwyWjZpWUppX2lCSnpZS0xYQlhoeGlFXzhuUQ?oc=5",
+      "summary": "",
+      "pubDate": "2026-11-25T14:51:00+09:00",
+      "category": "한겨레",
+      "press": "한겨레",
+      "source": "한겨레",
+      "queries": [
+        "환자"
+      ],
+      "source_type": "major",
+      "score": 4
+    },
+    {
+      "title": "보호자 없어도 생명 위급하면 응급처치 가능…응급의료 규정 바뀐다",
+      "link": "https://news.google.com/rss/articles/CBMiVkFVX3lxTE5iVUlvQWI5NVdZdUVqck1QQjJnbWdGNG55Tk5weHlsdEZJbVI1UTltUnY2UkxFdGMwNE53YTZsOXNyLVZMX3VqU2FlX0lPcDdwSVlvMXh3?oc=5",
+      "originallink": "https://news.google.com/rss/articles/CBMiVkFVX3lxTE5iVUlvQWI5NVdZdUVqck1QQjJnbWdGNG55Tk5weHlsdEZJbVI1UTltUnY2UkxFdGMwNE53YTZsOXNyLVZMX3VqU2FlX0lPcDdwSVlvMXh3?oc=5",
+      "summary": "",
+      "pubDate": "2026-11-25T14:49:35+09:00",
+      "category": "중앙일보",
+      "press": "중앙일보",
+      "source": "중앙일보",
+      "queries": [
+        "의료"
       ],
       "source_type": "major",
       "score": 4
@@ -308,10 +567,25 @@
       "score": 4
     },
     {
+      "title": "9440억 전액 지급 의사에도…노소영 \"진정성 있다면 즉시 상고 취하하길\"",
+      "link": "https://news.jtbc.co.kr/article/NB12329729",
+      "originallink": "https://news.jtbc.co.kr/article/NB12329729",
+      "summary": "노소영 아트센터 나비 관장 측이 오늘(25일) 최태원 SK그룹 회장 측의 화해권고 요청에 동의하지 않는다는 서면을 대법원에 제출했습니다. 재산분할금 9440억 원을 전액 지급하겠다는 최 회장 측에 상고를 취하해 달라",
+      "pubDate": "2026-11-25T11:18:53+09:00",
+      "category": "JTBC",
+      "press": "JTBC",
+      "source": "JTBC",
+      "queries": [
+        "의사"
+      ],
+      "source_type": "major",
+      "score": 4
+    },
+    {
       "title": "故 김영애 투병했던 췌장암, 국내 환자 1만명 육박…초기 발견은 16% [건강팩트체크]",
-      "link": "https://news.google.com/rss/articles/CBMidkFVX3lxTE41RDRfM1ZISldkOEt3b1g1Q2tNVEFKdXhFWkpUVFEyQVh1TXdnWHlnVktjYjNSOWhqTEpxa2tTYlZEZ3lHcDRJOHRMelNEdVU4SnFibmVBQTdkTUF4R3FmQUFmZTBLcXZCTHY1aEpDZ0h5akxVVXfSAWZBVV95cUxNazE0alNKZGhIZmI1OUR5VFg3eWRLVUt0SXk2MksxNC04LXJXeG5OTzlneFdjdlhtN0k4bmJGWFljeXA3OHlnZENBYTFmX044WWd1YjY1ZUR0cEF1Um95dUx1RkV2elE?oc=5",
-      "originallink": "https://news.google.com/rss/articles/CBMidkFVX3lxTE41RDRfM1ZISldkOEt3b1g1Q2tNVEFKdXhFWkpUVFEyQVh1TXdnWHlnVktjYjNSOWhqTEpxa2tTYlZEZ3lHcDRJOHRMelNEdVU4SnFibmVBQTdkTUF4R3FmQUFmZTBLcXZCTHY1aEpDZ0h5akxVVXfSAWZBVV95cUxNazE0alNKZGhIZmI1OUR5VFg3eWRLVUt0SXk2MksxNC04LXJXeG5OTzlneFdjdlhtN0k4bmJGWFljeXA3OHlnZENBYTFmX044WWd1YjY1ZUR0cEF1Um95dUx1RkV2elE?oc=5",
-      "summary": "",
+      "link": "https://www.donga.com/news/Culture/article/all/20261125/135086710/2",
+      "originallink": "https://www.donga.com/news/Culture/article/all/20261125/135086710/2",
+      "summary": "고 김영애가 췌장암 투병 중에도 병원에서 외출 허가를 받아 촬영장을 찾았던 사연이 재조명됐다. 국내 췌장암 환자는 연간 1만명에 육박하며 조기 발견이 어렵지만, 국한 단계에서는 생존율이 크게 높아지고 최근에는 새로운 표적치료제까지 등장하고 있다.",
       "pubDate": "2026-11-25T11:17:53+09:00",
       "category": "동아일보",
       "press": "동아일보",
@@ -324,9 +598,9 @@
     },
     {
       "title": "의대로 채우던 ‘수시 카드 6장’ 올핸 달라졌다…최상위권, 의약학계열 지원 줄고 반도체 계약학과 두 배로",
-      "link": "https://www.khan.co.kr/article/202611251102001/?utm_source=khan_rss&utm_medium=rss&utm_campaign=total_news",
-      "originallink": "https://www.khan.co.kr/article/202611251102001/?utm_source=khan_rss&utm_medium=rss&utm_campaign=total_news",
-      "summary": "서울 시내 한 의과대학. 정효진 기자2027학년도 대학입시에서 의대 모집인원이 늘었는데도 내신 최상위권 수험생들이 수시 지원을 의대에 집중하는 경향은 오히려 약해진 것으로 나타났다. 반도체 계약학과에 지원한 최상위권 수험생 비율은 지난해의 두 배 이상으로 높아지는 등 지원 학과가 다변화하는 양상을 보였다.입시업체 진학사가 25일 자사 플랫폼에 수시 지원 대···",
+      "link": "https://news.google.com/rss/articles/CBMiWkFVX3lxTE5PeEpKQmRnWGxYMUZ3VWJBZUR0ZEI4Z2ptblZvU2tpQk95NWxZa3RjNF9rTFlFWVZqVVhWVjZ5bG5KMTBCcEZ0SzAtU0VWR3pqMFVzQXpsNjZkQdIBX0FVX3lxTFBvUTB3X0tLRGZnYm1GVjdsajd1X0Rsc1JwbXUyQjNDTFV1elAwUUF6RUpkSDVGVWVoSVlKSGc2TE5pOXhyYnFCMGFrNTNQODNPR2J4bkd6M0lQbGRFU25r?oc=5",
+      "originallink": "https://news.google.com/rss/articles/CBMiWkFVX3lxTE5PeEpKQmRnWGxYMUZ3VWJBZUR0ZEI4Z2ptblZvU2tpQk95NWxZa3RjNF9rTFlFWVZqVVhWVjZ5bG5KMTBCcEZ0SzAtU0VWR3pqMFVzQXpsNjZkQdIBX0FVX3lxTFBvUTB3X0tLRGZnYm1GVjdsajd1X0Rsc1JwbXUyQjNDTFV1elAwUUF6RUpkSDVGVWVoSVlKSGc2TE5pOXhyYnFCMGFrNTNQODNPR2J4bkd6M0lQbGRFU25r?oc=5",
+      "summary": "",
       "pubDate": "2026-11-25T11:02:00+09:00",
       "category": "경향신문",
       "press": "경향신문",
@@ -338,391 +612,46 @@
       "score": 4
     },
     {
-      "title": "인천세종병원, 국제학술무대서 고난도 ‘심장이식 임상’ 역량 입증",
-      "link": "https://news.google.com/rss/articles/CBMickFVX3lxTE5odmRtZzdOQnJzYWFiR1RQZGhHYzFBR1FPcnI3N3A0eTFXZUYybjVfdHotQ0FTOGtfbUhKbHpZNG5xVDNzZk5ZR3RWdDg0Q0diTTRTZ3ExeklOaktDQmppdlFhUkNEMTExQ3BaM1l4RWxGQQ?oc=5",
-      "originallink": "https://news.google.com/rss/articles/CBMickFVX3lxTE5odmRtZzdOQnJzYWFiR1RQZGhHYzFBR1FPcnI3N3A0eTFXZUYybjVfdHotQ0FTOGtfbUhKbHpZNG5xVDNzZk5ZR3RWdDg0Q0diTTRTZ3ExeklOaktDQmppdlFhUkNEMTExQ3BaM1l4RWxGQQ?oc=5",
+      "title": "호남권 감염병전문병원, 예산 부족에 내년 정상 개원 우려",
+      "link": "https://news.google.com/rss/articles/CBMiYEFVX3lxTFBRSnpPTDhkN09qeWN4eFJhY0RzQURpS0hDTXhaN3kxTWtuSlp4VFVZNXpPQnJ1UDh6TlVnY2xvMjh1aXY0dkVaWXQ2MUFyMU50ZHY5ZEVaVUhQTHNLRkNGUQ?oc=5",
+      "originallink": "https://news.google.com/rss/articles/CBMiYEFVX3lxTFBRSnpPTDhkN09qeWN4eFJhY0RzQURpS0hDTXhaN3kxTWtuSlp4VFVZNXpPQnJ1UDh6TlVnY2xvMjh1aXY0dkVaWXQ2MUFyMU50ZHY5ZEVaVUhQTHNLRkNGUQ?oc=5",
       "summary": "",
-      "pubDate": "2026-11-25T10:26:26+09:00",
-      "category": "동아일보",
-      "press": "동아일보",
-      "source": "스포츠동아",
+      "pubDate": "2026-11-25T10:54:00+09:00",
+      "category": "한겨레",
+      "press": "한겨레",
+      "source": "한겨레",
       "queries": [
         "병원"
+      ],
+      "source_type": "major",
+      "score": 4
+    },
+    {
+      "title": "내신 1등급 ‘의대 올인’ 꺾였다…수시 지원 2배 급증한 이 학과",
+      "link": "https://news.google.com/rss/articles/CBMiVkFVX3lxTE1Xa2hsaFlGQjJMeXZtVkdvQ0lOczNfR1AtWXY2cTZja0JnckEwSG5zTzdUTXhkQ3ViMFFfS3NJamE5dFFoLVVZbm1lWThFTlFnb2txdDRB?oc=5",
+      "originallink": "https://news.google.com/rss/articles/CBMiVkFVX3lxTE1Xa2hsaFlGQjJMeXZtVkdvQ0lOczNfR1AtWXY2cTZja0JnckEwSG5zTzdUTXhkQ3ViMFFfS3NJamE5dFFoLVVZbm1lWThFTlFnb2txdDRB?oc=5",
+      "summary": "",
+      "pubDate": "2026-11-25T10:21:02+09:00",
+      "category": "중앙일보",
+      "press": "중앙일보",
+      "source": "중앙일보",
+      "queries": [
+        "의대"
       ],
       "source_type": "major",
       "score": 4
     },
     {
       "title": "국가연구개발 특허성과 입력 쉬워진다···지재처·과기정통부 시스템 개선",
-      "link": "https://www.khan.co.kr/article/202611250956001/?utm_source=khan_rss&utm_medium=rss&utm_campaign=total_news",
-      "originallink": "https://www.khan.co.kr/article/202611250956001/?utm_source=khan_rss&utm_medium=rss&utm_campaign=total_news",
-      "summary": "온라인 특허출원시스템 ‘특허로’ 화면 캡처.지식재산처와 과학기술정보통신부는 국가연구개발사업을 수행하는 연구자가 특허를 출원하고 연구성과로 등록하는 과정의 행정부담을 줄일 수 있도록 관련 시스템을 개선했다고 25일 밝혔다.국가연구개발사업 성과를 특허로 출원하는 연구자는 출원서에 연구과제 정보를 기재하고, 출원 후에는 범부처통합연구지원시스템(IRIS)에 특허를···",
+      "link": "https://news.google.com/rss/articles/CBMiWkFVX3lxTE04SmNPN1NLdnFWUWZ2T19pNXQtTm9iaUxZSE90U3BrMUlSTVZYNUs3UlRPdVlaWHJtVHVUSmduQ0UxMm5JWFB0LTZoVEJubWl4WV9kX3dSc3pQZ9IBX0FVX3lxTFBlOXBjYU9QVEFURGNQdDNWX0dzczFuZXJWQXRhZmxENlc5eWpybDBpbGkyZ1RMODBRT3dBZFBjWENqUHJZemdmcWVSVTEwdGt1RVEzU1pSQk9UWXpmTHpN?oc=5",
+      "originallink": "https://news.google.com/rss/articles/CBMiWkFVX3lxTE04SmNPN1NLdnFWUWZ2T19pNXQtTm9iaUxZSE90U3BrMUlSTVZYNUs3UlRPdVlaWHJtVHVUSmduQ0UxMm5JWFB0LTZoVEJubWl4WV9kX3dSc3pQZ9IBX0FVX3lxTFBlOXBjYU9QVEFURGNQdDNWX0dzczFuZXJWQXRhZmxENlc5eWpybDBpbGkyZ1RMODBRT3dBZFBjWENqUHJZemdmcWVSVTEwdGt1RVEzU1pSQk9UWXpmTHpN?oc=5",
+      "summary": "",
       "pubDate": "2026-11-25T09:56:00+09:00",
       "category": "경향신문",
       "press": "경향신문",
       "source": "경향신문",
       "queries": [
         "과기정통부"
-      ],
-      "source_type": "major",
-      "score": 4
-    },
-    {
-      "title": "\"마운자로 평생 맞을 생각\"…40kg 감량한 현직 대학병원 교수",
-      "link": "https://news.google.com/rss/articles/CBMiUkFVX3lxTE5BdWdlcHhVV21EeThsWURJakRpckxSMVhmMXlSM05yRXRJRl9Rbmt5QkIxcUVlSjN3TFNteHJCZk44N3ZwNDRCYnJxTnMxLUJqYWc?oc=5",
-      "originallink": "https://news.google.com/rss/articles/CBMiUkFVX3lxTE5BdWdlcHhVV21EeThsWURJakRpckxSMVhmMXlSM05yRXRJRl9Rbmt5QkIxcUVlSjN3TFNteHJCZk44N3ZwNDRCYnJxTnMxLUJqYWc?oc=5",
-      "summary": "",
-      "pubDate": "2026-11-25T06:41:10+09:00",
-      "category": "JTBC",
-      "press": "JTBC",
-      "source": "JTBC",
-      "queries": [
-        "병원"
-      ],
-      "source_type": "major",
-      "score": 4
-    },
-    {
-      "title": "의료·제약계 소식 | 헬스동아",
-      "link": "https://news.google.com/rss/articles/CBMiWEFVX3lxTE9BX1BNbXl2SmpDRXo5MVB1X2E4VkVDdjJsVm1pMmFEZ0dXVWNrMnVCdUlMY3p0cndZVDNpM0R4NWRhbjBhSDZOblZuY1U4TVU4TnZ2d3JKLTc?oc=5",
-      "originallink": "https://news.google.com/rss/articles/CBMiWEFVX3lxTE9BX1BNbXl2SmpDRXo5MVB1X2E4VkVDdjJsVm1pMmFEZ0dXVWNrMnVCdUlMY3p0cndZVDNpM0R4NWRhbjBhSDZOblZuY1U4TVU4TnZ2d3JKLTc?oc=5",
-      "summary": "",
-      "pubDate": "2026-11-25T05:04:11+09:00",
-      "category": "동아일보",
-      "press": "동아일보",
-      "source": "동아일보",
-      "queries": [
-        "의료"
-      ],
-      "source_type": "major",
-      "score": 4
-    },
-    {
-      "title": "이건희 유산 5000억으로, ‘중앙감염병원’ 내년 착공",
-      "link": "https://news.google.com/rss/articles/CBMidEFVX3lxTE5SejAzbnV4M0ExaXJDVEYybzNQX1Z4QkowVkhqeDBjVU5UczBvS0w3ZEIxdFYxVFgwTUd5NjE0aXFKU1dkUW9lamlnbGN2MzY0S3FCM2ttR1p5a2VDNXhxV0NxM0ZFVHJvOVdyaDJIS3JvMVRu0gFmQVVfeXFMUE9ENXJWYjhoWUZnVzVYa0M5X2FVUkFkQ04yWFVrbEZSM3EybDh2NEJESnM3dHowX3NQRzJYZG5yZm9Cci1ObGhyNGFDVnphMkhJVHhISF9CMGJ5QV9vSEpCQkZla213?oc=5",
-      "originallink": "https://news.google.com/rss/articles/CBMidEFVX3lxTE5SejAzbnV4M0ExaXJDVEYybzNQX1Z4QkowVkhqeDBjVU5UczBvS0w3ZEIxdFYxVFgwTUd5NjE0aXFKU1dkUW9lamlnbGN2MzY0S3FCM2ttR1p5a2VDNXhxV0NxM0ZFVHJvOVdyaDJIS3JvMVRu0gFmQVVfeXFMUE9ENXJWYjhoWUZnVzVYa0M5X2FVUkFkQ04yWFVrbEZSM3EybDh2NEJESnM3dHowX3NQRzJYZG5yZm9Cci1ObGhyNGFDVnphMkhJVHhISF9CMGJ5QV9vSEpCQkZla213?oc=5",
-      "summary": "",
-      "pubDate": "2026-11-25T04:30:00+09:00",
-      "category": "동아일보",
-      "press": "동아일보",
-      "source": "동아일보",
-      "queries": [
-        "병원"
-      ],
-      "source_type": "major",
-      "score": 4
-    },
-    {
-      "title": "[의료계 소식]노원서 진단-의정부서 수술… 88세 살린 협진",
-      "link": "https://news.google.com/rss/articles/CBMiZkFVX3lxTE16bEtqRFBLTFNRajJQRTJFQ192V1RrWi1IWDNpcEdYbUEtYkRnY25FbE1lT3NSUWp6WW9UQk5Rbk5oRUpEQnZyUzVMZ1RuSEtXNE9WVTJZLXlOSTVadFhZRzVUVFF5d9IBZkFVX3lxTE16bEtqRFBLTFNRajJQRTJFQ192V1RrWi1IWDNpcEdYbUEtYkRnY25FbE1lT3NSUWp6WW9UQk5Rbk5oRUpEQnZyUzVMZ1RuSEtXNE9WVTJZLXlOSTVadFhZRzVUVFF5dw?oc=5",
-      "originallink": "https://news.google.com/rss/articles/CBMiZkFVX3lxTE16bEtqRFBLTFNRajJQRTJFQ192V1RrWi1IWDNpcEdYbUEtYkRnY25FbE1lT3NSUWp6WW9UQk5Rbk5oRUpEQnZyUzVMZ1RuSEtXNE9WVTJZLXlOSTVadFhZRzVUVFF5d9IBZkFVX3lxTE16bEtqRFBLTFNRajJQRTJFQ192V1RrWi1IWDNpcEdYbUEtYkRnY25FbE1lT3NSUWp6WW9UQk5Rbk5oRUpEQnZyUzVMZ1RuSEtXNE9WVTJZLXlOSTVadFhZRzVUVFF5dw?oc=5",
-      "summary": "",
-      "pubDate": "2026-11-25T04:30:00+09:00",
-      "category": "동아일보",
-      "press": "동아일보",
-      "source": "동아일보",
-      "queries": [
-        "의료"
-      ],
-      "source_type": "major",
-      "score": 4
-    },
-    {
-      "title": "“조직 당기는 힘이 너무 세요”… 로봇, ‘의사 수술 판단’도 돕는다",
-      "link": "https://news.google.com/rss/articles/CBMib0FVX3lxTFBRSm1qckhxUTJKdmhmMnpiclVnd2V3LWVwLVp0V192cHdVb2x4Qmp6TktFOU1uTWxkbEwzbUI4VmtuRlY0azdCTmpQWHVmeTNNeFBYRlpPSzBjYkNlaXVDdVBaWDNjTzRXbU13dXZva9IBZkFVX3lxTFB1eFhjUXpRWnEyVzhBbUlFcHhsczlISWRBOEd3OWpHUGJtaGJBRThwQlZuMzJKMUdyUnZLTzhFUkN3OHVocThVcGpiNlFmRE9Tc3VNaXQ0bElQNG9LdmwwVDN2XzNOZw?oc=5",
-      "originallink": "https://news.google.com/rss/articles/CBMib0FVX3lxTFBRSm1qckhxUTJKdmhmMnpiclVnd2V3LWVwLVp0V192cHdVb2x4Qmp6TktFOU1uTWxkbEwzbUI4VmtuRlY0azdCTmpQWHVmeTNNeFBYRlpPSzBjYkNlaXVDdVBaWDNjTzRXbU13dXZva9IBZkFVX3lxTFB1eFhjUXpRWnEyVzhBbUlFcHhsczlISWRBOEd3OWpHUGJtaGJBRThwQlZuMzJKMUdyUnZLTzhFUkN3OHVocThVcGpiNlFmRE9Tc3VNaXQ0bElQNG9LdmwwVDN2XzNOZw?oc=5",
-      "summary": "",
-      "pubDate": "2026-11-25T04:30:00+09:00",
-      "category": "동아일보",
-      "press": "동아일보",
-      "source": "동아일보",
-      "queries": [
-        "의사"
-      ],
-      "source_type": "major",
-      "score": 4
-    },
-    {
-      "title": "‘임신 순번제’에 우는 간호사들…중절 수술까지 강요",
-      "link": "https://news.google.com/rss/articles/CBMiVEFVX3lxTE5wa0g0Nk5WM0JZRk9hSGVpYlBiV0M1dWM2cXcxMGp1QWc3b3EyQktZTE5TdGloNlp0V0c0Sjg0OE44c28ybzhDVDktY1lfVlFvZFYtQw?oc=5",
-      "originallink": "https://news.google.com/rss/articles/CBMiVEFVX3lxTE5wa0g0Nk5WM0JZRk9hSGVpYlBiV0M1dWM2cXcxMGp1QWc3b3EyQktZTE5TdGloNlp0V0c0Sjg0OE44c28ybzhDVDktY1lfVlFvZFYtQw?oc=5",
-      "summary": "",
-      "pubDate": "2026-11-25T02:34:05+09:00",
-      "category": "JTBC",
-      "press": "JTBC",
-      "source": "JTBC",
-      "queries": [
-        "간호사"
-      ],
-      "source_type": "major",
-      "score": 4
-    },
-    {
-      "title": "피 묻은 거즈, 주사기 ‘창고 가득’…쌓여가는 의료폐기물",
-      "link": "https://news.google.com/rss/articles/CBMiVEFVX3lxTE9ycmxKY0J4ZzBkNVI4V3ZyTG1mSVpfbVd6MzZfdGtubEJEaW4zNDZvcEJYaUpLTlJxSkVzTVdoMEFvVlQ1QzlTWUQ4Nl9XZnVVNmlXMg?oc=5",
-      "originallink": "https://news.google.com/rss/articles/CBMiVEFVX3lxTE9ycmxKY0J4ZzBkNVI4V3ZyTG1mSVpfbVd6MzZfdGtubEJEaW4zNDZvcEJYaUpLTlJxSkVzTVdoMEFvVlQ1QzlTWUQ4Nl9XZnVVNmlXMg?oc=5",
-      "summary": "",
-      "pubDate": "2026-11-25T02:11:54+09:00",
-      "category": "JTBC",
-      "press": "JTBC",
-      "source": "JTBC",
-      "queries": [
-        "의료"
-      ],
-      "source_type": "major",
-      "score": 4
-    },
-    {
-      "title": "故이건희 유족 기부금 5000억 투입… 중앙감염병병원 내년 착공",
-      "link": "https://www.chosun.com/national/welfare-medical/2026/11/25/OFRKINUYKFCXVET7TRAW7ENDQ4/",
-      "originallink": "https://www.chosun.com/national/welfare-medical/2026/11/25/OFRKINUYKFCXVET7TRAW7ENDQ4/",
-      "summary": "",
-      "pubDate": "2026-11-25T00:40:00+09:00",
-      "category": "조선일보",
-      "press": "조선일보",
-      "source": "조선일보",
-      "queries": [
-        "병원"
-      ],
-      "source_type": "major",
-      "score": 4
-    },
-    {
-      "title": "에이스침대, 승일희망요양병원에 1억",
-      "link": "https://news.google.com/rss/articles/CBMiZkFVX3lxTFBxT0w2eFhYem0xVHhBRU5aN2xwM2lHeXZzQ2lnR1FxZUxXNlRoaERUcV9XY0ZKbFhjRnR4WDVlYmQyRllMN01SWDl0TFEwSlphX0h6dG1FTnFhQllJTDRsTHFVa3M3QdIBZkFVX3lxTFBxT0w2eFhYem0xVHhBRU5aN2xwM2lHeXZzQ2lnR1FxZUxXNlRoaERUcV9XY0ZKbFhjRnR4WDVlYmQyRllMN01SWDl0TFEwSlphX0h6dG1FTnFhQllJTDRsTHFVa3M3QQ?oc=5",
-      "originallink": "https://news.google.com/rss/articles/CBMiZkFVX3lxTFBxT0w2eFhYem0xVHhBRU5aN2xwM2lHeXZzQ2lnR1FxZUxXNlRoaERUcV9XY0ZKbFhjRnR4WDVlYmQyRllMN01SWDl0TFEwSlphX0h6dG1FTnFhQllJTDRsTHFVa3M3QdIBZkFVX3lxTFBxT0w2eFhYem0xVHhBRU5aN2xwM2lHeXZzQ2lnR1FxZUxXNlRoaERUcV9XY0ZKbFhjRnR4WDVlYmQyRllMN01SWDl0TFEwSlphX0h6dG1FTnFhQllJTDRsTHFVa3M3QQ?oc=5",
-      "summary": "",
-      "pubDate": "2026-11-25T00:30:00+09:00",
-      "category": "동아일보",
-      "press": "동아일보",
-      "source": "동아일보",
-      "queries": [
-        "병원"
-      ],
-      "source_type": "major",
-      "score": 4
-    },
-    {
-      "title": "이건희 의료유산 뜻 잇는다…‘감염병 대응’ 심포지엄",
-      "link": "https://news.google.com/rss/articles/CBMiVkFVX3lxTE9xQlR3OXVhNGtFYVc0MTRIcUFWdXdtV1owcnIxLXg5WGlDWnkxdWZpYTZiTllWMm1nTmJxcEl3UGpvLWhKSGxrd3hVRnd2X21nRmJSQU1B?oc=5",
-      "originallink": "https://news.google.com/rss/articles/CBMiVkFVX3lxTE9xQlR3OXVhNGtFYVc0MTRIcUFWdXdtV1owcnIxLXg5WGlDWnkxdWZpYTZiTllWMm1nTmJxcEl3UGpvLWhKSGxrd3hVRnd2X21nRmJSQU1B?oc=5",
-      "summary": "",
-      "pubDate": "2026-11-25T00:01:00+09:00",
-      "category": "중앙일보",
-      "press": "중앙일보",
-      "source": "중앙일보",
-      "queries": [
-        "의료"
-      ],
-      "source_type": "major",
-      "score": 4
-    },
-    {
-      "title": "‘반포대교 추락’ 운전자에 프로포폴 공급한 병원장, 1심 징역 1년6개월",
-      "link": "https://news.google.com/rss/articles/CBMiZkFVX3lxTFAtWVpod2V5OHNRYnFWbW5UU1I4SlF5LVFnb3VCTWVyQldxcDFmeEY3ZlFZVVNFeVZsMk5QNjF4cktpZk5EbmRHalpmdy01elZCaWM2NjVobGI3Q0Z4RzJhblZ4Q2did9IBZkFVX3lxTFAtWVpod2V5OHNRYnFWbW5UU1I4SlF5LVFnb3VCTWVyQldxcDFmeEY3ZlFZVVNFeVZsMk5QNjF4cktpZk5EbmRHalpmdy01elZCaWM2NjVobGI3Q0Z4RzJhblZ4Q2didw?oc=5",
-      "originallink": "https://news.google.com/rss/articles/CBMiZkFVX3lxTFAtWVpod2V5OHNRYnFWbW5UU1I4SlF5LVFnb3VCTWVyQldxcDFmeEY3ZlFZVVNFeVZsMk5QNjF4cktpZk5EbmRHalpmdy01elZCaWM2NjVobGI3Q0Z4RzJhblZ4Q2did9IBZkFVX3lxTFAtWVpod2V5OHNRYnFWbW5UU1I4SlF5LVFnb3VCTWVyQldxcDFmeEY3ZlFZVVNFeVZsMk5QNjF4cktpZk5EbmRHalpmdy01elZCaWM2NjVobGI3Q0Z4RzJhblZ4Q2didw?oc=5",
-      "summary": "",
-      "pubDate": "2026-11-24T18:23:00+09:00",
-      "category": "동아일보",
-      "press": "동아일보",
-      "source": "동아일보",
-      "queries": [
-        "병원"
-      ],
-      "source_type": "major",
-      "score": 4
-    },
-    {
-      "title": "이주배경 산모∙영아 의료 공백 메운다…기아대책∙KB손보 맞손",
-      "link": "https://news.google.com/rss/articles/CBMidkFVX3lxTE0xRHFlMzVmcVVVX1lmUV9PWjNPbzVxXzRtZnFUVnR0bmtJN2JSeWZuVVJvSnRZdlV1RGNDOERoenJ5bkRIYnpIRTFjTThldk14S1BSeDBlcGsyVEdRVExocE0tSDdrXy1IYkxXS0xWUWtIZ1B1eFHSAWZBVV95cUxQRi1oc3pweW81QmFXa1I3c01TRHpZTVEzcUtwSHJMbVhLc3RWU1cxb285MGY3ZnhCclpSenhySzhjWmNTbFZYeEFJSVg2RktOS2FJQ053U1lOVVpKc1RTTDJjRjA5enc?oc=5",
-      "originallink": "https://news.google.com/rss/articles/CBMidkFVX3lxTE0xRHFlMzVmcVVVX1lmUV9PWjNPbzVxXzRtZnFUVnR0bmtJN2JSeWZuVVJvSnRZdlV1RGNDOERoenJ5bkRIYnpIRTFjTThldk14S1BSeDBlcGsyVEdRVExocE0tSDdrXy1IYkxXS0xWUWtIZ1B1eFHSAWZBVV95cUxQRi1oc3pweW81QmFXa1I3c01TRHpZTVEzcUtwSHJMbVhLc3RWU1cxb285MGY3ZnhCclpSenhySzhjWmNTbFZYeEFJSVg2RktOS2FJQ053U1lOVVpKc1RTTDJjRjA5enc?oc=5",
-      "summary": "",
-      "pubDate": "2026-11-24T18:17:47+09:00",
-      "category": "동아일보",
-      "press": "동아일보",
-      "source": "동아일보",
-      "queries": [
-        "의료"
-      ],
-      "source_type": "major",
-      "score": 4
-    },
-    {
-      "title": "이건희가 남긴 5000억으로... ‘중앙감염병병원’ 내년 첫 삽",
-      "link": "https://www.chosun.com/national/welfare-medical/2026/11/24/N2WXVQKR2FCNVD4T2SJTVN33GQ/",
-      "originallink": "https://www.chosun.com/national/welfare-medical/2026/11/24/N2WXVQKR2FCNVD4T2SJTVN33GQ/",
-      "summary": "",
-      "pubDate": "2026-11-24T18:00:17+09:00",
-      "category": "조선일보",
-      "press": "조선일보",
-      "source": "조선일보",
-      "queries": [
-        "병원"
-      ],
-      "source_type": "major",
-      "score": 4
-    },
-    {
-      "title": "경찰, ‘복지부 장관 집 앞 도로 점거’ 박경석 전장연 대표 등 입건",
-      "link": "https://www.chosun.com/national/national_general/2026/11/24/7JTGP44ADJFKXK64EDEGNVVSXI/",
-      "originallink": "https://www.chosun.com/national/national_general/2026/11/24/7JTGP44ADJFKXK64EDEGNVVSXI/",
-      "summary": "",
-      "pubDate": "2026-11-24T17:51:04+09:00",
-      "category": "조선일보",
-      "press": "조선일보",
-      "source": "조선일보",
-      "queries": [
-        "복지부"
-      ],
-      "source_type": "major",
-      "score": 4
-    },
-    {
-      "title": "靑 “가정폭력 반의사불벌죄 배제 가닥” 피해자 의사와 관계없이 처벌",
-      "link": "https://www.chosun.com/politics/politics_general/2026/11/24/P66AGAEC5JFDTHR3QQGTSU562Q/",
-      "originallink": "https://www.chosun.com/politics/politics_general/2026/11/24/P66AGAEC5JFDTHR3QQGTSU562Q/",
-      "summary": "",
-      "pubDate": "2026-11-24T17:18:58+09:00",
-      "category": "조선일보",
-      "press": "조선일보",
-      "source": "조선일보",
-      "queries": [
-        "의사"
-      ],
-      "source_type": "major",
-      "score": 4
-    },
-    {
-      "title": "동두천 야전병원에 단 한 대뿐인 엑스레이를 고친 청년",
-      "link": "https://news.google.com/rss/articles/CBMiY0FVX3lxTFBVTElGUk53anlrZHNVWEtGc1RmMEpPRWRwRF9QV3B6S3QwZWdITmR2NFdCeURQZ01xRnBuME9GN3FEYlVQT0NWWnNRYWE0Z1Awd2RYRk5GaXotdDQ2RlRfSUYybw?oc=5",
-      "originallink": "https://news.google.com/rss/articles/CBMiY0FVX3lxTFBVTElGUk53anlrZHNVWEtGc1RmMEpPRWRwRF9QV3B6S3QwZWdITmR2NFdCeURQZ01xRnBuME9GN3FEYlVQT0NWWnNRYWE0Z1Awd2RYRk5GaXotdDQ2RlRfSUYybw?oc=5",
-      "summary": "",
-      "pubDate": "2026-11-24T17:12:00+09:00",
-      "category": "한겨레",
-      "press": "한겨레",
-      "source": "한겨레",
-      "queries": [
-        "병원"
-      ],
-      "source_type": "major",
-      "score": 4
-    },
-    {
-      "title": "가정폭력 '피해자 의사 관계없이 처벌'...반의사불벌죄 '배제 가닥'",
-      "link": "https://news.google.com/rss/articles/CBMibkFVX3lxTE9QZ3RpT3JiMTFPTVVpSE1rR3NrLXhXVENYZEZiQXdxNEk3Y1phNTZ5am9iZGxaZjVjdnZaaTdtZW80MTlZVUIyWnk0QklZVUUxMnpPcEVNbDNkb1lzOXZCUWw0ZVEyTFVNUzI5MnpB0gFzQVVfeXFMTTdDS1NmbHBLamQzMVFNdGVyVjQyU3BfcUFqaHA5SzBodGhObElkWjd5c2EzMWczU04zcHBOY3hKRXdLNlNaSlFEUG9WYzhhQTgtTmlxbTRFdjEtRGVJaXNxcE0yS1hUZ01KM1E4NGxSWk5VUQ?oc=5",
-      "originallink": "https://news.google.com/rss/articles/CBMibkFVX3lxTE9QZ3RpT3JiMTFPTVVpSE1rR3NrLXhXVENYZEZiQXdxNEk3Y1phNTZ5am9iZGxaZjVjdnZaaTdtZW80MTlZVUIyWnk0QklZVUUxMnpPcEVNbDNkb1lzOXZCUWw0ZVEyTFVNUzI5MnpB0gFzQVVfeXFMTTdDS1NmbHBLamQzMVFNdGVyVjQyU3BfcUFqaHA5SzBodGhObElkWjd5c2EzMWczU04zcHBOY3hKRXdLNlNaSlFEUG9WYzhhQTgtTmlxbTRFdjEtRGVJaXNxcE0yS1hUZ01KM1E4NGxSWk5VUQ?oc=5",
-      "summary": "",
-      "pubDate": "2026-11-24T16:33:00+09:00",
-      "category": "한국일보",
-      "press": "한국일보",
-      "source": "한국일보",
-      "queries": [
-        "의사"
-      ],
-      "source_type": "major",
-      "score": 4
-    },
-    {
-      "title": "‘이건희 기부 7,000억 원’ 결실... 중앙감염병병원 내년 첫 삽",
-      "link": "https://news.google.com/rss/articles/CBMibkFVX3lxTE53b2VqNjZmb0JlWFM5b3hfMHBnajZzckYzZlZvWnNLSHlxNXktYlpZY0N2dVhBa19JOWIycFJPRXdnNi1LVFdibWh6N09OQnFNT21VOEUxSjlINHJpWGJUa2s2NlgzdVFxVGpfSkZn0gFzQVVfeXFMT0pLRHBlak90RFJUQkp5ckZnQWNYSzhTa2ZQMVdYTGlzeXVkejIzNTBlSnBSZ2l0WTFUSVRIczBvVTNscFNxOWQxWUpMRmZzZFJQM04xU1pBYWJpZnR5OVV5MUsyX0hNazBpQVI2Z3hGS19SNA?oc=5",
-      "originallink": "https://news.google.com/rss/articles/CBMibkFVX3lxTE53b2VqNjZmb0JlWFM5b3hfMHBnajZzckYzZlZvWnNLSHlxNXktYlpZY0N2dVhBa19JOWIycFJPRXdnNi1LVFdibWh6N09OQnFNT21VOEUxSjlINHJpWGJUa2s2NlgzdVFxVGpfSkZn0gFzQVVfeXFMT0pLRHBlak90RFJUQkp5ckZnQWNYSzhTa2ZQMVdYTGlzeXVkejIzNTBlSnBSZ2l0WTFUSVRIczBvVTNscFNxOWQxWUpMRmZzZFJQM04xU1pBYWJpZnR5OVV5MUsyX0hNazBpQVI2Z3hGS19SNA?oc=5",
-      "summary": "",
-      "pubDate": "2026-11-24T16:23:00+09:00",
-      "category": "한국일보",
-      "press": "한국일보",
-      "source": "한국일보",
-      "queries": [
-        "병원"
-      ],
-      "source_type": "major",
-      "score": 4
-    },
-    {
-      "title": "복지부 장관 집 앞 포체투지…박경석 전장연 대표 등 입건",
-      "link": "https://news.google.com/rss/articles/CBMic0FVX3lxTFB0RUNqNGNsQXJFVkRGaDlHSFVIRHlSZDF0RmJBeG5mUHNDVmFYMlNNMkZfNzdkQndNT3k0Y0kyVGVNaUNLdzByM2RIZ0dLZUctYjUySkRHMlEzZWFUZ3U1RGlTVE1Ncm9uRHZkZEs3eUp4YTDSAXNBVV95cUxQdEVDajRjbEFyRVZERmg5R0hVSER5UmQxdEZiQXhuZlBzQ1ZhWDJTTTJGXzc3ZEJ3TU95NGNJMlRlTWlDS3cwcjNkSGdHS2VHLWI1MkpERzJRM2VhVGd1NURpU1RNTXJvbkR2ZGRLN3lKeGEw?oc=5",
-      "originallink": "https://news.google.com/rss/articles/CBMic0FVX3lxTFB0RUNqNGNsQXJFVkRGaDlHSFVIRHlSZDF0RmJBeG5mUHNDVmFYMlNNMkZfNzdkQndNT3k0Y0kyVGVNaUNLdzByM2RIZ0dLZUctYjUySkRHMlEzZWFUZ3U1RGlTVE1Ncm9uRHZkZEs3eUp4YTDSAXNBVV95cUxQdEVDajRjbEFyRVZERmg5R0hVSER5UmQxdEZiQXhuZlBzQ1ZhWDJTTTJGXzc3ZEJ3TU95NGNJMlRlTWlDS3cwcjNkSGdHS2VHLWI1MkpERzJRM2VhVGd1NURpU1RNTXJvbkR2ZGRLN3lKeGEw?oc=5",
-      "summary": "",
-      "pubDate": "2026-11-24T16:09:00+09:00",
-      "category": "한국일보",
-      "press": "한국일보",
-      "source": "한국일보",
-      "queries": [
-        "복지부"
-      ],
-      "source_type": "major",
-      "score": 4
-    },
-    {
-      "title": "정부, 가정폭력에 ‘반의사불벌’ 적용 배제 가닥",
-      "link": "https://news.google.com/rss/articles/CBMia0FVX3lxTE1iYmJkZnVWR2tyMEYtZTdWRGt2bF8tbWtwU1BlQkx2MHJEY2JEdk5INi0tWFo0ZTRQYVhubTJYV2VfMnM1MTNxY2RNZUJCaHdBWG5zYWVVSUZNMHA5OUh0eGh3bXdXR1J5VW5n?oc=5",
-      "originallink": "https://news.google.com/rss/articles/CBMia0FVX3lxTE1iYmJkZnVWR2tyMEYtZTdWRGt2bF8tbWtwU1BlQkx2MHJEY2JEdk5INi0tWFo0ZTRQYVhubTJYV2VfMnM1MTNxY2RNZUJCaHdBWG5zYWVVSUZNMHA5OUh0eGh3bXdXR1J5VW5n?oc=5",
-      "summary": "",
-      "pubDate": "2026-11-24T15:55:00+09:00",
-      "category": "한겨레",
-      "press": "한겨레",
-      "source": "한겨레",
-      "queries": [
-        "의사"
-      ],
-      "source_type": "major",
-      "score": 4
-    },
-    {
-      "title": "신세계百, 식약처 ‘식품안심구역’ 안착…1년 만에 3곳서 12곳으로 4배 확대",
-      "link": "https://news.google.com/rss/articles/CBMidkFVX3lxTFAwaTRFbmdFaXZ2RjltSGFBdkptdVpfSE5iNTBsVFoxdDJoWTRKMW9OaUVfLTZacTNxZUFXSHZOOW0zdVhad2ROdmpaemVzS1JhamRGQ3Y1a0JKZm5iNHdfek9SMlNJNjFvT3RsaVozRXdZejZyMEHSAWZBVV95cUxOQkxTLW8tMEI5cUNkTGRjR0w2VFQwX3VKNGlSNW1wby0zVHF3Z2xrM3hDT0E0M1VMSWJWOWpsXzAweDlWcHhLZFkxRnpsSEdCUlRyOHoyWE5xejhTOXJLVVk4M3pFRnc?oc=5",
-      "originallink": "https://news.google.com/rss/articles/CBMidkFVX3lxTFAwaTRFbmdFaXZ2RjltSGFBdkptdVpfSE5iNTBsVFoxdDJoWTRKMW9OaUVfLTZacTNxZUFXSHZOOW0zdVhad2ROdmpaemVzS1JhamRGQ3Y1a0JKZm5iNHdfek9SMlNJNjFvT3RsaVozRXdZejZyMEHSAWZBVV95cUxOQkxTLW8tMEI5cUNkTGRjR0w2VFQwX3VKNGlSNW1wby0zVHF3Z2xrM3hDT0E0M1VMSWJWOWpsXzAweDlWcHhLZFkxRnpsSEdCUlRyOHoyWE5xejhTOXJLVVk4M3pFRnc?oc=5",
-      "summary": "",
-      "pubDate": "2026-11-24T15:32:37+09:00",
-      "category": "동아일보",
-      "press": "동아일보",
-      "source": "동아일보",
-      "queries": [
-        "식약처"
-      ],
-      "source_type": "major",
-      "score": 4
-    },
-    {
-      "title": "희소·중증난치질환자 건보 본인부담 10%→7%… 연평균 약 22만 원 덜 낼 듯",
-      "link": "https://news.google.com/rss/articles/CBMic0FVX3lxTE1sd1FWRzBTdWl3dTZSQzZFNTNENlVBSFQ1OWp2RW51MEViby1yQ1JvQWRlaVhrRGtLNnloSDJsakkyc2hlcFhuYUZlTjdPeTZaQm5ud3pJYTRrOGIzcG1ONFZIb1NLSC02eTQ4Qm1TRElCYk3SAXNBVV95cUxNbHdRVkcwU3Vpd3U2UkM2RTUzRDZVQUhUNTlqdkVudTBFYm8tckNSb0FkZWlYa0RrSzZ5aEgybGpJMnNoZXBYbmFGZU43T3k2WkJubnd6SWE0azhiM3BtTjRWSG9TS0gtNnk0OEJtU0RJQmJN?oc=5",
-      "originallink": "https://news.google.com/rss/articles/CBMic0FVX3lxTE1sd1FWRzBTdWl3dTZSQzZFNTNENlVBSFQ1OWp2RW51MEViby1yQ1JvQWRlaVhrRGtLNnloSDJsakkyc2hlcFhuYUZlTjdPeTZaQm5ud3pJYTRrOGIzcG1ONFZIb1NLSC02eTQ4Qm1TRElCYk3SAXNBVV95cUxNbHdRVkcwU3Vpd3U2UkM2RTUzRDZVQUhUNTlqdkVudTBFYm8tckNSb0FkZWlYa0RrSzZ5aEgybGpJMnNoZXBYbmFGZU43T3k2WkJubnd6SWE0azhiM3BtTjRWSG9TS0gtNnk0OEJtU0RJQmJN?oc=5",
-      "summary": "",
-      "pubDate": "2026-11-24T15:15:00+09:00",
-      "category": "한국일보",
-      "press": "한국일보",
-      "source": "한국일보",
-      "queries": [
-        "환자"
-      ],
-      "source_type": "major",
-      "score": 4
-    },
-    {
-      "title": "호남권 감염병전문병원, 예산 부족에 내년 개원도 불투명",
-      "link": "https://news.google.com/rss/articles/CBMiYEFVX3lxTFBRSnpPTDhkN09qeWN4eFJhY0RzQURpS0hDTXhaN3kxTWtuSlp4VFVZNXpPQnJ1UDh6TlVnY2xvMjh1aXY0dkVaWXQ2MUFyMU50ZHY5ZEVaVUhQTHNLRkNGUQ?oc=5",
-      "originallink": "https://news.google.com/rss/articles/CBMiYEFVX3lxTFBRSnpPTDhkN09qeWN4eFJhY0RzQURpS0hDTXhaN3kxTWtuSlp4VFVZNXpPQnJ1UDh6TlVnY2xvMjh1aXY0dkVaWXQ2MUFyMU50ZHY5ZEVaVUhQTHNLRkNGUQ?oc=5",
-      "summary": "",
-      "pubDate": "2026-11-24T14:05:00+09:00",
-      "category": "한겨레",
-      "press": "한겨레",
-      "source": "한겨레",
-      "queries": [
-        "병원"
-      ],
-      "source_type": "major",
-      "score": 4
-    },
-    {
-      "title": "희귀·중증난치질환자 136만명, 12월부터 건보 본인부담률 7%로 인하",
-      "link": "https://news.google.com/rss/articles/CBMiZkFVX3lxTFB5NW93REs3My1ueUg2blpaSmdjQ2Y5aFo4b251aS1YZy0xV2VyLW1uT0xRa19hX3BudHprUER3TWpjV0lyV0sxNUxmNkg1Vk5RUGFwc290SHdPZWJCWXY1V2ZWdUY3UQ?oc=5",
-      "originallink": "https://news.google.com/rss/articles/CBMiZkFVX3lxTFB5NW93REs3My1ueUg2blpaSmdjQ2Y5aFo4b251aS1YZy0xV2VyLW1uT0xRa19hX3BudHprUER3TWpjV0lyV0sxNUxmNkg1Vk5RUGFwc290SHdPZWJCWXY1V2ZWdUY3UQ?oc=5",
-      "summary": "",
-      "pubDate": "2026-11-24T13:46:00+09:00",
-      "category": "한겨레",
-      "press": "한겨레",
-      "source": "한겨레",
-      "queries": [
-        "환자"
       ],
       "source_type": "major",
       "score": 4
