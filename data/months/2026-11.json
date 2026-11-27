@@ -1,17 +1,17 @@
 {
  "month": "2026-11",
- "generated_at": "2026-11-27T10:03:09.783933+09:00",
+ "generated_at": "2026-11-27T10:45:28.348903+09:00",
  "prev_month": "2026-10",
  "collected_days": 27,
  "first_day": "2026-11-01",
  "last_day": "2026-11-27",
- "total": 5528,
+ "total": 5548,
  "prev_total": 4285,
  "by_region": {
-  "국내": 4121,
-  "해외": 804,
+  "국내": 4136,
+  "해외": 806,
   "정부": 63,
-  "일간지": 540
+  "일간지": 543
  },
  "weekly": {
   "2026-W44": {
@@ -35,54 +35,54 @@
    "정부": 19
   },
   "2026-W48": {
-   "국내": 989,
-   "일간지": 184,
-   "해외": 177,
+   "국내": 1004,
+   "일간지": 187,
+   "해외": 179,
    "정부": 13
   }
  },
  "categories": [
   {
    "name": "국내 · 국내 정책·규제",
-   "count": 1123,
+   "count": 1127,
    "prev": 648,
-   "delta": 475
+   "delta": 479
   },
   {
    "name": "국내 · 국내 의료 AI 기업",
-   "count": 1026,
+   "count": 1028,
    "prev": 769,
-   "delta": 257
-  },
-  {
-   "name": "국내 · 국내 의료기관",
-   "count": 670,
-   "prev": 411,
    "delta": 259
   },
   {
+   "name": "국내 · 국내 의료기관",
+   "count": 672,
+   "prev": 411,
+   "delta": 261
+  },
+  {
    "name": "국내 · AI 거버넌스·보안",
-   "count": 494,
+   "count": 496,
    "prev": 324,
-   "delta": 170
+   "delta": 172
   },
   {
    "name": "국내 · 학술·연구·행사",
-   "count": 408,
+   "count": 410,
    "prev": 294,
-   "delta": 114
+   "delta": 116
   },
   {
    "name": "국내 · 해외 의료기관·정책·규제",
-   "count": 382,
+   "count": 385,
    "prev": 300,
-   "delta": 82
+   "delta": 85
   },
   {
    "name": "해외 · 해외 의료기관 AI 도입·운영",
-   "count": 378,
+   "count": 380,
    "prev": 285,
-   "delta": 93
+   "delta": 95
   },
   {
    "name": "해외 · 해외 정책·규제 (미국)",
@@ -98,15 +98,15 @@
   },
   {
    "name": "일간지 · 조선일보",
-   "count": 96,
+   "count": 97,
    "prev": 0,
-   "delta": 96
+   "delta": 97
   },
   {
    "name": "일간지 · 동아일보",
-   "count": 92,
+   "count": 94,
    "prev": 0,
-   "delta": 92
+   "delta": 94
   },
   {
    "name": "일간지 · 한국일보",
@@ -202,19 +202,25 @@
  "keywords": [
   {
    "word": "서울대병원",
-   "count": 192,
+   "count": 194,
    "prev": 143,
    "status": ""
   },
   {
    "word": "식약처",
-   "count": 179,
+   "count": 180,
    "prev": 90,
+   "status": "급증"
+  },
+  {
+   "word": "FDA",
+   "count": 109,
+   "prev": 86,
    "status": ""
   },
   {
    "word": "보건복지부",
-   "count": 109,
+   "count": 108,
    "prev": 76,
    "status": ""
   },
@@ -222,12 +228,6 @@
    "word": "학술대회",
    "count": 108,
    "prev": 76,
-   "status": ""
-  },
-  {
-   "word": "FDA",
-   "count": 107,
-   "prev": 86,
    "status": ""
   },
   {
@@ -268,19 +268,19 @@
   },
   {
    "word": "분당서울대",
-   "count": 72,
+   "count": 74,
    "prev": 65,
    "status": ""
   },
   {
    "word": "세미나",
-   "count": 64,
+   "count": 65,
    "prev": 91,
    "status": ""
   },
   {
    "word": "심포지엄",
-   "count": 60,
+   "count": 59,
    "prev": 31,
    "status": ""
   },
@@ -373,9 +373,9 @@
    "category": "국내 의료 AI 기업",
    "region": "국내",
    "score": 5,
-   "similar_count": 38,
+   "similar_count": 39,
    "source": "yna.co.kr",
-   "importance": 84
+   "importance": 86
   },
   {
    "title": "울산시 내년 예산안 5조9907억원…올해보다 6.1% 증가",
@@ -1162,9 +1162,9 @@
    "category": "국내 의료 AI 기업",
    "region": "국내",
    "score": 5,
-   "similar_count": 38,
+   "similar_count": 39,
    "source": "yna.co.kr",
-   "importance": 84
+   "importance": 86
   },
   {
    "title": "삼성메디슨, 홍천 제조동 준공…초음파기기 생산능력 2배로",
@@ -1490,9 +1490,9 @@
     "category": "국내 의료 AI 기업",
     "region": "국내",
     "score": 5,
-    "similar_count": 38,
+    "similar_count": 39,
     "source": "yna.co.kr",
-    "importance": 84
+    "importance": 86
    }
   ],
   "국내 · AI 거버넌스·보안": [
