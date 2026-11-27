@@ -1,8 +1,8 @@
 {
-  "generated_at": "2026-11-27T09:34:45.223728+09:00",
+  "generated_at": "2026-11-27T10:01:47.427320+09:00",
   "window_hours": 48,
-  "count": 64,
-  "filtered_out": 466,
+  "count": 57,
+  "filtered_out": 432,
   "category_order": [
     "해외 정책·규제 (미국)",
     "해외 정책·규제 (유럽·영국)",
@@ -26,25 +26,6 @@
       ],
       "sources": [
         "https://www.healthcare.digital/"
-      ],
-      "preferred": false,
-      "score": 4
-    },
-    {
-      "title": "Study Analyzes Global Growth of Large Language Models Across Medical Specialties",
-      "link": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxPUE9ELUhPM1ZoT1dNWmtXQjdUcUlxeW01ZF8xTldrMHd4Y01mQ3lRUC0wWWs1c1dyQ2o2dldlQ0xodFMxaVhsellMTkt0OEZYVkVtTVNIVm54N0dmNjBocTQta2xlWDdCTG5XQVJoTnBmQzB1YS1Bc2hRZGV4UTJaaVplSmEzc0dITDd5N1c2VnBzMUZPQkpUcXRXV1B5Q1kxUUtaQXloTU0?oc=5",
-      "source": "Bioengineer.org",
-      "source_url": "https://bioengineer.org",
-      "pubDate": "2026-11-26T13:55:25+09:00",
-      "category": "해외 의료기관 AI 도입·운영",
-      "queries": [
-        "Mayo Clinic AI",
-        "health system AI governance",
-        "Nature Medicine artificial intelligence",
-        "JAMA large language model clinical"
-      ],
-      "sources": [
-        "Bioengineer.org"
       ],
       "preferred": false,
       "score": 4
@@ -96,6 +77,24 @@
         "FDA artificial intelligence guidance medical",
         "EU AI Act medical devices",
         "health system AI governance"
+      ],
+      "sources": [
+        "Bioengineer.org"
+      ],
+      "preferred": false,
+      "score": 3
+    },
+    {
+      "title": "Study Analyzes Global Growth of Large Language Models Across Medical Specialties",
+      "link": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxPUE9ELUhPM1ZoT1dNWmtXQjdUcUlxeW01ZF8xTldrMHd4Y01mQ3lRUC0wWWs1c1dyQ2o2dldlQ0xodFMxaVhsellMTkt0OEZYVkVtTVNIVm54N0dmNjBocTQta2xlWDdCTG5XQVJoTnBmQzB1YS1Bc2hRZGV4UTJaaVplSmEzc0dITDd5N1c2VnBzMUZPQkpUcXRXV1B5Q1kxUUtaQXloTU0?oc=5",
+      "source": "Bioengineer.org",
+      "source_url": "https://bioengineer.org",
+      "pubDate": "2026-11-26T13:55:25+09:00",
+      "category": "해외 의료기관 AI 도입·운영",
+      "queries": [
+        "Mayo Clinic AI",
+        "Nature Medicine artificial intelligence",
+        "JAMA large language model clinical"
       ],
       "sources": [
         "Bioengineer.org"
@@ -174,36 +173,18 @@
       "score": 3
     },
     {
-      "title": "California Enacts New Safeguards For Clinical AI And Health Care Chatbot Privacy",
-      "link": "https://news.google.com/rss/articles/CBMi_AFBVV95cUxPam5tcGVXTUJxcTZBV21oa29LcGlITFZ2S1AwS2hNcXZ4WnpvQ2RDOURJYjEtTnItaDZPeTN6TmR2bnlWeG9kck1aTWZrWDBaLWlYeGNDeFRvbTFwdWxWeUNTX0JqU0FKWFdKYmFwTUlzTWRZZzV6dUlqZGhkcGRoR0NjRzZZRDd6dTN0RlhnZkVlVERrN1FVR2JxLW9SV0tJWUhYcGxOc3otTDlPbVBsT3NvZHM5T2hybjAyTXpXaHE0UHJOWUx3NTBRZVZCaGJaUkIxVlB0TkU5VmlpSHpQdmNCNXI5TXFQUE00MS1XcGF0UEpSbUZPai1FUks?oc=5",
-      "source": "Legal 500",
-      "source_url": "https://www.legal500.com",
-      "pubDate": "2026-11-25T17:23:46+09:00",
-      "category": "해외 정책·규제 (미국)",
-      "queries": [
-        "CMS artificial intelligence health",
-        "HHS artificial intelligence health care policy",
-        "health system AI governance"
-      ],
-      "sources": [
-        "Legal 500"
-      ],
-      "preferred": false,
-      "score": 3
-    },
-    {
-      "title": "AWS, GOSH & Hyland Partner on Agentic AI Hospital Initiative",
-      "link": "https://news.google.com/rss/articles/CBMimAFBVV95cUxQUVFmX01Xa3dZRk5uRnQ4NVBCdDhSVW5QSTRjZXlndzkxMi1pZkprTThjRVNzM2llTWVXM0ZGbHppVXBRSHJwakwxYzFibk9qcEsyUHlSZjl5Z2lCVjFBMThyZ3JlaTJrYUFjT0JSQ19KN1d0MU5tVVlNWXgzbEpGRGZPNG4wY0NwejRKNkV3WHNCUlVnYWVhTg?oc=5",
-      "source": "Healthcare Digital",
-      "source_url": "https://healthcare-digital.com",
-      "pubDate": "2026-11-27T01:17:13+09:00",
+      "title": "Canberra health service pilots Australian built AI scribe",
+      "link": "https://news.google.com/rss/articles/CBMijwFBVV95cUxQQURtTVVCTDBodlppaDVtYllxdnZfTFZnOFV5V0ZMaG1GaHItc1pIdDdJa2FOUnJ5cTRibTBLRzVjRG1KdHZ3QUpMVFl5SldnNlMzcWs3ajRSVWx5c1hHbUVpLWZCa2pYdmFCY1lBSTF4R3ZacEFOd3RWU3kzSVRENFZKZ3QtdFJ5TTZ6d1dCcw?oc=5",
+      "source": "IT Brief Australia",
+      "source_url": "https://itbrief.com.au",
+      "pubDate": "2026-11-27T07:31:00+09:00",
       "category": "해외 의료기관 AI 도입·운영",
       "queries": [
-        "hospital generative AI deployment",
-        "health system AI governance"
+        "health system ambient AI scribe"
       ],
       "sources": [
-        "Healthcare Digital"
+        "IT Brief Australia",
+        "SecurityBrief Australia"
       ],
       "preferred": false,
       "score": 2
@@ -221,23 +202,6 @@
       ],
       "sources": [
         "Resultsense"
-      ],
-      "preferred": false,
-      "score": 2
-    },
-    {
-      "title": "AnswerThis Shows Reasons for AI Screening and Risk of Bias Decisions in Systematic Reviews",
-      "link": "https://news.google.com/rss/articles/CBMi4gFBVV95cUxORXo4VkhxQjNTcl9xSEFHMGZ0eGFaUjlQSVNsM29jd0VrZkFrTVQ1MXotZW1yeG5pZFZXUmRLR0gtQXdZOVNRalgzNF9WYXZ5Q2xSN25WZTVna3ZBd1BHTG1rNHg1a202T2dwemVOMy1jMkRfVTBOODRVSEtEUWMwa1l6Qk02dGd1MjVDSUtCWW45cUlvSzZfTFhmSEdtdm12RE5MQ1NlbHN2eDlkV19ubU9sTlI1bmd2eUJzS18zbno4UTZiUFQ0aGxQWHotb2YzaVNFbllXeEZ2a1lYM2xoaUJn?oc=5",
-      "source": "Times Reporter",
-      "source_url": "https://www.timesreporter.com",
-      "pubDate": "2026-11-26T02:53:59+09:00",
-      "category": "해외 연구·학술",
-      "queries": [
-        "randomized trial AI clinical decision support"
-      ],
-      "sources": [
-        "Times Reporter",
-        "IndyStar"
       ],
       "preferred": false,
       "score": 2
@@ -289,6 +253,23 @@
       ],
       "sources": [
         "Tacoma News Tribune"
+      ],
+      "preferred": false,
+      "score": 2
+    },
+    {
+      "title": "California Enacts New Safeguards For Clinical AI And Health Care Chatbot Privacy",
+      "link": "https://news.google.com/rss/articles/CBMi_AFBVV95cUxPam5tcGVXTUJxcTZBV21oa29LcGlITFZ2S1AwS2hNcXZ4WnpvQ2RDOURJYjEtTnItaDZPeTN6TmR2bnlWeG9kck1aTWZrWDBaLWlYeGNDeFRvbTFwdWxWeUNTX0JqU0FKWFdKYmFwTUlzTWRZZzV6dUlqZGhkcGRoR0NjRzZZRDd6dTN0RlhnZkVlVERrN1FVR2JxLW9SV0tJWUhYcGxOc3otTDlPbVBsT3NvZHM5T2hybjAyTXpXaHE0UHJOWUx3NTBRZVZCaGJaUkIxVlB0TkU5VmlpSHpQdmNCNXI5TXFQUE00MS1XcGF0UEpSbUZPai1FUks?oc=5",
+      "source": "Legal 500",
+      "source_url": "https://www.legal500.com",
+      "pubDate": "2026-11-25T17:23:46+09:00",
+      "category": "해외 정책·규제 (미국)",
+      "queries": [
+        "CMS artificial intelligence health",
+        "HHS artificial intelligence health care policy"
+      ],
+      "sources": [
+        "Legal 500"
       ],
       "preferred": false,
       "score": 2
@@ -362,17 +343,17 @@
       "score": 2
     },
     {
-      "title": "Canberra health service pilots Australian built AI scribe",
-      "link": "https://news.google.com/rss/articles/CBMijwFBVV95cUxQQURtTVVCTDBodlppaDVtYllxdnZfTFZnOFV5V0ZMaG1GaHItc1pIdDdJa2FOUnJ5cTRibTBLRzVjRG1KdHZ3QUpMVFl5SldnNlMzcWs3ajRSVWx5c1hHbUVpLWZCa2pYdmFCY1lBSTF4R3ZacEFOd3RWU3kzSVRENFZKZ3QtdFJ5TTZ6d1dCcw?oc=5",
-      "source": "IT Brief Australia",
-      "source_url": "https://itbrief.com.au",
-      "pubDate": "2026-11-27T07:31:00+09:00",
+      "title": "AWS, GOSH & Hyland Partner on Agentic AI Hospital Initiative",
+      "link": "https://news.google.com/rss/articles/CBMimAFBVV95cUxQUVFmX01Xa3dZRk5uRnQ4NVBCdDhSVW5QSTRjZXlndzkxMi1pZkprTThjRVNzM2llTWVXM0ZGbHppVXBRSHJwakwxYzFibk9qcEsyUHlSZjl5Z2lCVjFBMThyZ3JlaTJrYUFjT0JSQ19KN1d0MU5tVVlNWXgzbEpGRGZPNG4wY0NwejRKNkV3WHNCUlVnYWVhTg?oc=5",
+      "source": "Healthcare Digital",
+      "source_url": "https://healthcare-digital.com",
+      "pubDate": "2026-11-27T01:17:13+09:00",
       "category": "해외 의료기관 AI 도입·운영",
       "queries": [
-        "health system ambient AI scribe"
+        "hospital generative AI deployment"
       ],
       "sources": [
-        "IT Brief Australia"
+        "Healthcare Digital"
       ],
       "preferred": false,
       "score": 1
@@ -453,22 +434,6 @@
       ],
       "sources": [
         "openPR.com"
-      ],
-      "preferred": false,
-      "score": 1
-    },
-    {
-      "title": "Andhra Pradesh Pushes AI Adoption in Healthcare",
-      "link": "https://news.google.com/rss/articles/CBMimgFBVV95cUxNeVdZUlBVWTN4cFR6a0VSODlWc0RvM290R3Q4ZWRqWW9MQkJtWU4zYUdCV21fb0hwd0tFZFp1LUxMQi1qeVVKNmszSVY5OHlmX05ncE5wYVlQc1hnd3NaNFB4d0hJdnpYbHJjWS1lUzctaExiaUQ4YjFUdU1rTDNmV0lacExLaVo5QnJoUVU1eGI1WjVUN3B4U3N3?oc=5",
-      "source": "Voice of Healthcare",
-      "source_url": "https://vohnetwork.com",
-      "pubDate": "2026-11-26T20:41:31+09:00",
-      "category": "해외 의료기관 AI 도입·운영",
-      "queries": [
-        "health system AI governance"
-      ],
-      "sources": [
-        "Voice of Healthcare"
       ],
       "preferred": false,
       "score": 1
@@ -602,22 +567,6 @@
       "score": 1
     },
     {
-      "title": "Clinical Oversight Remains Essential as Artificial Intelligence Expands Across Global Travel Medicine",
-      "link": "https://news.google.com/rss/articles/CBMixAFBVV95cUxQTUV5eHIwM1JBVTBSOENGMXkwX3VxN3c1WG5aVnN4NExxRmgwaE4zY2xGQ0NtS191eU45MWxJRnZMSkN0TzZMZzRsZm9LbU1oZ1NQYTlTUHVqTVUxMVR3cVRnM05EOTM2TGJ4VHNfSjM5VE5EQTZCRHEzck8wUHdZZnZ6OEs5MFBONEpDUTctOGN0Z1RfTklSVzgzWFR0dXd0UkpWbVAyaW9JNjJ6Q2dXOXlCS1pUMkRIVnc3S3RCczJoZjk5?oc=5",
-      "source": "Bioengineer.org",
-      "source_url": "https://bioengineer.org",
-      "pubDate": "2026-11-26T12:04:18+09:00",
-      "category": "해외 의료기관 AI 도입·운영",
-      "queries": [
-        "health system AI governance"
-      ],
-      "sources": [
-        "Bioengineer.org"
-      ],
-      "preferred": false,
-      "score": 1
-    },
-    {
       "title": "MedScout Report Finds AI Reshaping Radiology Use",
       "link": "https://news.google.com/rss/articles/CBMijwFBVV95cUxNdWRwUnVmSDgzd3VxUmtjaGFsZXotVHNwWUptNHgzTEI3RmpqSm9rU3JrX0JkMGJNTFpaWjVnbExFNEI1MHRHR0Zsb2txS1h4eThYcXV0RERoQlRPUFlCZTNHcF9acHdnTkhxcFZjWEt3ODJONVVfcTBPbmtNRGtfZ0JFZG94RVBTQ1dTWDFTcw?oc=5",
       "source": "Wisevoter",
@@ -629,22 +578,6 @@
       ],
       "sources": [
         "Wisevoter"
-      ],
-      "preferred": false,
-      "score": 1
-    },
-    {
-      "title": "Team Support and Staffing Protect Clinicians From Digital and AI Burnout",
-      "link": "https://news.google.com/rss/articles/CBMingFBVV95cUxNaXBmeXROblJQVVRlWWJEUjNfcXZFb1JoWkFyQUoxbGhvMy1qVWlGSlZ5WG9nN0Z5and1XzRjZjl1WnlJOGpSZVEwM0pPdjFVbjNmWjBGOGY0dXRFOXdaZFItRm93QS1DaUxQZDBiZThYR0QzYVlObDZKVnFqWExSaWVNN2l4ZU1QWXdyU25LVEJ5OEdfdG9kVk42V3ZoQQ?oc=5",
-      "source": "Bioengineer.org",
-      "source_url": "https://bioengineer.org",
-      "pubDate": "2026-11-26T07:07:42+09:00",
-      "category": "해외 의료기관 AI 도입·운영",
-      "queries": [
-        "health system AI governance"
-      ],
-      "sources": [
-        "Bioengineer.org"
       ],
       "preferred": false,
       "score": 1
@@ -698,6 +631,22 @@
       "score": 1
     },
     {
+      "title": "AnswerThis Shows Reasons for AI Screening and Risk of Bias Decisions in Systematic Reviews",
+      "link": "https://news.google.com/rss/articles/CBMi2wFBVV95cUxORms3T244NWRVZWJYS2R1TnhTTFNUQ1FtWjRRZi1oUVlRSjlvUG9rRlFFbW80cWVmUEFJVU0zQ0IzempnWlNIVW9ZWU02ZHhuVkIzaXUtc0VQZXZIOWt6cWpNWE9VMkRJMDEzRGc5eXZCY2o3MlBnSl95RklnTlEwMG1jcWhOWDdWX2VDQkt2eFo0X1RjUUZ6UjBEdEFlNHRaMzF5MjNBYjZ5dnZ1Z0szNVpITXFlV0Y5V3dyc2xoSWR4c0FnYlJibnE2V1FzOHpGRVFIMi1HejlsZjQ?oc=5",
+      "source": "IndyStar",
+      "source_url": "https://www.indystar.com",
+      "pubDate": "2026-11-26T03:02:51+09:00",
+      "category": "해외 연구·학술",
+      "queries": [
+        "randomized trial AI clinical decision support"
+      ],
+      "sources": [
+        "IndyStar"
+      ],
+      "preferred": false,
+      "score": 1
+    },
+    {
       "title": "DeepHealth lands FDA clearance for AI that predicts five-year breast cancer risk",
       "link": "https://news.google.com/rss/articles/CBMiUEFVX3lxTE5zSncxQmFRU0pqOVR2Tl95dTFmd09wdFJtdFBfUzJ3OGVLRlpqc1hpcFBuQVBOOUJHSXRBaHpCanQ5MHZPYmRfLTFZZTRwXzc4?oc=5",
       "source": "DOTmed",
@@ -709,22 +658,6 @@
       ],
       "sources": [
         "DOTmed"
-      ],
-      "preferred": false,
-      "score": 1
-    },
-    {
-      "title": "Algorithmic Clinical Audit Trail Market Competitive Analysis:",
-      "link": "https://news.google.com/rss/articles/CBMinAFBVV95cUxNUnIycDFaZ1RqUTZSZzM2OHd6N1N6Zm1SNGtIVWppMk9FeDM4R1VlcDRxRTBuNnpsamZubEhrNUxjbWN1QnFYOXB4Z0RHcjV1Wlc3Snc2NzMtN016amdsUTRNX09QV0NVZFpSN0VDWWtKdS1vNFRwYXM3VmVVMGltSUdqSmJZTW9hdEVZYzhCWjlDVHFHejlsT2xaRmw?oc=5",
-      "source": "openPR.com",
-      "source_url": "https://www.openpr.com",
-      "pubDate": "2026-11-26T02:18:17+09:00",
-      "category": "해외 의료기관 AI 도입·운영",
-      "queries": [
-        "health system AI governance"
-      ],
-      "sources": [
-        "openPR.com"
       ],
       "preferred": false,
       "score": 1
@@ -773,22 +706,6 @@
       ],
       "sources": [
         "Healthcare Finance News"
-      ],
-      "preferred": false,
-      "score": 1
-    },
-    {
-      "title": "RadNet's DeepHealth Wins FDA Clearance for AI Breast Cancer Risk Tool",
-      "link": "https://news.google.com/rss/articles/CBMirgFBVV95cUxQTkhvZVJIVjdiOWc3WGF2WHhLa09uY1dIU08zQXJuU1ZHb3Z3dWw2cXQtVXVaVzgyRUZtUkFzclRMdFN4b2V1S0FIazR0SHNCR0UwYmhOQ3BFWDJRMnkxMFYzcGJBay16bEtfNHlhalE4cUMwYVlSdzBOWS1xa19aWWVINWVsUVRFaXk5RlU3dGozYmRIeFR3eWV4RlNVQnZPaUlUZE1MbUNlWTVpZnc?oc=5",
-      "source": "Zacks Investment Research",
-      "source_url": "https://www.zacks.com",
-      "pubDate": "2026-11-26T00:02:46+09:00",
-      "category": "해외 정책·규제 (미국)",
-      "queries": [
-        "FDA AI-enabled medical devices"
-      ],
-      "sources": [
-        "Zacks Investment Research"
       ],
       "preferred": false,
       "score": 1
@@ -1018,22 +935,6 @@
       "score": 1
     },
     {
-      "title": "Foreign AI chatbots can expose Nigerian patients’ medical records — Experts",
-      "link": "https://news.google.com/rss/articles/CBMiT0FVX3lxTE16ZFliMDZwYXNTaTdybFpPM1ZmbVp0ZW5sR2piY2dwREIyejFhLWRIT1Njd1VzdUloMzE0ak9oLUFELXVWckp2U2Y3VWJOdWs?oc=5",
-      "source": "Tribune Online",
-      "source_url": "https://tribuneonlineng.com",
-      "pubDate": "2026-11-25T11:50:00+09:00",
-      "category": "해외 의료기관 AI 도입·운영",
-      "queries": [
-        "health system AI governance"
-      ],
-      "sources": [
-        "Tribune Online"
-      ],
-      "preferred": false,
-      "score": 1
-    },
-    {
       "title": "Clinical Artificial Intelligence Tools Risk Displacing Relational Care in African Health Systems",
       "link": "https://news.google.com/rss/articles/CBMivgFBVV95cUxQSG93Tld6NWZ5V1VHZkZaVW10V2JBNVBDMlRIV1NMTzl3dllVcGNmWFNQd3ZvQ1RLaTU4RTM2MTY0ZV9FWWFybE1Vb3hIMHJFS0FEaUxnVTA1cEE5TFJ2SlpEQ3VOYk5oWWJKRGhuZklWNVZqUGljeUt5ZElVUnN3TWIxZ1VVTWJIaGg4d0FhT1Z5Y1J6bngtX3ZEVHRLMUpZZEllSFNWay1NbV8wZW1oaFFHOTBEZ0QtU295b3NR?oc=5",
       "source": "Bioengineer.org",
@@ -1045,22 +946,6 @@
       ],
       "sources": [
         "Bioengineer.org"
-      ],
-      "preferred": false,
-      "score": 1
-    },
-    {
-      "title": "HHS opens searchable records portal and details AI-assisted redaction pilot",
-      "link": "https://news.google.com/rss/articles/CBMirgFBVV95cUxNNlRuc1hhM0xRSkFMM1JUVG5zM25zZDZfTmgzNjhPVXo1V2NWYWJ2TXIxMjlqZHE4bGlXMVNRQWVWZmdCVV9zbnlPUWJXREJ6R1AtblR1dmFoNjdSVGZRa2tqM3ZXU0JjUHlGRW93enJVSHoydTItM1pvNjVOcl9KR3lFdFhfMTBIUUdqR1Y4U2NEYWpGM1dNNk4xYnNTc2M3V0Z1SkVsMklKNlp6YVE?oc=5",
-      "source": "Superpower Daily",
-      "source_url": "https://superpowerdaily.com",
-      "pubDate": "2026-11-25T09:35:00+09:00",
-      "category": "해외 정책·규제 (미국)",
-      "queries": [
-        "HHS artificial intelligence health care policy"
-      ],
-      "sources": [
-        "Superpower Daily"
       ],
       "preferred": false,
       "score": 1
