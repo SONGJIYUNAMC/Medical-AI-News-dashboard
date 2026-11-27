@@ -1,17 +1,17 @@
 {
  "month": "2026-11",
- "generated_at": "2026-11-27T10:45:28.348903+09:00",
+ "generated_at": "2026-11-27T11:11:42.139088+09:00",
  "prev_month": "2026-10",
  "collected_days": 27,
  "first_day": "2026-11-01",
  "last_day": "2026-11-27",
- "total": 5548,
+ "total": 5563,
  "prev_total": 4285,
  "by_region": {
-  "국내": 4136,
-  "해외": 806,
+  "국내": 4148,
+  "해외": 807,
   "정부": 63,
-  "일간지": 543
+  "일간지": 545
  },
  "weekly": {
   "2026-W44": {
@@ -35,36 +35,36 @@
    "정부": 19
   },
   "2026-W48": {
-   "국내": 1004,
-   "일간지": 187,
-   "해외": 179,
+   "국내": 1016,
+   "일간지": 189,
+   "해외": 180,
    "정부": 13
   }
  },
  "categories": [
   {
    "name": "국내 · 국내 정책·규제",
-   "count": 1127,
+   "count": 1131,
    "prev": 648,
-   "delta": 479
+   "delta": 483
   },
   {
    "name": "국내 · 국내 의료 AI 기업",
-   "count": 1028,
+   "count": 1030,
    "prev": 769,
-   "delta": 259
-  },
-  {
-   "name": "국내 · 국내 의료기관",
-   "count": 672,
-   "prev": 411,
    "delta": 261
   },
   {
+   "name": "국내 · 국내 의료기관",
+   "count": 676,
+   "prev": 411,
+   "delta": 265
+  },
+  {
    "name": "국내 · AI 거버넌스·보안",
-   "count": 496,
+   "count": 498,
    "prev": 324,
-   "delta": 172
+   "delta": 174
   },
   {
    "name": "국내 · 학술·연구·행사",
@@ -86,9 +86,9 @@
   },
   {
    "name": "해외 · 해외 정책·규제 (미국)",
-   "count": 230,
+   "count": 231,
    "prev": 171,
-   "delta": 59
+   "delta": 60
   },
   {
    "name": "해외 · 해외 연구·학술",
@@ -104,9 +104,9 @@
   },
   {
    "name": "일간지 · 동아일보",
-   "count": 94,
+   "count": 96,
    "prev": 0,
-   "delta": 94
+   "delta": 96
   },
   {
    "name": "일간지 · 한국일보",
@@ -202,7 +202,7 @@
  "keywords": [
   {
    "word": "서울대병원",
-   "count": 194,
+   "count": 195,
    "prev": 143,
    "status": ""
   },
@@ -214,7 +214,7 @@
   },
   {
    "word": "FDA",
-   "count": 109,
+   "count": 110,
    "prev": 86,
    "status": ""
   },
@@ -231,15 +231,15 @@
    "status": ""
   },
   {
-   "word": "아산병원",
-   "count": 102,
-   "prev": 70,
+   "word": "세브란스",
+   "count": 103,
+   "prev": 78,
    "status": ""
   },
   {
-   "word": "세브란스",
+   "word": "아산병원",
    "count": 102,
-   "prev": 78,
+   "prev": 70,
    "status": ""
   },
   {
@@ -268,19 +268,19 @@
   },
   {
    "word": "분당서울대",
-   "count": 74,
+   "count": 75,
    "prev": 65,
    "status": ""
   },
   {
    "word": "세미나",
-   "count": 65,
+   "count": 66,
    "prev": 91,
    "status": ""
   },
   {
    "word": "심포지엄",
-   "count": 59,
+   "count": 60,
    "prev": 31,
    "status": ""
   },
@@ -378,6 +378,17 @@
    "importance": 86
   },
   {
+   "title": "대한항공, 스마트폰으로 조종사·승무원 ‘수면건강’ 챙긴다",
+   "link": "https://sports.donga.com/economy/article/all/20261126/135093512/1",
+   "date": "2026-11-26",
+   "category": "국내 의료 AI 기업",
+   "region": "국내",
+   "score": 4,
+   "similar_count": 31,
+   "source": "sports.donga.com",
+   "importance": 69
+  },
+  {
    "title": "울산시 내년 예산안 5조9907억원…올해보다 6.1% 증가",
    "link": "https://www.kmib.co.kr/article/20261111500364",
    "date": "2026-11-11",
@@ -420,17 +431,6 @@
    "similar_count": 27,
    "source": "bizwnews.com",
    "importance": 61
-  },
-  {
-   "title": "한미약품, 퓨리오사AI 등과 맞손…‘에피데이’ 챗봇 국산 AI로 전환",
-   "link": "https://www.edaily.co.kr/News/Read?newsId=04139366645641784&mediaCodeNo=257&utm_source=naver&utm_medium=referral&utm_campaign=news_syndication&utm_content=original_article",
-   "date": "2026-11-02",
-   "category": "국내 정책·규제",
-   "region": "국내",
-   "score": 9,
-   "similar_count": 24,
-   "source": "edaily.co.kr",
-   "importance": 60
   }
  ],
  "issues_global": [
@@ -1178,6 +1178,17 @@
    "importance": 71
   },
   {
+   "title": "대한항공, 스마트폰으로 조종사·승무원 ‘수면건강’ 챙긴다",
+   "link": "https://sports.donga.com/economy/article/all/20261126/135093512/1",
+   "date": "2026-11-26",
+   "category": "국내 의료 AI 기업",
+   "region": "국내",
+   "score": 4,
+   "similar_count": 31,
+   "source": "sports.donga.com",
+   "importance": 69
+  },
+  {
    "title": "울산시 내년 예산안 5조9907억원…올해보다 6.1% 증가",
    "link": "https://www.kmib.co.kr/article/20261111500364",
    "date": "2026-11-11",
@@ -1208,17 +1219,6 @@
    "score": 16,
    "similar_count": 21,
    "source": "biz.chosun.com",
-   "importance": 61
-  },
-  {
-   "title": "시흥시, 내년 예산 194억원 줄여 편성…복지 예산은 551억 증액",
-   "link": "http://www.bizwnews.com/news/articleView.html?idxno=152738",
-   "date": "2026-11-23",
-   "category": "국내 의료기관",
-   "region": "국내",
-   "score": 7,
-   "similar_count": 27,
-   "source": "bizwnews.com",
    "importance": 61
   }
  ],
