@@ -1,8 +1,8 @@
 {
-  "generated_at": "2026-11-28T11:12:39.087305+09:00",
+  "generated_at": "2026-11-28T12:22:40.115802+09:00",
   "window_hours": 24,
-  "count": 7,
-  "filtered_out": 514,
+  "count": 14,
+  "filtered_out": 922,
   "category_order": [
     "조선일보",
     "중앙일보",
@@ -14,55 +14,27 @@
   ],
   "errors": [
     {
-      "query": "중앙일보 (의료/병원…)",
-      "error": "HTTP 503"
-    },
-    {
-      "query": "중앙일보 (AI/인공지능…)",
-      "error": "HTTP 503"
-    },
-    {
-      "query": "중앙일보 (서울아산병원/세브란스…)",
-      "error": "HTTP 503"
-    },
-    {
-      "query": "JTBC (의료/병원…)",
-      "error": "HTTP 503"
-    },
-    {
-      "query": "JTBC (AI/인공지능…)",
-      "error": "HTTP 503"
-    },
-    {
-      "query": "JTBC (서울아산병원/세브란스…)",
-      "error": "HTTP 503"
-    },
-    {
-      "query": "한겨레 (의료/병원…)",
-      "error": "HTTP 503"
-    },
-    {
-      "query": "한겨레 (AI/인공지능…)",
-      "error": "HTTP 503"
-    },
-    {
-      "query": "한겨레 (서울아산병원/세브란스…)",
-      "error": "HTTP 503"
-    },
-    {
-      "query": "한국일보 (의료/병원…)",
-      "error": "HTTP 503"
-    },
-    {
-      "query": "한국일보 (AI/인공지능…)",
-      "error": "HTTP 503"
-    },
-    {
-      "query": "한국일보 (서울아산병원/세브란스…)",
-      "error": "HTTP 503"
+      "query": "동아일보 RSS total.xml",
+      "error": "('Connection aborted.', RemoteDisconnected('Remote end closed connection without response')) → 구글 뉴스 검색으로 대체"
     }
   ],
   "items": [
+    {
+      "title": "정은경 복지장관, ‘AI 시험 부정 대책’ 첫 적용된 보건의료국시 현장 점검",
+      "link": "https://news.google.com/rss/articles/CBMiZkFVX3lxTE1kSGdxZF9iVTdESW1UNFdQMVZ5clZsTHpMelRYdE52c0NDeWZXd0M4amlPd2JaMjduTjBhTWVMR1M4V2thVVg3N2s2cWhEZC1HZEFSaFhiSHQ0ZVpvZGEzZEd0MUl2UQ?oc=5",
+      "originallink": "https://news.google.com/rss/articles/CBMiZkFVX3lxTE1kSGdxZF9iVTdESW1UNFdQMVZ5clZsTHpMelRYdE52c0NDeWZXd0M4amlPd2JaMjduTjBhTWVMR1M4V2thVVg3N2s2cWhEZC1HZEFSaFhiSHQ0ZVpvZGEzZEd0MUl2UQ?oc=5",
+      "summary": "",
+      "pubDate": "2026-11-28T11:54:00+09:00",
+      "category": "한겨레",
+      "press": "한겨레",
+      "source": "한겨레",
+      "queries": [
+        "의료",
+        "AI"
+      ],
+      "source_type": "major",
+      "score": 5
+    },
     {
       "title": "응급·중증 환자들 품는 분당제생병원 ‘골든타임’ 위한 24시간 뇌졸중센터도",
       "link": "https://www.khan.co.kr/article/202611280900025/?utm_source=khan_rss&utm_medium=rss&utm_campaign=total_news",
@@ -75,6 +47,22 @@
       "queries": [
         "병원",
         "환자"
+      ],
+      "source_type": "major",
+      "score": 5
+    },
+    {
+      "title": "“의사 연봉 3억 시대 끝난다” 의대 교수, 아들에 시키는 공부",
+      "link": "https://news.google.com/rss/articles/CBMiVkFVX3lxTFA2bEZFQ0h6bEZ5TlByN3NJakJmN29NMUVqUUVUY0lMZEpRZ2lzaDBQbWlMR0N3UlJDT0tSRTFubGZ3c19CVS1VeFJJRl9tcFhpMFRTUnVn?oc=5",
+      "originallink": "https://news.google.com/rss/articles/CBMiVkFVX3lxTFA2bEZFQ0h6bEZ5TlByN3NJakJmN29NMUVqUUVUY0lMZEpRZ2lzaDBQbWlMR0N3UlJDT0tSRTFubGZ3c19CVS1VeFJJRl9tcFhpMFRTUnVn?oc=5",
+      "summary": "",
+      "pubDate": "2026-11-28T06:00:00+09:00",
+      "category": "중앙일보",
+      "press": "중앙일보",
+      "source": "중앙일보",
+      "queries": [
+        "의사",
+        "의대"
       ],
       "source_type": "major",
       "score": 5
@@ -96,10 +84,41 @@
       "score": 5
     },
     {
+      "title": "치대 공부, 그렇게 안 어려워…서울대 교수 \"AI 입학해도 의사 가능\"",
+      "link": "https://news.google.com/rss/articles/CBMiU0FVX3lxTFAxbmF6czlOWEZ6Vjl6UzE5ZnkxWnpTYzVnTkNRb0wtZU84QlpIRVFKQk9IOXRZYlZrMlV0NVgyOEFRTl90MzNGbVlxUUxxckFBWlhV?oc=5",
+      "originallink": "https://news.google.com/rss/articles/CBMiU0FVX3lxTFAxbmF6czlOWEZ6Vjl6UzE5ZnkxWnpTYzVnTkNRb0wtZU84QlpIRVFKQk9IOXRZYlZrMlV0NVgyOEFRTl90MzNGbVlxUUxxckFBWlhV?oc=5",
+      "summary": "",
+      "pubDate": "2026-11-27T22:49:14+09:00",
+      "category": "JTBC",
+      "press": "JTBC",
+      "source": "JTBC",
+      "queries": [
+        "의사",
+        "AI"
+      ],
+      "source_type": "major",
+      "score": 5
+    },
+    {
+      "title": "이 대통령 “국민 기만 범죄, 기가 막힌다”···성형후기 조작 병원장들 검거에 “경찰 수고 많으셨다”",
+      "link": "https://www.khan.co.kr/article/202611281107001/?utm_source=khan_rss&utm_medium=rss&utm_campaign=total_news",
+      "originallink": "https://www.khan.co.kr/article/202611281107001/?utm_source=khan_rss&utm_medium=rss&utm_campaign=total_news",
+      "summary": "이재명 대통령이 27일 청와대 본관에서 열린 사회대개혁위원회 출범 1주년 간담회에서 발언하고 있다. 청와대사진기자단이재명 대통령이 28일 성형수술 후기를 허위로 작성한 성형외과 병원장들과 광고 업체 직원들이 무더기로 검거된 사건과 관련해 “국민을 기만해 돈을 버는 범죄에 엄정 대응하겠다”고 밝혔다.이재명 대통령은 이날 엑스에 “개인정보를 악용해 국민을 속이···",
+      "pubDate": "2026-11-28T11:07:00+09:00",
+      "category": "경향신문",
+      "press": "경향신문",
+      "source": "경향신문",
+      "queries": [
+        "병원"
+      ],
+      "source_type": "major",
+      "score": 4
+    },
+    {
       "title": "‘한의사♥’ 강소라, 여배우 맞아?…내숭 제로 '쿨패치 투혼' 양꼬치 먹방",
-      "link": "https://www.chosun.com/entertainments/broadcast/2026/11/28/GNQTMYTGMY3DCYLGHFRDIYZWMQ/",
-      "originallink": "https://www.chosun.com/entertainments/broadcast/2026/11/28/GNQTMYTGMY3DCYLGHFRDIYZWMQ/",
-      "summary": "[OSEN=박근희 기자] 배우 강소라가 중국 상해 여행 중 털털한 매력을 드러내 눈길을 끌었다.27일 강소라는 자신의 SNS에 ‘2박 3일의 짧은 상해 여행! 아쉬움을 가득 안고 다음을 기약하며...’라는 글과 함께 여러 장의 사진을 게재했다.공개된 사진에는 상해 여행을 즐기는 강소라의 다양한 모습이 담겼다. 현지에서 여유로운 시간을 보내며 여행을 만끽하는",
+      "link": "https://biz.chosun.com/entertainment/enter_general/2026/11/28/MFSTOZJUMMZTAZBWMEYDOOBVHA/",
+      "originallink": "https://biz.chosun.com/entertainment/enter_general/2026/11/28/MFSTOZJUMMZTAZBWMEYDOOBVHA/",
+      "summary": "배우 강소라가 중국 상해 여행 중 털털한 매력을 드러내 눈길을 끌었다.27일 강소라는 자신의 SNS에 ‘2박 3일의 짧은 상해 여행! 아쉬움을 가득 안고 다음을 기약하며...’라는 글과 함께 여러 장의 사진을 게재했다.공개된 사진에는 상해 여행을 즐기는 강소라의 다양한 모습이 담겼다. 현지에서 여유로운 시간을 보내며 여행을 만끽하는 모습이 시선을 사로잡았다",
       "pubDate": "2026-11-28T08:41:00+09:00",
       "category": "조선일보",
       "press": "조선일보",
@@ -141,21 +160,6 @@
       "score": 4
     },
     {
-      "title": "맹장·자궁·제왕절개 수술 환자 부담 줄어든다···맹장은 122만원에서 87만원으로",
-      "link": "https://www.khan.co.kr/article/202611271639001/?utm_source=khan_rss&utm_medium=rss&utm_campaign=total_news",
-      "originallink": "https://www.khan.co.kr/article/202611271639001/?utm_source=khan_rss&utm_medium=rss&utm_campaign=total_news",
-      "summary": "27일 보건복지부는 건강보험정책심의위원회(건정심)를 열고 7개 질병군에 적용하는 포괄수가를 6년 만에 전면 개정해 내년 1월부터 시행하기로 했다. 보건복지부 제공맹장·자궁 수술 환자와 제왕절개 산모가 내는 진료비 부담이 내년부터 크게 줄어든다. 환자가 수술비를 내고도 일부 수술 재료값의 80%를 부담하던 방식을 맹장·자궁 수술은 20%만, 제왕절개는 아예···",
-      "pubDate": "2026-11-27T16:39:00+09:00",
-      "category": "경향신문",
-      "press": "경향신문",
-      "source": "경향신문",
-      "queries": [
-        "환자"
-      ],
-      "source_type": "major",
-      "score": 4
-    },
-    {
       "title": "“ADHD도 유전되나요?”…사유리 걱정에 의사 답변은? [건강팩트체크]",
       "link": "https://www.donga.com/news/Culture/article/all/20261127/135103637/2",
       "originallink": "https://www.donga.com/news/Culture/article/all/20261127/135103637/2",
@@ -166,6 +170,66 @@
       "source": "동아일보",
       "queries": [
         "의사"
+      ],
+      "source_type": "major",
+      "score": 4
+    },
+    {
+      "title": "케이메디허브, 올해 460억원 규모 ‘의료기기 DX·AX’ 수행",
+      "link": "https://news.google.com/rss/articles/CBMiVkFVX3lxTE1HejBVVTM2NnJCaTBHZHQ0NnRyZjNTLXpxLXk4OU5SWURhVXRJS0F4cFlNcVl0RHFydktRRjEwUTRuSTNqcUsxZVRNSmRUQ3JPS3hFMzlB?oc=5",
+      "originallink": "https://news.google.com/rss/articles/CBMiVkFVX3lxTE1HejBVVTM2NnJCaTBHZHQ0NnRyZjNTLXpxLXk4OU5SWURhVXRJS0F4cFlNcVl0RHFydktRRjEwUTRuSTNqcUsxZVRNSmRUQ3JPS3hFMzlB?oc=5",
+      "summary": "",
+      "pubDate": "2026-11-27T15:00:00+09:00",
+      "category": "중앙일보",
+      "press": "중앙일보",
+      "source": "중앙일보",
+      "queries": [
+        "의료"
+      ],
+      "source_type": "major",
+      "score": 4
+    },
+    {
+      "title": "임플란트 환자 사망, 보험금 편취 의혹… 경찰, 강남 치과 압수수색",
+      "link": "https://news.google.com/rss/articles/CBMibkFVX3lxTE9NRjJ6dHJYZ0YyTDBVRWtaSFh1NHFXWU1tQ28temhnX084WVN2SFc0TFlpWWtzVDItX09pdmlzQVdPQ3dmS2hFMUxHS1ppRV9qZjdTT0xKWGIxbWlDU2RFZ0VoaXRwYzBRcFVmZHR3?oc=5",
+      "originallink": "https://news.google.com/rss/articles/CBMibkFVX3lxTE9NRjJ6dHJYZ0YyTDBVRWtaSFh1NHFXWU1tQ28temhnX084WVN2SFc0TFlpWWtzVDItX09pdmlzQVdPQ3dmS2hFMUxHS1ppRV9qZjdTT0xKWGIxbWlDU2RFZ0VoaXRwYzBRcFVmZHR3?oc=5",
+      "summary": "",
+      "pubDate": "2026-11-27T14:09:00+09:00",
+      "category": "한국일보",
+      "press": "한국일보",
+      "source": "한국일보",
+      "queries": [
+        "환자"
+      ],
+      "source_type": "major",
+      "score": 4
+    },
+    {
+      "title": "'치매 판정' 의사의 고백 “장미꽃 냄새 못 맡은 게 시작이었다”",
+      "link": "https://news.google.com/rss/articles/CBMic0FVX3lxTE53OFBGYkRKYnY2MWFNQml0RVNSQV9OVXJFRDdwUUVneWYwa0xnS3gyTXVJNDIyYnJSN2c2NGVYNWdYcjlXVkRlLTN5SmhqUDViMnB6ZXJBMFltTHVVN1FQLUl5RjUwd0lwcW82cXVVNVZUZXM?oc=5",
+      "originallink": "https://news.google.com/rss/articles/CBMic0FVX3lxTE53OFBGYkRKYnY2MWFNQml0RVNSQV9OVXJFRDdwUUVneWYwa0xnS3gyTXVJNDIyYnJSN2c2NGVYNWdYcjlXVkRlLTN5SmhqUDViMnB6ZXJBMFltTHVVN1FQLUl5RjUwd0lwcW82cXVVNVZUZXM?oc=5",
+      "summary": "",
+      "pubDate": "2026-11-27T14:00:00+09:00",
+      "category": "한국일보",
+      "press": "한국일보",
+      "source": "한국일보",
+      "queries": [
+        "의사"
+      ],
+      "source_type": "major",
+      "score": 4
+    },
+    {
+      "title": "임플란트 시술 중 또 숨졌다…‘환자 2명 사망’ 강남 치과 발칵",
+      "link": "https://news.google.com/rss/articles/CBMiVkFVX3lxTE1tVWY4R2o5dVRRbThGck9zRVhraWYtQnpsQ0x4T21SNXRna0hXOVl6eDQ1MV9rTHVTUElsQ2JzV3VDMHA4N0VrRm5CZ0xQb0o5bFVmVDBB?oc=5",
+      "originallink": "https://news.google.com/rss/articles/CBMiVkFVX3lxTE1tVWY4R2o5dVRRbThGck9zRVhraWYtQnpsQ0x4T21SNXRna0hXOVl6eDQ1MV9rTHVTUElsQ2JzV3VDMHA4N0VrRm5CZ0xQb0o5bFVmVDBB?oc=5",
+      "summary": "",
+      "pubDate": "2026-11-27T12:21:17+09:00",
+      "category": "중앙일보",
+      "press": "중앙일보",
+      "source": "중앙일보",
+      "queries": [
+        "환자"
       ],
       "source_type": "major",
       "score": 4
