@@ -1,8 +1,8 @@
 {
-  "generated_at": "2026-11-28T09:34:14.344207+09:00",
+  "generated_at": "2026-11-28T11:12:39.087305+09:00",
   "window_hours": 24,
-  "count": 19,
-  "filtered_out": 1022,
+  "count": 7,
+  "filtered_out": 514,
   "category_order": [
     "조선일보",
     "중앙일보",
@@ -12,7 +12,56 @@
     "경향신문",
     "한국일보"
   ],
-  "errors": [],
+  "errors": [
+    {
+      "query": "중앙일보 (의료/병원…)",
+      "error": "HTTP 503"
+    },
+    {
+      "query": "중앙일보 (AI/인공지능…)",
+      "error": "HTTP 503"
+    },
+    {
+      "query": "중앙일보 (서울아산병원/세브란스…)",
+      "error": "HTTP 503"
+    },
+    {
+      "query": "JTBC (의료/병원…)",
+      "error": "HTTP 503"
+    },
+    {
+      "query": "JTBC (AI/인공지능…)",
+      "error": "HTTP 503"
+    },
+    {
+      "query": "JTBC (서울아산병원/세브란스…)",
+      "error": "HTTP 503"
+    },
+    {
+      "query": "한겨레 (의료/병원…)",
+      "error": "HTTP 503"
+    },
+    {
+      "query": "한겨레 (AI/인공지능…)",
+      "error": "HTTP 503"
+    },
+    {
+      "query": "한겨레 (서울아산병원/세브란스…)",
+      "error": "HTTP 503"
+    },
+    {
+      "query": "한국일보 (의료/병원…)",
+      "error": "HTTP 503"
+    },
+    {
+      "query": "한국일보 (AI/인공지능…)",
+      "error": "HTTP 503"
+    },
+    {
+      "query": "한국일보 (서울아산병원/세브란스…)",
+      "error": "HTTP 503"
+    }
+  ],
   "items": [
     {
       "title": "응급·중증 환자들 품는 분당제생병원 ‘골든타임’ 위한 24시간 뇌졸중센터도",
@@ -26,22 +75,6 @@
       "queries": [
         "병원",
         "환자"
-      ],
-      "source_type": "major",
-      "score": 5
-    },
-    {
-      "title": "“의사 연봉 3억 시대 끝난다” 의대 교수, 아들에 시키는 공부",
-      "link": "https://news.google.com/rss/articles/CBMiVkFVX3lxTFA2bEZFQ0h6bEZ5TlByN3NJakJmN29NMUVqUUVUY0lMZEpRZ2lzaDBQbWlMR0N3UlJDT0tSRTFubGZ3c19CVS1VeFJJRl9tcFhpMFRTUnVn?oc=5",
-      "originallink": "https://news.google.com/rss/articles/CBMiVkFVX3lxTFA2bEZFQ0h6bEZ5TlByN3NJakJmN29NMUVqUUVUY0lMZEpRZ2lzaDBQbWlMR0N3UlJDT0tSRTFubGZ3c19CVS1VeFJJRl9tcFhpMFRTUnVn?oc=5",
-      "summary": "",
-      "pubDate": "2026-11-28T06:00:00+09:00",
-      "category": "중앙일보",
-      "press": "중앙일보",
-      "source": "중앙일보",
-      "queries": [
-        "의사",
-        "의대"
       ],
       "source_type": "major",
       "score": 5
@@ -63,22 +96,6 @@
       "score": 5
     },
     {
-      "title": "치대 공부, 그렇게 안 어려워…서울대 교수 \"AI 입학해도 의사 가능\"",
-      "link": "https://news.google.com/rss/articles/CBMiU0FVX3lxTFAxbmF6czlOWEZ6Vjl6UzE5ZnkxWnpTYzVnTkNRb0wtZU84QlpIRVFKQk9IOXRZYlZrMlV0NVgyOEFRTl90MzNGbVlxUUxxckFBWlhV?oc=5",
-      "originallink": "https://news.google.com/rss/articles/CBMiU0FVX3lxTFAxbmF6czlOWEZ6Vjl6UzE5ZnkxWnpTYzVnTkNRb0wtZU84QlpIRVFKQk9IOXRZYlZrMlV0NVgyOEFRTl90MzNGbVlxUUxxckFBWlhV?oc=5",
-      "summary": "",
-      "pubDate": "2026-11-27T22:49:14+09:00",
-      "category": "JTBC",
-      "press": "JTBC",
-      "source": "JTBC",
-      "queries": [
-        "의사",
-        "AI"
-      ],
-      "source_type": "major",
-      "score": 5
-    },
-    {
       "title": "‘한의사♥’ 강소라, 여배우 맞아?…내숭 제로 '쿨패치 투혼' 양꼬치 먹방",
       "link": "https://www.chosun.com/entertainments/broadcast/2026/11/28/GNQTMYTGMY3DCYLGHFRDIYZWMQ/",
       "originallink": "https://www.chosun.com/entertainments/broadcast/2026/11/28/GNQTMYTGMY3DCYLGHFRDIYZWMQ/",
@@ -95,30 +112,15 @@
     },
     {
       "title": "\"아기 초등학교 가면 오빠 60세\"…민혜연, 2세 소식 알리다 주진모♥ 나이 저격 '폭소' ('의사혜연')",
-      "link": "https://www.chosun.com/entertainments/broadcast/2026/11/28/MMZTKNBUGJTDQNBUGEZDIYRWME/",
-      "originallink": "https://www.chosun.com/entertainments/broadcast/2026/11/28/MMZTKNBUGJTDQNBUGEZDIYRWME/",
-      "summary": "[OSEN=박근희 기자] 배우 주진모의 아내 민혜연이 임신 소식을 전하며 남편의 나이를 언급해 웃음을 안겼다.27일 유튜브 채널 '의사 혜연'에는 '(나 빼고) 오열 대잔치였던 눈물의 임밍아웃...| 양가 부모님 임밍아웃 서프라이즈 대성공'이라는 제목의 영상이 게재됐다.공개된 영상에서 민혜연은 주진모와 함께 2세를 기다리는 근황을 전했다. 특히 민혜연은 \"",
+      "link": "https://biz.chosun.com/entertainment/enter_general/2026/11/28/GE3DKZDDMY2DANDEGI3DAMRXGA/",
+      "originallink": "https://biz.chosun.com/entertainment/enter_general/2026/11/28/GE3DKZDDMY2DANDEGI3DAMRXGA/",
+      "summary": "배우 주진모의 아내 민혜연이 임신 소식을 전하며 남편의 나이를 언급해 웃음을 안겼다.27일 유튜브 채널 '의사 혜연'에는 '(나 빼고) 오열 대잔치였던 눈물의 임밍아웃...| 양가 부모님 임밍아웃 서프라이즈 대성공'이라는 제목의 영상이 게재됐다.공개된 영상에서 민혜연은 주진모와 함께 2세를 기다리는 근황을 전했다. 특히 민혜연은 \"애기 태어나서 초등학교 들",
       "pubDate": "2026-11-28T07:15:00+09:00",
       "category": "조선일보",
       "press": "조선일보",
       "source": "조선일보",
       "queries": [
         "의사"
-      ],
-      "source_type": "major",
-      "score": 4
-    },
-    {
-      "title": "장애 어린이 75만명 재활 도운 푸르메병원",
-      "link": "https://www.donga.com/news/People/article/all/20261127/135106221/2",
-      "originallink": "https://www.donga.com/news/People/article/all/20261127/135106221/2",
-      "summary": "푸르메재단 넥슨어린이재활병원(푸르메병원)은 개원 10주년을 맞아 26일 서울 마포구 상암동 푸르메병원에서 기념식을 열었다고 27일 밝혔다. 이날 행사에는 병원에서 치료받은 어린이와 가족, 기부자 등 150여 명이 참석했다. 이날 푸르메병원은 개원 이후 운영 성과와 사회적 가치에 대한 연구 결과를 발표했다. 푸르메병원에 따르면 병원은 지난 10년간 연인원 약 75만 명의 장애 어린이에게 약 180만 건의 재활치료를 제공했다. 또 맞춤형 재활치료와 장애 어린이 가족의 일상 회복 지원 등을 통해 1070억 원의 사회적 가치를 창출한 것으",
-      "pubDate": "2026-11-28T01:40:00+09:00",
-      "category": "동아일보",
-      "press": "동아일보",
-      "source": "동아일보",
-      "queries": [
-        "병원"
       ],
       "source_type": "major",
       "score": 4
@@ -134,21 +136,6 @@
       "source": "조선일보",
       "queries": [
         "의료"
-      ],
-      "source_type": "major",
-      "score": 4
-    },
-    {
-      "title": "“과학 연구하는 의사 만들려면?”…범부처 연구 지원 체계 정비해야 [건강한겨레]",
-      "link": "https://news.google.com/rss/articles/CBMia0FVX3lxTE90NFFHd0tYRlFTZ1dGZGtLOGdJaXQ3T2tKZnBzWU5tb0NRZWMxT0RLZzZOU1VVTjBlOGYzVkZhZ2dLU2R6VmcxUEJnRXRzNTdHUUM0b0NqUDdtUVhWWVRnLXpUN29YNDh0S0dB?oc=5",
-      "originallink": "https://news.google.com/rss/articles/CBMia0FVX3lxTE90NFFHd0tYRlFTZ1dGZGtLOGdJaXQ3T2tKZnBzWU5tb0NRZWMxT0RLZzZOU1VVTjBlOGYzVkZhZ2dLU2R6VmcxUEJnRXRzNTdHUUM0b0NqUDdtUVhWWVRnLXpUN29YNDh0S0dB?oc=5",
-      "summary": "",
-      "pubDate": "2026-11-27T23:02:15+09:00",
-      "category": "한겨레",
-      "press": "한겨레",
-      "source": "한겨레",
-      "queries": [
-        "의사"
       ],
       "source_type": "major",
       "score": 4
@@ -179,126 +166,6 @@
       "source": "동아일보",
       "queries": [
         "의사"
-      ],
-      "source_type": "major",
-      "score": 4
-    },
-    {
-      "title": "케이메디허브, 올해 460억원 규모 ‘의료기기 DX·AX’ 수행",
-      "link": "https://news.google.com/rss/articles/CBMiVkFVX3lxTE1HejBVVTM2NnJCaTBHZHQ0NnRyZjNTLXpxLXk4OU5SWURhVXRJS0F4cFlNcVl0RHFydktRRjEwUTRuSTNqcUsxZVRNSmRUQ3JPS3hFMzlB?oc=5",
-      "originallink": "https://news.google.com/rss/articles/CBMiVkFVX3lxTE1HejBVVTM2NnJCaTBHZHQ0NnRyZjNTLXpxLXk4OU5SWURhVXRJS0F4cFlNcVl0RHFydktRRjEwUTRuSTNqcUsxZVRNSmRUQ3JPS3hFMzlB?oc=5",
-      "summary": "",
-      "pubDate": "2026-11-27T15:00:00+09:00",
-      "category": "중앙일보",
-      "press": "중앙일보",
-      "source": "중앙일보",
-      "queries": [
-        "의료"
-      ],
-      "source_type": "major",
-      "score": 4
-    },
-    {
-      "title": "임플란트 환자 사망, 보험금 편취 의혹… 경찰, 강남 치과 압수수색",
-      "link": "https://news.google.com/rss/articles/CBMibkFVX3lxTE9NRjJ6dHJYZ0YyTDBVRWtaSFh1NHFXWU1tQ28temhnX084WVN2SFc0TFlpWWtzVDItX09pdmlzQVdPQ3dmS2hFMUxHS1ppRV9qZjdTT0xKWGIxbWlDU2RFZ0VoaXRwYzBRcFVmZHR3?oc=5",
-      "originallink": "https://news.google.com/rss/articles/CBMibkFVX3lxTE9NRjJ6dHJYZ0YyTDBVRWtaSFh1NHFXWU1tQ28temhnX084WVN2SFc0TFlpWWtzVDItX09pdmlzQVdPQ3dmS2hFMUxHS1ppRV9qZjdTT0xKWGIxbWlDU2RFZ0VoaXRwYzBRcFVmZHR3?oc=5",
-      "summary": "",
-      "pubDate": "2026-11-27T14:09:00+09:00",
-      "category": "한국일보",
-      "press": "한국일보",
-      "source": "한국일보",
-      "queries": [
-        "환자"
-      ],
-      "source_type": "major",
-      "score": 4
-    },
-    {
-      "title": "'치매 판정' 의사의 고백 “장미꽃 냄새 못 맡은 게 시작이었다”",
-      "link": "https://news.google.com/rss/articles/CBMic0FVX3lxTE53OFBGYkRKYnY2MWFNQml0RVNSQV9OVXJFRDdwUUVneWYwa0xnS3gyTXVJNDIyYnJSN2c2NGVYNWdYcjlXVkRlLTN5SmhqUDViMnB6ZXJBMFltTHVVN1FQLUl5RjUwd0lwcW82cXVVNVZUZXM?oc=5",
-      "originallink": "https://news.google.com/rss/articles/CBMic0FVX3lxTE53OFBGYkRKYnY2MWFNQml0RVNSQV9OVXJFRDdwUUVneWYwa0xnS3gyTXVJNDIyYnJSN2c2NGVYNWdYcjlXVkRlLTN5SmhqUDViMnB6ZXJBMFltTHVVN1FQLUl5RjUwd0lwcW82cXVVNVZUZXM?oc=5",
-      "summary": "",
-      "pubDate": "2026-11-27T14:00:00+09:00",
-      "category": "한국일보",
-      "press": "한국일보",
-      "source": "한국일보",
-      "queries": [
-        "의사"
-      ],
-      "source_type": "major",
-      "score": 4
-    },
-    {
-      "title": "임플란트 시술 중 또 숨졌다…‘환자 2명 사망’ 강남 치과 발칵",
-      "link": "https://news.google.com/rss/articles/CBMiVkFVX3lxTE1tVWY4R2o5dVRRbThGck9zRVhraWYtQnpsQ0x4T21SNXRna0hXOVl6eDQ1MV9rTHVTUElsQ2JzV3VDMHA4N0VrRm5CZ0xQb0o5bFVmVDBB?oc=5",
-      "originallink": "https://news.google.com/rss/articles/CBMiVkFVX3lxTE1tVWY4R2o5dVRRbThGck9zRVhraWYtQnpsQ0x4T21SNXRna0hXOVl6eDQ1MV9rTHVTUElsQ2JzV3VDMHA4N0VrRm5CZ0xQb0o5bFVmVDBB?oc=5",
-      "summary": "",
-      "pubDate": "2026-11-27T12:21:17+09:00",
-      "category": "중앙일보",
-      "press": "중앙일보",
-      "source": "중앙일보",
-      "queries": [
-        "환자"
-      ],
-      "source_type": "major",
-      "score": 4
-    },
-    {
-      "title": "손연재 부부 30억 후원…세브란스에 태아협진센터 설립",
-      "link": "https://news.google.com/rss/articles/CBMiVkFVX3lxTE11RTA5Q3ltc0pWLW5pWmxKMUVQWkZqRU9PYmRDTkxHQVBra0hQWjBNOW5ja3VFRTNWYkNQX21Tc091Z3U2dHhZcGpOb21TbG1CV25TTmZn?oc=5",
-      "originallink": "https://news.google.com/rss/articles/CBMiVkFVX3lxTE11RTA5Q3ltc0pWLW5pWmxKMUVQWkZqRU9PYmRDTkxHQVBra0hQWjBNOW5ja3VFRTNWYkNQX21Tc091Z3U2dHhZcGpOb21TbG1CV25TTmZn?oc=5",
-      "summary": "",
-      "pubDate": "2026-11-27T12:15:18+09:00",
-      "category": "중앙일보",
-      "press": "중앙일보",
-      "source": "중앙일보",
-      "queries": [
-        "세브란스"
-      ],
-      "source_type": "major",
-      "score": 4
-    },
-    {
-      "title": "케이메디허브, 경북대와 바이오·의료 공동연구 확대",
-      "link": "https://news.google.com/rss/articles/CBMiVkFVX3lxTFBNM2RfdHZxU2ZUWHl5UDdxX2tOZHZjSWdIRWxuN2xMY2x2RlZERlBBMFpPZGlxOW80V1BObldYX0ZEZEhfX3AzRlVxOGVQbTNZY0tXYXdB?oc=5",
-      "originallink": "https://news.google.com/rss/articles/CBMiVkFVX3lxTFBNM2RfdHZxU2ZUWHl5UDdxX2tOZHZjSWdIRWxuN2xMY2x2RlZERlBBMFpPZGlxOW80V1BObldYX0ZEZEhfX3AzRlVxOGVQbTNZY0tXYXdB?oc=5",
-      "summary": "",
-      "pubDate": "2026-11-27T11:35:00+09:00",
-      "category": "중앙일보",
-      "press": "중앙일보",
-      "source": "중앙일보",
-      "queries": [
-        "의료"
-      ],
-      "source_type": "major",
-      "score": 4
-    },
-    {
-      "title": "엄중식 가천대 길병원 교수 '녹조근정훈장'…감염병 예방·관리 공로",
-      "link": "https://news.google.com/rss/articles/CBMic0FVX3lxTE9NRnF1c3phOEIzT2VaY3F3WjJTb09nRDc3cUJZak51X2IzVkU5QmVVdFpJSG5LV1VQWk9FOFoxUnRzUGx0SE5GZW9qYnQtZjZmVFg0a0ROajFCWW15R2FTQVI0aVFGMUc5VXI0d1Vmd3ZSTnc?oc=5",
-      "originallink": "https://news.google.com/rss/articles/CBMic0FVX3lxTE9NRnF1c3phOEIzT2VaY3F3WjJTb09nRDc3cUJZak51X2IzVkU5QmVVdFpJSG5LV1VQWk9FOFoxUnRzUGx0SE5GZW9qYnQtZjZmVFg0a0ROajFCWW15R2FTQVI0aVFGMUc5VXI0d1Vmd3ZSTnc?oc=5",
-      "summary": "",
-      "pubDate": "2026-11-27T11:34:00+09:00",
-      "category": "한국일보",
-      "press": "한국일보",
-      "source": "한국일보",
-      "queries": [
-        "병원"
-      ],
-      "source_type": "major",
-      "score": 4
-    },
-    {
-      "title": "‘누적 수강생 450만’ 이지영 강사, 미래 의료인 양성에 3억 기부",
-      "link": "https://www.donga.com/news/Society/article/all/20261127/135101726/2",
-      "originallink": "https://www.donga.com/news/Society/article/all/20261127/135101726/2",
-      "summary": "누적 수강생 450만 명을 기록한 수능 사회탐구 스타강사 이지영 씨가 분당서울대병원에 3억 원을 기부했다. 후원금은 2028년 개원 예정인 임상교육훈련센터 건립에 사용되며, 미래 의료인 양성과 지역사회 의료인 교육을 지원한다.",
-      "pubDate": "2026-11-27T10:14:51+09:00",
-      "category": "동아일보",
-      "press": "동아일보",
-      "source": "동아일보",
-      "queries": [
-        "의료"
       ],
       "source_type": "major",
       "score": 4

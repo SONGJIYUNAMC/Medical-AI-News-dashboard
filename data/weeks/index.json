@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-11-28T09:34:14.485800+09:00",
+ "generated_at": "2026-11-28T11:12:39.213420+09:00",
  "weeks": [
   {
    "week": "2026-W42",
@@ -183,18 +183,18 @@
    "week": "2026-W48",
    "start": "2026-11-23",
    "end": "2026-11-29",
-   "count": 1557,
+   "count": 1559,
    "by_region": {
-    "국내": 1130,
+    "국내": 1132,
     "일간지": 217,
     "해외": 196,
     "정부": 14
    },
    "by_category": {
-    "국내 의료 AI 기업": 289,
+    "국내 의료 AI 기업": 290,
     "국내 정책·규제": 328,
     "국내 의료기관": 163,
-    "학술·연구·행사": 107,
+    "학술·연구·행사": 108,
     "해외 의료기관·정책·규제": 87,
     "AI 거버넌스·보안": 156,
     "경향신문": 30,
@@ -218,20 +218,87 @@
  ],
  "last_run": {
   "국내": {
-   "generated_at": "2026-11-28T09:32:25.819924+09:00",
+   "generated_at": "2026-11-28T10:26:56.508276+09:00",
    "errors": []
   },
   "해외": {
-   "generated_at": "2026-11-28T09:32:56.386795+09:00",
-   "errors": []
+   "generated_at": "2026-11-28T10:49:05.613313+09:00",
+   "errors": [
+    "FDA AI-enabled medical devices [US]",
+    "FDA AI-enabled medical devices [GB]",
+    "FDA artificial intelligence guidance medical [US]",
+    "FDA artificial intelligence guidance medical [GB]",
+    "CMS artificial intelligence health [US]",
+    "CMS artificial intelligence health [GB]",
+    "HHS artificial intelligence health care policy [US]",
+    "HHS artificial intelligence health care policy [GB]",
+    "ONC health IT AI transparency [US]",
+    "ONC health IT AI transparency [GB]",
+    "EU AI Act medical devices [US]",
+    "EU AI Act medical devices [GB]",
+    "European Health Data Space AI [US]",
+    "European Health Data Space AI [GB]",
+    "EMA artificial intelligence medicines regulation [US]",
+    "EMA artificial intelligence medicines regulation [GB]",
+    "MHRA AI medical device [US]",
+    "MHRA AI medical device [GB]",
+    "NHS AI rollout [US]",
+    "NHS AI rollout [GB]",
+    "Mayo Clinic AI [US]",
+    "Mayo Clinic AI [GB]",
+    "Cleveland Clinic AI [US]",
+    "Cleveland Clinic AI [GB]",
+    "health system ambient AI scribe [US]",
+    "health system ambient AI scribe [GB]",
+    "hospital generative AI deployment [US]",
+    "hospital generative AI deployment [GB]",
+    "health system AI governance [US]",
+    "health system AI governance [GB]",
+    "NEJM AI [US]",
+    "NEJM AI [GB]",
+    "Nature Medicine artificial intelligence [US]",
+    "Nature Medicine artificial intelligence [GB]",
+    "JAMA large language model clinical [US]",
+    "JAMA large language model clinical [GB]",
+    "randomized trial AI clinical decision support [US]",
+    "randomized trial AI clinical decision support [GB]"
+   ]
   },
   "정부": {
-   "generated_at": "2026-11-28T09:33:41.514771+09:00",
-   "errors": []
+   "generated_at": "2026-11-28T10:57:59.496810+09:00",
+   "errors": [
+    "개인정보보호위원회 - HTTP 503",
+    "개인정보보호위원회 - HTTP 503",
+    "산업통상부 - HTTP 503",
+    "국가인공지능전략위원회 - HTTP 503",
+    "정부 보도자료 - HTTP 503",
+    "정부 보도자료 - HTTP 503",
+    "정부 보도자료 - HTTP 503",
+    "정부 보도자료 - HTTP 503",
+    "정부 보도자료 - HTTP 503",
+    "보건복지부 - HTTP 503",
+    "보건복지부 - HTTP 503",
+    "보건복지부 - HTTP 503",
+    "국가인공지능전략위원회 - HTTP 503",
+    "국가인공지능전략위원회 - HTTP 503"
+   ]
   },
   "일간지": {
-   "generated_at": "2026-11-28T09:34:14.344207+09:00",
-   "errors": []
+   "generated_at": "2026-11-28T11:12:39.087305+09:00",
+   "errors": [
+    "중앙일보 (의료/병원…)",
+    "중앙일보 (AI/인공지능…)",
+    "중앙일보 (서울아산병원/세브란스…)",
+    "JTBC (의료/병원…)",
+    "JTBC (AI/인공지능…)",
+    "JTBC (서울아산병원/세브란스…)",
+    "한겨레 (의료/병원…)",
+    "한겨레 (AI/인공지능…)",
+    "한겨레 (서울아산병원/세브란스…)",
+    "한국일보 (의료/병원…)",
+    "한국일보 (AI/인공지능…)",
+    "한국일보 (서울아산병원/세브란스…)"
+   ]
   }
  }
 }

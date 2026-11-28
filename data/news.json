@@ -1,10 +1,10 @@
 {
-  "generated_at": "2026-11-28T09:32:25.819924+09:00",
+  "generated_at": "2026-11-28T10:26:56.508276+09:00",
   "window_hours": 26,
-  "count": 189,
-  "filtered_out": 972,
-  "filtered_off_topic": 133,
-  "merged_similar": 108,
+  "count": 188,
+  "filtered_out": 960,
+  "filtered_off_topic": 127,
+  "merged_similar": 105,
   "category_order": [
     "국내 정책·규제",
     "국내 의료기관",
@@ -328,6 +328,28 @@
       "similar_sources": []
     },
     {
+      "title": "고양시, 내달 2일 '글로벌 AI허브 유치 특별포럼'",
+      "summary": "주제발표에서는 황보율 위뉴 대표(국립암센터 교수)가 '한국 의료의 AI 글로벌화–AI헬스케어 아시아허브를 향한 고양시 도약'을, 손봉희 ICLEI 한국사무소 부소장이 '고양시 기후위기 대응과 AI 혁신'을 발표한다....",
+      "link": "https://n.news.naver.com/mnews/article/003/0014349629?sid=102",
+      "originallink": "https://www.newsis.com/view/NISX20261127_0003886298",
+      "pubDate": "2026-11-27T14:30:00+09:00",
+      "queries": [
+        "의료 AI"
+      ],
+      "category": "학술·연구·행사",
+      "score": 10,
+      "query": "의료 AI",
+      "source_type": "major",
+      "similar_count": 5,
+      "similar_sources": [
+        "g-enews.com",
+        "inews24.com",
+        "job-post.co.kr",
+        "kmaeil.com",
+        "news1.kr"
+      ]
+    },
+    {
       "title": "아이티아이즈, 병원 3곳·연구사업단과 의료 AI 협력",
       "summary": "양 사업단이 보유한 연구개발 성과와 기술을 연계해 공동연구를 활성화하고, 의료데이터 기반 AI 분석 기술과 디지털 헬스케어 솔루션 개발에 협력할 계획이다. 아울러 국가연구개발사업과 정부지원사업을 공동...",
       "link": "https://www.newspim.com/news/view/20261127000891",
@@ -411,28 +433,6 @@
         "kmaeil.com",
         "news.ifm.kr",
         "newstown.co.kr"
-      ]
-    },
-    {
-      "title": "고양시, 내달 2일 킨텍스서 '글로벌 AI 허브 유치 특별포럼'",
-      "summary": "주제 발표에서는 황보율 위뉴 대표(국립암센터 교수)가 '한국 의료의 AI 글로벌화-AI 헬스케어 아시아 허브를 향한 고양시 도약'을, 손봉희 ICLEI 한국사무소 부소장이 '고양시 기후 위기 대응과 AI 혁신'을 주제로 각각...",
-      "link": "https://n.news.naver.com/mnews/article/001/0016466867?sid=102",
-      "originallink": "https://www.yna.co.kr/view/AKR20261127022500060?input=1195m",
-      "pubDate": "2026-11-27T08:25:00+09:00",
-      "queries": [
-        "의료 AI"
-      ],
-      "category": "학술·연구·행사",
-      "score": 10,
-      "query": "의료 AI",
-      "source_type": "major",
-      "similar_count": 7,
-      "similar_sources": [
-        "g-enews.com",
-        "inews24.com",
-        "job-post.co.kr",
-        "kmaeil.com",
-        "news1.kr"
       ]
     },
     {
@@ -625,15 +625,16 @@
       "score": 9,
       "query": "의료 AI 환자안전",
       "source_type": "other",
-      "similar_count": 3,
+      "similar_count": 4,
       "similar_sources": [
         "kgnews.co.kr",
         "newstnt.com",
+        "pointdaily.co.kr",
         "viva100.com"
       ]
     },
     {
-      "title": "에뜨왈 김태림 대표 \"급여기준 AI에서 의료진이 찾고 쓰고 만드는 의료...",
+      "title": "에뜨왈 김태림 대표 \"보험심사 AI에서 의료진이 찾고 쓰고 만드는 의료...",
       "summary": "에뜨왈 김태림 대표는 삼성서울병원 응급의학과 교수로, 10년 전부터 디지털헬스 연구를 해왔다. 2025년 11월... 때까지 제품을 다듬고자 창업했다. - 수익 모델은 어떻게 구상하고 있나. 의료진이 필요한 기능을 먼저 써보고...",
       "link": "https://www.medigatenews.com/news/586116410",
       "originallink": "https://www.medigatenews.com/news/586116410",
@@ -826,45 +827,6 @@
       ]
     },
     {
-      "title": "헬스케어 스타트업 투자유치 지원사업 마무리, 참여 6곳 중 4곳 투자 유...",
-      "summary": "DHP에는 AI와 의료기기 분야 6개사가 배정됐다. AI 분야에서는 의료 멀티에이전트 AI를 만드는 휴버, MRI로 뇌... 하는 '평가 유예 신의료기술'로 고시돼 이달부터 사용되고 있으며, 이 기기의 확증 임상을 분석한 논문도...",
-      "link": "https://platum.kr/archives/299606",
-      "originallink": "https://platum.kr/archives/299606",
-      "pubDate": "2026-11-27T08:22:00+09:00",
-      "queries": [
-        "신의료기술평가 AI",
-        "의료 AI 수가",
-        "의료 AI 지원사업",
-        "의료 AI 기업",
-        "의료 AI 논문",
-        "의료 AI",
-        "병원 AI"
-      ],
-      "category": "국내 정책·규제",
-      "score": 8,
-      "query": "신의료기술평가 AI",
-      "source_type": "other",
-      "similar_count": 0,
-      "similar_sources": []
-    },
-    {
-      "title": "AI 건강검진, 조기 발견 넘어 평생 건강관리로…국회서 제도화 논의",
-      "summary": "정부와 건강보험공단, 의료현장, 언론, 법률 전문가들이 함께 참여하는 만큼 AI 건강검진의 실제 적용 가능성뿐 아니라 검진 데이터 활용과 개인정보 보호, 검진 이후 의료기관 연계 등 제도적 과제도 주요 논의 대상이 될...",
-      "link": "http://www.whosaeng.com/sub_read.html?uid=175673&section=sc3",
-      "originallink": "http://www.whosaeng.com/sub_read.html?uid=175673&section=sc3",
-      "pubDate": "2026-11-27T07:36:00+09:00",
-      "queries": [
-        "의료 데이터 개인정보",
-        "의료 AI"
-      ],
-      "category": "국내 정책·규제",
-      "score": 8,
-      "query": "의료 데이터 개인정보",
-      "source_type": "other",
-      "similar_count": 0,
-      "similar_sources": []
-    },
-    {
       "title": "이화의료원, 제11차 이화메디테크포럼 개최",
       "summary": "이화메디테크포럼은 의료 현장의 수요와 이화여대 의과대학·공과대학·인공지능대학의 원천기술, 기업... 위한 의료·인공지능(AI)·로봇 융합 연구개발과 인재 양성 방안을 논의하기 위해 마련됐다. 행사는 총 3개...",
       "link": "https://www.lawissue.co.kr/view.php?ud=202611271836453852f4ab64559d_12",
@@ -933,6 +895,7 @@
         "세브란스 AI",
         "서울성모병원 AI",
         "딥노이드",
+        "의료 AI 기업",
         "의료 AI 환자안전",
         "의료 AI 책임",
         "의료 AI",
@@ -1086,6 +1049,22 @@
       "similar_sources": []
     },
     {
+      "title": "약국의 피지컬 AI…\"약사는 약을, 로봇은 정리를\"",
+      "summary": "28일 약업계와 의료기기 업계 등에 따르면. 약국용 소프트웨어 기업 제이엔제이테크와 로봇 기술 기업... 장동인 KAIST 김재철AI대학원 책임교수는 지난 5월 열린 제21회 경기약사학술대회에서 피지컬 AI의 활용 범위가 의약품...",
+      "link": "https://n.news.naver.com/mnews/article/003/0014350501?sid=102",
+      "originallink": "https://www.newsis.com/view/NISX20261127_0003886003",
+      "pubDate": "2026-11-28T10:01:00+09:00",
+      "queries": [
+        "의료 AI 책임"
+      ],
+      "category": "학술·연구·행사",
+      "score": 6,
+      "query": "의료 AI 책임",
+      "source_type": "major",
+      "similar_count": 0,
+      "similar_sources": []
+    },
+    {
       "title": "2027년을 주도할 5가지 트렌드와 투자 전략",
       "summary": "그는 빅테크 기업들의 3분기 실적에서 AI 투자 확대와 클라우드 매출 급증이 동시에 나타났다는 점에... 이러한 성장의 일부는 미국의 공적 의료보험인 메디케어(Medicare) 적용 범위 확대에서 비롯될 전망이다. 지난...",
       "link": "https://www.fortunekorea.co.kr/news/articleView.html?idxno=54905",
@@ -1234,7 +1213,7 @@
       "score": 6,
       "query": "디지털의료제품",
       "source_type": "major",
-      "similar_count": 8,
+      "similar_count": 7,
       "similar_sources": [
         "4th.kr",
         "bokuennews.com",
@@ -1857,43 +1836,6 @@
       "similar_sources": []
     },
     {
-      "title": "“비유를 넘어 숫자와 데이터로”…‘2026 포괄의학 심포지엄’ 성료",
-      "summary": "또한 인공지능(AI) 시대에 기존 데이터를 요약하는 AI가 결코 대체할 수 없는 영역은 ‘실제 환자에게서... 판단이 환자 안전과 의료인 보호의 핵심이라고 짚었다.   그는 5대 활력징후(혈압·맥박·호흡수·체온...",
-      "link": "https://www.akomnews.com/bbs/board.php?bo_table=news&wr_id=69153",
-      "originallink": "https://www.akomnews.com/bbs/board.php?bo_table=news&wr_id=69153",
-      "pubDate": "2026-11-27T09:18:00+09:00",
-      "queries": [
-        "의료 AI 환자안전",
-        "의료 AI"
-      ],
-      "category": "학술·연구·행사",
-      "score": 5,
-      "query": "의료 AI 환자안전",
-      "source_type": "other",
-      "similar_count": 0,
-      "similar_sources": []
-    },
-    {
-      "title": "경산시, 2027년 예산 1조 5,277억 편성…민선9기 미래 성장동력 확충",
-      "summary": "인공지능(AI) 전환을 지원하고, 지역 13개 대학의 인적·지적 자원을 기업 혁신과 연계한다는 방침이다. 교통... 경산형 달빛병원인 '우리아이 보듬병원' 운영을 내실화해 아동과 부모가 안심할 수 있는 의료·돌봄 환경을...",
-      "link": "https://www.shinailbo.co.kr/news/articleView.html?idxno=5088514",
-      "originallink": "https://www.shinailbo.co.kr/news/articleView.html?idxno=5088514",
-      "pubDate": "2026-11-27T09:12:00+09:00",
-      "queries": [
-        "의료 AI 기업",
-        "의료 AI",
-        "병원 AI"
-      ],
-      "category": "국내 정책·규제",
-      "score": 5,
-      "query": "의료 AI 기업",
-      "source_type": "other",
-      "similar_count": 1,
-      "similar_sources": [
-        "dtnews24.com"
-      ]
-    },
-    {
       "title": "초고령사회, 뇌·신경계 질환 부담 확대 어떻게 대응할까",
       "summary": "출산 보호 지원 ▲신경과 진료 특성을 반영한 적정 수가 마련 ▲새로운 치매 치료 환경에 맞는 제도 개선... 기조강연은 편두통의 신경염증 기전, 알츠하이머병의 APOE 병태생리, 파킨슨병의 조직 바이오마커, 의료 AI의 임상...",
       "link": "https://www.doctorsnews.co.kr/news/articleView.html?idxno=200286",
@@ -2313,6 +2255,40 @@
       "category": "국내 정책·규제",
       "score": 4,
       "query": "신의료기술평가 AI",
+      "source_type": "other",
+      "similar_count": 0,
+      "similar_sources": []
+    },
+    {
+      "title": "“비유를 넘어 숫자와 데이터로”…‘2026 포괄의학 심포지엄’ 성료",
+      "summary": "또한 인공지능(AI) 시대에 기존 데이터를 요약하는 AI가 결코 대체할 수 없는 영역은 ‘실제 환자에게서... 판단이 환자 안전과 의료인 보호의 핵심이라고 짚었다.   그는 5대 활력징후(혈압·맥박·호흡수·체온...",
+      "link": "https://www.akomnews.com/bbs/board.php?bo_table=news&wr_id=69153",
+      "originallink": "https://www.akomnews.com/bbs/board.php?bo_table=news&wr_id=69153",
+      "pubDate": "2026-11-27T09:18:00+09:00",
+      "queries": [
+        "의료 AI 환자안전"
+      ],
+      "category": "학술·연구·행사",
+      "score": 4,
+      "query": "의료 AI 환자안전",
+      "source_type": "other",
+      "similar_count": 0,
+      "similar_sources": []
+    },
+    {
+      "title": "경산시, 2027년 예산 1조 5,277억 편성…민선9기 미래 성장동력 확충",
+      "summary": "인공지능(AI) 전환을 지원하고, 지역 13개 대학의 인적·지적 자원을 기업 혁신과 연계한다는 방침이다. 교통... 경산형 달빛병원인 '우리아이 보듬병원' 운영을 내실화해 아동과 부모가 안심할 수 있는 의료·돌봄 환경을...",
+      "link": "https://www.shinailbo.co.kr/news/articleView.html?idxno=5088514",
+      "originallink": "https://www.shinailbo.co.kr/news/articleView.html?idxno=5088514",
+      "pubDate": "2026-11-27T09:12:00+09:00",
+      "queries": [
+        "의료 AI 기업",
+        "의료 AI",
+        "병원 AI"
+      ],
+      "category": "국내 정책·규제",
+      "score": 4,
+      "query": "의료 AI 기업",
       "source_type": "other",
       "similar_count": 0,
       "similar_sources": []
@@ -3277,6 +3253,23 @@
       "similar_sources": []
     },
     {
+      "title": "월마트·코스트코 질주에 필수소비재 20% 상승…CJ제일제당·오리온도 주...",
+      "summary": "인공지능(AI) 열풍에 가려졌던 미국 전통 산업과 경기방어주가 올해 뉴욕증시에서 예상 밖의 성과를 거두고... 의약품과 의료서비스 역시 경기 변화에 상대적으로 둔감하다. 기업 실적의 변동성이 비교적 작고 안정적인...",
+      "link": "https://www.pinpointnews.co.kr/news/articleView.html?idxno=509111",
+      "originallink": "https://www.pinpointnews.co.kr/news/articleView.html?idxno=509111",
+      "pubDate": "2026-11-28T10:16:00+09:00",
+      "queries": [
+        "의료 AI 기업",
+        "의료 AI"
+      ],
+      "category": "국내 의료 AI 기업",
+      "score": 1,
+      "query": "의료 AI 기업",
+      "source_type": "other",
+      "similar_count": 0,
+      "similar_sources": []
+    },
+    {
       "title": "국가안보 인프라 시설에 국산 반도체 ‘우선구매’ 제도화",
       "summary": "“국민과 기업이 AI에 업무를 맡길 수 있는 명확한 기준과 예측 가능한 제도가 필요하다\"고 말했다. 정부는 AI 로봇을 공공 분야에 우선 투입하는 방안도 추진한다. 환자 중심의 의료데이터 상시 연계를 위한 디지털 의료...",
       "link": "https://www.ekn.kr/web/view.php?key=20261127022445698",
@@ -3492,23 +3485,6 @@
       "category": "국내 정책·규제",
       "score": 1,
       "query": "의료 AI 지원사업",
-      "source_type": "other",
-      "similar_count": 0,
-      "similar_sources": []
-    },
-    {
-      "title": "가난할수록 더 가난해진다, 낙수효과는 언제 오나: 슬로우레터 11월27일...",
-      "summary": "다음 연준 의장은 AI에 맡기자.반도체가 벌어준 시간.나쁜 일자리라도 필요한가.청년 고용 세 가지 제안.... 박중철(연세암병원 의사)은 “한국에서 사전연명의료의향서란 국가의 보호 없이 존엄한 죽음을 스스로 책임지...",
-      "link": "https://slownews.kr/170293",
-      "originallink": "https://slownews.kr/170293",
-      "pubDate": "2026-11-27T07:40:00+09:00",
-      "queries": [
-        "의료 AI 책임",
-        "병원 AI"
-      ],
-      "category": "AI 거버넌스·보안",
-      "score": 1,
-      "query": "의료 AI 책임",
       "source_type": "other",
       "similar_count": 0,
       "similar_sources": []
