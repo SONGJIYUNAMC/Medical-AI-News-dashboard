@@ -1,17 +1,17 @@
 {
  "month": "2026-11",
- "generated_at": "2026-11-27T12:41:22.384214+09:00",
+ "generated_at": "2026-11-28T09:05:25.119038+09:00",
  "prev_month": "2026-10",
- "collected_days": 27,
+ "collected_days": 28,
  "first_day": "2026-11-01",
- "last_day": "2026-11-27",
- "total": 5588,
+ "last_day": "2026-11-28",
+ "total": 5715,
  "prev_total": 4285,
  "by_region": {
-  "국내": 4164,
-  "해외": 809,
-  "정부": 63,
-  "일간지": 552
+  "국내": 4256,
+  "해외": 822,
+  "정부": 64,
+  "일간지": 573
  },
  "weekly": {
   "2026-W44": {
@@ -35,60 +35,60 @@
    "정부": 19
   },
   "2026-W48": {
-   "국내": 1032,
-   "일간지": 196,
-   "해외": 182,
-   "정부": 13
+   "국내": 1124,
+   "일간지": 217,
+   "해외": 195,
+   "정부": 14
   }
  },
  "categories": [
   {
    "name": "국내 · 국내 정책·규제",
-   "count": 1135,
+   "count": 1165,
    "prev": 648,
-   "delta": 487
+   "delta": 517
   },
   {
    "name": "국내 · 국내 의료 AI 기업",
-   "count": 1036,
+   "count": 1055,
    "prev": 769,
-   "delta": 267
+   "delta": 286
   },
   {
    "name": "국내 · 국내 의료기관",
-   "count": 678,
+   "count": 691,
    "prev": 411,
-   "delta": 267
+   "delta": 280
   },
   {
    "name": "국내 · AI 거버넌스·보안",
-   "count": 500,
+   "count": 511,
    "prev": 324,
-   "delta": 176
+   "delta": 187
   },
   {
    "name": "국내 · 학술·연구·행사",
-   "count": 412,
+   "count": 419,
    "prev": 294,
-   "delta": 118
+   "delta": 125
   },
   {
    "name": "국내 · 해외 의료기관·정책·규제",
-   "count": 385,
+   "count": 397,
    "prev": 300,
-   "delta": 85
+   "delta": 97
   },
   {
    "name": "해외 · 해외 의료기관 AI 도입·운영",
-   "count": 381,
+   "count": 389,
    "prev": 285,
-   "delta": 96
+   "delta": 104
   },
   {
    "name": "해외 · 해외 정책·규제 (미국)",
-   "count": 231,
+   "count": 233,
    "prev": 171,
-   "delta": 60
+   "delta": 62
   },
   {
    "name": "해외 · 해외 연구·학술",
@@ -97,34 +97,34 @@
    "delta": 40
   },
   {
-   "name": "일간지 · 조선일보",
-   "count": 99,
+   "name": "일간지 · 동아일보",
+   "count": 108,
    "prev": 0,
-   "delta": 99
+   "delta": 108
   },
   {
-   "name": "일간지 · 동아일보",
-   "count": 97,
+   "name": "일간지 · 조선일보",
+   "count": 102,
    "prev": 0,
-   "delta": 97
+   "delta": 102
   },
   {
    "name": "일간지 · 한국일보",
-   "count": 89,
+   "count": 91,
    "prev": 0,
-   "delta": 89
-  },
-  {
-   "name": "일간지 · 중앙일보",
-   "count": 83,
-   "prev": 0,
-   "delta": 83
+   "delta": 91
   },
   {
    "name": "해외 · 해외 정책·규제 (유럽·영국)",
-   "count": 82,
+   "count": 85,
    "prev": 57,
-   "delta": 25
+   "delta": 28
+  },
+  {
+   "name": "일간지 · 중앙일보",
+   "count": 85,
+   "prev": 0,
+   "delta": 85
   },
   {
    "name": "일간지 · 한겨레",
@@ -134,15 +134,15 @@
   },
   {
    "name": "일간지 · 경향신문",
-   "count": 61,
+   "count": 63,
    "prev": 0,
-   "delta": 61
+   "delta": 63
   },
   {
    "name": "일간지 · JTBC",
-   "count": 48,
+   "count": 49,
    "prev": 0,
-   "delta": 48
+   "delta": 49
   },
   {
    "name": "정부 · 정부 보도자료 (검색)",
@@ -158,9 +158,9 @@
   },
   {
    "name": "정부 · 보건복지부",
-   "count": 10,
+   "count": 11,
    "prev": 12,
-   "delta": -2
+   "delta": -1
   },
   {
    "name": "정부 · 과학기술정보통신부",
@@ -202,19 +202,25 @@
  "keywords": [
   {
    "word": "서울대병원",
-   "count": 195,
+   "count": 201,
    "prev": 143,
    "status": ""
   },
   {
    "word": "식약처",
-   "count": 181,
+   "count": 187,
    "prev": 90,
    "status": "급증"
   },
   {
    "word": "학술대회",
-   "count": 110,
+   "count": 112,
+   "prev": 76,
+   "status": ""
+  },
+  {
+   "word": "보건복지부",
+   "count": 111,
    "prev": 76,
    "status": ""
   },
@@ -225,20 +231,14 @@
    "status": ""
   },
   {
-   "word": "보건복지부",
-   "count": 108,
-   "prev": 76,
-   "status": ""
-  },
-  {
    "word": "세브란스",
-   "count": 104,
+   "count": 107,
    "prev": 78,
    "status": ""
   },
   {
    "word": "아산병원",
-   "count": 102,
+   "count": 103,
    "prev": 70,
    "status": ""
   },
@@ -249,16 +249,16 @@
    "status": ""
   },
   {
-   "word": "국회",
-   "count": 93,
-   "prev": 37,
-   "status": "급증"
-  },
-  {
    "word": "포럼",
-   "count": 92,
+   "count": 95,
    "prev": 51,
    "status": ""
+  },
+  {
+   "word": "국회",
+   "count": 94,
+   "prev": 37,
+   "status": "급증"
   },
   {
    "word": "삼성서울병원",
@@ -268,13 +268,13 @@
   },
   {
    "word": "분당서울대",
-   "count": 75,
+   "count": 78,
    "prev": 65,
    "status": ""
   },
   {
    "word": "세미나",
-   "count": 66,
+   "count": 67,
    "prev": 91,
    "status": ""
   },
@@ -285,21 +285,27 @@
    "status": ""
   },
   {
-   "word": "신의료기술",
-   "count": 50,
-   "prev": 26,
+   "word": "구글",
+   "count": 53,
+   "prev": 45,
    "status": ""
   },
   {
    "word": "심평원",
-   "count": 50,
+   "count": 53,
    "prev": 30,
    "status": ""
   },
   {
-   "word": "구글",
-   "count": 49,
-   "prev": 45,
+   "word": "신의료기술",
+   "count": 51,
+   "prev": 26,
+   "status": ""
+  },
+  {
+   "word": "스마트 병원",
+   "count": 43,
+   "prev": 30,
    "status": ""
   },
   {
@@ -307,12 +313,6 @@
    "count": 43,
    "prev": 12,
    "status": "급증"
-  },
-  {
-   "word": "스마트 병원",
-   "count": 42,
-   "prev": 30,
-   "status": ""
   },
   {
    "word": "뷰노",
@@ -670,6 +670,17 @@
  ],
  "government_other": [
   {
+   "title": "딥페이크·온라인 폭력 등 AI 시대 아동 위기, ‘아동의 시선’으로 해법 찾는다",
+   "link": "https://www.mohw.go.kr/board.es?mid=a10503000000&bid=0027&list_no=1492690&act=view",
+   "date": "2026-11-27",
+   "category": "보건복지부",
+   "region": "정부",
+   "score": 0,
+   "similar_count": 0,
+   "source": "보건복지부",
+   "importance": 0
+  },
+  {
    "title": "[보도참고] 식약처, 의약품 부작용 예측을 위한 통합 데이터 플랫폼 시범운영 착수",
    "link": "https://www.mfds.go.kr/brd/m_99/view.do?seq=50538",
    "date": "2026-11-27",
@@ -987,17 +998,6 @@
    "similar_count": 0,
    "source": "과학기술정보통신부",
    "importance": 0
-  },
-  {
-   "title": "('26. 11. 12) 국가인공지능전략위원회 『국가 사이버복원력 강화 TF』 출범",
-   "link": "https://www.aikorea.go.kr/web/board/brdDetail.do?menu_cd=000012&num=1126",
-   "date": "2026-11-12",
-   "category": "국가인공지능전략위원회",
-   "region": "정부",
-   "score": 0,
-   "similar_count": 2,
-   "source": "국가인공지능전략위원회",
-   "importance": 4
   }
  ],
  "important_domestic": [
