@@ -1,8 +1,8 @@
 {
-  "generated_at": "2026-11-28T09:05:23.510760+09:00",
+  "generated_at": "2026-11-28T09:34:14.344207+09:00",
   "window_hours": 24,
-  "count": 32,
-  "filtered_out": 1153,
+  "count": 19,
+  "filtered_out": 1022,
   "category_order": [
     "조선일보",
     "중앙일보",
@@ -12,16 +12,7 @@
     "경향신문",
     "한국일보"
   ],
-  "errors": [
-    {
-      "query": "동아일보 RSS total.xml",
-      "error": "('Connection aborted.', RemoteDisconnected('Remote end closed connection without response')) → 구글 뉴스 검색으로 대체"
-    },
-    {
-      "query": "동아일보 RSS science.xml",
-      "error": "HTTPSConnectionPool(host='rss.donga.com', port=443): Read timed out. (read timeout=30) → 구글 뉴스 검색으로 대체"
-    }
-  ],
+  "errors": [],
   "items": [
     {
       "title": "응급·중증 환자들 품는 분당제생병원 ‘골든타임’ 위한 24시간 뇌졸중센터도",
@@ -57,9 +48,9 @@
     },
     {
       "title": "“집, 섬, 구급차… 환자 있는 곳이 바로 병원!”",
-      "link": "https://news.google.com/rss/articles/CBMib0FVX3lxTFA0WFMxN0RoYzB0YzRjNnVmbHV1WTVoNDhTOExrcWNldkJ5blg0T0FmYU9ubDB2TWUzOXdTQnQ5NmVlZlVkRUlvd3BWQWpjWlQ5WFhmU3E3YkprZnNHVnNjOERWblhqeUhjUGNESXgyZ9IBZkFVX3lxTE0zcnNVQ0V4UDJ6cnVOYzlKZWdPaEhPZzBpc2JxZjRIUTJHSVFiVVpnMTNHSUJqZkE1Z1hzd1F2c09YNXhpWGh0eTFfSkltODBIMGtxbTRzQXRycTVacXFWTnRnUnZmQQ?oc=5",
-      "originallink": "https://news.google.com/rss/articles/CBMib0FVX3lxTFA0WFMxN0RoYzB0YzRjNnVmbHV1WTVoNDhTOExrcWNldkJ5blg0T0FmYU9ubDB2TWUzOXdTQnQ5NmVlZlVkRUlvd3BWQWpjWlQ5WFhmU3E3YkprZnNHVnNjOERWblhqeUhjUGNESXgyZ9IBZkFVX3lxTE0zcnNVQ0V4UDJ6cnVOYzlKZWdPaEhPZzBpc2JxZjRIUTJHSVFiVVpnMTNHSUJqZkE1Z1hzd1F2c09YNXhpWGh0eTFfSkltODBIMGtxbTRzQXRycTVacXFWTnRnUnZmQQ?oc=5",
-      "summary": "",
+      "link": "https://www.donga.com/news/It/article/all/20261127/135105400/2",
+      "originallink": "https://www.donga.com/news/It/article/all/20261127/135105400/2",
+      "summary": "몸에 증세가 나타나면 환자 스스로 병원을 찾는다. 응급 상황일 때도 환자가 병원에 도착한 후에야 의사가 상태를 확인하고 검사를 진행한다. 모든 절차 후에 수술과 같은 조치에 들어간다. 병실에는 정해진 시간에만 간호사가 방문해 혈압과 체온 등을 측정한다. 모두 각각 진행해야 한다. 현재 병원 진료 시스템이 이런 식이다. 미래에는 ‘인공지능(AI) 관제탑’이 컨트롤타워 역할을 하면서 병원 안팎 헬스케어 전체를 통합 관리할 것으로 전망된다. AI 관제탑은 응급실, 수술실, 병실, 검사실, 구급차, 환자 집 등 모든 영역을 하나의 네트워크",
       "pubDate": "2026-11-28T01:40:00+09:00",
       "category": "동아일보",
       "press": "동아일보",
@@ -83,70 +74,6 @@
       "queries": [
         "의사",
         "AI"
-      ],
-      "source_type": "major",
-      "score": 5
-    },
-    {
-      "title": "에이닷큐어 부민병원과 음성 AI 기반 심혈관 건강 모니터링 실증 연구",
-      "link": "https://news.google.com/rss/articles/CBMiZkFVX3lxTE9wQllSdXB4Tm5DZDJzTVlGSmkyYkJBNWdNM2ZwbG5CNWhWVE9PcXNUX0xIZjhGX3p1YUs1UTluZmtqOVp5WmNEbTZnR0xDQ1FUazhZVG55NFBTdG1rNHZYNVZVZ2NDUdIBZkFVX3lxTE9wQllSdXB4Tm5DZDJzTVlGSmkyYkJBNWdNM2ZwbG5CNWhWVE9PcXNUX0xIZjhGX3p1YUs1UTluZmtqOVp5WmNEbTZnR0xDQ1FUazhZVG55NFBTdG1rNHZYNVZVZ2NDUQ?oc=5",
-      "originallink": "https://news.google.com/rss/articles/CBMiZkFVX3lxTE9wQllSdXB4Tm5DZDJzTVlGSmkyYkJBNWdNM2ZwbG5CNWhWVE9PcXNUX0xIZjhGX3p1YUs1UTluZmtqOVp5WmNEbTZnR0xDQ1FUazhZVG55NFBTdG1rNHZYNVZVZ2NDUdIBZkFVX3lxTE9wQllSdXB4Tm5DZDJzTVlGSmkyYkJBNWdNM2ZwbG5CNWhWVE9PcXNUX0xIZjhGX3p1YUs1UTluZmtqOVp5WmNEbTZnR0xDQ1FUazhZVG55NFBTdG1rNHZYNVZVZ2NDUQ?oc=5",
-      "summary": "",
-      "pubDate": "2026-11-27T16:32:55+09:00",
-      "category": "동아일보",
-      "press": "동아일보",
-      "source": "동아일보",
-      "queries": [
-        "병원",
-        "AI"
-      ],
-      "source_type": "major",
-      "score": 5
-    },
-    {
-      "title": "李 “AI 가짜 의사 광고 오늘부터 금지…‘걸려도 남는 장사’ 안 통한다”",
-      "link": "https://news.google.com/rss/articles/CBMickFVX3lxTFB5MDM1N1lWcUJuVlc3Q1NjY3NXUWwxa1JkQ19TVEMyaVc0R3YxS3lpR0xSYWpsaHRiNTkyM21wUTg3OHFWai1ZQW4yOUI0OGRYVmJVU1NBdnlSNjNFdVJYYmtfdkZmRXBDaUlHWS11T05fQdIBZkFVX3lxTE5jX2c5QV9PYzR0ODQ4c2NsYnB3VFZWZi14UWpibi1GcmRSREJFT1pCQVpSeDJoODI4bGhMTjFfXzRtNlJ0U2ZCQURsb0phYWw2MkRRaDA3MkVwbU9ZYVY2OVBSckNHdw?oc=5",
-      "originallink": "https://news.google.com/rss/articles/CBMickFVX3lxTFB5MDM1N1lWcUJuVlc3Q1NjY3NXUWwxa1JkQ19TVEMyaVc0R3YxS3lpR0xSYWpsaHRiNTkyM21wUTg3OHFWai1ZQW4yOUI0OGRYVmJVU1NBdnlSNjNFdVJYYmtfdkZmRXBDaUlHWS11T05fQdIBZkFVX3lxTE5jX2c5QV9PYzR0ODQ4c2NsYnB3VFZWZi14UWpibi1GcmRSREJFT1pCQVpSeDJoODI4bGhMTjFfXzRtNlJ0U2ZCQURsb0phYWw2MkRRaDA3MkVwbU9ZYVY2OVBSckNHdw?oc=5",
-      "summary": "",
-      "pubDate": "2026-11-27T15:09:00+09:00",
-      "category": "동아일보",
-      "press": "동아일보",
-      "source": "동아일보",
-      "queries": [
-        "의사",
-        "AI"
-      ],
-      "source_type": "major",
-      "score": 5
-    },
-    {
-      "title": "환자 구하러 간 구조대마저…레바논 남부 민간인·의료체계 ‘붕괴’",
-      "link": "https://news.google.com/rss/articles/CBMidkFVX3lxTE5Ca2did3p0RmtkN1ctdy1XWEh5UGlSQ0NEMk1YSTRlV0ExZ1JKZzVnMk1TZDhWbXNtWlNDbFNqaFhOcWR1NmdnR19ncFR1Q3RSMFdNSk90YUZwaWhOVFhmbUtEVExGQ0xvaUJoWVQ2TDh5em5qM0HSAWZBVV95cUxNMURyN3NkNUI4UmVidHExclZpQ1l3a0ZSYm9KZVZzaUFlN05iZ3YxbExBaGYyR3poellQY1FvRXdsX0lQWUNzNmV4NDV4SmcxQ1lHTmtyX1BxUTZZZWZpRThPMHJUZHc?oc=5",
-      "originallink": "https://news.google.com/rss/articles/CBMidkFVX3lxTE5Ca2did3p0RmtkN1ctdy1XWEh5UGlSQ0NEMk1YSTRlV0ExZ1JKZzVnMk1TZDhWbXNtWlNDbFNqaFhOcWR1NmdnR19ncFR1Q3RSMFdNSk90YUZwaWhOVFhmbUtEVExGQ0xvaUJoWVQ2TDh5em5qM0HSAWZBVV95cUxNMURyN3NkNUI4UmVidHExclZpQ1l3a0ZSYm9KZVZzaUFlN05iZ3YxbExBaGYyR3poellQY1FvRXdsX0lQWUNzNmV4NDV4SmcxQ1lHTmtyX1BxUTZZZWZpRThPMHJUZHc?oc=5",
-      "summary": "",
-      "pubDate": "2026-11-27T11:58:06+09:00",
-      "category": "동아일보",
-      "press": "동아일보",
-      "source": "동아일보",
-      "queries": [
-        "의료",
-        "환자"
-      ],
-      "source_type": "major",
-      "score": 5
-    },
-    {
-      "title": "환자의 경험이 누락된 의료는 ‘부정의’ [.txt]",
-      "link": "https://news.google.com/rss/articles/CBMiY0FVX3lxTE5KRVpUVzdnSjNKUW81ZFZDYWFWcFJlM0tKVVUxLXZjR0drOTFUbE1zTkZXTUtvTVpYRmZtQ3BfZk9Pajl4S1hLSUhVbUJaTF9TV1RERjdDZ1lRQUMtcUZoczJXOA?oc=5",
-      "originallink": "https://news.google.com/rss/articles/CBMiY0FVX3lxTE5KRVpUVzdnSjNKUW81ZFZDYWFWcFJlM0tKVVUxLXZjR0drOTFUbE1zTkZXTUtvTVpYRmZtQ3BfZk9Pajl4S1hLSUhVbUJaTF9TV1RERjdDZ1lRQUMtcUZoczJXOA?oc=5",
-      "summary": "",
-      "pubDate": "2026-11-27T09:08:00+09:00",
-      "category": "한겨레",
-      "press": "한겨레",
-      "source": "한겨레",
-      "queries": [
-        "의료",
-        "환자"
       ],
       "source_type": "major",
       "score": 5
@@ -183,45 +110,15 @@
     },
     {
       "title": "장애 어린이 75만명 재활 도운 푸르메병원",
-      "link": "https://news.google.com/rss/articles/CBMiZkFVX3lxTE54VFV4NUY3cVF6M2JDT05xS0VhSHFMV1dOai1KOWpVbkN4ZmIzc1hMcEdrLXJwSEh4VVJpWUk2a3Y4aUs1MVN5UnBPa25Oc3h5ZTh5X3Nlb1E5bjdsTTdCV19vdGFUd9IBZkFVX3lxTE54VFV4NUY3cVF6M2JDT05xS0VhSHFMV1dOai1KOWpVbkN4ZmIzc1hMcEdrLXJwSEh4VVJpWUk2a3Y4aUs1MVN5UnBPa25Oc3h5ZTh5X3Nlb1E5bjdsTTdCV19vdGFUdw?oc=5",
-      "originallink": "https://news.google.com/rss/articles/CBMiZkFVX3lxTE54VFV4NUY3cVF6M2JDT05xS0VhSHFMV1dOai1KOWpVbkN4ZmIzc1hMcEdrLXJwSEh4VVJpWUk2a3Y4aUs1MVN5UnBPa25Oc3h5ZTh5X3Nlb1E5bjdsTTdCV19vdGFUd9IBZkFVX3lxTE54VFV4NUY3cVF6M2JDT05xS0VhSHFMV1dOai1KOWpVbkN4ZmIzc1hMcEdrLXJwSEh4VVJpWUk2a3Y4aUs1MVN5UnBPa25Oc3h5ZTh5X3Nlb1E5bjdsTTdCV19vdGFUdw?oc=5",
-      "summary": "",
+      "link": "https://www.donga.com/news/People/article/all/20261127/135106221/2",
+      "originallink": "https://www.donga.com/news/People/article/all/20261127/135106221/2",
+      "summary": "푸르메재단 넥슨어린이재활병원(푸르메병원)은 개원 10주년을 맞아 26일 서울 마포구 상암동 푸르메병원에서 기념식을 열었다고 27일 밝혔다. 이날 행사에는 병원에서 치료받은 어린이와 가족, 기부자 등 150여 명이 참석했다. 이날 푸르메병원은 개원 이후 운영 성과와 사회적 가치에 대한 연구 결과를 발표했다. 푸르메병원에 따르면 병원은 지난 10년간 연인원 약 75만 명의 장애 어린이에게 약 180만 건의 재활치료를 제공했다. 또 맞춤형 재활치료와 장애 어린이 가족의 일상 회복 지원 등을 통해 1070억 원의 사회적 가치를 창출한 것으",
       "pubDate": "2026-11-28T01:40:00+09:00",
       "category": "동아일보",
       "press": "동아일보",
       "source": "동아일보",
       "queries": [
         "병원"
-      ],
-      "source_type": "major",
-      "score": 4
-    },
-    {
-      "title": "손연재 부부, 연세의료원에 30억 기부",
-      "link": "https://news.google.com/rss/articles/CBMiZkFVX3lxTE5PZ2RMT09ER3FUNWdvZHFHbzlYV005UldlYnM2NlV4MzJIWW1jQUkwZFJiQ2tTZ2JuMDdJeVRGRzUwZlVoX3ZYRE1MWkp2MVFhdTVqdjJLc2ZsckRwWnVsZmdwSWJxQdIBZkFVX3lxTE5PZ2RMT09ER3FUNWdvZHFHbzlYV005UldlYnM2NlV4MzJIWW1jQUkwZFJiQ2tTZ2JuMDdJeVRGRzUwZlVoX3ZYRE1MWkp2MVFhdTVqdjJLc2ZsckRwWnVsZmdwSWJxQQ?oc=5",
-      "originallink": "https://news.google.com/rss/articles/CBMiZkFVX3lxTE5PZ2RMT09ER3FUNWdvZHFHbzlYV005UldlYnM2NlV4MzJIWW1jQUkwZFJiQ2tTZ2JuMDdJeVRGRzUwZlVoX3ZYRE1MWkp2MVFhdTVqdjJLc2ZsckRwWnVsZmdwSWJxQdIBZkFVX3lxTE5PZ2RMT09ER3FUNWdvZHFHbzlYV005UldlYnM2NlV4MzJIWW1jQUkwZFJiQ2tTZ2JuMDdJeVRGRzUwZlVoX3ZYRE1MWkp2MVFhdTVqdjJLc2ZsckRwWnVsZmdwSWJxQQ?oc=5",
-      "summary": "",
-      "pubDate": "2026-11-28T01:40:00+09:00",
-      "category": "동아일보",
-      "press": "동아일보",
-      "source": "동아일보",
-      "queries": [
-        "의료"
-      ],
-      "source_type": "major",
-      "score": 4
-    },
-    {
-      "title": "[책의 향기]법의학자, 명화 속 죽음을 부검하다",
-      "link": "https://news.google.com/rss/articles/CBMidkFVX3lxTFBQOEZnZVFxTEI1b2ZhT0hMbXBlbVpXZXlsOHJPd2RlZzVOUDhRaUFmbmQwQVlQZVJFWUI1WEhpS05XUnNfT1JCeGJhbjJmQk1zck45SGo4UEN6b0p3cXBHRFRueHg0RWRUSHY5bzVwV1o5TUdmVGfSAWZBVV95cUxQZENFLVR1Qy1KOXdmWUlsTG5yeDcxMEF6QmpiMnBGbUN2em1yZkhGQlo4YlVpZ185Y1p1NkROeU9DZFhMTXB3YTRIYjdTSjJFaUtVUjFOTmxHVE43S2xaUFRaWG1YR1E?oc=5",
-      "originallink": "https://news.google.com/rss/articles/CBMidkFVX3lxTFBQOEZnZVFxTEI1b2ZhT0hMbXBlbVpXZXlsOHJPd2RlZzVOUDhRaUFmbmQwQVlQZVJFWUI1WEhpS05XUnNfT1JCeGJhbjJmQk1zck45SGo4UEN6b0p3cXBHRFRueHg0RWRUSHY5bzVwV1o5TUdmVGfSAWZBVV95cUxQZENFLVR1Qy1KOXdmWUlsTG5yeDcxMEF6QmpiMnBGbUN2em1yZkhGQlo4YlVpZ185Y1p1NkROeU9DZFhMTXB3YTRIYjdTSjJFaUtVUjFOTmxHVE43S2xaUFRaWG1YR1E?oc=5",
-      "summary": "",
-      "pubDate": "2026-11-28T01:40:00+09:00",
-      "category": "동아일보",
-      "press": "동아일보",
-      "source": "동아일보",
-      "queries": [
-        "의학"
       ],
       "source_type": "major",
       "score": 4
@@ -257,36 +154,6 @@
       "score": 4
     },
     {
-      "title": "손연재·이준효 부부, 연세의료원에 30억 원 후원 약정",
-      "link": "https://news.google.com/rss/articles/CBMiZkFVX3lxTFB1QU14bUtUZ1JTYzVNMEJhdmNGM3ZHT0w0dW9SYWx4R2dwbFozczFRUGZuVWFIamhRSXR0Ti1xVzhGeENuZ2U5Z01BLWdGTTJ6dm9BT0NwcTM1WGpXeWNXc3lNSkVGZ9IBZkFVX3lxTFB1QU14bUtUZ1JTYzVNMEJhdmNGM3ZHT0w0dW9SYWx4R2dwbFozczFRUGZuVWFIamhRSXR0Ti1xVzhGeENuZ2U5Z01BLWdGTTJ6dm9BT0NwcTM1WGpXeWNXc3lNSkVGZw?oc=5",
-      "originallink": "https://news.google.com/rss/articles/CBMiZkFVX3lxTFB1QU14bUtUZ1JTYzVNMEJhdmNGM3ZHT0w0dW9SYWx4R2dwbFozczFRUGZuVWFIamhRSXR0Ti1xVzhGeENuZ2U5Z01BLWdGTTJ6dm9BT0NwcTM1WGpXeWNXc3lNSkVGZ9IBZkFVX3lxTFB1QU14bUtUZ1JTYzVNMEJhdmNGM3ZHT0w0dW9SYWx4R2dwbFozczFRUGZuVWFIamhRSXR0Ti1xVzhGeENuZ2U5Z01BLWdGTTJ6dm9BT0NwcTM1WGpXeWNXc3lNSkVGZw?oc=5",
-      "summary": "",
-      "pubDate": "2026-11-27T20:23:00+09:00",
-      "category": "동아일보",
-      "press": "동아일보",
-      "source": "동아일보",
-      "queries": [
-        "의료"
-      ],
-      "source_type": "major",
-      "score": 4
-    },
-    {
-      "title": "임플란트 시술 환자 2명 사망…경찰, 강남 소재 치과 압수수색",
-      "link": "https://news.google.com/rss/articles/CBMiZkFVX3lxTE03Ykh3bldkYlpmV2Y1NTBqNFc5cjcycW9TSkJ4UmpRTUxsVnByM2NFa1NZUUNVOVdlYklpSC1lUFJPV2VJMFdPRlR0NEZBUVBUZFNsQkxjcEh2a2ZhNFB6bmFudVJKUdIBZkFVX3lxTE03Ykh3bldkYlpmV2Y1NTBqNFc5cjcycW9TSkJ4UmpRTUxsVnByM2NFa1NZUUNVOVdlYklpSC1lUFJPV2VJMFdPRlR0NEZBUVBUZFNsQkxjcEh2a2ZhNFB6bmFudVJKUQ?oc=5",
-      "originallink": "https://news.google.com/rss/articles/CBMiZkFVX3lxTE03Ykh3bldkYlpmV2Y1NTBqNFc5cjcycW9TSkJ4UmpRTUxsVnByM2NFa1NZUUNVOVdlYklpSC1lUFJPV2VJMFdPRlR0NEZBUVBUZFNsQkxjcEh2a2ZhNFB6bmFudVJKUdIBZkFVX3lxTE03Ykh3bldkYlpmV2Y1NTBqNFc5cjcycW9TSkJ4UmpRTUxsVnByM2NFa1NZUUNVOVdlYklpSC1lUFJPV2VJMFdPRlR0NEZBUVBUZFNsQkxjcEh2a2ZhNFB6bmFudVJKUQ?oc=5",
-      "summary": "",
-      "pubDate": "2026-11-27T18:01:29+09:00",
-      "category": "동아일보",
-      "press": "동아일보",
-      "source": "동아일보",
-      "queries": [
-        "환자"
-      ],
-      "source_type": "major",
-      "score": 4
-    },
-    {
       "title": "맹장·자궁·제왕절개 수술 환자 부담 줄어든다···맹장은 122만원에서 87만원으로",
       "link": "https://www.khan.co.kr/article/202611271639001/?utm_source=khan_rss&utm_medium=rss&utm_campaign=total_news",
       "originallink": "https://www.khan.co.kr/article/202611271639001/?utm_source=khan_rss&utm_medium=rss&utm_campaign=total_news",
@@ -303,30 +170,15 @@
     },
     {
       "title": "“ADHD도 유전되나요?”…사유리 걱정에 의사 답변은? [건강팩트체크]",
-      "link": "https://news.google.com/rss/articles/CBMidkFVX3lxTE5tamVvOEl3YjNYdGhyb1NtTEoyQVF6czBTcW02Q1ZiN29SN1JwZFdkdnJjNFNQOEFzRHlmZGVkX0E2NXdZUWNDazFoS2VzTzlXWmdLVTBXLTF3QnRLcmp5RE9DcTdJeWg4MTJibmpRNkR4VS1obFHSAWZBVV95cUxPaTU1c20xMzZmenpHQUxWeFZRVFBUcmtleEZPRjl2cnBZTlc4ZF9Hb0ZOM0o3SGtETDhreTdBWlc1VnJDNmFqemtVbC1FcnFMZVV0WEVRSWc0dVowVG1JVnI2c0xDMkE?oc=5",
-      "originallink": "https://news.google.com/rss/articles/CBMidkFVX3lxTE5tamVvOEl3YjNYdGhyb1NtTEoyQVF6czBTcW02Q1ZiN29SN1JwZFdkdnJjNFNQOEFzRHlmZGVkX0E2NXdZUWNDazFoS2VzTzlXWmdLVTBXLTF3QnRLcmp5RE9DcTdJeWg4MTJibmpRNkR4VS1obFHSAWZBVV95cUxPaTU1c20xMzZmenpHQUxWeFZRVFBUcmtleEZPRjl2cnBZTlc4ZF9Hb0ZOM0o3SGtETDhreTdBWlc1VnJDNmFqemtVbC1FcnFMZVV0WEVRSWc0dVowVG1JVnI2c0xDMkE?oc=5",
-      "summary": "",
+      "link": "https://www.donga.com/news/Culture/article/all/20261127/135103637/2",
+      "originallink": "https://www.donga.com/news/Culture/article/all/20261127/135103637/2",
+      "summary": "사유리가 ADHD 검사에서 가능성이 높다는 소견을 받고 아들 젠의 유전 가능성을 걱정했다. 미국 국립정신건강연구소(NIMH), 미국 질병통제예방센터(CDC), 서울대학교병원 자료에 따르면 ADHD는 어린 시절 시작되는 신경발달장애로 유전적 영향이 크지만, 검사 결과 하나만으로 확진할 수 없으며 전문적인 종합 평가가 필요하다.",
       "pubDate": "2026-11-27T16:14:00+09:00",
       "category": "동아일보",
       "press": "동아일보",
       "source": "동아일보",
       "queries": [
         "의사"
-      ],
-      "source_type": "major",
-      "score": 4
-    },
-    {
-      "title": "멜론성형외과, ‘2026 올해의 우수브랜드 대상’ 의료·성형외과 부문 3년 연속 1위 수상",
-      "link": "https://news.google.com/rss/articles/CBMidkFVX3lxTE5NVks1dF92RlhXZUJJaU5NcUgyVUVfeHExOUhWMmF5Q0JMUThBUHpQZ3ZsY1FIcDcwZjJfb25ldk5jN2diQmhfX0xxanhIamxjNm9Dc2dGZ2x1eDlvdlNwdEc4VERtbFQ3R09YRDBNZVZMWTNmdVHSAWZBVV95cUxQa3UxZkVDTnh4ZVZNTnlveXhRWmhKdGNHTXM5VDJWNUVsUnVDejZGMU50ZFRZX0Y0b0xnWlEtRFZxcjV6TVp2aElTUmN5T2RoZjl4UFp0ZDlTSkFldGZjQ0JrM3JFOXc?oc=5",
-      "originallink": "https://news.google.com/rss/articles/CBMidkFVX3lxTE5NVks1dF92RlhXZUJJaU5NcUgyVUVfeHExOUhWMmF5Q0JMUThBUHpQZ3ZsY1FIcDcwZjJfb25ldk5jN2diQmhfX0xxanhIamxjNm9Dc2dGZ2x1eDlvdlNwdEc4VERtbFQ3R09YRDBNZVZMWTNmdVHSAWZBVV95cUxQa3UxZkVDTnh4ZVZNTnlveXhRWmhKdGNHTXM5VDJWNUVsUnVDejZGMU50ZFRZX0Y0b0xnWlEtRFZxcjV6TVp2aElTUmN5T2RoZjl4UFp0ZDlTSkFldGZjQ0JrM3JFOXc?oc=5",
-      "summary": "",
-      "pubDate": "2026-11-27T15:03:20+09:00",
-      "category": "동아일보",
-      "press": "동아일보",
-      "source": "동아일보",
-      "queries": [
-        "의료"
       ],
       "source_type": "major",
       "score": 4
@@ -340,21 +192,6 @@
       "category": "중앙일보",
       "press": "중앙일보",
       "source": "중앙일보",
-      "queries": [
-        "의료"
-      ],
-      "source_type": "major",
-      "score": 4
-    },
-    {
-      "title": "김주범 대구시의원 필수의료 전담팀 신설",
-      "link": "https://news.google.com/rss/articles/CBMickFVX3lxTE5FeXd3eENzVGR0d3dScnVyZVJmUW9pYmVQNm45ei05ZjNIMzlXUzRsdU9BOWkxQi1tMHlZOFMyam44X0ZSamNoOGd6UW5pOVVDb0p2dFhLaXBNNlVkRF9LX3c1VEVVNXF3S0Vlcl9GSVMwUQ?oc=5",
-      "originallink": "https://news.google.com/rss/articles/CBMickFVX3lxTE5FeXd3eENzVGR0d3dScnVyZVJmUW9pYmVQNm45ei05ZjNIMzlXUzRsdU9BOWkxQi1tMHlZOFMyam44X0ZSamNoOGd6UW5pOVVDb0p2dFhLaXBNNlVkRF9LX3c1VEVVNXF3S0Vlcl9GSVMwUQ?oc=5",
-      "summary": "",
-      "pubDate": "2026-11-27T14:30:27+09:00",
-      "category": "동아일보",
-      "press": "동아일보",
-      "source": "스포츠동아",
       "queries": [
         "의료"
       ],
@@ -452,61 +289,16 @@
       "score": 4
     },
     {
-      "title": "의료·제약계 소식 | 헬스동아",
-      "link": "https://news.google.com/rss/articles/CBMiWEFVX3lxTE9BX1BNbXl2SmpDRXo5MVB1X2E4VkVDdjJsVm1pMmFEZ0dXVWNrMnVCdUlMY3p0cndZVDNpM0R4NWRhbjBhSDZOblZuY1U4TVU4TnZ2d3JKLTc?oc=5",
-      "originallink": "https://news.google.com/rss/articles/CBMiWEFVX3lxTE9BX1BNbXl2SmpDRXo5MVB1X2E4VkVDdjJsVm1pMmFEZ0dXVWNrMnVCdUlMY3p0cndZVDNpM0R4NWRhbjBhSDZOblZuY1U4TVU4TnZ2d3JKLTc?oc=5",
-      "summary": "",
-      "pubDate": "2026-11-27T11:12:39+09:00",
-      "category": "동아일보",
-      "press": "동아일보",
-      "source": "동아일보",
-      "queries": [
-        "의료"
-      ],
-      "source_type": "major",
-      "score": 4
-    },
-    {
-      "title": "‘임플란트 환자 2명 사망’ 강남 치과 압수수색…사기 등 혐의",
-      "link": "https://news.google.com/rss/articles/CBMiZkFVX3lxTE1SMHlOY2xNcmhlQzdEZjE5ZWZaSXY5OGUyc21TbkJ1Wk5XMFhmZzNCYldFd0xwZzg2THdCdEY4elVhMEMyQ0hhczVwdUFPUFNEUTlhNlRzeXl3MVpIYllkWWdoUEhQQdIBZkFVX3lxTE1SMHlOY2xNcmhlQzdEZjE5ZWZaSXY5OGUyc21TbkJ1Wk5XMFhmZzNCYldFd0xwZzg2THdCdEY4elVhMEMyQ0hhczVwdUFPUFNEUTlhNlRzeXl3MVpIYllkWWdoUEhQQQ?oc=5",
-      "originallink": "https://news.google.com/rss/articles/CBMiZkFVX3lxTE1SMHlOY2xNcmhlQzdEZjE5ZWZaSXY5OGUyc21TbkJ1Wk5XMFhmZzNCYldFd0xwZzg2THdCdEY4elVhMEMyQ0hhczVwdUFPUFNEUTlhNlRzeXl3MVpIYllkWWdoUEhQQdIBZkFVX3lxTE1SMHlOY2xNcmhlQzdEZjE5ZWZaSXY5OGUyc21TbkJ1Wk5XMFhmZzNCYldFd0xwZzg2THdCdEY4elVhMEMyQ0hhczVwdUFPUFNEUTlhNlRzeXl3MVpIYllkWWdoUEhQQQ?oc=5",
-      "summary": "",
-      "pubDate": "2026-11-27T10:49:41+09:00",
-      "category": "동아일보",
-      "press": "동아일보",
-      "source": "동아일보",
-      "queries": [
-        "환자"
-      ],
-      "source_type": "major",
-      "score": 4
-    },
-    {
       "title": "‘누적 수강생 450만’ 이지영 강사, 미래 의료인 양성에 3억 기부",
-      "link": "https://news.google.com/rss/articles/CBMiZkFVX3lxTE9KZzF5Z2ljckttLXBJQTJMZk1kVDhSdExPcjhleHcwLWtuVUlrNXVlVjlUMTM3REFSMENaUE5CX2N3WVpsNW1yYmJCbFNRajRxMW9DTmlzZlRqUFdNY1VSWnNwV1g2UdIBZkFVX3lxTE9KZzF5Z2ljckttLXBJQTJMZk1kVDhSdExPcjhleHcwLWtuVUlrNXVlVjlUMTM3REFSMENaUE5CX2N3WVpsNW1yYmJCbFNRajRxMW9DTmlzZlRqUFdNY1VSWnNwV1g2UQ?oc=5",
-      "originallink": "https://news.google.com/rss/articles/CBMiZkFVX3lxTE9KZzF5Z2ljckttLXBJQTJMZk1kVDhSdExPcjhleHcwLWtuVUlrNXVlVjlUMTM3REFSMENaUE5CX2N3WVpsNW1yYmJCbFNRajRxMW9DTmlzZlRqUFdNY1VSWnNwV1g2UdIBZkFVX3lxTE9KZzF5Z2ljckttLXBJQTJMZk1kVDhSdExPcjhleHcwLWtuVUlrNXVlVjlUMTM3REFSMENaUE5CX2N3WVpsNW1yYmJCbFNRajRxMW9DTmlzZlRqUFdNY1VSWnNwV1g2UQ?oc=5",
-      "summary": "",
+      "link": "https://www.donga.com/news/Society/article/all/20261127/135101726/2",
+      "originallink": "https://www.donga.com/news/Society/article/all/20261127/135101726/2",
+      "summary": "누적 수강생 450만 명을 기록한 수능 사회탐구 스타강사 이지영 씨가 분당서울대병원에 3억 원을 기부했다. 후원금은 2028년 개원 예정인 임상교육훈련센터 건립에 사용되며, 미래 의료인 양성과 지역사회 의료인 교육을 지원한다.",
       "pubDate": "2026-11-27T10:14:51+09:00",
       "category": "동아일보",
       "press": "동아일보",
       "source": "동아일보",
       "queries": [
         "의료"
-      ],
-      "source_type": "major",
-      "score": 4
-    },
-    {
-      "title": "“한치 망설임 없었죠”…9년 전 약속 지킨 간호사",
-      "link": "https://news.google.com/rss/articles/CBMidkFVX3lxTE1aeUQ1RzlpWVowb3pEd2RfZk1SVi1OZ1R5NGVxWVo5QmwzTU04T0pwVHBHd1lPQjU1S2hhMUtieGZPX2xiTGVTcmNoTDgzNkNsSGtZQzBPaThNSVFRc1NOZXJyYm5LbG9uZkY0S1Y4MWdONG1HU1HSAWZBVV95cUxQUDd4UlhXNzlFY2NqMW9hNjNCRk5nMHRsUnB4OGM2ZV9VMWR2NDJIc0MzRlNSZl9VN2NxSW5ScE1VcWthZUY0bi1BVXlqbmw5WWpXTmcwWW5nUUgxZ1NsS25QQ0NkaWc?oc=5",
-      "originallink": "https://news.google.com/rss/articles/CBMidkFVX3lxTE1aeUQ1RzlpWVowb3pEd2RfZk1SVi1OZ1R5NGVxWVo5QmwzTU04T0pwVHBHd1lPQjU1S2hhMUtieGZPX2xiTGVTcmNoTDgzNkNsSGtZQzBPaThNSVFRc1NOZXJyYm5LbG9uZkY0S1Y4MWdONG1HU1HSAWZBVV95cUxQUDd4UlhXNzlFY2NqMW9hNjNCRk5nMHRsUnB4OGM2ZV9VMWR2NDJIc0MzRlNSZl9VN2NxSW5ScE1VcWthZUY0bi1BVXlqbmw5WWpXTmcwWW5nUUgxZ1NsS25QQ0NkaWc?oc=5",
-      "summary": "",
-      "pubDate": "2026-11-27T10:11:40+09:00",
-      "category": "동아일보",
-      "press": "동아일보",
-      "source": "동아일보",
-      "queries": [
-        "간호사"
       ],
       "source_type": "major",
       "score": 4

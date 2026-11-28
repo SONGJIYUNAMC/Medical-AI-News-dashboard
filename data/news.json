@@ -1,10 +1,10 @@
 {
-  "generated_at": "2026-11-28T09:01:35.839790+09:00",
+  "generated_at": "2026-11-28T09:32:25.819924+09:00",
   "window_hours": 26,
-  "count": 187,
-  "filtered_out": 973,
-  "filtered_off_topic": 140,
-  "merged_similar": 110,
+  "count": 189,
+  "filtered_out": 972,
+  "filtered_off_topic": 133,
+  "merged_similar": 108,
   "category_order": [
     "국내 정책·규제",
     "국내 의료기관",
@@ -45,26 +45,24 @@
       ]
     },
     {
-      "title": "의료 AI 시장 경쟁 격화…특허소송·규제 민원에 병원 현장까지 ‘파장...",
-      "summary": "의료 AI 소프트웨어를 개발·공급하고 있다. 회사는 2022년 식품의약품안전처 의료기기 인허가를 받은 데... 김 대표는 경쟁사 측이 보건복지부와 한국보건의료연구원(NECA), 식약처 등에 에이아이트릭스 제품의 데이터...",
-      "link": "http://www.whosaeng.com/sub_read.html?uid=175671&section=sc34",
-      "originallink": "http://www.whosaeng.com/sub_read.html?uid=175671&section=sc34",
-      "pubDate": "2026-11-27T07:02:00+09:00",
+      "title": "식약처 허가받았는데 고시 위반?…의료 AI 규제 엇박자",
+      "summary": "입원환자의 중증 위험을 예측하는 AI 의료기기를 개발한 에이아이트릭스 얘기다. 식약처가 허용한 의료기기 사용 방법을 두고 복지부 산하 한국보건의료연구원(NECA)이 다른 해석을 내놓으면서다. 의료AI 산업 육성을...",
+      "link": "https://n.news.naver.com/mnews/article/024/0000109953?sid=101",
+      "originallink": "https://www.mk.co.kr/article/12220382",
+      "pubDate": "2026-11-28T09:01:00+09:00",
       "queries": [
         "식약처 AI 의료기기",
         "신의료기술평가 AI",
-        "세브란스 AI",
         "에이아이트릭스",
         "의료 AI 기업",
         "의료 AI 환자안전",
-        "의료 AI 논문",
         "의료 AI",
         "병원 AI"
       ],
       "category": "국내 정책·규제",
-      "score": 16,
+      "score": 19,
       "query": "식약처 AI 의료기기",
-      "source_type": "other",
+      "source_type": "major",
       "similar_count": 0,
       "similar_sources": []
     },
@@ -635,6 +633,28 @@
       ]
     },
     {
+      "title": "에뜨왈 김태림 대표 \"급여기준 AI에서 의료진이 찾고 쓰고 만드는 의료...",
+      "summary": "에뜨왈 김태림 대표는 삼성서울병원 응급의학과 교수로, 10년 전부터 디지털헬스 연구를 해왔다. 2025년 11월... 때까지 제품을 다듬고자 창업했다. - 수익 모델은 어떻게 구상하고 있나. 의료진이 필요한 기능을 먼저 써보고...",
+      "link": "https://www.medigatenews.com/news/586116410",
+      "originallink": "https://www.medigatenews.com/news/586116410",
+      "pubDate": "2026-11-28T09:30:00+09:00",
+      "queries": [
+        "디지털의료제품",
+        "의료 AI 수가",
+        "삼성서울병원 AI",
+        "의료 AI 기업",
+        "의료 AI 보안",
+        "의료 AI",
+        "병원 AI"
+      ],
+      "category": "국내 의료기관",
+      "score": 8,
+      "query": "디지털의료제품",
+      "source_type": "medical",
+      "similar_count": 0,
+      "similar_sources": []
+    },
+    {
       "title": "AI 에이전트의 자율 행동 확대…\"인간 승인과 보안 장치 필요\"",
       "summary": "그는 \"AI가 현실 세계에서 취하는 행동은 명시적인 인간의 승인이나 인간이 설정한 정책의 결과여야 한다\"고 말했다. 금융과 IT, 의료 등에서는 이러한 방식이 의사결정의 근거를 추적하는 데도 중요하다는 설명이다....",
       "link": "https://www.tokenpost.kr/news/cryptocurrency/445627",
@@ -845,28 +865,6 @@
       "similar_sources": []
     },
     {
-      "title": "대한항공, 장거리·야간 비행 승무원 수면 챙긴다...업계 첫 디지털 검사...",
-      "summary": "식품의약품안전처 허가를 받은 스마트폰 기반 수면무호흡 선별 의료기기를 승무원 건강관리에 쓰는 것은 항공업계 처음이다. 대한항공은 26일 수면 인공지능(AI) 기업 에이슬립과 손잡고 수면무호흡 선별과 수면리듬...",
-      "link": "https://n.news.naver.com/mnews/article/011/0004686750?sid=101",
-      "originallink": "https://www.sedaily.com/article/20119281?ref=naver",
-      "pubDate": "2026-11-27T07:02:00+09:00",
-      "queries": [
-        "식약처 AI 의료기기",
-        "의료 AI 기업",
-        "의료 AI"
-      ],
-      "category": "국내 정책·규제",
-      "score": 8,
-      "query": "식약처 AI 의료기기",
-      "source_type": "major",
-      "similar_count": 3,
-      "similar_sources": [
-        "dealsite.co.kr",
-        "lawissue.co.kr",
-        "news.dealsitetv.com"
-      ]
-    },
-    {
       "title": "이화의료원, 제11차 이화메디테크포럼 개최",
       "summary": "이화메디테크포럼은 의료 현장의 수요와 이화여대 의과대학·공과대학·인공지능대학의 원천기술, 기업... 위한 의료·인공지능(AI)·로봇 융합 연구개발과 인재 양성 방안을 논의하기 위해 마련됐다. 행사는 총 3개...",
       "link": "https://www.lawissue.co.kr/view.php?ud=202611271836453852f4ab64559d_12",
@@ -935,7 +933,6 @@
         "세브란스 AI",
         "서울성모병원 AI",
         "딥노이드",
-        "의료 AI 기업",
         "의료 AI 환자안전",
         "의료 AI 책임",
         "의료 AI",
@@ -1089,6 +1086,25 @@
       "similar_sources": []
     },
     {
+      "title": "2027년을 주도할 5가지 트렌드와 투자 전략",
+      "summary": "그는 빅테크 기업들의 3분기 실적에서 AI 투자 확대와 클라우드 매출 급증이 동시에 나타났다는 점에... 이러한 성장의 일부는 미국의 공적 의료보험인 메디케어(Medicare) 적용 범위 확대에서 비롯될 전망이다. 지난...",
+      "link": "https://www.fortunekorea.co.kr/news/articleView.html?idxno=54905",
+      "originallink": "https://www.fortunekorea.co.kr/news/articleView.html?idxno=54905",
+      "pubDate": "2026-11-28T09:20:00+09:00",
+      "queries": [
+        "의료 AI 기업",
+        "의료 AI 보안",
+        "마이크로소프트 의료 AI",
+        "의료 AI"
+      ],
+      "category": "해외 의료기관·정책·규제",
+      "score": 6,
+      "query": "의료 AI 기업",
+      "source_type": "other",
+      "similar_count": 0,
+      "similar_sources": []
+    },
+    {
       "title": "벤처펀드 '떨이' 나선 글로벌 큰손들, 이유는? \"AI 투자실탄 마련\"",
       "summary": "큰 폭의 할인을 감수하더라도 성장성이 높은 AI 기업에 새롭게 투자하는 편이 유리하다는 판단에서다.... AI를 활용해 환자 고유의 목소리를 재현하는 기술을 개발한 호주 의료기기 스타트업에 투자자들의 관심이...",
       "link": "https://n.news.naver.com/mnews/article/008/0005447635?sid=101",
@@ -1106,6 +1122,26 @@
       "source_type": "major",
       "similar_count": 0,
       "similar_sources": []
+    },
+    {
+      "title": "충남도의회 보건복지환경위, 내년도 복지예산 집중 점검…“편성·집행...",
+      "summary": "지방의료원 시설·장비 투자의 적정성과 취약계층 지원사업 감액 문제 등을 집중 점검했다. 복환위는 27일 제372회 정례회 제2차 회의를 열고 AI기본사회보건복지실 소관 2026년도 제3회 추가경정예산안과 2027년도...",
+      "link": "http://www.sisanews24.co.kr/20011",
+      "originallink": "http://www.sisanews24.co.kr/20011",
+      "pubDate": "2026-11-27T18:40:00+09:00",
+      "queries": [
+        "의료 AI 지원사업",
+        "의료 AI",
+        "병원 AI"
+      ],
+      "category": "국내 정책·규제",
+      "score": 6,
+      "query": "의료 AI 지원사업",
+      "source_type": "other",
+      "similar_count": 1,
+      "similar_sources": [
+        "breaknews.com"
+      ]
     },
     {
       "title": "'레하·홈케어 2027', 내년 7월 양재 aT센터서 개최",
@@ -1322,6 +1358,26 @@
       "similar_sources": []
     },
     {
+      "title": "대한항공, 조종사·승무원 수면 관리에 업계 첫 스마트폰 검사 도입",
+      "summary": "대한항공은 지난 26일 식약처 허가를 받은 스마트폰 기반 수면무호흡 선별 의료기기를 승무원 건강관리에... 항공보건의료센터는 지난 9월부터 수면건강 위험이 확인된 임직원을 대상으로 검사를 진행 중이다. 수면 AI 기업...",
+      "link": "https://www.lawissue.co.kr/view.php?ud=20261127105615885067191f6c6e_12",
+      "originallink": "https://www.lawissue.co.kr/view.php?ud=20261127105615885067191f6c6e_12",
+      "pubDate": "2026-11-27T10:58:00+09:00",
+      "queries": [
+        "식약처 AI 의료기기",
+        "의료 AI 기업",
+        "의료 AI"
+      ],
+      "category": "국내 정책·규제",
+      "score": 6,
+      "query": "식약처 AI 의료기기",
+      "source_type": "other",
+      "similar_count": 1,
+      "similar_sources": [
+        "news.dealsitetv.com"
+      ]
+    },
+    {
       "title": "뇌에 반도체 이식 FDA 임상 승인",
       "summary": "이후에도 안전성·유효성 자료 확보와 별도의 규제 절차가 남아 있다. AI로 제작한 이미지 ■ 생각을 말과... ■ 의료기술에서 일상생활 복원으로 BCI 시장의 경쟁 축은 전극 성능과 신호처리 기술을 넘어, 환자가 실제로...",
       "link": "http://www.smedaily.co.kr/news/articleView.html?idxno=366694",
@@ -1421,23 +1477,6 @@
       "similar_sources": []
     },
     {
-      "title": "IPARK현대산업개발, AI로 주거 서비스·현장 관리 고도화",
-      "summary": "인공지능(AI)이 건설산업의 설계·시공 방식과 경영 전략을 바꾸고 있다. 공사비 부담과 숙련 인력 부족... 입주민은 단지에서 서울아산병원 검진센터와 연계한 건강검진과 외래 진료 서비스를 이용할 수 있다....",
-      "link": "https://n.news.naver.com/mnews/article/421/0009313312?sid=101",
-      "originallink": "https://www.news1.kr/realestate/general/6367539",
-      "pubDate": "2026-11-27T07:05:00+09:00",
-      "queries": [
-        "서울아산병원 AI",
-        "병원 AI"
-      ],
-      "category": "국내 의료기관",
-      "score": 6,
-      "query": "서울아산병원 AI",
-      "source_type": "major",
-      "similar_count": 0,
-      "similar_sources": []
-    },
-    {
       "title": "식약처, 의료기기 사용적합성 안내서 2종 마련",
       "summary": "함께 개정된 디지털의료기기 질의응답집은 현장에서 제기된 주요 질의와 실제 심사 과정의 보완 사례를 반영했다. 의료기관 내 다양한 시스템과 연동되는 제품의 사용적합성 평가 필요성과 소프트웨어의 결과 해석 제공...",
       "link": "http://www.docdocdoc.co.kr/news/articleView.html?idxno=3045000",
@@ -1453,25 +1492,6 @@
       "similar_count": 1,
       "similar_sources": [
         "rapportian.com"
-      ]
-    },
-    {
-      "title": "의사·간호사·약사 등 국시 10년치 결과 분석",
-      "summary": "보건복지부 의료자원정책과는 AI 부정행위 근절을 위해 시험 현장 관리 및 시험 단계별 관리 감독... 만점자수가 상이하고, 전년 대비 오히려 감소한 과목도 있다는 사실을 근거로 제시했다. 뿐만 아니라 의사, 치위생사...",
-      "link": "https://dailymedi.com/news/news_view.php?wr_id=943100",
-      "originallink": "https://dailymedi.com/news/news_view.php?wr_id=943100",
-      "pubDate": "2026-11-28T06:54:00+09:00",
-      "queries": [
-        "의료 AI 수가",
-        "의료 AI"
-      ],
-      "category": "국내 정책·규제",
-      "score": 5,
-      "query": "의료 AI 수가",
-      "source_type": "medical",
-      "similar_count": 1,
-      "similar_sources": [
-        "nocutnews.co.kr"
       ]
     },
     {
@@ -1491,24 +1511,6 @@
       "score": 5,
       "query": "세브란스 AI",
       "source_type": "medical",
-      "similar_count": 0,
-      "similar_sources": []
-    },
-    {
-      "title": "충남도의회 보건복지환경위, 내년도 복지예산 집중 점검…“편성·집행...",
-      "summary": "지방의료원 시설·장비 투자의 적정성과 취약계층 지원사업 감액 문제 등을 집중 점검했다. 복환위는 27일 제372회 정례회 제2차 회의를 열고 AI기본사회보건복지실 소관 2026년도 제3회 추가경정예산안과 2027년도...",
-      "link": "http://www.sisanews24.co.kr/20011",
-      "originallink": "http://www.sisanews24.co.kr/20011",
-      "pubDate": "2026-11-27T18:40:00+09:00",
-      "queries": [
-        "의료 AI 지원사업",
-        "의료 AI",
-        "병원 AI"
-      ],
-      "category": "국내 정책·규제",
-      "score": 5,
-      "query": "의료 AI 지원사업",
-      "source_type": "other",
       "similar_count": 0,
       "similar_sources": []
     },
@@ -1916,21 +1918,33 @@
       "similar_sources": []
     },
     {
-      "title": "뇌졸중 골든타임 지킬 의사가 사라진다…신경과학회의 경고",
-      "summary": "인공지능(AI)이 아니었다. 필요한 전문인력을 꾸준히 양성하고, 이들이 필수·응급의료 현장에 남을 수 있는... 최 이사는 \"행위별 수가체계에서는 환자가 왔을 때 이뤄지는 검사와 처치는 보상하지만, 환자가 언제 올지...",
-      "link": "http://www.docdocdoc.co.kr/news/articleView.html?idxno=3044959",
-      "originallink": "http://www.docdocdoc.co.kr/news/articleView.html?idxno=3044959",
-      "pubDate": "2026-11-27T07:04:00+09:00",
+      "title": "전북가상융합산업혁신센터, 내달 4일 '트윈토크 2026' 세미나 개최",
+      "summary": "이어 김효석 필립스 아시아태평양 솔루션사업부 대표가 '데이터와 AI가 만드는 메디컬 디지털 트윈'을 통해 의료분야의 AI·디지털트윈 활용 방향을 제시한다. 이와 함께 지난 18일 문을 연 한국폴리텍대학 신기술교육원...",
+      "link": "https://n.news.naver.com/mnews/article/030/0003490841?sid=102",
+      "originallink": "https://www.etnews.com/20261127000111",
+      "pubDate": "2026-11-28T09:01:00+09:00",
       "queries": [
-        "의료 AI 수가",
-        "서울아산병원 AI",
-        "의료 AI 환자안전",
-        "의료 AI 책임",
-        "의료 AI",
-        "병원 AI"
+        "의료 AI"
       ],
       "category": "학술·연구·행사",
-      "score": 5,
+      "score": 4,
+      "query": "의료 AI",
+      "source_type": "other",
+      "similar_count": 0,
+      "similar_sources": []
+    },
+    {
+      "title": "의사·간호사·약사 등 국시 10년치 결과 분석",
+      "summary": "보건복지부 의료자원정책과는 AI 부정행위 근절을 위해 시험 현장 관리 및 시험 단계별 관리 감독... 만점자수가 상이하고, 전년 대비 오히려 감소한 과목도 있다는 사실을 근거로 제시했다. 뿐만 아니라 의사, 치위생사...",
+      "link": "https://dailymedi.com/news/news_view.php?wr_id=943100",
+      "originallink": "https://dailymedi.com/news/news_view.php?wr_id=943100",
+      "pubDate": "2026-11-28T06:54:00+09:00",
+      "queries": [
+        "의료 AI 수가",
+        "의료 AI"
+      ],
+      "category": "국내 정책·규제",
+      "score": 4,
       "query": "의료 AI 수가",
       "source_type": "medical",
       "similar_count": 0,
@@ -2225,6 +2239,26 @@
       "source_type": "other",
       "similar_count": 0,
       "similar_sources": []
+    },
+    {
+      "title": "의사냥이·간호냥이도 있나...국시 만점자 최대 27배↑",
+      "summary": "인공지능(AI)을 활용한 국가시험 부정행위가 사회적 논란이 되는 가운데 의사·치과의사·간호사 등 의료... 만점자 수가 달라 부정행위를 단정하기는 어렵다는 것이다. 복지부에 따르면 AI 부정행위 논란 직후...",
+      "link": "https://n.news.naver.com/mnews/article/018/0006416480?sid=100",
+      "originallink": "https://www.edaily.co.kr/News/Read?newsId=01876166645649984&mediaCodeNo=257&utm_source=naver&utm_medium=referral&utm_campaign=news_syndication&utm_content=original_article",
+      "pubDate": "2026-11-27T10:33:00+09:00",
+      "queries": [
+        "의료 AI 수가",
+        "의료 AI",
+        "병원 AI"
+      ],
+      "category": "국내 정책·규제",
+      "score": 4,
+      "query": "의료 AI 수가",
+      "source_type": "major",
+      "similar_count": 1,
+      "similar_sources": [
+        "nocutnews.co.kr"
+      ]
     },
     {
       "title": "보훈공단, 의료·복지 현장 ESG 혁신 성과로 '대상' 수상",
@@ -2628,6 +2662,22 @@
       "similar_sources": []
     },
     {
+      "title": "[이주의 모빌리티] 현대차그룹, 英 ‘탑기어 어워즈’ 6년 연속 수상 外",
+      "summary": "식품의약품안전처 허가를 받은 스마트폰 기반 수면무호흡 선별 의료기기를 승무원 건강관리에 도입한... 넥센타이어는 제품 개발과 생산 공정에는 인공지능(AI)과 가상현실(VR) 기술을 적용하고 있으며, 머신러닝 기반...",
+      "link": "https://dealsite.co.kr/articles/173652",
+      "originallink": "https://dealsite.co.kr/articles/173652",
+      "pubDate": "2026-11-27T15:46:00+09:00",
+      "queries": [
+        "의료 AI"
+      ],
+      "category": "국내 정책·규제",
+      "score": 3,
+      "query": "의료 AI",
+      "source_type": "other",
+      "similar_count": 0,
+      "similar_sources": []
+    },
+    {
       "title": "[현장+] 한미약품, 디지털융합의약품 전략 공개···수면관리 '꿀잠닥터...",
       "summary": "향후 의료진 처방 지원과 디지털치료제 공동 개발로 확장할 계획입니다. 내년 상반기 50억원 규모 시리즈 A... 등 기업이 발표를 진행했다. 이영규 파이헬스케어 대표는 AI 진단 보조 소프트웨어 '닥터아이(DOCTOR EYE) X...",
       "link": "https://www.greened.kr/news/articleView.html?idxno=355792",
@@ -2935,24 +2985,6 @@
       "source_type": "major",
       "similar_count": 0,
       "similar_sources": []
-    },
-    {
-      "title": "만점자 무려 27배로…'간호냥이'·'의사냥이'도 있나?",
-      "summary": "최근 AI 부정행위 의혹이 잇따라 화제가 되고 있죠. 이런 가운데 의사와 간호사 국가시험 일부 과목에서 만점자가 크게 늘어난 것으로 나타났습니다. 최근 한국 보건 의료인 국가시험원이 국회에 제출한 자료에 따르면...",
-      "link": "https://n.news.naver.com/mnews/article/055/0001406221?sid=102",
-      "originallink": "https://news.sbs.co.kr/news/endPage.do?news_id=N1008865889&plink=ORI&cooper=NAVER",
-      "pubDate": "2026-11-27T07:19:00+09:00",
-      "queries": [
-        "의료 AI"
-      ],
-      "category": "국내 정책·규제",
-      "score": 3,
-      "query": "의료 AI",
-      "source_type": "major",
-      "similar_count": 1,
-      "similar_sources": [
-        "edaily.co.kr"
-      ]
     },
     {
       "title": "[위클립] 11월 4주",
